@@ -65,8 +65,11 @@ jobs:
       # Before the commit, because "what is newly true" is measured against the
       # previous commit. Every channel is optional; a missing secret turns that
       # channel off and says so in the log.
+      # Runs on a push as well, because the scheduled task on the owner's
+      # machine collects from a Saudi address and pushes the result. Many
+      # .gov.sa sites refuse a US runner, so that machine sees pages this one
+      # cannot, and its push is what should raise the alert.
       - name: Notify
-        if: github.event_name != 'push'
         env:
           VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
