@@ -12,9 +12,20 @@
  * The shell is cache-first because it is content-addressed by the build: a new
  * deploy produces new filenames, so a cached script is never a wrong script.
  */
-const VERSION = "v1";
+const VERSION = "v2";
 const SHELL = `rasid-shell-${VERSION}`;
 const DATA = `rasid-data-${VERSION}`;
+/*
+ * Every push that reaches this device is written here, banner or no banner.
+ *
+ * "Nothing arrived" has two very different causes: the push never got here, or
+ * it got here and the operating system swallowed the banner. From the outside
+ * they look identical, and the first person to hit that ambiguity had no way to
+ * tell which one he was looking at. This log separates them: if an entry is
+ * here, delivery works and the problem is the device's notification settings.
+ * It is not versioned, because its whole value is surviving an update.
+ */
+const PUSH_LOG = "rasid-push-log";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -30,7 +41,11 @@ self.addEventListener("activate", (event) => {
     caches
       .keys()
       .then((keys) =>
-        Promise.all(keys.filter((k) => k !== SHELL && k !== DATA).map((k) => caches.delete(k))),
+        Promise.all(
+          keys
+            .filter((k) => k !== SHELL && k !== DATA && k !== PUSH_LOG)
+            .map((k) => caches.delete(k)),
+        ),
       )
       .then(() => self.clients.claim()),
   );
@@ -62,6 +77,35 @@ async function shellFirst(request) {
   return response;
 }
 
+/** Keeps the last ten arrivals, newest last, so the app can prove delivery. */
+async function recordArrival(payload, via) {
+  const cache = await caches.open(PUSH_LOG);
+  const entry = { at: new Date().toISOString(), via, title: payload.title, body: payload.body };
+  await cache.put(
+    new Request(`./__push-log/${Date.now()}`),
+    new Response(JSON.stringify(entry), { headers: { "content-type": "application/json" } }),
+  );
+  const keys = await cache.keys();
+  await Promise.all(keys.slice(0, Math.max(0, keys.length - 10)).map((k) => cache.delete(k)));
+}
+
+async function announce(payload, via) {
+  await recordArrival(payload, via);
+  await self.registration.showNotification(payload.title || "راصد", {
+    body: payload.body || "",
+    icon: "./icon-192.png",
+    badge: "./icon-192.png",
+    dir: "rtl",
+    lang: "ar",
+    // Collapse repeats of the same subject rather than stacking them.
+    tag: payload.tag || "rasid",
+  });
+  // Wake any open window so the settings screen can update itself.
+  for (const client of await self.clients.matchAll({ type: "window" })) {
+    client.postMessage({ type: "push-arrived" });
+  }
+}
+
 self.addEventListener("push", (event) => {
   let payload = {};
   try {
@@ -69,17 +113,28 @@ self.addEventListener("push", (event) => {
   } catch {
     payload = { body: event.data ? event.data.text() : "" };
   }
-  event.waitUntil(
-    self.registration.showNotification(payload.title || "راصد", {
-      body: payload.body || "",
-      icon: "./icon-192.png",
-      badge: "./icon-192.png",
-      dir: "rtl",
-      lang: "ar",
-      // Collapse repeats of the same subject rather than stacking them.
-      tag: payload.tag || "rasid",
-    }),
-  );
+  event.waitUntil(announce(payload, "push"));
+});
+
+/*
+ * A test the page can fire itself. Notifications shown from a page and from a
+ * worker are not the same code path on Android, and the one that matters is the
+ * worker's, because that is the one a real push uses. So the test goes through
+ * here rather than calling showNotification in the tab.
+ */
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "test-notification") {
+    event.waitUntil(
+      announce(
+        {
+          title: "راصد — تجربة محلية",
+          body: "هذا إشعار جرّبته بنفسك من داخل التطبيق. وصوله يعني أن جهازك يعرض إشعارات راصد.",
+          tag: "rasid-test",
+        },
+        "local",
+      ),
+    );
+  }
 });
 
 self.addEventListener("notificationclick", (event) => {
