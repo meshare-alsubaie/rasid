@@ -105,17 +105,30 @@ try {
   }
   await page.waitForSelector(".season", { timeout: 15_000 });
 
-  for (const [tab, label] of [
-    ["season", "الموسم"],
-    ["orgs", "الجهات"],
-    ["mine", "طلباتي"],
-    ["settings", "الإعدادات"],
-  ] as const) {
-    await page.click(`[data-tab="${tab}"]`);
-    const { checked, failures } = (await page.evaluate(AUDIT)) as Result;
-    bad += failures.length;
-    console.log(`  ${label.padEnd(10)} ${String(checked).padStart(4)} runs of text · ${failures.length} below the bar`);
-    for (const f of failures) console.log(`      ${JSON.stringify(f)}`);
+  // Every theme on every screen. A theme is a palette, and a palette that was
+  // never measured is a guess about whether someone can read a closing date.
+  for (const themeId of ["instrument", "night", "warm", "sharp", "playful"]) {
+    await page.evaluate(
+      `(() => { const t = ${JSON.stringify(themeId)};
+        localStorage.setItem('rasid.theme.v1', JSON.stringify(t));
+        if (t === 'instrument') document.documentElement.removeAttribute('data-theme');
+        else document.documentElement.setAttribute('data-theme', t); })()`,
+    );
+    console.log(`\n${themeId}`);
+    for (const [tab, label] of [
+      ["season", "الموسم"],
+      ["orgs", "الجهات"],
+      ["mine", "طلباتي"],
+      ["settings", "الإعدادات"],
+    ] as const) {
+      await page.click(`[data-tab="${tab}"]`);
+      const { checked, failures } = (await page.evaluate(AUDIT)) as Result;
+      bad += failures.length;
+      console.log(
+        `  ${label.padEnd(10)} ${String(checked).padStart(4)} runs of text · ${failures.length} below the bar`,
+      );
+      for (const f of failures) console.log(`      ${JSON.stringify(f)}`);
+    }
   }
 } finally {
   await browser.close();

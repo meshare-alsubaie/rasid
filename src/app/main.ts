@@ -18,6 +18,21 @@ type Mark = "interested" | "applied" | "ignored";
 
 const MARKS_KEY = "rasid.marks.v1";
 const THRESHOLD_KEY = "rasid.threshold.v1";
+const THEME_KEY = "rasid.theme.v1";
+
+/**
+ * Themes are token overrides in the stylesheet, so this list is only the
+ * labels. Every one of them is checked by npm run audit:contrast: a palette
+ * is not finished until it measures, because a calm-looking theme that hides
+ * a closing window is worse than no theme at all.
+ */
+const THEMES: [string, string, string][] = [
+  ["instrument", "الأداة", "لوحة قياس باردة، الافتراضي"],
+  ["night", "ليلي", "الصفحة كلها داكنة، للقراءة في الظلام"],
+  ["warm", "دافئ", "ورقي هادئ، لقراءة طويلة"],
+  ["sharp", "تقني", "تباين عالٍ وحواف حادّة"],
+  ["playful", "مرح", "ألوان زاهية وزوايا دائرية"],
+];
 
 const app = document.getElementById("app")!;
 const esc = (s: string): string =>
@@ -43,6 +58,13 @@ const writeJSON = (key: string, value: unknown): void => {
 
 let marks = readJSON<Record<string, { mark: Mark; atISO: string }>>(MARKS_KEY, {});
 let threshold = readJSON<number>(THRESHOLD_KEY, 0);
+let theme = readJSON<string>(THEME_KEY, "instrument");
+
+const applyTheme = (): void => {
+  if (theme === "instrument") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", theme);
+};
+applyTheme();
 let tab: Tab = "season";
 let sector = "";
 let query = "";
@@ -286,6 +308,23 @@ function settingsScreen(): string {
       <p class="reason">افحص دائماً بنفسك عبر «افتح الصفحة الرسمية» قبل أي قرار.</p>
     </div>
     <div class="card">
+      <h3>المظهر</h3>
+      <p class="reason">اختر ما يريح عينك. كل مظهر مقيس، ولا يُعتمد إلا إذا بقي كل نصّ فيه مقروءاً.</p>
+      <ul class="themes">
+        ${THEMES.map(
+          ([id, name, desc]) => `<li>
+            <button class="theme-btn" data-theme-pick="${id}" aria-pressed="${theme === id}">
+              <span class="swatches" aria-hidden="true">
+                <i style="background:var(--sw-a)"></i><i style="background:var(--sw-b)"></i><i style="background:var(--sw-c)"></i>
+              </span>
+              <span class="theme-name">${name}</span>
+              <span class="theme-desc">${desc}</span>
+            </button>
+          </li>`,
+        ).join("")}
+      </ul>
+    </div>
+    <div class="card">
       <h3>التنبيهات</h3>
       <p class="reason">
         التنبيه يصل من جهاز واحد مسجَّل، بلا خادم وبلا حساب. اضغط الزر، اسمح للمتصفّح،
@@ -449,8 +488,19 @@ function openSheet(orgId: string): void {
 
 /* ---------- push subscription ---------- */
 
+/**
+ * base64url to bytes.
+ *
+ * Trimmed first, and hard: a secret set through a shell pipe arrives with a
+ * trailing newline, and that one invisible character made atob throw about
+ * Latin1 with no hint of where it came from. Anything outside the base64url
+ * alphabet is stripped rather than trusted.
+ */
 const b64ToBytes = (b64: string): Uint8Array => {
-  const padded = (b64 + "=".repeat((4 - (b64.length % 4)) % 4)).replace(/-/g, "+").replace(/_/g, "/");
+  const clean = b64.trim().replace(/[^A-Za-z0-9_-]/g, "");
+  const padded = (clean + "=".repeat((4 - (clean.length % 4)) % 4))
+    .replace(/-/g, "+")
+    .replace(/_/g, "/");
   return Uint8Array.from(atob(padded), (c) => c.charCodeAt(0));
 };
 
@@ -521,6 +571,14 @@ app.addEventListener("click", (e) => {
   const orgBtn = hit("[data-open-org]");
   if (orgBtn) {
     openSheet(orgBtn.dataset.openOrg!);
+    return;
+  }
+  const themeBtn = hit("[data-theme-pick]");
+  if (themeBtn) {
+    theme = themeBtn.dataset.themePick!;
+    writeJSON(THEME_KEY, theme);
+    applyTheme();
+    render();
     return;
   }
   if (hit("#subscribe")) {

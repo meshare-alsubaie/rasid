@@ -1,4 +1,4 @@
-/*
+﻿/*
  * RASID interface.
  *
  * The subject is windows that open and close on dates the user cannot predict,
@@ -17,6 +17,19 @@
  * deep green and burnt red of the spec are unreadable on near-black.
  */
 
+/*
+ * Themes.
+ *
+ * Every colour in the interface is a token, so a theme is a block of token
+ * overrides and nothing else. The panel has its own set (--panel-*) rather
+ * than borrowing --ink, because the Season Bar is a dark instrument in the
+ * light themes and must not invert along with the page in the dark one.
+ *
+ * Each theme carries its own state colours. A theme is only finished when
+ * npm run audit:contrast passes on it: a palette that looks calm and measures
+ * 3:1 is a palette that hides a closing window from someone reading on a phone
+ * in daylight.
+ */
 :root {
   --ink: #101720;
   --slate: #e7ebef;
@@ -30,7 +43,17 @@
   --hairline: #d3dae1;
   --paper-sunk: #f0f3f5;
 
-  /* On the ink panel only. Lightened so they clear 4.5:1 on near-black. */
+  /* The dark panel: the Season Bar and the answer block. */
+  --panel: #101720;
+  --panel-text: #f8fafb;
+  --panel-dim: #b9c3cd;
+  --panel-rule: #262f3b;
+  --panel-base: #1a222d;
+  --panel-month: #7d8a99;
+  --panel-label: #e3e9ef;
+  --panel-quiet: #7d8a99;
+
+  /* Lightened so they clear 4.5:1 on the panel. */
   --live-lit: #3fc78d;
   --urgent-lit: #ff8560;
   --dormant-lit: #8e9aa8;
@@ -58,6 +81,109 @@
 
   --radius: 10px;
   --radius-sm: 6px;
+}
+
+/* ---------- night: the whole page goes dark, the panel goes darker ---------- */
+[data-theme="night"] {
+  --ink: #e8edf2;
+  --slate: #0d1218;
+  --paper: #161d26;
+  --paper-sunk: #1c242e;
+  --hairline: #2a3441;
+  --dormant: #56626f;
+  --dormant-text: #9aa6b3;
+  --live: #3fc78d;
+  --urgent: #ff8560;
+  --signal: #9d95ff;
+
+  --panel: #080c11;
+  --panel-rule: #1e2732;
+  --panel-base: #151d27;
+}
+
+/* ---------- warm: paper-like, for long reading ---------- */
+[data-theme="warm"] {
+  --ink: #2b2018;
+  --slate: #f2ece2;
+  --paper: #fbf7f0;
+  --paper-sunk: #f2ebe0;
+  --hairline: #ded2c2;
+  --dormant: #9c8e7c;
+  --dormant-text: #6b5c4a;
+  --live: #2f6b3f;
+  --urgent: #a1391f;
+  --signal: #5b3fbe;
+
+  --panel: #2b2018;
+  --panel-rule: #3f3125;
+  --panel-base: #382b20;
+  --panel-month: #a3927e;
+  --panel-label: #f2ece2;
+  --panel-dim: #cbbba6;
+  --live-lit: #6fd39a;
+  --urgent-lit: #ff9c72;
+
+  --display: "Almarai", "Readex Pro", system-ui, sans-serif;
+}
+
+/* ---------- sharp: high contrast, terminal-like ---------- */
+[data-theme="sharp"] {
+  --ink: #05070a;
+  --slate: #ffffff;
+  --paper: #ffffff;
+  --paper-sunk: #f2f4f7;
+  --hairline: #05070a;
+  --dormant: #45505d;
+  --dormant-text: #2b333d;
+  --live: #036141;
+  --urgent: #93290f;
+  --signal: #1b12c4;
+
+  --panel: #05070a;
+  --panel-rule: #2a333f;
+  --panel-base: #141c26;
+  --panel-label: #ffffff;
+  --panel-month: #98a5b3;
+
+  --radius: 2px;
+  --radius-sm: 2px;
+  --display: "IBM Plex Sans Arabic", system-ui, sans-serif;
+}
+[data-theme="sharp"] .card,
+[data-theme="sharp"] .org-row,
+[data-theme="sharp"] .honesty,
+[data-theme="sharp"] .empty {
+  border-width: 2px;
+}
+
+/* ---------- playful: rounder, warmer accents, more air ---------- */
+[data-theme="playful"] {
+  --ink: #1b1033;
+  --slate: #f4f1fb;
+  --paper: #ffffff;
+  --paper-sunk: #f3eefe;
+  --hairline: #ded5f5;
+  --dormant: #8d84ab;
+  --dormant-text: #5c5279;
+  --live: #0a7350;
+  /* #bf2f6b measured 4.49:1 on the banner's own tint and failed by a hair.
+     A theme is not allowed to be pretty at the cost of a readable warning. */
+  --urgent: #a8215a;
+  --signal: #5b2fd6;
+
+  --panel: #241452;
+  --panel-rule: #3a2670;
+  --panel-base: #32206a;
+  --panel-month: #b4a5e0;
+  --panel-label: #f6f2ff;
+  --panel-dim: #cbbdf0;
+  --live-lit: #4fd6a0;
+  --urgent-lit: #ff8fb4;
+  --signal-lit: #c0b2ff;
+
+  --radius: 18px;
+  --radius-sm: 12px;
+  --display: "Baloo Bhaijaan 2", "Readex Pro", system-ui, sans-serif;
 }
 
 *,
@@ -144,8 +270,8 @@ a {
 /* ---------- the answer, first thing on the page ---------- */
 
 .answer {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--panel);
+  color: var(--panel-text);
   border-radius: var(--radius);
   padding: var(--s5);
   display: grid;
@@ -162,7 +288,7 @@ a {
   color: var(--live-lit);
 }
 .answer .sub {
-  color: #b9c3cd;
+  color: var(--panel-dim);
   font-size: var(--t-15);
   max-width: 46ch;
 }
@@ -172,14 +298,14 @@ a {
   gap: var(--s2) var(--s5);
   margin-top: var(--s2);
   padding-top: var(--s3);
-  border-top: 1px solid rgba(248, 250, 251, 0.14);
+  border-top: 1px solid var(--panel-rule);
   font-size: var(--t-13);
-  color: #b9c3cd;
+  color: var(--panel-dim);
 }
 .answer .tally b {
   font-family: var(--data);
   font-weight: 500;
-  color: var(--paper);
+  color: var(--panel-text);
   font-size: var(--t-18);
   margin-inline-end: var(--s1);
 }
@@ -285,7 +411,7 @@ a {
 }
 
 .season {
-  background: var(--ink);
+  background: var(--panel);
   border-radius: var(--radius);
   padding: var(--s4) var(--s3);
   overflow-x: auto;
@@ -310,21 +436,21 @@ a {
 .season .month {
   font-family: var(--data);
   font-size: 11px;
-  fill: #7d8a99;
+  fill: var(--panel-month);
   letter-spacing: 0.04em;
 }
 .season .lane-label {
   font-family: var(--body);
   font-size: 13px;
-  fill: #e3e9ef;
+  fill: var(--panel-label);
 }
 .season .lane-rule {
-  stroke: #262f3b;
+  stroke: var(--panel-rule);
   stroke-width: 1;
 }
 /* Faint enough that the data sits on top of it rather than inside it. */
 .season .lane-base {
-  stroke: #1a222d;
+  stroke: var(--panel-base);
   stroke-width: 5;
   stroke-linecap: round;
 }
@@ -354,10 +480,10 @@ a {
 .season .seg-unknown {
   font-family: var(--data);
   font-size: 12px;
-  fill: #7d8a99;
+  fill: var(--panel-quiet);
 }
 .season .lane-broken .lane-label {
-  fill: #8e9aa8;
+  fill: var(--dormant-lit);
 }
 .season .lane-broken .seg-unknown {
   fill: var(--urgent-lit);
@@ -378,10 +504,10 @@ a {
   gap: var(--s2) var(--s4);
   margin: var(--s4) 0 0;
   padding: var(--s3) var(--s2) 0;
-  border-top: 1px solid #232c38;
+  border-top: 1px solid var(--panel-rule);
   list-style: none;
   font-size: var(--t-13);
-  color: #97a3b1;
+  color: var(--panel-dim);
   direction: rtl;
 }
 .season .legend li {
@@ -398,7 +524,7 @@ a {
   border-radius: 2px;
   font-family: var(--data);
   font-size: 11px;
-  color: #97a3b1;
+  color: var(--panel-dim);
 }
 
 /* ---------- groups ---------- */
@@ -422,7 +548,7 @@ a {
   display: none;
 }
 .group > summary::before {
-  content: "▾";
+  content: "â–¾";
   font-size: var(--t-13);
   color: var(--dormant-text);
   transition: transform 120ms;
@@ -653,6 +779,80 @@ a {
   color: var(--signal);
   background: rgba(58, 47, 224, 0.06);
   font-weight: 500;
+}
+
+/* ---------- theme picker ---------- */
+
+.themes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: var(--s2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.theme-btn {
+  width: 100%;
+  text-align: start;
+  display: grid;
+  gap: var(--s1);
+  padding: var(--s3);
+  background: none;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+}
+.theme-btn:hover {
+  border-color: var(--dormant);
+}
+.theme-btn[aria-pressed="true"] {
+  border-color: var(--signal);
+  border-width: 2px;
+  background: var(--paper-sunk);
+}
+/* The swatches carry each theme's own colours, so the choice is visible
+   before it is made rather than described in words. */
+.theme-btn .swatches {
+  display: flex;
+  gap: 3px;
+  margin-bottom: var(--s1);
+}
+.theme-btn .swatches i {
+  width: 1.4rem;
+  height: 0.55rem;
+  border-radius: 2px;
+}
+.theme-btn[data-theme-pick="instrument"] {
+  --sw-a: #101720;
+  --sw-b: #0b6e4f;
+  --sw-c: #d3dae1;
+}
+.theme-btn[data-theme-pick="night"] {
+  --sw-a: #080c11;
+  --sw-b: #3fc78d;
+  --sw-c: #2a3441;
+}
+.theme-btn[data-theme-pick="warm"] {
+  --sw-a: #2b2018;
+  --sw-b: #2f6b3f;
+  --sw-c: #ded2c2;
+}
+.theme-btn[data-theme-pick="sharp"] {
+  --sw-a: #05070a;
+  --sw-b: #036141;
+  --sw-c: #93290f;
+}
+.theme-btn[data-theme-pick="playful"] {
+  --sw-a: #241452;
+  --sw-b: #5b2fd6;
+  --sw-c: #a8215a;
+}
+.theme-name {
+  font-family: var(--display);
+  font-weight: 600;
+}
+.theme-desc {
+  font-size: var(--t-13);
+  color: var(--dormant-text);
 }
 
 /* ---------- organisations ---------- */
