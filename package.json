@@ -11,6 +11,7 @@
     "validate": "tsx scripts/validate.ts",
     "collect": "tsx scripts/collect.ts",
     "verify-leads": "tsx scripts/verify-leads.ts",
+    "add-lead": "tsx scripts/add-lead.ts",
     "diff-source": "tsx scripts/diff-source.ts",
     "test:classifier": "tsx scripts/test-classifier.ts",
     "icons": "tsx scripts/make-icons.ts",

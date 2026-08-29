@@ -878,6 +878,15 @@
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
+      },
+      {
+        "url": "https://career.dga.gov.sa/ar/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:54:36.226Z",
+        "verifiedNote": "عنوان الصفحة: \"Career portal\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2444 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"نعمل في هيئة الحكومة الرقمية على تشكيل المشهد الرقمي بالمملكة عبر دعم الجهات الحكومية في تقديم وتطوير خدمات رق…\"",
+        "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
       }
     ],
     "applyVia": null,
@@ -2034,7 +2043,17 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://me.devoteam.com/jobs/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "بوابة وظائف الشرق الأوسط، من بحث",
+        "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
@@ -2061,7 +2080,17 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://careers.ejada.com/ar/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:54:36.226Z",
+        "verifiedNote": "عنوان الصفحة: \"موقع إجادة للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1380 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Why EjadaWorking at Ejada has been an incredibly rewarding experience. The supportive work environment, opport…\"",
+        "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
@@ -2090,7 +2119,17 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://careers.fakeeh.care/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "بوابة التوظيف الرسمية، من بحث",
+        "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      }
+    ],
     "applyVia": {
       "method": "email",
       "target": "hr@fakeeh.care",
@@ -2123,7 +2162,17 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://master-works.sa/en/Careers",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:54:36.226Z",
+        "verifiedNote": "عنوان الصفحة: \"Careers | Master Works\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1493 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Build your career at Master Works CSS Tags banner banner-hero Why join Master Works? Learn We offer unlimited …\"",
+        "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
@@ -2229,7 +2278,17 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://nour.net.sa/ar/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:54:36.226Z",
+        "verifiedNote": "عنوان الصفحة: \"نورنت الحلول الرقمية والخدمات السحابية المتكاملة | نورنت\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3805 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مُمكّن التحول الرقمي الرائد في المملكة العربية السعوديةالخدمات المدارةدعنا نتولى مهام صيانة النظام الروتينية و…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
@@ -2358,7 +2417,17 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://wadimakkah.sa/en/home",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:54:36.226Z",
+        "verifiedNote": "عنوان الصفحة: \"شركة وادي مكة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1452 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"استثمر في مكة الفرص الاستثمارية الكبيرة الفرص الاستثمارية الصفيرة وادي مكة نعزز دورنا في بناء مجتمعالمعرفة واق…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      }
+    ],
     "applyVia": {
       "method": "email",
       "target": "career@wadimakkah.sa",

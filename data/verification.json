@@ -2525,5 +2525,257 @@
     "urlTried": "https://www.tvtc.gov.sa/",
     "outcome": "unreachable",
     "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "dga",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://dgacareer.talentera.com/ar/page/coop-program/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "dga",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://career.dga.gov.sa/ar/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Career portal\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2444 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"نعمل في هيئة الحكومة الرقمية على تشكيل المشهد الرقمي بالمملكة عبر دعم الجهات الحكومية في تقديم وتطوير خدمات رق…\""
+  },
+  {
+    "targetId": "ncdc",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.ncdc.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taqnia",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://taqnia.com/en/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (28 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://me.devoteam.com/jobs/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "ejada",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://careers.ejada.com/ar/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"موقع إجادة للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1380 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Why EjadaWorking at Ejada has been an incredibly rewarding experience. The supportive work environment, opport…\""
+  },
+  {
+    "targetId": "fakeeh",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://careers.fakeeh.care/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "masterworks",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://master-works.sa/en/Careers",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers | Master Works\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1493 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Build your career at Master Works CSS Tags banner banner-hero Why join Master Works? Learn We offer unlimited …\""
+  },
+  {
+    "targetId": "ndf",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.ndf.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "nournet",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://nour.net.sa/ar/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"نورنت الحلول الرقمية والخدمات السحابية المتكاملة | نورنت\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3805 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مُمكّن التحول الرقمي الرائد في المملكة العربية السعوديةالخدمات المدارةدعنا نتولى مهام صيانة النظام الروتينية و…\""
+  },
+  {
+    "targetId": "wadi_makkah",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://wadimakkah.sa/en/home",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"شركة وادي مكة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1452 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"استثمر في مكة الفرص الاستثمارية الكبيرة الفرص الاستثمارية الصفيرة وادي مكة نعزز دورنا في بناء مجتمعالمعرفة واق…\""
+  },
+  {
+    "targetId": "bahri",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://careers.bahri.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "customs",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.customs.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "derayah",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "http://www.derayah.com/web/ar/index.html",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "http://www.falcom.com.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://gaca.gov.sa/web/ar-sa/page/home",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (107 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "gcam",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.gcam.gov.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "housing",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.housing.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "hrc",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.hrc.gov.sa/ar-sa/Pages/home.aspx",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (89 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "jadwa",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "http://www.jadwa.com/en",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "kasb",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · ولا بمتصفّح حقيقي ولا من جذر الموقع"
+  },
+  {
+    "targetId": "lcgpa",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://lcgpa.gov.sa/ar/Pages/default.aspx",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "mawhiba",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.mawhiba.org/Ar/About/who/Pages/Brief.aspx",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "media",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://media.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "mep",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.mep.gov.sa/ar",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "moc",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.moc.gov.sa/ar",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "ncar",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://ncar.gov.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "pension",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.pension.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "redf",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.housing.gov.sa/ar/related-links/140",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sanabil",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "http://www.sanabil.sa/ar/pages/default.aspx",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "saudi_exports",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.saudiexports.sa/ar/pages/default.aspx",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "seec",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.seec.gov.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "ssc",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://saudispace.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sta",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://sta.gov.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "tawuniya",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.tawuniya.com.sa/about-us/contact-us",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · ولا بمتصفّح حقيقي ولا من جذر الموقع"
+  },
+  {
+    "targetId": "tvtc",
+    "checkedAtISO": "2026-08-29T21:54:36.226Z",
+    "urlTried": "https://www.tvtc.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
   }
 ]
