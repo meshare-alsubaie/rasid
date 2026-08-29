@@ -2016,7 +2016,17 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://www.aecl.com/ar/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T22:00:00.123Z",
+        "verifiedNote": "عنوان الصفحة: \"الصفحة الرئيسية | شركة الإلكترونيات المتقدمة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3213 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرياض، المملكة العربية السعودية – تعلن الإلكترونيات المتقدمة، إحدى شركات SAMI، عن مشاركتها في مؤتمر ومعرض ليب…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
@@ -2050,6 +2060,15 @@
         "verifiedAtISO": null,
         "verifiedNote": "بوابة وظائف الشرق الأوسط، من بحث",
         "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.devoteam.com/me/join-us/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "صفحة التوظيف، من بحث",
+        "type": "site_root",
         "checkFrequencyHours": 12,
         "renderMode": "static"
       }
@@ -2126,6 +2145,15 @@
         "verifiedAtISO": null,
         "verifiedNote": "بوابة التوظيف الرسمية، من بحث",
         "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.fakeeh.care/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T22:00:00.123Z",
+        "verifiedNote": "عنوان الصفحة: \"مجموعة فقيه الصحية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 407 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مرحبًا بكم في عالم الرعاية الصحية الجديد مع المستشفيات الديناميكية والحديثة والرائدة متعددة التخصصات في المملك…\"",
+        "type": "site_root",
         "checkFrequencyHours": 12,
         "renderMode": "static"
       }
@@ -2359,7 +2387,17 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://www.taifcity.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "الموقع الرسمي، من بحث",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
@@ -2388,7 +2426,17 @@
     "flexibility": "high",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://www.tu.edu.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T22:00:00.123Z",
+        "verifiedNote": "عنوان الصفحة: \"جامعة الطائف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 570 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"جامعة الطائف تحقق تصنيفاً متقدماً في تصنيف التايمز للجامعات الآسيوية لعام 2026 امتداد لمنجز يتجدّد .. ومسار يت…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
