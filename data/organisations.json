@@ -1251,9 +1251,8 @@
         "verifiedNote": "عنوان الصفحة: \"Coop Program - موبايلي المسارات الوظيفية\". قرأت عليها حرفياً: \"صممنا برنامج التدريب التعاوني بدقة لسد الفجوة بين المعرفة النظرية المكتسبة في السنوات الماضية وبين الخبرة العملية\" و\"طلاب التكنولوجيا: سواء كنت تدرس تخصصًا في التكنولوجيا، فإن معدل تقديرك الذي يبلغ 3.25/5 أو 2.60/4 أو أعلى يفتح الأبواب أمامك\".",
         "type": "announcement_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static",
-        "browserRetryInCI": true,
-        "renderModeNote": "أُعيد إلى static بعد ست محاولات انهار فيها مُصيِّر Chromium على جهاز المستخدم، عند page.goto ثم page.content ثم page.evaluate. حجب الصور والخطوط والوسائط وإعادة المحاولة لم تنقذها. حدّ ذاكرة لا عطب في الصفحة، فتُعاد المحاولة في CI وحده."
+        "renderMode": "browser",
+        "renderModeNote": "promoted to browser on 2026-08-29T20:08:44.470Z: static extraction failed on this page, rendering in CI returned 1405 chars"
       },
       {
         "url": "https://careers.mobily.com.sa",
