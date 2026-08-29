@@ -1,0 +1,4895 @@
+[
+  {
+    "id": "aramco",
+    "nameAr": "أرامكو السعودية",
+    "nameEn": "Saudi Aramco",
+    "sector": "industrial",
+    "city": [],
+    "tier": "S",
+    "requiresZeroCourses": {
+      "value": true,
+      "provenance": "official",
+      "quote": "عدم تسجيل أي مواد دراسية خلال فترة التدريب"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:25:42.587Z",
+        "verifiedNote": "عنوان الصفحة: \"Student programs | Aramco\". قرأت عليها حرفياً: \"Scholarship opportunities and job preparation programs for students.\" وتسرد برامج الطلبة: College continuation program، Apprenticeship program، College degree program، Vocational Colleges Graduates، Summer Training. صفحة برامج طلبة رسمية، وصفحة التدريب الجامعي فرعية منها.",
+        "type": "careers_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:25:42.587Z",
+      "verifiedNote": "عنوان الصفحة: \"Student programs | Aramco\". قرأت عليها حرفياً: \"Scholarship opportunities and job preparation programs for students.\" وتسرد برامج الطلبة: College continuation program، Apprenticeship program، College degree program، Vocational Colleges Graduates، Summer Training. صفحة برامج طلبة رسمية، وصفحة التدريب الجامعي فرعية منها."
+    },
+    "historicalWindows": [],
+    "notes": "قدّم رغم الشرط؛ الرفض لا يكلّف شيئاً. رابط الشرط المنشور لم يُوثّق بعد.",
+    "importSource": "spec"
+  },
+  {
+    "id": "nca",
+    "nameAr": "الهيئة الوطنية للأمن السيبراني",
+    "nameEn": "National Cybersecurity Authority (NCA)",
+    "sector": "gov",
+    "city": [],
+    "tier": "S",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://nca.gov.sa/ar/cyber-training-and-qualifications/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:25:42.587Z",
+        "verifiedNote": "عنوان الصفحة: \"تأهيل وتدريب الكوادر السيبرانية | NCA\". قرأت عليها حرفياً: \"تأهيل وتدريب الكوادر السيبرانية\" و\"أبرز البرامج\" و\"تاريخ آخر تعديل: 02/06/2025\". صفحة تدريب رسمية للهيئة، لكنها ليست صفحة تدريب تعاوني محدّدة، ولم يظهر عليها إعلان تعاوني وقت الفحص.",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://nca.gov.sa/ar/cyber-training-and-qualifications/",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:25:42.587Z",
+      "verifiedNote": "عنوان الصفحة: \"تأهيل وتدريب الكوادر السيبرانية | NCA\". قرأت عليها حرفياً: \"تأهيل وتدريب الكوادر السيبرانية\" و\"أبرز البرامج\" و\"تاريخ آخر تعديل: 02/06/2025\". صفحة تدريب رسمية للهيئة، لكنها ليست صفحة تدريب تعاوني محدّدة، ولم يظهر عليها إعلان تعاوني وقت الفحص."
+    },
+    "historicalWindows": [],
+    "notes": "تدير أيضاً معسكرات تدريبية مجانية، وهي مسار منفصل عن التدريب التعاوني ويُتابَع على حدة.",
+    "importSource": "spec"
+  },
+  {
+    "id": "ncac",
+    "nameAr": "الأكاديمية الوطنية للأمن السيبراني",
+    "nameEn": "National Cybersecurity Academy (NCA)",
+    "sector": "gov",
+    "city": [],
+    "tier": "S",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://ncac.edu.sa",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مرشّح من قائمة المستخدم، لم يُفتح بصرياً بعد.",
+        "type": "site_root",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://nca.gov.sa/ar/education-program/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"البرامج التعليمية | NCA\". قرأت عليها حرفياً: \"البرامج التعليمية\" و\"التعليم العالي\" و\"تستهدف الهيئة تحقيق متطلبات سوق العمل الحالي والمستقبلي؛ من خلال رفع مستوى جودة البرامج الأكاديمية\". صفحة سياسة تعليمية لا صفحة تدريب، ولا ترد فيها أي من علامات القبول. ونطاق الأكاديمية ncac.edu.sa رفض الاتصال في محاولة سابقة.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "الأكاديمية الوطنية للأمن السيبراني، تابعة للهيئة الوطنية للأمن السيبراني، وتنفّذ المعسكرات والبرامج التدريبية لطلاب البكالوريوس. جهة مستقلة عن المركز الوطني للتصديق الرقمي (ncdc) ولا تُدمج فيه. أقرب جهة في القاعدة كلها لتخصّص المستخدم.",
+    "importSource": "manual"
+  },
+  {
+    "id": "pif",
+    "nameAr": "صندوق الاستثمارات العامة",
+    "nameEn": "Public Investment Fund (PIF)",
+    "sector": "gov",
+    "city": [],
+    "tier": "S",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.pif.gov.sa/ar/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "sabic",
+    "nameAr": "سابك",
+    "nameEn": "SABIC",
+    "sector": "industrial",
+    "city": [],
+    "tier": "S",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.sabic.com/ar/careers/middle-east-africa/students-and-fresh-graduates",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:25:42.587Z",
+        "verifiedNote": "عنوان الصفحة: \"SABIC - الطلاب والخريجون\". قرأت عليها حرفياً: \"تقدّم (سابك) مجموعة واسعة من فرص التطوير والمسارات المهنية للطلاب والخريجين الجدد\" و\"من خلال برامج متخصصة مثل برامج المسار المهني المبكر، والتدريب التعاوني، وبرامج الابتعاث\". ذكر صريح للتدريب التعاوني.",
+        "type": "careers_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://www.sabic.com/ar/careers/middle-east-africa/students-and-fresh-graduates",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:25:42.587Z",
+      "verifiedNote": "عنوان الصفحة: \"SABIC - الطلاب والخريجون\". قرأت عليها حرفياً: \"تقدّم (سابك) مجموعة واسعة من فرص التطوير والمسارات المهنية للطلاب والخريجين الجدد\" و\"من خلال برامج متخصصة مثل برامج المسار المهني المبكر، والتدريب التعاوني، وبرامج الابتعاث\". ذكر صريح للتدريب التعاوني."
+    },
+    "historicalWindows": [],
+    "notes": "تأكّد أنها تقدّم التدريب التعاوني: صفحة \"الطلاب والخريجون\" الرسمية تذكر \"التدريب التعاوني\" ضمن برامجها.",
+    "importSource": "spec"
+  },
+  {
+    "id": "sama",
+    "nameAr": "البنك المركزي السعودي",
+    "nameEn": "Saudi Central Bank (SAMA)",
+    "sector": "bank",
+    "city": [],
+    "tier": "S",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://careers.sama.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"SAMA Careers\". قرأت عليها حرفياً: \"Saudi Central Bank welcomes you in our Recruitment Page\" و\"Join the Saudi Central Bank Talent Community\". بوابة توظيف رسمية مؤكّدة، بلا قسم تدريب ظاهر.",
+        "type": "portal",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@sama.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "sdaia",
+    "nameAr": "الهيئة السعودية للبيانات والذكاء الاصطناعي",
+    "nameEn": "Saudi Data and AI Authority (SDAIA)",
+    "sector": "gov",
+    "city": [],
+    "tier": "S",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://sdaia.gov.sa/ar/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:25:42.587Z",
+        "verifiedNote": "عنوان الصفحة: \"سدايا | برنامج سدايا للتدريب التعاوني\". قرأت عليها حرفياً: \"يهدف برنامج سدايا للتدريب التعاوني إلى تقديم تدريب عملي وعلى رأس العمل لطلاب وطالبات الجامعات في المملكة.\" وعليها رابط \"التسجيل في التدريب التعاوني\". صفحة تدريب تعاوني صريحة.",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://careers.sdaia.gov.sa/training",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "ظهر في البحث بعنوان \"برنامج سدايا للتدريب التعاوني - التوظيف\"، ويبدو بوابة التقديم المقابلة لصفحة التعريف المحققة. لم يُفتح بعد.",
+        "type": "portal",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://sdaia.gov.sa/ar/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:25:42.587Z",
+      "verifiedNote": "عنوان الصفحة: \"سدايا | برنامج سدايا للتدريب التعاوني\". قرأت عليها حرفياً: \"يهدف برنامج سدايا للتدريب التعاوني إلى تقديم تدريب عملي وعلى رأس العمل لطلاب وطالبات الجامعات في المملكة.\" وعليها رابط \"التسجيل في التدريب التعاوني\". صفحة تدريب تعاوني صريحة."
+    },
+    "historicalWindows": [],
+    "notes": "النافذة تاريخياً قصيرة، نحو أسبوع. يُطلب السجل الأكاديمي. المدة لم تُوثّق بتواريخ بعد. تأكّد أنها تقدّم التدريب التعاوني: صفحة \"برنامج سدايا للتدريب التعاوني\" الرسمية، قُرئت بتاريخ الفحص.",
+    "importSource": "spec"
+  },
+  {
+    "id": "site",
+    "nameAr": "الشركة السعودية لتقنية المعلومات",
+    "nameEn": "Saudi Information Technology Company (SITE)",
+    "sector": "semi_gov",
+    "city": [],
+    "tier": "S",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "الذراع التقنية للهيئة الوطنية للأمن السيبراني.",
+    "importSource": "spec"
+  },
+  {
+    "id": "stc",
+    "nameAr": "stc",
+    "nameEn": "stc",
+    "sector": "tech",
+    "city": [],
+    "tier": "S",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://careers.stc.com.sa/go/%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A/7736823/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:46:07.173Z",
+        "verifiedNote": "وسم title فارغ على هذه الصفحة. قرأت عليها حرفياً: \"التدريب التعاوني\" كعنوان الفئة، ثم \"لا توجد حاليًا أي مناصب شاغرة مطابقة لهذه الفئة أو هذا الموقع\". صفحة فئة التدريب التعاوني داخل بوابة توظيف stc، وهي غير الصفحة الرئيسية التي رُفضت سابقاً.",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://careers.stc.com.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"Jobs at stc\". قرأت عليها حرفياً: \"find a job create an account easy apply about us join us\" و\"your journey begins here\". بوابة وظائف رسمية مؤكّدة، لكن لا قسم تدريب فيها ولا ذكر للتدريب التعاوني.",
+        "type": "portal",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://careers.stc.com.sa/go/%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A/7736823/",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:46:07.173Z",
+      "verifiedNote": "وسم title فارغ على هذه الصفحة. قرأت عليها حرفياً: \"التدريب التعاوني\" كعنوان الفئة، ثم \"لا توجد حاليًا أي مناصب شاغرة مطابقة لهذه الفئة أو هذا الموقع\". صفحة فئة التدريب التعاوني داخل بوابة توظيف stc، وهي غير الصفحة الرئيسية التي رُفضت سابقاً."
+    },
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "albilad",
+    "nameAr": "بنك البلاد",
+    "nameEn": "Bank Albilad",
+    "sector": "bank",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.bankalbilad.com.sa/en/about/pages/training.aspx",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T02:14:14.571Z",
+        "verifiedNote": "عنوان الصفحة: \"Cooperative and Summer Training Program\". قرأت عليها حرفياً: \"we are cooperating strategically with local and international universities and institutes by giving the graduates the opportunity for On-Job Training through COOP Program\". الرابط المرشّح على bankalbilad.com يعيد التوجيه إلى نطاق bankalbilad.com.sa.",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://bankalbilad.com/ar/about/Pages/Training.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://www.bankalbilad.com.sa/en/about/pages/training.aspx",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T02:14:14.571Z",
+      "verifiedNote": "عنوان الصفحة: \"Cooperative and Summer Training Program\". قرأت عليها حرفياً: \"we are cooperating strategically with local and international universities and institutes by giving the graduates the opportunity for On-Job Training through COOP Program\". الرابط المرشّح على bankalbilad.com يعيد التوجيه إلى نطاق bankalbilad.com.sa."
+    },
+    "historicalWindows": [],
+    "notes": "لديها صفحة تدريب مخصّصة. الرابط يحتاج تحقّقاً قبل إدخاله. مرشّح من نتائج بحث ويب، لم يُفتح بصرياً بعد. خط الأنابيب يتخطّاه حتى يُتحقّق منه.",
+    "importSource": "spec"
+  },
+  {
+    "id": "alinma",
+    "nameAr": "مصرف الإنماء",
+    "nameEn": "Alinma Bank",
+    "sector": "bank",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://alinma.com/Career/coopAr.html",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.alinma.com/Career/coopAr.html",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "لم أفتحها: نطاق alinma.com محجوب بسياسة المتصفح في بيئتي، والرسالة الحرفية «blocked by policy and cannot be opened in the Browser pane». الحجب من طرفي لا من المصرف، فالرابط يبقى مرشّحاً صالحاً ويحتاج فتحاً يدوياً منك.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "لديها صفحة تدريب تعاوني مخصّصة. الرابط يحتاج تحقّقاً قبل إدخاله. مرشّح من نتائج بحث ويب، لم يُفتح بصرياً بعد. خط الأنابيب يتخطّاه حتى يُتحقّق منه.",
+    "importSource": "spec"
+  },
+  {
+    "id": "alrajhi",
+    "nameAr": "مصرف الراجحي",
+    "nameEn": "Al Rajhi Bank",
+    "sector": "bank",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://careers.alrajhibank.com.sa/ar/page/coop-program/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T02:14:14.571Z",
+        "verifiedNote": "عنوان الصفحة: \"Al Rajhi Bank Careers\". قرأت عليها حرفياً: \"ترى أكاديمية مصرف الراجحي أن التدريب التعاوني يعد عنصراً أساسياً في وضع مسار واضح نحو وظائف ناجحة\" و\"من خلال برنامج التدريب التعاوني سيحصل الطلاب على فرصة لتنمية مواهبهم وقدراتهم وتطبيق معرفتهم الأكاديمية في بيئة عمل حيوية\" و\"شروط الانضمام للبرنامج: التقديم عبر موقع مصرف الراجحي للتدريب التعاوني\".",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.alrajhibank.com.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://careers.alrajhibank.com.sa/ar/page/coop-program/",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T02:14:14.571Z",
+      "verifiedNote": "عنوان الصفحة: \"Al Rajhi Bank Careers\". قرأت عليها حرفياً: \"ترى أكاديمية مصرف الراجحي أن التدريب التعاوني يعد عنصراً أساسياً في وضع مسار واضح نحو وظائف ناجحة\" و\"من خلال برنامج التدريب التعاوني سيحصل الطلاب على فرصة لتنمية مواهبهم وقدراتهم وتطبيق معرفتهم الأكاديمية في بيئة عمل حيوية\" و\"شروط الانضمام للبرنامج: التقديم عبر موقع مصرف الراجحي للتدريب التعاوني\"."
+    },
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "anb",
+    "nameAr": "البنك العربي الوطني",
+    "nameEn": "Arab National Bank (ANB)",
+    "sector": "bank",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "http://www.anb.com.sa/Default.aspx?tabid=634&language=ar-SA",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://careers.anb.sa/ar/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"موقع البنك العربي الوطني للتوظيف\". قرأت عليها حرفياً: \"كن جزءًا من فريقنا. أنت على بعد 3 خطوات فقط لتصبح جزءًا من فريقنا\" و\"البحث عن وظيفة\". بوابة توظيف عامة بلا قسم تدريب تعاوني.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "bankaljazira",
+    "nameAr": "بنك الجزيرة",
+    "nameEn": "Bank AlJazira",
+    "sector": "bank",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.bankaljazira.com/ar-sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "Call_Center_Supervisor@BAJ.Com.SA",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "bog",
+    "nameAr": "ديوان المظالم",
+    "nameEn": "Board of Grievances",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.bog.gov.sa/en/EServices/Pages/khabeer.aspx",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+        "verifiedNote": "عنوان الصفحة: \"KHABIR COOPERATIVE TRAINING PLATFORM\". قرأت عليها حرفياً: \"KHABIR COOPERATIVE TRAINING PLATFORM\" و\"A platform designed to receive and process training requests in accordance with the standards outlined on the platform\" مع زر \"Start Service\". هذه صفحة الخدمة على نطاق الديوان الرسمي، لا رابط المنصّة المباشر.",
+        "type": "portal",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://www.bog.gov.sa/en/EServices/Pages/khabeer.aspx",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+      "verifiedNote": "عنوان الصفحة: \"KHABIR COOPERATIVE TRAINING PLATFORM\". قرأت عليها حرفياً: \"KHABIR COOPERATIVE TRAINING PLATFORM\" و\"A platform designed to receive and process training requests in accordance with the standards outlined on the platform\" مع زر \"Start Service\". هذه صفحة الخدمة على نطاق الديوان الرسمي، لا رابط المنصّة المباشر."
+    },
+    "historicalWindows": [],
+    "notes": "برنامج «خبير» على منصّة رقمية خاصة بالديوان. الرابط يحتاج تحقّقاً.",
+    "importSource": "spec"
+  },
+  {
+    "id": "bsf",
+    "nameAr": "البنك السعودي الفرنسي",
+    "nameEn": "Banque Saudi Fransi (BSF)",
+    "sector": "bank",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.alfransi.com.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.bsfcareers.sa/ar/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"موقع BSF للتوظيف\". قرأت عليها حرفياً: \"تقديم السيرة الذاتية\" و\"البحث عن وظيفة\" و\"أنشئ سيرتك الذاتية\". بوابة توظيف عامة بلا قسم تدريب تعاوني ثابت. البحث يؤكّد وجود برنامج تعاوني بشرط معدل 2.5 من 4، لكنه يُنشر كإعلان موسمي داخل البوابة.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "citc",
+    "nameAr": "هيئة الاتصالات والفضاء والتقنية",
+    "nameEn": "Communications, Space and Technology Commission (CST)",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.citc.gov.sa/ar/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.cst.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "الرابط citc.gov.sa يعيد التوجيه إلى https://www.cst.gov.sa/ بعنوان \"هيئة الاتصالات والفضاء والتقنية | المملكة العربية السعودية\"، وهذا يؤكّد تغيّر الاسم فعلياً. الصفحة رئيسية تنظيمية، قرأت عليها \"ننظم قطاع الاتصالات لربط المملكة بكفاءة وموثوقية\" و\"الخدمات الرقمية\"، بلا قسم توظيف أو تدريب.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@citc.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec",
+    "notes": "ملف COOP يسمّيها «هيئة الاتصالات وتقنية المعلومات»، وهو الاسم قبل أن تصبح هيئة الاتصالات والفضاء والتقنية."
+  },
+  {
+    "id": "cma",
+    "nameAr": "هيئة السوق المالية",
+    "nameEn": "Capital Market Authority (CMA)",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": true,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://careers.cma.gov.sa/ar/page/coop-program/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+        "verifiedNote": "عنوان الصفحة: \"هيئة السوق المالية\". قرأت عليها حرفياً: \"برنامج التدريب التعاوني\" و\"تتيح الهيئة الفرصة لطلاب والطالبات الذين يتطلب تخرجهم قضاء فترة من التدريب العملي\"، وضمن التخصصات \"جميع تخصصات تقنية المعلومات\"، ومن معايير القبول \"أن يكون سعودي الجنسية، خطاب اعتماد التدريب، انتظام كلي، معدل دراسي لا يقل عن جيد جداً\".",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://cma.org.sa/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@cma.org.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": {
+      "url": "https://careers.cma.gov.sa/ar/page/coop-program/",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+      "verifiedNote": "عنوان الصفحة: \"هيئة السوق المالية\". قرأت عليها حرفياً: \"برنامج التدريب التعاوني\" و\"تتيح الهيئة الفرصة لطلاب والطالبات الذين يتطلب تخرجهم قضاء فترة من التدريب العملي\"، وضمن التخصصات \"جميع تخصصات تقنية المعلومات\"، ومن معايير القبول \"أن يكون سعودي الجنسية، خطاب اعتماد التدريب، انتظام كلي، معدل دراسي لا يقل عن جيد جداً\"."
+    },
+    "historicalWindows": [],
+    "importSource": "spec",
+    "notes": "من معايير القبول المنشورة عبارة \"انتظام كلي\". لم أعدّها شرط تصفير مواد، لأنها في العرف الجامعي السعودي تصف نوع القيد (انتظام مقابل انتساب) لا التفرّغ أثناء التدريب، والمواصفة تمنع الاستنتاج. تحتاج تأكيداً من الهيئة نفسها قبل الاعتماد عليها."
+  },
+  {
+    "id": "deloitte_sa",
+    "nameAr": "ديلويت السعودية",
+    "nameEn": "Deloitte Saudi Arabia",
+    "sector": "consulting",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www2.deloitte.com/sa/en/legal/about-deloitte-saudi-arabia.html",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "emakhdoum@deloitte.com",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "dga",
+    "nameAr": "هيئة الحكومة الرقمية",
+    "nameEn": "Digital Government Authority (DGA)",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": false,
+      "provenance": "official"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://dgacareer.talentera.com/ar/page/coop-program/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "رفض المتصفح الاتصال بنطاق dgacareer.talentera.com في محاولتين. البحث يعطي العنوان \"برنامج ميدان للتدريب التعاوني - هيئة الحكومة الرقمية\" وشرطاً منشوراً بمعدل لا يقل عن 3.5 من 5 أو 2.8 من 4، لكنني لم أقرأ الصفحة بنفسي فلا تُثبَّت. تبقى مرشّحاً.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "برنامج «ميدان». الشروط المنشورة: معدل ٢٫٨ من ٤، وأن تشترط الجامعة التدريب التعاوني. لا يرد فيها شرط تصفير المواد. رابط الشروط لم يُوثّق بعد.",
+    "importSource": "spec"
+  },
+  {
+    "id": "elm",
+    "nameAr": "شركة علم",
+    "nameEn": "Elm Company",
+    "sector": "tech",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "large",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://career.elm.sa/elm/go/coop-trainee-and-training-program/8486100/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:46:07.173Z",
+        "verifiedNote": "وسم title فارغ على هذه الصفحة، وعنوان التبويب هو المسار نفسه. قرأت عليها حرفياً: \"coop trainee and training program\" و\"المتدربون وبرامج التدريب\" و\"سد الفجوة بين الخبرة التعليمية والعملية\". صفحة فئة التدريب التعاوني في بوابة توظيف علم، ولا شواغر معروضة وقت الفحص.",
+        "type": "careers_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://career.elm.sa/elm/go/coop-trainee-and-training-program/8486100/",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:46:07.173Z",
+      "verifiedNote": "وسم title فارغ على هذه الصفحة، وعنوان التبويب هو المسار نفسه. قرأت عليها حرفياً: \"coop trainee and training program\" و\"المتدربون وبرامج التدريب\" و\"سد الفجوة بين الخبرة التعليمية والعملية\". صفحة فئة التدريب التعاوني في بوابة توظيف علم، ولا شواغر معروضة وقت الفحص."
+    },
+    "historicalWindows": [],
+    "notes": "دفعات تدريب كبيرة.",
+    "importSource": "spec"
+  },
+  {
+    "id": "ey_sa",
+    "nameAr": "إي واي السعودية",
+    "nameEn": "EY Saudi Arabia",
+    "sector": "consulting",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.ey.com/en_sa",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "gastat",
+    "nameAr": "الهيئة العامة للإحصاء",
+    "nameEn": "General Authority for Statistics (GASTAT)",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.stats.gov.sa/en/cooperative-training",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+        "verifiedNote": "عنوان الصفحة: \"Cooperative Training - General Authority for Statistics\". قرأت عليها حرفياً: \"GASTAT introduces the cooperative training program which aims to increase the level of knowledge and skill among the young talented students\" و\"Admission Requirements: GPA must be more than 3.75/5 or 2.75/4\".",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.stats.gov.sa/ar",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@stats.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": {
+      "url": "https://www.stats.gov.sa/en/cooperative-training",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+      "verifiedNote": "عنوان الصفحة: \"Cooperative Training - General Authority for Statistics\". قرأت عليها حرفياً: \"GASTAT introduces the cooperative training program which aims to increase the level of knowledge and skill among the young talented students\" و\"Admission Requirements: GPA must be more than 3.75/5 or 2.75/4\"."
+    },
+    "historicalWindows": [],
+    "importSource": "spec",
+    "notes": "الحد الأدنى للمعدل المنشور 2.75 من 4 أو 3.75 من 5."
+  },
+  {
+    "id": "kpmg_sa",
+    "nameAr": "كي بي إم جي السعودية",
+    "nameEn": "KPMG Saudi Arabia",
+    "sector": "consulting",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://slccareers.kpmg.com/job/Riyadh-KPMG-Audit-COOP-Program-(Riyadh,-Jeddah,-and-Khobar)/857222523/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"KPMG Audit COOP Program (Riyadh, Jeddah, and Khobar) Job Details | KPMG Professional Services\"، ومتنها حرفياً: \"Sorry, this position has been filled.\" العنوان يحمل علامة قبول، لكن الصفحة إعلان وظيفة منتهٍ لا صفحة برنامج ثابتة، وتسليمك رابطاً يعرض «امتلأت» ليس رابط تحقّق يدوي. النطاق slccareers.kpmg.com هو موقع توظيف KPMG السعودية فعلاً، فالجولة القادمة تبدأ من جذره.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "ذراع الاستشارات التقنية والسيبرانية.",
+    "importSource": "spec"
+  },
+  {
+    "id": "maaden",
+    "nameAr": "معادن",
+    "nameEn": "Ma'aden",
+    "sector": "industrial",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://maaden.com.sa",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "type": "careers_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.maaden.com.sa/ar/careers/working",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "careers_page",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://careers.maaden.com/gb/en",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "الرابط maaden.com.sa/ar/careers/working يعيد التوجيه إلى https://careers.maaden.com/gb/en بعنوان \"Maaden: Exciting Career Opportunities in Mining Industry\". قرأت عليها حرفياً: \"WORK AT WHAT COMES NEXT\" و\"WHY JOIN MAADEN؟\". بوابة توظيف عامة بلا ذكر للتدريب التعاوني.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@maaden.com.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مرشّح من نتائج بحث ويب، لم يُفتح بصرياً بعد. خط الأنابيب يتخطّاه حتى يُتحقّق منه.",
+    "importSource": "spec"
+  },
+  {
+    "id": "mcit",
+    "nameAr": "وزارة الاتصالات وتقنية المعلومات",
+    "nameEn": "Ministry of Communications and Information Technology (MCIT)",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://futureskills.mcit.gov.sa/ar/coop-training",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:46:07.173Z",
+        "verifiedNote": "عنوان الصفحة: \"التدريب التعاوني | بوابة مهارات المستقبل\". قرأت عليها حرفياً: \"التدريب التعاوني\" ثم \"لا توجد نتائج بحث توافق البيانات المدخلة\". صفحة التدريب التعاوني في بوابة مهارات المستقبل التابعة للوزارة، وقائمتها فارغة وقت الفحص.",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.mcit.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://futureskills.mcit.gov.sa/ar/coop-training",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:46:07.173Z",
+      "verifiedNote": "عنوان الصفحة: \"التدريب التعاوني | بوابة مهارات المستقبل\". قرأت عليها حرفياً: \"التدريب التعاوني\" ثم \"لا توجد نتائج بحث توافق البيانات المدخلة\". صفحة التدريب التعاوني في بوابة مهارات المستقبل التابعة للوزارة، وقائمتها فارغة وقت الفحص."
+    },
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "mim",
+    "nameAr": "وزارة الصناعة والثروة المعدنية",
+    "nameEn": "Ministry of Industry and Mineral Resources",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.mim.gov.sa/ar/empower-training/cooperative-training",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+        "verifiedNote": "عنوان الصفحة: \"التدريب التعاوني - وزارة الصناعة والثروة المعدنية\". قرأت في متنها حرفياً: \"تقدم وزارة الصناعة والثروة المعدنية مبادرة التدريب التعاوني بالتعاون مع المنشآت الصناعية في جميع أنحاء المملكة، والتي تهدف إلى تنمية القدرات البشرية وتطويرها، من خلال اكتساب المهارات العملية والمعرفية من الكفاءات الوطنية المتخصصة في المجالات الصناعية الهندسية والتقنية والفنية، ومجالات التعدين\". القراءة الأولى أعطت التذييل فقط، فأعدتها على وسم main.",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://mim.gov.sa/cooperative-training",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@mim.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": {
+      "url": "https://www.mim.gov.sa/ar/empower-training/cooperative-training",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+      "verifiedNote": "عنوان الصفحة: \"التدريب التعاوني - وزارة الصناعة والثروة المعدنية\". قرأت في متنها حرفياً: \"تقدم وزارة الصناعة والثروة المعدنية مبادرة التدريب التعاوني بالتعاون مع المنشآت الصناعية في جميع أنحاء المملكة، والتي تهدف إلى تنمية القدرات البشرية وتطويرها، من خلال اكتساب المهارات العملية والمعرفية من الكفاءات الوطنية المتخصصة في المجالات الصناعية الهندسية والتقنية والفنية، ومجالات التعدين\". القراءة الأولى أعطت التذييل فقط، فأعدتها على وسم main."
+    },
+    "historicalWindows": [],
+    "notes": "الرابط مأخوذ من المواصفة ولم يُفتح بعد، فهو مرشّح لا رابط محقّق. التخصصات المذكورة صناعية وهندسية وتقنية وتعدينية، ولا يرد ذكر صريح لعلوم الحاسب أو الأمن السيبراني، فحقل قبول التخصص يبقى فارغاً.",
+    "importSource": "spec"
+  },
+  {
+    "id": "mobily",
+    "nameAr": "موبايلي",
+    "nameEn": "Mobily",
+    "sector": "tech",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": true,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://careers.mobily.com.sa/ar/sites/opportunities/pages/Coop",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:46:07.173Z",
+        "verifiedNote": "عنوان الصفحة: \"Coop Program - موبايلي المسارات الوظيفية\". قرأت عليها حرفياً: \"صممنا برنامج التدريب التعاوني بدقة لسد الفجوة بين المعرفة النظرية المكتسبة في السنوات الماضية وبين الخبرة العملية\" و\"طلاب التكنولوجيا: سواء كنت تدرس تخصصًا في التكنولوجيا، فإن معدل تقديرك الذي يبلغ 3.25/5 أو 2.60/4 أو أعلى يفتح الأبواب أمامك\".",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static",
+        "browserRetryInCI": true,
+        "renderModeNote": "أُعيد إلى static بعد ست محاولات انهار فيها مُصيِّر Chromium على جهاز المستخدم، عند page.goto ثم page.content ثم page.evaluate. حجب الصور والخطوط والوسائط وإعادة المحاولة لم تنقذها. حدّ ذاكرة لا عطب في الصفحة، فتُعاد المحاولة في CI وحده."
+      },
+      {
+        "url": "https://careers.mobily.com.sa",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "type": "portal",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://careers.mobily.com.sa/en/saudi-arabia/jobs/coop-program-1100006246/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "careers_page",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": {
+      "url": "https://careers.mobily.com.sa/ar/sites/opportunities/pages/Coop",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:46:07.173Z",
+      "verifiedNote": "عنوان الصفحة: \"Coop Program - موبايلي المسارات الوظيفية\". قرأت عليها حرفياً: \"صممنا برنامج التدريب التعاوني بدقة لسد الفجوة بين المعرفة النظرية المكتسبة في السنوات الماضية وبين الخبرة العملية\" و\"طلاب التكنولوجيا: سواء كنت تدرس تخصصًا في التكنولوجيا، فإن معدل تقديرك الذي يبلغ 3.25/5 أو 2.60/4 أو أعلى يفتح الأبواب أمامك\"."
+    },
+    "historicalWindows": [],
+    "notes": "لديها صفحة باسم برنامج COOP صريح. الرابط يحتاج تحقّقاً قبل إدخاله. مرشّح من نتائج بحث ويب، لم يُفتح بصرياً بعد. خط الأنابيب يتخطّاه حتى يُتحقّق منه.",
+    "importSource": "spec"
+  },
+  {
+    "id": "moj",
+    "nameAr": "وزارة العدل",
+    "nameEn": "Ministry of Justice",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://training.moj.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+        "verifiedNote": "عنوان الصفحة: \"التدريب التعاوني\". قرأت عليها حرفياً: \"التسجيل في برنامج التدريب التعاوني\" و\"برنامج التدريب التعاوني هو برنامج تدريبي محدد المدة، تتيح من خلالِه وزارة العدل الفرصة لطلبة الجامعات والكليات السعودية\". بوابة التدريب التعاوني الرسمية، وهي تؤكّد الرابط الذي كان مرشّحاً من المواصفة.",
+        "type": "portal",
+        "checkFrequencyHours": 6,
+        "renderMode": "browser"
+      },
+      {
+        "url": "https://training.moj.gov.sa",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "type": "portal",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "portal",
+      "target": "https://training.moj.gov.sa/",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:52:59.324Z"
+    },
+    "manualCheckUrl": {
+      "url": "https://training.moj.gov.sa/",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+      "verifiedNote": "عنوان الصفحة: \"التدريب التعاوني\". قرأت عليها حرفياً: \"التسجيل في برنامج التدريب التعاوني\" و\"برنامج التدريب التعاوني هو برنامج تدريبي محدد المدة، تتيح من خلالِه وزارة العدل الفرصة لطلبة الجامعات والكليات السعودية\". بوابة التدريب التعاوني الرسمية، وهي تؤكّد الرابط الذي كان مرشّحاً من المواصفة."
+    },
+    "historicalWindows": [],
+    "notes": "بوابة تدريب خاصة بالوزارة. الرابط مأخوذ من المواصفة ولم يُفتح بعد، فهو مرشّح لا رابط محقّق.",
+    "importSource": "spec"
+  },
+  {
+    "id": "ncai",
+    "nameAr": "المركز الوطني للذكاء الاصطناعي",
+    "nameEn": "National Center for Artificial Intelligence",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://sdaia.gov.sa/ncai/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@sdaia.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "ncdc",
+    "nameAr": "المركز الوطني للتصديق الرقمي",
+    "nameEn": "National Center for Digital Certification (NCDC)",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.ncdc.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "رفض المتصفح الاتصال بنطاق ncdc.gov.sa. لم تُقرأ الصفحة. مهام المركز نُقلت إلى وزارة الاتصالات، وقد يكون النطاق متوقفاً.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@ncdc.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مجال العمل شهادات رقمية وتشفير، وهو قريب من التخصص. هذا ترجيح مبدئي وليس قائمة تخصصات منشورة، لذلك يبقى حقل قبول التخصص فارغاً.",
+    "importSource": "spec"
+  },
+  {
+    "id": "pwc_sa",
+    "nameAr": "بي دبليو سي السعودية",
+    "nameEn": "PwC Saudi Arabia",
+    "sector": "consulting",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "riyadbank",
+    "nameAr": "بنك الرياض",
+    "nameEn": "Riyad Bank",
+    "sector": "bank",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.riyadbank.com/ar/personal-banking",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://careers.riyadbank.com/ar/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"موقع بنك الرياض للتوظيف\". قرأت عليها حرفياً: \"Start Your Career Journey with Us At Riyad Bank\" و\"الوظائف المتوفرة\". بوابة توظيف عامة بلا قسم تدريب تعاوني.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "saib",
+    "nameAr": "البنك السعودي للاستثمار",
+    "nameEn": "The Saudi Investment Bank (SAIB)",
+    "sector": "bank",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.saib.com.sa/ar",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://careers.saib.com.sa/ar/page/coop-program/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "لم أفتحها: نطاق careers.saib.com.sa محجوب بسياسة المتصفح في بيئتي. البحث يعطي العنوان «برنامج التدريب التعاوني - البنك السعودي للاستثمار»، لكنني لم أقرأ الصفحة فلا تُثبَّت. تحتاج فتحاً يدوياً منك.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "sar",
+    "nameAr": "الخطوط الحديدية السعودية",
+    "nameEn": "Saudi Arabia Railways (SAR)",
+    "sector": "semi_gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.sar.com.sa/Home-aspx-lang-ar-sa.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.sar.com.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"SAR| Home\"، والرابط يعيد التوجيه إلى https://www.sar.com.sa/ar/. متن الصفحة عاد فارغاً تماماً عند القراءة، فهو تطبيق يُبنى بجافاسكربت ولم يُصيَّر نص. لم أرَ أي علامة قبول. قناة التقديم المعروفة تبقى البريد Training@sar.com.sa.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "Training@sar.com.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "بريد التدريب المعلن، مأخوذ من المواصفة ولم يُؤكَّد من مصدر الجهة بعد"
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "simah",
+    "nameAr": "سمة",
+    "nameEn": "SIMAH",
+    "sector": "tech",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.simah.com/en/personal/pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "حجب Cloudflare. عنوان الصفحة: \"Attention Required! | Cloudflare\"، ونصها \"Sorry, you have been blocked. You are unable to access simah.com\". لم تُقرأ الصفحة.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "kalmzaini@simah.com",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "snb",
+    "nameAr": "البنك الأهلي السعودي",
+    "nameEn": "Saudi National Bank (SNB)",
+    "sector": "bank",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T02:14:14.571Z",
+        "verifiedNote": "عنوان الصفحة: \"البرنامج البنك الأهلي السعودي للتدريب التعاوني\". قرأت عليها حرفياً: \"برنامج الأهلي للتدريب التعاوني\" و\"التقديم مغلق\" و\"يهدف برنامج البنك الأهلي السعودي للتدريب التعاوني إلى تحقيق التكامل بين الدراسات الأكاديمية للطلاب والتطبيقات العملية في بيئة الأعمال\".",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.alahli.com/ar-sa/Pages/RB-NCB-Home-New.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "contactus@alahli.com",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": {
+      "url": "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T02:14:14.571Z",
+      "verifiedNote": "عنوان الصفحة: \"البرنامج البنك الأهلي السعودي للتدريب التعاوني\". قرأت عليها حرفياً: \"برنامج الأهلي للتدريب التعاوني\" و\"التقديم مغلق\" و\"يهدف برنامج البنك الأهلي السعودي للتدريب التعاوني إلى تحقيق التكامل بين الدراسات الأكاديمية للطلاب والتطبيقات العملية في بيئة الأعمال\"."
+    },
+    "historicalWindows": [],
+    "importSource": "spec",
+    "notes": "الصفحة تعرض حالة «التقديم مغلق» وقت الفحص، وهذه حالة نافذة لا خطأ في الرابط."
+  },
+  {
+    "id": "tadawul",
+    "nameAr": "تداول السعودية",
+    "nameEn": "Saudi Tadawul Group",
+    "sector": "semi_gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.saudiexchange.sa/wps/portal/saudiexchange/about-saudi-exchange/aboutus/careers?locale=ar",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"Home - Saudi Exchange\". رابط التوظيف يعرض الصفحة الرئيسية للسوق: كل ما قرأته شريط أسعار الأسهم (\"أرامكو السعودية 26.10\"، \"معادن 69.70\")، بلا أي قسم توظيف أو تدريب. قناة التقديم المعروفة تبقى البريد Co.op.training@tadawul.com.sa.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "Co.op.training@tadawul.com.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "بريد مخصّص للتدريب التعاوني، مأخوذ من المواصفة ولم يُؤكَّد من مصدر الجهة بعد"
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "takamol",
+    "nameAr": "تكامل القابضة",
+    "nameEn": "Takamol Holding",
+    "sector": "tech",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://join.takamol.com.sa",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "type": "portal",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://join.takamol.com.sa/?page_id=4",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://takamolholding.com/ar/join-us",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"التوظيف في تكامل القابضة | انضم إلى فريقنا المبتكر\". قرأت عليها حرفياً: \"الفرص التدريبية انضم إلى برنامج «تكاملي طموح»، المصمم لتطوير وتدريب الكفاءات الواعدة من حديثي التخرج\"، وحالته \"مغلق\". البرنامج الوحيد المعروض لحديثي التخرج لا لطلاب التدريب التعاوني، والمستخدم غير مؤهّل له قبل التخرّج. لا ترد أي من علامات القبول على الصفحة.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مرشّح من نتائج بحث ويب، لم يُفتح بصرياً بعد. خط الأنابيب يتخطّاه حتى يُتحقّق منه.",
+    "importSource": "spec"
+  },
+  {
+    "id": "taqnia",
+    "nameAr": "تقنية",
+    "nameEn": "TAQNIA",
+    "sector": "tech",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://taqnia.com/en/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"404 Not Found\". قرأت عليها حرفياً: \"The requested URL was not found on this server\" و\"Apache Server at taqnia.com Port 443\". الرابط المستورد من ملف COOP ميت.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "tetco",
+    "nameAr": "تيتكو",
+    "nameEn": "TETCO",
+    "sector": "tech",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://tetco.sa/ar/careers",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:46:07.173Z",
+        "verifiedNote": "عنوان الصفحة: \"وظائف | Tetco\". قرأت عليها حرفياً: \"التدريب التعاوني هو برنامج تدريبي يوفر تجربة قيمة وفريدة للطلاب المتوقع تخرجهم، ويسعون إلى استكمال متطلبات تخرجهم الأكاديمية خلال فترة التدريب\"، وعنوان القسم \"التوظيف والتدريب التعاوني\".",
+        "type": "careers_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://tetco.sa",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "type": "careers_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://tetco.sa/ar/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "career@tetco.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": {
+      "url": "https://tetco.sa/ar/careers",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:46:07.173Z",
+      "verifiedNote": "عنوان الصفحة: \"وظائف | Tetco\". قرأت عليها حرفياً: \"التدريب التعاوني هو برنامج تدريبي يوفر تجربة قيمة وفريدة للطلاب المتوقع تخرجهم، ويسعون إلى استكمال متطلبات تخرجهم الأكاديمية خلال فترة التدريب\"، وعنوان القسم \"التوظيف والتدريب التعاوني\"."
+    },
+    "historicalWindows": [],
+    "notes": "مرشّح من نتائج بحث ويب، لم يُفتح بصرياً بعد. خط الأنابيب يتخطّاه حتى يُتحقّق منه.",
+    "importSource": "spec"
+  },
+  {
+    "id": "thiqah",
+    "nameAr": "ثقة للخدمات التجارية",
+    "nameEn": "Thiqah Business Services",
+    "sector": "tech",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://thiqah.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://www.thiqah.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "عنوان الصفحة: \"Home\". قرأت عليها حرفياً: \"نصنع الأثر عبر التحول الرقمي\" وأقساماً للأخبار والحلول. صفحة شركة عامة بلا قسم توظيف أو تدريب ظاهر. قناة التقديم تبقى البريد coop@thiqah.sa.",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "coop@thiqah.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "بريد مخصّص للتدريب التعاوني، مأخوذ من المواصفة ولم يُؤكَّد من مصدر الجهة بعد"
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "zatca",
+    "nameAr": "هيئة الزكاة والضريبة والجمارك",
+    "nameEn": "Zakat, Tax and Customs Authority (ZATCA)",
+    "sector": "gov",
+    "city": [],
+    "tier": "A",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": true,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://careers.zatca.gov.sa/content/Coop-and-Training-Programs-Arabic/?locale=ar_SA",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+        "verifiedNote": "عنوان الصفحة: \"Coop and Training Programs Arabic\". قرأت عليها حرفياً: \"التدريب التعاوني\" و\"تهتمّ الهيئة بإقامة برامج التدريب التعاوني لطلاب الجامعات كجزء من المسؤولية المجتمعية التي تحرص عليها، وهي تنسّق باستمرار مع عدد من الجامعات\".",
+        "type": "announcement_page",
+        "checkFrequencyHours": 6,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "Coop.training@zatca.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "بريد التدريب التعاوني، ورد في رد حساب الهيئة الرسمي على منصة X ضمن نتائج البحث. لم أفتح المصدر، فيبقى بقوة «مُبلَّغ عنه» دائماً كأي قناة بريد."
+    },
+    "manualCheckUrl": {
+      "url": "https://careers.zatca.gov.sa/content/Coop-and-Training-Programs-Arabic/?locale=ar_SA",
+      "provenance": "official",
+      "verifiedAtISO": "2026-08-29T01:52:59.324Z",
+      "verifiedNote": "عنوان الصفحة: \"Coop and Training Programs Arabic\". قرأت عليها حرفياً: \"التدريب التعاوني\" و\"تهتمّ الهيئة بإقامة برامج التدريب التعاوني لطلاب الجامعات كجزء من المسؤولية المجتمعية التي تحرص عليها، وهي تنسّق باستمرار مع عدد من الجامعات\"."
+    },
+    "historicalWindows": [],
+    "importSource": "spec",
+    "notes": "ملف COOP يسمّيها «الهيئة العامة للزكاة والدخل» ويعطي نطاق gazt.gov.sa؛ الاسم والنطاق قديمان بعد الدمج في هيئة الزكاة والضريبة والجمارك، فلم يُستورد الرابط."
+  },
+  {
+    "id": "aec",
+    "nameAr": "الشركات المتقدمة للإلكترونيات",
+    "nameEn": "Advanced Electronics Company (AEC)",
+    "sector": "industrial",
+    "city": [],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "تنبيه: يجب التحقّق من الملكية والشركة الأم قبل عرض هذه الجهة في الواجهة.",
+    "importSource": "spec"
+  },
+  {
+    "id": "devoteam_sa",
+    "nameAr": "ديفوتيم السعودية",
+    "nameEn": "Devoteam Saudi Arabia",
+    "sector": "consulting",
+    "city": [],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "بيت استشارات تقنية متعدّد الجنسيات.",
+    "importSource": "spec"
+  },
+  {
+    "id": "ejada",
+    "nameAr": "إجادة للنظم",
+    "nameEn": "Ejada Systems",
+    "sector": "tech",
+    "city": [],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "تكامل الأنظمة.",
+    "importSource": "spec"
+  },
+  {
+    "id": "fakeeh",
+    "nameAr": "مستشفى الدكتور سليمان فقيه",
+    "nameEn": "Dr. Soliman Fakeeh Hospital",
+    "sector": "health",
+    "city": [
+      "جدة"
+    ],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": {
+      "method": "email",
+      "target": "hr@fakeeh.care",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد لا صفحة، فلا يُفتح ولا يُفحص آلياً ولا يُعدّ رابط تحقّق يدوي."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "جدة.",
+    "importSource": "spec"
+  },
+  {
+    "id": "masterworks",
+    "nameAr": "ماستر ووركس",
+    "nameEn": "Masterworks",
+    "sector": "tech",
+    "city": [],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "بيانات وبرمجيات.",
+    "importSource": "spec"
+  },
+  {
+    "id": "mckinsey_sa",
+    "nameAr": "ماكنزي وشركاه",
+    "nameEn": "McKinsey & Company",
+    "sector": "consulting",
+    "city": [],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.mckinsey.com/middle-east/ar/riyadh",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "ndf",
+    "nameAr": "صندوق التنمية الوطني",
+    "nameEn": "National Development Fund (NDF)",
+    "sector": "gov",
+    "city": [],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.ndf.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@ndf.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "nournet",
+    "nameAr": "نورنت",
+    "nameEn": "NourNet",
+    "sector": "tech",
+    "city": [],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "استضافة سحابية وأمن شبكات، قريبة من التخصص. ترجيح مبدئي لا يُبنى عليه قرار.",
+    "importSource": "spec"
+  },
+  {
+    "id": "sidf",
+    "nameAr": "صندوق التنمية الصناعية",
+    "nameEn": "Saudi Industrial Development Fund (SIDF)",
+    "sector": "gov",
+    "city": [],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.sidf.gov.sa/ar/Pages/Home.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@sidf.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "taif_amanah",
+    "nameAr": "أمانة محافظة الطائف",
+    "nameEn": "Taif Municipality",
+    "sector": "gov",
+    "city": [
+      "الطائف"
+    ],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "جهة محلية في الطائف، فالموقع نفسه متوافق مع المحاضرات المسائية. مرونة الجهة نفسها غير معروفة.",
+    "importSource": "spec"
+  },
+  {
+    "id": "taif_uni_it",
+    "nameAr": "عمادة تقنية المعلومات، جامعة الطائف",
+    "nameEn": "Deanship of Information Technology, Taif University",
+    "sector": "gov",
+    "city": [
+      "الطائف"
+    ],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "high",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "أعلى مرونة في الجدول الدراسي؛ المستخدم طالب في الجامعة نفسها.",
+    "importSource": "spec"
+  },
+  {
+    "id": "wadi_makkah",
+    "nameAr": "وادي مكة للتقنية",
+    "nameEn": "Wadi Makkah Technology",
+    "sector": "startup",
+    "city": [
+      "مكة المكرمة"
+    ],
+    "tier": "B",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": false,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": {
+      "method": "email",
+      "target": "career@wadimakkah.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد لا صفحة، فلا يُفتح ولا يُفحص آلياً ولا يُعدّ رابط تحقّق يدوي."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "تخصصات دورة ٢٠٢٥ المتحقّق منها: إدارة أعمال، محاسبة، تسويق، هندسة صناعية، تصميم جرافيك. لا يوجد علوم حاسب. يبقى قبول التخصص false حتى تُثبت دورة جديدة العكس. مملوكة لجامعة أم القرى.",
+    "importSource": "spec"
+  },
+  {
+    "id": "adeem",
+    "nameAr": "أديم المالية",
+    "nameEn": "Adeem Capital",
+    "sector": "finance",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "http://adeemcapital.com/ar-sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "hr@adeemcapital.com",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "adf",
+    "nameAr": "صندوق التنمية الزراعية",
+    "nameEn": "Agricultural Development Fund",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://adf.gov.sa/ar/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "awqaf",
+    "nameAr": "الهيئة العامة للأوقاف",
+    "nameEn": "General Authority for Awqaf",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.awqaf.gov.sa/ar",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@awqaf.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "bahri",
+    "nameAr": "البحري",
+    "nameEn": "Bahri",
+    "sector": "industrial",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://careers.bahri.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "careers_page",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "customs",
+    "nameAr": "الجمارك السعودية",
+    "nameEn": "Saudi Customs",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.customs.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "care@customs.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "derayah",
+    "nameAr": "دراية المالية",
+    "nameEn": "Derayah Financial",
+    "sector": "finance",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "http://www.derayah.com/web/ar/index.html",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "HR@derayah.com",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "ecza",
+    "nameAr": "هيئة المدن الاقتصادية والمناطق الخاصة",
+    "nameEn": "Economic Cities and Special Zones Authority",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "http://www.ecza.gov.sa/360/pages/ar/home",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@ecza.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "etec",
+    "nameAr": "هيئة تقويم التعليم والتدريب",
+    "nameEn": "Education and Training Evaluation Commission",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.etec.gov.sa/ar/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "Faq@etec.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "falcom",
+    "nameAr": "فالكم المالية",
+    "nameEn": "FALCOM Financial Services",
+    "sector": "finance",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "http://www.falcom.com.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "hr@falcom.com.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "gac",
+    "nameAr": "الهيئة العامة للمنافسة",
+    "nameEn": "General Authority for Competition (GAC)",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://gac.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@gac.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "gaca",
+    "nameAr": "الهيئة العامة للطيران المدني",
+    "nameEn": "General Authority of Civil Aviation",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://gaca.gov.sa/web/ar-sa/page/home",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "HR-Support@gaca.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "gcam",
+    "nameAr": "الهيئة العامة للإعلام المرئي والمسموع",
+    "nameEn": "General Commission of Audiovisual Media",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.gcam.gov.sa",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@gcam.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "gea",
+    "nameAr": "الهيئة العامة للترفيه",
+    "nameEn": "General Entertainment Authority",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.gea.gov.sa/ar",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@gea.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "housing",
+    "nameAr": "وزارة الإسكان",
+    "nameEn": "Ministry of Housing",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.housing.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@housing.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "hrc",
+    "nameAr": "هيئة حقوق الإنسان السعودية",
+    "nameEn": "Human Rights Commission",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.hrc.gov.sa/ar-sa/Pages/home.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@hrc.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "hrsd",
+    "nameAr": "وزارة الموارد البشرية والتنمية الاجتماعية",
+    "nameEn": "Ministry of Human Resources and Social Development",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://hrsd.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@hrsd.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "jadwa",
+    "nameAr": "جدوى للاستثمار",
+    "nameEn": "Jadwa Investment",
+    "sector": "finance",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "http://www.jadwa.com/en",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@jadwa.com",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "kapsarc",
+    "nameAr": "مركز الملك عبدالله للدراسات والبحوث البترولية",
+    "nameEn": "KAPSARC",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.kapsarc.org/ar/about/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "jobs@kapsarc.org",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "kasb",
+    "nameAr": "كسب المالية",
+    "nameEn": "KSB Capital",
+    "sector": "finance",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "http://www.kasbcapital.sa/index.php/ar/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "ialalwan@ksb.com.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "lcgpa",
+    "nameAr": "هيئة المحتوى المحلي والمشتريات الحكومية",
+    "nameEn": "Local Content and Government Procurement Authority",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://lcgpa.gov.sa/ar/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@lcgpa.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "mawhiba",
+    "nameAr": "مؤسسة الملك عبدالعزيز ورجاله للموهبة والإبداع",
+    "nameEn": "Mawhiba",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.mawhiba.org/Ar/About/who/Pages/Brief.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "Info@mawhiba.org.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "mc",
+    "nameAr": "وزارة التجارة",
+    "nameEn": "Ministry of Commerce",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://mc.gov.sa/ar/pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "CS@mc.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "mecca_health",
+    "nameAr": "تجمع مكة المكرمة الصحي",
+    "nameEn": "Makkah Health Cluster",
+    "sector": "health",
+    "city": [
+      "مكة المكرمة"
+    ],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "media",
+    "nameAr": "وزارة الإعلام",
+    "nameEn": "Ministry of Media",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://media.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@media.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "mep",
+    "nameAr": "وزارة الاقتصاد والتخطيط",
+    "nameEn": "Ministry of Economy and Planning",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.mep.gov.sa/ar",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@mep.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "mewa",
+    "nameAr": "وزارة البيئة والمياه والزراعة",
+    "nameEn": "Ministry of Environment, Water and Agriculture",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.mewa.gov.sa/ar/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "misa",
+    "nameAr": "وزارة الاستثمار",
+    "nameEn": "Ministry of Investment",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://misa.gov.sa/ar/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "InvestorCare@misa.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "moc",
+    "nameAr": "وزارة الثقافة",
+    "nameEn": "Ministry of Culture",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.moc.gov.sa/ar",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@moc.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "modon",
+    "nameAr": "الهيئة السعودية للمدن الصناعية ومناطق التقنية",
+    "nameEn": "MODON",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": {
+      "method": "email",
+      "target": "info@modon.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق. الرابط في الملف مكسور فلم يُستورد.",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "moe",
+    "nameAr": "وزارة التعليم",
+    "nameEn": "Ministry of Education",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.moe.gov.sa/ar/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "contact@mohe.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "moenergy",
+    "nameAr": "وزارة الطاقة",
+    "nameEn": "Ministry of Energy",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "http://www.moenergy.gov.sa/arabic/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "mof",
+    "nameAr": "وزارة المالية",
+    "nameEn": "Ministry of Finance",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.mof.gov.sa/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "ccc@mof.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "mofa",
+    "nameAr": "وزارة الخارجية",
+    "nameEn": "Ministry of Foreign Affairs",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.mofa.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@mofa.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "moh",
+    "nameAr": "وزارة الصحة",
+    "nameEn": "Ministry of Health",
+    "sector": "health",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.moh.gov.sa/Pages/Default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "irecsupport@moh.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "monshaat",
+    "nameAr": "الهيئة العامة للمنشآت الصغيرة والمتوسطة",
+    "nameEn": "Monsha'at",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.monshaat.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "Info@monshaat.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "mot",
+    "nameAr": "وزارة النقل والخدمات اللوجستية",
+    "nameEn": "Ministry of Transport and Logistic Services",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.mot.gov.sa/ar/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "nazaha",
+    "nameAr": "نزاهة",
+    "nameEn": "Oversight and Anti-Corruption Authority (Nazaha)",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.nazaha.gov.sa/ar-sa/pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@nazaha.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "ncar",
+    "nameAr": "المركز الوطني للوثائق والمحفوظات",
+    "nameEn": "National Center for Archives and Records",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://ncar.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@ncar.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "ncc",
+    "nameAr": "المركز الوطني للتنافسية",
+    "nameEn": "National Competitiveness Center",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.ncc.gov.sa/ar/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@ncc.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "pension",
+    "nameAr": "المؤسسة العامة للتقاعد",
+    "nameEn": "Public Pension Agency",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.pension.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "governor@pension.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "rcjy",
+    "nameAr": "الهيئة الملكية للجبيل وينبع",
+    "nameEn": "Royal Commission for Jubail and Yanbu",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.rcjy.gov.sa/ar-SA/Pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "rcrc",
+    "nameAr": "الهيئة الملكية لمدينة الرياض",
+    "nameEn": "Royal Commission for Riyadh City",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.rcrc.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@rcrc.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "rcu",
+    "nameAr": "الهيئة الملكية لمحافظة العلا",
+    "nameEn": "Royal Commission for AlUla",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.rcu.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "rcuinfo@rcu.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "redf",
+    "nameAr": "صندوق التنمية العقارية",
+    "nameEn": "Real Estate Development Fund",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.housing.gov.sa/ar/related-links/140",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@housing.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "rega",
+    "nameAr": "الهيئة العامة للعقار",
+    "nameEn": "Real Estate General Authority",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.rega.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@rega.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "saip",
+    "nameAr": "الهيئة السعودية للملكية الفكرية",
+    "nameEn": "Saudi Authority for Intellectual Property",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.saip.gov.sa",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "Recruitment@saip.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "sanabil",
+    "nameAr": "سنابل للاستثمار",
+    "nameEn": "Sanabil Investments",
+    "sector": "finance",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "http://www.sanabil.sa/ar/pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "saso",
+    "nameAr": "الهيئة السعودية للمواصفات والمقاييس والجودة",
+    "nameEn": "Saudi Standards, Metrology and Quality Organization",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.saso.gov.sa/ar/pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@saso.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "saudi_exports",
+    "nameAr": "هيئة تنمية الصادرات السعودية",
+    "nameEn": "Saudi Exports Development Authority",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.saudiexports.sa/ar/pages/default.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@saudiexports.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "scfhs",
+    "nameAr": "الهيئة السعودية للتخصصات الصحية",
+    "nameEn": "Saudi Commission for Health Specialties",
+    "sector": "health",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق. الرابط في الملف مكسور فلم يُستورد.",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "seec",
+    "nameAr": "المركز السعودي لكفاءة الطاقة",
+    "nameEn": "Saudi Energy Efficiency Center",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.seec.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@seec.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "sfd",
+    "nameAr": "الصندوق السعودي للتنمية",
+    "nameEn": "Saudi Fund for Development",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.sfd.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@sfd.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "sfda",
+    "nameAr": "الهيئة العامة للغذاء والدواء",
+    "nameEn": "Saudi Food and Drug Authority (SFDA)",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [],
+    "applyVia": {
+      "method": "email",
+      "target": "webmaster@sfda.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "importSource": "spec"
+  },
+  {
+    "id": "srca",
+    "nameAr": "الهلال الأحمر السعودي",
+    "nameEn": "Saudi Red Crescent Authority",
+    "sector": "health",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.srca.org.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@srca.org.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "ssc",
+    "nameAr": "الهيئة السعودية للفضاء",
+    "nameEn": "Saudi Space Agency",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://saudispace.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "Info@ssc.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "sta",
+    "nameAr": "الهيئة السعودية للسياحة",
+    "nameEn": "Saudi Tourism Authority",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://sta.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": null,
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "swcc",
+    "nameAr": "المؤسسة العامة لتحلية المياه المالحة",
+    "nameEn": "Saline Water Conversion Corporation",
+    "sector": "industrial",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.swcc.gov.sa/Arabic/Pages/Home.aspx",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "Ialhassan@swcc.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "tawuniya",
+    "nameAr": "التعاونية للتأمين",
+    "nameEn": "Tawuniya",
+    "sector": "finance",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.tawuniya.com.sa/about-us/contact-us",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@tawuniya.com.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "tvtc",
+    "nameAr": "المؤسسة العامة للتدريب التقني والمهني",
+    "nameEn": "Technical and Vocational Training Corporation",
+    "sector": "gov",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.tvtc.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "cso@tvtc.gov.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "unilever_sa",
+    "nameAr": "يونيليفر",
+    "nameEn": "Unilever",
+    "sector": "industrial",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "https://www.unilever.com/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "nadia.malaika@unilever.com",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  },
+  {
+    "id": "wasatah",
+    "nameAr": "الوساطة المالية",
+    "nameEn": "Wasatah Capital",
+    "sector": "finance",
+    "city": [],
+    "tier": "C",
+    "requiresZeroCourses": {
+      "value": null,
+      "provenance": "unknown"
+    },
+    "acceptsUserMajor": null,
+    "offersCoopProduct": null,
+    "stipend": {
+      "amountSAR": null,
+      "provenance": "unknown"
+    },
+    "flexibility": "unknown",
+    "intakeSize": "unknown",
+    "trainingQuality": null,
+    "sources": [
+      {
+        "url": "http://www.wasatah.com.sa/index.php/ar/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      }
+    ],
+    "applyVia": {
+      "method": "email",
+      "target": "info@wasatah.com.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
+    },
+    "manualCheckUrl": null,
+    "historicalWindows": [],
+    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+    "importSource": "coop_pdf_2021"
+  }
+]

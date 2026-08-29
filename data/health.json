@@ -1,0 +1,164 @@
+[
+  {
+    "sourceUrl": "https://career.elm.sa/elm/go/coop-trainee-and-training-program/8486100/",
+    "orgId": "elm",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://careers.alrajhibank.com.sa/ar/page/coop-program/",
+    "orgId": "alrajhi",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://careers.cma.gov.sa/ar/page/coop-program/",
+    "orgId": "cma",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://careers.mobily.com.sa/ar/sites/opportunities/pages/Coop",
+    "orgId": "mobily",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T02:22:33.828Z",
+    "consecutiveFailures": 10,
+    "lastError": "fetched 64995 bytes but extracted only 0 chars of text; the page is probably rendered by javascript and cannot be watched this way",
+    "state": "broken"
+  },
+  {
+    "sourceUrl": "https://careers.stc.com.sa/go/%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A/7736823/",
+    "orgId": "stc",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://careers.zatca.gov.sa/content/Coop-and-Training-Programs-Arabic/?locale=ar_SA",
+    "orgId": "zatca",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://futureskills.mcit.gov.sa/ar/coop-training",
+    "orgId": "mcit",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://nca.gov.sa/ar/cyber-training-and-qualifications/",
+    "orgId": "nca",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://sdaia.gov.sa/ar/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx",
+    "orgId": "sdaia",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://tetco.sa/ar/careers",
+    "orgId": "tetco",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://training.moj.gov.sa/",
+    "orgId": "moj",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program",
+    "orgId": "snb",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities",
+    "orgId": "aramco",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://www.bankalbilad.com.sa/en/about/pages/training.aspx",
+    "orgId": "albilad",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://www.bog.gov.sa/en/EServices/Pages/khabeer.aspx",
+    "orgId": "bog",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://www.mim.gov.sa/ar/empower-training/cooperative-training",
+    "orgId": "mim",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://www.sabic.com/ar/careers/middle-east-africa/students-and-fresh-graduates",
+    "orgId": "sabic",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  },
+  {
+    "sourceUrl": "https://www.stats.gov.sa/en/cooperative-training",
+    "orgId": "gastat",
+    "lastAttemptISO": "2026-08-29T16:36:58.372Z",
+    "lastSuccessISO": "2026-08-29T16:36:58.372Z",
+    "consecutiveFailures": 0,
+    "lastError": null,
+    "state": "healthy"
+  }
+]

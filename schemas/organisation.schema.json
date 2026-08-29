@@ -1,0 +1,207 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rasid.local/schemas/organisation.schema.json",
+  "title": "RASID organisations file",
+  "description": "Mirror of the Organisation interface in src/types.ts. Keep both in sync.",
+  "type": "array",
+  "items": { "$ref": "#/definitions/Organisation" },
+
+  "definitions": {
+    "Provenance": {
+      "type": "string",
+      "enum": ["official", "reported", "inferred", "unknown"]
+    },
+
+    "LinkProvenance": {
+      "description": "official = opened and read. reported = an unopened lead. inferred is not permitted for links: guessing a url from a pattern is banned. email_channel is deliberately absent here, it is legal in applyVia only.",
+      "type": "string",
+      "enum": ["official", "reported"]
+    },
+
+    "ApplyProvenance": {
+      "description": "As LinkProvenance, plus email_channel: an address, not a page. Nothing to open, so it is permanently reported-strength and the pipeline never fetches it.",
+      "type": "string",
+      "enum": ["official", "reported", "email_channel"]
+    },
+
+    "VerifiedLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "provenance", "verifiedAtISO"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "provenance": { "$ref": "#/definitions/LinkProvenance" },
+        "verifiedAtISO": { "type": ["string", "null"], "format": "date-time" },
+        "verifiedNote": { "type": "string", "minLength": 1 }
+      }
+    },
+
+    "Source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "provenance",
+        "verifiedAtISO",
+        "type",
+        "checkFrequencyHours",
+        "renderMode"
+      ],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "provenance": { "$ref": "#/definitions/LinkProvenance" },
+        "verifiedAtISO": { "type": ["string", "null"], "format": "date-time" },
+        "verifiedNote": { "type": "string", "minLength": 1 },
+        "type": {
+          "type": "string",
+          "enum": [
+            "careers_page",
+            "announcement_page",
+            "rss",
+            "portal",
+            "email",
+            "site_root"
+          ]
+        },
+        "checkFrequencyHours": { "type": "integer", "minimum": 1, "maximum": 720 },
+        "renderMode": {
+          "description": "static is the default. browser is granted by hand, only after static extraction provably fails, and only up to MAX_BROWSER_SOURCES in total.",
+          "type": "string",
+          "enum": ["static", "browser"]
+        },
+        "browserRetryInCI": {
+          "description": "Retry the browser path in CI only, where the container has more memory than a laptop. A success there promotes the source.",
+          "type": "boolean"
+        },
+        "renderModeNote": { "type": "string", "minLength": 1 }
+      }
+    },
+
+    "ApplyVia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "target", "provenance", "verifiedAtISO"],
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": ["portal", "email", "hrdf", "linkedin_manual"]
+        },
+        "target": { "type": "string", "minLength": 1 },
+        "provenance": { "$ref": "#/definitions/ApplyProvenance" },
+        "verifiedAtISO": { "type": ["string", "null"], "format": "date-time" },
+        "note": { "type": "string" }
+      }
+    },
+
+    "HistoricalWindow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["seasonLabel", "openedISO", "closedISO", "provenance"],
+      "properties": {
+        "seasonLabel": { "type": "string", "minLength": 1 },
+        "openedISO": { "type": ["string", "null"], "format": "date" },
+        "closedISO": { "type": ["string", "null"], "format": "date" },
+        "provenance": { "$ref": "#/definitions/Provenance" }
+      }
+    },
+
+    "Organisation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "nameAr",
+        "nameEn",
+        "sector",
+        "city",
+        "tier",
+        "requiresZeroCourses",
+        "acceptsUserMajor",
+        "offersCoopProduct",
+        "stipend",
+        "flexibility",
+        "intakeSize",
+        "trainingQuality",
+        "sources",
+        "applyVia",
+        "manualCheckUrl",
+        "historicalWindows",
+        "importSource"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$" },
+        "nameAr": { "type": "string", "minLength": 1 },
+        "nameEn": { "type": "string", "minLength": 1 },
+        "sector": {
+          "type": "string",
+          "enum": [
+            "gov",
+            "semi_gov",
+            "bank",
+            "finance",
+            "tech",
+            "health",
+            "industrial",
+            "consulting",
+            "startup"
+          ]
+        },
+        "city": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "tier": { "type": "string", "enum": ["S", "A", "B", "C"] },
+
+        "requiresZeroCourses": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["value", "provenance"],
+          "properties": {
+            "value": { "type": ["boolean", "null"] },
+            "provenance": { "$ref": "#/definitions/Provenance" },
+            "quote": { "type": "string", "minLength": 1 },
+            "sourceUrl": { "type": "string", "format": "uri" }
+          }
+        },
+        "acceptsUserMajor": { "type": ["boolean", "null"] },
+        "offersCoopProduct": { "type": ["boolean", "null"] },
+
+        "stipend": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["amountSAR", "provenance"],
+          "properties": {
+            "amountSAR": { "type": ["number", "null"], "minimum": 0 },
+            "provenance": { "$ref": "#/definitions/Provenance" },
+            "note": { "type": "string" }
+          }
+        },
+        "flexibility": {
+          "type": "string",
+          "enum": ["high", "medium", "low", "unknown"]
+        },
+        "intakeSize": {
+          "type": "string",
+          "enum": ["large", "medium", "small", "unknown"]
+        },
+        "trainingQuality": { "enum": [1, 2, 3, 4, 5, null] },
+
+        "sources": { "type": "array", "items": { "$ref": "#/definitions/Source" } },
+        "applyVia": {
+          "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/ApplyVia" }]
+        },
+        "manualCheckUrl": {
+          "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/VerifiedLink" }]
+        },
+
+        "historicalWindows": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/HistoricalWindow" }
+        },
+
+        "notes": { "type": "string" },
+        "importSource": {
+          "type": ["string", "null"],
+          "enum": ["spec", "coop_pdf_2021", "manual", null]
+        }
+      }
+    }
+  }
+}

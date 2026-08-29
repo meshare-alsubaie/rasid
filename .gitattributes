@@ -1,0 +1,4 @@
+# The pipeline hashes extracted text, and CI runs on Linux while development
+# happens on Windows. Normalising line endings in the repository keeps a commit
+# from showing every file as changed just because a checkout crossed platforms.
+* text=auto eol=lf

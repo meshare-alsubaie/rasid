@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rasid.local/schemas/aggregator.schema.json",
+  "title": "RASID aggregator sources file",
+  "description": "Scanned for any co-op announcement. Not organisations.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "nameAr", "link", "applyVia", "weight", "checkFrequencyHours"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$" },
+      "nameAr": { "type": "string", "minLength": 1 },
+      "link": {
+        "oneOf": [
+          { "type": "null" },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "provenance", "verifiedAtISO"],
+            "properties": {
+              "url": { "type": "string", "format": "uri" },
+              "provenance": { "type": "string", "enum": ["official", "reported"] },
+              "verifiedAtISO": { "type": ["string", "null"], "format": "date-time" },
+              "verifiedNote": { "type": "string", "minLength": 1 }
+            }
+          }
+        ]
+      },
+      "applyVia": {
+        "oneOf": [
+          { "type": "null" },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["method", "target", "provenance", "verifiedAtISO"],
+            "properties": {
+              "method": {
+                "type": "string",
+                "enum": ["portal", "email", "hrdf", "linkedin_manual"]
+              },
+              "target": { "type": "string", "minLength": 1 },
+              "provenance": {
+                "type": "string",
+                "enum": ["official", "reported", "email_channel"]
+              },
+              "verifiedAtISO": { "type": ["string", "null"], "format": "date-time" },
+              "note": { "type": "string" }
+            }
+          }
+        ]
+      },
+      "weight": { "type": "string", "enum": ["highest", "high", "normal"] },
+      "checkFrequencyHours": { "type": "integer", "minimum": 1, "maximum": 720 },
+      "note": { "type": "string" }
+    }
+  }
+}

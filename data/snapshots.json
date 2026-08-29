@@ -1,0 +1,189 @@
+[
+  {
+    "sourceUrl": "https://career.elm.sa/elm/go/coop-trainee-and-training-program/8486100/",
+    "orgId": "elm",
+    "contentHash": "f89829d10836c5cf80ad132a6b2bb6c75af1820ced41bcc7cb61cacc4e52845a",
+    "extractedChars": 383,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://careers.alrajhibank.com.sa/ar/page/coop-program/",
+    "orgId": "alrajhi",
+    "contentHash": "8c1a7eca5087addfd05ad377fd399bb0c044e8edaad324dd502636919d0213c8",
+    "extractedChars": 1231,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://careers.cma.gov.sa/ar/page/coop-program/",
+    "orgId": "cma",
+    "contentHash": "c900ad6414744faea43864e1a252024162068b8824949090b4a4d2c759e50702",
+    "extractedChars": 621,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://careers.stc.com.sa/go/%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A/7736823/",
+    "orgId": "stc",
+    "contentHash": "3a8fe691bef78fb865ced07b7a3c5d3707b59ff197f8c43b1d4edc41e16de668",
+    "extractedChars": 1039,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:13.030Z",
+    "lastChangedISO": "2026-08-29T02:22:13.030Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://careers.zatca.gov.sa/content/Coop-and-Training-Programs-Arabic/?locale=ar_SA",
+    "orgId": "zatca",
+    "contentHash": "84c80ce7d43b244a6d915628359afecc276c65ec4e51fc80ea438dac90103586",
+    "extractedChars": 1622,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://futureskills.mcit.gov.sa/ar/coop-training",
+    "orgId": "mcit",
+    "contentHash": "3ba278aa08378a0527d3dcaad4f760aae33ae084751db6f538f4c2d06fbff151",
+    "extractedChars": 84,
+    "extractionMethod": "body_fallback",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T02:36:21.032Z",
+    "thinRuns": 6,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://nca.gov.sa/ar/cyber-training-and-qualifications/",
+    "orgId": "nca",
+    "contentHash": "4a83baa008a8d5305a735bb465cba3d019c81b685b7e46c3dab1875b91aced15",
+    "extractedChars": 3394,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:13.030Z",
+    "lastChangedISO": "2026-08-29T02:22:13.030Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://sdaia.gov.sa/ar/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx",
+    "orgId": "sdaia",
+    "contentHash": "b366682a9e522fea8df0e12a1cebb3ad325283b656cf041e6b1ede5c33f33aaa",
+    "extractedChars": 562,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:13.030Z",
+    "lastChangedISO": "2026-08-29T02:22:13.030Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://tetco.sa/ar/careers",
+    "orgId": "tetco",
+    "contentHash": "d8688ff4fbf0706773061533072933f9e556f21e8ac3a5a390234654733e6fce",
+    "extractedChars": 1095,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://training.moj.gov.sa/",
+    "orgId": "moj",
+    "contentHash": "2f0713a62e659953fb116babdf1f89ac1764fd288c436be78332765c7dd063ac",
+    "extractedChars": 481,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:31:49.455Z",
+    "lastChangedISO": "2026-08-29T02:31:49.455Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program",
+    "orgId": "snb",
+    "contentHash": "926cfd2799039da3c9701cd005ca8d807dc5c7efa213cc23f9f5b3b3e980122b",
+    "extractedChars": 1234,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities",
+    "orgId": "aramco",
+    "contentHash": "9b48f346bcf3b7b423ee77be25a2bbaaf66ae28347cc464135bc8dd35f48ffdc",
+    "extractedChars": 715,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:13.030Z",
+    "lastChangedISO": "2026-08-29T02:22:13.030Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.bankalbilad.com.sa/en/about/pages/training.aspx",
+    "orgId": "albilad",
+    "contentHash": "bb47135f0fab74186f77619296ae433875bc3e6722239dd82f47313e344f04b9",
+    "extractedChars": 107,
+    "extractionMethod": "body_fallback",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 7,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.bog.gov.sa/en/EServices/Pages/khabeer.aspx",
+    "orgId": "bog",
+    "contentHash": "45d1ce426c3424b7d5bbcbc7e7ad2ccd6782cea04d2620870c6a9761aedb9dfc",
+    "extractedChars": 1229,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.mim.gov.sa/ar/empower-training/cooperative-training",
+    "orgId": "mim",
+    "contentHash": "becc254e34a24e916b411a9b5bdca3b4340c6f32bc7471298ca7f10c7b995d44",
+    "extractedChars": 2429,
+    "extractionMethod": "body_fallback",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T16:36:58.372Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.sabic.com/ar/careers/middle-east-africa/students-and-fresh-graduates",
+    "orgId": "sabic",
+    "contentHash": "16f295fc6a352bcaa80dea183fe5624b6a3cbbb914f506dadc539d968badae73",
+    "extractedChars": 5349,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:13.030Z",
+    "lastChangedISO": "2026-08-29T02:22:13.030Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.stats.gov.sa/en/cooperative-training",
+    "orgId": "gastat",
+    "contentHash": "b1f60702fa1a3765777db767d3c90e70e80b1be79aa220c68e981acb1cdbc841",
+    "extractedChars": 963,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T02:22:33.828Z",
+    "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  }
+]

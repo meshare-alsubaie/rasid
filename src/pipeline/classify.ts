@@ -1,0 +1,284 @@
+/**
+ * Phase 3: ask Claude whether a changed page is an announcement this student
+ * can actually apply to.
+ *
+ * The whole module is built around one rule: a classifier that could not judge
+ * must never look like a classifier that judged "no". Spec section 5.3 sets the
+ * failure path, and the three ways to get it quietly wrong are all closed here:
+ *
+ *   - a response that will not parse is NOT scored 0, it is a failure
+ *   - an API call that never returned is NOT "no announcement", it is a failure
+ *   - a missing field is NOT filled with a plausible default, it is a failure
+ *
+ * Zero means "not relevant to him". It never means "we could not tell".
+ * Every failure comes back as `ok: false` and the caller is expected to store
+ * the record with `relevanceScore: null` and a `needs_manual_review` flag.
+ */
+import Anthropic from "@anthropic-ai/sdk";
+import { Ajv } from "ajv";
+
+/**
+ * The spec named claude-sonnet-4-6; the owner moved it to claude-sonnet-5,
+ * which is the newer model in the same tier and cheaper per token. Nothing
+ * else in this file depends on which one runs.
+ */
+export const CLASSIFIER_MODEL = "claude-sonnet-5";
+
+/** Spec section 5.3: send only the changed text block, at most 6000 chars. */
+export const MAX_EXCERPT_CHARS = 6000;
+
+export interface Classification {
+  isTrainingAnnouncement: boolean;
+  product: "coop" | "graduate_dev" | "professional_experience" | "unknown";
+  /**
+   * DEVIATION FROM SPEC section 5.3, which types this as `string`.
+   * A page that carries no announcement has no title, and the model correctly
+   * returned null for one. Rejecting that put a page reading "لا توجد نتائج"
+   * in the manual-review queue on every run, forever, at two API calls a time.
+   * Null is accepted, and the cross-field check below still refuses a titleless
+   * announcement - so the strictness stays exactly where it earns its keep.
+   */
+  titleAr: string | null;
+  opensISO: string | null;
+  closesISO: string | null;
+  majors: string[];
+  seats: number | null;
+  stipendSAR: number | null;
+  durationWeeks: number | null;
+  cities: string[];
+  statesZeroCoursesRule: boolean;
+  zeroCoursesQuote: string | null;
+  relevanceScore: number;
+  relevanceReason: string;
+  applyUrl: string | null;
+}
+
+/**
+ * Prices verified against platform.claude.com/docs/en/about-claude/pricing on
+ * 2026-08-29, not from memory. The page also states that the $2/$10 launch
+ * pricing for Sonnet 5 is now the standard price and the increase to $3/$15
+ * that had been scheduled for 2026-09-01 will not happen.
+ */
+export const PRICE_PER_MTOK = { input: 2, output: 10 } as const;
+
+export interface Usage {
+  inputTokens: number;
+  outputTokens: number;
+}
+
+export const costOf = (u: Usage): number =>
+  (u.inputTokens * PRICE_PER_MTOK.input + u.outputTokens * PRICE_PER_MTOK.output) / 1_000_000;
+
+export type ClassifyResult =
+  | { ok: true; value: Classification; attempts: number; usage: Usage }
+  | {
+      ok: false;
+      /** Where it broke, so health reporting can tell a bad key from a bad reply. */
+      stage: "no_credentials" | "api" | "parse" | "schema";
+      reason: string;
+      attempts: number;
+      /** Tokens are still billed for a reply that failed to parse. */
+      usage: Usage;
+    };
+
+/**
+ * The one call to the model, isolated so tests can drive every failure branch
+ * without a network or a bill. Production passes `liveAsk`.
+ */
+export type Asker = (excerpt: string, insist: boolean) => Promise<{ text: string; usage: Usage }>;
+
+/** Spec section 5.3, used verbatim. Do not paraphrase: it is the contract. */
+export const SYSTEM_PROMPT = `You classify Saudi training announcements for one specific student.
+
+STUDENT PROFILE
+${profile}
+
+Return ONLY valid JSON, no markdown fences, matching this schema:
+
+{
+  "isTrainingAnnouncement": boolean,
+  "product": "coop" | "graduate_dev" | "professional_experience" | "unknown",
+  "titleAr": string,
+  "opensISO": string | null,
+  "closesISO": string | null,
+  "majors": string[],
+  "seats": number | null,
+  "stipendSAR": number | null,
+  "durationWeeks": number | null,
+  "cities": string[],
+  "statesZeroCoursesRule": boolean,
+  "zeroCoursesQuote": string | null,
+  "relevanceScore": number,
+  "relevanceReason": string,
+  "applyUrl": string | null
+}
+
+RULES
+- Extract only what the text actually states. Never infer a date or amount.
+  If it is not written, return null.
+- statesZeroCoursesRule is true ONLY if the text explicitly forbids registered
+  courses or demands full-time availability as a condition. Copy the exact
+  wording into zeroCoursesQuote. Absence of such a rule is NOT evidence of
+  flexibility — it is simply absence.
+- relevanceScore: 0 if product is "graduate_dev" (he cannot apply).
+  90–100 if the role names cybersecurity, SOC, information security, or
+  security analysis. 60–85 for networks, systems, IT, software, data.
+  20–50 for general technical. 0–15 for unrelated fields.
+- relevanceReason: one short Arabic sentence explaining the score.
+- Convert Hijri dates to Gregorian ISO. If the year is ambiguous, return null.`;
+
+/**
+ * additionalProperties is false and every field is required on purpose. A
+ * reply missing `closesISO` is a reply we cannot trust, not a reply with no
+ * closing date: null has to be stated, never assumed.
+ */
+const schema = {
+  type: "object",
+  additionalProperties: false,
+  required: [
+    "isTrainingAnnouncement",
+    "product",
+    "titleAr",
+    "opensISO",
+    "closesISO",
+    "majors",
+    "seats",
+    "stipendSAR",
+    "durationWeeks",
+    "cities",
+    "statesZeroCoursesRule",
+    "zeroCoursesQuote",
+    "relevanceScore",
+    "relevanceReason",
+    "applyUrl",
+  ],
+  properties: {
+    isTrainingAnnouncement: { type: "boolean" },
+    product: {
+      type: "string",
+      enum: ["coop", "graduate_dev", "professional_experience", "unknown"],
+    },
+    titleAr: { type: ["string", "null"] },
+    opensISO: { type: ["string", "null"] },
+    closesISO: { type: ["string", "null"] },
+    majors: { type: "array", items: { type: "string" } },
+    seats: { type: ["integer", "null"], minimum: 0 },
+    stipendSAR: { type: ["number", "null"], minimum: 0 },
+    durationWeeks: { type: ["number", "null"], minimum: 0 },
+    cities: { type: "array", items: { type: "string" } },
+    statesZeroCoursesRule: { type: "boolean" },
+    zeroCoursesQuote: { type: ["string", "null"] },
+    relevanceScore: { type: "number", minimum: 0, maximum: 100 },
+    relevanceReason: { type: "string", minLength: 1 },
+    applyUrl: { type: ["string", "null"] },
+  },
+} as const;
+
+const validate = new Ajv({ allErrors: true }).compile(schema);
+
+let client: Anthropic | null = null;
+const getClient = (): Anthropic => (client ??= new Anthropic());
+
+/** Models are told not to fence. Stripping one is formatting, not invention. */
+function unfence(raw: string): string {
+  const fenced = raw.trim().match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+  return (fenced?.[1] ?? raw).trim();
+}
+
+export const liveAsk: Asker = async (excerpt, insist) => {
+  const response = await getClient().messages.create({
+    model: CLASSIFIER_MODEL,
+    max_tokens: 2048,
+    system: SYSTEM_PROMPT,
+    messages: [
+      {
+        role: "user",
+        content: insist ? `${excerpt}\n\nReturn valid JSON only.` : excerpt,
+      },
+    ],
+  });
+
+  return {
+    text: response.content
+      .filter((b): b is Anthropic.TextBlock => b.type === "text")
+      .map((b) => b.text)
+      .join(""),
+    usage: {
+      inputTokens: response.usage.input_tokens,
+      outputTokens: response.usage.output_tokens,
+    },
+  };
+};
+
+export async function classify(text: string, ask: Asker = liveAsk): Promise<ClassifyResult> {
+  const usage: Usage = { inputTokens: 0, outputTokens: 0 };
+
+  if (ask === liveAsk && process.env.ANTHROPIC_API_KEY === undefined) {
+    return {
+      ok: false,
+      stage: "no_credentials",
+      reason: "ANTHROPIC_API_KEY is not set, so nothing was classified",
+      attempts: 0,
+      usage,
+    };
+  }
+
+  const excerpt = text.slice(0, MAX_EXCERPT_CHARS);
+  let last: { stage: "api" | "parse" | "schema"; reason: string } = {
+    stage: "api",
+    reason: "not attempted",
+  };
+
+  // Spec section 5.3: one retry, with "Return valid JSON only." appended.
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    let raw: string;
+    try {
+      const reply = await ask(excerpt, attempt === 2);
+      raw = reply.text;
+      usage.inputTokens += reply.usage.inputTokens;
+      usage.outputTokens += reply.usage.outputTokens;
+    } catch (err) {
+      // The SDK already retried 429s and 5xx. Reaching here means the call
+      // genuinely failed, and a failed call is not an absence of news.
+      const reason =
+        err instanceof Anthropic.APIError
+          ? `${err.constructor.name} ${err.status ?? ""}: ${err.message}`.trim()
+          : err instanceof Error
+            ? err.message
+            : String(err);
+      last = { stage: "api", reason };
+      continue;
+    }
+
+    let parsed: unknown;
+    try {
+      parsed = JSON.parse(unfence(raw));
+    } catch {
+      last = { stage: "parse", reason: `reply was not JSON: ${raw.slice(0, 160)}` };
+      continue;
+    }
+
+    if (!validate(parsed)) {
+      const detail = (validate.errors ?? [])
+        .map((e) => `${e.instancePath || "/"} ${e.message ?? ""}`.trim())
+        .join("; ");
+      last = { stage: "schema", reason: `reply did not match the schema: ${detail}` };
+      continue;
+    }
+
+    // An announcement without a title is not a reply we can store: the title
+    // is what the user reads in the list. A non-announcement may omit it.
+    const value = parsed as Classification;
+    if (value.isTrainingAnnouncement && !value.titleAr?.trim()) {
+      last = {
+        stage: "schema",
+        reason: "reply claims an announcement but gives no titleAr",
+      };
+      continue;
+    }
+
+    return { ok: true, value, attempts: attempt, usage };
+  }
+
+  return { ok: false, stage: last.stage, reason: last.reason, attempts: 2, usage };
+}

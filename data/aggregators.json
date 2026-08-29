@@ -1,0 +1,43 @@
+[
+  {
+    "id": "taif_field_training",
+    "nameAr": "نظام التدريب الميداني، كلية الحاسبات وتقنية المعلومات، جامعة الطائف",
+    "link": {
+      "url": "https://webapps.tu.edu.sa/TuITTrainSys/",
+      "provenance": "reported",
+      "verifiedAtISO": null
+    },
+    "applyVia": {
+      "method": "email",
+      "target": "w.alghamdi@tu.edu.sa",
+      "provenance": "email_channel",
+      "verifiedAtISO": null,
+      "note": "وكيل الكلية للتدريب، ومنه يُطلب رابط المنصّة"
+    },
+    "weight": "highest",
+    "checkFrequencyHours": 6,
+    "note": "أهم مصدر في التطبيق كله. ظهر في نتائج البحث بعنوان \"جامعة الطائف - نظام التدريب الميداني\" مع صفحة تقويم فرعية، لكن المتصفح رفض الاتصال بالنطاق webapps.tu.edu.sa في محاولتين، فبقي مرشّحاً لم يُفتح. الرابط المؤكّد يُطلب من وكيل الكلية للتدريب."
+  },
+  {
+    "id": "hrdf_coop",
+    "nameAr": "صندوق تنمية الموارد البشرية، صفحة التدريب التعاوني",
+    "link": {
+      "url": "https://hrdf.org.sa/products-and-services/programs/individuals/training/cooperative-training/",
+      "provenance": "reported",
+      "verifiedAtISO": null
+    },
+    "applyVia": null,
+    "weight": "high",
+    "checkFrequencyHours": 6,
+    "note": "الرابط مرشّح من نتائج بحث ولم يُفتح بعد. يُرشَّح المحتوى على منتج «التدريب التعاوني» فقط، ويُستبعد «تطوير الخريجين»."
+  },
+  {
+    "id": "mygov_coop",
+    "nameAr": "منصّة الخدمات الحكومية، صفحة خدمة التدريب التعاوني",
+    "link": null,
+    "applyVia": null,
+    "weight": "normal",
+    "checkFrequencyHours": 12,
+    "note": "المواصفة ذكرت النطاق my.gov.sa دون المسار الدقيق للخدمة. يُترك فارغاً حتى يُفتح الرابط ويُتحقّق منه."
+  }
+]

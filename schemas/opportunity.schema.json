@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rasid.local/schemas/opportunity.schema.json",
+  "title": "RASID opportunities file",
+  "description": "Produced by the pipeline. One record per detected announcement.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "orgId",
+      "titleAr",
+      "detectedISO",
+      "firstSeenISO",
+      "lastConfirmedISO",
+      "status",
+      "opensISO",
+      "closesISO",
+      "closesHijri",
+      "product",
+      "majors",
+      "seats",
+      "stipendSAR",
+      "durationWeeks",
+      "cities",
+      "relevanceScore",
+      "relevanceReason",
+      "statesZeroCoursesRule",
+      "zeroCoursesQuote",
+      "flags",
+      "sourceUrl",
+      "applyUrl",
+      "rawExcerpt"
+    ],
+    "properties": {
+      "id": { "type": "string", "minLength": 1 },
+      "orgId": { "type": "string", "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$" },
+      "titleAr": { "type": "string", "minLength": 1 },
+      "detectedISO": { "type": "string", "format": "date-time" },
+      "firstSeenISO": { "type": "string", "format": "date-time" },
+      "lastConfirmedISO": { "type": "string", "format": "date-time" },
+      "status": {
+        "type": "string",
+        "enum": [
+          "open",
+          "closing_soon",
+          "closed",
+          "announced_not_open",
+          "expired",
+          "unknown"
+        ]
+      },
+      "opensISO": { "type": ["string", "null"], "format": "date" },
+      "closesISO": { "type": ["string", "null"], "format": "date" },
+      "closesHijri": { "type": ["string", "null"] },
+      "product": {
+        "type": "string",
+        "enum": ["coop", "graduate_dev", "professional_experience", "unknown"]
+      },
+      "majors": { "type": "array", "items": { "type": "string" } },
+      "seats": { "type": ["integer", "null"], "minimum": 0 },
+      "stipendSAR": { "type": ["number", "null"], "minimum": 0 },
+      "durationWeeks": { "type": ["integer", "null"], "minimum": 0 },
+      "cities": { "type": "array", "items": { "type": "string" } },
+      "relevanceScore": {
+        "type": ["integer", "null"],
+        "minimum": 0,
+        "maximum": 100
+      },
+      "relevanceReason": { "type": "string" },
+      "statesZeroCoursesRule": { "type": "boolean" },
+      "zeroCoursesQuote": {
+        "description": "The exact published wording of a zero-courses or full-time condition. Required whenever statesZeroCoursesRule is true: the rule that decides the semester must be quotable, not asserted.",
+        "type": ["string", "null"]
+      },
+      "flags": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "few_seats",
+            "closing_in_48h",
+            "exact_major_match",
+            "no_course_condition",
+            "has_stipend",
+            "wrong_product",
+            "first_time_seen",
+            "needs_manual_review"
+          ]
+        },
+        "uniqueItems": true
+      },
+      "sourceUrl": { "type": "string", "format": "uri" },
+      "applyUrl": {
+        "oneOf": [{ "type": "null" }, { "type": "string", "format": "uri" }]
+      },
+      "rawExcerpt": { "type": "string", "maxLength": 400 }
+    }
+  }
+}

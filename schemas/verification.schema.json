@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rasid.local/schemas/verification.schema.json",
+  "title": "RASID link verification log",
+  "description": "Audit trail of every link-verification attempt, including the failures. Negative results are kept on purpose so the next round does not repeat the search.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["targetId", "checkedAtISO", "urlTried", "outcome", "note"],
+    "properties": {
+      "targetId": { "type": "string", "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$" },
+      "checkedAtISO": { "type": "string", "format": "date-time" },
+      "urlTried": {
+        "oneOf": [{ "type": "null" }, { "type": "string", "format": "uri" }]
+      },
+      "outcome": {
+        "type": "string",
+        "enum": ["verified", "rejected", "not_found", "unreachable"]
+      },
+      "note": { "type": "string", "minLength": 1 }
+    }
+  }
+}

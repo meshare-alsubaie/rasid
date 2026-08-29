@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rasid.local/schemas/snapshot.schema.json",
+  "title": "RASID source snapshots",
+  "description": "SHA-256 of each source's extracted main text, so the classifier only sees pages that actually changed, and so change history survives in git.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "sourceUrl",
+      "orgId",
+      "contentHash",
+      "extractedChars",
+      "extractionMethod",
+      "firstSeenISO",
+      "lastChangedISO",
+      "thinRuns",
+      "pendingClassification"
+    ],
+    "properties": {
+      "sourceUrl": { "type": "string", "format": "uri" },
+      "orgId": { "type": "string", "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$" },
+      "contentHash": {
+        "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[0-9a-f]{64}$" }]
+      },
+      "extractedChars": { "type": ["integer", "null"], "minimum": 0 },
+      "extractionMethod": {
+        "oneOf": [{ "type": "null" }, { "type": "string", "enum": ["readability", "body_fallback"] }]
+      },
+      "firstSeenISO": { "type": "string", "format": "date-time" },
+      "lastChangedISO": { "type": ["string", "null"], "format": "date-time" },
+      "thinRuns": { "type": "integer", "minimum": 0 },
+      "pendingClassification": { "type": "boolean" }
+    }
+  }
+}

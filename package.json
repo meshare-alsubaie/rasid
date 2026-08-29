@@ -1,0 +1,34 @@
+{
+  "name": "rasid",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "RASID (راصد) - tracker for Saudi cooperative-training application windows",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "tsx scripts/validate.ts",
+    "collect": "tsx scripts/collect.ts",
+    "diff-source": "tsx scripts/diff-source.ts",
+    "test:classifier": "tsx scripts/test-classifier.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run validate"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "playwright": "^1.62.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.122.0",
+    "@mozilla/readability": "^0.6.0",
+    "linkedom": "^0.18.13",
+    "p-limit": "^7.3.1",
+    "robots-parser": "^3.0.1",
+    "undici": "^8.10.0"
+  }
+}
