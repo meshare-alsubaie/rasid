@@ -151,9 +151,16 @@ the app rather than an absence of openings.
 ## Running it for real
 
 1. **Pages** — repository settings, Pages, source "GitHub Actions".
-2. **Secrets** — `ANTHROPIC_API_KEY` for the classifier, and optionally
+2. **The student profile.** This repository is public and is about
+   organisations; the one thing in it that describes a person lives outside it.
+   Copy `.profile.example` to `.profile.local`, which is gitignored, and put
+   the same text in a `RASID_STUDENT_PROFILE` secret for CI. Without it the
+   classifier refuses to run rather than judging against a blank profile.
+   `npm run audit:privacy` checks every tracked file before a push, because git
+   remembers what is deleted.
+3. **Secrets** — `ANTHROPIC_API_KEY` for the classifier, and optionally
    `RASID_CONTACT` to put a reachable address in the crawler's User-Agent.
-3. **Notifications**, all optional, each off until its secret exists:
+4. **Notifications**, all optional, each off until its secret exists:
    ```bash
    npx web-push generate-vapid-keys
    ```
@@ -164,7 +171,7 @@ the app rather than an absence of openings.
    database. For the daily digest add `RESEND_API_KEY` and `NOTIFY_EMAIL`.
    Quiet hours default to 23:00–07:00 via `RASID_QUIET_START` / `RASID_QUIET_END`,
    and no more than six pushes go out in a day; the rest fall to the digest.
-4. **Schedule** — `.github/workflows/collect.yml` runs every six hours, collects,
+5. **Schedule** — `.github/workflows/collect.yml` runs every six hours, collects,
    classifies, notifies, commits the dataset, and deploys. Installing Chromium
    for the two rendered sources is allowed to fail without failing the run.
 
@@ -172,6 +179,8 @@ the app rather than an absence of openings.
 npm run check           # types, schemas, honesty rules
 npm run test:classifier # four failure branches, offline and free
 npm run test:notify     # what earns a notification, and what never does
+npm run audit:contrast  # 4.5:1 measured on every screen, not asserted
+npm run audit:privacy   # nothing personal in any tracked file
 ```
 
 ## Local use
