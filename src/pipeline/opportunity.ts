@@ -58,6 +58,23 @@ interface Common {
   firstTime: boolean;
 }
 
+/**
+ * The model reads an apply link off the page, so it arrives however the page
+ * wrote it: "/careers/apply", "apply.aspx", sometimes a sentence. Resolving it
+ * against the page it was found on turns the first two into real addresses, and
+ * anything that still is not http(s) is dropped rather than stored — a broken
+ * apply link on a deadline is worse than no link, because the user taps it.
+ */
+function absoluteApplyUrl(candidate: string | null, sourceUrl: string): string | null {
+  if (candidate === null || candidate.trim() === "") return null;
+  try {
+    const resolved = new URL(candidate.trim(), sourceUrl);
+    return resolved.protocol === "http:" || resolved.protocol === "https:" ? resolved.href : null;
+  } catch {
+    return null;
+  }
+}
+
 export function fromClassification(args: Common & { c: Classification }): Opportunity {
   const { orgId, sourceUrl, text, nowISO, prior, firstTime, c } = args;
   const firstSeenISO = prior?.firstSeenISO ?? nowISO;
@@ -91,7 +108,7 @@ export function fromClassification(args: Common & { c: Classification }): Opport
     zeroCoursesQuote: c.zeroCoursesQuote,
     flags: flagsFor(c, status, firstTime),
     sourceUrl,
-    applyUrl: c.applyUrl,
+    applyUrl: absoluteApplyUrl(c.applyUrl, sourceUrl),
     rawExcerpt: text.slice(0, 400),
   };
 }
