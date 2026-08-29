@@ -687,6 +687,42 @@ a {
   font-size: var(--t-15);
 }
 
+/* ---------- notification diagnostics ---------- */
+
+/*
+ * One row per link in the chain, read top to bottom. The tick is the whole
+ * point: the first broken row is the answer, and it is meant to be findable
+ * without reading a word.
+ */
+.diag {
+  margin: var(--s3) 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--s2);
+}
+.diag-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--s1) var(--s2);
+  align-items: baseline;
+}
+.diag-row .chip {
+  grid-row: span 2;
+  align-self: center;
+  min-width: 1.6rem;
+  text-align: center;
+}
+.diag-label {
+  font-weight: 600;
+  font-size: var(--t-14);
+}
+.diag-detail {
+  grid-column: 2;
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+}
+
 /* ---------- chips ---------- */
 
 .chips {
