@@ -2,12 +2,19 @@
  * RASID interface.
  *
  * The subject is windows that open and close on dates the user cannot predict,
- * so the palette is instrument-like rather than warm, and nothing decorative
- * competes with the Season Bar. Spec section 6.1 fixes the colours and the type
- * scale; the only addition is --dormant-text, because --dormant itself is a mid
- * grey that measures about 3.5:1 on paper and would fail the 4.5:1 contrast
- * requirement in section 8.7. It is kept for rules and lane fills, where
- * contrast rules do not apply, and never used for text.
+ * so the design is an instrument, not a dashboard: a dark panel that reads like
+ * a radar screen, and a pale page around it that stays out of the way.
+ *
+ * "Do not decorate" is not "do not design". Nothing here is ornament, but
+ * weight, ground and rhythm all do work. The first thing on the page answers
+ * the only question that matters in the first three seconds, because spec
+ * acceptance criterion 1 says a cold visitor has to get that answer without
+ * scrolling and without reading.
+ *
+ * Contrast: --dormant is a mid grey that measures about 3.5:1 on paper, so it
+ * is kept for rules and fills and never for text; --dormant-text replaces it.
+ * The dark panel gets its own light variants of the state colours, because the
+ * deep green and burnt red of the spec are unreadable on near-black.
  */
 
 :root {
@@ -20,8 +27,14 @@
   --signal: #3a2fe0;
 
   --dormant-text: #5a6472;
-  --hairline: #cfd6dd;
+  --hairline: #d3dae1;
   --paper-sunk: #f0f3f5;
+
+  /* On the ink panel only. Lightened so they clear 4.5:1 on near-black. */
+  --live-lit: #3fc78d;
+  --urgent-lit: #ff8560;
+  --dormant-lit: #8e9aa8;
+  --signal-lit: #9d95ff;
 
   /* Strict scale, spec 6.1. Nothing between these. */
   --t-13: 0.8125rem;
@@ -35,8 +48,16 @@
   --body: "IBM Plex Sans Arabic", "Segoe UI", system-ui, sans-serif;
   --data: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
 
-  --gap: 1rem;
-  --radius: 6px;
+  /* One rhythm, used everywhere, so nothing is spaced by accident. */
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s5: 1.5rem;
+  --s6: 2.5rem;
+
+  --radius: 10px;
+  --radius-sm: 6px;
 }
 
 *,
@@ -51,7 +72,7 @@ body {
   color: var(--ink);
   font-family: var(--body);
   font-size: var(--t-15);
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -60,8 +81,9 @@ h2,
 h3 {
   font-family: var(--display);
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.2;
   margin: 0;
+  letter-spacing: -0.015em;
 }
 
 button {
@@ -69,15 +91,13 @@ button {
   color: inherit;
   cursor: pointer;
 }
-
 a {
   color: var(--signal);
 }
-
 :focus-visible {
   outline: 2px solid var(--signal);
-  outline-offset: 2px;
-  border-radius: 2px;
+  outline-offset: 3px;
+  border-radius: 3px;
 }
 
 .skip-link {
@@ -86,68 +106,123 @@ a {
   top: 0;
   background: var(--ink);
   color: var(--paper);
-  padding: 0.5rem 1rem;
+  padding: var(--s2) var(--s4);
   z-index: 10;
 }
 .skip-link:focus {
   inset-inline-start: 0;
 }
-
 .boot {
-  padding: 2rem;
+  padding: var(--s6);
   color: var(--dormant-text);
 }
 
 .shell {
-  max-width: 60rem;
+  max-width: 56rem;
   margin: 0 auto;
-  padding: 0 var(--gap) 4rem;
+  padding: 0 var(--s4) var(--s6);
 }
 
-/* ---------- header and the honesty line ---------- */
+/* ---------- masthead ---------- */
 
 .masthead {
-  padding: 1.5rem 0 0.75rem;
+  display: flex;
+  align-items: baseline;
+  gap: var(--s3);
+  padding: var(--s5) 0 var(--s4);
 }
 .masthead h1 {
   font-size: var(--t-24);
-  letter-spacing: -0.01em;
+  font-weight: 700;
 }
 .masthead p {
-  margin: 0.25rem 0 0;
+  margin: 0;
   color: var(--dormant-text);
   font-size: var(--t-13);
 }
 
+/* ---------- the answer, first thing on the page ---------- */
+
+.answer {
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: var(--radius);
+  padding: var(--s5);
+  display: grid;
+  gap: var(--s2);
+}
+.answer .headline {
+  font-family: var(--display);
+  font-size: var(--t-34);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+.answer .headline.is-live {
+  color: var(--live-lit);
+}
+.answer .sub {
+  color: #b9c3cd;
+  font-size: var(--t-15);
+  max-width: 46ch;
+}
+.answer .tally {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2) var(--s5);
+  margin-top: var(--s2);
+  padding-top: var(--s3);
+  border-top: 1px solid rgba(248, 250, 251, 0.14);
+  font-size: var(--t-13);
+  color: #b9c3cd;
+}
+.answer .tally b {
+  font-family: var(--data);
+  font-weight: 500;
+  color: var(--paper);
+  font-size: var(--t-18);
+  margin-inline-end: var(--s1);
+}
+.answer .tally .warn b {
+  color: var(--urgent-lit);
+}
+
+/* ---------- honesty line ---------- */
+
 .honesty {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1rem;
+  gap: var(--s2) var(--s4);
   align-items: center;
   width: 100%;
-  margin-top: 0.75rem;
-  padding: 0.5rem 0.75rem;
-  background: var(--paper);
+  margin-top: var(--s3);
+  padding: var(--s3);
+  background: transparent;
   border: 1px solid var(--hairline);
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   font-size: var(--t-13);
+  color: var(--dormant-text);
   text-align: start;
 }
-.honesty[aria-expanded="true"] {
-  border-color: var(--signal);
+.honesty:hover {
+  border-color: var(--dormant);
 }
 .honesty .warn {
   color: var(--urgent);
   font-weight: 500;
 }
+.honesty .caret {
+  margin-inline-start: auto;
+  font-family: var(--data);
+}
 
 .banner {
-  margin-top: 0.75rem;
-  padding: 0.75rem;
+  margin-top: var(--s3);
+  padding: var(--s3) var(--s4);
   border: 1px solid var(--urgent);
   border-inline-start-width: 4px;
-  border-radius: var(--radius);
-  background: var(--paper);
+  border-radius: var(--radius-sm);
+  background: rgba(169, 58, 28, 0.06);
   font-size: var(--t-13);
 }
 .banner button {
@@ -156,217 +231,331 @@ a {
   color: var(--urgent);
   text-decoration: underline;
   padding: 0;
-  margin-inline-start: 0.5rem;
+  margin-inline-start: var(--s2);
 }
 
 /* ---------- tabs ---------- */
 
 .tabs {
   display: flex;
-  gap: 0.25rem;
-  margin: 1rem 0;
+  gap: var(--s1);
+  margin: var(--s5) 0 var(--s4);
   border-bottom: 1px solid var(--hairline);
   overflow-x: auto;
+  scrollbar-width: none;
+}
+.tabs::-webkit-scrollbar {
+  display: none;
 }
 .tabs button {
   background: none;
   border: 0;
   border-bottom: 2px solid transparent;
-  padding: 0.5rem 0.75rem;
+  padding: var(--s2) var(--s3);
+  margin-bottom: -1px;
   color: var(--dormant-text);
   white-space: nowrap;
+}
+.tabs button:hover {
+  color: var(--ink);
 }
 .tabs button[aria-selected="true"] {
   color: var(--ink);
   border-bottom-color: var(--signal);
-  font-weight: 500;
+  font-weight: 600;
 }
 
-/* ---------- season bar ---------- */
+/* ---------- the season panel: the instrument ---------- */
+
+.season-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s2);
+  margin-bottom: var(--s3);
+}
+.season-head h2 {
+  font-size: var(--t-18);
+}
+.season-note {
+  margin: 0;
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+}
 
 .season {
-  background: var(--paper);
-  border: 1px solid var(--hairline);
+  background: var(--ink);
   border-radius: var(--radius);
-  padding: 0.75rem;
+  padding: var(--s4) var(--s3);
   overflow-x: auto;
   /* Matches the chart's own coordinate space, so scrollLeft counts from the
-     left edge and the script below can centre on a position, not guess. */
+     left edge and the script can centre on a position instead of guessing. */
   direction: ltr;
+  scrollbar-color: #3a4350 transparent;
 }
 .season svg {
   display: block;
-  min-width: 34rem;
+  min-width: 36rem;
   width: 100%;
   height: auto;
   /*
-   * The page is RTL, and SVG honours that: inherited direction flips what
+   * The page is RTL and SVG honours that: inherited direction flips what
    * text-anchor "start" and "end" mean, which collapsed every lane label into
-   * a sliver at the edge. The chart's coordinate space is left-to-right by
-   * construction, so it is pinned here. Arabic inside each label still shapes
-   * right-to-left, because that is bidi within the text run, not layout.
+   * a sliver at the edge. Arabic inside a label still shapes right to left,
+   * because that is bidi within the run, not layout.
    */
   direction: ltr;
 }
 .season .month {
   font-family: var(--data);
   font-size: 11px;
-  fill: var(--dormant-text);
+  fill: #7d8a99;
+  letter-spacing: 0.04em;
 }
 .season .lane-label {
   font-family: var(--body);
-  font-size: 12px;
-  fill: var(--ink);
+  font-size: 13px;
+  fill: #e3e9ef;
 }
 .season .lane-rule {
-  stroke: var(--hairline);
+  stroke: #262f3b;
   stroke-width: 1;
 }
+/* Faint enough that the data sits on top of it rather than inside it. */
+.season .lane-base {
+  stroke: #1a222d;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
 .season .today {
-  stroke: var(--ink);
+  stroke: var(--signal-lit);
   stroke-width: 1.5;
 }
 .season .today-label {
   font-family: var(--data);
   font-size: 11px;
-  fill: var(--ink);
+  fill: var(--signal-lit);
 }
 .season .seg-open {
-  fill: var(--live);
+  fill: var(--live-lit);
 }
 .season .seg-urgent {
-  fill: var(--urgent);
+  fill: var(--urgent-lit);
 }
 .season .seg-rolling {
-  stroke: var(--live);
-  stroke-width: 2;
-  stroke-dasharray: 1 0;
+  stroke: var(--live-lit);
+  stroke-width: 1.5;
+  opacity: 0.75;
 }
 .season .seg-unknown {
   font-family: var(--data);
   font-size: 12px;
-  fill: var(--dormant-text);
+  fill: #6b7887;
 }
 .season .lane-broken .lane-label {
-  fill: var(--dormant-text);
+  fill: #8e9aa8;
+}
+.season .lane-broken .seg-unknown {
+  fill: var(--urgent-lit);
 }
 .season g.lane:hover .lane-hit,
 .season g.lane:focus-visible .lane-hit {
-  fill: rgba(58, 47, 224, 0.06);
+  fill: rgba(157, 149, 255, 0.1);
+}
+.season g.lane:focus-visible {
+  outline: none;
 }
 
-/*
- * IBM Plex Mono has no Arabic, so an Arabic sentence set in it falls back
- * glyph by glyph and comes out spaced like a ransom note. Spec 6.1 asks for
- * mono on "dates, countdowns, seat counts" - numerals - so it is kept to the
- * places that are actually numeric, and Arabic prose uses the body face.
- */
-.season-note {
-  margin: 0 0 0.5rem;
-  font-size: var(--t-13);
-  color: var(--dormant-text);
-}
-
-.legend {
-  display: grid;
-  gap: 0.35rem;
-  margin: 0.75rem 0 0;
-  padding: 0;
+/* Inside the panel, so the swatches sit on the same ground as the marks they
+   describe. A legend in page colours would not match what it explains. */
+.season .legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2) var(--s4);
+  margin: var(--s4) 0 0;
+  padding: var(--s3) var(--s2) 0;
+  border-top: 1px solid #232c38;
   list-style: none;
   font-size: var(--t-13);
-  color: var(--dormant-text);
+  color: #97a3b1;
+  direction: rtl;
 }
-.legend li {
+.season .legend li {
   display: flex;
-  gap: 0.5rem;
+  gap: var(--s2);
   align-items: center;
 }
-.legend .swatch {
+.season .legend .swatch {
   flex: none;
-  width: 1.75rem;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
   height: 0.6rem;
   border-radius: 2px;
+  font-family: var(--data);
+  font-size: 11px;
+  color: #97a3b1;
 }
 
-/* ---------- groups and cards ---------- */
+/* ---------- groups ---------- */
 
 .group {
-  margin-top: 1.5rem;
+  margin-top: var(--s5);
 }
 .group > summary {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
   font-family: var(--display);
   font-size: var(--t-18);
   font-weight: 600;
-  padding: 0.35rem 0;
+  padding: var(--s2) 0;
+  border-bottom: 1px solid var(--hairline);
+  list-style: none;
+}
+.group > summary::-webkit-details-marker {
+  display: none;
+}
+.group > summary::before {
+  content: "▾";
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+  transition: transform 120ms;
+}
+.group:not([open]) > summary::before {
+  transform: rotate(90deg);
 }
 .group > summary .count {
   font-family: var(--data);
   font-size: var(--t-13);
+  font-weight: 400;
   color: var(--dormant-text);
-  margin-inline-start: 0.5rem;
+  margin-inline-start: auto;
 }
 
 .empty {
+  margin: var(--s3) 0 0;
+  padding: var(--s4);
   background: var(--paper);
   border: 1px dashed var(--hairline);
-  border-radius: var(--radius);
-  padding: 1rem;
+  border-radius: var(--radius-sm);
   color: var(--dormant-text);
   font-size: var(--t-15);
 }
 
 .cards {
   display: grid;
-  gap: 0.75rem;
-  margin: 0.5rem 0 0;
+  gap: var(--s3);
+  margin: var(--s3) 0 0;
   padding: 0;
   list-style: none;
 }
 
+/* ---------- opportunity card ---------- */
+
 .card {
+  position: relative;
   background: var(--paper);
   border: 1px solid var(--hairline);
   border-radius: var(--radius);
-  padding: 0.85rem;
+  padding: var(--s4);
   display: grid;
-  gap: 0.5rem;
+  gap: var(--s3);
 }
-.card.is-review {
-  border-inline-start: 4px solid var(--urgent);
+/* Weight follows relevance, so the eye lands on what matters to him first. */
+.card::before {
+  content: "";
+  position: absolute;
+  inset-block: -1px;
+  inset-inline-start: -1px;
+  width: 4px;
+  border-start-start-radius: var(--radius);
+  border-end-start-radius: var(--radius);
+  background: var(--dormant);
+}
+.card.band-high::before {
+  background: var(--signal);
+}
+.card.band-mid::before {
+  background: var(--ink);
+}
+.card.is-review::before {
+  background: var(--urgent);
+}
+
+.card .row {
+  display: flex;
+  gap: var(--s4);
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .card h3 {
   font-size: var(--t-18);
 }
 .card .org {
+  margin-top: var(--s1);
   font-size: var(--t-13);
   color: var(--dormant-text);
-}
-.card .meta {
-  font-size: var(--t-13);
-  color: var(--dormant-text);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 1rem;
-}
-.card .reason {
-  font-size: var(--t-13);
 }
 .card .score {
+  flex: none;
   font-family: var(--data);
-  font-size: var(--t-24);
-  line-height: 1;
+  font-size: var(--t-34);
+  font-weight: 500;
+  line-height: 0.9;
+  color: var(--dormant-text);
+  font-variant-numeric: tabular-nums;
+}
+.card.band-high .score {
   color: var(--signal);
+}
+.card.band-mid .score {
+  color: var(--ink);
 }
 .card .score.unscored {
   color: var(--urgent);
-  font-size: var(--t-18);
+  font-size: var(--t-24);
 }
-.card .row {
-  display: flex;
-  gap: 0.75rem;
-  align-items: baseline;
-  justify-content: space-between;
+.card .score small {
+  display: block;
+  font-family: var(--body);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: var(--dormant-text);
+  margin-top: var(--s1);
+  text-align: center;
+}
+
+.card .meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: var(--s2) var(--s4);
+  padding: var(--s3) 0;
+  border-block: 1px solid var(--hairline);
+  font-size: var(--t-13);
+}
+.card .meta div {
+  display: grid;
+  gap: 2px;
+}
+.card .meta dt {
+  color: var(--dormant-text);
+  font-size: 0.6875rem;
+}
+.card .meta dd {
+  margin: 0;
+  font-family: var(--data);
+  font-variant-numeric: tabular-nums;
+}
+.card .meta dd.none {
+  font-family: var(--body);
+  color: var(--dormant-text);
+}
+.card .reason {
+  margin: 0;
+  font-size: var(--t-15);
 }
 
 /* ---------- chips ---------- */
@@ -374,56 +563,120 @@ a {
 .chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: var(--s1) var(--s2);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .chip {
   font-size: var(--t-13);
-  padding: 0.1rem 0.5rem;
+  line-height: 1.5;
+  padding: 0.1rem 0.55rem;
   border-radius: 999px;
   border: 1px solid;
   white-space: nowrap;
 }
 /*
  * Three states, and grey is never dressed as green. An unknown decision field
- * is not good news, so it gets an outline and no fill: spec 6.2.
+ * is not good news, so it gets a dashed outline and no fill: spec 6.2.
  */
 .chip.yes {
   color: var(--live);
-  border-color: var(--live);
-  background: rgba(11, 110, 79, 0.08);
+  border-color: rgba(11, 110, 79, 0.35);
+  background: rgba(11, 110, 79, 0.09);
 }
 .chip.no {
   color: var(--urgent);
-  border-color: var(--urgent);
-  background: rgba(169, 58, 28, 0.08);
+  border-color: rgba(169, 58, 28, 0.35);
+  background: rgba(169, 58, 28, 0.09);
 }
 .chip.unknown {
   color: var(--dormant-text);
   border-color: var(--hairline);
-  background: transparent;
   border-style: dashed;
+  background: transparent;
 }
 
-/* ---------- organisations list ---------- */
+/* ---------- quote ---------- */
+
+.quote {
+  margin: 0;
+  padding: var(--s3) var(--s4);
+  border-inline-start: 3px solid var(--urgent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--paper-sunk);
+  font-size: var(--t-15);
+}
+.quote cite {
+  display: block;
+  margin-top: var(--s2);
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+  font-style: normal;
+}
+
+/* ---------- buttons ---------- */
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+.primary {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  padding: var(--s3) var(--s4);
+  border-radius: var(--radius-sm);
+  border: 0;
+  font-weight: 500;
+  text-align: center;
+}
+.secondary {
+  background: none;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.7rem;
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+}
+.secondary:hover {
+  border-color: var(--dormant);
+  color: var(--ink);
+}
+.secondary[aria-pressed="true"] {
+  border-color: var(--signal);
+  color: var(--signal);
+  background: rgba(58, 47, 224, 0.06);
+  font-weight: 500;
+}
+
+/* ---------- organisations ---------- */
 
 .filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 0.5rem 0 1rem;
+  gap: var(--s2);
+  margin-bottom: var(--s4);
 }
-.filters select,
-.filters input {
+.filters input,
+.filters select {
   font: inherit;
   font-size: var(--t-13);
-  padding: 0.35rem 0.5rem;
+  padding: var(--s2) var(--s3);
   border: 1px solid var(--hairline);
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   background: var(--paper);
   color: var(--ink);
+}
+.filters input {
+  flex: 1 1 12rem;
+}
+.count-line {
+  margin: 0 0 var(--s3);
+  font-size: var(--t-13);
+  color: var(--dormant-text);
 }
 
 .org-row {
@@ -431,115 +684,92 @@ a {
   text-align: start;
   background: var(--paper);
   border: 1px solid var(--hairline);
-  border-radius: var(--radius);
-  padding: 0.7rem 0.85rem;
+  border-radius: var(--radius-sm);
+  padding: var(--s3) var(--s4);
   display: grid;
-  gap: 0.4rem;
+  gap: var(--s2);
+}
+.org-row:hover {
+  border-color: var(--dormant);
+}
+.org-row .head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s2);
 }
 .org-row .name {
   font-family: var(--display);
   font-weight: 600;
+  color: var(--ink);
 }
 .org-row .tier {
   font-family: var(--data);
   font-size: var(--t-13);
   color: var(--dormant-text);
-  margin-inline-start: 0.4rem;
+  margin-inline-start: auto;
 }
 
 /* ---------- sheet ---------- */
 
 dialog.sheet {
-  width: min(38rem, 100%);
+  width: min(38rem, calc(100% - 2rem));
   max-height: 88vh;
-  border: 1px solid var(--hairline);
+  border: 0;
   border-radius: var(--radius);
   padding: 0;
   background: var(--paper);
   color: var(--ink);
+  box-shadow: 0 24px 60px rgba(16, 23, 32, 0.28);
 }
 dialog.sheet::backdrop {
-  background: rgba(16, 23, 32, 0.45);
+  background: rgba(16, 23, 32, 0.5);
 }
 .sheet-body {
-  padding: 1rem;
+  padding: var(--s5);
   display: grid;
-  gap: 0.85rem;
+  gap: var(--s4);
 }
 .sheet-body h2 {
   font-size: var(--t-24);
 }
-.sheet dl {
+.sheet dl.facts {
   margin: 0;
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.35rem 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: var(--s3) var(--s4);
+  padding: var(--s3) 0;
+  border-block: 1px solid var(--hairline);
   font-size: var(--t-13);
+}
+.sheet dl.facts > div {
+  display: grid;
+  gap: 2px;
 }
 .sheet dt {
   color: var(--dormant-text);
+  font-size: 0.6875rem;
 }
 .sheet dd {
   margin: 0;
-}
-.quote {
-  margin: 0;
-  padding: 0.6rem 0.75rem;
-  border-inline-start: 3px solid var(--urgent);
-  background: var(--paper-sunk);
-  font-size: var(--t-15);
-}
-.quote cite {
-  display: block;
-  margin-top: 0.35rem;
-  font-size: var(--t-13);
-  color: var(--dormant-text);
-  font-style: normal;
-}
-.primary {
-  display: inline-block;
-  background: var(--ink);
-  color: var(--paper);
-  text-decoration: none;
-  padding: 0.6rem 0.9rem;
-  border-radius: var(--radius);
-  border: 0;
-  text-align: center;
-}
-.secondary {
-  background: none;
-  border: 1px solid var(--hairline);
-  border-radius: var(--radius);
-  padding: 0.45rem 0.7rem;
-  font-size: var(--t-13);
-}
-.secondary[aria-pressed="true"] {
-  border-color: var(--signal);
-  color: var(--signal);
-  font-weight: 500;
-}
-.sheet-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  overflow-wrap: anywhere;
 }
 
-/* ---------- source health list ---------- */
+/* ---------- health list ---------- */
 
 .health-list {
-  margin: 0.75rem 0 0;
+  margin: var(--s3) 0 0;
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 0.5rem;
+  gap: var(--s2);
   font-size: var(--t-13);
 }
 .health-list li {
   background: var(--paper);
   border: 1px solid var(--hairline);
   border-inline-start-width: 4px;
-  border-radius: var(--radius);
-  padding: 0.5rem 0.7rem;
+  border-radius: var(--radius-sm);
+  padding: var(--s2) var(--s3);
   overflow-wrap: anywhere;
 }
 .health-list li.healthy {
@@ -553,31 +783,35 @@ dialog.sheet::backdrop {
 }
 .health-list .url {
   font-family: var(--data);
+  font-size: 0.6875rem;
   color: var(--dormant-text);
 }
 
-/* ---------- motion ---------- */
+/* ---------- motion: one load sequence, nothing else ---------- */
 
 @media (prefers-reduced-motion: no-preference) {
   .season .lane-anim {
-    transform-origin: right center;
-    animation: draw 320ms ease-out both;
+    transform-origin: left center;
+    animation: draw 340ms cubic-bezier(0.2, 0.7, 0.3, 1) both;
   }
   .season .today-anim {
-    animation: drop 240ms ease-out both;
+    animation: drop 260ms ease-out both;
+    animation-delay: 420ms;
   }
   @keyframes draw {
     from {
       transform: scaleX(0);
+      opacity: 0;
     }
     to {
       transform: scaleX(1);
+      opacity: 1;
     }
   }
   @keyframes drop {
     from {
       opacity: 0;
-      transform: translateY(-6px);
+      transform: translateY(-8px);
     }
     to {
       opacity: 1;
@@ -586,11 +820,22 @@ dialog.sheet::backdrop {
   }
 }
 
-@media (max-width: 30rem) {
-  .masthead h1 {
-    font-size: var(--t-18);
-  }
+@media (max-width: 34rem) {
   .shell {
-    padding-inline: 0.75rem;
+    padding-inline: var(--s3);
+  }
+  .answer {
+    padding: var(--s4);
+  }
+  .answer .headline {
+    font-size: var(--t-24);
+  }
+  .card .score {
+    font-size: var(--t-24);
+  }
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--s1);
   }
 }

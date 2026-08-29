@@ -26,12 +26,20 @@ export interface LaneInput {
   rolling: boolean;
 }
 
-const W = 860;
-const LABEL_W = 210;
-const TRACK_X = 8;
-const TRACK_W = W - LABEL_W - TRACK_X * 2;
-const HEADER_H = 26;
-const LANE_H = 20;
+/*
+ * Labels sit to the left of the axis, as in the spec's own sketch. That is not
+ * a concession on an RTL page: the axis runs left to right, so the label column
+ * is the start of each row, and a scroll container that begins at zero shows
+ * the names and September together. Putting them on the right looked correct
+ * in Arabic and left a phone showing a column of names beside empty months.
+ */
+const LABEL_W = 200;
+const GUTTER = 10;
+const TRACK_X = LABEL_W + GUTTER;
+const TRACK_W = 640;
+const W = TRACK_X + TRACK_W + GUTTER;
+const HEADER_H = 28;
+const LANE_H = 24;
 
 const MONTHS = ["سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر", "يناير", "فبراير"];
 
@@ -84,7 +92,7 @@ export function renderSeasonBar(lanes: LaneInput[], now = new Date()): string {
   const rows = sorted.map((lane, i) => {
     const y = HEADER_H + i * LANE_H;
     const mid = y + LANE_H / 2;
-    const label = truncate(lane.org.nameAr, 30);
+    const label = truncate(lane.org.nameAr, 28);
     const broken = lane.health === "broken" || lane.health === "degraded";
 
     let body: string;
@@ -107,8 +115,13 @@ export function renderSeasonBar(lanes: LaneInput[], now = new Date()): string {
         <line class="seg-rolling lane-anim" x1="${TRACK_X}" y1="${mid + 2}" x2="${TRACK_X + TRACK_W}" y2="${mid + 2}" style="animation-delay:${i * 90}ms" />`;
       described = "قناة بريد مفتوحة دائماً، بلا نافذة معلنة";
     } else {
-      const x = inSeason ? todayX : TRACK_X + TRACK_W / 2;
-      body = `<text class="seg-unknown" x="${x}" y="${mid + 4}" text-anchor="middle">${broken ? "⚠" : "؟"}</text>`;
+      /*
+       * A lane with no dates gets its mark at the start of the track, never at
+       * a month. Parking it under December, which is only the midpoint of an
+       * axis, would put a shape under a date nobody published: the reader's eye
+       * reads position as meaning, and there is no meaning here to read.
+       */
+      body = `<text class="seg-unknown" x="${TRACK_X + 14}" y="${mid + 4}" text-anchor="middle">${broken ? "⚠" : "؟"}</text>`;
       described = broken
         ? "المصدر لا يُقرأ الآن، والبيانات قد تكون قديمة"
         : "لم يُعلن تاريخ فتح أو إغلاق";
@@ -116,9 +129,10 @@ export function renderSeasonBar(lanes: LaneInput[], now = new Date()): string {
 
     return `<g class="lane${broken ? " lane-broken" : ""}" role="button" tabindex="0"
         data-org="${esc(lane.org.id)}" aria-label="${esc(`${lane.org.nameAr}: ${described}`)}">
-        <rect class="lane-hit" x="0" y="${y}" width="${W}" height="${LANE_H}" fill="transparent" />
+        <rect class="lane-hit" x="0" y="${y}" width="${W}" height="${LANE_H}" rx="4" fill="transparent" />
+        <line class="lane-base" x1="${TRACK_X}" y1="${mid}" x2="${TRACK_X + TRACK_W}" y2="${mid}" />
         ${body}
-        <text class="lane-label" x="${W - 6}" y="${mid + 4}" text-anchor="end">${esc(label)}</text>
+        <text class="lane-label" x="${LABEL_W}" y="${mid + 4}" text-anchor="end">${esc(label)}</text>
       </g>`;
   });
 
@@ -145,12 +159,12 @@ export function renderSeasonBar(lanes: LaneInput[], now = new Date()): string {
       ${rows.join("")}
       ${today}
     </svg>
-  </div>
-  <ul class="legend">
-    <li><span class="swatch" style="background:var(--live)"></span> نافذة معلنة بتواريخ منشورة</li>
-    <li><span class="swatch" style="background:var(--urgent)"></span> تغلق خلال ٤٨ ساعة</li>
-    <li><span class="swatch" style="border-top:2px solid var(--live);border-bottom:2px solid var(--live);height:8px"></span> قناة بريد مفتوحة دائماً</li>
-    <li><span class="swatch" style="display:grid;place-items:center;color:var(--dormant-text)">؟</span> المصدر يُقرأ، ولا شيء معلن</li>
-    <li><span class="swatch" style="display:grid;place-items:center">⚠</span> المصدر لا يُقرأ، والبيانات قد تكون قديمة</li>
-  </ul>`;
+    <ul class="legend">
+      <li><span class="swatch" style="background:var(--live-lit)"></span> نافذة معلنة بتواريخ منشورة</li>
+      <li><span class="swatch" style="background:var(--urgent-lit)"></span> تغلق خلال ٤٨ ساعة</li>
+      <li><span class="swatch" style="border-top:2px solid var(--live-lit);border-bottom:2px solid var(--live-lit);background:none"></span> قناة بريد مفتوحة دائماً</li>
+      <li><span class="swatch">؟</span> المصدر يُقرأ، ولا شيء معلن</li>
+      <li><span class="swatch" style="color:var(--urgent-lit)">⚠</span> المصدر لا يُقرأ، والبيانات قد تكون قديمة</li>
+    </ul>
+  </div>`;
 }

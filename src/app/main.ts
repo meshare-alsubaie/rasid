@@ -51,10 +51,21 @@ let data: Dataset;
 
 /* ---------- shared pieces ---------- */
 
+const band = (o: Opportunity): string =>
+  o.flags.includes("needs_manual_review") ? "is-review"
+  : o.relevanceScore === null ? "is-review"
+  : o.relevanceScore >= 85 ? "band-high"
+  : o.relevanceScore >= 60 ? "band-mid"
+  : "band-low";
+
 const scoreLabel = (o: Opportunity): string =>
   o.relevanceScore === null
-    ? `<span class="score unscored" title="لم يُصنَّف">؟</span>`
-    : `<span class="score">${o.relevanceScore}</span>`;
+    ? `<span class="score unscored">؟<small>لم يُصنَّف</small></span>`
+    : `<span class="score">${o.relevanceScore}<small>صلة</small></span>`;
+
+/** A field with no published value is said in words, never left blank. */
+const fact = (label: string, value: string | null): string =>
+  `<div><dt>${label}</dt><dd class="${value === null ? "none" : ""}">${value ?? "لم يُعلن"}</dd></div>`;
 
 function chip(state: boolean | null, yes: string, no: string, unknown: string): string {
   if (state === true) return `<li class="chip yes">${yes}</li>`;
@@ -79,7 +90,7 @@ function opportunityCard(o: Opportunity): string {
   const review = o.flags.includes("needs_manual_review");
   const mark = marks[o.id]?.mark;
 
-  return `<li class="card${review ? " is-review" : ""}">
+  return `<li class="card ${band(o)}">
     <div class="row">
       <div>
         <h3>${esc(o.titleAr)}</h3>
@@ -87,24 +98,34 @@ function opportunityCard(o: Opportunity): string {
       </div>
       ${scoreLabel(o)}
     </div>
-    <div class="meta">
-      <span>يفتح: ${formatDate(o.opensISO)}</span>
-      <span>يغلق: ${formatDate(o.closesISO)}${days !== null && days >= 0 ? ` (بعد ${days} يوم)` : ""}</span>
-      <span>المقاعد: ${o.seats ?? "لم يُعلن"}</span>
-      <span>المكافأة: ${o.stipendSAR === null ? "لم تُعلن" : `${o.stipendSAR} ريال`}</span>
-    </div>
+    <dl class="meta">
+      ${fact("يفتح", o.opensISO === null ? null : formatDate(o.opensISO))}
+      ${fact(
+        "يغلق",
+        o.closesISO === null
+          ? null
+          : `${formatDate(o.closesISO)}${days !== null && days >= 0 ? ` · بعد ${days} يوم` : ""}`,
+      )}
+      ${fact("المقاعد", o.seats === null ? null : String(o.seats))}
+      ${fact("المكافأة", o.stipendSAR === null ? null : `${o.stipendSAR} ريال`)}
+    </dl>
     <p class="reason">${esc(o.relevanceReason)}</p>
     ${
+      review
+        ? `<ul class="chips"><li class="chip no">تعذّر التصنيف، والدرجة فارغة لا صفر</li></ul>`
+        : ""
+    }
+    ${
       o.flags.includes("wrong_product")
-        ? `<p class="chip no" style="justify-self:start">تطوير خريجين، وأنت غير مؤهّل قبل التخرّج</p>`
+        ? `<ul class="chips"><li class="chip no">تطوير خريجين، وأنت غير مؤهّل قبل التخرّج</li></ul>`
         : ""
     }
     ${
       o.statesZeroCoursesRule && o.zeroCoursesQuote
-        ? `<blockquote class="quote">${esc(o.zeroCoursesQuote)}<cite>شرط منشور على صفحة الجهة</cite></blockquote>`
+        ? `<blockquote class="quote">${esc(o.zeroCoursesQuote)}<cite>شرط منشور على صفحة الجهة، منقول بنصّه</cite></blockquote>`
         : ""
     }
-    <div class="sheet-actions">
+    <div class="actions">
       <button class="secondary" data-open-org="${esc(o.orgId)}">تفاصيل الجهة</button>
       ${(["interested", "applied", "ignored"] as const)
         .map(
@@ -116,6 +137,37 @@ function opportunityCard(o: Opportunity): string {
         .join("")}
     </div>
   </li>`;
+}
+
+/**
+ * The first thing on the page, and the only thing acceptance criterion 1
+ * actually asks for: what is open today, answered before anything is read.
+ */
+function answerBlock(): string {
+  const open = data.opportunities.filter((o) => o.status === "open" || o.status === "closing_soon");
+  const watched = data.health.length;
+  const unread = data.health.filter((h) => h.state !== "healthy").length;
+  const tracked = data.opportunities.length;
+
+  const headline =
+    open.length > 0
+      ? `<div class="headline is-live">${open.length} نافذة مفتوحة الآن</div>`
+      : `<div class="headline">لا شيء مفتوح اليوم</div>`;
+
+  const sub =
+    open.length > 0
+      ? `أقربها إغلاقاً: ${esc(open[0]!.titleAr)}.`
+      : `لم تنشر أي جهة محقّقة تاريخ فتح بعد. ${tracked} برنامجاً قائماً تحت المراقبة، وسيظهر هنا أول ما يُعلَن.`;
+
+  return `<section class="answer" aria-label="الحالة اليوم">
+    ${headline}
+    <p class="sub">${sub}</p>
+    <div class="tally">
+      <span><b>${watched}</b> مصدراً مراقَباً</span>
+      <span><b>${tracked}</b> برنامجاً معروفاً</span>
+      ${unread > 0 ? `<span class="warn"><b>${unread}</b> مصدراً لا يُقرأ</span>` : ""}
+    </div>
+  </section>`;
 }
 
 function group(title: string, items: Opportunity[], emptyText: string, open: boolean): string {
@@ -151,9 +203,13 @@ function seasonScreen(): string {
     }));
 
   const nextHint =
-    "لا توجد نوافذ مفتوحة اليوم، ولم تنشر أي جهة محقّقة تاريخ فتح بعد. الجدول أدناه يعرض ما نراقبه فعلاً.";
+    "لا نافذة مفتوحة. حين تُعلن جهة تاريخاً ستظهر هنا، وسيتلوّن مسارها في الشريط أعلاه.";
 
-  return `${renderSeasonBar(lanes)}
+  return `<div class="season-head">
+      <h2>الموسم</h2>
+      <p class="season-note">سبتمبر إلى فبراير · ${lanes.length} جهة مراقَبة</p>
+    </div>
+    ${renderSeasonBar(lanes)}
     ${group("مفتوح الآن", by("open"), nextHint, true)}
     ${group("يغلق قريباً", by("closing_soon"), "لا شيء يغلق خلال ٤٨ ساعة.", true)}
     ${group("أُعلن ولم يفتح", by("announced_not_open"), "لا إعلان بتاريخ فتح مستقبلي.", true)}
@@ -178,12 +234,12 @@ function orgsScreen(): string {
         ${sectors.map((s) => `<option value="${s}"${s === sector ? " selected" : ""}>${s}</option>`).join("")}
       </select>
     </div>
-    <p class="empty" style="border-style:solid">${list.length} جهة من ${data.orgs.length}. الرمادي المتقطّع يعني «غير معروف»، لا «لا بأس».</p>
+    <p class="count-line">${list.length} جهة من ${data.orgs.length}. الشريحة المتقطّعة تعني «غير معروف»، لا «لا بأس».</p>
     <ul class="cards">
       ${list
         .map(
           (o) => `<li><button class="org-row" data-open-org="${esc(o.id)}">
-            <span><span class="name">${esc(o.nameAr)}</span><span class="tier">فئة ${o.tier}</span></span>
+            <span class="head"><span class="name">${esc(o.nameAr)}</span><span class="tier">${o.tier}</span></span>
             ${orgChips(o)}
           </button></li>`,
         )
@@ -207,7 +263,7 @@ function mineScreen(): string {
           <span class="chip ${v.mark === "applied" ? "yes" : "unknown"}">${v.mark === "applied" ? "قدّمت" : "مهتم"}</span>
         </div>
         <div class="meta"><span>منذ ${since} يوم</span>${due ? "<span>حان وقت المتابعة</span>" : ""}</div>
-        ${o ? `<div class="sheet-actions"><button class="secondary" data-open-org="${esc(o.orgId)}">تفاصيل الجهة</button><button class="secondary" data-mark="clear" data-opp="${esc(id)}">إزالة</button></div>` : ""}
+        ${o ? `<div class="actions"><button class="secondary" data-open-org="${esc(o.orgId)}">تفاصيل الجهة</button><button class="secondary" data-mark="clear" data-opp="${esc(id)}">إزالة</button></div>` : ""}
       </li>`;
     })
     .join("")}</ul>`;
@@ -236,7 +292,7 @@ function settingsScreen(): string {
         ثم انسخ النصّ الذي يظهر وضعه سرّاً باسم <code>RASID_PUSH_SUBSCRIPTION</code> في المستودع.
         بعدها تُرسل الجولة الآلية التنبيهات إلى هذا الجهاز.
       </p>
-      <div class="sheet-actions"><button class="secondary" id="subscribe">فعّل التنبيهات على هذا الجهاز</button></div>
+      <div class="actions"><button class="secondary" id="subscribe">فعّل التنبيهات على هذا الجهاز</button></div>
       <p class="reason" id="sub-out"></p>
     </div>
     <div class="card">
@@ -262,6 +318,7 @@ function honestyLine(): string {
       <span>آخر فحص ${timeAgo(data.lastCheckISO)}</span>
       ${broken.length > 0 ? `<span class="warn">${broken.length} يحتاج فحصاً يدوياً</span>` : ""}
       ${review > 0 ? `<span class="warn">${review} بلا تصنيف</span>` : ""}
+      <span class="caret" aria-hidden="true">▾</span>
     </button>
     ${
       tierSA.length > 0 && !bannerDismissed
@@ -307,8 +364,9 @@ function render(): void {
     <header class="masthead">
       <h1>راصد</h1>
       <p>نوافذ التدريب التعاوني، ومتى لا يمكن الوثوق بما تراه.</p>
-      ${honestyLine()}
     </header>
+    ${answerBlock()}
+    ${honestyLine()}
     <nav class="tabs" role="tablist" aria-label="الأقسام">
       ${TABS.map(
         ([id, label]) =>
@@ -321,19 +379,18 @@ function render(): void {
   app.setAttribute("aria-busy", "false");
 
   /*
-   * On a narrow screen the Season Bar is wider than the viewport, and an RTL
-   * container starts scrolled to the labels, showing a column of names beside
-   * an empty stretch of axis. Bring the part that carries information into
-   * view instead: today when we are in season, the middle of the track when
-   * we are not.
+   * With the labels on the left, scroll position zero already shows the names
+   * and the start of the season, which is the right default. It only moves for
+   * something worth moving for: a real window, or today's hairline. A column
+   * of "?" is not worth scrolling away from the labels to see.
    */
   const track = document.querySelector<HTMLElement>(".season");
   if (track && track.scrollWidth > track.clientWidth) {
     const svg = track.querySelector("svg")!;
     const marker =
-      svg.querySelector<SVGElement>(".today") ??
+      svg.querySelector<SVGElement>(".seg-urgent") ??
       svg.querySelector<SVGElement>(".seg-open") ??
-      svg.querySelector<SVGElement>(".seg-unknown");
+      svg.querySelector<SVGElement>(".today");
     if (marker) {
       const at = marker.getBoundingClientRect().left - svg.getBoundingClientRect().left;
       track.scrollLeft = Math.max(0, at - track.clientWidth / 2);
@@ -361,20 +418,25 @@ function openSheet(orgId: string): void {
         : `<p class="reason">لم يُرصد أي شرط منشور بخصوص تصفير المواد. غياب الشرط ليس دليل مرونة، هو غياب فقط.</p>`
     }
     ${org.notes ? `<p class="reason">${esc(org.notes)}</p>` : ""}
-    <dl>
-      <dt>المكافأة</dt><dd>${org.stipend.amountSAR === null ? "غير معروفة" : `${org.stipend.amountSAR} ريال`}</dd>
-      <dt>قناة التقديم</dt><dd>${org.applyVia === null ? "غير معروفة" : esc(org.applyVia.target)}</dd>
-      <dt>مصدر السجل</dt><dd>${org.importSource === "spec" ? "المواصفة" : org.importSource === "coop_pdf_2021" ? "ملف COOP ‏٢٠٢١، غير محقّق" : "إدخال يدوي"}</dd>
-      <dt>آخر فحص ناجح</dt><dd>${health.length === 0 ? "لا مصدر مراقَب" : timeAgo(health[0]!.lastSuccessISO)}</dd>
+    <dl class="facts">
+      ${fact("المكافأة", org.stipend.amountSAR === null ? null : `${org.stipend.amountSAR} ريال`)}
+      ${fact("قناة التقديم", org.applyVia === null ? null : esc(org.applyVia.target))}
+      ${fact(
+        "مصدر السجل",
+        org.importSource === "spec" ? "المواصفة"
+        : org.importSource === "coop_pdf_2021" ? "ملف COOP ٢٠٢١، غير محقّق"
+        : "إدخال يدوي",
+      )}
+      ${fact("آخر فحص ناجح", health.length === 0 ? null : timeAgo(health[0]!.lastSuccessISO))}
     </dl>
     ${
       org.historicalWindows.length > 0
-        ? `<dl>${org.historicalWindows
-            .map((w) => `<dt>${esc(w.seasonLabel)}</dt><dd>${formatDate(w.openedISO)} — ${formatDate(w.closedISO)}</dd>`)
+        ? `<dl class="facts">${org.historicalWindows
+            .map((w) => fact(esc(w.seasonLabel), `${formatDate(w.openedISO)} — ${formatDate(w.closedISO)}`))
             .join("")}</dl>`
         : ""
     }
-    <div class="sheet-actions">
+    <div class="actions">
       ${
         org.manualCheckUrl
           ? `<a class="primary" href="${esc(org.manualCheckUrl.url)}" target="_blank" rel="noopener noreferrer">افتح الصفحة الرسمية</a>`
