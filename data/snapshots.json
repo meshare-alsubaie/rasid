@@ -1,5 +1,16 @@
 [
   {
+    "sourceUrl": "http://adeemcapital.com/",
+    "orgId": "adeem",
+    "contentHash": "2b456008343bf178539f19166abb2d9a628e38e968ecb3663bbd6a79ed67ae23",
+    "extractedChars": 469,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "http://www.ecza.gov.sa/360/pages/ar/home",
     "orgId": "ecza",
     "contentHash": "7138f42c5460e114b80815c56da5399fcd3b616ecad4e32539defe520ca39db9",
@@ -7,6 +18,17 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
     "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "http://www.moenergy.gov.sa/",
+    "orgId": "moenergy",
+    "contentHash": "845eee17b7c6938f40995aa87d9fa0a050e3c72bb44ff18333051ed86f89a559",
+    "extractedChars": 9200,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -24,11 +46,33 @@
   {
     "sourceUrl": "https://adf.gov.sa/ar/Pages/default.aspx",
     "orgId": "adf",
-    "contentHash": "06f2a5d4052d8791c415c7bc5552aaa2b016ae2420b51718c5ce58ec2c2e4184",
+    "contentHash": "123e94e335c09665375eeeab2c209756e24a3de3b47389fd6e853f857db22fdd",
     "extractedChars": 1710,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-08-29T21:19:44.971Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://alinma.com/",
+    "orgId": "alinma",
+    "contentHash": "24df33bddd81797e869cea12aefd581c194b0444a57d036ea43944a44391e70f",
+    "extractedChars": 1211,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://career.dga.gov.sa/ar/",
+    "orgId": "dga",
+    "contentHash": "5496cb35e854e04f20c5386c795bfbe6e845875083dd079a72a81c6105758e58",
+    "extractedChars": 2444,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -73,6 +117,17 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://careers.ejada.com/ar/",
+    "orgId": "ejada",
+    "contentHash": "6c13f69104924b546809e9580b3715d8bf0f8584250268f6ffaf12143f488ef9",
+    "extractedChars": 1380,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -150,7 +205,7 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:36:21.032Z",
-    "thinRuns": 10,
+    "thinRuns": 11,
     "pendingClassification": false
   },
   {
@@ -161,6 +216,17 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
     "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://master-works.sa/en/Careers",
+    "orgId": "masterworks",
+    "contentHash": "efb57996494bb128af324013b5e19d48297f93df510a229fc14dba6c9400e175",
+    "extractedChars": 1493,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -194,6 +260,17 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
     "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://nour.net.sa/ar/",
+    "orgId": "nournet",
+    "contentHash": "48cee4e20040c42bcf69f6667aa8cc8be3c2d1f3e27becfc59db5117320577f0",
+    "extractedChars": 3805,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -264,6 +341,28 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://wadimakkah.sa/en/home",
+    "orgId": "wadi_makkah",
+    "contentHash": "fc96f9feeca1b382c2a56aa2ab060a02df6259186011d88a3c5a09004ff22018",
+    "extractedChars": 1452,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.aecl.com/ar/",
+    "orgId": "aec",
+    "contentHash": "27ee40bf1c1fe492d14553151b494824a902f5cd589b01d09571152e2501472d",
+    "extractedChars": 3213,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program",
     "orgId": "snb",
     "contentHash": "926cfd2799039da3c9701cd005ca8d807dc5c7efa213cc23f9f5b3b3e980122b",
@@ -315,7 +414,7 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:22:33.828Z",
-    "thinRuns": 11,
+    "thinRuns": 12,
     "pendingClassification": false
   },
   {
@@ -374,6 +473,28 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://www.fakeeh.care/",
+    "orgId": "fakeeh",
+    "contentHash": "facb0271de7f229c5a0c4f5a18421adc7c9fc01606c8823d9adeb02b7102a81c",
+    "extractedChars": 407,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.kapsarc.org/",
+    "orgId": "kapsarc",
+    "contentHash": "2e79514ad98d2f3363aa81a19c2fadf6f200d9d360d6e40281457f1b706eb5f0",
+    "extractedChars": 1443,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://www.mckinsey.com/middle-east/ar/riyadh",
     "orgId": "mckinsey_sa",
     "contentHash": "a9952c438e2ec05b78b55afed13c83ccea42ce0c6fc23a39613897ed800131be",
@@ -398,11 +519,11 @@
   {
     "sourceUrl": "https://www.mim.gov.sa/ar/empower-training/cooperative-training",
     "orgId": "mim",
-    "contentHash": "5b316aa71baf134ec0b53365acc580d2494e245c8ec40e9cb9a288272a5fee05",
+    "contentHash": "a5b2f74bbfe7072bc5e2559bae0e3f5744bb41fe88b78c87accd26f34a942d46",
     "extractedChars": 2429,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
-    "lastChangedISO": "2026-08-29T21:19:44.971Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -473,6 +594,17 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://www.nazaha.gov.sa/",
+    "orgId": "nazaha",
+    "contentHash": "735688b8acaf1fe0dfd61d54b70e4552bb0516a60c3c1b68b46a7868f655ddd5",
+    "extractedChars": 877,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://www.ncc.gov.sa/ar/Pages/default.aspx",
     "orgId": "ncc",
     "contentHash": "6db2b9c8f584e5347d06858086d26dea388cce399bccedf8005e56beea840ee2",
@@ -480,6 +612,17 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
     "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.rcjy.gov.sa/",
+    "orgId": "rcjy",
+    "contentHash": "ee0d0c8e77112b4bc7249981a6bdbe737df58253efe1d47dba45d093e2b5abb5",
+    "extractedChars": 15545,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -627,6 +770,17 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://www.tu.edu.sa/",
+    "orgId": "taif_uni_it",
+    "contentHash": "6438f965f28bce2807ff00030dccbd8af9efca2597f9bbe79bbbce86c2344a47",
+    "extractedChars": 570,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://www.unilever.com/",
     "orgId": "unilever_sa",
     "contentHash": "d50a252cd1c981c7f7fdcbd2b5344108772b040f9d814893c4ddbaca7a6b0a39",
@@ -634,6 +788,17 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
     "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www2.deloitte.com/",
+    "orgId": "deloitte_sa",
+    "contentHash": "47145839b0ad2ed4ce4e367e40be8c0a1bee5251bdd5aeefe41b1687334003e5",
+    "extractedChars": 749,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T22:03:35.383Z",
     "thinRuns": 0,
     "pendingClassification": false
   }
