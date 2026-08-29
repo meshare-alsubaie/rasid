@@ -10,7 +10,7 @@
  *   npm run add-lead -- ejada https://careers.ejada.com/ar/ "found by search"
  */
 import { readFileSync, writeFileSync } from "node:fs";
-import type { Organisation, SourceType } from "../src/types";
+import type { Organisation } from "../src/types";
 
 const [id, url, why] = process.argv.slice(2);
 if (!id || !url) {
