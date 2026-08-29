@@ -99,24 +99,25 @@
     "titleAr": "مبادرة التدريب التعاوني - وزارة الصناعة والثروة المعدنية",
     "detectedISO": "2026-08-29T16:36:58.372Z",
     "firstSeenISO": "2026-08-29T16:36:58.372Z",
-    "lastConfirmedISO": "2026-08-29T19:43:17.547Z",
+    "lastConfirmedISO": "2026-08-29T21:19:44.971Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
     "closesHijri": null,
     "product": "coop",
     "majors": [
-      "التخصصات الصناعية الهندسية",
-      "التقنية",
-      "الفنية",
-      "التعدين"
+      "التخصصات العلمية والتطبيقية",
+      "المجالات الصناعية الهندسية والتقنية والفنية",
+      "مجالات التعدين"
     ],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": 20,
-    "relevanceReason": "المبادرة تستهدف التخصصات الصناعية والتعدينية والفنية ولا تذكر الأمن السيبراني أو تقنية المعلومات تحديدًا.",
+    "cities": [
+      "جميع أنحاء المملكة"
+    ],
+    "relevanceScore": 10,
+    "relevanceReason": "المبادرة موجهة لطلاب التخصصات الصناعية والهندسية والتعدين وليست ذات صلة مباشرة بالأمن السيبراني أو علوم الحاسب.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [

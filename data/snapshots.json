@@ -11,13 +11,24 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "http://www.wasatah.com.sa/index.php/ar/",
+    "orgId": "wasatah",
+    "contentHash": "5f62a5c2c9da326c10f2972466a8b6f40138885f99db2f4ca46f420e7a91aace",
+    "extractedChars": 616,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T21:19:44.971Z",
+    "lastChangedISO": "2026-08-29T21:19:44.971Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://adf.gov.sa/ar/Pages/default.aspx",
     "orgId": "adf",
-    "contentHash": "89ce79e33f9ff6e960edb8102a1acd9879359301e21722250a6e61b9adb70a83",
-    "extractedChars": 1708,
+    "contentHash": "06f2a5d4052d8791c415c7bc5552aaa2b016ae2420b51718c5ce58ec2c2e4184",
+    "extractedChars": 1710,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T21:19:44.971Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -139,7 +150,7 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:36:21.032Z",
-    "thinRuns": 9,
+    "thinRuns": 10,
     "pendingClassification": false
   },
   {
@@ -304,7 +315,7 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:22:33.828Z",
-    "thinRuns": 10,
+    "thinRuns": 11,
     "pendingClassification": false
   },
   {
@@ -376,22 +387,22 @@
   {
     "sourceUrl": "https://www.mewa.gov.sa/ar/Pages/default.aspx",
     "orgId": "mewa",
-    "contentHash": "22564351c174be399665417b35d231b915b21ea7fd00c6a5c328830c5c3412a1",
-    "extractedChars": 2075,
+    "contentHash": "5bd8d4ddaaa1538ddae5b5bfbf70fe7226c8e80d789dfad0bb583fba36b197e9",
+    "extractedChars": 1586,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-08-29T20:08:44.470Z",
+    "lastChangedISO": "2026-08-29T21:19:44.971Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.mim.gov.sa/ar/empower-training/cooperative-training",
     "orgId": "mim",
-    "contentHash": "3512fb5c2f05089d0be159a0f1c0c74d12bf86f4f411b463da4c23d81272a9c8",
+    "contentHash": "5b316aa71baf134ec0b53365acc580d2494e245c8ec40e9cb9a288272a5fee05",
     "extractedChars": 2429,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
-    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T21:19:44.971Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -563,11 +574,11 @@
   {
     "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/about-saudi-exchange/aboutus/careers?locale=ar",
     "orgId": "tadawul",
-    "contentHash": "254f2df8bcacc9fee733f6cea07df98aa8e984d6eebd0c0b5f5e283ee269ab1a",
-    "extractedChars": 13631,
+    "contentHash": "2eee5d7a23ba1d6202070bb4a2b67829d4261a66910ce017bcbba32c50eb622e",
+    "extractedChars": 13620,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T21:19:44.971Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
