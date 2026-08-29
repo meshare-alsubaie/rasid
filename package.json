@@ -12,6 +12,9 @@
     "collect": "tsx scripts/collect.ts",
     "diff-source": "tsx scripts/diff-source.ts",
     "test:classifier": "tsx scripts/test-classifier.ts",
+    "icons": "tsx scripts/make-icons.ts",
+    "notify": "tsx scripts/notify.ts",
+    "test:notify": "tsx scripts/test-notify.ts",
     "dev": "vite",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview",
@@ -20,6 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
+    "@types/web-push": "^3.6.4",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "playwright": "^1.62.1",
@@ -33,6 +37,7 @@
     "linkedom": "^0.18.13",
     "p-limit": "^7.3.1",
     "robots-parser": "^3.0.1",
-    "undici": "^8.10.0"
+    "undici": "^8.10.0",
+    "web-push": "^3.6.7"
   }
 }

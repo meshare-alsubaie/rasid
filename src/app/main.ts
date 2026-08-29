@@ -230,6 +230,16 @@ function settingsScreen(): string {
       <p class="reason">افحص دائماً بنفسك عبر «افتح الصفحة الرسمية» قبل أي قرار.</p>
     </div>
     <div class="card">
+      <h3>التنبيهات</h3>
+      <p class="reason">
+        التنبيه يصل من جهاز واحد مسجَّل، بلا خادم وبلا حساب. اضغط الزر، اسمح للمتصفّح،
+        ثم انسخ النصّ الذي يظهر وضعه سرّاً باسم <code>RASID_PUSH_SUBSCRIPTION</code> في المستودع.
+        بعدها تُرسل الجولة الآلية التنبيهات إلى هذا الجهاز.
+      </p>
+      <div class="sheet-actions"><button class="secondary" id="subscribe">فعّل التنبيهات على هذا الجهاز</button></div>
+      <p class="reason" id="sub-out"></p>
+    </div>
+    <div class="card">
       <h3>عتبة الصلة</h3>
       <label for="threshold" class="reason">أخفِ الفرص التي تقلّ درجتها عن <strong>${threshold}</strong>. الفرص غير المصنّفة تبقى ظاهرة دائماً.</label>
       <input id="threshold" type="range" min="0" max="90" step="5" value="${threshold}" />
@@ -375,6 +385,48 @@ function openSheet(orgId: string): void {
   dialog.showModal();
 }
 
+/* ---------- push subscription ---------- */
+
+const b64ToBytes = (b64: string): Uint8Array => {
+  const padded = (b64 + "=".repeat((4 - (b64.length % 4)) % 4)).replace(/-/g, "+").replace(/_/g, "/");
+  return Uint8Array.from(atob(padded), (c) => c.charCodeAt(0));
+};
+
+/**
+ * There is no server and no account, so the device subscription is handed back
+ * to the owner to paste into a repository secret. It is the only storage this
+ * design has, and it keeps the promise in spec section 9: no database.
+ */
+async function subscribeToPush(): Promise<void> {
+  const out = document.getElementById("sub-out")!;
+  const key = import.meta.env.VITE_VAPID_PUBLIC_KEY as string | undefined;
+  const say = (msg: string): void => {
+    out.textContent = msg;
+  };
+
+  if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
+    return say("هذا المتصفّح لا يدعم التنبيهات. على الآيفون ثبّت التطبيق على الشاشة الرئيسية أولاً.");
+  }
+  if (!key) return say("مفتاح VAPID العام غير مضبوط في البناء (VITE_VAPID_PUBLIC_KEY).");
+
+  try {
+    if ((await Notification.requestPermission()) !== "granted") {
+      return say("لم تُمنح الإذن، فلن تصل تنبيهات.");
+    }
+    const reg = await navigator.serviceWorker.ready;
+    const sub = await reg.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: b64ToBytes(key),
+    });
+    say(JSON.stringify(sub.toJSON()));
+    out.style.userSelect = "all";
+    out.style.fontFamily = "var(--data)";
+    out.style.overflowWrap = "anywhere";
+  } catch (err) {
+    say(`تعذّر التسجيل: ${err instanceof Error ? err.message : String(err)}`);
+  }
+}
+
 /* ---------- events ---------- */
 
 app.addEventListener("click", (e) => {
@@ -407,6 +459,10 @@ app.addEventListener("click", (e) => {
   const orgBtn = hit("[data-open-org]");
   if (orgBtn) {
     openSheet(orgBtn.dataset.openOrg!);
+    return;
+  }
+  if (hit("#subscribe")) {
+    void subscribeToPush();
     return;
   }
   const markBtn = hit("[data-mark]");
@@ -449,6 +505,16 @@ app.addEventListener("input", (e) => {
     document.getElementById("threshold")?.focus();
   }
 });
+
+/*
+ * Registered in production only. In dev a worker caching the shell turns every
+ * edit into a hunt for why the page did not change.
+ */
+if (import.meta.env.PROD && "serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    void navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`);
+  });
+}
 
 loadDataset()
   .then((d) => {

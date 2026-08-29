@@ -1,0 +1,96 @@
+name: collect and deploy
+
+on:
+  schedule:
+    # Every six hours. A co-op window can be seven days long, so a quarter-day
+    # miss is the most this is allowed to cost.
+    - cron: "0 */6 * * *"
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# One run at a time. Two collectors committing to data/ would race, and a
+# half-written dataset is worse than a late one.
+concurrency:
+  group: rasid-collect
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # Only a couple of sources need a real browser. If the download fails the
+      # run must carry on: the static half of the collection is most of it, and
+      # those sources simply stay degraded, which is visible in the app.
+      - name: Install Chromium for rendered sources
+        id: chromium
+        continue-on-error: true
+        run: npx playwright install --with-deps chromium
+
+      - name: Collect
+        # Skipped on an ordinary code push: a deploy should not spend API
+        # credits or hammer the sources just because a stylesheet changed.
+        if: github.event_name != 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RASID_CONTACT: ${{ secrets.RASID_CONTACT }}
+        run: npm run collect
+
+      # Types, schemas, and the honesty rules. A dataset that fails these is
+      # never committed and never published.
+      - run: npm run check
+
+      # Before the commit, because "what is newly true" is measured against the
+      # previous commit. Every channel is optional; a missing secret turns that
+      # channel off and says so in the log.
+      - name: Notify
+        if: github.event_name != 'push'
+        env:
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          RASID_PUSH_SUBSCRIPTION: ${{ secrets.RASID_PUSH_SUBSCRIPTION }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          RASID_CONTACT: ${{ secrets.RASID_CONTACT }}
+        run: npm run notify
+
+      - name: Commit the dataset if it moved
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "rasid-collector"
+          git config user.email "actions@github.com"
+          if git diff --quiet -- data; then
+            echo "nothing changed"
+          else
+            git add data
+            git commit -m "data: collection run $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - env:
+          VITE_VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deploy
+        uses: actions/deploy-pages@v4

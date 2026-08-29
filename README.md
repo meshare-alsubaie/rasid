@@ -125,6 +125,55 @@ four branches are asserted in `npm run test:classifier`, which needs no network.
 `ANTHROPIC_API_KEY` is read from the environment and is never written to a file
 or a log. `.env` and `.env.*` are gitignored.
 
+## The app
+
+An installable PWA, Arabic and right-to-left, built with Vite and plain
+TypeScript. It reads the committed JSON at runtime, so a collection run
+republishes the site without a rebuild.
+
+```bash
+npm run dev       # http://localhost:5173
+npm run build     # dist/, with data/ copied in
+npm run preview
+```
+
+The **Season Bar** is the signature element: September to February on one axis,
+a thin lane per watched organisation, a hairline for today. A lane can only draw
+a filled window when an announcement published dates. With none it shows `?`,
+and a source that can no longer be read is greyed with a warning. Nothing in the
+app can draw an inferred window, because nothing in the dataset infers one.
+
+Every screen keeps the same rule as the pipeline. The three decision chips have
+a third state that looks like neither yes nor no, a record the classifier could
+not judge shows `؟` rather than a zero, and a load failure says it is a fault in
+the app rather than an absence of openings.
+
+## Running it for real
+
+1. **Pages** — repository settings, Pages, source "GitHub Actions".
+2. **Secrets** — `ANTHROPIC_API_KEY` for the classifier, and optionally
+   `RASID_CONTACT` to put a reachable address in the crawler's User-Agent.
+3. **Notifications**, all optional, each off until its secret exists:
+   ```bash
+   npx web-push generate-vapid-keys
+   ```
+   Store the pair as `VAPID_PUBLIC_KEY` and `VAPID_PRIVATE_KEY`. Open the app,
+   Settings, "فعّل التنبيهات على هذا الجهاز", and paste what it prints into a
+   secret named `RASID_PUSH_SUBSCRIPTION`. That subscription is the only place
+   this design stores a device, which is how it keeps the spec's promise of no
+   database. For the daily digest add `RESEND_API_KEY` and `NOTIFY_EMAIL`.
+   Quiet hours default to 23:00–07:00 via `RASID_QUIET_START` / `RASID_QUIET_END`,
+   and no more than six pushes go out in a day; the rest fall to the digest.
+4. **Schedule** — `.github/workflows/collect.yml` runs every six hours, collects,
+   classifies, notifies, commits the dataset, and deploys. Installing Chromium
+   for the two rendered sources is allowed to fail without failing the run.
+
+```bash
+npm run check           # types, schemas, honesty rules
+npm run test:classifier # four failure branches, offline and free
+npm run test:notify     # what earns a notification, and what never does
+```
+
 ## Local use
 
 ```bash
