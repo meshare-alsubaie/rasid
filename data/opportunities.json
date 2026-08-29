@@ -128,6 +128,35 @@
     "rawExcerpt": "تقدم وزارة الصناعة والثروة المعدنية مبادرة التدريب التعاوني بالتعاون مع المنشآت الصناعية في جميع أنحاء المملكة، والتي تهدف إلى تنمية القدرات البشرية وتطويرها، من خلال اكتساب المهارات العملية والمعرفية من الكفاءات الوطنية المتخصصة في المجالات الصناعية الهندسية والتقنية والفنية، ومجالات التعدين وتطبيقها في بيئة عمل محفّزة.التدريب التعاونيعن المبادرةتقدم وزارة الصناعة والثروة المعدنية مبادرة التدريب "
   },
   {
+    "id": "5a3e61b8ab1bd7cf",
+    "orgId": "albilad",
+    "titleAr": "برنامج التدريب التعاوني والصيفي - بنك البلاد",
+    "detectedISO": "2026-08-29T23:03:32.200Z",
+    "firstSeenISO": "2026-08-29T23:03:32.200Z",
+    "lastConfirmedISO": "2026-08-29T23:03:32.200Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "coop",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 30,
+    "relevanceReason": "الإعلان عام لبرنامج تدريب تعاوني في بنك البلاد دون تحديد مجال الأمن السيبراني أو تقنية المعلومات تحديدًا.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition",
+      "first_time_seen"
+    ],
+    "sourceUrl": "https://www.bankalbilad.com.sa/en/about/pages/training.aspx",
+    "applyUrl": null,
+    "rawExcerpt": "​Cooperative and Summer Training ProgramPart of Bank Albilad’s goal is to increase the level of knowledge and skill among the talented students and enable them to apply the academic studies in the actual work environment, which supports the efforts of Saudization and job localization at the bank. Therefore, we are cooperating strategically with local and international universities and institutes b"
+  },
+  {
     "id": "80735898d0205329",
     "orgId": "sdaia",
     "titleAr": "برنامج التدريب التعاوني - سدايا",

@@ -205,7 +205,7 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:36:21.032Z",
-    "thinRuns": 11,
+    "thinRuns": 12,
     "pendingClassification": false
   },
   {
@@ -330,6 +330,17 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://thiqah.sa/",
+    "orgId": "thiqah",
+    "contentHash": "2ffb3297d8383ffa379e42db765ab329e6bc46b114185977522bb56675ef1f10",
+    "extractedChars": 2087,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T23:03:32.200Z",
+    "lastChangedISO": "2026-08-29T23:03:32.200Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://training.moj.gov.sa/",
     "orgId": "moj",
     "contentHash": "2f0713a62e659953fb116babdf1f89ac1764fd288c436be78332765c7dd063ac",
@@ -409,12 +420,12 @@
   {
     "sourceUrl": "https://www.bankalbilad.com.sa/en/about/pages/training.aspx",
     "orgId": "albilad",
-    "contentHash": "bb47135f0fab74186f77619296ae433875bc3e6722239dd82f47313e344f04b9",
-    "extractedChars": 107,
-    "extractionMethod": "body_fallback",
+    "contentHash": "858251bacaa86e63b3f9848b024a5dcdaa0e649ca5b05af63b264c4bda6bbb27",
+    "extractedChars": 1052,
+    "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
-    "lastChangedISO": "2026-08-29T02:22:33.828Z",
-    "thinRuns": 12,
+    "lastChangedISO": "2026-08-29T23:03:32.200Z",
+    "thinRuns": 0,
     "pendingClassification": false
   },
   {
@@ -508,11 +519,11 @@
   {
     "sourceUrl": "https://www.mewa.gov.sa/ar/Pages/default.aspx",
     "orgId": "mewa",
-    "contentHash": "5bd8d4ddaaa1538ddae5b5bfbf70fe7226c8e80d789dfad0bb583fba36b197e9",
-    "extractedChars": 1586,
+    "contentHash": "22564351c174be399665417b35d231b915b21ea7fd00c6a5c328830c5c3412a1",
+    "extractedChars": 2075,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-08-29T21:19:44.971Z",
+    "lastChangedISO": "2026-08-29T23:03:32.200Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -552,11 +563,11 @@
   {
     "sourceUrl": "https://www.mofa.gov.sa/",
     "orgId": "mofa",
-    "contentHash": "08cb363cb8e877367fb669f4c7b8cdd37f53c2ab51346d7faa8f11dd075efb03",
+    "contentHash": "d732b2268cddeea8b119e8bb692b340f1599e2f82b299b5a7458a2fae789c78c",
     "extractedChars": 1772,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T23:03:32.200Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -612,6 +623,17 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
     "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.pif.gov.sa/",
+    "orgId": "pif",
+    "contentHash": "6c8c89eea5fcbc3b508adedddf0710df31c50e145e0dc5ecd9e2500c3826bb0d",
+    "extractedChars": 9522,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T23:03:32.200Z",
+    "lastChangedISO": "2026-08-29T23:03:32.200Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -748,6 +770,17 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://www.simah.com/en/personal/pages/default.aspx",
+    "orgId": "simah",
+    "contentHash": "c0a9ff19e56c8452851df706e24180f3e18545cc617b59a090fc84b4cbd5ce3b",
+    "extractedChars": 1550,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T23:03:32.200Z",
+    "lastChangedISO": "2026-08-29T23:03:32.200Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://www.srca.org.sa/",
     "orgId": "srca",
     "contentHash": "2660b569a2fd877dd314f33aa016065c988b14fcee7191a67bf708fcfdd54a45",
@@ -794,11 +827,11 @@
   {
     "sourceUrl": "https://www2.deloitte.com/",
     "orgId": "deloitte_sa",
-    "contentHash": "47145839b0ad2ed4ce4e367e40be8c0a1bee5251bdd5aeefe41b1687334003e5",
-    "extractedChars": 749,
+    "contentHash": "4d8aae92e0e983e0f067db36debeb1543fb91282ea8f397a847c8375c80dc43b",
+    "extractedChars": 647,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T22:03:35.383Z",
-    "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "lastChangedISO": "2026-08-29T23:03:32.200Z",
     "thinRuns": 0,
     "pendingClassification": false
   }
