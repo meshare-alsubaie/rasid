@@ -11,17 +11,6 @@
     "pendingClassification": false
   },
   {
-    "sourceUrl": "http://www.wasatah.com.sa/index.php/ar/",
-    "orgId": "wasatah",
-    "contentHash": "5f62a5c2c9da326c10f2972466a8b6f40138885f99db2f4ca46f420e7a91aace",
-    "extractedChars": 616,
-    "extractionMethod": "readability",
-    "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-08-29T19:43:17.547Z",
-    "thinRuns": 0,
-    "pendingClassification": false
-  },
-  {
     "sourceUrl": "https://adf.gov.sa/ar/Pages/default.aspx",
     "orgId": "adf",
     "contentHash": "89ce79e33f9ff6e960edb8102a1acd9879359301e21722250a6e61b9adb70a83",
@@ -96,7 +85,7 @@
     "firstSeenISO": "2026-08-29T20:08:44.470Z",
     "lastChangedISO": "2026-08-29T20:08:44.470Z",
     "thinRuns": 0,
-    "pendingClassification": true
+    "pendingClassification": false
   },
   {
     "sourceUrl": "https://careers.saib.com.sa/ar/page/coop-program/",
@@ -150,7 +139,7 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:36:21.032Z",
-    "thinRuns": 8,
+    "thinRuns": 9,
     "pendingClassification": false
   },
   {
@@ -315,7 +304,7 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:22:33.828Z",
-    "thinRuns": 9,
+    "thinRuns": 10,
     "pendingClassification": false
   },
   {
@@ -393,7 +382,7 @@
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
     "lastChangedISO": "2026-08-29T20:08:44.470Z",
     "thinRuns": 0,
-    "pendingClassification": true
+    "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.mim.gov.sa/ar/empower-training/cooperative-training",
@@ -470,7 +459,7 @@
     "firstSeenISO": "2026-08-29T20:08:44.470Z",
     "lastChangedISO": "2026-08-29T20:08:44.470Z",
     "thinRuns": 0,
-    "pendingClassification": true
+    "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.ncc.gov.sa/ar/Pages/default.aspx",
