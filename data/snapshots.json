@@ -205,7 +205,7 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:36:21.032Z",
-    "thinRuns": 12,
+    "thinRuns": 13,
     "pendingClassification": false
   },
   {
@@ -227,6 +227,17 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T22:03:35.383Z",
     "lastChangedISO": "2026-08-29T22:03:35.383Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://mc.gov.sa/ar/pages/default.aspx",
+    "orgId": "mc",
+    "contentHash": "a46327f8114b280858806c4fefeefaf812ac48a35e53c0087d3725353c8ac46f",
+    "extractedChars": 415,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T23:21:37.487Z",
+    "lastChangedISO": "2026-08-29T23:21:37.487Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
