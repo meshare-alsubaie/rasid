@@ -51,7 +51,16 @@ const RULES: Rule[] = [
   },
 ];
 
-const files = execFileSync("git", ["ls-files"], { encoding: "utf8" }).split("\n").filter(Boolean);
+/*
+ * This file is skipped, because a scanner necessarily contains the strings it
+ * scans for. Skipping it is the only honest option: weakening the patterns so
+ * they do not match here would weaken them everywhere else too.
+ */
+const SELF = "scripts/audit-privacy.ts";
+
+const files = execFileSync("git", ["ls-files"], { encoding: "utf8" })
+  .split("\n")
+  .filter((f) => f && f !== SELF);
 
 let hits = 0;
 for (const file of files) {
