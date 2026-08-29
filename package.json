@@ -5,7 +5,7 @@
   "type": "module",
   "description": "RASID (راصد) - tracker for Saudi cooperative-training application windows",
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "scripts": {
     "validate": "tsx scripts/validate.ts",

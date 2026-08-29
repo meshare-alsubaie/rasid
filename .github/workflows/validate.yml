@@ -13,7 +13,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # undici 8 needs Node 22. See collect.yml for the failure it causes.
+          node-version: 22
           cache: npm
 
       - run: npm ci

@@ -31,7 +31,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # undici 8 needs Node 22: on 20 it fails at import with
+          # "webidl.util.markAsUncloneable is not a function".
+          node-version: 22
           cache: npm
 
       - run: npm ci
