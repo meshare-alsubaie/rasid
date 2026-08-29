@@ -15,6 +15,7 @@
     "icons": "tsx scripts/make-icons.ts",
     "notify": "tsx scripts/notify.ts",
     "test:notify": "tsx scripts/test-notify.ts",
+    "audit:contrast": "tsx scripts/audit-contrast.ts",
     "dev": "vite",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview",

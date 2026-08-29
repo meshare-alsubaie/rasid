@@ -24,3 +24,14 @@ jobs:
       # Fails on any honesty violation: a value without provenance, a published
       # rule without its wording, a graduate-development record shown as open.
       - run: npm run validate
+
+      # The rules that guard the two things a null must never become: a zero,
+      # and a notification.
+      - run: npm run test:classifier
+      - run: npm run test:notify
+
+      # Acceptance criterion 8.7 is measured, not asserted. Needs a browser and
+      # a real build, so it runs last.
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+      - run: npm run audit:contrast

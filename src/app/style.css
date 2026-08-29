@@ -348,10 +348,13 @@ a {
   stroke-width: 1.5;
   opacity: 0.75;
 }
+/* #6b7887 measured 4.00:1 on the panel and failed the 4.5:1 bar. This is
+   5.20:1. The "?" is a statement that nothing is known, so it has to be as
+   readable as anything else on the lane. */
 .season .seg-unknown {
   font-family: var(--data);
   font-size: 12px;
-  fill: #6b7887;
+  fill: #7d8a99;
 }
 .season .lane-broken .lane-label {
   fill: #8e9aa8;
