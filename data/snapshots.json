@@ -1,5 +1,38 @@
 [
   {
+    "sourceUrl": "http://www.ecza.gov.sa/360/pages/ar/home",
+    "orgId": "ecza",
+    "contentHash": "7138f42c5460e114b80815c56da5399fcd3b616ecad4e32539defe520ca39db9",
+    "extractedChars": 1049,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "http://www.wasatah.com.sa/index.php/ar/",
+    "orgId": "wasatah",
+    "contentHash": "5f62a5c2c9da326c10f2972466a8b6f40138885f99db2f4ca46f420e7a91aace",
+    "extractedChars": 616,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://adf.gov.sa/ar/Pages/default.aspx",
+    "orgId": "adf",
+    "contentHash": "89ce79e33f9ff6e960edb8102a1acd9879359301e21722250a6e61b9adb70a83",
+    "extractedChars": 1708,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://career.elm.sa/elm/go/coop-trainee-and-training-program/8486100/",
     "orgId": "elm",
     "contentHash": "f89829d10836c5cf80ad132a6b2bb6c75af1820ced41bcc7cb61cacc4e52845a",
@@ -22,6 +55,17 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://careers.anb.sa/ar/",
+    "orgId": "anb",
+    "contentHash": "75b37063349631746499cad559df38e6f9a3f9da210ebc171f9e3b234a0b0d66",
+    "extractedChars": 408,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://careers.cma.gov.sa/ar/page/coop-program/",
     "orgId": "cma",
     "contentHash": "c900ad6414744faea43864e1a252024162068b8824949090b4a4d2c759e50702",
@@ -29,6 +73,39 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://careers.maaden.com/gb/en",
+    "orgId": "maaden",
+    "contentHash": "f5a7e208491b67c296471667104c531a486bedd148a36f7a5588fcf0f3f47a8e",
+    "extractedChars": 586,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://careers.saib.com.sa/ar/page/coop-program/",
+    "orgId": "saib",
+    "contentHash": "eab49815afe99d39cb3118488b748a1df45c13edf432e00792672f28e6bc3a63",
+    "extractedChars": 1539,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://careers.sama.gov.sa/",
+    "orgId": "sama",
+    "contentHash": "f532373392bbbb126273bda6132e7514ba5b3f56d8c443d1271be5ca9fe161d1",
+    "extractedChars": 630,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -62,7 +139,29 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:36:21.032Z",
-    "thinRuns": 6,
+    "thinRuns": 7,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://hrsd.gov.sa/",
+    "orgId": "hrsd",
+    "contentHash": "5bb9956314f023f1d8b76e43f03e7aa3e4321f6d0dad36af1cb8b37aaf0ea12b",
+    "extractedChars": 2899,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://misa.gov.sa/ar/",
+    "orgId": "misa",
+    "contentHash": "5370c978c455e738d34f1fca2abe18de58a1dfd31d257ea226258834c73da837",
+    "extractedChars": 2650,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
     "pendingClassification": false
   },
   {
@@ -77,6 +176,17 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://nca.gov.sa/ar/education-program/",
+    "orgId": "ncac",
+    "contentHash": "f343ff42f414dccda67b45cbbaffdcffcf0d255704b873b4693dfc71d6bc7802",
+    "extractedChars": 807,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://sdaia.gov.sa/ar/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx",
     "orgId": "sdaia",
     "contentHash": "b366682a9e522fea8df0e12a1cebb3ad325283b656cf041e6b1ede5c33f33aaa",
@@ -84,6 +194,39 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T02:22:13.030Z",
     "lastChangedISO": "2026-08-29T02:22:13.030Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://sdaia.gov.sa/ncai/",
+    "orgId": "ncai",
+    "contentHash": "b39b2a8c54f760db71bcdbb1f2d3669e5be19590ee38a8bd50b6f1051bf46217",
+    "extractedChars": 649,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://slccareers.kpmg.com/job/Riyadh-KPMG-Audit-COOP-Program-(Riyadh,-Jeddah,-and-Khobar)/857222523/",
+    "orgId": "kpmg_sa",
+    "contentHash": "c3f0124c0ab32b8bbcf70c9bce6f245d5cce4a8c36115329abde52f7b2fb47eb",
+    "extractedChars": 439,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://takamolholding.com/ar/join-us",
+    "orgId": "takamol",
+    "contentHash": "8b7b9c19f699d643bfaa8d56cf11fa71df4580e857f983a5352d1d5ea1a14121",
+    "extractedChars": 306,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -121,6 +264,17 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://www.alfransi.com.sa/",
+    "orgId": "bsf",
+    "contentHash": "57aa8522b95b9537ea0af2cb6b4c5fec30f326359b31bb4065f3d497998f44be",
+    "extractedChars": 387,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities",
     "orgId": "aramco",
     "contentHash": "9b48f346bcf3b7b423ee77be25a2bbaaf66ae28347cc464135bc8dd35f48ffdc",
@@ -132,6 +286,17 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://www.awqaf.gov.sa/ar",
+    "orgId": "awqaf",
+    "contentHash": "7b04d1e32bbe1fd0dc8d4077b6d1f483f485ef128cd052dca9e9c12ca11fa814",
+    "extractedChars": 3458,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://www.bankalbilad.com.sa/en/about/pages/training.aspx",
     "orgId": "albilad",
     "contentHash": "bb47135f0fab74186f77619296ae433875bc3e6722239dd82f47313e344f04b9",
@@ -139,7 +304,18 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:22:33.828Z",
-    "thinRuns": 7,
+    "thinRuns": 8,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.bankaljazira.com/ar-sa/",
+    "orgId": "bankaljazira",
+    "contentHash": "e7af5fd7dcb064d0b1d388557ba5b47d1d6c9d619b759efe51d65bbc63822080",
+    "extractedChars": 519,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
     "pendingClassification": false
   },
   {
@@ -154,13 +330,178 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://www.citc.gov.sa/ar/Pages/default.aspx",
+    "orgId": "citc",
+    "contentHash": "7d05c7a48098575acf51f160fa63b12b2b68b12347b7dc34227aa26116feec5a",
+    "extractedChars": 760,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.etec.gov.sa/ar/Pages/default.aspx",
+    "orgId": "etec",
+    "contentHash": "7c49839eea8bbf187d470ae716b8898406e0f43287995f1f707a7090ab0cc52a",
+    "extractedChars": 509,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.ey.com/en_sa",
+    "orgId": "ey_sa",
+    "contentHash": "461996965450b55063bfae49a4d5d4775eeab68dde8e6f41eb8ba5e7b8f66d38",
+    "extractedChars": 4999,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.mckinsey.com/middle-east/ar/riyadh",
+    "orgId": "mckinsey_sa",
+    "contentHash": "a9952c438e2ec05b78b55afed13c83ccea42ce0c6fc23a39613897ed800131be",
+    "extractedChars": 1522,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.mewa.gov.sa/ar/Pages/default.aspx",
+    "orgId": "mewa",
+    "contentHash": "5bd8d4ddaaa1538ddae5b5bfbf70fe7226c8e80d789dfad0bb583fba36b197e9",
+    "extractedChars": 1586,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://www.mim.gov.sa/ar/empower-training/cooperative-training",
     "orgId": "mim",
-    "contentHash": "becc254e34a24e916b411a9b5bdca3b4340c6f32bc7471298ca7f10c7b995d44",
+    "contentHash": "3512fb5c2f05089d0be159a0f1c0c74d12bf86f4f411b463da4c23d81272a9c8",
     "extractedChars": 2429,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
-    "lastChangedISO": "2026-08-29T16:36:58.372Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.moe.gov.sa/ar/Pages/default.aspx",
+    "orgId": "moe",
+    "contentHash": "23e34955ec23fe85cb6f2d5ea0493889a20c8f5edb3441fac6ab91298f78b384",
+    "extractedChars": 5629,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.mof.gov.sa/Pages/default.aspx",
+    "orgId": "mof",
+    "contentHash": "1ba38a61781c63ee5bf81038a653e3c21725ce02fea860234f45d688dfa5edaf",
+    "extractedChars": 467,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.mofa.gov.sa/",
+    "orgId": "mofa",
+    "contentHash": "08cb363cb8e877367fb669f4c7b8cdd37f53c2ab51346d7faa8f11dd075efb03",
+    "extractedChars": 1772,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.moh.gov.sa/Pages/Default.aspx",
+    "orgId": "moh",
+    "contentHash": "66207561a8cea9430f3613fdd9edb0eb991793cd97f5cc4f1001d27db026688c",
+    "extractedChars": 683,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.monshaat.gov.sa/",
+    "orgId": "monshaat",
+    "contentHash": "d5b492339ba794dc2c180ad842f726977ba925c456570978a546a40fb16673ef",
+    "extractedChars": 4631,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.ncc.gov.sa/ar/Pages/default.aspx",
+    "orgId": "ncc",
+    "contentHash": "6db2b9c8f584e5347d06858086d26dea388cce399bccedf8005e56beea840ee2",
+    "extractedChars": 1907,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.rcrc.gov.sa/",
+    "orgId": "rcrc",
+    "contentHash": "269633988fea1b9fa6a3f0724405ca5cebf3723b0647a79525e5b4dd5dd08316",
+    "extractedChars": 1867,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.rcu.gov.sa/",
+    "orgId": "rcu",
+    "contentHash": "92155c9c2e4eb30aecc7ee0a2658c85feaa10f7559517ec515ef0c48b0770630",
+    "extractedChars": 21705,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.rega.gov.sa/",
+    "orgId": "rega",
+    "contentHash": "1120c9cd257f2ead0d08556231f36f92b24229dfbadaebfa0be12d48bcb5984a",
+    "extractedChars": 3169,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.riyadbank.com/ar/personal-banking",
+    "orgId": "riyadbank",
+    "contentHash": "b9c37058ae57062b01de0b1848ef5724e99005cc23f342d584a3cb0494207c09",
+    "extractedChars": 811,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -176,6 +517,83 @@
     "pendingClassification": false
   },
   {
+    "sourceUrl": "https://www.saip.gov.sa",
+    "orgId": "saip",
+    "contentHash": "781149dcb762beb19e565812bdfcc8c72e5e47584511f08682c91c5015892ec9",
+    "extractedChars": 2419,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.sar.com.sa/Home-aspx-lang-ar-sa.aspx",
+    "orgId": "sar",
+    "contentHash": "f2a104f7fff039b503dd916fc569c794524c987eab8f63da46c020dd75d7663e",
+    "extractedChars": 1113,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.saso.gov.sa/ar/pages/default.aspx",
+    "orgId": "saso",
+    "contentHash": "02391f6596bad81255d4fe8f0a1093ae0c34701dfc9f27cf09443979e8db62ca",
+    "extractedChars": 2935,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/about-saudi-exchange/aboutus/careers?locale=ar",
+    "orgId": "tadawul",
+    "contentHash": "254f2df8bcacc9fee733f6cea07df98aa8e984d6eebd0c0b5f5e283ee269ab1a",
+    "extractedChars": 13631,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.sfd.gov.sa/",
+    "orgId": "sfd",
+    "contentHash": "e2a72ce49b31fc983ae10fcd1e96644aa135aa5abcb890afd124f80689cc9ee6",
+    "extractedChars": 4825,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.sidf.gov.sa/ar/Pages/Home.aspx",
+    "orgId": "sidf",
+    "contentHash": "d0889f0d3f76738e75ae8c3a41594c29dfeece567d3b7decd0886c901afc8ca7",
+    "extractedChars": 635,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.srca.org.sa/",
+    "orgId": "srca",
+    "contentHash": "2660b569a2fd877dd314f33aa016065c988b14fcee7191a67bf708fcfdd54a45",
+    "extractedChars": 847,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
     "sourceUrl": "https://www.stats.gov.sa/en/cooperative-training",
     "orgId": "gastat",
     "contentHash": "b1f60702fa1a3765777db767d3c90e70e80b1be79aa220c68e981acb1cdbc841",
@@ -183,6 +601,17 @@
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:22:33.828Z",
+    "thinRuns": 0,
+    "pendingClassification": false
+  },
+  {
+    "sourceUrl": "https://www.unilever.com/",
+    "orgId": "unilever_sa",
+    "contentHash": "d50a252cd1c981c7f7fdcbd2b5344108772b040f9d814893c4ddbaca7a6b0a39",
+    "extractedChars": 11025,
+    "extractionMethod": "readability",
+    "firstSeenISO": "2026-08-29T19:43:17.547Z",
+    "lastChangedISO": "2026-08-29T19:43:17.547Z",
     "thinRuns": 0,
     "pendingClassification": false
   }
