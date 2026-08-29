@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    /*
+     * The browser half, and the only place DOM types exist. The pipeline is
+     * checked without them on purpose: it runs in Node, and letting `document`
+     * resolve there would hide a real mistake behind a type that compiles.
+     */
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+    "moduleResolution": "bundler",
+    "noEmit": true
+  },
+  "include": ["src/app", "src/types.ts"]
+}

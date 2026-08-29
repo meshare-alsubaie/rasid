@@ -1,0 +1,596 @@
+/*
+ * RASID interface.
+ *
+ * The subject is windows that open and close on dates the user cannot predict,
+ * so the palette is instrument-like rather than warm, and nothing decorative
+ * competes with the Season Bar. Spec section 6.1 fixes the colours and the type
+ * scale; the only addition is --dormant-text, because --dormant itself is a mid
+ * grey that measures about 3.5:1 on paper and would fail the 4.5:1 contrast
+ * requirement in section 8.7. It is kept for rules and lane fills, where
+ * contrast rules do not apply, and never used for text.
+ */
+
+:root {
+  --ink: #101720;
+  --slate: #e7ebef;
+  --paper: #f8fafb;
+  --live: #0b6e4f;
+  --urgent: #a93a1c;
+  --dormant: #7c8794;
+  --signal: #3a2fe0;
+
+  --dormant-text: #5a6472;
+  --hairline: #cfd6dd;
+  --paper-sunk: #f0f3f5;
+
+  /* Strict scale, spec 6.1. Nothing between these. */
+  --t-13: 0.8125rem;
+  --t-15: 0.9375rem;
+  --t-18: 1.125rem;
+  --t-24: 1.5rem;
+  --t-34: 2.125rem;
+  --t-48: 3rem;
+
+  --display: "Readex Pro", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans Arabic", "Segoe UI", system-ui, sans-serif;
+  --data: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+
+  --gap: 1rem;
+  --radius: 6px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--slate);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: var(--t-15);
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: var(--signal);
+}
+
+:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: -9999px;
+  top: 0;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+.skip-link:focus {
+  inset-inline-start: 0;
+}
+
+.boot {
+  padding: 2rem;
+  color: var(--dormant-text);
+}
+
+.shell {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 var(--gap) 4rem;
+}
+
+/* ---------- header and the honesty line ---------- */
+
+.masthead {
+  padding: 1.5rem 0 0.75rem;
+}
+.masthead h1 {
+  font-size: var(--t-24);
+  letter-spacing: -0.01em;
+}
+.masthead p {
+  margin: 0.25rem 0 0;
+  color: var(--dormant-text);
+  font-size: var(--t-13);
+}
+
+.honesty {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  font-size: var(--t-13);
+  text-align: start;
+}
+.honesty[aria-expanded="true"] {
+  border-color: var(--signal);
+}
+.honesty .warn {
+  color: var(--urgent);
+  font-weight: 500;
+}
+
+.banner {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid var(--urgent);
+  border-inline-start-width: 4px;
+  border-radius: var(--radius);
+  background: var(--paper);
+  font-size: var(--t-13);
+}
+.banner button {
+  background: none;
+  border: 0;
+  color: var(--urgent);
+  text-decoration: underline;
+  padding: 0;
+  margin-inline-start: 0.5rem;
+}
+
+/* ---------- tabs ---------- */
+
+.tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin: 1rem 0;
+  border-bottom: 1px solid var(--hairline);
+  overflow-x: auto;
+}
+.tabs button {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 0.75rem;
+  color: var(--dormant-text);
+  white-space: nowrap;
+}
+.tabs button[aria-selected="true"] {
+  color: var(--ink);
+  border-bottom-color: var(--signal);
+  font-weight: 500;
+}
+
+/* ---------- season bar ---------- */
+
+.season {
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  overflow-x: auto;
+  /* Matches the chart's own coordinate space, so scrollLeft counts from the
+     left edge and the script below can centre on a position, not guess. */
+  direction: ltr;
+}
+.season svg {
+  display: block;
+  min-width: 34rem;
+  width: 100%;
+  height: auto;
+  /*
+   * The page is RTL, and SVG honours that: inherited direction flips what
+   * text-anchor "start" and "end" mean, which collapsed every lane label into
+   * a sliver at the edge. The chart's coordinate space is left-to-right by
+   * construction, so it is pinned here. Arabic inside each label still shapes
+   * right-to-left, because that is bidi within the text run, not layout.
+   */
+  direction: ltr;
+}
+.season .month {
+  font-family: var(--data);
+  font-size: 11px;
+  fill: var(--dormant-text);
+}
+.season .lane-label {
+  font-family: var(--body);
+  font-size: 12px;
+  fill: var(--ink);
+}
+.season .lane-rule {
+  stroke: var(--hairline);
+  stroke-width: 1;
+}
+.season .today {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.season .today-label {
+  font-family: var(--data);
+  font-size: 11px;
+  fill: var(--ink);
+}
+.season .seg-open {
+  fill: var(--live);
+}
+.season .seg-urgent {
+  fill: var(--urgent);
+}
+.season .seg-rolling {
+  stroke: var(--live);
+  stroke-width: 2;
+  stroke-dasharray: 1 0;
+}
+.season .seg-unknown {
+  font-family: var(--data);
+  font-size: 12px;
+  fill: var(--dormant-text);
+}
+.season .lane-broken .lane-label {
+  fill: var(--dormant-text);
+}
+.season g.lane:hover .lane-hit,
+.season g.lane:focus-visible .lane-hit {
+  fill: rgba(58, 47, 224, 0.06);
+}
+
+/*
+ * IBM Plex Mono has no Arabic, so an Arabic sentence set in it falls back
+ * glyph by glyph and comes out spaced like a ransom note. Spec 6.1 asks for
+ * mono on "dates, countdowns, seat counts" - numerals - so it is kept to the
+ * places that are actually numeric, and Arabic prose uses the body face.
+ */
+.season-note {
+  margin: 0 0 0.5rem;
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+}
+
+.legend {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+}
+.legend li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.legend .swatch {
+  flex: none;
+  width: 1.75rem;
+  height: 0.6rem;
+  border-radius: 2px;
+}
+
+/* ---------- groups and cards ---------- */
+
+.group {
+  margin-top: 1.5rem;
+}
+.group > summary {
+  cursor: pointer;
+  font-family: var(--display);
+  font-size: var(--t-18);
+  font-weight: 600;
+  padding: 0.35rem 0;
+}
+.group > summary .count {
+  font-family: var(--data);
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+  margin-inline-start: 0.5rem;
+}
+
+.empty {
+  background: var(--paper);
+  border: 1px dashed var(--hairline);
+  border-radius: var(--radius);
+  padding: 1rem;
+  color: var(--dormant-text);
+  font-size: var(--t-15);
+}
+
+.cards {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 0.85rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.card.is-review {
+  border-inline-start: 4px solid var(--urgent);
+}
+.card h3 {
+  font-size: var(--t-18);
+}
+.card .org {
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+}
+.card .meta {
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+}
+.card .reason {
+  font-size: var(--t-13);
+}
+.card .score {
+  font-family: var(--data);
+  font-size: var(--t-24);
+  line-height: 1;
+  color: var(--signal);
+}
+.card .score.unscored {
+  color: var(--urgent);
+  font-size: var(--t-18);
+}
+.card .row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+/* ---------- chips ---------- */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.chip {
+  font-size: var(--t-13);
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid;
+  white-space: nowrap;
+}
+/*
+ * Three states, and grey is never dressed as green. An unknown decision field
+ * is not good news, so it gets an outline and no fill: spec 6.2.
+ */
+.chip.yes {
+  color: var(--live);
+  border-color: var(--live);
+  background: rgba(11, 110, 79, 0.08);
+}
+.chip.no {
+  color: var(--urgent);
+  border-color: var(--urgent);
+  background: rgba(169, 58, 28, 0.08);
+}
+.chip.unknown {
+  color: var(--dormant-text);
+  border-color: var(--hairline);
+  background: transparent;
+  border-style: dashed;
+}
+
+/* ---------- organisations list ---------- */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem;
+}
+.filters select,
+.filters input {
+  font: inherit;
+  font-size: var(--t-13);
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.org-row {
+  width: 100%;
+  text-align: start;
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.85rem;
+  display: grid;
+  gap: 0.4rem;
+}
+.org-row .name {
+  font-family: var(--display);
+  font-weight: 600;
+}
+.org-row .tier {
+  font-family: var(--data);
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+  margin-inline-start: 0.4rem;
+}
+
+/* ---------- sheet ---------- */
+
+dialog.sheet {
+  width: min(38rem, 100%);
+  max-height: 88vh;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+dialog.sheet::backdrop {
+  background: rgba(16, 23, 32, 0.45);
+}
+.sheet-body {
+  padding: 1rem;
+  display: grid;
+  gap: 0.85rem;
+}
+.sheet-body h2 {
+  font-size: var(--t-24);
+}
+.sheet dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 0.75rem;
+  font-size: var(--t-13);
+}
+.sheet dt {
+  color: var(--dormant-text);
+}
+.sheet dd {
+  margin: 0;
+}
+.quote {
+  margin: 0;
+  padding: 0.6rem 0.75rem;
+  border-inline-start: 3px solid var(--urgent);
+  background: var(--paper-sunk);
+  font-size: var(--t-15);
+}
+.quote cite {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: var(--t-13);
+  color: var(--dormant-text);
+  font-style: normal;
+}
+.primary {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius);
+  border: 0;
+  text-align: center;
+}
+.secondary {
+  background: none;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 0.45rem 0.7rem;
+  font-size: var(--t-13);
+}
+.secondary[aria-pressed="true"] {
+  border-color: var(--signal);
+  color: var(--signal);
+  font-weight: 500;
+}
+.sheet-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ---------- source health list ---------- */
+
+.health-list {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  font-size: var(--t-13);
+}
+.health-list li {
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-inline-start-width: 4px;
+  border-radius: var(--radius);
+  padding: 0.5rem 0.7rem;
+  overflow-wrap: anywhere;
+}
+.health-list li.healthy {
+  border-inline-start-color: var(--live);
+}
+.health-list li.degraded {
+  border-inline-start-color: var(--urgent);
+}
+.health-list li.broken {
+  border-inline-start-color: var(--ink);
+}
+.health-list .url {
+  font-family: var(--data);
+  color: var(--dormant-text);
+}
+
+/* ---------- motion ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .season .lane-anim {
+    transform-origin: right center;
+    animation: draw 320ms ease-out both;
+  }
+  .season .today-anim {
+    animation: drop 240ms ease-out both;
+  }
+  @keyframes draw {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes drop {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 30rem) {
+  .masthead h1 {
+    font-size: var(--t-18);
+  }
+  .shell {
+    padding-inline: 0.75rem;
+  }
+}
