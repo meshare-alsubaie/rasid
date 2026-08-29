@@ -19,6 +19,7 @@
  *   npm run verify-leads -- --dry-run    report, write nothing
  */
 import { readFileSync, writeFileSync } from "node:fs";
+import { closeBrowser, renderPage } from "../src/pipeline/browser";
 import { extract } from "../src/pipeline/extract";
 import { fetchPage } from "../src/pipeline/fetch";
 import { checkRobots } from "../src/pipeline/robots";
@@ -93,13 +94,59 @@ for (const org of targets) {
       continue;
     }
 
-    const res = await fetchPage(source.url, verdict.crawlDelayMs);
+    /*
+     * A 403 from a plain client is not a site saying "do not crawl me": that
+     * sentence lives in robots.txt, which was read and obeyed above. It is a
+     * filter that does not recognise a non-browser. So a refused fetch is
+     * retried in a real browser and the source is marked to keep using one.
+     * Nothing here pretends to be a browser; it either is one or it gives up.
+     */
+    let url = source.url;
+    let res = await fetchPage(url, verdict.crawlDelayMs);
+    let needsBrowser = false;
+
     if (!res.ok) {
-      outcomes.push({ org: org.id, url: source.url, result: "unreachable", note: res.error });
+      const rendered = await renderPage(url);
+      if (rendered.ok) {
+        res = rendered;
+        needsBrowser = true;
+      }
+    }
+
+    /*
+     * The directory is from 2021 and most of its deep paths have since moved,
+     * while the organisation's own domain is usually still there. So a dead
+     * path falls back to the site root. That is not guessing a url: the domain
+     * came from the record, the root is the one path every site has, and it is
+     * only kept if it actually answers and yields text.
+     */
+    if (!res.ok) {
+      const root = new URL(url).origin + "/";
+      if (root !== url) {
+        const rootVerdict = await checkRobots(root);
+        if (rootVerdict.allowed) {
+          const viaFetch = await fetchPage(root, rootVerdict.crawlDelayMs);
+          const viaBrowser = viaFetch.ok ? viaFetch : await renderPage(root);
+          if (viaBrowser.ok) {
+            res = viaBrowser;
+            needsBrowser = !viaFetch.ok;
+            url = root;
+          }
+        }
+      }
+    }
+
+    if (!res.ok) {
+      outcomes.push({
+        org: org.id,
+        url: source.url,
+        result: "unreachable",
+        note: `${res.error} · ولا بمتصفّح حقيقي ولا من جذر الموقع`,
+      });
       continue;
     }
 
-    const { text, title } = extract(res.html, source.url);
+    const { text, title } = extract(res.html, url);
     const haystack = text.toLowerCase();
     const marker = MARKERS.find((m) => haystack.includes(m.toLowerCase()));
 
@@ -127,23 +174,29 @@ for (const org of targets) {
         continue;
       }
       const note = `عنوان الصفحة: "${title ?? "بلا عنوان"}". صفحة حقيقية على نطاق الجهة، قُرئ منها ${text.length} حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: "${text.slice(0, 110)}…"`;
+      source.url = url;
       source.provenance = "official";
       source.verifiedAtISO = now;
       source.verifiedNote = note;
-      outcomes.push({ org: org.id, url: source.url, result: "watchable", note });
+      if (needsBrowser) source.renderMode = "browser";
+      outcomes.push({ org: org.id, url, result: "watchable", note });
       break;
     }
 
     const quote = quoteAround(text, haystack.indexOf(marker.toLowerCase()), marker);
     const note = `عنوان الصفحة: "${title ?? "بلا عنوان"}". وردت فيها عبارة «${marker}» بنصّها: "${quote}". فحص آلي بنفس معيار الجولة اليدوية.`;
 
+    source.url = url;
     source.provenance = "official";
     source.verifiedAtISO = now;
     source.verifiedNote = note;
-    outcomes.push({ org: org.id, url: source.url, result: "verified", note });
+    if (needsBrowser) source.renderMode = "browser";
+    outcomes.push({ org: org.id, url, result: "verified", note });
     break; // one confirmed source per organisation is enough to watch it
   }
 }
+
+await closeBrowser();
 
 if (!DRY) {
   writeFileSync("data/organisations.json", JSON.stringify(orgs, null, 2) + "\n", "utf8");

@@ -137,8 +137,17 @@ export interface Source extends VerifiedLink {
   renderModeNote?: string;
 }
 
-/** Spec deviation, deliberate: the browser path stays a rare exception. */
-export const MAX_BROWSER_SOURCES = 8;
+/**
+ * Spec deviation, deliberate.
+ *
+ * This was 8, written when collection ran on a cloud runner where every
+ * browser launch cost a minute of somebody's quota. Collection now runs on the
+ * owner's own machine, because many Saudi government sites refuse a US
+ * address, and there Chromium is already installed and the run is unattended.
+ * The cap still exists so the browser stays a decision rather than a default,
+ * but it is no longer priced as if it were rare.
+ */
+export const MAX_BROWSER_SOURCES = 30;
 
 /** Thin and unchanged for this many runs is worth surfacing. ~10 days at 6h. */
 export const SILENT_THIN_RUNS = 40;

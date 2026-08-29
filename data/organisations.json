@@ -152,13 +152,13 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www.pif.gov.sa/ar/Pages/default.aspx",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "https://www.pif.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:48:08.310Z",
+        "verifiedNote": "عنوان الصفحة: \"Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 9522 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevan…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser"
       }
     ],
     "applyVia": null,
@@ -450,12 +450,13 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://alinma.com/Career/coopAr.html",
-        "provenance": "reported",
-        "verifiedAtISO": null,
+        "url": "https://alinma.com/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:48:08.310Z",
         "type": "announcement_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "verifiedNote": "عنوان الصفحة: \"نبتكر لنتقدم | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1211 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"بطاقة سفر أكثر الائتمانية لرفاهية أكثر اكتشف بطاقة سفر أكثر الائتمانية من الإنماء التي تجمع بين المكافآت والمز…\""
       },
       {
         "url": "https://www.alinma.com/Career/coopAr.html",
@@ -828,10 +829,10 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www2.deloitte.com/sa/en/legal/about-deloitte-saudi-arabia.html",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "https://www2.deloitte.com/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:48:08.310Z",
+        "verifiedNote": "عنوان الصفحة: \"Deloitte Middle East | Audit, Consulting, Financial, Risk Management, Tax Services\". صفحة حقيقية على نطاق الجهة، قُرئ منها 749 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Resilience Redefined Navigating complexity. Building continuity. Enabling recovery. Discover how Deloitte Midd…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
@@ -1614,12 +1615,12 @@
     "sources": [
       {
         "url": "https://www.simah.com/en/personal/pages/default.aspx",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "حجب Cloudflare. عنوان الصفحة: \"Attention Required! | Cloudflare\"، ونصها \"Sorry, you have been blocked. You are unable to access simah.com\". لم تُقرأ الصفحة.",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:39:41.484Z",
+        "verifiedNote": "عنوان الصفحة: \"Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1550 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"​​​​​​​​​​​ ​​​​​​​ ​MOLIMMOLIM MOLIM provides individuals with official credit reports and scores, enabling c…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser"
       }
     ],
     "applyVia": {
@@ -1910,12 +1911,12 @@
     "sources": [
       {
         "url": "https://thiqah.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:39:41.484Z",
+        "verifiedNote": "عنوان الصفحة: \"Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2087 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"نصنع الأثر عبر التحول الرقمي نسخر الجهود نحو صناعة الأثر والمساهمة في تحسين جودة أداء الأعمال لتحقيق التنمية ا…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser"
       },
       {
         "url": "https://www.thiqah.sa/",
@@ -2392,10 +2393,10 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "http://adeemcapital.com/ar-sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "http://adeemcapital.com/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:48:08.310Z",
+        "verifiedNote": "عنوان الصفحة: \"أصيلة المالية – Just another WordPress site\". صفحة حقيقية على نطاق الجهة، قُرئ منها 469 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"أهلا بك نطمح لنتجاوز توقعات عملائنا ومساهمينا إنضم إلينا English افتح حساب عن اصيلة ويلث شركة اصيلة ويلث المال…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
@@ -2768,12 +2769,12 @@
     "sources": [
       {
         "url": "https://gac.gov.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:48:08.310Z",
+        "verifiedNote": "عنوان الصفحة: \"الصفحة الرئيسية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 923 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"02 أكتوبر 2024 الهيئة العامة للمنافسة تُعلن العقوبات المُقررة ضد عددٍ من المنشآت لمخالفتها نظام المنافسة من خل…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser"
       }
     ],
     "applyVia": {
@@ -2896,12 +2897,12 @@
     "sources": [
       {
         "url": "https://www.gea.gov.sa/ar",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:39:41.484Z",
+        "verifiedNote": "عنوان الصفحة: \"الهيئة العامة للترفيه | الرئيسية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 750 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مسارات الترفيه مسارات الترفيه هي منصة إلكترونية تهدف إلى دعم وتمكين رواد الأعمال والمنشآت في قطاع الترفيه. تتي…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser"
       }
     ],
     "applyVia": {
@@ -3110,10 +3111,10 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www.kapsarc.org/ar/about/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "https://www.kapsarc.org/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:48:08.310Z",
+        "verifiedNote": "عنوان الصفحة: \"KAPSARC | King Abdullah Petroleum Studies and Research Center | <h1>breachlock</h1>\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1443 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Publications Peer-reviewed insights on energy, policy, and sustainability. KAPSARC Solutions Easy-to-use inter…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
@@ -3283,12 +3284,12 @@
     "sources": [
       {
         "url": "https://mc.gov.sa/ar/pages/default.aspx",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:48:08.310Z",
+        "verifiedNote": "عنوان الصفحة: \"وزارة التجارة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 415 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنته…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser"
       }
     ],
     "applyVia": {
@@ -3638,10 +3639,10 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "http://www.moenergy.gov.sa/arabic/Pages/default.aspx",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "http://www.moenergy.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:48:08.310Z",
+        "verifiedNote": "عنوان الصفحة: \"وزارة الطاقة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 9200 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الطاقة في أرقامأرقام تسلط الضوء على مكانة المملكة كقوة طاقية عالمية من خلال احتياطياتها الضخمة وصادراتها البتر…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
@@ -3884,10 +3885,10 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www.nazaha.gov.sa/ar-sa/pages/default.aspx",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "https://www.nazaha.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:48:08.310Z",
+        "verifiedNote": "عنوان الصفحة: \"هيئة الرقابة ومكافحة الفساد\". صفحة حقيقية على نطاق الجهة، قُرئ منها 877 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"شكراً لكم رأيكم محل اهتمامنا لقد حققت المملكة نجاحات متتالية في مكافحة الفساد، وهو نهج أضـــــحى استراتيجية أس…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
@@ -4055,10 +4056,10 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www.rcjy.gov.sa/ar-SA/Pages/default.aspx",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "https://www.rcjy.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:48:08.310Z",
+        "verifiedNote": "عنوان الصفحة: \"الرئيسية - الهيئة الملكية للجبيل وينبع\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3670 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"صناعة وحياة اكتشف خياراتك الاستثمارية بمدن الهيئة الملكية للجبيل وينبع اكتشف المزيد صناعــــــــــــــــــــــ…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
@@ -4699,12 +4700,12 @@
     "sources": [
       {
         "url": "https://www.swcc.gov.sa/Arabic/Pages/Home.aspx",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T21:39:41.484Z",
+        "verifiedNote": "عنوان الصفحة: \"الرئيسية - تحلية المياه\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1462 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"زيارتكم لموقعنا الإلكتروني في تحلية المياه بالنسبة لنا، هي محل تقدير واعتزاز ومؤشر على إدراككم لمدى أهمية وحسا…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser"
       }
     ],
     "applyVia": {

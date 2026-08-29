@@ -14,6 +14,7 @@
 import robotsParser from "robots-parser";
 import { fetch } from "undici";
 import { MAX_RETRIES, PER_HOST_GAP_MS, TIMEOUT_MS, USER_AGENT } from "./agent.js";
+import { renderPage } from "./browser.js";
 
 export interface RobotsVerdict {
   allowed: boolean;
@@ -68,7 +69,25 @@ async function load(origin: string): Promise<Entry> {
     }
   }
 
-  return { kind: "deny_all", reason: lastError };
+  /*
+   * Last resort: fetch robots.txt with a real browser.
+   *
+   * A plain HTTP client and a browser are not equally welcome. Several hosts
+   * that answer Chromium refuse undici outright, and the result was that we
+   * denied ourselves twenty-two sources on the strength of a transport
+   * failure rather than anything the site had said.
+   *
+   * This is not a way around robots.txt. It is a way to *read* it: the file is
+   * still fetched, still parsed, and still obeyed. Only the client changed,
+   * and to a real browser rather than a plain client wearing a browser's name.
+   */
+  const rendered = await renderPage(url);
+  if (rendered.ok) {
+    const text = rendered.html.replace(/<[^>]+>/g, "").trim();
+    return { kind: "rules", robots: robotsParser(url, text) };
+  }
+
+  return { kind: "deny_all", reason: `${lastError}; a browser could not reach it either` };
 }
 
 /** Cached per origin, so one robots.txt fetch covers every source on that host. */
