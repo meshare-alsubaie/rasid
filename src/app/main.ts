@@ -291,6 +291,144 @@ function mineScreen(): string {
     .join("")}</ul>`;
 }
 
+/* ---------- notifications ---------- */
+
+interface PushDiag {
+  supported: boolean;
+  keyPresent: boolean;
+  permission: NotificationPermission | "unavailable";
+  workerReady: boolean;
+  subscribed: boolean;
+  endpointTail: string | null;
+  standalone: boolean;
+  lastArrival: { at: string; via: string; title?: string } | null;
+}
+
+let pushDiag: PushDiag | null = null;
+
+/**
+ * Reads the real state of the notification chain on this device.
+ *
+ * Every step here is a place the chain actually broke for someone: a browser
+ * without push at all, a permission granted on one device and assumed on
+ * another, a worker that never activated, a subscription made against an older
+ * key. Guessing which one it was cost a whole evening, so the app now simply
+ * reports each link instead.
+ */
+async function readPushDiag(): Promise<void> {
+  const supported = "serviceWorker" in navigator && "PushManager" in window;
+  const diag: PushDiag = {
+    supported,
+    keyPresent: Boolean(import.meta.env.VITE_VAPID_PUBLIC_KEY),
+    permission: "Notification" in window ? Notification.permission : "unavailable",
+    workerReady: false,
+    subscribed: false,
+    endpointTail: null,
+    standalone: window.matchMedia("(display-mode: standalone)").matches,
+    lastArrival: null,
+  };
+
+  if (supported) {
+    try {
+      const reg = await navigator.serviceWorker.getRegistration();
+      diag.workerReady = Boolean(reg?.active);
+      const sub = await reg?.pushManager.getSubscription();
+      if (sub) {
+        diag.subscribed = true;
+        diag.endpointTail = sub.endpoint.slice(-12);
+      }
+    } catch {
+      /* an unreachable worker is itself the answer, and it is already false */
+    }
+    try {
+      const cache = await caches.open("rasid-push-log");
+      const keys = await cache.keys();
+      const last = keys[keys.length - 1];
+      if (last) {
+        const body = await cache.match(last);
+        if (body) diag.lastArrival = (await body.json()) as PushDiag["lastArrival"];
+      }
+    } catch {
+      /* no log yet */
+    }
+  }
+
+  pushDiag = diag;
+  render();
+}
+
+function diagRow(label: string, ok: boolean, detail: string): string {
+  return `<li class="diag-row">
+    <span class="chip ${ok ? "yes" : "no"}">${ok ? "✓" : "✗"}</span>
+    <span class="diag-label">${label}</span>
+    <span class="diag-detail">${esc(detail)}</span>
+  </li>`;
+}
+
+function notificationsCard(): string {
+  const d = pushDiag;
+  if (d === null) {
+    return `<div class="card"><h3>التنبيهات</h3><p class="reason">يفحص حالة هذا الجهاز…</p></div>`;
+  }
+
+  const permText =
+    d.permission === "granted"
+      ? "مسموح"
+      : d.permission === "denied"
+        ? "مرفوض — أعد السماح من إعدادات الموقع في المتصفّح"
+        : d.permission === "default"
+          ? "لم يُسأل بعد"
+          : "المتصفّح لا يعرف الإشعارات";
+
+  const arrival =
+    d.lastArrival === null
+      ? `<p class="reason warn">لم يصل هذا الجهاز أي إشعار بعد. اضغط «جرّب إشعاراً الآن» أولاً: إن ظهر، فالعرض يعمل والمشكلة في الإرسال. وإن لم يظهر مع أن الإذن مسموح، فالنظام يحجب إشعارات المتصفّح.</p>`
+      : `<p class="reason">آخر إشعار وصل هذا الجهاز: <strong>${timeAgo(d.lastArrival.at)}</strong> (${d.lastArrival.via === "push" ? "من الخادم" : "تجربة محلية"})${d.lastArrival.title ? ` — ${esc(d.lastArrival.title)}` : ""}.</p>`;
+
+  const iphone = /iPhone|iPad/.test(navigator.userAgent) && !d.standalone;
+
+  return `<div class="card">
+    <h3>التنبيهات</h3>
+    <ul class="diag">
+      ${diagRow("المتصفّح يدعم التنبيهات", d.supported, d.supported ? "نعم" : "لا")}
+      ${diagRow("الإذن", d.permission === "granted", permText)}
+      ${diagRow("عامل الخدمة نشط", d.workerReady, d.workerReady ? "نعم" : "غير مسجَّل — أعد تحميل الصفحة")}
+      ${diagRow("هذا الجهاز مشترك", d.subscribed, d.subscribed ? `نعم …${d.endpointTail}` : "لا")}
+      ${diagRow("مفتاح الإرسال مبنيّ", d.keyPresent, d.keyPresent ? "نعم" : "ناقص في البناء")}
+    </ul>
+    ${arrival}
+    ${iphone ? `<p class="reason warn">على الآيفون لا تصل الإشعارات إلا بعد «إضافة إلى الشاشة الرئيسية» وفتح التطبيق من هناك.</p>` : ""}
+    <div class="actions">
+      <button class="secondary" id="test-notif">جرّب إشعاراً الآن</button>
+      <button class="secondary" id="subscribe">${d.subscribed ? "أعد التسجيل" : "فعّل التنبيهات على هذا الجهاز"}</button>
+    </div>
+    <p class="reason" id="sub-out"></p>
+  </div>`;
+}
+
+/**
+ * Fires the test through the worker rather than the page, because the worker is
+ * the path a real push takes. A notification that only works from the tab would
+ * prove nothing about the thing being tested.
+ */
+async function testNotification(): Promise<void> {
+  const out = document.getElementById("sub-out")!;
+  const say = (m: string): void => {
+    out.textContent = m;
+  };
+  if (!("serviceWorker" in navigator)) return say("هذا المتصفّح لا يدعم عامل الخدمة.");
+  if ("Notification" in window && Notification.permission !== "granted") {
+    if ((await Notification.requestPermission()) !== "granted") {
+      return say("لم تُمنح الإذن، فلا يمكن عرض إشعار.");
+    }
+  }
+  const reg = await navigator.serviceWorker.ready;
+  if (!reg.active) return say("عامل الخدمة غير نشط بعد. أعد تحميل الصفحة ثم جرّب.");
+  reg.active.postMessage({ type: "test-notification" });
+  say("أُرسل الطلب إلى عامل الخدمة. إن لم يظهر إشعار خلال ثوانٍ فالنظام يحجب إشعارات المتصفّح.");
+  window.setTimeout(() => void readPushDiag(), 1500);
+}
+
 function settingsScreen(): string {
   const verified = data.orgs.filter((o) => o.manualCheckUrl !== null).length;
   return `<div class="cards">
@@ -324,16 +462,7 @@ function settingsScreen(): string {
         ).join("")}
       </ul>
     </div>
-    <div class="card">
-      <h3>التنبيهات</h3>
-      <p class="reason">
-        التنبيه يصل من جهاز واحد مسجَّل، بلا خادم وبلا حساب. اضغط الزر، اسمح للمتصفّح،
-        ثم انسخ النصّ الذي يظهر وضعه سرّاً باسم <code>RASID_PUSH_SUBSCRIPTION</code> في المستودع.
-        بعدها تُرسل الجولة الآلية التنبيهات إلى هذا الجهاز.
-      </p>
-      <div class="actions"><button class="secondary" id="subscribe">فعّل التنبيهات على هذا الجهاز</button></div>
-      <p class="reason" id="sub-out"></p>
-    </div>
+    ${notificationsCard()}
     <div class="card">
       <h3>عتبة الصلة</h3>
       <label for="threshold" class="reason">أخفِ الفرص التي تقلّ درجتها عن <strong>${threshold}</strong>. الفرص غير المصنّفة تبقى ظاهرة دائماً.</label>
@@ -549,6 +678,8 @@ async function subscribeToPush(): Promise<void> {
         if (done) done.hidden = false;
       });
     });
+    // The panel above this now says "subscribed", so it has to be re-read.
+    pushDiag = { ...pushDiag!, subscribed: true, endpointTail: sub.endpoint.slice(-12) };
   } catch (err) {
     say(`تعذّر التسجيل: ${err instanceof Error ? err.message : String(err)}`);
   }
@@ -564,6 +695,8 @@ app.addEventListener("click", (e) => {
   if (tabBtn) {
     tab = tabBtn.dataset.tab as Tab;
     render();
+    // The device may have been given permission, or lost it, since last look.
+    if (tab === "settings") void readPushDiag();
     return;
   }
   if (hit("#dismiss")) {
@@ -598,6 +731,10 @@ app.addEventListener("click", (e) => {
   }
   if (hit("#subscribe")) {
     void subscribeToPush();
+    return;
+  }
+  if (hit("#test-notif")) {
+    void testNotification();
     return;
   }
   const markBtn = hit("[data-mark]");
@@ -647,8 +784,17 @@ app.addEventListener("input", (e) => {
  */
 if (import.meta.env.PROD && "serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    void navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`);
+    void navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).then(() => {
+      void readPushDiag();
+    });
   });
+  // A push that lands while the app is open should update the panel, so the
+  // arrival line is never stale in front of the person reading it.
+  navigator.serviceWorker.addEventListener("message", (e: MessageEvent) => {
+    if ((e.data as { type?: string } | null)?.type === "push-arrived") void readPushDiag();
+  });
+} else {
+  void readPushDiag();
 }
 
 loadDataset()
