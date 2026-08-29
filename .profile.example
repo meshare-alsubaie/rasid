@@ -1,0 +1,18 @@
+# Copy to .profile.local, which is gitignored, and fill in with real details.
+# In CI this same text goes in the RASID_STUDENT_PROFILE repository secret.
+#
+# It is kept out of the repository because it is the one file here that
+# describes a person. Everything else is about organisations.
+#
+# The classifier refuses to run without it rather than judging against a blank
+# profile, so a missing file is a loud failure, never a quiet wrong answer.
+
+- Final-year <degree> student, <university>
+- GPA <x.xx>/4
+- <certifications, if any>
+- <graduation project, if it is relevant to the roles you want>
+- NOT yet graduated — he is INELIGIBLE for HRDF "تطوير الخريجين / تمهير",
+  which requires the final degree document in hand
+- He needs "التدريب التعاوني" (cooperative training) specifically
+- He will have <n> evening lecture courses (<from>–<to>) plus a supervised
+  graduation-project course registered during the training semester

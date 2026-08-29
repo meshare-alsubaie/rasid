@@ -14,6 +14,7 @@
  * Every failure comes back as `ok: false` and the caller is expected to store
  * the record with `relevanceScore: null` and a `needs_manual_review` flag.
  */
+import { readFileSync } from "node:fs";
 import Anthropic from "@anthropic-ai/sdk";
 import { Ajv } from "ajv";
 
@@ -74,7 +75,7 @@ export type ClassifyResult =
   | {
       ok: false;
       /** Where it broke, so health reporting can tell a bad key from a bad reply. */
-      stage: "no_credentials" | "api" | "parse" | "schema";
+      stage: "no_credentials" | "no_profile" | "api" | "parse" | "schema";
       reason: string;
       attempts: number;
       /** Tokens are still billed for a reply that failed to parse. */
@@ -87,8 +88,33 @@ export type ClassifyResult =
  */
 export type Asker = (excerpt: string, insist: boolean) => Promise<{ text: string; usage: Usage }>;
 
+/**
+ * The student profile is the one piece of this repository that describes a
+ * person: university, GPA, certification, and the hours he is in class. The
+ * repository is public, so it does not live here.
+ *
+ * It is read at runtime from `RASID_STUDENT_PROFILE`, or from a gitignored
+ * `.profile.local` for convenience on a development machine. The prompt is
+ * still assembled verbatim per spec section 5.3; only the storage moved.
+ *
+ * If neither exists, classification fails with `no_profile` rather than
+ * running against a blank or invented profile. Judging a student's chances
+ * against the wrong student is worse than not judging at all.
+ */
+export function studentProfile(): string | null {
+  const fromEnv = process.env.RASID_STUDENT_PROFILE?.trim();
+  if (fromEnv) return fromEnv;
+  try {
+    const local = readFileSync(".profile.local", "utf8").trim();
+    return local || null;
+  } catch {
+    return null;
+  }
+}
+
 /** Spec section 5.3, used verbatim. Do not paraphrase: it is the contract. */
-export const SYSTEM_PROMPT = `You classify Saudi training announcements for one specific student.
+export const buildSystemPrompt = (profile: string): string =>
+  `You classify Saudi training announcements for one specific student.
 
 STUDENT PROFILE
 ${profile}
@@ -126,6 +152,9 @@ RULES
   20–50 for general technical. 0–15 for unrelated fields.
 - relevanceReason: one short Arabic sentence explaining the score.
 - Convert Hijri dates to Gregorian ISO. If the year is ambiguous, return null.`;
+
+/** Kept for tests and for anyone reading the contract without a profile set. */
+export const SYSTEM_PROMPT_SHAPE = buildSystemPrompt("<RASID_STUDENT_PROFILE>");
 
 /**
  * additionalProperties is false and every field is required on purpose. A
@@ -186,10 +215,13 @@ function unfence(raw: string): string {
 }
 
 export const liveAsk: Asker = async (excerpt, insist) => {
+  const profile = studentProfile();
+  if (profile === null) throw new Error("RASID_STUDENT_PROFILE is not set");
+
   const response = await getClient().messages.create({
     model: CLASSIFIER_MODEL,
     max_tokens: 2048,
-    system: SYSTEM_PROMPT,
+    system: buildSystemPrompt(profile),
     messages: [
       {
         role: "user",
@@ -218,6 +250,16 @@ export async function classify(text: string, ask: Asker = liveAsk): Promise<Clas
       ok: false,
       stage: "no_credentials",
       reason: "ANTHROPIC_API_KEY is not set, so nothing was classified",
+      attempts: 0,
+      usage,
+    };
+  }
+  if (ask === liveAsk && studentProfile() === null) {
+    return {
+      ok: false,
+      stage: "no_profile",
+      reason:
+        "RASID_STUDENT_PROFILE is not set and .profile.local is missing; nothing was classified, because a verdict for the wrong student is worse than none",
       attempts: 0,
       usage,
     };

@@ -3,6 +3,10 @@ dist/
 .cache/
 .env
 .env.*
+
+# The student profile. The only file here that describes a person, and the
+# repository is public. See .profile.example.
+.profile.local
 *.log
 .DS_Store
 Thumbs.db
