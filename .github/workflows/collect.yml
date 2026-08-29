@@ -43,6 +43,10 @@ jobs:
 
       - run: npm ci
 
+      # Before the collection, not after: broken code should fail in seconds
+      # rather than after a quarter-hour of fetching and paid classification.
+      - run: npm run typecheck
+
       # Only a couple of sources need a real browser. If the download fails the
       # run must carry on: the static half of the collection is most of it, and
       # those sources simply stay degraded, which is visible in the app.
@@ -63,10 +67,6 @@ jobs:
           RASID_CONTACT: ${{ secrets.RASID_CONTACT }}
         run: npm run collect
 
-      # Types, schemas, and the honesty rules. A dataset that fails these is
-      # never committed and never published.
-      - run: npm run check
-
       # Before the commit, because "what is newly true" is measured against the
       # previous commit. Every channel is optional; a missing secret turns that
       # channel off and says so in the log.
@@ -83,6 +83,12 @@ jobs:
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           RASID_CONTACT: ${{ secrets.RASID_CONTACT }}
         run: npm run notify ${{ inputs.test_notification && '-- --test' || '' }}
+
+      # The schema and the honesty rules. Deliberately after Notify: an alert is
+      # about a change already observed, and a flaw in one record should not
+      # swallow a deadline the user is waiting for. It still gates the commit
+      # and the deploy, so a dataset that fails this is never published.
+      - run: npm run validate
 
       - name: Commit the dataset if it moved
         if: github.event_name != 'push'
