@@ -548,7 +548,7 @@ a {
   display: none;
 }
 .group > summary::before {
-  content: "â–¾";
+  content: "▾";
   font-size: var(--t-13);
   color: var(--dormant-text);
   transition: transform 120ms;
@@ -779,6 +779,20 @@ a {
   color: var(--signal);
   background: rgba(58, 47, 224, 0.06);
   font-weight: 500;
+}
+
+.sub-out {
+  display: block;
+  width: 100%;
+  margin: var(--s2) 0;
+  padding: var(--s2);
+  font-family: var(--data);
+  font-size: 0.6875rem;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  background: var(--paper-sunk);
+  color: var(--ink);
+  resize: vertical;
 }
 
 /* ---------- theme picker ---------- */

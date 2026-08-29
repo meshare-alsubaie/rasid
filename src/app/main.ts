@@ -530,10 +530,25 @@ async function subscribeToPush(): Promise<void> {
       userVisibleOnly: true,
       applicationServerKey: b64ToBytes(key),
     });
-    say(JSON.stringify(sub.toJSON()));
-    out.style.userSelect = "all";
-    out.style.fontFamily = "var(--data)";
-    out.style.overflowWrap = "anywhere";
+    const json = JSON.stringify(sub.toJSON());
+
+    /*
+     * This block of JSON is the whole storage layer for notifications: there
+     * is no server and no account, so the device's own subscription is what
+     * gets kept, and the owner keeps it. Showing it raw looked like an error
+     * the first time, so it is labelled, boxed, and copied by a button.
+     */
+    out.innerHTML = `
+      <strong>تمّ التسجيل. انسخ النصّ التالي وأرسله لي:</strong>
+      <textarea class="sub-out" readonly rows="4">${esc(json)}</textarea>
+      <button class="secondary" id="copy-sub">انسخ</button>
+      <span id="copy-done" class="chip yes" hidden>نُسخ</span>`;
+    document.getElementById("copy-sub")?.addEventListener("click", () => {
+      void navigator.clipboard.writeText(json).then(() => {
+        const done = document.getElementById("copy-done");
+        if (done) done.hidden = false;
+      });
+    });
   } catch (err) {
     say(`تعذّر التسجيل: ${err instanceof Error ? err.message : String(err)}`);
   }

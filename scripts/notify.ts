@@ -19,6 +19,8 @@ import { decide, inQuietHours, split, type Notice, type NoticeLogEntry } from ".
 import type { Opportunity, Organisation, SourceHealth } from "../src/types";
 
 const DRY = process.argv.includes("--dry-run");
+/** Prove the whole chain works, without waiting for a real announcement. */
+const TEST = process.argv.includes("--test");
 const read = <T>(p: string): T[] => JSON.parse(readFileSync(p, "utf8").replace(/^﻿/, "")) as T[];
 
 /** The same file as it stood at the last commit. Empty on the first ever run. */
@@ -53,7 +55,21 @@ const quietEnd = Number(process.env.RASID_QUIET_END ?? 7);
 const quiet = inQuietHours(now, quietStart, quietEnd);
 
 const log = read<NoticeLogEntry>("data/notifications.json");
-const { push, digestOnly } = split(notices, log, now, quiet);
+const { push, digestOnly } =
+  TEST
+    ? {
+        push: [
+          {
+            key: `test:${now.toISOString()}`,
+            kind: "new_relevant" as const,
+            title: "🟢 راصد يعمل",
+            body: "هذه تجربة. حين تُفتح نافذة حقيقية سيصلك تنبيه بهذا الشكل.",
+            weight: 1,
+          },
+        ],
+        digestOnly: [],
+      }
+    : split(notices, log, now, quiet);
 
 console.log(`notices: ${notices.length} new, ${push.length} to push, ${digestOnly.length} to digest`);
 if (quiet) console.log(`quiet hours ${quietStart}:00-${quietEnd}:00, nothing is pushed now`);
