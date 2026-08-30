@@ -158,7 +158,7 @@ the app rather than an absence of openings.
    Copy `.profile.example` to `.profile.local`, which is gitignored, and put
    the same text in a `RASID_STUDENT_PROFILE` secret for CI. Without it the
    classifier refuses to run rather than judging against a blank profile.
-   `npm run audit:privacy` checks every tracked file before a push, because git
+   `npm run audit:privacy` runs in CI on every push, because git
    remembers what is deleted.
 3. **Secrets** — `ANTHROPIC_API_KEY` for the classifier, and optionally
    `RASID_CONTACT` to put a reachable address in the crawler's User-Agent.
@@ -186,8 +186,9 @@ the app rather than an absence of openings.
 npm run check           # types, schemas, honesty rules
 npm run test:classifier # four failure branches, offline and free
 npm run test:notify     # what earns a notification, and what never does
-npm run audit:contrast  # 4.5:1 measured on every screen, not asserted
-npm run audit:privacy   # nothing personal in any tracked file
+npm run audit:contrast   # 4.5:1 measured on every screen, not asserted
+npm run audit:privacy    # nothing personal in any tracked file
+npm run audit:lighthouse # spec 8.7: performance >= 90, accessibility >= 95
 ```
 
 ## Local use

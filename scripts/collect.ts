@@ -108,14 +108,28 @@ const targets: Target[] = [
   .slice(0, LIMIT);
 
 const staticTargets = targets.filter((t) => t.renderMode === "static");
-const browserTargets = targets.filter((t) => t.renderMode === "browser");
+const allBrowserTargets = targets.filter((t) => t.renderMode === "browser");
 
-if (browserTargets.length > MAX_BROWSER_SOURCES) {
-  console.error(
-    `${browserTargets.length} sources ask for the browser, and the cap is ${MAX_BROWSER_SOURCES}.\n` +
-      "That many javascript-only pages means the source list needs revisiting, not a bigger cap.",
+/*
+ * Over the cap is a degradation, not a death.
+ *
+ * This used to exit(1), which killed the entire run: no collection, no
+ * notification, no deploy, because too many pages had turned out to be
+ * javascript-only. That is a whole day of blindness as the punishment for the
+ * source list growing, and growth is the goal. The cap still means something —
+ * it is what keeps the browser a decision rather than a default — but the
+ * sources beyond it are simply not read this run and say so in health.json,
+ * where the app shows them as unwatched. Loud and partial beats silent and
+ * total.
+ */
+const browserTargets = allBrowserTargets.slice(0, MAX_BROWSER_SOURCES);
+const overflow = allBrowserTargets.slice(MAX_BROWSER_SOURCES);
+
+if (overflow.length > 0) {
+  console.log(
+    `\n${allBrowserTargets.length} sources ask for the browser and the cap is ${MAX_BROWSER_SOURCES}.\n` +
+      `Reading ${browserTargets.length}; ${overflow.length} are left unread this run and marked as such.`,
   );
-  process.exit(1);
 }
 
 const now = new Date().toISOString();
@@ -307,6 +321,16 @@ await Promise.all(staticTargets.map((t) => collect(t)));
 // Rendered sources run strictly one at a time, after the cheap work is done.
 for (const t of browserTargets) await collect(t);
 
+// What the cap left out is recorded as unread, with the reason, so the app can
+// show it. A source nobody looked at must never sit in the dataset as healthy.
+for (const t of overflow) {
+  recordFailure(
+    t,
+    `not read this run: ${allBrowserTargets.length} sources need a real browser and the cap is ${MAX_BROWSER_SOURCES}`,
+    "failed",
+  );
+}
+
 /*
  * The CI-only second chance.
  *
@@ -389,8 +413,41 @@ const owed = [...snapshotByUrl.values()].filter(
   (s) => (RECLASSIFY || s.pendingClassification) && textByUrl.has(s.sourceUrl),
 );
 
-if (!NO_CLASSIFY) {
+/*
+ * A dry run does not spend money either.
+ *
+ * The banner says "nothing will be written", which reads as "this costs
+ * nothing" — and it did not: classification ran and was billed, only the files
+ * were left alone. `--no-classify` is still there for the opposite case, where
+ * the writing is wanted and the spending is not.
+ */
+if (DRY_RUN && owed.length > 0) {
+  console.log(`\ndry run: ${owed.length} page(s) would be classified; no API call was made.`);
+}
+
+/*
+ * A ceiling on what one run may spend.
+ *
+ * The person paying for this is a student, and the source list keeps growing:
+ * every organisation is now watched on every channel it publishes, so a day
+ * when many pages move is a day when many pages are classified. A runaway run
+ * is not hypothetical — one badly-behaved page whose hash churns every six
+ * hours would bill four times a day for ever.
+ *
+ * Hitting the ceiling is not a failure and nothing is lost. The pages that did
+ * not fit keep `pendingClassification`, which is exactly the flag that means
+ * "still owed a verdict", so the next run picks them up first. Override with
+ * RASID_RUN_BUDGET_USD when a deliberate catch-up is wanted.
+ */
+const RUN_BUDGET_USD = Number(process.env.RASID_RUN_BUDGET_USD ?? 0.5);
+let budgetStopped = 0;
+
+if (!NO_CLASSIFY && !DRY_RUN) {
   for (const snap of owed) {
+    if (costOf(spend) >= RUN_BUDGET_USD) {
+      budgetStopped++;
+      continue;
+    }
     const text = textByUrl.get(snap.sourceUrl) ?? "";
     const prior = priorOpportunities.find(
       (o) => o.orgId === snap.orgId && o.sourceUrl === snap.sourceUrl,
@@ -401,7 +458,16 @@ if (!NO_CLASSIFY) {
       text,
       nowISO: now,
       prior,
-      firstTime: !orgsWithHistory.has(snap.orgId),
+      /*
+       * Decided once, then carried. Records are rebuilt every run, so asking
+       * "did this organisation have a record when this run started" answered
+       * yes from the second run onward and the flag quietly vanished from an
+       * announcement that really was an organisation's first. Whatever the
+       * first sighting concluded is what stays true about that announcement.
+       */
+      firstTime: prior
+        ? prior.flags.includes("first_time_seen")
+        : !orgsWithHistory.has(snap.orgId),
     };
 
     const result = await classify(text);
@@ -533,6 +599,11 @@ console.log(`  needs manual review    ${String(reviewQueue.length).padStart(3)}`
 console.log(
   `  tokens                 ${spend.inputTokens} in / ${spend.outputTokens} out = $${costOf(spend).toFixed(4)}`,
 );
+if (budgetStopped > 0) {
+  console.log(
+    `  budget                 stopped at $${RUN_BUDGET_USD}; ${budgetStopped} page(s) still owed a verdict and will be judged next run`,
+  );
+}
 
 // Never a silent queue. Every unjudged source is named, with why it failed.
 if (reviewQueue.length > 0) {

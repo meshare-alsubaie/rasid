@@ -40,23 +40,42 @@ if ((Test-Path $profileFile) -and -not $env:RASID_STUDENT_PROFILE) {
     $env:RASID_STUDENT_PROFILE = (Get-Content $profileFile -Raw -Encoding utf8)
 }
 
+# A scheduled task inherits user-scope variables, but "usually" is not a thing
+# to rely on for the one credential that decides whether anything gets
+# classified at all. Read it explicitly, and say so loudly if it is missing:
+# without it every changed page silently goes to manual review instead of
+# being judged, and the run still looks like it worked.
+if (-not $env:ANTHROPIC_API_KEY) {
+    $env:ANTHROPIC_API_KEY = [Environment]::GetEnvironmentVariable("ANTHROPIC_API_KEY", "User")
+}
+if (-not $env:ANTHROPIC_API_KEY) {
+    Say "WARNING: ANTHROPIC_API_KEY is not set. Pages will be fetched but nothing classified."
+}
+if (-not $env:RASID_STUDENT_PROFILE) {
+    Say "WARNING: no student profile. The classifier refuses to guess one, so nothing will be scored."
+}
+
 try {
     Say "start"
 
-    # Only data is ever committed from here. Anything else left uncommitted in
-    # the tree is someone's work in progress, and a rebase would refuse anyway,
-    # so say so plainly instead of failing with git's wording.
+    # Work in progress in the tree is a reason not to rebase. It is not a reason
+    # to stop watching.
+    #
+    # This used to exit outright, and the consequence was worse than it looks:
+    # every six-hourly run was skipped for as long as anyone had an uncommitted
+    # edit — a whole day of blindness during an afternoon's work, announced
+    # nowhere but a log file. Only data/ is ever committed from here, so an edit
+    # elsewhere endangers nothing; it just means the rebase has to wait.
     $dirty = git status --porcelain -- ':!data'
     if ($dirty) {
-        Say "uncommitted changes outside data/, skipping this run:"
-        $dirty | ForEach-Object { Say "    $_" }
-        exit 0
+        Say "uncommitted changes outside data/ — collecting anyway, skipping the rebase:"
+        $dirty | Select-Object -First 5 | ForEach-Object { Say "    $_" }
+    } else {
+        # Take whatever the cloud committed since last time, so the push is a
+        # fast-forward and never a conflict.
+        git pull --rebase --quiet origin master
+        if ($LASTEXITCODE -ne 0) { Say "pull failed, collecting without it" }
     }
-
-    # Take whatever the cloud committed since last time, so the push is a
-    # fast-forward and never a conflict.
-    git pull --rebase --quiet origin master
-    if ($LASTEXITCODE -ne 0) { Say "pull failed, stopping"; exit 1 }
 
     npm run collect --silent 2>&1 | Tee-Object -Variable out | Out-Null
     $summary = ($out | Select-String -Pattern "changed |announcements |needs manual review|broken " ) -join " | "
@@ -66,8 +85,13 @@ try {
         git add data
         git commit --quiet -m ("data: local run {0}" -f (Get-Date -Format "yyyy-MM-ddTHH:mmK"))
         git push --quiet origin master
-        if ($LASTEXITCODE -eq 0) { Say "pushed; GitHub will notify and republish" }
-        else { Say "push failed" }
+        if ($LASTEXITCODE -eq 0) {
+            Say "pushed; GitHub will notify and republish"
+        } else {
+            # Committed locally, so nothing collected is lost. The next run with
+            # a clean tree rebases and carries it up.
+            Say "push failed (probably behind). The data is committed locally and will go up next run."
+        }
     } else {
         Say "nothing changed, nothing pushed"
     }

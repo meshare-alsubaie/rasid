@@ -31,8 +31,15 @@ jobs:
       - run: npm run test:classifier
       - run: npm run test:notify
 
-      # Acceptance criterion 8.7 is measured, not asserted. Needs a browser and
-      # a real build, so it runs last.
+      # The repository is public. The README called this a gate before it was
+      # one: it was a habit someone had to remember, run by hand, with nothing
+      # stopping a commit that carried a key or a person's details.
+      - run: npm run audit:privacy
+
+      # Acceptance criteria 8.7 are measured, not asserted: contrast on every
+      # theme, and the Lighthouse bars the spec names. Both need a browser and a
+      # real build, so they run last.
       - run: npx playwright install --with-deps chromium
       - run: npm run build
       - run: npm run audit:contrast
+      - run: npm run audit:lighthouse

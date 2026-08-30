@@ -35,8 +35,19 @@ const RULES: Rule[] = [
     name: "grade point average",
     pattern: /\bGPA\s*[:\s]*\d|معدل\s+المستخدم|معدل\s+الطالب\s*\d/g,
     why: "the owner's grades are not part of a tool about organisations",
-    // Organisations publish their own minimum GPA, which is a fact about them.
-    allow: /^data\/(organisations|opportunities)\.json$/,
+    /*
+     * An organisation's own published minimum is a fact about that
+     * organisation, and quoting it is the evidence this whole dataset rests on:
+     * Al Rajhi's "Minimum cumulative GPA 3 out of 4" is the proof that its page
+     * really is the co-op page. Deleting the quote to satisfy a privacy rule
+     * about the owner's grades would remove proof to hide nothing.
+     *
+     * verification.json is the record of what was read on each page, so it is
+     * allowed here for the same reason the other two data files are. The rule
+     * still guards every file where the owner's own grade could appear —
+     * source, workflows, README, the profile example.
+     */
+    allow: /^data\/(organisations|opportunities|verification)\.json$/,
   },
   {
     name: "personal credentials",

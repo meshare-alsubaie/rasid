@@ -433,6 +433,14 @@ a {
    */
   direction: ltr;
 }
+/*
+ * The px sizes below are inside the Season Bar's SVG, which has a viewBox: they
+ * are units in that drawing's own coordinate system and scale with it, so on a
+ * 360px phone an "11px" month label is not eleven physical pixels. The strict
+ * type scale in spec 6.1 governs page typography, where a size is a size; here
+ * it would fix the geometry to one viewport width and break the drawing.
+ * Every one of these is measured by npm run audit:contrast as rendered.
+ */
 .season .month {
   font-family: var(--data);
   font-size: 11px;
@@ -660,7 +668,7 @@ a {
 .card .score small {
   display: block;
   font-family: var(--body);
-  font-size: 0.6875rem;
+  font-size: var(--t-13);
   font-weight: 400;
   color: var(--dormant-text);
   margin-top: var(--s1);
@@ -681,7 +689,7 @@ a {
 }
 .card .meta dt {
   color: var(--dormant-text);
-  font-size: 0.6875rem;
+  font-size: var(--t-13);
 }
 .card .meta dd {
   margin: 0;
@@ -695,6 +703,43 @@ a {
 .card .reason {
   margin: 0;
   font-size: var(--t-15);
+}
+
+/* Numbered instructions, spaced so a thumb can follow them on a phone. */
+.steps {
+  margin: var(--s3) 0;
+  padding-inline-start: 1.4rem;
+  display: grid;
+  gap: var(--s2);
+  font-size: var(--t-15);
+}
+.steps strong {
+  font-weight: 600;
+}
+
+/*
+ * Provenance, shown beside the value it belongs to. Deliberately quiet but not
+ * invisible: it is a qualifier on a number, and a reader who skips it should
+ * still have seen that a qualifier was there.
+ */
+.prov {
+  display: inline-block;
+  font-size: var(--t-13);
+  font-family: var(--body);
+  color: var(--dormant-text);
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 0 0.45rem;
+  margin-inline-start: 0.35rem;
+  white-space: nowrap;
+}
+.prov-official {
+  color: var(--live);
+  border-color: rgba(11, 110, 79, 0.35);
+}
+.prov-unknown,
+.prov-inferred {
+  border-style: dashed;
 }
 
 /* Include/exclude filters that answer a decision rather than a curiosity. */
@@ -868,7 +913,7 @@ a {
   margin: var(--s2) 0;
   padding: var(--s2);
   font-family: var(--data);
-  font-size: 0.6875rem;
+  font-size: var(--t-13);
   border: 1px solid var(--hairline);
   border-radius: var(--radius-sm);
   background: var(--paper-sunk);
@@ -1045,7 +1090,7 @@ dialog.sheet::backdrop {
 }
 .sheet dt {
   color: var(--dormant-text);
-  font-size: 0.6875rem;
+  font-size: var(--t-13);
 }
 .sheet dd {
   margin: 0;
@@ -1081,7 +1126,7 @@ dialog.sheet::backdrop {
 }
 .health-list .url {
   font-family: var(--data);
-  font-size: 0.6875rem;
+  font-size: var(--t-13);
   color: var(--dormant-text);
 }
 

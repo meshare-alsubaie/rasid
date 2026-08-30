@@ -74,10 +74,30 @@ function hostVariant(url: string): string {
   return u.href;
 }
 
+/**
+ * The same address over https.
+ *
+ * Four of the remaining records were written as `http://` in a 2021 directory,
+ * and the sites have since stopped answering on that scheme — `www.jadwa.com`
+ * answers perfectly well on https and not at all on http. Upgrading a scheme is
+ * not inventing an address: it is the same host and the same path, over the
+ * transport the site now requires.
+ */
+function secureVariant(url: string): string | null {
+  const u = new URL(url);
+  if (u.protocol !== "http:") return null;
+  u.protocol = "https:";
+  return u.href;
+}
+
 /** Every address worth trying for one recorded source, in order of fidelity. */
 function candidatesFor(url: string): string[] {
   const root = `${new URL(url).origin}/`;
-  return [...new Set([url, hostVariant(url), root, hostVariant(root)])];
+  const all = [url, secureVariant(url), hostVariant(url), root, secureVariant(root), hostVariant(root)]
+    .filter((u): u is string => u !== null)
+    .flatMap((u) => [u, secureVariant(u)])
+    .filter((u): u is string => u !== null);
+  return [...new Set(all)];
 }
 
 /**
@@ -137,9 +157,16 @@ interface Outcome {
   note: string;
 }
 
+/*
+ * Any organisation with a source nobody has opened yet.
+ *
+ * This used to skip an organisation the moment one of its links was verified,
+ * which paired with the old "stop at the first success" to leave second and
+ * third channels permanently unread — and a second channel is often the news
+ * page where the announcement actually appears.
+ */
 const targets = orgs
-  .filter((o) => !o.sources.some((s) => s.verifiedAtISO !== null))
-  .filter((o) => o.sources.length > 0)
+  .filter((o) => o.sources.some((s) => s.verifiedAtISO === null))
   .filter((o) => TIER === undefined || o.tier === TIER)
   .sort((a, b) => "SABC".indexOf(a.tier) - "SABC".indexOf(b.tier))
   .slice(0, LIMIT);
@@ -276,7 +303,7 @@ for (const org of targets) {
       source.verifiedNote = note;
       if (needsBrowser) source.renderMode = "browser";
       outcomes.push({ org: org.id, url, result: "watchable", note });
-      break;
+      continue;
     }
 
     const quote = quoteAround(text, haystack.indexOf(marker.toLowerCase()), marker);
@@ -290,7 +317,16 @@ for (const org of targets) {
     source.verifiedNote = note;
     if (needsBrowser) source.renderMode = "browser";
     outcomes.push({ org: org.id, url, result: "verified", note });
-    break; // one confirmed source per organisation is enough to watch it
+    /*
+     * Every source, not the first that answers.
+     *
+     * This used to stop at the first success — "one confirmed source per
+     * organisation is enough to watch it" — which was wrong in the way that
+     * matters: an organisation that publishes on a careers portal *and* a news
+     * page was watched on whichever happened to be listed first, and an
+     * announcement on the other one was invisible. If a body has two channels,
+     * both are read every run.
+     */
   }
 }
 

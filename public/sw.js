@@ -67,7 +67,9 @@ async function dataFirst(request) {
 
 /** Cache first. Build filenames carry a hash, so a hit is never stale code. */
 async function shellFirst(request) {
-  const cached = await caches.match(request);
+  // Scoped to the shell cache. A bare caches.match searches every cache,
+  // including the push log, which has no business answering page requests.
+  const cached = await caches.open(SHELL).then((c) => c.match(request));
   if (cached) return cached;
   const response = await fetch(request);
   if (response.ok && new URL(request.url).origin === self.location.origin) {
@@ -81,8 +83,11 @@ async function shellFirst(request) {
 async function recordArrival(payload, via) {
   const cache = await caches.open(PUSH_LOG);
   const entry = { at: new Date().toISOString(), via, title: payload.title, body: payload.body };
+  // Millisecond plus a random suffix: two pushes can land in the same
+  // millisecond, and a bare timestamp would have one silently replace the other.
+  const key = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
   await cache.put(
-    new Request(`./__push-log/${Date.now()}`),
+    new Request(`./__push-log/${key}`),
     new Response(JSON.stringify(entry), { headers: { "content-type": "application/json" } }),
   );
   const keys = await cache.keys();

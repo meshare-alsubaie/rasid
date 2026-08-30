@@ -19,6 +19,8 @@ import { USER_AGENT } from "./agent";
 import type { FetchResult } from "./fetch";
 
 const NAV_TIMEOUT_MS = 15_000;
+/** How long to keep waiting for a page to paint after the DOM is in place. */
+const SETTLE_TIMEOUT_MS = 9_000;
 
 let browser: Browser | null = null;
 let launchError: string | null = null;
@@ -43,14 +45,62 @@ async function getBrowser(): Promise<Browser | null> {
 /** We want text. Images, fonts and video cost memory and buy nothing. */
 const HEAVY = new Set(["image", "font", "media"]);
 
+/**
+ * Chromium's own identity, with ours appended.
+ *
+ * Replacing the browser's User-Agent with the bare crawler string made a real
+ * browser announce itself as a bot, and at least one government WAF answered
+ * that with a block page: GACA returned "This page can't be displayed" to the
+ * same request that returns five thousand characters otherwise.
+ *
+ * Deleting our name to get in would be spoofing, and this project does not do
+ * that. Adding it does the opposite — the string is now true twice over: this
+ * *is* Chromium, and it says who is driving it and how to reach them. Nothing
+ * is hidden; something that was missing was restored.
+ */
+async function agentFor(b: Browser): Promise<string> {
+  if (chromiumAgent === null) {
+    const probe = await b.newContext();
+    const page = await probe.newPage();
+    chromiumAgent = (await page.evaluate("navigator.userAgent")) as string;
+    await probe.close();
+  }
+  return `${chromiumAgent} ${USER_AGENT}`;
+}
+
+let chromiumAgent: string | null = null;
+
 async function once(b: Browser, url: string): Promise<FetchResult> {
-  const context = await b.newContext({ userAgent: USER_AGENT, locale: "ar-SA" });
+  const context = await b.newContext({ userAgent: await agentFor(b), locale: "ar-SA" });
   await context.route("**/*", (route) =>
     HEAVY.has(route.request().resourceType()) ? route.abort() : route.continue(),
   );
   const page = await context.newPage();
   try {
-    const res = await page.goto(url, { waitUntil: "networkidle", timeout: NAV_TIMEOUT_MS });
+    /*
+     * Wait for the document, then for the text — not for "network idle".
+     *
+     * Idle was the wrong signal and it cost real sources. These portals keep
+     * polling analytics and chat sockets, so the network never goes quiet, and
+     * `goto` simply timed out; whatever half-painted shell existed at that
+     * moment was what got extracted. GACA came back with 149 characters and was
+     * written off as unreadable, and the same page yields 5,127 when asked this
+     * way. Three of the four "cannot be read" sources were this bug.
+     *
+     * So: wait for the DOM, then poll until the body carries a paragraph's
+     * worth of text, and give up quickly if it never does. A page that really
+     * is empty should not cost ten seconds.
+     */
+    const res = await page.goto(url, { waitUntil: "domcontentloaded", timeout: NAV_TIMEOUT_MS });
+
+    await page
+      .waitForFunction("(document.body?.innerText || '').trim().length > 400", null, {
+        timeout: SETTLE_TIMEOUT_MS,
+        polling: 250,
+      })
+      .catch(() => {
+        /* Some pages really are this thin; take what is there. */
+      });
 
     // Serialising the whole DOM is what kills the renderer on the heaviest
     // portals. If page.content() dies, ask the page for its rendered text

@@ -12,7 +12,7 @@ import "./style.css";
 import { loadDataset, formatDate, timeAgo, daysUntil, type Dataset } from "./data";
 import { renderSeasonBar, type LaneInput } from "./season-bar";
 import { hijriOf } from "../types";
-import type { Opportunity, Organisation } from "../types";
+import type { Opportunity, Organisation, Provenance } from "../types";
 
 type Tab = "season" | "orgs" | "mine" | "settings";
 type Mark = "interested" | "applied" | "ignored";
@@ -90,6 +90,23 @@ const scoreLabel = (o: Opportunity): string =>
   o.relevanceScore === null
     ? `<span class="score unscored">؟<small>لم يُصنَّف</small></span>`
     : `<span class="score">${o.relevanceScore}<small>صلة</small></span>`;
+
+/**
+ * Where a value came from, said in the same breath as the value.
+ *
+ * Spec 8.2: no field is displayed whose provenance is not represented visually.
+ * A number with nothing beside it reads as fact, and half the numbers here are
+ * inferences or third-party reports.
+ */
+function provenanceTag(p: Provenance): string {
+  const label = {
+    official: "من الجهة",
+    reported: "من طرف ثالث",
+    inferred: "استنتاج من دورات سابقة",
+    unknown: "مصدر غير معروف",
+  }[p];
+  return `<span class="prov prov-${p}">${label}</span>`;
+}
 
 /** A field with no published value is said in words, never left blank. */
 const fact = (label: string, value: string | null): string =>
@@ -278,10 +295,26 @@ function seasonScreen(): string {
   const nextHint =
     "لا نافذة مفتوحة. حين تُعلن جهة تاريخاً ستظهر هنا، وسيتلوّن مسارها في الشريط أعلاه.";
 
+  /*
+   * The groups below list announcements, not organisations, and the difference
+   * confused the first person to read the screen: "why only fourteen?" Because
+   * fourteen pages have said something the classifier could read. The other
+   * ninety-odd lanes are being read every six hours and have published nothing,
+   * which is the normal state outside a window — and silence is exactly what
+   * this app exists to sit through. So the count is now stated rather than left
+   * to be inferred from a shorter list than expected.
+   */
+  const silent = lanes.filter((l) => l.opportunity === undefined).length;
+
   return `<div class="season-head">
       <h2>الموسم</h2>
       <p class="season-note">سبتمبر إلى فبراير · ${lanes.length} جهة مراقَبة</p>
     </div>
+    <p class="reason season-note">
+      المسارات أدناه كل الجهات المراقَبة. أما المجموعات تحتها فتعرض <strong>الإعلانات</strong> لا الجهات:
+      ${data.opportunities.length} إعلاناً قُرئ وصُنِّف حتى الآن، و${silent} جهة تُقرأ كل ٦ ساعات ولم تنشر شيئاً بعد.
+      لا تُعطى الجهة درجة صلة، لأن الدرجة تُقاس على إعلان بعينه — وجهة صامتة لا إعلان لها تُقاس.
+    </p>
     ${renderSeasonBar(lanes)}
     ${group("مفتوح الآن", by("open"), nextHint, true)}
     ${group("يغلق قريباً", by("closing_soon"), "لا شيء يغلق خلال ٤٨ ساعة.", true)}
@@ -608,6 +641,23 @@ function settingsScreen(): string {
         هذه القيم تُضبط في الجولة الآلية نفسها، لا في المتصفّح، لأن الإرسال يحدث والتطبيق مغلق.
         عُرضت هنا لتعرفها، ولم تُعرض كأزرار لأن ضغطها لن يغيّر شيئاً — وزرّ لا يفعل شيئاً أسوأ من غيابه.
       </p>
+      <p class="reason">
+        وحدّ واحد معروف: تنبيه «يغلق قريباً» يصلك حتى لو علّمت الفرصة «قدّمت». علاماتك محفوظة
+        في هذا الجهاز وحده ولا يراها المُرسِل، وهذا مقصود — لا حساب ولا قاعدة بيانات تحفظ ما تفعله.
+      </p>
+    </div>
+    <div class="card">
+      <h3>ثبّت التطبيق على جهازك</h3>
+      <p class="reason">
+        التثبيت ليس تحسيناً شكلياً: على الآيفون لا تصل الإشعارات إطلاقاً قبله، وعلى أندرويد
+        يفتح التطبيق بلا شريط متصفّح ويعمل بلا إنترنت بآخر بيانات قرأها.
+      </p>
+      <ol class="steps">
+        <li><strong>أندرويد (Chrome):</strong> زر ⋮ في أعلى المتصفّح ← «تثبيت التطبيق» أو «إضافة إلى الشاشة الرئيسية».</li>
+        <li><strong>آيفون (Safari):</strong> زر المشاركة ⬆︎ ← «إضافة إلى الشاشة الرئيسية». ثمّ افتحه من الأيقونة، لا من سفاري، وفعّل التنبيهات من هناك.</li>
+        <li><strong>ويندوز (Chrome أو Edge):</strong> أيقونة التثبيت في يمين شريط العنوان، أو ⋮ ← «تثبيت».</li>
+      </ol>
+      <p class="reason">${pushDiag?.standalone ? "هذا الجهاز يفتح التطبيق مثبَّتاً الآن." : "يبدو أنك تفتحه من المتصفّح لا من أيقونة مثبَّتة."}</p>
     </div>
     <div class="card">
       <h3>افحص الآن</h3>
@@ -756,7 +806,15 @@ function openSheet(orgId: string): void {
     }
     ${org.notes ? `<p class="reason">${esc(org.notes)}</p>` : ""}
     <dl class="facts">
-      ${fact("المكافأة", org.stipend.amountSAR === null ? null : `${org.stipend.amountSAR} ريال`)}
+      ${/* Spec 8.2: no field is shown without its provenance visible. The
+            amount was rendered bare, so a figure taken from a third-party
+            report looked exactly like one published by the organisation. */ ""}
+      ${fact(
+        "المكافأة",
+        org.stipend.amountSAR === null
+          ? null
+          : `${org.stipend.amountSAR} ريال ${provenanceTag(org.stipend.provenance)}`,
+      )}
       ${/* Labelled, because none of these addresses has ever been confirmed:
             most came from a 2021 directory and many are switchboards. */ ""}
       ${fact(
@@ -789,7 +847,12 @@ function openSheet(orgId: string): void {
     ${
       org.historicalWindows.length > 0
         ? `<dl class="facts">${org.historicalWindows
-            .map((w) => fact(esc(w.seasonLabel), `${formatDate(w.openedISO)} — ${formatDate(w.closedISO)}`))
+            .map((w) =>
+              fact(
+                esc(w.seasonLabel),
+                `${formatDate(w.openedISO)} — ${formatDate(w.closedISO)} ${provenanceTag(w.provenance)}`,
+              ),
+            )
             .join("")}</dl>`
         : ""
     }
@@ -857,7 +920,10 @@ async function subscribeToPush(): Promise<void> {
      * the first time, so it is labelled, boxed, and copied by a button.
      */
     out.innerHTML = `
-      <strong>تمّ التسجيل. انسخ النصّ التالي وأرسله لي:</strong>
+      <strong>تمّ تسجيل هذا الجهاز.</strong>
+      <span>لا يوجد خادم ولا حساب، فتسجيل الجهاز نفسه هو ما يُحفظ — احتفظ بالنصّ التالي مرّة واحدة،
+      ويُضبط في إعدادات الجولة الآلية باسم <code>RASID_PUSH_SUBSCRIPTION</code>. لن تحتاجه ثانيةً
+      ما لم تُلغِ الإذن أو تُعِد تثبيت التطبيق.</span>
       <textarea class="sub-out" readonly rows="4">${esc(json)}</textarea>
       <button class="secondary" id="copy-sub">انسخ</button>
       <span id="copy-done" class="chip yes" hidden>نُسخ</span>`;

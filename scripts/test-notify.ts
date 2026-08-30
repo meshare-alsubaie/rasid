@@ -124,6 +124,41 @@ const repeat = split(many, many.map((n) => ({ key: n.key, sentISO: now.toISOStri
 check("nothing already sent is sent twice", repeat.push.length === 0 && repeat.digestOnly.length === 0);
 
 /*
+ * The cap counts pushes, not deliveries.
+ *
+ * A quiet night routes everything to the email digest, and every digested item
+ * was written to the same log the cap reads. Nine emailed items at three in the
+ * morning therefore left no room to push anything at all the next day: the real
+ * announcements were silently demoted to email, on the morning they mattered.
+ */
+const emailedLastNight = Array.from({ length: 9 }, (_, i) => ({
+  key: `old${i}`,
+  sentISO: now.toISOString(),
+  via: "digest" as const,
+}));
+const morningAfter = split(many, emailedLastNight, now, false);
+check(
+  "a night of digests does not eat the next day's push budget",
+  morningAfter.push.length === DAILY_PUSH_CAP,
+  String(morningAfter.push.length),
+);
+
+const pushedAlready = emailedLastNight.map((e) => ({ ...e, via: "push" as const }));
+check(
+  "pushes do still count against it",
+  split(many, pushedAlready, now, false).push.length === 0,
+);
+
+/* An entry written before the channel was recorded is counted as a push, which
+   is the cautious reading: it can only ever hold notifications back, never let
+   extra ones through. */
+const legacy = emailedLastNight.map(({ key, sentISO }) => ({ key, sentISO }));
+check(
+  "a log entry with no channel recorded is treated as a push",
+  split(many, legacy, now, false).push.length === 0,
+);
+
+/*
  * Written as UTC instants, deliberately. Riyadh is UTC+3 and never moves, so
  * each of these is one unambiguous moment, and the test now says the same thing
  * on the owner's machine and on a runner in another timezone — which is the

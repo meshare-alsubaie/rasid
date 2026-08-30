@@ -3673,5 +3673,2539 @@
     "urlTried": "https://www.tawuniya.com.sa/about-us/contact-us",
     "outcome": "unreachable",
     "note": "page.goto: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://tawuniya.com.sa/\", waiting until \"networkidle\"\u001b[22m\n · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "taqnia",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://taqnia.com/en/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://me.devoteam.com/jobs/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://www.devoteam.com/me/join-us/",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "taif_amanah",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://www.taifcity.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taif_amanah",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://momah.gov.sa/ar/branches/amant-mhafzt-altayf",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"أمانة محافظة الطائف | وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 151421 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية أمانة محافظة الطائف أمانة محافظة الطائفالعنوانالطائف حي النسيمخريطةPOINT (40.451166 21.274607)ايميلad…\""
+  },
+  {
+    "targetId": "derayah",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "http://www.derayah.com/web/ar/index.html",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "http://www.falcom.com.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://gaca.gov.sa/web/ar-sa/page/home",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (107 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://careers.gaca.gov.sa/ar/jobs/sectors/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "hrc",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://www.hrc.gov.sa/ar-sa/Pages/home.aspx",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (89 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "hrc",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://e-services.hrc.gov.sa/ar/service/details/12",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1312 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"إشعار SMS بالحالة خدمة إلكترونية تستهدف الهيئة منها إتاحة الفرصة للطلاب والطالبات الذين يتطلب تخرجهم قضاء فترة…\""
+  },
+  {
+    "targetId": "jadwa",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "http://www.jadwa.com/en",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "kasb",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "media",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://media.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "pension",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://www.pension.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "pension",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://www.gosi.gov.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "redf",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://www.housing.gov.sa/ar/related-links/140",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "redf",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://redf.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"REDF\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2009 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية الحكومية تنتهي بـ gov.saجميع روابط المواقع الرسمية التابعة للجهات الحكومية ف…\""
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://careers.sfda.gov.sa/ar/saudi-arabia/jobs/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://career.sfda.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "tawuniya",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://www.tawuniya.com.sa/about-us/contact-us",
+    "outcome": "unreachable",
+    "note": "page.goto: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://tawuniya.com.sa/\", waiting until \"networkidle\"\u001b[22m\n · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "tawuniya",
+    "checkedAtISO": "2026-08-30T04:34:30.450Z",
+    "urlTried": "https://www.tawuniya.com/en/careers",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Explore Careers & Apply for Jobs at Tawuniya Insurance | Tawuniya\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2457 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Be a part of meaningful innovationWork with the very best people and be a part of innovation that makes a real…\""
+  },
+  {
+    "targetId": "taqnia",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://taqnia.com/en/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://me.devoteam.com/jobs/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://www.devoteam.com/me/join-us/",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "derayah",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "http://www.derayah.com/web/ar/index.html",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "http://www.falcom.com.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://gaca.gov.sa/web/ar-sa/page/home",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (107 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://careers.gaca.gov.sa/ar/jobs/sectors/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "jadwa",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://www.jadwa.com/en",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Home | Jadwa\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2363 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Expanding investment horizons Diversified offering We offer clients a broad range of asset classes across regi…\""
+  },
+  {
+    "targetId": "kasb",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "media",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://media.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "pension",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://www.pension.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "pension",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://www.gosi.gov.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://careers.sfda.gov.sa/ar/saudi-arabia/jobs/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T04:40:37.058Z",
+    "urlTried": "https://career.sfda.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taqnia",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://taqnia.com/en/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://me.devoteam.com/jobs/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://www.devoteam.com/me/join-us/",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "derayah",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://www.derayah.com/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"منصة تداول رائدة في السعودية للاستثمار | دراية المالية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1431 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"نمزج بين الابتكار والخبرة لتوفير حلول مخصصة لتنمي ثروتك والمساعدة في تحقيق أهدافك الاستثمارية. تسجيل دخول منتج…\""
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "http://www.falcom.com.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://gaca.gov.sa/web/ar-sa/page/home",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (107 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://careers.gaca.gov.sa/ar/jobs/sectors/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://www.gaca.gov.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (107 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "kasb",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "media",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://media.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "pension",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://www.pension.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "pension",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://www.gosi.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المؤسسة العامة للتأمينات الاجتماعية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 452 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ابحث عن خدمة تبحث عن خدمة محددة؟ ما هي طبيعة دورك في مؤسسة التأمينات الاجتماعية؟ما هي طبيعة دورك في مؤسسة التأ…\""
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://careers.sfda.gov.sa/ar/saudi-arabia/jobs/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T04:50:40.620Z",
+    "urlTried": "https://career.sfda.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taqnia",
+    "checkedAtISO": "2026-08-30T05:01:24.034Z",
+    "urlTried": "https://taqnia.com/en/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T05:01:24.034Z",
+    "urlTried": "https://me.devoteam.com/jobs/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T05:01:24.034Z",
+    "urlTried": "https://www.devoteam.com/me/join-us/",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-30T05:01:24.034Z",
+    "urlTried": "http://www.falcom.com.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T05:01:24.034Z",
+    "urlTried": "https://gaca.gov.sa/web/ar-sa/page/home",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للطيران المدني | 404\". صفحة حقيقية على نطاق الجهة، قُرئ منها 386 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق الأحد، ٣٠ أغسطس ٢٠٢٦ ٨:٠٦ ص روابط المواقع الإلكترونية الرسم…\""
+  },
+  {
+    "targetId": "kasb",
+    "checkedAtISO": "2026-08-30T05:01:24.034Z",
+    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "media",
+    "checkedAtISO": "2026-08-30T05:01:24.034Z",
+    "urlTried": "https://media.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:01:24.034Z",
+    "urlTried": "https://careers.sfda.gov.sa/ar/saudi-arabia/jobs/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:01:24.034Z",
+    "urlTried": "https://career.sfda.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taqnia",
+    "checkedAtISO": "2026-08-30T05:09:45.038Z",
+    "urlTried": "https://taqnia.com/en/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T05:09:45.038Z",
+    "urlTried": "https://me.devoteam.com/jobs/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T05:09:45.038Z",
+    "urlTried": "https://www.devoteam.com/me/join-us/",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-30T05:09:45.038Z",
+    "urlTried": "http://www.falcom.com.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "kasb",
+    "checkedAtISO": "2026-08-30T05:09:45.038Z",
+    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "media",
+    "checkedAtISO": "2026-08-30T05:09:45.038Z",
+    "urlTried": "https://media.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:09:45.038Z",
+    "urlTried": "https://careers.sfda.gov.sa/ar/saudi-arabia/jobs/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:09:45.038Z",
+    "urlTried": "https://career.sfda.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:09:45.038Z",
+    "urlTried": "https://www.sfda.gov.sa/ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للغذاء والدواء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 5958 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرؤية والرسالة أن تكون هيئة رائدة عالميًا تستند إلى أسس علمية لتعزيز وحماية الصحة العامة والمجتمع من خلال تشر…\""
+  },
+  {
+    "targetId": "ncac",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://ncac.edu.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sdaia",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://careers.sdaia.gov.sa/training",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التوظيف\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…ا للتدريب التعاوني تسعى الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا) عن طريق برنامج التدريب التعاوني إلى المساهمة في تحقيق رؤية المملكة 2030 ورؤية الاستراتيجية الوطنية للبيانات والذكاء الاصطناعي في تنمية الموارد البشرية والقدرات ا…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "stc",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://careers.stc.com.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Jobs at stc\". صفحة حقيقية على نطاق الجهة، قُرئ منها 648 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"your journey begins here. let’s go further together! Search for a job that fits with you through Job Categorie…\""
+  },
+  {
+    "targetId": "albilad",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://bankalbilad.com/ar/about/Pages/Training.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"برنامج التدريب التعاوني\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"​برنامج التدريب التعاونيإن من أهداف بنك البلاد رفع مستوى المعرفة والمهارة لدى كفاءات الوطن من الطلبة الخريجين وتمكينهم من تطبيق الدراسات الأكاديمية في بيئ…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.alinma.com/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"نبتكر لنتقدم | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1211 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"بطاقة سفر أكثر الائتمانية لرفاهية أكثر اكتشف بطاقة سفر أكثر الائتمانية من الإنماء التي تجمع بين المكافآت والمز…\""
+  },
+  {
+    "targetId": "alrajhi",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.alrajhibank.com.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأفراد | مصرف الراجحي\". صفحة حقيقية على نطاق الجهة، قُرئ منها 362 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Loading component...فئات مصرفية متنوعة اختر الفئة التي تليق بك كلاسيكمع بطاقة المدى كلاسيكلمعرفة المزيدالتميز …\""
+  },
+  {
+    "targetId": "anb",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://anb.com.sa/web/anb",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Home - Personal Banking - anb\". صفحة حقيقية على نطاق الجهة، قُرئ منها 926 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Cookies Information We use cookies to enhance your browsing experience, serve personalized ads, and analyze ou…\""
+  },
+  {
+    "targetId": "bsf",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.bsfcareers.sa/ar/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (131 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "citc",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.cst.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"هيئة الاتصالات والفضاء والتقنية | المملكة العربية السعودية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 760 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ننظم قطاع الاتصالاتلربط المملكة بكفاءة وموثوقية ننظم قطاع الاتصالاتلربط المملكة بكفاءة وموثوقية ننظم قطاع الفض…\""
+  },
+  {
+    "targetId": "cma",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://cma.gov.sa/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"هيئة السوق المالية | Capital Market Authority\". صفحة حقيقية على نطاق الجهة، قُرئ منها 6976 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية …\""
+  },
+  {
+    "targetId": "dga",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://dgacareer.talentera.com/ar/page/coop-program/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "gastat",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.stats.gov.sa/ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للإحصاء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 314 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"يستخدم موقع الويب هذا ملفات تعريف الارتباط نحن نستخدم ملفات تعريف الارتباط لتقديم محتوى مخصص وتحليل التوجهات و…\""
+  },
+  {
+    "targetId": "maaden",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://maaden.com.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "maaden",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.maaden.com.sa/ar/careers/working",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "mcit",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://mcit.gov.sa/ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"وزارة الاتصالات وتقنية المعلومات\". صفحة حقيقية على نطاق الجهة، قُرئ منها 13293 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية عن الوزارة مجتمع رقمي الأعمال والاستثمار المركز الإعلامي إصدارات الوزارة اتصل بنا البرنامج الوطني لتن…\""
+  },
+  {
+    "targetId": "mim",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.mim.gov.sa/ar/empower-training/cooperative-training",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…هيئة الحكومة الرقمية كيف تتحقق199001بحثEnglishتقدم وزارة الصناعة والثروة المعدنية مبادرة التدريب التعاوني بالتعاون مع المنشآت الصناعية في جميع أنحاء المملكة، والتي تهدف إلى تنمية القدرات البشرية وتطويرها، من خلال اكتساب المهارات العملي…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "mobily",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://careers.mobily.com.sa",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "mobily",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://careers.mobily.com.sa/en/saudi-arabia/jobs/coop-program-1100006246/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (75 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "moj",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://training.moj.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التدريب التعاوني\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"برنامج التدريب التعاوني هو برنامج تدريبي محدد المدة، تتيح من خلالِه وزارة العدل الفرصة لطلبة الجامعات والكليات السعودية تحقق أعلى درجات المواءمة بين المع…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "riyadbank",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://careers.riyadbank.com/ar/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"موقع بنك الرياض للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2628 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Start Your Career Journey with Us At Riyad Bank, we strive to foster an environment where every employee can t…\""
+  },
+  {
+    "targetId": "saib",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.saib.com.sa/ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"البنك السعودي للاستثمار | خدمات مصرفية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 751 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"افتح حساب ابدأ رحلتك معنا اليوم فتح حساب معنا أصبح أسهل بكثير. قدّم اليوم للاستمتاع بعلاقة مصرفية مليئة بالخدم…\""
+  },
+  {
+    "targetId": "sar",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.sar.com.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"SAR| Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1113 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Our servicesSAR delivers a wide range of passenger and freight services across various regions of Saudi Arabia…\""
+  },
+  {
+    "targetId": "snb",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.alahli.com/en/pages/personal-banking",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Personal Banking | Saudi National Bank\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1915 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Personal Finance CalculatorPersonal DetailsEmploymentSalaried EmployeeRetiredMortgage typeNo MortgageMonthly P…\""
+  },
+  {
+    "targetId": "takamol",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://join.takamol.com.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "takamol",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://join.takamol.com.sa/?page_id=4",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taqnia",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://taqnia.com/en/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "tetco",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://tetco.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الصفحة الرئيسية | Tetco\". صفحة حقيقية على نطاق الجهة، قُرئ منها 633 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تيتكوتطوير لتقنيات التعليم تيتكوتطوير لتقنيات التعليم نقدم حلول وخدمات مبتكرة عالية الجودة لكل من القطاعين الع…\""
+  },
+  {
+    "targetId": "tetco",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://tetco.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الصفحة الرئيسية | Tetco\". صفحة حقيقية على نطاق الجهة، قُرئ منها 633 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تيتكوتطوير لتقنيات التعليم تيتكوتطوير لتقنيات التعليم نقدم حلول وخدمات مبتكرة عالية الجودة لكل من القطاعين الع…\""
+  },
+  {
+    "targetId": "thiqah",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.thiqah.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2087 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"نصنع الأثر عبر التحول الرقمي نسخر الجهود نحو صناعة الأثر والمساهمة في تحسين جودة أداء الأعمال لتحقيق التنمية ا…\""
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://me.devoteam.com/jobs/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.devoteam.com/me/join-us/",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "fakeeh",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://careers.fakeeh.care/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taif_amanah",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.taifcity.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "customs",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.customs.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "derayah",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.derayah.com/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"منصة تداول رائدة في السعودية للاستثمار | دراية المالية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1431 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"نمزج بين الابتكار والخبرة لتوفير حلول مخصصة لتنمي ثروتك والمساعدة في تحقيق أهدافك الاستثمارية. تسجيل دخول منتج…\""
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "http://www.falcom.com.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://careers.gaca.gov.sa/ar/jobs/sectors/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.gaca.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للطيران المدني | الموقع الرسمي\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1866 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تصريح سنوي للمشغل الاجنبي إصدار تصريح سنوي للمشغل الأجنبي تخوله بتشغيل الأنشطة طبقاً لأحكام اللوائح وذلك بعد ا…\""
+  },
+  {
+    "targetId": "gcam",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.gcam.gov.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "housing",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.housing.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "hrc",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.hrc.gov.sa/ar-sa/Pages/home.aspx",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (89 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "kasb",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "media",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://media.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "pension",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.pension.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "redf",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.housing.gov.sa/ar/related-links/140",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sanabil",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "http://www.sanabil.sa/ar/pages/default.aspx",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "saudi_exports",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.saudiexports.sa/ar/pages/default.aspx",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://careers.sfda.gov.sa/ar/saudi-arabia/jobs/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://career.sfda.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "ssc",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://saudispace.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "tawuniya",
+    "checkedAtISO": "2026-08-30T05:17:36.664Z",
+    "urlTried": "https://www.tawuniya.com.sa/about-us/contact-us",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "aramco",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities/university-and-vocational-college-internship-programs",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"University and vocational college Internship programs | Aramco\". صفحة حقيقية على نطاق الجهة، قُرئ منها 651 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Saudi Aramco offers internship opportunities to a limited number of high-caliber Saudi students who are attend…\""
+  },
+  {
+    "targetId": "aramco",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities/college-continuation-program",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"College continuation program | Aramco\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1111 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Skip to contentScholarship opportunities for Saudi students. This is a scholarship program for high-caliber Sa…\""
+  },
+  {
+    "targetId": "aramco",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities/apprenticeship-program",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Apprenticeship program | Aramco\". صفحة حقيقية على نطاق الجهة، قُرئ منها 14434 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Skip to contentApprenticeship opportunities for Saudi high school graduates.The Apprenticeship Program (APNE) …\""
+  },
+  {
+    "targetId": "nca",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://nca.gov.sa/ar/careers/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التوظيف | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 606 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققEnglishروابط المواقع الالكترونية الرسمية السعودية تنتهي بـ .g…\""
+  },
+  {
+    "targetId": "nca",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://nca.gov.sa/ar/news/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأخبار | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 840 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"المملكة تشارك في الاجتماع الخامس للجنة الوزارية للأمن السيبراني بدول مجلس التعاون لدول الخليج العربية27/08/202…\""
+  },
+  {
+    "targetId": "ncac",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://ncac.edu.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "ncac",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://nca.gov.sa/ar/cyber-training-and-qualifications/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"تأهيل وتدريب الكوادر السيبرانية | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3394 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"النسخة الثالثة من البرنامج التدريبي للطلاب والطالبات في المرحلة الجامعية المتخصصين في الأمن السيبرانيبرنامج يت…\""
+  },
+  {
+    "targetId": "ncac",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://nca.gov.sa/ar/careers/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التوظيف | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 606 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققEnglishروابط المواقع الالكترونية الرسمية السعودية تنتهي بـ .g…\""
+  },
+  {
+    "targetId": "ncac",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://nca.gov.sa/ar/news/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأخبار | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 840 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"المملكة تشارك في الاجتماع الخامس للجنة الوزارية للأمن السيبراني بدول مجلس التعاون لدول الخليج العربية27/08/202…\""
+  },
+  {
+    "targetId": "sabic",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.sabic.com/ar/careers",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"SABIC - الوظائف\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…دد في منطقة الشرق الأوسط وأفريقيا. ومن خلال برامج متخصصة مثل برامج المسار المهني المبكر، والتدريب التعاوني، وبرامج الابتعاث، تهدف (سابك) إلى استقطاب وتنمية الكفاءات السعودية الشابة، وتزويدها بالمهارات والخبرات اللازمة لبناء مسيرة مهنية…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "sabic",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.sabic.com/ar/careers/americas",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"SABIC - Americas\". صفحة حقيقية على نطاق الجهة، قُرئ منها 941 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مرحباً بكم في الأمريكتين منذ بدء عملياتها في الأمريكتين عام 1987م، وسّعت (سابك) حضورها في المنطقة بشكل أكبر عا…\""
+  },
+  {
+    "targetId": "sabic",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.sabic.com/ar/careers/asia",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"SABIC - Asia\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1138 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مرحباً بكم في آسيا منذ عام 1985، تُعد منطقة آسيا إحدى المناطق التشغيلية التابعة لشركة (سابك)، وقد أصبحت من أكث…\""
+  },
+  {
+    "targetId": "sama",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.sama.gov.sa/go/COOP-Training/7723023/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". وردت فيها عبارة «coop training» بنصّها: \"COOP Training There are currently no open positions matching this category or location. Receive emails by subscribing to jobs matching COOP Tra…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "sama",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.sama.gov.sa/content/Recruiting-process/?locale=en_GB",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Recruiting process\". وردت فيها عبارة «coop training» بنصّها: \"…age Talent Community Join Talent Community Recruiting process Opportunities and Vacancies COOP Training Other Programs About SAMA Language العَرَبِيَّة (السعودية) English (United Kingdom) Log In Careers Home Page Talent Community Joi…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "sama",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.sama.gov.sa/search/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Saudi Central Bank البنك المركزي السعودي Jobs\". صفحة حقيقية على نطاق الجهة، قُرئ منها 249 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Home at Saudi Central Bank البنك المركزي السعودي(current page) Search results for \"\". There are currently no o…\""
+  },
+  {
+    "targetId": "sdaia",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://athkax.sdaia.gov.sa/coop",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Athkax\". وردت فيها عبارة «تدريب تعاوني» بنصّها: \"نبذة عن البرنامجيهدف البرنامج إلى دعم الطلاب الذين لديهم متطلب تدريب تعاوني للتخرج، من خلال المواءمة بين الدراسة الأكاديمية والتطبيق العملي في بيئة عمل فعلية، ورفع مستوى المعرفة والمهارات التخصصية والشخصية…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "sdaia",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.sdaia.gov.sa/jobs",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 266 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق الصفحة الرئيسية الوظائف تواصل معنا |الصفحة الرئ…\""
+  },
+  {
+    "targetId": "stc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.stc.com.sa/content/COOP/?locale=ar_SA",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"COOP\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"كجزء من استراتيجية stc لجذب وتطوير المواهب الشابة من الطلبة المتميزين، توفر stc فرص التدريب التعاوني للطلبة السعوديين الذين يدرسون في الجامعات داخل المملكة. يهدف البرنامج إلى مساعدة المتدربين في اكتساب الخبرة العملية اللازمة، وتلب…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "stc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.stc.com.sa/go/Cooperative-Training/7736023/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1008 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookie…\""
+  },
+  {
+    "targetId": "stc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.stc.com.sa/content/COOP/?locale=en_US",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"COOP\". وردت فيها عبارة «cooperative training» بنصّها: \"Cooperative Training Program As part of stc’s strategy to attract and develop young talents and top notch students, stc provides Cooperative Training…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://career.alinma.com/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2026/8/amwal-tech",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الإنماء وأموال تيك يوقّعان اتفاقية لتقديم خدمة تقسيط مشتريات بطاقات الائتمان | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 737 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ضمن جهود الإنماء المستمرة لتعزيز الخدمات الرقمية وتحسين تجربة المستخدم، تم توقيع اتفاقية شراكة استراتيجية بين …\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2026/8/IFN-Awards",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"مصرف الإنماء الأفضل ابتكاراً في المملكة من IFN Awards | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1052 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ضمن اسهاماته في تطوير حلول مالية مبتكرة، وتعزيز منظومته الرقمية، وتقديم تجربة مصرفية متكاملة ترتكز على الابتكا…\""
+  },
+  {
+    "targetId": "alrajhi",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.alrajhibank.com.sa/en/page/coop-program/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Al Rajhi Bank Careers\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…equired information and attaching required documents through following link COOP Training التدريب التعاوني - Al Rajhi Bank Careers • Bachelor’s or Master’s degree • Minimum cumulative GPA 3 out of 4 or 3 out of 5 • Cooperative training…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "alrajhi",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.alrajhibank.com.sa/ar/saudi-arabia/jobs/coop-training-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-1100037814/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"COOP Training التدريب التعاوني - Al Rajhi Bank Careers\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…037814 وصف الوظيفة بناءً على التعاون المشترك بين مصرف الراجحي والجامعات التعليمية لبرنامج التدريب التعاوني في مختلف إدارات المصرف وفروعه، وحسب التخصصات المطلوبة لكل فصل دراسي، للتقديم على البرنامج وفقا لشروط الانضمام التالية: - التقديم…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "alrajhi",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.alrajhibank.com.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at Al Rajhi Bank Careers\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…Banking صراف - جميع مناطق المملكة Saudi Arabia 27-Oct-2025 Apply Now Other COOP Training التدريب التعاوني Riyadh 14-Sep-2023 Apply Now\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "anb",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.anb.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at Arab National Bank\". صفحة حقيقية على نطاق الجهة، قُرئ منها 415 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Build Your Future With Arab National Bank As a comprehensive commercial bank. anb caters to the diverse needs …\""
+  },
+  {
+    "targetId": "anb",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.anb.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at Arab National Bank\". صفحة حقيقية على نطاق الجهة، قُرئ منها 415 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Build Your Future With Arab National Bank As a comprehensive commercial bank. anb caters to the diverse needs …\""
+  },
+  {
+    "targetId": "anb",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.anb.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at Arab National Bank\". صفحة حقيقية على نطاق الجهة، قُرئ منها 415 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Build Your Future With Arab National Bank As a comprehensive commercial bank. anb caters to the diverse needs …\""
+  },
+  {
+    "targetId": "bog",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://khabeer.bog.gov.sa/cotraining/index",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"نظام التدريب التعاوني\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…جغرافي لمقر الديوان 920000553 مشاركة الصفحة فيس بوك اكس واتس اب الرئيسية مرحبا بك في نظام التدريب التعاوني الإلكتروني مرحبا بك في نظام التدريب التعاوني الإلكتروني تعليمات هامة التدريب التعاوني الزيارات الطلابية التحقق من الشهادة التدريب…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "bog",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.bog.gov.sa/en/EServices/judiciaryHiring/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Forms for application to judiciary\". صفحة حقيقية على نطاق الجهة، قُرئ منها 756 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Last Update :10/23/2018 11:24 AM ​​Launching from importance of judiciary and its position as well as the care…\""
+  },
+  {
+    "targetId": "bog",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.bog.gov.sa/en/EServices/judiciaryHiring/Pages/Hiring.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Application for jobs in judicial profession\". صفحة حقيقية على نطاق الجهة، قُرئ منها 609 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Last update :10/23/2018 11:27 AM يشترط فيمن يُولى القضاء ما يلي : أن يكون سعودي الجنسية بالأصل.أن يكون حسن الس…\""
+  },
+  {
+    "targetId": "bsf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.bsfcareers.sa/ar/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (131 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "citc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.cst.gov.sa/media-center",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الإعلامي | هيئة الاتصالات والفضاء والتقنية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 567 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"المركز الإعلاميوجهتك للتعرف على آخر تحديثات وإنجازات الهيئة من خلال الأخبارفعاليات الهيئةتعرّف على أنشطة وفعال…\""
+  },
+  {
+    "targetId": "cma",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.cma.gov.sa/en/page/coop-program/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Capital Market Authority\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"برنامج التدريب التعاوني تعريف بالبرنامج تتيح الهيئة الفرصة لطلاب والطالبات الذين يتطلب تخرجهم قضاء فترة من التدريب العملي وذلك للتعرف على الحياة العملية…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "cma",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.cma.gov.sa/ar/saudi-arabia/jobs/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-%D9%84%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%8A-2025%D9%85-1100087033/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"برنامج التدريب التعاوني للفصل الدراسي الصيفي 2025م - هيئة السوق المالية\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…ية. خطاب اعتماد التدريب. انتظام كلي. معدل دراسي لا يقل عن جيد جداً. تفاصيل الوظيفة برنامج التدريب التعاوني للفصل الدراسي الأول 2026م المملكة العربية السعودية غيرذلك دوام كامل متدرب المرشح المفضل طالب/متدرّب المملكة العربية السعودية Capi…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "cma",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.cma.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"موقع هيئة السوق المالية للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 289 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ .sa جميع روابط المواقع الرسمية التعليمية في المملكة العربي…\""
+  },
+  {
+    "targetId": "dga",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://dgacareer.talentera.com/ar/page/coop-program/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "dga",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://career.dga.gov.sa/ar/page/coop-program/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"برنامج ميدان للتدريب التعاوني - هيئة الحكومة الرقمية\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…خدمات مراجعة السيرة الذاتية. التخصصات المستهدفة يتم تحديث التخصصات بشكل دوري بناء على فرص التدريب التعاوني المتاحة تقنية المعلومات. علوم الحاسب الآلي. هندسة الحاسب الآلي. هندسة برمجيات. نظم معلومات الحاسب الآلي. المحاسبة والمالية. إدارة…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "dga",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://career.dga.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Career portal\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3528 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"We at the Digital Government Authority (DGA) strive to shape the digital landscape in Saudi Arabia by supporti…\""
+  },
+  {
+    "targetId": "dga",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://career.dga.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Career portal\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3528 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"We at the Digital Government Authority (DGA) strive to shape the digital landscape in Saudi Arabia by supporti…\""
+  },
+  {
+    "targetId": "elm",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://career.elm.sa/elm/go/coop-trainee-and-training-program/8486100/elm.sa",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 383 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"المتدربون وبرامج التدريبقم بإثراء حياتك المهنية بتجربة ذات مغزى حيث يمكنك سد الفجوة بين الخبرة التعليمية والعم…\""
+  },
+  {
+    "targetId": "ey_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.ey.com/en_sa/careers",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at EY | EY - MENA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1523 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Shape your future with confidence We’re shapers of the future. We’re change agents and cyber professionals. Pe…\""
+  },
+  {
+    "targetId": "ey_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.ey.com/en_sa/careers/what-you-can-do-here",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"What you can do here | EY - MENA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 4999 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Insights AI Insights Finance People and workforce Sustainability Technology EY Transformation Risk Geostrategy…\""
+  },
+  {
+    "targetId": "ey_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.ey.com/en_sa/careers/technology",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Technology careers at EY | EY - MENA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 4121 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"We invest in our people and technology to power the human enterprise of the future A technology career is abou…\""
+  },
+  {
+    "targetId": "gastat",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.stats.gov.sa/ar/cooperative-training",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التدريب التعاوني - الهيئة العامة للإحصاء\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"يأتي برنامج التدريب التعاوني ضمن المسؤولية الاجتماعية والمهنية في الهيئة العامة للإحصاء؛ وذلك بهدف رفع مستويات المعرفة والمهارة لدى كفاءات الوطن من الطلبة الخ…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "gastat",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.stats.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"موقع الهيئة العامة للإحصاء للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 549 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"انضم إلى فريق الهيئة العامة للإحصاء، وكن جزءًا من التحول الإحصائي في المملكة. نبحث عن الكفاءات الوطنية المتميز…\""
+  },
+  {
+    "targetId": "gastat",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.stats.gov.sa/en/news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"News - General Authority for Statistics\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…م الاستشاري والتدريبي في المجالات ذات العلاقة، وتشجيع طلاب وخريجي الجامعة على المشاركة في التدريب التعاوني والمشاريع البحثية ذات العلاقة بأعمال الهيئة، والمساهمة في رفع مستوى التوعية الإحصائية بين منسوبي الجامعة وطلابها من خلال برامج تو…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "kpmg_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://slccareers.kpmg.com/go/All-Jobs/7738123/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 520 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Showing 1 to 5 of 16 Jobs Search results for \"\". Showing 1 to 5 of 16 Jobs Use the Tab key to navigate the Job…\""
+  },
+  {
+    "targetId": "maaden",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://maaden.com.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "maaden",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.maaden.com.sa/ar/careers/working",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "maaden",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.maaden.com/gb/en/search-results",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 240 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"The information you provide to the chatbot will be collected to improve your experience. Please read our priva…\""
+  },
+  {
+    "targetId": "maaden",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.maaden.com/gb/en/cookiesettings",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 8013 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"How are Cookies used on this Career Site This Career Site may request cookies to be set on your device. A cook…\""
+  },
+  {
+    "targetId": "mcit",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://futureskills.mcit.gov.sa/en/coop-training",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Cooperative Training | Future Skills Portal\". وردت فيها عبارة «cooperative training» بنصّها: \"…n logout icon more icon close icon next icon filter cart right arrow apps Breadcrumb Home Cooperative Training There are no matching results.\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "mcit",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://futureskills.mcit.gov.sa/ar/catalogue/all",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التدريب | بوابة مهارات المستقبل\". صفحة حقيقية على نطاق الجهة، قُرئ منها 431 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Menu marketing play mail users Menu collapse file edit trash print Language User Setting Search Plus Arrow Rig…\""
+  },
+  {
+    "targetId": "mcit",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.mcit.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"موقع منصة التوظيف – وزارة الاتصالات وتقنية المعلومات للتوظيف\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"…نية التحتية للشبكات، وتحليل الحوادث الأمنية، وتشغيل التقنيات الأمنية،… الرياض 06-May-2026 التدريب التعاوني يهدف برنامج التدريب التعاوني إلى إتاحة الفرصة لطلاب وطالبات الجامعات لاكتساب خبرة عملية في بيئة عمل احترافية، من خلال المشاركة في…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "mim",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mim.gov.sa/ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 757 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"وزارة الصناعة والثروة المعدنيةصدر الأمر الملكي الكريم رقم (أ/472) بتاريخ 29/12/1440هـ، الموافق 30 أغسطس 2019 ب…\""
+  },
+  {
+    "targetId": "mim",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mim.gov.sa/ar/media-center/news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 246 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي مسجل لدى هيئة الحكومة الرقمية 199001الخدماتبحثقسم المحتوى الرئيسي للأخبارالرئيسيةالمركز الإعلاميالأ…\""
+  },
+  {
+    "targetId": "mobily",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.mobily.com.sa",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "mobily",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.mobily.com.sa/en/saudi-arabia/jobs/coop-program-1100006246/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (75 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "pwc_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.pwc.com/m1/en/careers.html",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers - PwC Middle East\". صفحة حقيقية على نطاق الجهة، قُرئ منها 4304 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Join our community of solvers We’re a community of solvers that come together in unexpected ways to build trus…\""
+  },
+  {
+    "targetId": "pwc_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.pwc.com/m1/en/careers/experienced-jobs.html",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Experienced Careers Job search\". صفحة حقيقية على نطاق الجهة، قُرئ منها 924 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Your career is just that; yours. You choose it. You live it. You make it happen. To get the best from it, you …\""
+  },
+  {
+    "targetId": "pwc_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.pwc.com/m1/en/careers/graduates-and-undergraduates-careers.html",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Graduates and undergraduates careers\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1130 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Joining PwC gives you a human-led, tech-powered future career At PwC, you’ll join an unexpected mix of people …\""
+  },
+  {
+    "targetId": "riyadbank",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.riyadbank.com/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at Riyad Bank\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2626 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Start Your Career Journey with Us At Riyad Bank, we strive to foster an environment where every employee can t…\""
+  },
+  {
+    "targetId": "riyadbank",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.riyadbank.com/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at Riyad Bank\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2626 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Start Your Career Journey with Us At Riyad Bank, we strive to foster an environment where every employee can t…\""
+  },
+  {
+    "targetId": "riyadbank",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.riyadbank.com/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at Riyad Bank\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2626 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Start Your Career Journey with Us At Riyad Bank, we strive to foster an environment where every employee can t…\""
+  },
+  {
+    "targetId": "saib",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.saib.com.sa/en/page/coop-program/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"The Saudi Investment Bank\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1764 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Cooperative Program The Saudi Investment Bank is one of the rapidly growing organizations in the banking indus…\""
+  },
+  {
+    "targetId": "saib",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.saib.com.sa/ar/page/bag-program/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"البنك السعودي للاستثمار\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1357 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"برنامج تطوير الخريجين لمصرفية الشركات يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لمصرفية الشركات - استثم…\""
+  },
+  {
+    "targetId": "saib",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.saib.com.sa/ar/page/it-program/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"البنك السعودي للاستثمار\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1351 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لخريج…\""
+  },
+  {
+    "targetId": "snb",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.alahli.com/en/pages/about-us/careers/snb-cooperative-training-program",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"SNB cooperative training program | Saudi National Bank\". وردت فيها عبارة «cooperative training» بنصّها: \"About the ProgramSNB cooperative training program aims to achieve seamless integration between students' academic studies and real-world applications in businesses environ…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "snb",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.alahli.com/ar/pages/about-us/careers",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الفرص الوظيفية - وظائف الأهلي | البنك الأهلي السعودي\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1336 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مزايا العمل في البنك الأهلي السعودييعد البنك الأهلي السعودي جهة التوظيف المفضلة للباحثين عن العمل من أصحاب الخ…\""
+  },
+  {
+    "targetId": "snb",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.alahli.com/ar/pages/about-us/careers/culture",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"ثقافة العمل لدينا | البنك الأهلي السعودي\". صفحة حقيقية على نطاق الجهة، قُرئ منها 605 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ثقافة البنك الأهلي السعودينطمح لأن نكون وجهة التوظيف الأولى، لذلك نسعى باستمرار للاستثمار في رفاه موظفينا وتوف…\""
+  },
+  {
+    "targetId": "tadawul",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-news?locale=ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Market News\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1835 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تسجيل الدخول لاستخدام امكانيات التأليف فتح قائمة الموقع المواقع المقر الأساسي لشركة HCL Technologies تسجيل الد…\""
+  },
+  {
+    "targetId": "tadawul",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-news/issuer-announcements?locale=ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Issuers & Financial Advisor Announcements\". صفحة حقيقية على نطاق الجهة، قُرئ منها 318 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"IssuerAnnouncementsV2Portlet ‏التصرفات‏ إعلانات المصدرين والمستشار المالي ابقَ على اطلاع دائم بأحدث مستجدات ال…\""
+  },
+  {
+    "targetId": "tadawul",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-financial-calendars?locale=ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Market News\". صفحة حقيقية على نطاق الجهة، قُرئ منها 860 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية السوق مغلق المشتقات السوق مغلق نمو حد أعلى السوق مغلق الصكوك و السندات السوق مغلق تنويه: الأسعار متأخ…\""
+  },
+  {
+    "targetId": "takamol",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://join.takamol.com.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "takamol",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://join.takamol.com.sa/?page_id=4",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taqnia",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://taqnia.com/en/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "tetco",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://tetco.sa/ar/digital-education-and-training",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التعليم والتدريب الرقمي | Tetco\". صفحة حقيقية على نطاق الجهة، قُرئ منها 273 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"نُثري البيئة التعليمية والتدريبية بأساليب تتوافق مع كافة أنماط المتعلمين وفقًا لمؤشرات عالمية حول جودة التعليم…\""
+  },
+  {
+    "targetId": "tetco",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://tetco.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الصفحة الرئيسية | Tetco\". صفحة حقيقية على نطاق الجهة، قُرئ منها 633 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تيتكوتطوير لتقنيات التعليم تيتكوتطوير لتقنيات التعليم نقدم حلول وخدمات مبتكرة عالية الجودة لكل من القطاعين الع…\""
+  },
+  {
+    "targetId": "tetco",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://tetco.sa/ar/latest-news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الاعلامي | Tetco\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1017 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مكتبة الصور سفيرة جمهورية فنلندا بالرياض والوفد المرافق لها في زيارة لمقر شركة تطوير لتقنيات التعليم مارس 30 |…\""
+  },
+  {
+    "targetId": "thiqah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.thiqah.sa/careers/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1811 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الوظائف هل أنت مستعد لمواجهة التحدي التالي ؟ نفخر في ثقة بتوظيف وتطوير كفاءات بمستويات عالمية يشاركوننا التزام…\""
+  },
+  {
+    "targetId": "thiqah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.thiqah.sa/news-events/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"news-events\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1646 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الأخبار \"ثقة\" تختتم مشاركتها كشريك استراتيجي في المؤتمر العدلي الدولي الثاني اختتمت شركة \"ثقة\" مشاركتها كشريك …\""
+  },
+  {
+    "targetId": "thiqah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.thiqah.sa/news-events/thiqah-wins-the-2024-best-workplace-award-in-asia/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"\"THIQAH\" Wins the 2024 Best Workplace Award in Asia\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1472 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"استلمت شركة \"ثقة\" شهادة أفضل بيئة عمل في قارة آسيا لعام 2024 من منظمة Great Place to Work خلال حفل توزيع الجوا…\""
+  },
+  {
+    "targetId": "zatca",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.zatca.gov.sa/search/?createNewAlert=false&q=&locationsearch=",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"وظائف Zakat, Tax and Customs Authority\". صفحة حقيقية على نطاق الجهة، قُرئ منها 571 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الصفحة الرئيسية في Zakat, Tax and Customs Authority(الصفحة الحالية) نتائج البحث عن \"\". إظهار 1 إلى 5 من 5 من ا…\""
+  },
+  {
+    "targetId": "aec",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.aecl.com/ar/news/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"آخر الأخبار | شركة الإلكترونيات المتقدمة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3213 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرياض، المملكة العربية السعودية – تعلن الإلكترونيات المتقدمة، إحدى شركات SAMI، عن مشاركتها في مؤتمر ومعرض ليب…\""
+  },
+  {
+    "targetId": "aec",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.aecl.com/ar/news/sami-aec-announces-diamond-sponsorship-at-leap-26-showcasing-pioneering-innovations-in-smart-solutions-ai-cybersecurity-and-it-services/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"برعاية ماسية في النسخة الخامسة من ليب 26 الإلكترونيات المتقدمة تستعرض أحدث حلولها في الحلول الذكية والأمن السيبراني والذكاء الاصطناعي - آخر الأخبار | شركة الإلكترونيات المتقدمة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3213 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرياض، المملكة العربية السعودية – تعلن الإلكترونيات المتقدمة، إحدى شركات SAMI، عن مشاركتها في مؤتمر ومعرض ليب…\""
+  },
+  {
+    "targetId": "aec",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.aecl.com/ar/news/sami-aec-announces-strategic-collaboration-with-lockheed-martin-for-the-opening-of-a-software-factory-in-riyadh/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"شركة الإلكترونيات المتقدمة تعلن عن تعاون استراتيجي مع لوكهيد مارتن في افتتاح مصنع برمجيات بالرياض - آخر الأخبار | شركة الإلكترونيات المتقدمة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1914 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرياض، المملكة العربية السعودية، أعلنت الإلكترونيات المتقدمة إحدى شركات SAMI عن تعاونها مع شركة لوكهيد مارتن …\""
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://me.devoteam.com/jobs/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.devoteam.com/me/join-us/",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "ejada",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.ejada.com/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at EJADA Systems\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1380 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Why EjadaWorking at Ejada has been an incredibly rewarding experience. The supportive work environment, opport…\""
+  },
+  {
+    "targetId": "ejada",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.ejada.com/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at EJADA Systems\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1380 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Why EjadaWorking at Ejada has been an incredibly rewarding experience. The supportive work environment, opport…\""
+  },
+  {
+    "targetId": "ejada",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.ejada.com/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers at EJADA Systems\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1380 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Why EjadaWorking at Ejada has been an incredibly rewarding experience. The supportive work environment, opport…\""
+  },
+  {
+    "targetId": "fakeeh",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.fakeeh.care/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "fakeeh",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.fakeeh.care/news-and-media",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"مركز الأخبار والإعلام | مجموعة فقيه الصحية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1522 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مجموعة فقيه للرعاية الصحيةUAE EntitiesHOSPITALSFakeeh University HospitalJeddah Dr Soliman Fakeeh HospitalAMBU…\""
+  },
+  {
+    "targetId": "fakeeh",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.fakeeh.care/news/fakeeh-care-group-expands-presence-in-riyadh-with-the-acquisition-of-dr-mohammad-rashid-al-fagih-hospital",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"مجموعة فقيه الصحية | مجموعة فقيه للرعاية الصحية توسّع حضورها في الرياض باستحواذها على مستشفى الدكتور محمد راشد الفقيه\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2607 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مجموعة فقيه للرعاية الصحية توسّع حضورها في الرياض باستحواذها على مستشفى الدكتور محمد راشد الفقيهاستكملت مجموعة…\""
+  },
+  {
+    "targetId": "fakeeh",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.fakeeh.care/news/fakeeh-care-group-earns-accreditation-from-the-global-innovation-institute-gini",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"مجموعة فقيه الصحية | مجموعة فقيه للرعاية الصحية تحصل على اعتماد المعهد العالمي للابتكار (GInI)\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1339 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"في إنجاز جديد يعكس التزامها الراسخ بترسيخ ثقافة الابتكار المؤسسي، حصلت مجموعة فقيه للرعاية الصحية على اعتماد ا…\""
+  },
+  {
+    "targetId": "masterworks",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://master-works.sa/ar/Careers",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الوظائف | Master Works\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1284 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الوظائف أسس مسارك المهني في ماستر وركس CSS Tags banner banner-hero لماذا تنضم إلى ماستر وركس؟ تعلَّم نقدم فرصً…\""
+  },
+  {
+    "targetId": "masterworks",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://master-works.sa/en/careers",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers | Master Works\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1493 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Build your career at Master Works CSS Tags banner banner-hero Why join Master Works? Learn We offer unlimited …\""
+  },
+  {
+    "targetId": "masterworks",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://master-works.sa/en/Insights",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Insights | Master Works\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1417 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Master Works Strategic Systems Integration Partner for Qiddiya Investment Company in Collaboration with Google…\""
+  },
+  {
+    "targetId": "mckinsey_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "http://www.mckinsey.com/careers/search-jobs",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (20 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "mckinsey_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mckinsey.com/careers/old-search-jobs",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (20 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "mckinsey_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mckinsey.com/careers/interviewing",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Interviewing at McKinsey | Tips and Resources | Careers | McKinsey & Company\". صفحة حقيقية على نطاق الجهة، قُرئ منها 8883 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"We seek smart, driven problem-solvers from a wide range of disciplines—whether you come from law, medicine, en…\""
+  },
+  {
+    "targetId": "ndf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://ndf.gov.sa/media-center",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الإعلامي | National Development Fund\". صفحة حقيقية على نطاق الجهة، قُرئ منها 4131 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيفية التحققروابط المواقع السعودية الرسمية تنتهي بـ gov.sa…\""
+  },
+  {
+    "targetId": "ndf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://ndf.gov.sa/media-center/press-news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأخبار الصحفية | National Development Fund\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3887 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيفية التحققروابط المواقع السعودية الرسمية تنتهي بـ gov.sa…\""
+  },
+  {
+    "targetId": "ndf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://ndf.gov.sa/media-center/articles",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المقالات | National Development Fund\". صفحة حقيقية على نطاق الجهة، قُرئ منها 4125 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيفية التحققروابط المواقع السعودية الرسمية تنتهي بـ gov.sa…\""
+  },
+  {
+    "targetId": "nournet",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://nour.net.sa/ar/news/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الاخبار | آخر أخبار رائد التحول الرقمي بالمملكة العربية السعودية | نورنت\". صفحة حقيقية على نطاق الجهة، قُرئ منها 383 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"نورنت تعزّز شراكتها الاستراتيجية مع OpenText بعد حصولها على تصنيف Business Gold Partner في منطقة الشرق الأوسط …\""
+  },
+  {
+    "targetId": "sidf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.sidf.gov.sa/News",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"News\". صفحة حقيقية على نطاق الجهة، قُرئ منها 288 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"A government website registered with the Digital Government Authority.SIDF Investment CompanySIDF AcademySuppo…\""
+  },
+  {
+    "targetId": "taif_amanah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.taifcity.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taif_amanah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://momah.gov.sa/ar/form/partnerships-and-cooperation",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"نموذج التواصل الإلكتروني - الشراكات و التعاون الدولي | وزارة البلديات\". صفحة حقيقية على نطاق الجهة، قُرئ منها 151367 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية تواصل معنا نموذج التواصل الإلكتروني - الشراكات و التعاون الدولي نموذج التواصل الإلكتروني - الشراكات و…\""
+  },
+  {
+    "targetId": "taif_amanah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://momah.gov.sa/ar/node/14717",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الوظائف | وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 152144 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تسعى وزارة البلديات والإسكان إلى استقطاب أفضل الموارد البشرية من كلا الجنسين لتحقيق رؤية الوزارة وتمكين الفرد …\""
+  },
+  {
+    "targetId": "taif_amanah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://momah.gov.sa/ar/menu/media-center",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الإعلامي | وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 151282 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية المركز الإعلامي المركز الإعلامي التعليقات والاقتراحات لأي استفسار أو ملاحظات حول الخدمات الحكومية، ير…\""
+  },
+  {
+    "targetId": "taif_uni_it",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.tu.edu.sa/Ar/%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A7%D8%AA/119/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A5%D8%A8%D8%AA%D8%B9%D8%A7%D8%AB-%D9%88%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"إدارة الإبتعاث والتدريب\". صفحة حقيقية على نطاق الجهة، قُرئ منها 730 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تسجيل الدخول دخـول 1439/01/29 - 20/10/2017 En البريد الجامعي البريد السحابي للمنسوبين والطلاب بريد المنسوبين إ…\""
+  },
+  {
+    "targetId": "taif_uni_it",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.tu.edu.sa/Ar/%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A7%D8%AA/366/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8%D9%8A-",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"إدارة التدريب الطلابي\". صفحة حقيقية على نطاق الجهة، قُرئ منها 305 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تسجيل الدخول دخـول 1439/01/29 - 20/10/2017 En البريد الجامعي البريد السحابي للمنسوبين والطلاب بريد المنسوبين إ…\""
+  },
+  {
+    "targetId": "taif_uni_it",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://edugate.tu.edu.sa/ords/f?p=320",
+    "outcome": "unreachable",
+    "note": "page.goto: net::ERR_EMPTY_RESPONSE at https://edugate.tu.edu.sa/\nCall log:\n\u001b[2m  - navigating to \"https://edugate.tu.edu.sa/\", waiting until \"domcontentloaded\"\u001b[22m\n · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "wadi_makkah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://wadimakkah.sa/en/%d8%b4%d8%b1%d9%83%d8%a9-%d9%88%d8%a7%d8%af%d9%8a-%d9%85%d9%83%d8%a9-%d8%a7%d9%84%d9%85%d8%b9%d8%b1%d9%81%d8%a9-%d8%aa%d9%88%d9%82%d8%b9-%d8%b9%d9%82%d8%af-%d8%ad%d9%82%d9%8a%d8%a8%d8%a9-%d9%85/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"شركة وادي مكة المعرفة توقع عقد حقيبة “مقام” التدريبية مع الغرفة التجارية بكوالالمبور خلال انعقاد مؤتمر ومعرض خدمات الحج والعمرة – شركة وادي مكة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1479 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"شركة وادي مكة المعرفة توقع عقد حقيبة “مقام” التدريبية مع الغرفة التجارية بكوالالمبور خلال انعقاد مؤتمر ومعرض خ…\""
+  },
+  {
+    "targetId": "wadi_makkah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://wadimakkah.sa/en/careers/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (65 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "wadi_makkah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://wadimakkah.sa/en/media-center/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Media Center – شركة وادي مكة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1196 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"شركة وادي مكة العقارية تقيم معرض “الفرص الاستثمارية” بالشراكة مع جامعة أم القرى ممثلة في إدارة الاستثمار شركة …\""
+  },
+  {
+    "targetId": "adf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://adf.gov.sa/ar/Pages/training.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التدريب\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1170 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية …\""
+  },
+  {
+    "targetId": "adf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://adf.gov.sa/ar/Pages/employment.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2797 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"​عن الصندوق​ ​ يقوم الصندوق على مجموعة من القيم الجوهرية التي توجه أعماله وتعاملاته، حيث يسعى إلى تقديم خدمة ا…\""
+  },
+  {
+    "targetId": "adf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://adf.gov.sa/ar/media-center/news/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأخبار\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2849 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الصفحة الرئيسية لصندوق التنمية الزراعية موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط ا…\""
+  },
+  {
+    "targetId": "awqaf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://awqaf.gov.sa/ar/hiring",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للأوقاف | التوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2030 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"بيئة عمل مرنة ومجتمعاً ملهماً يتشارك معك نفس الشغف لتحقيق أثر مستدام يخدم المجتمعㅤ اكتشف الفرص الوظيفية المزاي…\""
+  },
+  {
+    "targetId": "awqaf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://awqaf.gov.sa/ar/hiring/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للأوقاف | التوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2030 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"بيئة عمل مرنة ومجتمعاً ملهماً يتشارك معك نفس الشغف لتحقيق أثر مستدام يخدم المجتمعㅤ اكتشف الفرص الوظيفية المزاي…\""
+  },
+  {
+    "targetId": "awqaf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://awqaf.gov.sa/ar/media-center/achievements-awards",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للأوقاف | إنجازات وجوائز الهيئة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1303 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"2023الهيئة العامة للأوقاف تحقق المركز الأول في جائز الارتباط الوظيفي لعام 2023محصلت الهيئة العامة للأوقاف على …\""
+  },
+  {
+    "targetId": "customs",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.customs.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "customs",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://zatca.gov.sa/ar/MediaCenter/Elan/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"إعلانات هيئة الزكاة والضريبة والجمارك\". صفحة حقيقية على نطاق الجهة، قُرئ منها 830 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية روابط المواقع الإلكترونية الرسمية السعودية تنتهي بـ gov.s…\""
+  },
+  {
+    "targetId": "ecza",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.ecza.gov.sa/ar/media-center/news-press/alhyyt-tnzm-dwrt-tdrybyt-bnwan-altwyt-bslamt-alghdha",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 725 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"يوليوز 2023 مقال قامت إدارة الالتزام التشغيلي والمرافق التابعة لقطاع الإشراف وإدارة الأداء بهيئة المدن والمناط…\""
+  },
+  {
+    "targetId": "ecza",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.ecza.gov.sa/ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1049 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"هيئة المدن والمناطق الاقتصادية الخاصة هي المظلة التنظيمية للمدن والمناطق الاقتصادية الخاصة في المملكة العربية …\""
+  },
+  {
+    "targetId": "ecza",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.ecza.gov.sa/ar/media-center/news-press",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الاخبار والصحافة | ECZA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 969 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تجاوز إلى المحتوى الرئيسي المركز الإعلامي يناير 2026 وزير الاستثمار يشكر القيادة على قرار مجلس الوزراء بالمواف…\""
+  },
+  {
+    "targetId": "etec",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.etec.gov.sa/ar/centers/nctea",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الوطني لتقويم واعتماد التدريب\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1468 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية الهيئة عن الهيئة نبذة عامةالنشأة والتطورالمهام والاختصاصا…\""
+  },
+  {
+    "targetId": "etec",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.etec.gov.sa/ar/institutions",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"خدمات مؤسسات التعليم والتدريب\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1297 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"جميع المنتجات عرض 9 من 74 منتج طلب الاعتماد المدرسي الوطني خدمة إلكترونية تمكن مدير المدرسة من تقديم طلب اعتما…\""
+  },
+  {
+    "targetId": "etec",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.etec.gov.sa/ar/programs/nsqts",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"استطلاعات الرأي الوطنية لجودة قطاع التدريب\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1028 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسيةالبرامج والمبادراتاستطلاعات الرأي الوطنية لجودة قطاع التدريب المتدربون جهات التوظيف الخريجون المدربون …\""
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "http://www.falcom.com.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.gaca.gov.sa/ar/jobs/sectors/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.gaca.gov.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://gaca.gov.sa/news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للطيران المدني | أحدث أخبار وتحديثات قطاع الطيران\". صفحة حقيقية على نطاق الجهة، قُرئ منها 22915 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"30 يوليو 2026 الطيران المدني يُصدر تقرير إحصائيات مركز العناية بالمستفيدين للنصف الأول من عام 2026م أصدرت الهي…\""
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://gaca.gov.sa/announcements",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للطيران المدني | الإعلانات الهامة لآخر التحديثات\". صفحة حقيقية على نطاق الجهة، قُرئ منها 242 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ملفات تعريف الارتباط هذا الموقع يستخدم ملفات تعريف الارتباط الخاصة للتأكد من سهولة الاستخدام وضمان تحسين تجربت…\""
+  },
+  {
+    "targetId": "gcam",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.gcam.gov.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "gcam",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://gmedia.gov.sa/ar/hiring",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة لتنظيم الإعلام | التوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 778 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"التوظيفالهيئة العامة لتنظيم الإعلامالتوظيف​​​​​​​​​​​​​ انضم لأسرتناتسعى الهيئة العامة لتنظيم الإعلام بتبني أر…\""
+  },
+  {
+    "targetId": "gcam",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://gmedia.gov.sa/ar/news/news-0020",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة لتنظيم الإعلام | الأخبار | الهيئة تشدّد على أهمية الالتزام بالتصنيف العمري للألعاب الإلكترونية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1523 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الهيئة تشدّد على أهمية الالتزام بالتصنيف العمري للألعاب الإلكترونيةالهيئة العامة لتنظيم الإعلامالأخبار تفاصيل …\""
+  },
+  {
+    "targetId": "gcam",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://gmedia.gov.sa/ar/news/news-0019",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة لتنظيم الإعلام | الأخبار | الهيئة تقيم ورشة عمل \"ابتعاث الإعلام ـ مسار واعد\"\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1479 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الهيئة تقيم ورشة عمل \"ابتعاث الإعلام ـ مسار واعد\"الهيئة العامة لتنظيم الإعلامالأخبار تفاصيل الخبر الهيئة تقيم …\""
+  },
+  {
+    "targetId": "housing",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.housing.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "housing",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://momah.gov.sa/ar/form/partnerships-and-cooperation",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"نموذج التواصل الإلكتروني - الشراكات و التعاون الدولي | وزارة البلديات\". صفحة حقيقية على نطاق الجهة، قُرئ منها 151367 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية تواصل معنا نموذج التواصل الإلكتروني - الشراكات و التعاون الدولي نموذج التواصل الإلكتروني - الشراكات و…\""
+  },
+  {
+    "targetId": "housing",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://momah.gov.sa/ar/node/14717",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الوظائف | وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 152144 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تسعى وزارة البلديات والإسكان إلى استقطاب أفضل الموارد البشرية من كلا الجنسين لتحقيق رؤية الوزارة وتمكين الفرد …\""
+  },
+  {
+    "targetId": "housing",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://momah.gov.sa/ar/menu/media-center",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الإعلامي | وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 151282 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية المركز الإعلامي المركز الإعلامي التعليقات والاقتراحات لأي استفسار أو ملاحظات حول الخدمات الحكومية، ير…\""
+  },
+  {
+    "targetId": "hrc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.hrc.gov.sa/ar-sa/Pages/home.aspx",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (89 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "hrc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.hrc.gov.sa/website/cooperations?lang=ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"هيئة حقوق الإنسان - التعاون في مجال حقوق الإنسان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 254 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية …\""
+  },
+  {
+    "targetId": "hrc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.hrc.gov.sa/website/careers?lang=ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"هيئة حقوق الإنسان - التوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 254 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية …\""
+  },
+  {
+    "targetId": "hrc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.hrc.gov.sa/website/news?lang=ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"هيئة حقوق الإنسان - جميع الأخبار\". صفحة حقيقية على نطاق الجهة، قُرئ منها 254 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية …\""
+  },
+  {
+    "targetId": "hrsd",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.hrsd.gov.sa/care-about-you/skillsandtrain",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المهارات و التدريب | وزارة الموارد البشرية والتنمية الاجتماعية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1009 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تولي رؤية 2030 المملكة اهتماما كبيراً بالمواطن السعودي للمنافسة محلياً وعالمياً من خلال إعداد قوى عاملة وطنية …\""
+  },
+  {
+    "targetId": "hrsd",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.hrsd.gov.sa/ministry/about-ministry/jobs",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الوظائف | وزارة الموارد البشرية والتنمية الاجتماعية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 910 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Main navigationتسعى وزارة الموارد البشرية والتنمية الاجتماعية الى استقطاب أفضل الموارد البشرية من كلا الجنسين …\""
+  },
+  {
+    "targetId": "hrsd",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.hrsd.gov.sa/contact-us/inquiries-about-employment-offices",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الاستعلام عن مكاتب التوظيف الاهلية | HRSD\". صفحة حقيقية على نطاق الجهة، قُرئ منها 989 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Main navigationالاسمالبريد إلكترونيالمنطقة رقم الترخيصالنشاط الاقتصاديشركة تسامي خدمات الأعمالrecruitment@tasa…\""
+  },
+  {
+    "targetId": "jadwa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.jadwa.com/en/internship",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Internships | Jadwa\". صفحة حقيقية على نطاق الجهة، قُرئ منها 765 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Careers Careers Internships Starting your career on the right footing is important. Jadwa Academy offers young…\""
+  },
+  {
+    "targetId": "jadwa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.jadwa.com/en/careers",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers | Jadwa\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1223 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Careers People first Jadwa offers a challenging and rewarding environment, and a positive culture in which tea…\""
+  },
+  {
+    "targetId": "jadwa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.jadwa.com/en/announcements",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Announcements | Jadwa\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2979 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Media Media Announcements Search by Keyword Start Date End Date Items per page Announcement by Jadwa Investmen…\""
+  },
+  {
+    "targetId": "kapsarc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.kapsarc.org/work-with-us/job-opportunities/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Job Opportunities\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1032 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Working at KAPSARC As we grow, we seek bold, creative team players who relish a challenge and share our desire…\""
+  },
+  {
+    "targetId": "kapsarc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.kapsarc.org/newsroom/news/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"News\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1299 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Publications Peer-reviewed insights on energy, policy, and sustainability. KAPSARC Solutions Easy-to-use inter…\""
+  },
+  {
+    "targetId": "kapsarc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.kapsarc.org/newsroom/events/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Event Calendar\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1526 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Take a look at our past events The Role of AI in Scaling up Energy Transition & Climate Resilience November 20…\""
+  },
+  {
+    "targetId": "kasb",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "mc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://talent.mc.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"موقع وزارة التجارة للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 784 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"وظائف وزارة التجارة برنامج أفق تقديم السيرة الذاتيةهل انت مهتم ببناء مسيرة مهنية معنا؟ قدم سيرتك الذاتية الآن …\""
+  },
+  {
+    "targetId": "mc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://mc.gov.sa/ar/mediacenter/News/pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"أخبار وزارة التجارة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1883 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التعليمية في المملكة الع…\""
+  },
+  {
+    "targetId": "mc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://mc.gov.sa/ar/mediacenter/News/pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"أخبار وزارة التجارة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1883 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التعليمية في المملكة الع…\""
+  },
+  {
+    "targetId": "media",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://media.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "mep",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://mep.gov.sa/ar/media-center",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (23 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "mewa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mewa.gov.sa/ar/MediaCenter/News/Pages/Home.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأخبار والأحداث | MEWA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2176 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟ روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa…\""
+  },
+  {
+    "targetId": "mewa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mewa.gov.sa/ar/MediaCenter/Events/Pages/MonthEvents.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأحداث والفعاليات | MEWA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 693 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟ روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa…\""
+  },
+  {
+    "targetId": "mewa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mewa.gov.sa/ar/MediaCenter/VisualIdentityGuide/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"دليل الهوية البصرية | MEWA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1029 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟ روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa…\""
+  },
+  {
+    "targetId": "misa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://jobs.misa.gov.sa/ar/?locale=ar_SA",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"MISA Careers\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2873 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية / وظائف نبذة عن وزارة الاستثمار تؤدي وزارة الاستثمار دورًا هامًا في خطط التحول الطموحة ورؤية المملكة …\""
+  },
+  {
+    "targetId": "misa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://misa.gov.sa/ar/media-center/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الإعلامي - MISA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 488 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الانتقال إلى المحتوى المركز الإعلامي اشترك للاطلاع على أخبار الوزارة وأحدث الحلول والمستجدات. المركز الإعلامي …\""
+  },
+  {
+    "targetId": "misa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://misa.gov.sa/ar/media-center/announcements/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الإعلانات - MISA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 623 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الانتقال إلى المحتوى نبذة عن الأنشطة الخدمات الإلكترونية الاستراتيجية الوطنية للاستثمار اتفاقيات الاستثمار الد…\""
+  },
+  {
+    "targetId": "modon",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.modon.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"موقع الهيئة السعودية للمدن الصناعية ومناطق التقنية للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 848 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"بيئة العمل في\"مدن\" تجربة العمل في\"مدن\" هي مزيج متكامل من الاحترافية والتعاون والابتكار، حيث نحرص على توفير بيئ…\""
+  },
+  {
+    "targetId": "modon",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://modon.gov.sa/ar/MediaCenter/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"مركز إعلام مدن\". صفحة حقيقية على نطاق الجهة، قُرئ منها 306 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"من فضلك اخبرنا بالسبب (يمكنك تحديد خيارات متعددة) وجدت الصفحة مفيدة و واضحة المحتوى غير مفهوم تمكنت من الوصول …\""
+  },
+  {
+    "targetId": "modon",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://modon.gov.sa/ar/MediaCenter/modon-news/News/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأخبار\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1591 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"\" مدن\" تستقطب 18 مليار ريال استثمارات محلية و12 مليار ريال أجنبية جديدة في عام 2025 سجّلت الهيئة السعودية للمد…\""
+  },
+  {
+    "targetId": "moe",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.moe.gov.sa/ar/aboutus/nationaltransformation/Pages/employmentstrategy.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1311 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"لا ​​​​​​​​​​​​​​​​​​​​​​تسعى وزارة التعليم ممثلة بوكالة الموارد البشرية إلى​ اكتساب قيمة تنافسية عبر نوعية وك…\""
+  },
+  {
+    "targetId": "moe",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.moe.gov.sa/ar/mediacenter/MOEnews/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"وزارة التعليم | الأخبار\". صفحة حقيقية على نطاق الجهة، قُرئ منها 441 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنته…\""
+  },
+  {
+    "targetId": "moe",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.moe.gov.sa/ar/mediacenter/events/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"وزارة التعليم | الفعاليات\". صفحة حقيقية على نطاق الجهة، قُرئ منها 457 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنته…\""
+  },
+  {
+    "targetId": "moenergy",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.moenergy.gov.sa/ar/media-center/news/saudi-arabia-and-united-states-sign-agreement-on-cooperation-in-peaceful-uses-of-nuclear-energy",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المملكة والولايات المتحدة توقّعان اتفاقية تعاون في مجال الاستخدامات السلمية للطاقة النووية | وزارة الطاقة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 233 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيف تتحققكيف تتحققتكبير حجم الخطالأوامر الصوتيةعكس الألوان…\""
+  },
+  {
+    "targetId": "moenergy",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.moenergy.gov.sa/ar/media-center",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الإعلامي | وزارة الطاقة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 211 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيف تتحققكيف تتحققتكبير حجم الخطالأوامر الصوتيةعكس الألوان…\""
+  },
+  {
+    "targetId": "moenergy",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.moenergy.gov.sa/ar/media-center/news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأخبار | وزارة الطاقة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3765 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"أخبار محلية2026-08-21سمو وزير الطاقة وزير الصناعة والثروة المعدنية ووزير المالية يلتقيان وزيري المالية والنفط …\""
+  },
+  {
+    "targetId": "mof",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mof.gov.sa/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"وزارة المالية - المملكة العربية السعودية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 467 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"وزارة رائدة تُسهم في دعم التنمية الاقتصادية للمملكة العربية السعودية، عبر منظومة مالية مبتكرة ومستدامة تعرف عل…\""
+  },
+  {
+    "targetId": "mof",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mof.gov.sa/mediacenter/circulars/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الإعلانات والتعاميم\". صفحة حقيقية على نطاق الجهة، قُرئ منها 835 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الإعلانات والتعاميم وزارة الماليةالمركز الإعلاميالإعلانات والتعاميم الإعلانات والتعاميم استمع لا يوجد إعلانات …\""
+  },
+  {
+    "targetId": "mof",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mof.gov.sa/mediacenter/events/Pages/CalEvent.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الفعاليات والأحداث\". صفحة حقيقية على نطاق الجهة، قُرئ منها 821 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الفعاليات والأحداث وزارة الماليةالمركز الإعلاميالفعاليات والأحداث الفعاليات والأحداث استمع الأنشطة القادمة آخر…\""
+  },
+  {
+    "targetId": "mofa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://jobs.mofa.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"وزارة الخارجية - وظائف المسارات الوظيفية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2243 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ابحث عن فرصتك الوظيفية. بحث عن وظائف المسمى الوظيفي والمهارة والكلمة الأساسية بالقرب من الموقع المدينة، الولاي…\""
+  },
+  {
+    "targetId": "mofa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mofa.gov.sa/ar/ministry/news/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"أخبار وزارة الخارجية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 19586 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"​​​​​​​​​​​​​​​​​​​​​​​ أخر الأخبار اتفاقيات الإعفاء المتبادل من التأشيرات لحاملي الجوازات الدبلوماسية والخاصة…\""
+  },
+  {
+    "targetId": "mofa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.mofa.gov.sa/ar/ministry/news/Pages/%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B9%D9%81%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%AA%D8%A8%D8%A7%D8%AF%D9%84.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"اتفاقيات الإعفاء المتبادل من التأشيرات لحاملي الجوازات الدبلوماسية والخاصة تعزز التنقل الدبلوماسي بين المملكة والدول الصديقة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1739 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"​تأكيدًا على حرص المملكة العربية السعودية على تعزيز علاقاتها مع الدول الشقيقة والصديقة، واستمرارًا لجهود وزارة…\""
+  },
+  {
+    "targetId": "moh",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.moh.gov.sa/ministry/mediacenter/news/pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"أخبار الوزارة - أخبار الوزارة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 514 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ .gov.…\""
+  },
+  {
+    "targetId": "moh",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.moh.gov.sa/ministry/mediacenter/publications/pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"إصدارات وتقارير الوزارة - إصدارات وتقارير الوزارة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1515 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"​​​​​​​​​​​تُعد الإصدارات والتقارير الرسمية الصادرة عن وزارة الصحة في المملكة العربية السعودية من الركائز الأس…\""
+  },
+  {
+    "targetId": "moh",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.moh.gov.sa/ministry/mediacenter/ads/pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"إعلانات الوزارة - إعلانات الوزارة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1704 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"​​​​​​تُعد الإعلانات الرسمية التي تصدرها وزارة الصحة في المملكة العربية السعودية نافذة تواصل مهمة بين الوزارة …\""
+  },
+  {
+    "targetId": "monshaat",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.monshaat.gov.sa/ar/node/5257",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"خدمات التدريب (أكاديمية منشآت) | منشآت\". صفحة حقيقية على نطاق الجهة، قُرئ منها 479 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تقدم \"منشآت\" مجموعة من البرامج التدريبية (الافتراضية والحضورية) التي تهدف إلى تنمية قدرات رواد الأعمال وأصحاب …\""
+  },
+  {
+    "targetId": "monshaat",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.monshaat.gov.sa/ar/media-center",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الإعلامي | منشآت\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1067 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"frontend-header-menu عن منشآت من نحن الهيكل التنظيمي الإستراتيجية والسياسات والأنظمة المنافسات والمشتريات المي…\""
+  },
+  {
+    "targetId": "monshaat",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.monshaat.gov.sa/ar/media-center",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الإعلامي | منشآت\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1067 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"frontend-header-menu عن منشآت من نحن الهيكل التنظيمي الإستراتيجية والسياسات والأنظمة المنافسات والمشتريات المي…\""
+  },
+  {
+    "targetId": "mot",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://mot.gov.sa/ar/employment1",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"وظائف وزارة النقل والخدمات اللوجستية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1976 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تسعى وزارة النقل والخدمات اللوجستية إلى جذب أفضل الكوادر البشرية الوطنية والمحافظة عليهم لتحقيق المستهدفات الا…\""
+  },
+  {
+    "targetId": "mot",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://mot.gov.sa/ar/news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأخبار | وزارة النقل والخدمات اللوجستية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 730 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Links to official Saudi websites end with gov.sa All links to official websites of government agencies in the …\""
+  },
+  {
+    "targetId": "mot",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://mot.gov.sa/ar/news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأخبار | وزارة النقل والخدمات اللوجستية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 730 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Links to official Saudi websites end with gov.sa All links to official websites of government agencies in the …\""
+  },
+  {
+    "targetId": "nazaha",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.nazaha.gov.sa/Jobs",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"هيئة الرقابة ومكافحة الفساد\". صفحة حقيقية على نطاق الجهة، قُرئ منها 200 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"شكرًا لتقديمك، تم استقبال السيرة الذاتية بنجاح. حصل خطأ اثناء التقديم شكرًا لتقديمك، ونود إبلاغك بأنك قمت مسبق…\""
+  },
+  {
+    "targetId": "nazaha",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.nazaha.gov.sa/News",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"هيئة الرقابة ومكافحة الفساد\". صفحة حقيقية على نطاق الجهة، قُرئ منها 240 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"المقر الرئيسي الموقع هيئة الرقابة ومكافحة الفساد 13311 شارع العليا، حي الغدير، الرياض المملكة العربية السعودية…\""
+  },
+  {
+    "targetId": "nazaha",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.nazaha.gov.sa/News/Details?q=LDqaftYCK2agKydxrbY5fg==",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"هيئة الرقابة ومكافحة الفساد\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1117 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"شكراً لكم رأيكم محل اهتمامنا 19 صفر 1448 خبر رئيس هيئة الرقابة ومكافحة الفساد يرفع الشكر للقيادة بمناسبة صدور …\""
+  },
+  {
+    "targetId": "ncc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.ncc.gov.sa/ar/MediaCenter/News/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"أخبار المركز السعودي للتنافسية والأعمال\". صفحة حقيقية على نطاق الجهة، قُرئ منها 311 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تغطية شاملة ومستمرة لكافة الأنشطة، والفعاليات، واللقاءات التي ينظمها المركز أو يشارك فيها على المستويين المحلي…\""
+  },
+  {
+    "targetId": "ncc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.ncc.gov.sa/ar/MediaCenter/Events/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الفعاليات\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3642 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"​ورش عمل وندوات ومؤتمرات واجتماعات وحلقات نقاشية وملتقيات محلية ودولية يشارك فيها أوينظمها المركز.​ 08 ديسمبر …\""
+  },
+  {
+    "targetId": "pension",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.pension.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "rcjy",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.rcjy.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"موقع الهيئة الملكية للجبيل وينبع للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1527 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرؤية و الرسالة الرؤية الخيار الأول للمستثمرين في قطاع الصناعة، والمساهم الرئيس في تقدم الصناعة واستدامتها با…\""
+  },
+  {
+    "targetId": "rcjy",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.rcjy.gov.sa/media-center",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الإعلامي - الهيئة الملكية للجبيل وينبع - الهيئة الملكية للجبيل و ينبع\". صفحة حقيقية على نطاق الجهة، قُرئ منها 15545 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"حصل خطأ عند معالجة القالب. 1<#assign LABELS=request.getAttribute(\"GLOBAL_LABELS\") /> 2<#assign englishLocale=l…\""
+  },
+  {
+    "targetId": "rcjy",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.rcjy.gov.sa/news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"البيانات الصحفية - الهيئة الملكية للجبيل وينبع - الهيئة الملكية للجبيل و ينبع\". صفحة حقيقية على نطاق الجهة، قُرئ منها 15545 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"حصل خطأ عند معالجة القالب. 1<#assign LABELS=request.getAttribute(\"GLOBAL_LABELS\") /> 2<#assign englishLocale=l…\""
+  },
+  {
+    "targetId": "rcrc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.rcrc.gov.sa/careers/?lang=ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بوابة التوظيف - الهيئة الملكية لمدينة الرياض\". وردت فيها عبارة «تدريب تعاوني» بنصّها: \"…نطلق نحو آفاق واسعة. نوفر بيئة داعمة للنمو والتطور المستمر، ومساراً واضحاً للترقي والتقدم.تدريب تعاونيبرنامج تدريب متكامل يمنحك فرصة اكتساب خبرة عملية في بيئة مهنية محفزة، وتطوير مهاراتك تحت إشراف نخبة من الخبراء والمتخصصين. تاريخ آ…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "rcrc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.rcrc.gov.sa/media-center/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"المركز الإعلامي - الهيئة الملكية لمدينة الرياض\". صفحة حقيقية على نطاق الجهة، قُرئ منها 329 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Official Saudi Government websites URL ends with gov.sa Website belongs to an official government organization…\""
+  },
+  {
+    "targetId": "rcrc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.rcrc.gov.sa/news-ar/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"أخبار الهيئة - الهيئة الملكية لمدينة الرياض\". صفحة حقيقية على نطاق الجهة، قُرئ منها 329 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Official Saudi Government websites URL ends with gov.sa Website belongs to an official government organization…\""
+  },
+  {
+    "targetId": "rcu",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.rcu.gov.sa/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة الملكية لمحافظة العلا | RCU\". صفحة حقيقية على نطاق الجهة، قُرئ منها 21705 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"عن الهيئة الملكية لمحافظة العلا نبذة عن الهيئة الملكية لمحافظة العلا جوهر عملنا يكمن في التوازن الدقيق بين الح…\""
+  },
+  {
+    "targetId": "rcu",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.rcu.gov.sa/contact/careers",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التوظيف في الهيئة الملكية لمحافظة العلا | الهيئة الملكية لمحافظة العلا\". صفحة حقيقية على نطاق الجهة، قُرئ منها 918 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"لماذا العمل في الهيئة الملكية لمحافظة العلا؟ الانضمام إلى الهيئة الملكية لمحافظة العلا، يعني أن تصبح جزءًا من …\""
+  },
+  {
+    "targetId": "rcu",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.rcu.gov.sa/media-resources/news-press",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الأخبار والصحافة | الهيئة الملكية لمحافظة العلا\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3994 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الهيئة الملكية لمحافظة العُلا تطلق موسم \"خيرات العُلا\" أعلنت الهيئة الملكية لمحافظة العُلا عن إطلاق موسم \"خيرا…\""
+  },
+  {
+    "targetId": "redf",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.housing.gov.sa/ar/related-links/140",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "rega",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://rega.gov.sa/media-center/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للعقار - المركز الاعلامي\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1621 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تخطي إلى المحتوى الرئيسي روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية…\""
+  },
+  {
+    "targetId": "rega",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://rega.gov.sa/media-center/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للعقار - الأخبار والإعلانات\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3176 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"\"هيئة العقار\" تُعلن بدء أعمال السجل العقاري لـ(46,538) قطعة عقارية في منطقتي الرياض والقصيم أعلنت الهيئة العام…\""
+  },
+  {
+    "targetId": "rega",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://rega.gov.sa/login/?redirectId=32017",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة العامة للعقار - تسجيل الدخول\". صفحة حقيقية على نطاق الجهة، قُرئ منها 531 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تمثل خدمات المستفيد للدعم والمساندة جزءًا أساسيًا من نظام موحد ومتكامل يهدف إلى تحقيق رضا المستفيدين من خلال ت…\""
+  },
+  {
+    "targetId": "saip",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.saip.gov.sa/ar/contact-us/careers",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1104 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع رسمي تابع للمملكة العربية السعوديةعنوان الموقع الحكومي السعودي الرسمي ينتهي بـ .gov.saالموقع تابع لجهة حك…\""
+  },
+  {
+    "targetId": "saip",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.saip.gov.sa/ar/media-center/media-library/media-center",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 802 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"العدد الإجمالي: 265مجلس إدارة الهيئة السعودية للملكية الفكرية يعقد اجتماعه (الواحد والأربعون)تاريخ النشر: 26.0…\""
+  },
+  {
+    "targetId": "saip",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.saip.gov.sa/ar/media-center/media-library/media-center/2093",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1990 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"أعلنت الهيئة السعودية للملكية الفكرية عن تقريرها السنوي لعام 2025، مستعرضةً فيه أبرز إنجازاتها المتحققة على مد…\""
+  },
+  {
+    "targetId": "sanabil",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "http://www.sanabil.sa/ar/pages/default.aspx",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "saso",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.saso.gov.sa/ar/eservices/Pages/international_cooperation.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الشؤون الدولية | الهيئة السعودية للمواصفات والمقاييس والجودة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 11750 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية …\""
+  },
+  {
+    "targetId": "saso",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.saso.gov.sa/ar/QualitySign/info/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التدريب التعاوني | الهيئة السعودية للمواصفات والمقاييس والجودة\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"​​​​​​​​تحرص الهيئة السعودية للمواصفات والمقاييس والجودة من خلال برامج \"التدريب التعاوني\" على تمكين أبناءنا طلاب وطالبات المؤسسات التعليمية من موائمة تخصصاتهم العلمية بالتطبيق العملي بهدف تأهيلهم إلى سوق العمل، وإثرائه…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "saso",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.saso.gov.sa/ar/mediacenter/news/Pages/default.aspx",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"أخبار الهيئة | الهيئة السعودية للمواصفات والمقاييس والجودة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1405 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية …\""
+  },
+  {
+    "targetId": "saudi_exports",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.saudiexports.sa/ar/pages/default.aspx",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "scfhs",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.scfhs.org.sa/ar/page/on-the-job-training/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة السعودية للتخصصات الصحية\". وردت فيها عبارة «تدريب تعاوني» بنصّها: \"…سعودي الجنسية إرفاق السيرة الذاتية اجتياز المقابلة الشخصية في حال كان التقديم على برنامج تدريب تعاوني، يشترط أن يكون التدريب جزءاً من متطلبات التخرج مع إرفاق خطاب رسمي من الجهة التعليمية موجه إلى الهيئة خطـــــوات التقديــــــم إنش…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "scfhs",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.scfhs.org.sa/ar/page/build-you-future/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الهيئة السعودية للتخصصات الصحية\". وردت فيها عبارة «تدريب تعاوني» بنصّها: \"…سعودي الجنسية إرفاق السيرة الذاتية اجتياز المقابلة الشخصية في حال كان التقديم على برنامج تدريب تعاوني، يشترط أن يكون التدريب جزءاً من متطلبات التخرج مع إرفاق خطاب رسمي من الجهة التعليمية موجه إلى الهيئة خطـــــوات التقديــــــم إنش…\". فحص آلي بنفس معيار الجولة اليدوية."
+  },
+  {
+    "targetId": "scfhs",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.scfhs.org.sa/ar/register-j/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"تسجيل الباحث عن عمل - الهيئة السعودية للتخصصات الصحية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 426 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"أنشئ حسابك الشخصي ابدأ بإنشاء حسابك الشخصي للتقدم إلى الفرص حمّل سيرتك الذاتية (إلزامي / مطلوب) اسحب الملف إلى…\""
+  },
+  {
+    "targetId": "sfd",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.sfd.gov.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "sfd",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.sfd.gov.sa/ar/news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"اﻻخبار | الصندوق السعودي للتنمية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 625 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنته…\""
+  },
+  {
+    "targetId": "sfd",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.sfd.gov.sa/ar/50years-news",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"50Years-News | الصندوق السعودي للتنمية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 352 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التعليمية في المملكة الع…\""
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.sfda.gov.sa/ar/saudi-arabia/jobs/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://career.sfda.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.sfda.gov.sa/ar/international-cooperation",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التعاون الدولي | الهيئة العامة للغذاء والدواء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2418 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"إسم الجهة الدولة سنة التوقيع مسمى الاتفاقية ومجال اختصاصها المعهد المغربي للتقييس IMANOR المغرب 2022 مذكرة تفا…\""
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.sfda.gov.sa/ar/career-vision-and-mission",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التوظيف | الهيئة العامة للغذاء والدواء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 806 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"التوظيف 2023-09-27 التحق ببيئة عمل تصنع الفرق في حياة المجتمعفي الهيئة العامة للغذاء والدواء، نؤمن بأن قوة تأث…\""
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://careers.sfda.gov.sa/ar/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "srca",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.srca.org.sa/%d8%a7%d9%84%d8%aa%d9%88%d8%b8%d9%8a%d9%81/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"التوظيف - SRCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 352 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التعليمية في المملكة الع…\""
+  },
+  {
+    "targetId": "srca",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.srca.org.sa/news/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"أخبار الهيئة - SRCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 415 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنته…\""
+  },
+  {
+    "targetId": "srca",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.srca.org.sa/newsletters/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"النشرة الإلكترونية - SRCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 415 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنته…\""
+  },
+  {
+    "targetId": "ssc",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://saudispace.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "tawuniya",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.tawuniya.com.sa/about-us/contact-us",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "unilever_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.unilever.com/working-at-unilever/careers/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Careers | Unilever\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1833 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Skip to content HomeWorking at UnileverCurrent page:CareersGrow with usFrom India to Brazil, Indonesia to the …\""
+  },
+  {
+    "targetId": "unilever_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.unilever.com/news/news-search/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"All news stories | Unilever\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3002 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Skip to content HomeLatest news storiesCurrent page:All news storiesIt looks like JavaScript is turned off in …\""
+  },
+  {
+    "targetId": "unilever_sa",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://www.unilever.com/news/press-and-media/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Press and media | Unilever\". صفحة حقيقية على نطاق الجهة، قُرئ منها 844 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Skip to content HomeLatest news storiesCurrent page:Press and mediaCombining surfactant science and formulatio…\""
+  },
+  {
+    "targetId": "wasatah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://wasatah.com.sa/ar/%d9%81%d8%b1%d8%b5-%d8%a7%d9%84%d8%b9%d9%85%d9%84/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"فرص العمل - Wasatah Capital\". صفحة حقيقية على نطاق الجهة، قُرئ منها 409 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الفرص الوظيفية نحن نؤمن حقاً بأن موظفينا هم أغلى ما نملك. لذلك، يجب أن يحصل كل موظف على الفرصة لاكتساب مهارات …\""
+  },
+  {
+    "targetId": "wasatah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://wasatah.com.sa/careers/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Wasatah: Join Our Team for Future Success - Wasatah Capital\". صفحة حقيقية على نطاق الجهة، قُرئ منها 477 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Opportunities We truly believe that our employees are our most valuable asset. Therefore, every employee shoul…\""
+  },
+  {
+    "targetId": "wasatah",
+    "checkedAtISO": "2026-08-30T05:41:04.579Z",
+    "urlTried": "https://wasatah.com.sa/media-center/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Media Center - Wasatah Capital\". وردت فيها عبارة «cooperative training» بنصّها: \"…sence.Helping The Community Through Our InitiativesExplore our programs to participate in cooperative training or support initiatives that create a positive impact in our community.Cooperative TrainingProviding students with structured coop…\". فحص آلي بنفس معيار الجولة اليدوية."
   }
 ]

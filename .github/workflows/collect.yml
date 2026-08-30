@@ -28,6 +28,9 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    # A stuck run holds the concurrency group, which holds every deploy behind
+    # it. Six hours of that is worse than a missed collection.
+    timeout-minutes: 45
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -63,7 +66,18 @@ jobs:
       - name: Collect
         # Skipped on an ordinary code push: a deploy should not spend API
         # credits or hammer the sources just because a stylesheet changed.
-        if: github.event_name != 'push'
+        # Skipped for a notification test too: that test is about the push
+        # chain, and making someone wait twenty minutes to learn whether their
+        # phone rings is its own kind of broken.
+        if: github.event_name != 'push' && !inputs.test_notification
+        # Bounded, and allowed to fail. Most of the hosts this runner cannot
+        # reach fail by timing out rather than refusing, so a full pass from a
+        # United States address is slow in a way the machine in Riyadh is not.
+        # If it overruns, nothing has been written yet — the run carries on with
+        # the dataset it already had, and still notifies and deploys. A late
+        # collection must never cost the deploy.
+        timeout-minutes: 25
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # Without this the classifier refuses to run, which is the designed

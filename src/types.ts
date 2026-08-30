@@ -159,8 +159,14 @@ export interface Source extends VerifiedLink {
  * address, and there Chromium is already installed and the run is unattended.
  * The cap still exists so the browser stays a decision rather than a default,
  * but it is no longer priced as if it were rare.
+ *
+ * Raised again to 60 once each organisation began to be watched on every
+ * channel it publishes rather than on the first link that answered: more
+ * sources, and a fair share of Saudi portals paint themselves with script.
+ * Going over is no longer fatal — the collector reads what fits and records the
+ * rest as unread, which is visible in the app.
  */
-export const MAX_BROWSER_SOURCES = 30;
+export const MAX_BROWSER_SOURCES = 60;
 
 /** Thin and unchanged for this many runs is worth surfacing. ~10 days at 6h. */
 export const SILENT_THIN_RUNS = 40;

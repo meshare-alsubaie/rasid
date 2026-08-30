@@ -9,7 +9,7 @@
  * every six hours teaches its user to swipe the notifications away, which is
  * the same failure as a stale green light wearing a different coat.
  */
-import { endOfDeadline } from "../types";
+import { endOfDeadline, hijriOf } from "../types";
 import type { Opportunity, SourceHealth } from "../types";
 
 export type NoticeKind =
@@ -46,6 +46,27 @@ export interface NoticeLogEntry {
 export const DAILY_PUSH_CAP = 6;
 
 const dayOf = (iso: string): string => iso.slice(0, 10);
+
+/**
+ * The body of a notice, as spec 5.4 asks: role, city, seats, days remaining and
+ * the Hijri date.
+ *
+ * It used to be the title and the relevance score, which is the one number a
+ * person cannot act on. Every part is dropped when it was not published rather
+ * than filled with a plausible default — an alert is the last place to guess.
+ */
+function details(o: Opportunity): string {
+  const parts = [o.titleAr];
+  if (o.cities.length > 0) parts.push(o.cities.join("، "));
+  if (o.seats !== null) parts.push(`${o.seats} مقعداً`);
+  if (o.closesISO !== null) {
+    const days = Math.max(0, Math.ceil(hoursUntil(o.closesISO) / 24));
+    parts.push(`يغلق بعد ${days} يوم`);
+    const hijri = o.closesHijri ?? hijriOf(o.closesISO);
+    if (hijri !== null) parts.push(hijri);
+  }
+  return parts.join(" · ");
+}
 /* To the end of the published day in Riyadh — see `endOfDeadline`. Measured
  * from midnight UTC instead, the 48-hour alert fired a day early and then went
  * silent through the whole of the final day. */
@@ -82,7 +103,7 @@ export function decide(input: DecideInput): Notice[] {
         key: `new:${o.id}`,
         kind: "new_relevant",
         title: `🟢 إعلان جديد — ${org}`,
-        body: `${o.titleAr} · درجة الصلة ${score}`,
+        body: details(o),
         weight: score,
       });
     }
@@ -92,9 +113,7 @@ export function decide(input: DecideInput): Notice[] {
         key: `opened:${o.id}`,
         kind: "opened",
         title: `🟢 فتح التقديم — ${org}`,
-        body: o.closesISO
-          ? `${o.titleAr} · يغلق بعد ${Math.max(0, Math.ceil(hoursUntil(o.closesISO) / 24))} يوم`
-          : o.titleAr,
+        body: details(o),
         weight: score + 100,
       });
     }
@@ -104,7 +123,7 @@ export function decide(input: DecideInput): Notice[] {
         key: `closing:${o.id}:${dayOf(o.closesISO)}`,
         kind: "closing_soon",
         title: `⏳ يغلق قريباً — ${org}`,
-        body: `${o.titleAr} · تبقّى ${Math.ceil(hoursUntil(o.closesISO))} ساعة`,
+        body: `${o.titleAr} · تبقّى ${Math.ceil(hoursUntil(o.closesISO))} ساعة${o.cities.length > 0 ? ` · ${o.cities.join("، ")}` : ""}${o.seats !== null ? ` · ${o.seats} مقعداً` : ""}`,
         weight: score + 200,
       });
     }
