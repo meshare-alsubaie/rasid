@@ -23,9 +23,9 @@ import { HAS_CONTACT, USER_AGENT } from "../src/pipeline/agent";
 import { browserUnavailable, closeBrowser, renderPage } from "../src/pipeline/browser";
 import { CLASSIFIER_MODEL, classify, costOf, type Usage } from "../src/pipeline/classify";
 import { asManualReview, fromClassification } from "../src/pipeline/opportunity";
-import { extract } from "../src/pipeline/extract";
+import { extract, sha256 } from "../src/pipeline/extract";
 import { fetchPage, paced } from "../src/pipeline/fetch";
-import { checkRobots } from "../src/pipeline/robots";
+import { checkFinalUrl, checkRobots } from "../src/pipeline/robots";
 import { MAX_BROWSER_SOURCES, SILENT_THIN_RUNS, THIN_CHARS } from "../src/types";
 import type {
   AggregatorSource,
@@ -188,11 +188,30 @@ async function collect(t: Target): Promise<void> {
     return;
   }
 
+  // Permission was asked of the host we requested. A redirect can hand us a
+  // different one, and that host has not agreed to anything.
+  const afterRedirect = await checkFinalUrl(t.url, res.finalUrl);
+  if (afterRedirect) {
+    recordFailure(t, `robots.txt: ${afterRedirect.reason}`, "robots_skip");
+    return;
+  }
+
   const extracted = extract(res.html, t.url);
   const { hash, chars, method } = extracted;
   if (chars < MIN_USABLE_CHARS) {
-    // Drop any stored hash: keeping one would claim we are watching this page.
-    snapshotByUrl.delete(t.url);
+    /*
+     * Keep the record, clear the hash.
+     *
+     * Deleting it took `firstSeenISO` and `lastChangedISO` with it — the two
+     * dates types.ts calls the honest basis for predicting a window — and the
+     * next successful run then wrote `lastChangedISO: now`, asserting a change
+     * that never happened. One maintenance banner or one geo-blocked fetch was
+     * enough, and the two collectors disagree about these hosts every six
+     * hours, so it happened routinely. A null hash says "we cannot see this
+     * page right now" without also erasing what we saw before.
+     */
+    const kept = snapshotByUrl.get(t.url);
+    if (kept) snapshotByUrl.set(t.url, { ...kept, contentHash: null });
     recordFailure(
       t,
       `fetched ${res.bytes} bytes but extracted only ${chars} chars of text; the page is probably rendered by javascript and cannot be watched this way`,
@@ -204,18 +223,44 @@ async function collect(t: Target): Promise<void> {
   const prevSnapshot = snapshotByUrl.get(t.url);
   const changed = prevSnapshot?.contentHash !== hash;
 
+  /*
+   * Spec 5.3: send the classifier the block that changed, not the top of the
+   * page. On a long portal the announcement is rarely in the first 6000
+   * characters, so slicing the head meant the model was asked about the
+   * navigation and answered, correctly, that it saw no announcement.
+   *
+   * On first sight there is nothing to diff against and the whole text is the
+   * change. The page title and its opening line ride along with the changed
+   * blocks, because a bare paragraph with no idea whose page it is on is a
+   * worse question than a slightly longer one.
+   */
+  const priorBlocks = new Set(prevSnapshot?.blockHashes ?? []);
+  const blockHashes = extracted.blocks.map((b) => sha256(b).slice(0, 16));
+  const newBlocks =
+    priorBlocks.size === 0
+      ? extracted.blocks
+      : extracted.blocks.filter((_, i) => !priorBlocks.has(blockHashes[i]!));
+
+  const payload =
+    priorBlocks.size === 0 || newBlocks.length === 0
+      ? extracted.text
+      : [extracted.title ?? "", extracted.blocks[0] ?? "", ...newBlocks]
+          .filter(Boolean)
+          .join("\n\n");
+
   // A thin page that also stops moving is the signature of a page we are not
   // really reading. Counted here, escalated by the validator at ten.
   const thinAndSilent = chars < THIN_CHARS && !changed;
 
   // Kept so the classification pass can read what was fetched without a
   // second request. Only successful, usable extractions land here.
-  textByUrl.set(t.url, extracted.text);
+  textByUrl.set(t.url, payload);
 
   snapshotByUrl.set(t.url, {
     sourceUrl: t.url,
     orgId: t.ownerId,
     contentHash: hash,
+    blockHashes,
     extractedChars: chars,
     extractionMethod: method,
     firstSeenISO: prevSnapshot?.firstSeenISO ?? now,

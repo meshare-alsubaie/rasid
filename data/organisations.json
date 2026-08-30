@@ -9,7 +9,8 @@
     "requiresZeroCourses": {
       "value": true,
       "provenance": "official",
-      "quote": "عدم تسجيل أي مواد دراسية خلال فترة التدريب"
+      "quote": "عدم تسجيل أي مواد دراسية خلال فترة التدريب",
+      "sourceUrl": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities"
     },
     "acceptsUserMajor": null,
     "offersCoopProduct": null,
@@ -28,7 +29,8 @@
         "verifiedNote": "عنوان الصفحة: \"Student programs | Aramco\". قرأت عليها حرفياً: \"Scholarship opportunities and job preparation programs for students.\" وتسرد برامج الطلبة: College continuation program، Apprenticeship program، College degree program، Vocational Colleges Graduates، Summer Training. صفحة برامج طلبة رسمية، وصفحة التدريب الجامعي فرعية منها.",
         "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -68,9 +70,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T01:25:42.587Z",
         "verifiedNote": "عنوان الصفحة: \"تأهيل وتدريب الكوادر السيبرانية | NCA\". قرأت عليها حرفياً: \"تأهيل وتدريب الكوادر السيبرانية\" و\"أبرز البرامج\" و\"تاريخ آخر تعديل: 02/06/2025\". صفحة تدريب رسمية للهيئة، لكنها ليست صفحة تدريب تعاوني محدّدة، ولم يظهر عليها إعلان تعاوني وقت الفحص.",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -119,9 +122,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"البرامج التعليمية | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 807 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"التعليم العالي تستهدف الهيئة تحقيق متطلبات سوق العمل الحالي والمستقبلي؛ من خلال رفع مستوى جودة البرامج الأكادي…\"",
-        "type": "site_root",
+        "type": "announcement_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -158,7 +162,8 @@
         "verifiedNote": "عنوان الصفحة: \"Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 9522 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevan…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "browser"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -194,7 +199,8 @@
         "verifiedNote": "عنوان الصفحة: \"SABIC - الطلاب والخريجون\". قرأت عليها حرفياً: \"تقدّم (سابك) مجموعة واسعة من فرص التطوير والمسارات المهنية للطلاب والخريجين الجدد\" و\"من خلال برامج متخصصة مثل برامج المسار المهني المبكر، والتدريب التعاوني، وبرامج الابتعاث\". ذكر صريح للتدريب التعاوني.",
         "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       }
     ],
     "applyVia": null,
@@ -234,9 +240,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"SAMA Careers\". صفحة حقيقية على نطاق الجهة، قُرئ منها 630 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"The Saudi Central Bank Careers Page Saudi Central Bank welcomes you in our Recruitment Page, and we appreciate…\"",
-        "type": "portal",
+        "type": "site_root",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -276,9 +283,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T01:25:42.587Z",
         "verifiedNote": "عنوان الصفحة: \"سدايا | برنامج سدايا للتدريب التعاوني\". قرأت عليها حرفياً: \"يهدف برنامج سدايا للتدريب التعاوني إلى تقديم تدريب عملي وعلى رأس العمل لطلاب وطالبات الجامعات في المملكة.\" وعليها رابط \"التسجيل في التدريب التعاوني\". صفحة تدريب تعاوني صريحة.",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       },
       {
         "url": "https://careers.sdaia.gov.sa/training",
@@ -321,7 +329,18 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://site.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"الشركة السعودية لتقنية المعلومات - SITE\". صفحة حقيقية على نطاق الجهة، قُرئ منها 598 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الخدمات الاستشاريةعزز نجاح منظمتك وابتكارها عبر خدماتنا الاستشارية في التحول الرقمي، الأمن السيبراني، حوكمة ال…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "browser",
+        "coopConfirmed": false
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
@@ -354,9 +373,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T01:46:07.173Z",
         "verifiedNote": "وسم title فارغ على هذه الصفحة. قرأت عليها حرفياً: \"التدريب التعاوني\" كعنوان الفئة، ثم \"لا توجد حاليًا أي مناصب شاغرة مطابقة لهذه الفئة أو هذا الموقع\". صفحة فئة التدريب التعاوني داخل بوابة توظيف stc، وهي غير الصفحة الرئيسية التي رُفضت سابقاً.",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       },
       {
         "url": "https://careers.stc.com.sa/",
@@ -404,9 +424,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T02:14:14.571Z",
         "verifiedNote": "عنوان الصفحة: \"Cooperative and Summer Training Program\". قرأت عليها حرفياً: \"we are cooperating strategically with local and international universities and institutes by giving the graduates the opportunity for On-Job Training through COOP Program\". الرابط المرشّح على bankalbilad.com يعيد التوجيه إلى نطاق bankalbilad.com.sa.",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       },
       {
         "url": "https://bankalbilad.com/ar/about/Pages/Training.aspx",
@@ -453,10 +474,11 @@
         "url": "https://alinma.com/",
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T21:48:08.310Z",
-        "type": "announcement_page",
+        "type": "site_root",
         "checkFrequencyHours": 6,
         "renderMode": "static",
-        "verifiedNote": "عنوان الصفحة: \"نبتكر لنتقدم | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1211 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"بطاقة سفر أكثر الائتمانية لرفاهية أكثر اكتشف بطاقة سفر أكثر الائتمانية من الإنماء التي تجمع بين المكافآت والمز…\""
+        "verifiedNote": "عنوان الصفحة: \"نبتكر لنتقدم | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1211 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"بطاقة سفر أكثر الائتمانية لرفاهية أكثر اكتشف بطاقة سفر أكثر الائتمانية من الإنماء التي تجمع بين المكافآت والمز…\"",
+        "coopConfirmed": false
       },
       {
         "url": "https://www.alinma.com/Career/coopAr.html",
@@ -500,9 +522,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T02:14:14.571Z",
         "verifiedNote": "عنوان الصفحة: \"Al Rajhi Bank Careers\". قرأت عليها حرفياً: \"ترى أكاديمية مصرف الراجحي أن التدريب التعاوني يعد عنصراً أساسياً في وضع مسار واضح نحو وظائف ناجحة\" و\"من خلال برنامج التدريب التعاوني سيحصل الطلاب على فرصة لتنمية مواهبهم وقدراتهم وتطبيق معرفتهم الأكاديمية في بيئة عمل حيوية\" و\"شروط الانضمام للبرنامج: التقديم عبر موقع مصرف الراجحي للتدريب التعاوني\".",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       },
       {
         "url": "https://www.alrajhibank.com.sa/",
@@ -561,7 +584,8 @@
         "verifiedNote": "عنوان الصفحة: \"موقع البنك العربي الوطني للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 408 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"البنك العربي الوطني تأسس البنك العربي الوطني كشركة مساهمة سعودية مدرجة عام 1979م، وهو يتبوأ اليوم مكانة مرموقة…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -597,7 +621,8 @@
         "verifiedNote": "عنوان الصفحة: \"الأفراد\". صفحة حقيقية على نطاق الجهة، قُرئ منها 519 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"بنك الجزيرة، شركة مساهمة سعودية، رأس المال 12,812,500,000 مدفوع بالكامل، رقم السجل التجاري: 4030010523 ، مركزه…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -639,7 +664,8 @@
         "verifiedNote": "عنوان الصفحة: \"KHABIR COOPERATIVE TRAINING PLATFORM\". قرأت عليها حرفياً: \"KHABIR COOPERATIVE TRAINING PLATFORM\" و\"A platform designed to receive and process training requests in accordance with the standards outlined on the platform\" مع زر \"Start Service\". هذه صفحة الخدمة على نطاق الديوان الرسمي، لا رابط المنصّة المباشر.",
         "type": "portal",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       }
     ],
     "applyVia": null,
@@ -681,7 +707,8 @@
         "verifiedNote": "عنوان الصفحة: \"الصفحة الرئيسية - البنك السعودي الفرنسي\". صفحة حقيقية على نطاق الجهة، قُرئ منها 387 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© البنك السعودي الفرنسي. جميع الحقوق محفوظة. إخلاء المسؤولية - إشعار الخصوصية البنك السعودي الفرنسي، شركة مساه…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       },
       {
         "url": "https://www.bsfcareers.sa/ar/",
@@ -726,7 +753,8 @@
         "verifiedNote": "عنوان الصفحة: \"هيئة الاتصالات والفضاء والتقنية | المملكة العربية السعودية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 760 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ننظم قطاع الاتصالاتلربط المملكة بكفاءة وموثوقية ننظم قطاع الاتصالاتلربط المملكة بكفاءة وموثوقية ننظم قطاع الفض…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       },
       {
         "url": "https://www.cst.gov.sa/",
@@ -776,9 +804,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T01:52:59.324Z",
         "verifiedNote": "عنوان الصفحة: \"هيئة السوق المالية\". قرأت عليها حرفياً: \"برنامج التدريب التعاوني\" و\"تتيح الهيئة الفرصة لطلاب والطالبات الذين يتطلب تخرجهم قضاء فترة من التدريب العملي\"، وضمن التخصصات \"جميع تخصصات تقنية المعلومات\"، ومن معايير القبول \"أن يكون سعودي الجنسية، خطاب اعتماد التدريب، انتظام كلي، معدل دراسي لا يقل عن جيد جداً\".",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       },
       {
         "url": "https://cma.org.sa/Pages/default.aspx",
@@ -835,7 +864,8 @@
         "verifiedNote": "عنوان الصفحة: \"Deloitte Middle East | Audit, Consulting, Financial, Risk Management, Tax Services\". صفحة حقيقية على نطاق الجهة، قُرئ منها 749 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Resilience Redefined Navigating complexity. Building continuity. Enabling recovery. Discover how Deloitte Midd…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -857,8 +887,8 @@
     "city": [],
     "tier": "A",
     "requiresZeroCourses": {
-      "value": false,
-      "provenance": "official"
+      "value": null,
+      "provenance": "unknown"
     },
     "acceptsUserMajor": null,
     "offersCoopProduct": null,
@@ -884,9 +914,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T21:54:36.226Z",
         "verifiedNote": "عنوان الصفحة: \"Career portal\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2444 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"نعمل في هيئة الحكومة الرقمية على تشكيل المشهد الرقمي بالمملكة عبر دعم الجهات الحكومية في تقديم وتطوير خدمات رق…\"",
-        "type": "careers_page",
+        "type": "site_root",
         "checkFrequencyHours": 12,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -923,7 +954,8 @@
         "verifiedNote": "وسم title فارغ على هذه الصفحة، وعنوان التبويب هو المسار نفسه. قرأت عليها حرفياً: \"coop trainee and training program\" و\"المتدربون وبرامج التدريب\" و\"سد الفجوة بين الخبرة التعليمية والعملية\". صفحة فئة التدريب التعاوني في بوابة توظيف علم، ولا شواغر معروضة وقت الفحص.",
         "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       }
     ],
     "applyVia": null,
@@ -963,9 +995,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"EY - MENA | Shape the future with confidence\". صفحة حقيقية على نطاق الجهة، قُرئ منها 4999 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Insights AI Insights Finance People and workforce Sustainability Technology EY Transformation Risk Geostrategy…\"",
-        "type": "site_root",
+        "type": "announcement_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -999,9 +1032,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T01:52:59.324Z",
         "verifiedNote": "عنوان الصفحة: \"Cooperative Training - General Authority for Statistics\". قرأت عليها حرفياً: \"GASTAT introduces the cooperative training program which aims to increase the level of knowledge and skill among the young talented students\" و\"Admission Requirements: GPA must be more than 3.75/5 or 2.75/4\".",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       },
       {
         "url": "https://www.stats.gov.sa/ar",
@@ -1056,9 +1090,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"KPMG Audit COOP Program (Riyadh, Jeddah, and Khobar) Job Details | KPMG Professional Services\". صفحة حقيقية على نطاق الجهة، قُرئ منها 439 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© 2025 KPMG Professional Services, a professional closed joint stock company registered in the Kingdom of Saud…\"",
-        "type": "site_root",
+        "type": "careers_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -1110,9 +1145,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"Maaden: Exciting Career Opportunities in Mining Industry\". صفحة حقيقية على نطاق الجهة، قُرئ منها 586 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Search results United States WORK AT WHAT COMES NEXT WHY JOIN MAADEN? MAADEN IS SHAPING A NEW ERA FOR MINING I…\"",
-        "type": "site_root",
+        "type": "careers_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -1153,9 +1189,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T01:46:07.173Z",
         "verifiedNote": "عنوان الصفحة: \"التدريب التعاوني | بوابة مهارات المستقبل\". قرأت عليها حرفياً: \"التدريب التعاوني\" ثم \"لا توجد نتائج بحث توافق البيانات المدخلة\". صفحة التدريب التعاوني في بوابة مهارات المستقبل التابعة للوزارة، وقائمتها فارغة وقت الفحص.",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       },
       {
         "url": "https://www.mcit.gov.sa/",
@@ -1203,9 +1240,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T01:52:59.324Z",
         "verifiedNote": "عنوان الصفحة: \"التدريب التعاوني - وزارة الصناعة والثروة المعدنية\". قرأت في متنها حرفياً: \"تقدم وزارة الصناعة والثروة المعدنية مبادرة التدريب التعاوني بالتعاون مع المنشآت الصناعية في جميع أنحاء المملكة، والتي تهدف إلى تنمية القدرات البشرية وتطويرها، من خلال اكتساب المهارات العملية والمعرفية من الكفاءات الوطنية المتخصصة في المجالات الصناعية الهندسية والتقنية والفنية، ومجالات التعدين\". القراءة الأولى أعطت التذييل فقط، فأعدتها على وسم main.",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       },
       {
         "url": "https://mim.gov.sa/cooperative-training",
@@ -1259,10 +1297,11 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T01:46:07.173Z",
         "verifiedNote": "عنوان الصفحة: \"Coop Program - موبايلي المسارات الوظيفية\". قرأت عليها حرفياً: \"صممنا برنامج التدريب التعاوني بدقة لسد الفجوة بين المعرفة النظرية المكتسبة في السنوات الماضية وبين الخبرة العملية\" و\"طلاب التكنولوجيا: سواء كنت تدرس تخصصًا في التكنولوجيا، فإن معدل تقديرك الذي يبلغ 3.25/5 أو 2.60/4 أو أعلى يفتح الأبواب أمامك\".",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
         "renderMode": "browser",
-        "renderModeNote": "promoted to browser on 2026-08-29T20:08:44.470Z: static extraction failed on this page, rendering in CI returned 1405 chars"
+        "renderModeNote": "promoted to browser on 2026-08-29T20:08:44.470Z: static extraction failed on this page, rendering in CI returned 1405 chars",
+        "coopConfirmed": true
       },
       {
         "url": "https://careers.mobily.com.sa",
@@ -1319,9 +1358,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T01:52:59.324Z",
         "verifiedNote": "عنوان الصفحة: \"التدريب التعاوني\". قرأت عليها حرفياً: \"التسجيل في برنامج التدريب التعاوني\" و\"برنامج التدريب التعاوني هو برنامج تدريبي محدد المدة، تتيح من خلالِه وزارة العدل الفرصة لطلبة الجامعات والكليات السعودية\". بوابة التدريب التعاوني الرسمية، وهي تؤكّد الرابط الذي كان مرشّحاً من المواصفة.",
-        "type": "portal",
+        "type": "site_root",
         "checkFrequencyHours": 6,
-        "renderMode": "browser"
+        "renderMode": "browser",
+        "coopConfirmed": true
       },
       {
         "url": "https://training.moj.gov.sa",
@@ -1374,9 +1414,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 649 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"هل استفدت من المعلومات المقدمة في هذه الصفحة؟ 0 من الزوار أعجبهم محتوى الصفحة من أصل 0 شكرا لمشاركتك تم استلام…\"",
-        "type": "site_root",
+        "type": "announcement_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -1413,13 +1454,14 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www.ncdc.gov.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "رفض المتصفح الاتصال بنطاق ncdc.gov.sa. لم تُقرأ الصفحة. مهام المركز نُقلت إلى وزارة الاتصالات، وقد يكون النطاق متوقفاً.",
+        "url": "https://ncdc.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"NIC Web Repository\". صفحة حقيقية على نطاق الجهة، قُرئ منها 489 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Documents Electronic Transactions Act NIC Policies Certificates Saudi National Root CA Certificate Government …\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -1454,7 +1496,18 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://www.pwc.com/m1/en/careers/student-jobs.html",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"Graduate and Undergraduate Careers\". صفحة حقيقية على نطاق الجهة، قُرئ منها 853 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Skip to content Skip to footer Menu Menu Menu Menu Menu Menu Menu Featured Menu Menu Menu Menu Menu Menu Menu …\"",
+        "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
@@ -1486,9 +1539,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"الأفراد | بنك الرياض\". صفحة حقيقية على نطاق الجهة، قُرئ منها 811 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"كل احتياجاتك البنكية... قلل مصاريفك وادّخر مع برنامج وازن موافقة سريعة، مكافآت، ومزايا مع البطاقة التي تناسب ن…\"",
-        "type": "site_root",
+        "type": "announcement_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       },
       {
         "url": "https://careers.riyadbank.com/ar/",
@@ -1540,9 +1594,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:23:03.911Z",
         "verifiedNote": "عنوان الصفحة: \"البنك السعودي للاستثمار\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"برنامج التدريب التعاوني البنك السعودي للاستثمار من أسرع المنظمات تطوراً في القطاع البنكي التي تتبنى مفهوم المسؤولية الاجتماعية للشركات في صميم عملها، وذل…\". فحص آلي بنفس معيار الجولة اليدوية.",
-        "type": "site_root",
+        "type": "careers_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       }
     ],
     "applyVia": null,
@@ -1576,9 +1631,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"SAR| Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1113 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Our servicesSAR delivers a wide range of passenger and freight services across various regions of Saudi Arabia…\"",
-        "type": "site_root",
+        "type": "announcement_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       },
       {
         "url": "https://www.sar.com.sa/",
@@ -1627,9 +1683,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T21:39:41.484Z",
         "verifiedNote": "عنوان الصفحة: \"Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1550 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"​​​​​​​​​​​ ​​​​​​​ ​MOLIMMOLIM MOLIM provides individuals with official credit reports and scores, enabling c…\"",
-        "type": "site_root",
+        "type": "announcement_page",
         "checkFrequencyHours": 24,
-        "renderMode": "browser"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -1669,9 +1726,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T02:14:14.571Z",
         "verifiedNote": "عنوان الصفحة: \"البرنامج البنك الأهلي السعودي للتدريب التعاوني\". قرأت عليها حرفياً: \"برنامج الأهلي للتدريب التعاوني\" و\"التقديم مغلق\" و\"يهدف برنامج البنك الأهلي السعودي للتدريب التعاوني إلى تحقيق التكامل بين الدراسات الأكاديمية للطلاب والتطبيقات العملية في بيئة الأعمال\".",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       },
       {
         "url": "https://www.alahli.com/ar-sa/Pages/RB-NCB-Home-New.aspx",
@@ -1726,9 +1784,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"Home - Saudi Exchange\". صفحة حقيقية على نطاق الجهة، قُرئ منها 13631 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Z7_5A602H80O0HTC060SG6UT81GM2 ملخص السوق 29 أغسطس 2026 السوق مغلق حدد المؤشرات حدد 4 مؤشرات كحد أقصى الخدمات ا…\"",
-        "type": "site_root",
+        "type": "careers_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -1785,9 +1844,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"التوظيف في تكامل القابضة | انضم إلى فريقنا المبتكر\". صفحة حقيقية على نطاق الجهة، قُرئ منها 306 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"انضم الآن ​هنا تفتح الآفاق لتكونوا جزءًا من مسيرة التمكينالفرص التدريبية انضم إلى برنامج \"تكاملي طموح\"، المصمم…\"",
-        "type": "site_root",
+        "type": "announcement_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -1860,7 +1920,8 @@
         "verifiedNote": "عنوان الصفحة: \"وظائف | Tetco\". قرأت عليها حرفياً: \"التدريب التعاوني هو برنامج تدريبي يوفر تجربة قيمة وفريدة للطلاب المتوقع تخرجهم، ويسعون إلى استكمال متطلبات تخرجهم الأكاديمية خلال فترة التدريب\"، وعنوان القسم \"التوظيف والتدريب التعاوني\".",
         "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       },
       {
         "url": "https://tetco.sa",
@@ -1925,7 +1986,8 @@
         "verifiedNote": "عنوان الصفحة: \"Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2087 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"نصنع الأثر عبر التحول الرقمي نسخر الجهود نحو صناعة الأثر والمساهمة في تحسين جودة أداء الأعمال لتحقيق التنمية ا…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "browser"
+        "renderMode": "browser",
+        "coopConfirmed": false
       },
       {
         "url": "https://www.thiqah.sa/",
@@ -1974,9 +2036,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T01:52:59.324Z",
         "verifiedNote": "عنوان الصفحة: \"Coop and Training Programs Arabic\". قرأت عليها حرفياً: \"التدريب التعاوني\" و\"تهتمّ الهيئة بإقامة برامج التدريب التعاوني لطلاب الجامعات كجزء من المسؤولية المجتمعية التي تحرص عليها، وهي تنسّق باستمرار مع عدد من الجامعات\".",
-        "type": "announcement_page",
+        "type": "careers_page",
         "checkFrequencyHours": 6,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": true
       }
     ],
     "applyVia": {
@@ -2024,7 +2087,8 @@
         "verifiedNote": "عنوان الصفحة: \"الصفحة الرئيسية | شركة الإلكترونيات المتقدمة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3213 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرياض، المملكة العربية السعودية – تعلن الإلكترونيات المتقدمة، إحدى شركات SAMI، عن مشاركتها في مؤتمر ومعرض ليب…\"",
         "type": "site_root",
         "checkFrequencyHours": 12,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -2105,9 +2169,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T21:54:36.226Z",
         "verifiedNote": "عنوان الصفحة: \"موقع إجادة للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1380 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Why EjadaWorking at Ejada has been an incredibly rewarding experience. The supportive work environment, opport…\"",
-        "type": "careers_page",
+        "type": "site_root",
         "checkFrequencyHours": 12,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -2155,7 +2220,8 @@
         "verifiedNote": "عنوان الصفحة: \"مجموعة فقيه الصحية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 407 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مرحبًا بكم في عالم الرعاية الصحية الجديد مع المستشفيات الديناميكية والحديثة والرائدة متعددة التخصصات في المملك…\"",
         "type": "site_root",
         "checkFrequencyHours": 12,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -2198,7 +2264,8 @@
         "verifiedNote": "عنوان الصفحة: \"Careers | Master Works\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1493 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Build your career at Master Works CSS Tags banner banner-hero Why join Master Works? Learn We offer unlimited …\"",
         "type": "careers_page",
         "checkFrequencyHours": 12,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -2233,9 +2300,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T19:33:16.875Z",
         "verifiedNote": "عنوان الصفحة: \"الرياض | الشرق الأوسط | McKinsey & Company\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1522 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ماكنزي في الشرق الأوسطالرياضيعمل مكتب ماكنزي في المملكة العربية السعودية على مساعدة القادة السعوديين من أجل تح…\"",
-        "type": "site_root",
+        "type": "announcement_page",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -2266,13 +2334,14 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www.ndf.gov.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "https://ndf.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"صندوق التنمية الوطني\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2988 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيفية التحققروابط المواقع السعودية الرسمية تنتهي بـ gov.sa…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -2314,7 +2383,8 @@
         "verifiedNote": "عنوان الصفحة: \"نورنت الحلول الرقمية والخدمات السحابية المتكاملة | نورنت\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3805 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مُمكّن التحول الرقمي الرائد في المملكة العربية السعوديةالخدمات المدارةدعنا نتولى مهام صيانة النظام الروتينية و…\"",
         "type": "site_root",
         "checkFrequencyHours": 12,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -2351,7 +2421,8 @@
         "verifiedNote": "عنوان الصفحة: \"SIDF\". صفحة حقيقية على نطاق الجهة، قُرئ منها 635 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ServicesFinancial SolutionsWe Offer Multiple Financing Solutions that Suit Your Development Needs.Advisory Ser…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -2434,7 +2505,8 @@
         "verifiedNote": "عنوان الصفحة: \"جامعة الطائف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 570 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"جامعة الطائف تحقق تصنيفاً متقدماً في تصنيف التايمز للجامعات الآسيوية لعام 2026 امتداد لمنجز يتجدّد .. ومسار يت…\"",
         "type": "site_root",
         "checkFrequencyHours": 12,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -2473,7 +2545,8 @@
         "verifiedNote": "عنوان الصفحة: \"شركة وادي مكة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1452 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"استثمر في مكة الفرص الاستثمارية الكبيرة الفرص الاستثمارية الصفيرة وادي مكة نعزز دورنا في بناء مجتمعالمعرفة واق…\"",
         "type": "site_root",
         "checkFrequencyHours": 12,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -2516,7 +2589,8 @@
         "verifiedNote": "عنوان الصفحة: \"أصيلة المالية – Just another WordPress site\". صفحة حقيقية على نطاق الجهة، قُرئ منها 469 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"أهلا بك نطمح لنتجاوز توقعات عملائنا ومساهمينا إنضم إلينا English افتح حساب عن اصيلة ويلث شركة اصيلة ويلث المال…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -2559,7 +2633,8 @@
         "verifiedNote": "عنوان الصفحة: \"صندوق التنمية الزراعية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1708 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية …\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -2596,7 +2671,8 @@
         "verifiedNote": "عنوان الصفحة: \"الهيئة العامة للأوقاف | الصفحة الرئيسية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3458 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ㅤㅤ مصارف الأوقاف تحت إشراف الهيئة 1.5 مليار ريال لبرنامج ضيوف الرحمن +126 مليون ريال للإسكان +87 مليون ريال لل…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -2634,12 +2710,13 @@
     "sources": [
       {
         "url": "https://careers.bahri.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
-        "type": "careers_page",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:45:37.136Z",
+        "verifiedNote": "عنوان الصفحة: \"Bahri Careers\". صفحة حقيقية على نطاق الجهة، قُرئ منها 614 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Find Jobs Job title, skill, keyword City, state, country All Jobs (3) Offshore Master the seas and the latest …\"",
+        "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -2677,6 +2754,16 @@
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
+      },
+      {
+        "url": "https://zatca.gov.sa/ar",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T00:01:14.604Z",
+        "verifiedNote": "عنوان الصفحة: \"هيئة الزكاة والضريبة والجمارك\". صفحة حقيقية على نطاق الجهة، قُرئ منها 695 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"يمكنك الآن إجراء جميع خدماتك المتعلقة بالزكاة عبر الإنترنت بما في ذلك الحساب. زاتكا في أرقام أرقـــامنـــا تــ…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -2762,7 +2849,8 @@
         "verifiedNote": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1049 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"هيئة المدن والمناطق الاقتصادية الخاصة هي المظلة التنظيمية للمدن والمناطق الاقتصادية الخاصة في المملكة العربية …\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -2805,7 +2893,8 @@
         "verifiedNote": "عنوان الصفحة: \"حدث خطأ\". صفحة حقيقية على نطاق الجهة، قُرئ منها 509 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية الهيئة عن الهيئة السياسات والاستراتيجيات منصة المنقولات ا…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -2891,7 +2980,8 @@
         "verifiedNote": "عنوان الصفحة: \"الصفحة الرئيسية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 923 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"02 أكتوبر 2024 الهيئة العامة للمنافسة تُعلن العقوبات المُقررة ضد عددٍ من المنشآت لمخالفتها نظام المنافسة من خل…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "browser"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -2977,6 +3067,16 @@
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
+      },
+      {
+        "url": "https://gmedia.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T00:01:14.604Z",
+        "verifiedNote": "عنوان الصفحة: \"الهيئة العامة لتنظيم الإعلام\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1118 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الهيئة تشدّد على أهمية الالتزام بالتصنيف العمري للألعاب الإلكترونيةتفاصيل الخبر الهيئة تقيم ورشة عمل \"ابتعاث ا…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3019,7 +3119,8 @@
         "verifiedNote": "عنوان الصفحة: \"الهيئة العامة للترفيه | الرئيسية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 750 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"مسارات الترفيه مسارات الترفيه هي منصة إلكترونية تهدف إلى دعم وتمكين رواد الأعمال والمنشآت في قطاع الترفيه. تتي…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "browser"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3063,6 +3164,16 @@
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
+      },
+      {
+        "url": "https://momah.gov.sa/ar",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T00:01:14.604Z",
+        "verifiedNote": "عنوان الصفحة: \"وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 153933 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تعزيز التكامل في تقديم الخدمات البلدية والمنتجات السكنية للمدن السعوديةبلاغ رقميضمن التكامل بين وزارة البلديات…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3148,7 +3259,8 @@
         "verifiedNote": "عنوان الصفحة: \"الموقع الرسمي لوزارة الموارد البشرية والتنمية الاجتماعية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2899 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تمكين الفرد والمجتمع والمؤسسات وخلق سوق عمل يحفز الابتكار والاستدامة ومواكبة التحولات المستقبلية، من خلال سياس…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3234,7 +3346,8 @@
         "verifiedNote": "عنوان الصفحة: \"KAPSARC | King Abdullah Petroleum Studies and Research Center | <h1>breachlock</h1>\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1443 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Publications Peer-reviewed insights on energy, policy, and sustainability. KAPSARC Solutions Easy-to-use inter…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3315,12 +3428,13 @@
     "sources": [
       {
         "url": "https://lcgpa.gov.sa/ar/Pages/default.aspx",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:45:37.136Z",
+        "verifiedNote": "عنوان الصفحة: \"هيئة المحتوى المحلي والمشتريات الحكومية - الرئيسية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 12956 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"منصة التدريب الإلكترونيةمرجعك المعرفي لتنمية المحتوى المحليالابتكارالتعاونالتمكينتحقيق الأثرالاستدامةمتابعة ات…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3357,13 +3471,14 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www.mawhiba.org/Ar/About/who/Pages/Brief.aspx",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "https://mawhiba.org/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"موهبة - اكتشاف وتنمية الموهوبين والإبداع في السعودية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 631 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"البيانات الشخصية البطاقة التعريفية للطالب؛ تتيح إدارة المعلومات الأساسية وتحديث بيانات التواصل، لضمان دقة السج…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3406,7 +3521,8 @@
         "verifiedNote": "عنوان الصفحة: \"وزارة التجارة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 415 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنته…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "browser"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3443,7 +3559,18 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://makkah-careers.health.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"تجمع مكة المكرمة الصحي | الصحة القابضة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 352 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"عن التجمعتجمع مكة المكرمة الصحييقدم تجمع مكة المكرمة الصحي خدمات الرعاية الصحية لأكثر من 1.9 مليون مستفيد، من …\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "browser",
+        "coopConfirmed": false
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
@@ -3514,13 +3641,14 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www.mep.gov.sa/ar",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "https://mep.gov.sa/ar",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"وزارة الاقتصاد والتخطيط | الرئيسية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 704 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تخطي إلى المحتوى الرئيسي الرسالة نسعى بجسارة لتحقيق الإمكانات الواعدة للمملكة الرؤية أن نكون قوة فاعلة لمستقبل…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3563,7 +3691,8 @@
         "verifiedNote": "عنوان الصفحة: \"وزارة البيئة والمياه والزراعة | MEWA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1586 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"وزارة البيئة والمياه والزراعة موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟ روابط المواقع الالكترونية ال…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -3600,7 +3729,8 @@
         "verifiedNote": "عنوان الصفحة: \"Ministry of investment | وزارة الاستثمار\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2650 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"وزارة الاستثمار المملكة العربية السعودية: مركز استثماري عالمي. ابدأ رحلتك الاستثمارية على منصة \"استثمر في السع…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3638,12 +3768,13 @@
     "sources": [
       {
         "url": "https://www.moc.gov.sa/ar",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:45:37.136Z",
+        "verifiedNote": "عنوان الصفحة: \"الموقع الرسمي لوزارة الثقافة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1203 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"إحصائيات الموقع مجموعة من الخدمات الرقمية المتكاملة التي تقدمها وزارة الثقافة لتسهيل الإجراءات على المستفيدين،…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3678,7 +3809,18 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://modon.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"الهيئة السعودية للمدن الصناعية ومناطق التقنية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 5996 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"استثمر في مدن ابدأ رحلتك الاستثمارية في \"مدن\"، بالاطلاع على كافة التفاصيل والتكلفة التقريبية والمتطلبات، التي …\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "browser",
+        "coopConfirmed": false
+      }
+    ],
     "applyVia": {
       "method": "email",
       "target": "info@modon.gov.sa",
@@ -3719,7 +3861,8 @@
         "verifiedNote": "عنوان الصفحة: \"وزارة التعليم | الرئيسية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 5629 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"عزيزي المستخدم الرجاء تفعيل خاصية javascript على المتصفح لكي تتمكن من عرض الموقع بالشكل الصحيح الرئيسية الوزار…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3762,7 +3905,8 @@
         "verifiedNote": "عنوان الصفحة: \"وزارة الطاقة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 9200 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الطاقة في أرقامأرقام تسلط الضوء على مكانة المملكة كقوة طاقية عالمية من خلال احتياطياتها الضخمة وصادراتها البتر…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -3799,7 +3943,8 @@
         "verifiedNote": "عنوان الصفحة: \"وزارة المالية - المملكة العربية السعودية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 467 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"وزارة رائدة تُسهم في دعم التنمية الاقتصادية للمملكة العربية السعودية، عبر منظومة مالية مبتكرة ومستدامة تعرف عل…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3842,7 +3987,8 @@
         "verifiedNote": "عنوان الصفحة: \"الموقع الرسمي لوزارة الخارجية | المملكة العربية السعودية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1772 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"طلب تمديد تأشيرة العودةخدمة تتيح للمواطن والمقيم تقديم طلب تمديد تأشيرة العودةطلب زيارة شخصيةخدمة لطلب زيارة ا…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3885,7 +4031,8 @@
         "verifiedNote": "عنوان الصفحة: \"المملكة العربية السعودية - البوابة الإلكترونية لوزارة الصحة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 683 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ .gov.…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3928,7 +4075,8 @@
         "verifiedNote": "عنوان الصفحة: \"الهيئة العامة للمنشآت الصغيرة والمتوسطة | منشآت\". صفحة حقيقية على نطاق الجهة، قُرئ منها 4631 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"طور أعمالكمع منشآتأبحث عنخدمة ابحثعن ماذا تبحث؟أبحث عنعن ماذا تبحث؟ كلمة البحث لابد ان تكون اكثر من 3 حروف ولا…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -3971,7 +4119,8 @@
         "verifiedNote": "عنوان الصفحة: \"الموقع الرسمي لوزارة النقل والخدمات اللوجستية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2405 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"وزارة النقل والخدمات اللوجستية تشرف وزارة النقل والخدمات اللوجستية في المملكة العربية السعودية على مختلف وسائل…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -4008,7 +4157,8 @@
         "verifiedNote": "عنوان الصفحة: \"هيئة الرقابة ومكافحة الفساد\". صفحة حقيقية على نطاق الجهة، قُرئ منها 877 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"شكراً لكم رأيكم محل اهتمامنا لقد حققت المملكة نجاحات متتالية في مكافحة الفساد، وهو نهج أضـــــحى استراتيجية أس…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4045,12 +4195,13 @@
     "sources": [
       {
         "url": "https://ncar.gov.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:45:37.136Z",
+        "verifiedNote": "عنوان الصفحة: \"المركز الوطني للوثائق والمحفوظات\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1993 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ألغت هذه اللائحة العديد من اللوائح التنفيذية للخدمة المدنية ، وتضمنت : تعريفات وأحكام عامة ، بيئة العمل وأوقات…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4093,7 +4244,8 @@
         "verifiedNote": "عنوان الصفحة: \"المركز السعودي للتنافسية والأعمال\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1907 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"\"إن مسيرة التحوّل الاقتصادي التي تتبنّاها حكومة المملكة مستمرة، وإن ما تحقق من نتائج إيجابية حتى الآن وفق توجي…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4137,6 +4289,15 @@
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
+      },
+      {
+        "url": "https://www.gosi.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "المؤسسة العامة للتقاعد اندمجت في التأمينات الاجتماعية",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
       }
     ],
     "applyVia": {
@@ -4179,7 +4340,8 @@
         "verifiedNote": "عنوان الصفحة: \"الرئيسية - الهيئة الملكية للجبيل وينبع\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3670 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"صناعة وحياة اكتشف خياراتك الاستثمارية بمدن الهيئة الملكية للجبيل وينبع اكتشف المزيد صناعــــــــــــــــــــــ…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -4216,7 +4378,8 @@
         "verifiedNote": "عنوان الصفحة: \"الصفحة الرئيسية - الهيئة الملكية لمدينة الرياض\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1867 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"إطلاق «الحي الرقمي بالرياض» أعلن مجلس إدارة الهيئة الملكية لمدينة الرياض إطلاق «الحي الرقمي بالرياض»، الذي يُع…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4259,7 +4422,8 @@
         "verifiedNote": "عنوان الصفحة: \"الهيئة الملكية لمحافظة العلا | RCU\". صفحة حقيقية على نطاق الجهة، قُرئ منها 21705 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"عن الهيئة الملكية لمحافظة العلا نبذة عن الهيئة الملكية لمحافظة العلا جوهر عملنا يكمن في التوازن الدقيق بين الح…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4303,6 +4467,15 @@
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
+      },
+      {
+        "url": "https://redf.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "النطاق الرسمي الحالي لصندوق التنمية العقارية",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
       }
     ],
     "applyVia": {
@@ -4345,7 +4518,8 @@
         "verifiedNote": "عنوان الصفحة: \"الموقع الرسمي للهيئة العامة للعقار\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3169 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"البرامج والخدمات العقارية تمـلُّك غير السعوديين للعقار يمثل نظام تملك غير السعوديين للعقار الإطار التنظيمي الم…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4388,7 +4562,8 @@
         "verifiedNote": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2419 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع رسمي تابع للمملكة العربية السعوديةعنوان الموقع الحكومي السعودي الرسمي ينتهي بـ .gov.saالموقع تابع لجهة حك…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4432,6 +4607,16 @@
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
+      },
+      {
+        "url": "https://www.sanabil.com/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T00:01:14.604Z",
+        "verifiedNote": "عنوان الصفحة: \"SANABIL | Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 666 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"28 Apr 2026 Aya, a trend-led, demand drive...Aya, a trend-led, demand driven platform redefining how fashion i…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -4468,7 +4653,8 @@
         "verifiedNote": "عنوان الصفحة: \"الهيئة السعودية للمواصفات والمقاييس والجودة | SASO\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2935 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"if (BannerItemsList != null && BannerItemsList.Count > 1) الخدمات الإلكترونية استكشف الخدمات الإلكترونية الأكث…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4512,6 +4698,16 @@
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
+      },
+      {
+        "url": "https://www.saudiexports.gov.sa/ar",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T00:01:14.604Z",
+        "verifiedNote": "عنوان الصفحة: \"الصادرات السعودية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 336 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"استورد من السعودية استورد من السعودية البحث اقتراحات English تسجيل الدخول خدمات الهيئة تصفح خدمات الهيئة في ال…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4546,7 +4742,18 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://careers.scfhs.org.sa/ar/saudi-arabia/jobs/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"وظائف في السعودية - وظائف جديدة لشهر سبتمبر 2026 - الهيئة السعودية للتخصصات الصحية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 375 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية / فرص / نتائج البحث عن الفرصة تم العثور على {{ totalItems }} فرصفرصة, {{ numberOfVacanciesText }} {{ …\"",
+        "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
+      }
+    ],
     "applyVia": null,
     "manualCheckUrl": null,
     "historicalWindows": [],
@@ -4576,12 +4783,13 @@
     "sources": [
       {
         "url": "https://www.seec.gov.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"الموقع الرسمى للمركز السعودي لكفاءة الطاقة\". صفحة حقيقية على نطاق الجهة، قُرئ منها 878 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"كفاءة في أرقام662ألف+91%+58 +31 قطاعات كفاءة الطاقةقطاع الصناعةيسعى المركز إلى تحسين كفاءة استهلاك الطاقة واست…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4624,7 +4832,8 @@
         "verifiedNote": "عنوان الصفحة: \"| الصندوق السعودي للتنمية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 4825 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التعليمية في المملكة الع…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4659,7 +4868,26 @@
     "flexibility": "unknown",
     "intakeSize": "unknown",
     "trainingQuality": null,
-    "sources": [],
+    "sources": [
+      {
+        "url": "https://careers.sfda.gov.sa/ar/saudi-arabia/jobs/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "بوابة وظائف الهيئة، وفيها إعلانات تدريب تعاوني لكل فصل",
+        "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://career.sfda.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "بوابة التوظيف الرسمية للهيئة، بعد أن ردّ مسار الوظائف 404",
+        "type": "careers_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static"
+      }
+    ],
     "applyVia": {
       "method": "email",
       "target": "webmaster@sfda.gov.sa",
@@ -4699,7 +4927,8 @@
         "verifiedNote": "عنوان الصفحة: \"هيئة الهلال الأحمر السعودي - SRCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 847 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"إسعافثون 2026نحول الأفكار إلى حلول ابتكارية ترتقي بخدماتنا الإسعافيةلمعرفة المزيدنسعى لنحييهانُنقذ الأرواح ونُ…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4743,6 +4972,16 @@
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
+      },
+      {
+        "url": "https://ssa.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T00:01:14.604Z",
+        "verifiedNote": "عنوان الصفحة: \"بلا عنوان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 420 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنته…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4780,12 +5019,13 @@
     "sources": [
       {
         "url": "https://sta.gov.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:45:37.136Z",
+        "verifiedNote": "عنوان الصفحة: \"Saudi Tourism Authority\". صفحة حقيقية على نطاق الجهة، قُرئ منها 282 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Help Improve Digital Government ServicesThe Saudi Tourism Authority invites visitors and residents to use Digi…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": null,
@@ -4820,9 +5060,10 @@
         "provenance": "official",
         "verifiedAtISO": "2026-08-29T21:39:41.484Z",
         "verifiedNote": "عنوان الصفحة: \"الرئيسية - تحلية المياه\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1462 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"زيارتكم لموقعنا الإلكتروني في تحلية المياه بالنسبة لنا، هي محل تقدير واعتزاز ومؤشر على إدراككم لمدى أهمية وحسا…\"",
-        "type": "site_root",
+        "type": "announcement_page",
         "checkFrequencyHours": 24,
-        "renderMode": "browser"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4902,13 +5143,14 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www.tvtc.gov.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "url": "https://tvtc.gov.sa/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-29T23:52:07.584Z",
+        "verifiedNote": "عنوان الصفحة: \"المؤسسة العامة للتدريب التقني والمهني\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1212 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"رؤيتنا الإسهام الفاعل في التنمية الاقتصادية والاجتماعية والبيئية بتوفير التدريب التقني والمهني لأبناء وبنات ال…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4951,7 +5193,8 @@
         "verifiedNote": "عنوان الصفحة: \"Unilever Global | Unilever\". صفحة حقيقية على نطاق الجهة، قُرئ منها 11025 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"No more trade-offs. No more compromises. Just beauty and wellbeing as one.Powering up Personal Care, developin…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4994,7 +5237,8 @@
         "verifiedNote": "عنوان الصفحة: \"الرئيسية - Wasatah Capital\". صفحة حقيقية على نطاق الجهة، قُرئ منها 616 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"شركة استثمارية متوافقة مع أحكام الشريعة الإسلامية وساطة كابيتال شركة مرخصة ومنظمة من قبل هيئة السوق المالية في…\"",
         "type": "site_root",
         "checkFrequencyHours": 24,
-        "renderMode": "static"
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {

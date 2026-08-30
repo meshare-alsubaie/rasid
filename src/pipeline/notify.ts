@@ -9,6 +9,7 @@
  * every six hours teaches its user to swipe the notifications away, which is
  * the same failure as a stale green light wearing a different coat.
  */
+import { endOfDeadline } from "../types";
 import type { Opportunity, SourceHealth } from "../types";
 
 export type NoticeKind =
@@ -31,13 +32,24 @@ export interface Notice {
 export interface NoticeLogEntry {
   key: string;
   sentISO: string;
+  /**
+   * Which channel carried it. The cap below is six *pushes*, so a digest entry
+   * must not eat the budget — before this field existed, one quiet night with
+   * nine emailed items left no room to push anything the following day.
+   * Absent on entries written before the distinction existed; those are counted
+   * as pushes, which is the cautious reading.
+   */
+  via?: "push" | "digest";
 }
 
 /** Spec 5.4: never more than six pushes in a day. The rest goes to the digest. */
 export const DAILY_PUSH_CAP = 6;
 
 const dayOf = (iso: string): string => iso.slice(0, 10);
-const hoursUntil = (iso: string): number => (Date.parse(iso) - Date.now()) / 3_600_000;
+/* To the end of the published day in Riyadh — see `endOfDeadline`. Measured
+ * from midnight UTC instead, the 48-hour alert fired a day early and then went
+ * silent through the whole of the final day. */
+const hoursUntil = (iso: string): number => (endOfDeadline(iso) - Date.now()) / 3_600_000;
 
 export interface DecideInput {
   before: Opportunity[];
@@ -126,9 +138,32 @@ export function decide(input: DecideInput): Notice[] {
   return out;
 }
 
-/** Quiet hours are inclusive of the start hour and exclusive of the end. */
-export function inQuietHours(now: Date, startHour: number, endHour: number): boolean {
-  const h = now.getHours();
+/**
+ * Quiet hours are inclusive of the start hour and exclusive of the end, and are
+ * always measured in Riyadh, never in the clock of whatever machine is running.
+ *
+ * This ran on the process clock first, which meant two different answers for
+ * the same moment: the scheduled task on the owner's machine kept Saudi time,
+ * while the GitHub runner keeps UTC and shifted the quiet window three hours
+ * back — silencing eleven in the morning and pushing at two. The user is in one
+ * place, so there is only one right answer, and it does not depend on where the
+ * code happens to run.
+ */
+export const QUIET_HOURS_ZONE = "Asia/Riyadh";
+
+export function hourIn(now: Date, timeZone: string): number {
+  return Number(
+    new Intl.DateTimeFormat("en-US", { timeZone, hour: "numeric", hourCycle: "h23" }).format(now),
+  );
+}
+
+export function inQuietHours(
+  now: Date,
+  startHour: number,
+  endHour: number,
+  timeZone: string = QUIET_HOURS_ZONE,
+): boolean {
+  const h = hourIn(now, timeZone);
   return startHour <= endHour ? h >= startHour && h < endHour : h >= startHour || h < endHour;
 }
 
@@ -151,7 +186,9 @@ export function split(
   const fresh = notices.filter((n) => !alreadySent.has(n.key));
   if (quiet) return { push: [], digestOnly: fresh };
 
-  const sentToday = log.filter((e) => dayOf(e.sentISO) === dayOf(now.toISOString())).length;
+  const sentToday = log.filter(
+    (e) => dayOf(e.sentISO) === dayOf(now.toISOString()) && (e.via ?? "push") === "push",
+  ).length;
   const room = Math.max(0, DAILY_PUSH_CAP - sentToday);
   const ranked = [...fresh].sort((a, b) => b.weight - a.weight);
   return { push: ranked.slice(0, room), digestOnly: ranked.slice(room) };

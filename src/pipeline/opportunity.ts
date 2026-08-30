@@ -9,6 +9,7 @@
  */
 import { createHash } from "node:crypto";
 import type { Classification } from "./classify";
+import { endOfDeadline, hijriOf, startOfDay } from "../types";
 import type { Opportunity, OpportunityFlag, OpportunityStatus } from "../types";
 
 const HOURS_48 = 48 * 60 * 60 * 1000;
@@ -17,6 +18,18 @@ const idFor = (orgId: string, titleAr: string, firstSeenISO: string): string =>
   createHash("sha256").update(`${orgId}|${titleAr}|${firstSeenISO}`).digest("hex").slice(0, 16);
 
 /**
+ * A published date is a day in Riyadh, not an instant in UTC.
+ *
+ * Dates arrive as `YYYY-MM-DD`, which `Date.parse` reads as midnight UTC — so
+ * "closes 15 October" became an instant that had already passed by three in the
+ * morning Riyadh time on the fifteenth. The window was then reported closed for
+ * the whole of its final day: the card left "مفتوح الآن", the closing alert was
+ * suppressed, and the bar stopped short, on the one day a late applicant still
+ * had a chance. A deadline day is open until it ends, and it ends at midnight
+ * where the user is. A full timestamp, if one is ever published, is respected
+ * as given.
+ */
+/**
  * Only dates justify a window state. With neither an opening nor a closing
  * date, the honest answer is "unknown": a page can name a programme without
  * ever saying when it takes applications, and calling that "open" is the one
@@ -24,8 +37,18 @@ const idFor = (orgId: string, titleAr: string, firstSeenISO: string): string =>
  */
 function statusOf(c: Classification, nowISO: string): OpportunityStatus {
   const now = Date.parse(nowISO);
-  const opens = c.opensISO === null ? null : Date.parse(c.opensISO);
-  const closes = c.closesISO === null ? null : Date.parse(c.closesISO);
+  const opens = c.opensISO === null ? null : startOfDay(c.opensISO);
+  const closes = c.closesISO === null ? null : endOfDeadline(c.closesISO);
+
+  /*
+   * A graduate-development programme is never "open" here, whatever dates it
+   * publishes. It is not the product this app tracks, and spec 8.5 forbids the
+   * state outright — which the validator enforced by failing the run, throwing
+   * away a whole collection, any genuine announcement in it, and the deploy.
+   * Refusing the state at the source is the fix; the validator stays as the
+   * backstop it was meant to be.
+   */
+  if (c.product === "graduate_dev") return "unknown";
 
   if (closes !== null && closes < now) return "closed";
   if (opens !== null && opens > now) return "announced_not_open";
@@ -66,9 +89,21 @@ interface Common {
  * apply link on a deadline is worse than no link, because the user taps it.
  */
 function absoluteApplyUrl(candidate: string | null, sourceUrl: string): string | null {
-  if (candidate === null || candidate.trim() === "") return null;
+  const raw = candidate?.trim();
+  if (!raw) return null;
+
+  /*
+   * A relative resolve accepts almost anything, which is the trap: the model
+   * sometimes answers with a sentence — "قدّم عبر البوابة" — and `new URL` will
+   * happily turn that into `https://host/careers/%D9%82...`, a link that goes
+   * nowhere and that the user would tap on a deadline. Only something built
+   * from url characters is treated as a url at all.
+   */
+  const looksLikePath = /^[A-Za-z0-9._~!$&'()*+,;=:@%/?#[\]-]+$/.test(raw);
+  if (!looksLikePath) return null;
+
   try {
-    const resolved = new URL(candidate.trim(), sourceUrl);
+    const resolved = new URL(raw, sourceUrl);
     return resolved.protocol === "http:" || resolved.protocol === "https:" ? resolved.href : null;
   } catch {
     return null;
@@ -93,9 +128,7 @@ export function fromClassification(args: Common & { c: Classification }): Opport
     status,
     opensISO: c.opensISO,
     closesISO: c.closesISO,
-    // Umm al-Qura conversion is not implemented, so this stays null rather
-    // than carrying an arithmetic guess at a date the user would act on.
-    closesHijri: null,
+    closesHijri: hijriOf(c.closesISO),
     product: c.product,
     majors: c.majors,
     seats: c.seats,

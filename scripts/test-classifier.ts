@@ -158,6 +158,91 @@ if (ok.ok) {
   check("no dates means status unknown, not open", rec.status === "unknown", rec.status);
 }
 
+/* ---- the deadline day, which used to be reported as already over ---- */
+console.log("\ndeadline days");
+
+const withDatesInput = (opens: string | null, closes: string | null, product = "coop") => ({
+  isTrainingAnnouncement: true,
+  titleAr: "برنامج التدريب التعاوني",
+  opensISO: opens,
+  closesISO: closes,
+  product: product as "coop" | "graduate_dev",
+  majors: [],
+  seats: null,
+  stipendSAR: null,
+  durationWeeks: null,
+  cities: [],
+  statesZeroCoursesRule: false,
+  zeroCoursesQuote: null,
+  relevanceScore: product === "graduate_dev" ? 0 : 80,
+  relevanceReason: "اختبار.",
+  applyUrl: null,
+});
+
+const withDates = (opens: string | null, closes: string | null, nowISO: string, product = "coop") =>
+  fromClassification({
+    orgId: "sdaia",
+    sourceUrl: "https://example.gov.sa/coop",
+    text: TEXT,
+    nowISO,
+    prior: undefined,
+    firstTime: true,
+    c: withDatesInput(opens, closes, product),
+  });
+
+// 09:00 in Riyadh on the closing day is 06:00 UTC. The old comparison against
+// midnight UTC called this closed, on the one day a late applicant still had.
+const morningOfDeadline = "2026-10-15T06:00:00.000Z";
+check(
+  "a window is still open at nine in the morning on its closing day",
+  withDates("2026-10-01", "2026-10-15", morningOfDeadline).status === "closing_soon",
+  withDates("2026-10-01", "2026-10-15", morningOfDeadline).status,
+);
+check(
+  "it is closed once that day has ended in Riyadh",
+  withDates("2026-10-01", "2026-10-15", "2026-10-15T21:30:00.000Z").status === "closed",
+  withDates("2026-10-01", "2026-10-15", "2026-10-15T21:30:00.000Z").status,
+);
+check(
+  "a graduate-development record never surfaces as open, whatever dates it prints",
+  withDates("2026-10-01", "2026-12-31", morningOfDeadline, "graduate_dev").status === "unknown",
+  withDates("2026-10-01", "2026-12-31", morningOfDeadline, "graduate_dev").status,
+);
+check(
+  "the Hijri deadline is filled in",
+  withDates("2026-10-01", "2026-10-15", morningOfDeadline).closesHijri !== null,
+  String(withDates("2026-10-01", "2026-10-15", morningOfDeadline).closesHijri),
+);
+const relative = fromClassification({
+  orgId: "sdaia",
+  sourceUrl: "https://example.gov.sa/careers/coop",
+  text: TEXT,
+  nowISO: NOW,
+  prior: undefined,
+  firstTime: true,
+  c: { ...withDatesInput("2026-10-01", "2026-10-15"), applyUrl: "/apply/now" },
+});
+check(
+  "a relative apply link is resolved against the page it was found on",
+  relative.applyUrl === "https://example.gov.sa/apply/now",
+  String(relative.applyUrl),
+);
+
+const nonsense = fromClassification({
+  orgId: "sdaia",
+  sourceUrl: "https://example.gov.sa/careers/coop",
+  text: TEXT,
+  nowISO: NOW,
+  prior: undefined,
+  firstTime: true,
+  c: { ...withDatesInput(null, null), applyUrl: "قدّم عبر البوابة" },
+});
+check(
+  "a sentence is never stored as an apply link",
+  nonsense.applyUrl === null,
+  String(nonsense.applyUrl),
+);
+
 /* ---- live checks: two synthetic announcements, real model, real spend ---- */
 if (process.argv.includes("--live")) {
   const GRADUATE_DEV = `إعلان: برنامج تطوير الخريجين المنتهي بالتوظيف

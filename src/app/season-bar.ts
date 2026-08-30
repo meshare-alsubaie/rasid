@@ -15,6 +15,7 @@
  * Time runs left to right inside the track, as in the spec's sketch, while the
  * labels sit on the right where an Arabic reader meets them first.
  */
+import { endOfDeadline, startOfDay } from "../types";
 import type { Opportunity, Organisation, SourceHealth } from "../types";
 import { daysUntil } from "./data";
 
@@ -99,17 +100,36 @@ export function renderSeasonBar(lanes: LaneInput[], now = new Date()): string {
     let described: string;
 
     const opp = lane.opportunity;
-    const opens = opp?.opensISO ? Date.parse(opp.opensISO) : null;
-    const closes = opp?.closesISO ? Date.parse(opp.closesISO) : null;
+    const opens = opp?.opensISO ? startOfDay(opp.opensISO) : null;
+    const closes = opp?.closesISO ? endOfDeadline(opp.closesISO) : null;
 
-    if (opens !== null || closes !== null) {
-      const x1 = xOf(opens ?? start.getTime());
-      const x2 = xOf(closes ?? end.getTime());
+    if (opens !== null && closes !== null) {
+      const x1 = xOf(opens);
+      const x2 = xOf(closes);
       const soon = opp?.status === "closing_soon";
       const d = daysUntil(opp?.closesISO ?? null);
       body = `<rect class="${soon ? "seg-urgent" : "seg-open"} lane-anim" x="${x1}" y="${mid - 4}"
         width="${Math.max(3, x2 - x1)}" height="8" rx="2" style="animation-delay:${i * 90}ms" />`;
       described = soon && d !== null ? `نافذة تغلق بعد ${d} يوم` : "نافذة معلنة";
+    } else if (opens !== null || closes !== null) {
+      /*
+       * One date only. The old code filled the missing end from the edge of the
+       * axis, so an announcement that published an opening and no closing was
+       * drawn as a solid bar running to the end of February — in the same style
+       * the legend calls "نافذة معلنة بتواريخ منشورة". Most of that bar was
+       * invented. A single published date is now a single mark at the date that
+       * was actually published, with a faint line showing the direction the
+       * window runs in and nothing claimed about where it ends.
+       */
+      const known = opens ?? closes!;
+      const x = xOf(known);
+      const toward = opens !== null ? TRACK_X + TRACK_W : TRACK_X;
+      body = `<line class="seg-openended lane-anim" x1="${x}" y1="${mid}" x2="${toward}" y2="${mid}" style="animation-delay:${i * 90}ms" />
+        <rect class="seg-open lane-anim" x="${x - 1.5}" y="${mid - 4}" width="3" height="8" rx="1.5" style="animation-delay:${i * 90}ms" />`;
+      described =
+        opens !== null
+          ? "أُعلن تاريخ الفتح ولم يُعلن تاريخ الإغلاق"
+          : "أُعلن تاريخ الإغلاق ولم يُعلن تاريخ الفتح";
     } else if (lane.rolling) {
       body = `<line class="seg-rolling lane-anim" x1="${TRACK_X}" y1="${mid - 2}" x2="${TRACK_X + TRACK_W}" y2="${mid - 2}" style="animation-delay:${i * 90}ms" />
         <line class="seg-rolling lane-anim" x1="${TRACK_X}" y1="${mid + 2}" x2="${TRACK_X + TRACK_W}" y2="${mid + 2}" style="animation-delay:${i * 90}ms" />`;
@@ -121,10 +141,19 @@ export function renderSeasonBar(lanes: LaneInput[], now = new Date()): string {
        * axis, would put a shape under a date nobody published: the reader's eye
        * reads position as meaning, and there is no meaning here to read.
        */
-      body = `<text class="seg-unknown" x="${TRACK_X + 14}" y="${mid + 4}" text-anchor="middle">${broken ? "⚠" : "؟"}</text>`;
+      /*
+       * "unwatched" gets its own mark. It was folded in with the healthy "؟",
+       * whose legend says "المصدر يُقرأ، ولا شيء معلن" — so an organisation
+       * nobody is fetching at all claimed it was being read. That is the exact
+       * confusion `data.ts` created the state to prevent.
+       */
+      const mark = broken ? "⚠" : lane.health === "unwatched" ? "—" : "؟";
+      body = `<text class="seg-unknown" x="${TRACK_X + 14}" y="${mid + 4}" text-anchor="middle">${mark}</text>`;
       described = broken
         ? "المصدر لا يُقرأ الآن، والبيانات قد تكون قديمة"
-        : "لم يُعلن تاريخ فتح أو إغلاق";
+        : lane.health === "unwatched"
+          ? "لا يُقرأ هذا المصدر بعد، فلن يُرى الإعلان إن ظهر"
+          : "لم يُعلن تاريخ فتح أو إغلاق";
     }
 
     return `<g class="lane${broken ? " lane-broken" : ""}" role="button" tabindex="0"
@@ -162,8 +191,10 @@ export function renderSeasonBar(lanes: LaneInput[], now = new Date()): string {
     <ul class="legend">
       <li><span class="swatch" style="background:var(--live-lit)"></span> نافذة معلنة بتواريخ منشورة</li>
       <li><span class="swatch" style="background:var(--urgent-lit)"></span> تغلق خلال ٤٨ ساعة</li>
+      <li><span class="swatch" style="background:linear-gradient(90deg,var(--live-lit) 0 3px,transparent 3px)"></span> تاريخ واحد فقط منشور، والطرف الآخر غير معلن</li>
       <li><span class="swatch" style="border-top:2px solid var(--live-lit);border-bottom:2px solid var(--live-lit);background:none"></span> قناة بريد مفتوحة دائماً</li>
       <li><span class="swatch">؟</span> المصدر يُقرأ، ولا شيء معلن</li>
+      <li><span class="swatch">—</span> لا يُقرأ بعد، فلن يُرى الإعلان إن ظهر</li>
       <li><span class="swatch" style="color:var(--urgent-lit)">⚠</span> المصدر لا يُقرأ، والبيانات قد تكون قديمة</li>
     </ul>
   </div>`;

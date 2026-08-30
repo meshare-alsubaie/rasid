@@ -474,6 +474,16 @@ a {
   stroke-width: 1.5;
   opacity: 0.75;
 }
+/*
+ * One published date, the other end unknown. Dashed and faint on purpose: it
+ * must not read as a window, because only one of its two edges was announced.
+ */
+.season .seg-openended {
+  stroke: var(--live-lit);
+  stroke-width: 1.5;
+  stroke-dasharray: 2 4;
+  opacity: 0.5;
+}
 /* #6b7887 measured 4.00:1 on the panel and failed the 4.5:1 bar. This is
    5.20:1. The "?" is a statement that nothing is known, so it has to be as
    readable as anything else on the lane. */
@@ -685,6 +695,41 @@ a {
 .card .reason {
   margin: 0;
   font-size: var(--t-15);
+}
+
+/* Include/exclude filters that answer a decision rather than a curiosity. */
+.filter-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin-block: var(--s2) var(--s3);
+}
+.filter-toggle {
+  font-size: var(--t-13);
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+}
+.filter-toggle[aria-pressed="true"] {
+  border-color: rgba(11, 110, 79, 0.4);
+  background: rgba(11, 110, 79, 0.1);
+  color: var(--live);
+  font-weight: 600;
+}
+
+/* The evidence behind a watched source, kept small: it is there to be checked,
+   not read every time. The url wraps because these get long. */
+.src-note {
+  font-size: var(--t-13);
+  border-inline-start: 2px solid var(--hairline);
+  padding-inline-start: var(--s2);
+  margin-block: var(--s2);
+}
+.src-note a {
+  word-break: break-all;
 }
 
 /* ---------- notification diagnostics ---------- */

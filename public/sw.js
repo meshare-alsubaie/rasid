@@ -123,7 +123,9 @@ self.addEventListener("push", (event) => {
  * here rather than calling showNotification in the tab.
  */
 self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "test-notification") {
+  const msg = event.data;
+  if (!msg) return;
+  if (msg.type === "test-notification") {
     event.waitUntil(
       announce(
         {
@@ -134,6 +136,11 @@ self.addEventListener("message", (event) => {
         "local",
       ),
     );
+  }
+  // The fortnight-after-applying reminder. The page decides when it is due,
+  // because the marks it is based on never leave that device.
+  if (msg.type === "follow-up") {
+    event.waitUntil(announce({ title: msg.title, body: msg.body, tag: msg.tag }, "follow-up"));
   }
 });
 

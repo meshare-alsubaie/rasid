@@ -6,6 +6,7 @@
  * invents a value: where the pipeline stored null, this layer keeps null, and
  * the rendering decides how to say "not announced".
  */
+import { endOfDeadline } from "../types";
 import type {
   AggregatorSource,
   Opportunity,
@@ -98,5 +99,10 @@ export function timeAgo(iso: string | null): string {
   return `قبل ${days} يوم`;
 }
 
+/*
+ * Measured to the end of the published day in Riyadh, not to midnight UTC.
+ * Counting to the raw parse made a deadline read "بعد 0 يوم" from three in the
+ * morning on its final day, and negative for the rest of it.
+ */
 export const daysUntil = (iso: string | null): number | null =>
-  iso === null ? null : Math.ceil((Date.parse(iso) - Date.now()) / 86_400_000);
+  iso === null ? null : Math.ceil((endOfDeadline(iso) - Date.now()) / 86_400_000);

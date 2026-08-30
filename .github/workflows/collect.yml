@@ -33,6 +33,11 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Two commits, so a push-triggered run can see the state before the
+          # push. With the default depth of one there is no "before" to compare
+          # against and every announcement looks like old news.
+          fetch-depth: 2
 
       - uses: actions/setup-node@v4
         with:
@@ -82,6 +87,10 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           RASID_CONTACT: ${{ secrets.RASID_CONTACT }}
+          # On a push the new data is already in HEAD, so "before" has to be the
+          # commit the push started from. On any other trigger the collection
+          # above is still uncommitted and HEAD is already the previous state.
+          RASID_BEFORE_REF: ${{ github.event_name == 'push' && github.event.before || 'HEAD' }}
         run: npm run notify ${{ inputs.test_notification && '-- --test' || '' }}
 
       # The schema and the honesty rules. Deliberately after Notify: an alert is

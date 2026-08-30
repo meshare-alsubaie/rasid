@@ -245,7 +245,13 @@ export const liveAsk: Asker = async (excerpt, insist) => {
 export async function classify(text: string, ask: Asker = liveAsk): Promise<ClassifyResult> {
   const usage: Usage = { inputTokens: 0, outputTokens: 0 };
 
-  if (ask === liveAsk && process.env.ANTHROPIC_API_KEY === undefined) {
+  /*
+   * Falsy, not `undefined`. GitHub Actions substitutes an unconfigured secret
+   * with the empty string, so the loud, designed `no_credentials` failure never
+   * fired in CI — it went to the API with an empty key and came back as an
+   * opaque transport error instead of saying plainly that the key was missing.
+   */
+  if (ask === liveAsk && !process.env.ANTHROPIC_API_KEY?.trim()) {
     return {
       ok: false,
       stage: "no_credentials",

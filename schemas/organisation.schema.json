@@ -52,6 +52,7 @@
         "provenance": { "$ref": "#/definitions/LinkProvenance" },
         "verifiedAtISO": { "type": ["string", "null"], "format": "date-time" },
         "verifiedNote": { "type": "string", "minLength": 1 },
+        "coopConfirmed": { "type": "boolean" },
         "type": {
           "type": "string",
           "enum": [

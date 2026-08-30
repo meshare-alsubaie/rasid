@@ -15,6 +15,7 @@ import robotsParser from "robots-parser";
 import { fetch } from "undici";
 import { MAX_RETRIES, PER_HOST_GAP_MS, TIMEOUT_MS, USER_AGENT } from "./agent.js";
 import { renderPage } from "./browser.js";
+import { paced } from "./fetch.js";
 
 export interface RobotsVerdict {
   allowed: boolean;
@@ -81,10 +82,25 @@ async function load(origin: string): Promise<Entry> {
    * still fetched, still parsed, and still obeyed. Only the client changed,
    * and to a real browser rather than a plain client wearing a browser's name.
    */
-  const rendered = await renderPage(url);
+  const rendered = await paced(url, PER_HOST_GAP_MS, () => renderPage(url));
   if (rendered.ok) {
     const text = rendered.html.replace(/<[^>]+>/g, "").trim();
-    return { kind: "rules", robots: robotsParser(url, text) };
+    /*
+     * It has to look like a robots file before it is treated as one.
+     *
+     * Without this check the fallback could turn a refusal into permission: a
+     * host answering 200 with a block page or a Cloudflare interstitial parses
+     * to zero rules, and zero rules means everything is allowed. That is the
+     * one direction this gate must never fail in, so an unrecognisable body is
+     * a denial, exactly like no answer at all.
+     */
+    if (/^\s*(user-agent|allow|disallow|sitemap|crawl-delay)\s*:/im.test(text)) {
+      return { kind: "rules", robots: robotsParser(url, text) };
+    }
+    return {
+      kind: "deny_all",
+      reason: `${lastError}; a browser reached it but the body was not a robots.txt, so it is treated as a refusal`,
+    };
   }
 
   return { kind: "deny_all", reason: `${lastError}; a browser could not reach it either` };
@@ -124,6 +140,34 @@ export async function checkRobots(target: string): Promise<RobotsVerdict> {
     // Honour a longer crawl-delay, never a shorter one than our own floor.
     crawlDelayMs: Math.max(PER_HOST_GAP_MS, (delaySec ?? 0) * 1000),
   };
+}
+
+/**
+ * Re-check robots.txt when a fetch lands on a different host than it asked for.
+ *
+ * Redirects are followed, but permission was only ever asked of the origin we
+ * started from. `bankalbilad.com` redirecting to `bankalbilad.com.sa` is a real
+ * case in this dataset: the page that was read, stored and re-fetched every six
+ * hours belonged to a host whose robots.txt had never been consulted. Same
+ * origin needs no second question, so this costs nothing in the normal case.
+ */
+export async function checkFinalUrl(
+  requested: string,
+  finalUrl: string | undefined,
+): Promise<RobotsVerdict | null> {
+  if (!finalUrl) return null;
+  try {
+    if (new URL(finalUrl).origin === new URL(requested).origin) return null;
+  } catch {
+    return null;
+  }
+  const verdict = await checkRobots(finalUrl);
+  return verdict.allowed
+    ? null
+    : {
+        ...verdict,
+        reason: `redirected to ${new URL(finalUrl).origin}, whose robots.txt refuses it: ${verdict.reason}`,
+      };
 }
 
 /** Test seam: forget cached robots.txt files. */

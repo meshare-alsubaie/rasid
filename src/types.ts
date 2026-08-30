@@ -122,6 +122,19 @@ export type RenderMode = "static" | "browser";
 
 export interface Source extends VerifiedLink {
   type: SourceType;
+  /**
+   * Whether the page said, in its own words, that it is about cooperative
+   * training — and not merely that it opened and was readable.
+   *
+   * "official" answers a narrower question than a reader expects: the page was
+   * opened, read, and is what it claims to be. A company homepage claiming to
+   * be a company homepage passes that honestly, and most watched sources are
+   * exactly that. But an audit found sixty-one of them presented with the same
+   * confidence as the handful that actually carry a co-op announcement, so the
+   * distinction is now stored rather than left to be inferred from a note, and
+   * the interface says which it is looking at.
+   */
+  coopConfirmed?: boolean;
   checkFrequencyHours: number;
   renderMode: RenderMode;
   /**
@@ -392,6 +405,18 @@ export interface SourceSnapshot {
   orgId: string;
   /** SHA-256 of the extracted main text. null until a fetch succeeds. */
   contentHash: string | null;
+  /**
+   * A short hash per block of the page, so the next run can tell *which* part
+   * moved rather than only that something did.
+   *
+   * Spec 5.3 asks for the changed block to be what the classifier sees. Without
+   * this the whole page was hashed and then the first 6000 characters were sent
+   * — so on a long portal the model was handed the top of the page while the
+   * announcement sat further down, returned "not an announcement", and the
+   * record was dropped with nothing flagged for review. A silent miss on the
+   * one event the app exists to catch.
+   */
+  blockHashes?: string[];
   extractedChars: number | null;
   /** Readability, or the noisier stripped-body fallback. Readers should know. */
   extractionMethod: "readability" | "body_fallback" | null;
@@ -431,4 +456,61 @@ export interface SourceHealth {
    * as green. Any failure is now degraded; >5 is still broken.
    */
   state: HealthState;
+}
+
+/**
+ * The Umm al-Qura date for a Gregorian instant, which spec 5 asks to be shown
+ * beside the Gregorian one.
+ *
+ * This is a conversion, not an estimate. `islamic-umalqura` is the Umm al-Qura
+ * calendar as shipped in ICU — the same table the Saudi civil calendar is
+ * printed from — so this is not the arithmetic Hijri approximation that was
+ * refused earlier as a guess. If a runtime were built without full ICU the
+ * format would silently fall back to another calendar, so the output is checked
+ * for digits and discarded when it looks wrong: a wrong deadline is the one
+ * error this application must never make.
+ *
+ * It lives here, with the types and no imports, because both the collector and
+ * the browser need it and the browser must not pull in the pipeline.
+ */
+export function hijriOf(iso: string | null): string | null {
+  if (iso === null) return null;
+  const at = new Date(iso);
+  if (Number.isNaN(at.getTime())) return null;
+  try {
+    const text = new Intl.DateTimeFormat("ar-SA-u-ca-islamic-umalqura", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    }).format(at);
+    // ar-SA already ends the year with "هـ", so nothing is appended here.
+    return /[0-9٠-٩]/.test(text) ? text : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * The last instant of a published deadline, in Riyadh.
+ *
+ * Application dates are published as days — `YYYY-MM-DD` — and `Date.parse`
+ * reads a bare day as midnight UTC. That made "closes 15 October" expire at
+ * three in the morning Riyadh time on the fifteenth, so the app spent the whole
+ * of a window's final day insisting it was over. A deadline day is open until
+ * it ends, and it ends where the user is. A full timestamp, if a page ever
+ * publishes one, is taken exactly as given.
+ */
+const RIYADH_OFFSET_MS = 3 * 60 * 60 * 1000;
+
+export function endOfDeadline(iso: string): number {
+  return /^\d{4}-\d{2}-\d{2}$/.test(iso)
+    ? Date.parse(`${iso}T23:59:59.999Z`) - RIYADH_OFFSET_MS
+    : Date.parse(iso);
+}
+
+/** The first instant of a published day, read the same way. */
+export function startOfDay(iso: string): number {
+  return /^\d{4}-\d{2}-\d{2}$/.test(iso)
+    ? Date.parse(`${iso}T00:00:00.000Z`) - RIYADH_OFFSET_MS
+    : Date.parse(iso);
 }

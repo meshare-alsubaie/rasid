@@ -24,6 +24,10 @@
       "contentHash": {
         "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[0-9a-f]{64}$" }]
       },
+      "blockHashes": {
+        "type": "array",
+        "items": { "type": "string", "pattern": "^[0-9a-f]{16}$" }
+      },
       "extractedChars": { "type": ["integer", "null"], "minimum": 0 },
       "extractionMethod": {
         "oneOf": [{ "type": "null" }, { "type": "string", "enum": ["readability", "body_fallback"] }]

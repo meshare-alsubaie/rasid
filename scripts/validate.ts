@@ -148,6 +148,23 @@ function checkLink(
     if (opts.requireNote !== false && !link.verifiedNote) {
       err("link_note", at, `${label} was verified but nothing records what was seen`);
     }
+    /*
+     * types.ts sets the bar: the note must carry the page's real title *and* a
+     * phrase read on it. Checking only that the string was non-empty meant a
+     * note of "ok" passed, which is the check that should have caught a link
+     * flying "official" on nothing at all.
+     */
+    if (opts.requireNote !== false && link.verifiedNote) {
+      const note = link.verifiedNote;
+      const hasTitle = note.includes("عنوان الصفحة") || /["“”«»]/.test(note);
+      if (!hasTitle || note.length < 60) {
+        err(
+          "link_note_thin",
+          at,
+          `${label} carries a verification note that records neither the page title nor anything read on it`,
+        );
+      }
+    }
     if (Date.parse(link.verifiedAtISO) > Date.now()) {
       err("link_future", at, `${label} carries a verification date in the future`);
     }
@@ -161,6 +178,8 @@ function checkLink(
 /* ------------------------------------------------------------------ */
 
 const orgIds = new Set<string>();
+/** Aggregators are watched sources too, so snapshots and health may key on them. */
+const aggregatorIds = new Set((aggregators ?? []).map((a) => a.id));
 
 if (orgs) {
   for (const o of orgs) {
@@ -190,11 +209,23 @@ if (orgs) {
         "requiresZeroCourses has a value with unknown provenance, which makes it a guess",
       );
     }
-    if (z.provenance === "official" && !z.sourceUrl) {
-      warn(
+    /*
+     * An error now, and for either value.
+     *
+     * It was a warning that only looked at `value === true`, so an organisation
+     * could carry `value: false, provenance: "official"` with no quote and no
+     * url at all — and the interface renders exactly that as the green chip
+     * "لم تشترط تصفير المواد". One organisation did. The classifier's own
+     * prompt says it best: the absence of a published rule is not evidence of
+     * flexibility, it is simply absence. Claiming a published "no" needs the
+     * same proof as claiming a published "yes"; without it the honest value is
+     * null.
+     */
+    if (z.provenance === "official" && (!z.sourceUrl || !z.quote)) {
+      err(
         "official_without_source",
         at,
-        "requiresZeroCourses is marked official but no sourceUrl backs it",
+        "requiresZeroCourses is marked official but has no quote and url proving it was published",
       );
     }
 
@@ -322,7 +353,6 @@ if (snapshots) {
       o.sources.filter((s) => s.verifiedAtISO !== null).map((s) => s.url),
     ),
   );
-  const aggregatorIds = new Set((aggregators ?? []).map((a) => a.id));
   for (const s of snapshots) {
     const at = `snapshot:${s.orgId}`;
     if (orgs && !orgIds.has(s.orgId) && !aggregatorIds.has(s.orgId)) {
@@ -399,14 +429,33 @@ if (opportunities) {
     if (p.opensISO && p.closesISO && p.closesISO < p.opensISO) {
       err("window_order", at, "window closes before it opens");
     }
+    /*
+     * The worst false state the app can hold. "مفتوح الآن" with no date behind
+     * it is a green light the pipeline cannot have earned, and nothing checked
+     * for it — a hand edit or a future code path could have introduced it and
+     * the dataset would have passed clean.
+     */
+    if ((p.status === "open" || p.status === "closing_soon") && !p.opensISO && !p.closesISO) {
+      err("open_without_dates", at, "a window cannot be open when no date was ever published");
+    }
+    if (p.statesZeroCoursesRule && !p.zeroCoursesQuote) {
+      err(
+        "rule_without_quote",
+        at,
+        "statesZeroCoursesRule is true but the published wording was not kept",
+      );
+    }
   }
 }
 
 if (health) {
   for (const h of health) {
     const at = `health:${h.orgId}`;
-    if (orgs && !orgIds.has(h.orgId)) {
-      err("unknown_org", at, `orgId "${h.orgId}" is not in organisations.json`);
+    // Aggregators are watched too, and the collector keys their health records
+    // by aggregator id. Checking only organisation ids meant the first verified
+    // aggregator link would fail the run and throw the whole collection away.
+    if (orgs && !orgIds.has(h.orgId) && !aggregatorIds.has(h.orgId)) {
+      err("unknown_org", at, `orgId "${h.orgId}" is in neither organisations nor aggregators`);
     }
     // Tightened from the spec's ">1": one failure is already worth showing.
     const expected =

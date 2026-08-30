@@ -23,6 +23,23 @@ function Say($msg) {
 # Task Scheduler starts with a bare environment, so the tools are named here.
 $env:Path = "D:\tools\node;C:\Program Files\GitHub CLI;C:\Program Files\Git\cmd;$env:Path"
 
+# Spec 5.1 asks the User-Agent to carry a contact address, so a site owner who
+# sees this traffic can reach a person. It was set in CI and not here, which
+# meant the run that actually reads these sites was the anonymous one. The value
+# is a personal email, so it is read from a gitignored file and never committed.
+$contactFile = Join-Path $repo ".contact.local"
+if (Test-Path $contactFile) {
+    $env:RASID_CONTACT = (Get-Content $contactFile -Raw -Encoding utf8).Trim()
+}
+
+# The classifier refuses to run without the student profile rather than guess
+# one, so the scheduled run reads it from the same gitignored file CI keeps in a
+# secret. Without it every changed page goes to manual review instead.
+$profileFile = Join-Path $repo ".profile.local"
+if ((Test-Path $profileFile) -and -not $env:RASID_STUDENT_PROFILE) {
+    $env:RASID_STUDENT_PROFILE = (Get-Content $profileFile -Raw -Encoding utf8)
+}
+
 try {
     Say "start"
 

@@ -23,13 +23,36 @@ const DRY = process.argv.includes("--dry-run");
 const TEST = process.argv.includes("--test");
 const read = <T>(p: string): T[] => JSON.parse(readFileSync(p, "utf8").replace(/^﻿/, "")) as T[];
 
-/** The same file as it stood at the last commit. Empty on the first ever run. */
+/**
+ * The file as it stood before this run's data landed. Empty on the first run.
+ *
+ * Which commit that is depends on how the run was started, and getting it wrong
+ * silenced the app completely. When the collection happened here, the new data
+ * is still uncommitted, so `HEAD` is the previous state and is right. But the
+ * machine that can actually reach the .gov.sa sites collects locally, commits,
+ * and pushes — and the CI run that answers that push has the new data *in*
+ * `HEAD`. Comparing `HEAD` to the working tree then compares a commit with
+ * itself: every record looks unchanged, `decide` finds nothing newly true, and
+ * not one notification is ever sent by the only collector that works.
+ *
+ * So the workflow passes the pre-push SHA in RASID_BEFORE_REF for that case.
+ */
+const BEFORE_REFS = [process.env.RASID_BEFORE_REF?.trim(), "HEAD~1", "HEAD"].filter(
+  (r): r is string => Boolean(r),
+);
+
 function fromGit<T>(path: string): T[] {
-  try {
-    return JSON.parse(execFileSync("git", ["show", `HEAD:${path}`], { encoding: "utf8" })) as T[];
-  } catch {
-    return [];
+  for (const ref of BEFORE_REFS) {
+    try {
+      return JSON.parse(
+        execFileSync("git", ["show", `${ref}:${path}`], { encoding: "utf8" }),
+      ) as T[];
+    } catch {
+      // A shallow clone may not hold the exact pre-push commit; the next ref is
+      // still a truthful "before", and the sent-log below stops any repeat.
+    }
   }
+  return [];
 }
 
 const orgs = read<Organisation>("data/organisations.json");
@@ -41,7 +64,7 @@ const healthBefore = fromGit<SourceHealth>("data/health.json");
 const names = new Map(orgs.map((o) => [o.id, o.nameAr]));
 const now = new Date();
 
-const notices = decide({
+const fresh = decide({
   before,
   after,
   healthBefore,
@@ -49,6 +72,32 @@ const notices = decide({
   nameOf: (id) => names.get(id) ?? id,
   threshold: Number(process.env.RASID_THRESHOLD ?? 60),
 });
+
+/*
+ * Anything decided but not yet sent, carried over from earlier runs.
+ *
+ * This queue exists because of a bug that would have cost a real deadline.
+ * `decide` compares this run against the previous commit, so a notice is only
+ * ever produced once, on the run where the thing became true. During quiet
+ * hours nothing is pushed — and by the next run the announcement was no longer
+ * new, so the notice was never regenerated and simply vanished. An announcement
+ * that opened at one in the morning would have been silently swallowed.
+ *
+ * So an undelivered notice is now kept until it is actually delivered. Sent
+ * keys still guard against repeats, and the day-scoped keys mean a stale entry
+ * eventually stops matching anything rather than nagging forever.
+ */
+const PENDING_FILE = "data/pending-notices.json";
+/** A notice nobody could deliver for a week is stale news, not a pending one. */
+const PENDING_TTL_MS = 7 * 86_400_000;
+type Held = Notice & { queuedISO: string };
+
+const carried = read<Held>(PENDING_FILE).filter(
+  (n) => now.getTime() - Date.parse(n.queuedISO) < PENDING_TTL_MS,
+);
+const seen = new Set<string>();
+const notices: Held[] = [...carried, ...fresh.map((n) => ({ ...n, queuedISO: now.toISOString() }))]
+  .filter((n) => !seen.has(n.key) && seen.add(n.key));
 
 const quietStart = Number(process.env.RASID_QUIET_START ?? 23);
 const quietEnd = Number(process.env.RASID_QUIET_END ?? 7);
@@ -71,8 +120,14 @@ const { push, digestOnly } =
       }
     : split(notices, log, now, quiet);
 
-console.log(`notices: ${notices.length} new, ${push.length} to push, ${digestOnly.length} to digest`);
-if (quiet) console.log(`quiet hours ${quietStart}:00-${quietEnd}:00, nothing is pushed now`);
+console.log(
+  `notices: ${fresh.length} new, ${carried.length} carried over, ${push.length} to push, ${digestOnly.length} to digest`,
+);
+if (quiet) {
+  console.log(
+    `quiet hours ${quietStart}:00-${quietEnd}:00 Riyadh, nothing is pushed now; it is held, not dropped`,
+  );
+}
 for (const n of [...push, ...digestOnly]) console.log(`  ${n.kind.padEnd(14)} ${n.title} — ${n.body}`);
 
 /* ---------- web push ---------- */
@@ -82,22 +137,31 @@ const vapidPrivate = process.env.VAPID_PRIVATE_KEY;
 const subscriptionRaw = process.env.RASID_PUSH_SUBSCRIPTION;
 const contact = process.env.RASID_CONTACT;
 
-async function sendPush(items: Notice[]): Promise<number> {
-  if (items.length === 0) return 0;
+/**
+ * Returns the keys that actually went out, not how many.
+ *
+ * Counting was wrong in a way that lost mail in both directions: the caller
+ * logged `push.slice(0, sent)`, so when the second of three sends failed, the
+ * first two positions were logged — marking the failed one as delivered, never
+ * to be retried — while the third, which did go out, was left unlogged and sent
+ * again next run. Only the keys that succeeded are truthful.
+ */
+async function sendPush(items: Notice[]): Promise<string[]> {
+  if (items.length === 0) return [];
   if (!vapidPublic || !vapidPrivate || !subscriptionRaw) {
     console.log("push: skipped, VAPID keys or the device subscription are not set");
-    return 0;
+    return [];
   }
   webpush.setVapidDetails(contact ? `mailto:${contact}` : "https://github.com/", vapidPublic, vapidPrivate);
   const subscription = JSON.parse(subscriptionRaw) as webpush.PushSubscription;
 
-  let sent = 0;
+  const sent: string[] = [];
   for (const n of items) {
     try {
       if (!DRY) {
         await webpush.sendNotification(subscription, JSON.stringify({ title: n.title, body: n.body }));
       }
-      sent++;
+      sent.push(n.key);
     } catch (err) {
       // A dead subscription is worth saying out loud: it means his phone has
       // stopped receiving and he would otherwise never find out.
@@ -137,18 +201,41 @@ async function sendDigest(items: Notice[]): Promise<boolean> {
   return true;
 }
 
-const pushed = await sendPush(push);
+const pushedKeys = await sendPush(push);
 const digested = await sendDigest(digestOnly);
-console.log(`sent: ${pushed} push, ${digested ? "1" : "0"} digest${DRY ? " (dry run)" : ""}`);
+console.log(
+  `sent: ${pushedKeys.length} push, ${digested ? "1" : "0"} digest${DRY ? " (dry run)" : ""}`,
+);
 
 /* Only what actually went out is logged, so a failed send is retried next run. */
-if (!DRY) {
-  const sentKeys = [
-    ...push.slice(0, pushed).map((n) => n.key),
+if (!DRY && !TEST) {
+  const sentKeys = new Set([
+    ...pushedKeys,
     ...(digested ? digestOnly.map((n) => n.key) : []),
-  ];
-  const merged = [...log, ...sentKeys.map((key) => ({ key, sentISO: now.toISOString() }))]
+  ]);
+  /*
+   * `via` separates the two channels in the log, because the daily cap in
+   * `split` counts entries for today and the cap is six *pushes*. Before this,
+   * a quiet night that emailed nine items filled the day's budget and demoted
+   * every real push the next morning to the digest.
+   */
+  const pushedSet = new Set(pushedKeys);
+  const merged = [
+    ...log,
+    ...[...sentKeys].map((key) => ({
+      key,
+      sentISO: now.toISOString(),
+      via: pushedSet.has(key) ? ("push" as const) : ("digest" as const),
+    })),
+  ]
     // Keep a month. Long enough that nothing repeats, short enough to stay small.
     .filter((e) => Date.now() - Date.parse(e.sentISO) < 31 * 86_400_000);
   writeFileSync("data/notifications.json", JSON.stringify(merged, null, 2) + "\n", "utf8");
+
+  // Whatever did not go out waits for the next run rather than evaporating.
+  const stillWaiting = notices.filter((n) => !sentKeys.has(n.key));
+  writeFileSync(PENDING_FILE, JSON.stringify(stillWaiting, null, 2) + "\n", "utf8");
+  if (stillWaiting.length > 0) {
+    console.log(`held for the next run: ${stillWaiting.length}`);
+  }
 }

@@ -123,11 +123,23 @@ check("quiet hours still digest everything", quiet.digestOnly.length === 9);
 const repeat = split(many, many.map((n) => ({ key: n.key, sentISO: now.toISOString() })), now, false);
 check("nothing already sent is sent twice", repeat.push.length === 0 && repeat.digestOnly.length === 0);
 
-console.log("\nquiet-hour boundaries");
-check("23:00 is quiet when quiet starts at 23", inQuietHours(new Date(2026, 8, 1, 23), 23, 7));
-check("07:00 is not quiet when quiet ends at 7", !inQuietHours(new Date(2026, 8, 1, 7), 23, 7));
-check("03:00 is quiet across midnight", inQuietHours(new Date(2026, 8, 1, 3), 23, 7));
-check("12:00 is never quiet", !inQuietHours(new Date(2026, 8, 1, 12), 23, 7));
+/*
+ * Written as UTC instants, deliberately. Riyadh is UTC+3 and never moves, so
+ * each of these is one unambiguous moment, and the test now says the same thing
+ * on the owner's machine and on a runner in another timezone — which is the
+ * whole point of the fix it guards.
+ */
+console.log("\nquiet-hour boundaries (Riyadh)");
+const riyadh = (hhmmZ: string): Date => new Date(`2026-09-01T${hhmmZ}:00.000Z`);
+check("23:00 Riyadh is quiet when quiet starts at 23", inQuietHours(riyadh("20:00"), 23, 7));
+check("07:00 Riyadh is not quiet when quiet ends at 7", !inQuietHours(riyadh("04:00"), 23, 7));
+check("03:00 Riyadh is quiet across midnight", inQuietHours(riyadh("00:00"), 23, 7));
+check("12:00 Riyadh is never quiet", !inQuietHours(riyadh("09:00"), 23, 7));
+check(
+  "the runner's own timezone does not change the answer",
+  inQuietHours(riyadh("20:00"), 23, 7) && !inQuietHours(riyadh("20:00"), 23, 7, "UTC"),
+  "20:00Z is 23:00 in Riyadh but 20:00 in UTC",
+);
 
 console.log(`\n${failures === 0 ? "all checks passed" : `${failures} CHECK(S) FAILED`}`);
 process.exit(failures === 0 ? 0 : 1);

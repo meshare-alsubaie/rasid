@@ -11,6 +11,7 @@
 import "./style.css";
 import { loadDataset, formatDate, timeAgo, daysUntil, type Dataset } from "./data";
 import { renderSeasonBar, type LaneInput } from "./season-bar";
+import { hijriOf } from "../types";
 import type { Opportunity, Organisation } from "../types";
 
 type Tab = "season" | "orgs" | "mine" | "settings";
@@ -68,6 +69,11 @@ applyTheme();
 let tab: Tab = "season";
 let sector = "";
 let query = "";
+let tierFilter = "";
+let cityFilter = "";
+let onlyNoZeroCourses = false;
+let onlyStipend = false;
+let onlyMyMajor = false;
 let bannerDismissed = false;
 let data: Dataset;
 
@@ -128,6 +134,10 @@ function opportunityCard(o: Opportunity): string {
           ? null
           : `${formatDate(o.closesISO)}${days !== null && days >= 0 ? ` · بعد ${days} يوم` : ""}`,
       )}
+      ${/* Spec 5: the Umm al-Qura date beside the Gregorian one. Computed here
+            as well as stored, so records classified before it existed still
+            show it rather than waiting for the page to change again. */ ""}
+      ${fact("هجرياً", o.closesHijri ?? hijriOf(o.closesISO))}
       ${fact("المقاعد", o.seats === null ? null : String(o.seats))}
       ${fact("المكافأة", o.stipendSAR === null ? null : `${o.stipendSAR} ريال`)}
     </dl>
@@ -166,8 +176,17 @@ function opportunityCard(o: Opportunity): string {
  * actually asks for: what is open today, answered before anything is read.
  */
 function answerBlock(): string {
-  const open = data.opportunities.filter((o) => o.status === "open" || o.status === "closing_soon");
-  const watched = data.health.length;
+  /*
+   * Sorted before the superlative is spoken. The line said "أقربها إغلاقاً" and
+   * then printed whichever record happened to be first in the file — which is
+   * hash order, not date order. A confident claim over unsorted data, on the
+   * second line of the home screen. Records with no closing date sort last:
+   * they cannot be the nearest to closing, because nothing said when they close.
+   */
+  const open = data.opportunities
+    .filter((o) => o.status === "open" || o.status === "closing_soon")
+    .sort((a, b) => (daysUntil(a.closesISO) ?? Infinity) - (daysUntil(b.closesISO) ?? Infinity));
+  const watched = data.health.filter((h) => h.lastSuccessISO !== null).length;
   const unread = data.health.filter((h) => h.state !== "healthy").length;
   const tracked = data.opportunities.length;
 
@@ -176,16 +195,22 @@ function answerBlock(): string {
       ? `<div class="headline is-live">${open.length} نافذة مفتوحة الآن</div>`
       : `<div class="headline">لا شيء مفتوح اليوم</div>`;
 
+  const soonest = open[0]!;
   const sub =
     open.length > 0
-      ? `أقربها إغلاقاً: ${esc(open[0]!.titleAr)}.`
+      ? soonest.closesISO !== null
+        ? `أقربها إغلاقاً: ${esc(soonest.titleAr)}.`
+        : `منها: ${esc(soonest.titleAr)} — ولم تُعلن أي منها تاريخ إغلاق.`
       : `لم تنشر أي جهة محقّقة تاريخ فتح بعد. ${tracked} برنامجاً قائماً تحت المراقبة، وسيظهر هنا أول ما يُعلَن.`;
 
   return `<section class="answer" aria-label="الحالة اليوم">
     ${headline}
     <p class="sub">${sub}</p>
     <div class="tally">
-      <span><b>${watched}</b> مصدراً مراقَباً</span>
+      ${/* Sources that have actually been read at least once. The count used to
+            be every health record, which includes ones that have never once
+            succeeded — claiming to watch a page nobody has ever read. */ ""}
+      <span><b>${watched}</b> مصدراً قُرئ فعلاً</span>
       <span><b>${tracked}</b> برنامجاً معروفاً</span>
       ${unread > 0 ? `<span class="warn"><b>${unread}</b> مصدراً لا يُقرأ</span>` : ""}
     </div>
@@ -245,9 +270,28 @@ function seasonScreen(): string {
 
 function orgsScreen(): string {
   const sectors = [...new Set(data.orgs.map((o) => o.sector))].sort();
+  const cities = [...new Set(data.orgs.flatMap((o) => o.city))].sort((a, b) => a.localeCompare(b));
+
+  /*
+   * Spec 6.2B asks for six filters; the screen had two. The four that were
+   * missing are the ones that answer a decision rather than a curiosity — a
+   * student with unfinished courses needs the zero-courses filter more than a
+   * search box. Each is a plain include/exclude, and none of them can turn an
+   * unknown into a yes: `يقبل تخصّصي` shows organisations that published a
+   * match, and silence never counts as one.
+   */
   const list = data.orgs
-    .filter((o) => (sector === "" || o.sector === sector) && (query === "" || o.nameAr.includes(query)))
+    .filter((o) => sector === "" || o.sector === sector)
+    .filter((o) => query === "" || o.nameAr.includes(query) || o.nameEn.toLowerCase().includes(query.toLowerCase()))
+    .filter((o) => tierFilter === "" || o.tier === tierFilter)
+    .filter((o) => cityFilter === "" || o.city.includes(cityFilter))
+    .filter((o) => !onlyNoZeroCourses || o.requiresZeroCourses.value === false)
+    .filter((o) => !onlyStipend || (o.stipend.amountSAR !== null && o.stipend.amountSAR > 0))
+    .filter((o) => !onlyMyMajor || o.acceptsUserMajor === true)
     .sort((a, b) => "SABC".indexOf(a.tier) - "SABC".indexOf(b.tier) || a.nameAr.localeCompare(b.nameAr));
+
+  const toggle = (id: string, label: string, on: boolean): string =>
+    `<button class="filter-toggle" data-filter="${id}" aria-pressed="${on}">${label}</button>`;
 
   return `<div class="filters">
       <input id="q" type="search" placeholder="ابحث باسم الجهة" value="${esc(query)}" aria-label="ابحث باسم الجهة" />
@@ -255,8 +299,22 @@ function orgsScreen(): string {
         <option value="">كل القطاعات</option>
         ${sectors.map((s) => `<option value="${s}"${s === sector ? " selected" : ""}>${s}</option>`).join("")}
       </select>
+      <select id="tier" aria-label="الفئة">
+        <option value="">كل الفئات</option>
+        ${["S", "A", "B", "C"].map((t) => `<option value="${t}"${t === tierFilter ? " selected" : ""}>فئة ${t}</option>`).join("")}
+      </select>
+      <select id="city" aria-label="المدينة">
+        <option value="">كل المدن</option>
+        ${cities.map((c) => `<option value="${esc(c)}"${c === cityFilter ? " selected" : ""}>${esc(c)}</option>`).join("")}
+      </select>
     </div>
-    <p class="count-line">${list.length} جهة من ${data.orgs.length}. الشريحة المتقطّعة تعني «غير معروف»، لا «لا بأس».</p>
+    <div class="filter-toggles">
+      ${toggle("zero", "لا تشترط تصفير المواد", onlyNoZeroCourses)}
+      ${toggle("stipend", "لها مكافأة معلنة", onlyStipend)}
+      ${toggle("major", "تقبل تخصّصي", onlyMyMajor)}
+    </div>
+    <p class="count-line">${list.length} جهة من ${data.orgs.length}. الشريحة المتقطّعة تعني «غير معروف»، لا «لا بأس».
+      ${onlyNoZeroCourses || onlyStipend || onlyMyMajor ? "هذه المرشِّحات تُظهر ما نُشر صراحةً فقط، والصمت ليس موافقة." : ""}</p>
     <ul class="cards">
       ${list
         .map(
@@ -406,6 +464,45 @@ function notificationsCard(): string {
   </div>`;
 }
 
+const FOLLOW_UP_DAYS = 14;
+const REMINDED_KEY = "rasid.reminded.v1";
+
+/**
+ * The follow-up the spec asks for: a fortnight after marking something
+ * "applied", say so.
+ *
+ * It has to happen here rather than in the collector, and that is a consequence
+ * of the design rather than an oversight. Marks live in this browser's storage
+ * because there is no account and no database, so the only place that knows a
+ * fortnight has passed is the device holding the mark. It fires once per
+ * opportunity, on the first open after the day arrives.
+ */
+function checkFollowUps(): void {
+  if (!("serviceWorker" in navigator)) return;
+  if (!("Notification" in window) || Notification.permission !== "granted") return;
+
+  const reminded = readJSON<Record<string, string>>(REMINDED_KEY, {});
+  const due = Object.entries(marks).filter(([id, v]) => {
+    if (v.mark !== "applied" || reminded[id]) return false;
+    return Date.now() - Date.parse(v.atISO) >= FOLLOW_UP_DAYS * 86_400_000;
+  });
+  if (due.length === 0) return;
+
+  void navigator.serviceWorker.ready.then((reg) => {
+    for (const [id] of due) {
+      const title = data.opportunities.find((o) => o.id === id)?.titleAr ?? "فرصة قدّمت عليها";
+      reg.active?.postMessage({
+        type: "follow-up",
+        title: "⏱ مضى أسبوعان على تقديمك",
+        body: `${title} — تابع الجهة إن لم يصلك ردّ.`,
+        tag: `rasid-follow-${id}`,
+      });
+      reminded[id] = new Date().toISOString();
+    }
+    writeJSON(REMINDED_KEY, reminded);
+  });
+}
+
 /**
  * Fires the test through the worker rather than the page, because the worker is
  * the path a real push takes. A notification that only works from the tab would
@@ -429,14 +526,25 @@ async function testNotification(): Promise<void> {
   window.setTimeout(() => void readPushDiag(), 1500);
 }
 
+/**
+ * How many watched pages actually said they were about cooperative training.
+ *
+ * The distinction is the difference between "we are watching the right page"
+ * and "we are watching a page". Reporting only the total let eighty-six of the
+ * second kind be read as the first.
+ */
+function confirmedPages(): number {
+  return data.orgs.filter((o) => o.sources.some((s) => s.coopConfirmed === true)).length;
+}
+
 function settingsScreen(): string {
-  const verified = data.orgs.filter((o) => o.manualCheckUrl !== null).length;
   return `<div class="cards">
     <div class="card">
       <h3>ما الذي يضمنه هذا التطبيق، وما الذي لا يضمنه</h3>
       <p class="reason">
-        يراقب ${data.health.length} مصدراً محقّقاً فُتح كل منها وقُرئ بنصّه، من أصل ${data.orgs.length} جهة في القاعدة.
-        هذا يعني أن ${data.orgs.length - verified} جهة ليس لها رابط محقّق بعد، ولن يراها التطبيق إن أعلنت.
+        يراقب ${data.health.length} مصدراً فُتح كل منها وقُرئ بنصّه، من أصل ${data.orgs.length} جهة في القاعدة.
+        ${confirmedPages()} منها صفحة قالت عن نفسها إنها للتدريب التعاوني؛ والبقية صفحات حقيقية للجهة
+        تُراقَب لأن الإعلان قد يظهر عليها، لا لأنها أثبتت أنها صفحة تدريب. الفرق مذكور داخل كل جهة.
       </p>
       <p class="reason">
         لا يَعِد بأنه سيرى كل إعلان. الجهات تنشر في أماكن مختلفة وبلا تقويم مسبق،
@@ -463,6 +571,27 @@ function settingsScreen(): string {
       </ul>
     </div>
     ${notificationsCard()}
+    <div class="card">
+      <h3>ساعات الصمت وحدّ التنبيهات</h3>
+      <dl class="facts">
+        ${fact("لا تُرسل تنبيهات بين", "١١ مساءً و٧ صباحاً بتوقيت الرياض")}
+        ${fact("أقصى عدد تنبيهات في اليوم", "٦، والباقي يُؤجَّل لا يُلغى")}
+        ${fact("دورية الفحص", "كل ٦ ساعات")}
+      </dl>
+      <p class="reason">
+        هذه القيم تُضبط في الجولة الآلية نفسها، لا في المتصفّح، لأن الإرسال يحدث والتطبيق مغلق.
+        عُرضت هنا لتعرفها، ولم تُعرض كأزرار لأن ضغطها لن يغيّر شيئاً — وزرّ لا يفعل شيئاً أسوأ من غيابه.
+      </p>
+    </div>
+    <div class="card">
+      <h3>افحص الآن</h3>
+      <p class="reason">
+        يعيد تحميل البيانات من الشبكة متجاوزاً النسخة المخزّنة. لا يشغّل جولة قراءة جديدة للجهات:
+        تلك تعمل كل ٦ ساعات على جهازك وعلى GitHub، ولا يستطيع المتصفّح إطلاقها.
+      </p>
+      <div class="actions"><button class="secondary" id="refresh-now">حدّث البيانات الآن</button></div>
+      <p class="reason" id="refresh-out"></p>
+    </div>
     <div class="card">
       <h3>عتبة الصلة</h3>
       <label for="threshold" class="reason">أخفِ الفرص التي تقلّ درجتها عن <strong>${threshold}</strong>. الفرص غير المصنّفة تبقى ظاهرة دائماً.</label>
@@ -574,7 +703,21 @@ function openSheet(orgId: string): void {
   const dialog = document.getElementById("sheet") as HTMLDialogElement;
   const health = data.health.filter((h) => h.orgId === orgId);
   const opp = data.opportunities.find((o) => o.orgId === orgId);
-  const quote = org.requiresZeroCourses.quote ?? opp?.zeroCoursesQuote ?? null;
+  /*
+   * Only shown when the record says the rule exists. The card path already
+   * checked both; this one showed any stored quote under the caption "نصّ الشرط
+   * كما نُشر", so a quote captured alongside `statesZeroCoursesRule: false`
+   * would have been presented as a live condition on the organisation.
+   */
+  const quote =
+    org.requiresZeroCourses.value === true
+      ? (org.requiresZeroCourses.quote ?? null)
+      : opp?.statesZeroCoursesRule
+        ? (opp.zeroCoursesQuote ?? null)
+        : null;
+
+  const watched = org.sources.filter((s) => s.verifiedAtISO !== null);
+  const confirmed = watched.some((s) => s.coopConfirmed === true);
 
   dialog.querySelector(".sheet-body")!.innerHTML = `
     <h2>${esc(org.nameAr)}</h2>
@@ -597,6 +740,19 @@ function openSheet(orgId: string): void {
       )}
       ${fact("آخر فحص ناجح", health.length === 0 ? null : timeAgo(health[0]!.lastSuccessISO))}
     </dl>
+    ${
+      watched.length === 0
+        ? `<p class="reason warn">لا تُراقَب هذه الجهة بعد: لم يُفتح لها رابط ويُقرأ، فلن يراها التطبيق إن أعلنت.</p>`
+        : confirmed
+          ? `<p class="reason"><span class="chip yes">صفحة تدريب مؤكّدة</span> الصفحة المراقَبة ذكرت التدريب التعاوني بنصّها.</p>`
+          : `<p class="reason"><span class="chip unknown">صفحة الجهة، لا صفحة تدريب</span> تُراقَب صفحة حقيقية على نطاق الجهة، لكنها لم تذكر التدريب التعاوني وقت الفحص. الإعلان قد يظهر عليها، وقد يظهر في مكان آخر.</p>`
+    }
+    ${watched
+      .map(
+        (s) =>
+          `<p class="reason src-note"><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.url)}</a><br />${esc(s.verifiedNote ?? "")}</p>`,
+      )
+      .join("")}
     ${
       org.historicalWindows.length > 0
         ? `<dl class="facts">${org.historicalWindows
@@ -737,6 +893,33 @@ app.addEventListener("click", (e) => {
     void testNotification();
     return;
   }
+  if (hit("#refresh-now")) {
+    const out = document.getElementById("refresh-out")!;
+    out.textContent = "يحدّث…";
+    void caches
+      .delete("rasid-data-v2")
+      .catch(() => false)
+      .then(() => loadDataset())
+      .then((d) => {
+        data = d;
+        render();
+        const again = document.getElementById("refresh-out");
+        if (again) again.textContent = `تم. آخر فحص للجهات ${timeAgo(data.lastCheckISO)}.`;
+      })
+      .catch((err: unknown) => {
+        out.textContent = `تعذّر التحديث: ${err instanceof Error ? err.message : String(err)}`;
+      });
+    return;
+  }
+  const filterBtn = hit("[data-filter]");
+  if (filterBtn) {
+    const which = filterBtn.dataset.filter;
+    if (which === "zero") onlyNoZeroCourses = !onlyNoZeroCourses;
+    if (which === "stipend") onlyStipend = !onlyStipend;
+    if (which === "major") onlyMyMajor = !onlyMyMajor;
+    render();
+    return;
+  }
   const markBtn = hit("[data-mark]");
   if (markBtn) {
     const id = markBtn.dataset.opp!;
@@ -770,6 +953,12 @@ app.addEventListener("input", (e) => {
   } else if (el.id === "sector") {
     sector = el.value;
     render();
+  } else if (el.id === "tier") {
+    tierFilter = el.value;
+    render();
+  } else if (el.id === "city") {
+    cityFilter = el.value;
+    render();
   } else if (el.id === "threshold") {
     threshold = Number(el.value);
     writeJSON(THRESHOLD_KEY, threshold);
@@ -801,6 +990,7 @@ loadDataset()
   .then((d) => {
     data = d;
     render();
+    checkFollowUps();
   })
   .catch((err: unknown) => {
     app.innerHTML = `<div class="shell"><p class="empty">تعذّر تحميل البيانات: ${esc(

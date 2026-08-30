@@ -21,8 +21,8 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { closeBrowser, renderPage } from "../src/pipeline/browser";
 import { extract } from "../src/pipeline/extract";
-import { fetchPage } from "../src/pipeline/fetch";
-import { checkRobots } from "../src/pipeline/robots";
+import { fetchPage, paced } from "../src/pipeline/fetch";
+import { checkFinalUrl, checkRobots } from "../src/pipeline/robots";
 import type { Organisation, VerificationAttempt } from "../src/types";
 
 const args = process.argv.slice(2);
@@ -39,6 +39,9 @@ const LIMIT = Number(flag("--limit") ?? Infinity);
  * on the list: a jobs portal is not a training page, which is the distinction
  * the whole dataset is built on.
  */
+/** Below this a page has not really been read, whatever its status code said. */
+const THIN_TEXT = 200;
+
 const MARKERS = [
   "التدريب التعاوني",
   "تدريب تعاوني",
@@ -53,6 +56,72 @@ const read = <T>(p: string): T[] => JSON.parse(readFileSync(p, "utf8").replace(/
 const orgs = read<Organisation>("data/organisations.json");
 const attempts = read<VerificationAttempt>("data/verification.json");
 const now = new Date().toISOString();
+
+/**
+ * The same address with the `www` label added or removed.
+ *
+ * Eighteen organisations were unreachable for one reason, and it was not the
+ * one assumed: `www.tvtc.gov.sa` does not resolve at all, while `tvtc.gov.sa`
+ * answers. The 2021 directory recorded hosts the way they were written then,
+ * and many Saudi sites have since dropped the label. This is not inventing a
+ * url by pattern — the registered domain is the one already on the record, only
+ * a label differs — and whatever answers is still opened, read and quoted
+ * before a single field is written.
+ */
+function hostVariant(url: string): string {
+  const u = new URL(url);
+  u.hostname = u.hostname.startsWith("www.") ? u.hostname.slice(4) : `www.${u.hostname}`;
+  return u.href;
+}
+
+/** Every address worth trying for one recorded source, in order of fidelity. */
+function candidatesFor(url: string): string[] {
+  const root = `${new URL(url).origin}/`;
+  return [...new Set([url, hostVariant(url), root, hostVariant(root)])];
+}
+
+/**
+ * The type a url has actually earned, now that the address may have moved.
+ *
+ * When a dead deep path fell back to the site root, the url was rewritten and
+ * the type was left alone — so a bank homepage sat in the dataset labelled
+ * `announcement_page`, which is precisely the quiet kind of lie types.ts says
+ * `site_root` exists to prevent.
+ */
+const HOME_SEGMENTS = new Set([
+  "ar",
+  "en",
+  "ar-sa",
+  "en-sa",
+  "ar-us",
+  "en-us",
+  "web",
+  "pages",
+  "home",
+  "index.php",
+  "index.html",
+  "index.htm",
+  "default.aspx",
+  "default.html",
+  "home.aspx",
+]);
+
+/** A homepage is still a homepage when it is reached through /ar/Pages/default.aspx. */
+function isHomePath(u: URL): boolean {
+  return u.pathname
+    .split("/")
+    .filter(Boolean)
+    .every((part) => HOME_SEGMENTS.has(part.toLowerCase()) || /^\d+$/.test(part));
+}
+
+function typeFor(url: string, current: Organisation["sources"][number]["type"]): typeof current {
+  const u = new URL(url);
+  if (/career|job|coop|training|recruit|تدريب|وظائف/i.test(decodeURI(url)) && !isHomePath(u)) {
+    return "careers_page";
+  }
+  if (isHomePath(u)) return "site_root";
+  return current === "site_root" ? "announcement_page" : current;
+}
 
 /** The sentence around the phrase, so a promoted link carries its evidence. */
 function quoteAround(text: string, at: number, marker: string): string {
@@ -83,70 +152,95 @@ for (const org of targets) {
   for (const source of org.sources) {
     if (source.verifiedAtISO !== null) continue;
 
-    const verdict = await checkRobots(source.url);
-    if (!verdict.allowed) {
+    /*
+     * Each candidate is tried in full before the next one: robots.txt first,
+     * then a plain fetch, then a real browser.
+     *
+     * The browser retry is not a way round a refusal. A 403 from a plain client
+     * is not a site saying "do not crawl me" — that sentence lives in
+     * robots.txt, which is read and obeyed above it — it is a filter that does
+     * not recognise a non-browser. And a broken certificate chain or a
+     * script-drawn page is not a refusal at all. Nothing here pretends to be a
+     * browser; it either is one or it gives up.
+     */
+    let url = source.url;
+    let res: Awaited<ReturnType<typeof fetchPage>> = {
+      ok: false,
+      status: null,
+      error: "not attempted",
+    };
+    let needsBrowser = false;
+    let blockedByRobots: string | null = null;
+
+    for (const candidate of candidatesFor(source.url)) {
+      const verdict = await checkRobots(candidate);
+      if (!verdict.allowed) {
+        // Remember the first refusal, but keep trying the other addresses: a
+        // host that cannot be reached is reported as a refusal too, and its
+        // sibling may answer perfectly well.
+        blockedByRobots ??= verdict.reason;
+        continue;
+      }
+
+      const viaFetch = await fetchPage(candidate, verdict.crawlDelayMs);
+      // Paced like any other request: spec 5.1 asks for a gap between hits on
+      // one host, and a browser hit is still a hit. Four candidates on the same
+      // domain would otherwise arrive back to back.
+      const attempt = viaFetch.ok
+        ? viaFetch
+        : await paced(candidate, verdict.crawlDelayMs, () => renderPage(candidate));
+      if (attempt.ok) {
+        // A redirect can land on a host we never asked permission of.
+        const afterRedirect = await checkFinalUrl(candidate, attempt.finalUrl);
+        if (afterRedirect) {
+          blockedByRobots ??= afterRedirect.reason;
+          continue;
+        }
+        res = attempt;
+        needsBrowser = !viaFetch.ok;
+        // Store where it actually landed, so the next six-hourly fetch asks the
+        // same host this one was granted.
+        url = attempt.finalUrl ?? candidate;
+        break;
+      }
+      res = attempt;
+    }
+
+    if (!res.ok) {
+      const robotsOnly = blockedByRobots !== null && res.error === "not attempted";
       outcomes.push({
         org: org.id,
         url: source.url,
-        result: "robots",
-        note: `robots.txt: ${verdict.reason}`,
+        result: robotsOnly ? "robots" : "unreachable",
+        note: robotsOnly
+          ? `robots.txt: ${blockedByRobots}`
+          : `${res.error} · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي`,
       });
       continue;
     }
 
-    /*
-     * A 403 from a plain client is not a site saying "do not crawl me": that
-     * sentence lives in robots.txt, which was read and obeyed above. It is a
-     * filter that does not recognise a non-browser. So a refused fetch is
-     * retried in a real browser and the source is marked to keep using one.
-     * Nothing here pretends to be a browser; it either is one or it gives up.
-     */
-    let url = source.url;
-    let res = await fetchPage(url, verdict.crawlDelayMs);
-    let needsBrowser = false;
+    let { text, title } = extract(res.html, url);
 
-    if (!res.ok) {
+    /*
+     * A page can answer 200 and still be empty, because its content is drawn by
+     * script after load. Ten organisations were written off as "cannot be read"
+     * on exactly this: the fetch succeeded, so the browser retry above never
+     * fired, and the extraction found nothing to fail on. Answering with an
+     * empty body is as much a reason to render as refusing to answer at all, so
+     * a thin result now gets the same second chance a failed one gets.
+     */
+    if (text.length < THIN_TEXT && !needsBrowser) {
       const rendered = await renderPage(url);
       if (rendered.ok) {
-        res = rendered;
-        needsBrowser = true;
-      }
-    }
-
-    /*
-     * The directory is from 2021 and most of its deep paths have since moved,
-     * while the organisation's own domain is usually still there. So a dead
-     * path falls back to the site root. That is not guessing a url: the domain
-     * came from the record, the root is the one path every site has, and it is
-     * only kept if it actually answers and yields text.
-     */
-    if (!res.ok) {
-      const root = new URL(url).origin + "/";
-      if (root !== url) {
-        const rootVerdict = await checkRobots(root);
-        if (rootVerdict.allowed) {
-          const viaFetch = await fetchPage(root, rootVerdict.crawlDelayMs);
-          const viaBrowser = viaFetch.ok ? viaFetch : await renderPage(root);
-          if (viaBrowser.ok) {
-            res = viaBrowser;
-            needsBrowser = !viaFetch.ok;
-            url = root;
-          }
+        const second = extract(rendered.html, url);
+        if (second.text.length > text.length) {
+          text = second.text;
+          title = second.title;
+          needsBrowser = true;
         }
       }
     }
 
-    if (!res.ok) {
-      outcomes.push({
-        org: org.id,
-        url: source.url,
-        result: "unreachable",
-        note: `${res.error} · ولا بمتصفّح حقيقي ولا من جذر الموقع`,
-      });
-      continue;
-    }
-
-    const { text, title } = extract(res.html, url);
     const haystack = text.toLowerCase();
     const marker = MARKERS.find((m) => haystack.includes(m.toLowerCase()));
 
@@ -164,7 +258,7 @@ for (const org of targets) {
      * plainly that no coop wording was there at the time of the check.
      */
     if (marker === undefined) {
-      if (text.length < 200) {
+      if (text.length < THIN_TEXT) {
         outcomes.push({
           org: org.id,
           url: source.url,
@@ -175,7 +269,9 @@ for (const org of targets) {
       }
       const note = `عنوان الصفحة: "${title ?? "بلا عنوان"}". صفحة حقيقية على نطاق الجهة، قُرئ منها ${text.length} حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: "${text.slice(0, 110)}…"`;
       source.url = url;
+      source.type = typeFor(url, source.type);
       source.provenance = "official";
+      source.coopConfirmed = false;
       source.verifiedAtISO = now;
       source.verifiedNote = note;
       if (needsBrowser) source.renderMode = "browser";
@@ -187,7 +283,9 @@ for (const org of targets) {
     const note = `عنوان الصفحة: "${title ?? "بلا عنوان"}". وردت فيها عبارة «${marker}» بنصّها: "${quote}". فحص آلي بنفس معيار الجولة اليدوية.`;
 
     source.url = url;
+    source.type = typeFor(url, source.type);
     source.provenance = "official";
+    source.coopConfirmed = true;
     source.verifiedAtISO = now;
     source.verifiedNote = note;
     if (needsBrowser) source.renderMode = "browser";

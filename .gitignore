@@ -7,6 +7,10 @@ dist/
 # The student profile. The only file here that describes a person, and the
 # repository is public. See .profile.example.
 .profile.local
+
+# The contact address put in the User-Agent, so site owners can reach a human.
+# A personal email, and this repository is public.
+.contact.local
 *.log
 .DS_Store
 Thumbs.db
