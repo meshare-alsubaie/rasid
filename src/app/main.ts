@@ -771,6 +771,29 @@ function render(): void {
   }
 }
 
+/**
+ * Why an organisation is not being watched, in its own terms.
+ *
+ * "No link has been opened" is true of every unwatched organisation and
+ * therefore tells the reader nothing. The reasons are different in kind and
+ * one of them is permanent: a site whose robots.txt forbids every crawler but
+ * the search engines will never be readable by this app, however long he waits,
+ * and he should know to check it himself rather than expect an alert.
+ */
+function unwatchableReason(org: Organisation): string {
+  if (org.sources.length === 0) return "لم يُعثر لها على رابط بعد.";
+  const tried = org.sources.map((s) => s.verifiedNote ?? "").join(" ");
+  if (/disallowed by robots/i.test(tried)) {
+    return "موقعها يمنع القراءة الآلية في ملف robots.txt، ويسمح لمحرّكات البحث وحدها. هذا منع دائم، ونحن نحترمه.";
+  }
+  if (/لم تُخرج نصاً/.test(tried)) {
+    return "صفحتها تُرسم بجافاسكربت ولا تُخرج نصاً يُقرأ، حتى بمتصفّح حقيقي.";
+  }
+  if (/403/.test(tried)) return "خادمها يرفض طلباتنا (403) حتى من متصفّح حقيقي.";
+  if (/robots\.txt/i.test(tried)) return "لا يمكن قراءة ملف robots.txt من خادمها، ولا نقرأ موقعاً قبل قراءة شروطه.";
+  return "جُرِّبت روابطها ولم يُقرأ منها نصّ.";
+}
+
 /* ---------- organisation sheet ---------- */
 
 function openSheet(orgId: string): void {
@@ -833,7 +856,8 @@ function openSheet(orgId: string): void {
     </dl>
     ${
       watched.length === 0
-        ? `<p class="reason warn">لا تُراقَب هذه الجهة بعد: لم يُفتح لها رابط ويُقرأ، فلن يراها التطبيق إن أعلنت.</p>`
+        ? `<p class="reason warn">لا تُراقَب هذه الجهة، فلن يراها التطبيق إن أعلنت. افحص موقعها بنفسك.
+             ${unwatchableReason(org)}</p>`
         : confirmed
           ? `<p class="reason"><span class="chip yes">صفحة تدريب مؤكّدة</span> الصفحة المراقَبة ذكرت التدريب التعاوني بنصّها.</p>`
           : `<p class="reason"><span class="chip unknown">صفحة الجهة، لا صفحة تدريب</span> تُراقَب صفحة حقيقية على نطاق الجهة، لكنها لم تذكر التدريب التعاوني وقت الفحص. الإعلان قد يظهر عليها، وقد يظهر في مكان آخر.</p>`

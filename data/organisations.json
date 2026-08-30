@@ -756,12 +756,13 @@
       },
       {
         "url": "https://career.alinma.com/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "رابط منشور على صفحة الجهة نفسها بنصّ «التوظيف». لم يُفتح بعد.",
-        "type": "careers_page",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T10:25:11.702Z",
+        "verifiedNote": "عنوان الصفحة: \"alinma\". صفحة حقيقية على نطاق الجهة، قُرئ منها 750 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Alinma proudly stands as a leading provider of dynamic, innovative, and Sharia-compliant financial services in…\"",
+        "type": "site_root",
         "checkFrequencyHours": 12,
-        "renderMode": "static"
+        "renderMode": "browser",
+        "coopConfirmed": false
       },
       {
         "url": "https://alinma.com/About-the-Bank/The-Bank/News/2026/8/amwal-tech",
@@ -2699,7 +2700,7 @@
         "url": "https://taqnia.com/en/",
         "provenance": "reported",
         "verifiedAtISO": null,
-        "verifiedNote": "عنوان الصفحة: \"404 Not Found\". قرأت عليها حرفياً: \"The requested URL was not found on this server\" و\"Apache Server at taqnia.com Port 443\". الرابط المستورد من ملف COOP ميت.",
+        "verifiedNote": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها.",
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
@@ -3024,7 +3025,7 @@
         "url": "https://me.devoteam.com/jobs/",
         "provenance": "reported",
         "verifiedAtISO": null,
-        "verifiedNote": "بوابة وظائف الشرق الأوسط، من بحث",
+        "verifiedNote": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either",
         "type": "careers_page",
         "checkFrequencyHours": 12,
         "renderMode": "static"
@@ -3033,7 +3034,7 @@
         "url": "https://www.devoteam.com/me/join-us/",
         "provenance": "reported",
         "verifiedAtISO": null,
-        "verifiedNote": "صفحة التوظيف، من بحث",
+        "verifiedNote": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي",
         "type": "site_root",
         "checkFrequencyHours": 12,
         "renderMode": "static"
@@ -4496,6 +4497,16 @@
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
+      },
+      {
+        "url": "https://yaqeen.sa/ar/",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T10:28:06.796Z",
+        "verifiedNote": "عنوان الصفحة: \"تداول، استثمار وصناديق | يقين كابيتال\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1197 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"| English | نبذة عنا | الفروع | اتصل بنا | يقين جلوبل | تسجيل دخول خدمات الوساطة إدارة الأصول الاستثمار المصرف…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "browser",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -5355,7 +5366,7 @@
         "url": "http://www.kasbcapital.sa/index.php/ar/",
         "provenance": "reported",
         "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "verifiedNote": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي",
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"
@@ -5589,7 +5600,7 @@
         "url": "https://media.gov.sa/",
         "provenance": "reported",
         "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "verifiedNote": "robots.txt: disallowed by robots.txt",
         "type": "site_root",
         "checkFrequencyHours": 24,
         "renderMode": "static"

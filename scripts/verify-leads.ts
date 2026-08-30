@@ -165,7 +165,10 @@ interface Outcome {
  * third channels permanently unread — and a second channel is often the news
  * page where the announcement actually appears.
  */
+const ORG = flag("--org");
+
 const targets = orgs
+  .filter((o) => ORG === undefined || o.id === ORG)
   .filter((o) => o.sources.some((s) => s.verifiedAtISO === null))
   .filter((o) => TIER === undefined || o.tier === TIER)
   .sort((a, b) => "SABC".indexOf(a.tier) - "SABC".indexOf(b.tier))
@@ -235,14 +238,20 @@ for (const org of targets) {
 
     if (!res.ok) {
       const robotsOnly = blockedByRobots !== null && res.error === "not attempted";
-      outcomes.push({
-        org: org.id,
-        url: source.url,
-        result: robotsOnly ? "robots" : "unreachable",
-        note: robotsOnly
-          ? `robots.txt: ${blockedByRobots}`
-          : `${res.error} · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي`,
-      });
+      const why = robotsOnly
+        ? `robots.txt: ${blockedByRobots}`
+        : `${res.error} · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي`;
+      /*
+       * Written onto the source, so the app can say why rather than only that.
+       * `verifiedAtISO` stays null and the provenance stays "reported": nothing
+       * here claims the page was read. The note is what it has always been —
+       * the record of what happened when someone looked — and a failure is as
+       * much a thing that happened as a success. Without this the interface
+       * could only say "no link has been opened", which is true of every
+       * unwatched organisation and therefore tells the reader nothing.
+       */
+      source.verifiedNote = why;
+      outcomes.push({ org: org.id, url: source.url, result: robotsOnly ? "robots" : "unreachable", note: why });
       continue;
     }
 
@@ -286,12 +295,9 @@ for (const org of targets) {
      */
     if (marker === undefined) {
       if (text.length < THIN_TEXT) {
-        outcomes.push({
-          org: org.id,
-          url: source.url,
-          result: "rejected",
-          note: `الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (${text.length} حرفاً)، فلا يمكن مراقبتها.`,
-        });
+        const why = `الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (${text.length} حرفاً)، فلا يمكن مراقبتها.`;
+        source.verifiedNote = why;
+        outcomes.push({ org: org.id, url: source.url, result: "rejected", note: why });
         continue;
       }
       const note = `عنوان الصفحة: "${title ?? "بلا عنوان"}". صفحة حقيقية على نطاق الجهة، قُرئ منها ${text.length} حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: "${text.slice(0, 110)}…"`;

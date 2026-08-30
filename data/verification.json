@@ -7628,5 +7628,110 @@
     "urlTried": "https://ncac.edu.sa",
     "outcome": "unreachable",
     "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "ncac",
+    "checkedAtISO": "2026-08-30T10:25:11.702Z",
+    "urlTried": "https://ncac.edu.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-30T10:25:11.702Z",
+    "urlTried": "https://career.alinma.com/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"alinma\". صفحة حقيقية على نطاق الجهة، قُرئ منها 750 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Alinma proudly stands as a leading provider of dynamic, innovative, and Sharia-compliant financial services in…\""
+  },
+  {
+    "targetId": "bsf",
+    "checkedAtISO": "2026-08-30T10:25:11.702Z",
+    "urlTried": "https://www.bsfcareers.sa/ar/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (131 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "dga",
+    "checkedAtISO": "2026-08-30T10:25:11.702Z",
+    "urlTried": "https://dgacareer.talentera.com/ar/page/coop-program/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "maaden",
+    "checkedAtISO": "2026-08-30T10:25:11.702Z",
+    "urlTried": "https://maaden.com.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "maaden",
+    "checkedAtISO": "2026-08-30T10:25:11.702Z",
+    "urlTried": "https://www.maaden.com.sa/ar/careers/working",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "mobily",
+    "checkedAtISO": "2026-08-30T10:25:11.702Z",
+    "urlTried": "https://careers.mobily.com.sa",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "mobily",
+    "checkedAtISO": "2026-08-30T10:25:11.702Z",
+    "urlTried": "https://careers.mobily.com.sa/en/saudi-arabia/jobs/coop-program-1100006246/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (75 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-30T10:28:06.796Z",
+    "urlTried": "http://www.falcom.com.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-30T10:28:06.796Z",
+    "urlTried": "https://yaqeen.sa/ar/",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"تداول، استثمار وصناديق | يقين كابيتال\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1197 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"| English | نبذة عنا | الفروع | اتصل بنا | يقين جلوبل | تسجيل دخول خدمات الوساطة إدارة الأصول الاستثمار المصرف…\""
+  },
+  {
+    "targetId": "media",
+    "checkedAtISO": "2026-08-30T10:32:56.103Z",
+    "urlTried": "https://media.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "taqnia",
+    "checkedAtISO": "2026-08-30T10:32:57.717Z",
+    "urlTried": "https://taqnia.com/en/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T10:33:36.681Z",
+    "urlTried": "https://me.devoteam.com/jobs/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-30T10:33:36.681Z",
+    "urlTried": "https://www.devoteam.com/me/join-us/",
+    "outcome": "unreachable",
+    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "kasb",
+    "checkedAtISO": "2026-08-30T10:34:40.694Z",
+    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
+    "outcome": "unreachable",
+    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
   }
 ]
