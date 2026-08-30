@@ -133,7 +133,7 @@ export function renderSeasonBar(lanes: LaneInput[], now = new Date()): string {
     } else if (lane.rolling) {
       body = `<line class="seg-rolling lane-anim" x1="${TRACK_X}" y1="${mid - 2}" x2="${TRACK_X + TRACK_W}" y2="${mid - 2}" style="animation-delay:${i * 90}ms" />
         <line class="seg-rolling lane-anim" x1="${TRACK_X}" y1="${mid + 2}" x2="${TRACK_X + TRACK_W}" y2="${mid + 2}" style="animation-delay:${i * 90}ms" />`;
-      described = "قناة بريد مفتوحة دائماً، بلا نافذة معلنة";
+      described = "عنوان بريد مخصّص للتدريب، منشور ولم يُؤكَّد، وبلا نافذة معلنة";
     } else {
       /*
        * A lane with no dates gets its mark at the start of the track, never at
@@ -192,7 +192,7 @@ export function renderSeasonBar(lanes: LaneInput[], now = new Date()): string {
       <li><span class="swatch" style="background:var(--live-lit)"></span> نافذة معلنة بتواريخ منشورة</li>
       <li><span class="swatch" style="background:var(--urgent-lit)"></span> تغلق خلال ٤٨ ساعة</li>
       <li><span class="swatch" style="background:linear-gradient(90deg,var(--live-lit) 0 3px,transparent 3px)"></span> تاريخ واحد فقط منشور، والطرف الآخر غير معلن</li>
-      <li><span class="swatch" style="border-top:2px solid var(--live-lit);border-bottom:2px solid var(--live-lit);background:none"></span> قناة بريد مفتوحة دائماً</li>
+      <li><span class="swatch" style="border-top:2px solid var(--live-lit);border-bottom:2px solid var(--live-lit);background:none"></span> بريد مخصّص للتدريب، منشور ولم يُؤكَّد</li>
       <li><span class="swatch">؟</span> المصدر يُقرأ، ولا شيء معلن</li>
       <li><span class="swatch">—</span> لا يُقرأ بعد، فلن يُرى الإعلان إن ظهر</li>
       <li><span class="swatch" style="color:var(--urgent-lit)">⚠</span> المصدر لا يُقرأ، والبيانات قد تكون قديمة</li>

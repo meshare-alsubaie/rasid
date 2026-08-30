@@ -228,6 +228,20 @@ function group(title: string, items: Opportunity[], emptyText: string, open: boo
   </details>`;
 }
 
+/**
+ * Whether an application address names what it is for.
+ *
+ * `Co.op.training@tadawul.com.sa` is a channel. `info@sama.gov.sa` is a
+ * switchboard, and the two must not be drawn the same way on a bar whose legend
+ * promises a standing route to apply.
+ */
+function isDedicatedChannel(org: Organisation): boolean {
+  const target = org.applyVia?.target;
+  if (org.applyVia?.method !== "email" || !target) return false;
+  const local = target.split("@")[0] ?? "";
+  return /co-?\.?op|training|career|recruit|tadreeb/i.test(local);
+}
+
 /* ---------- screens ---------- */
 
 function seasonScreen(): string {
@@ -242,11 +256,23 @@ function seasonScreen(): string {
       org,
       opportunity: visible.find((o) => o.orgId === org.id),
       health: data.healthOf(org.id),
-      // Only an organisation whose sole route is a standing mailbox counts as
-      // rolling. Where a programme page produced a verdict, the lane has to
-      // say what that page says, which is usually that no dates are published.
-      rolling:
-        org.applyVia?.method === "email" && !visible.some((o) => o.orgId === org.id),
+      /*
+       * A standing channel, and the bar has to mean it.
+       *
+       * This was "has an email address", and it drew the double line — legend:
+       * "قناة بريد مفتوحة دائماً" — on seventy-two lanes. None of those
+       * addresses is verified, and forty-nine are general switchboards like
+       * `info@` scraped from a 2021 directory. Telling a student he can apply
+       * year-round through `webmaster@sfda.gov.sa` is exactly the false green
+       * light this project refuses to show.
+       *
+       * So the line is drawn only for an address that names the thing it is
+       * for — coop, training, careers — which is the difference between a
+       * published channel and a switchboard. The rest fall through to "؟",
+       * and their address is still shown in the organisation sheet, where it
+       * is labelled as unconfirmed.
+       */
+      rolling: isDedicatedChannel(org) && !visible.some((o) => o.orgId === org.id),
     }));
 
   const nextHint =
@@ -731,7 +757,14 @@ function openSheet(orgId: string): void {
     ${org.notes ? `<p class="reason">${esc(org.notes)}</p>` : ""}
     <dl class="facts">
       ${fact("المكافأة", org.stipend.amountSAR === null ? null : `${org.stipend.amountSAR} ريال`)}
-      ${fact("قناة التقديم", org.applyVia === null ? null : esc(org.applyVia.target))}
+      ${/* Labelled, because none of these addresses has ever been confirmed:
+            most came from a 2021 directory and many are switchboards. */ ""}
+      ${fact(
+        "قناة التقديم",
+        org.applyVia === null
+          ? null
+          : `${esc(org.applyVia.target)}${org.applyVia.verifiedAtISO === null ? " — عنوان منشور، لم يُؤكَّد أنه يستقبل طلبات التدريب" : ""}`,
+      )}
       ${fact(
         "مصدر السجل",
         org.importSource === "spec" ? "المواصفة"
