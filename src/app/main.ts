@@ -18,6 +18,16 @@ type Tab = "season" | "orgs" | "mine" | "settings";
 type Mark = "interested" | "applied" | "ignored";
 
 const MARKS_KEY = "rasid.marks.v1";
+/**
+ * When a push from the server last reached this device.
+ *
+ * Separate from the worker's own arrival log, and deliberately so: that log is
+ * the evidence and lives in the cache, while this is a single timestamp the
+ * home screen can consult without opening anything. Local tests are excluded —
+ * a test I fired myself proves the device can display a notification, not that
+ * the server can still reach it.
+ */
+const LAST_PUSH_KEY = "rasid.lastPush.v1";
 const THRESHOLD_KEY = "rasid.threshold.v1";
 const THEME_KEY = "rasid.theme.v1";
 
@@ -252,8 +262,29 @@ function answerBlock(): string {
         }، والمفترض كل ٦. ما تراه هنا قديم، وقد تكون فُتحت نوافذ لا يعرف بها. افحص الجهات المهمة بنفسك حتى تعود الجولة.</p>`
       : "";
 
+  /*
+   * Silence has two meanings and they must not look alike.
+   *
+   * "No notification in a week" is excellent news when the collector has been
+   * running and found nothing, and it is a broken product when the push channel
+   * has quietly died — an expired subscription, a revoked permission, a phone
+   * that was reinstalled. From the user's chair the two are identical: nothing
+   * happens. So the app watches its own delivery channel: if rounds have been
+   * running and no push has arrived in seven days, that is worth saying out
+   * loud, because the alternative is finding out when a deadline has passed.
+   */
+  const lastPush = readJSON<string | null>(LAST_PUSH_KEY, null);
+  const collectorAlive = sinceCheck < 24;
+  const daysSincePush =
+    lastPush === null ? null : (Date.now() - Date.parse(lastPush)) / 86_400_000;
+  const pushSilent =
+    collectorAlive && daysSincePush !== null && daysSincePush > 7
+      ? `<p class="stalled">⚠ لم يصل أي إشعار منذ ${Math.floor(daysSincePush)} يوماً، والجولات تعمل. قد تكون الإشعارات معطّلة على هذا الجهاز — افتح الإعدادات واضغط «جرّب إشعاراً الآن».</p>`
+      : "";
+
   return `<section class="answer" aria-label="الحالة اليوم">
     ${stalled}
+    ${pushSilent}
     ${headline}
     <p class="sub">${sub}</p>
     <div class="tally">
@@ -527,10 +558,23 @@ function notificationsCard(): string {
           ? "لم يُسأل بعد"
           : "المتصفّح لا يعرف الإشعارات";
 
+  /*
+   * A local test and a server push are reported separately, because they answer
+   * different questions and one was mistaken for the other. A test fired from
+   * this page proves the device can display a notification. Only a push proves
+   * the server can still reach it while the phone is locked and the laptop is
+   * off, which is the thing he is actually relying on.
+   */
+  const lastServerPush = readJSON<string | null>(LAST_PUSH_KEY, null);
   const arrival =
     d.lastArrival === null
       ? `<p class="reason warn">لم يصل هذا الجهاز أي إشعار بعد. اضغط «جرّب إشعاراً الآن» أولاً: إن ظهر، فالعرض يعمل والمشكلة في الإرسال. وإن لم يظهر مع أن الإذن مسموح، فالنظام يحجب إشعارات المتصفّح.</p>`
-      : `<p class="reason">آخر إشعار وصل هذا الجهاز: <strong>${timeAgo(d.lastArrival.at)}</strong> (${d.lastArrival.via === "push" ? "من الخادم" : "تجربة محلية"})${d.lastArrival.title ? ` — ${esc(d.lastArrival.title)}` : ""}.</p>`;
+      : `<p class="reason">آخر إشعار وصل هذا الجهاز: <strong>${timeAgo(d.lastArrival.at)}</strong> (${d.lastArrival.via === "push" ? "من الخادم" : "تجربة محلية"})${d.lastArrival.title ? ` — ${esc(d.lastArrival.title)}` : ""}.</p>
+         ${
+           lastServerPush === null
+             ? `<p class="reason warn">ولم يصل أي إشعار <strong>من الخادم</strong> بعد. التجربة المحلية تُثبت أن جهازك يعرض الإشعارات، ولا تُثبت أن الخادم يصل إليك وأنت نائم — وهذا هو ما تعتمد عليه.</p>`
+             : `<p class="reason">وآخر إشعار من الخادم: <strong>${timeAgo(lastServerPush)}</strong>. هذه هي الحلقة التي تهمّ.</p>`
+         }`;
 
   const iphone = /iPhone|iPad/.test(navigator.userAgent) && !d.standalone;
 
@@ -1167,7 +1211,12 @@ if (import.meta.env.PROD && "serviceWorker" in navigator) {
   // A push that lands while the app is open should update the panel, so the
   // arrival line is never stale in front of the person reading it.
   navigator.serviceWorker.addEventListener("message", (e: MessageEvent) => {
-    if ((e.data as { type?: string } | null)?.type === "push-arrived") void readPushDiag();
+    const msg = e.data as { type?: string; at?: string; via?: string } | null;
+    if (msg?.type !== "push-arrived") return;
+    // Kept outside the worker's cache as well, because the home screen has to
+    // answer "has anything arrived lately" before anyone opens the settings.
+    if (msg.at && msg.via === "push") writeJSON(LAST_PUSH_KEY, msg.at);
+    void readPushDiag();
   });
 } else {
   void readPushDiag();

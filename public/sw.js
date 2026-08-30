@@ -105,9 +105,12 @@ async function announce(payload, via) {
     // Collapse repeats of the same subject rather than stacking them.
     tag: payload.tag || "rasid",
   });
-  // Wake any open window so the settings screen can update itself.
+  // Wake any open window so the settings screen can update itself, and hand it
+  // the arrival time: the page cannot read this cache before it is opened, and
+  // the home screen needs the timestamp to decide whether the silence is
+  // suspicious.
   for (const client of await self.clients.matchAll({ type: "window" })) {
-    client.postMessage({ type: "push-arrived" });
+    client.postMessage({ type: "push-arrived", at: entry.at, via });
   }
 }
 

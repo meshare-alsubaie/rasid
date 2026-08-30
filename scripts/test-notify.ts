@@ -158,6 +158,55 @@ check(
   split(many, legacy, now, false).push.length === 0,
 );
 
+console.log("\ntwo in one round, and neither is swallowed");
+const pair: Notice[] = [
+  { key: "new:nca", kind: "new_relevant", title: "أ", body: "b", weight: 95 },
+  { key: "new:snb", kind: "new_relevant", title: "ب", body: "b", weight: 65 },
+];
+const both = split(pair, [], now, false);
+check("both are pushed", both.push.length === 2, String(both.push.length));
+check(
+  "and they carry different keys, so the device cannot collapse them into one banner",
+  new Set(both.push.map((n) => n.key)).size === 2,
+);
+check(
+  "the more relevant one goes first",
+  both.push[0]!.key === "new:nca",
+  both.push.map((n) => n.key).join(","),
+);
+
+/*
+ * A deadline is not allowed to wait for morning.
+ *
+ * Quiet hours exist so the app does not wake him for news that keeps. A window
+ * closing inside forty-eight hours does not keep: held from 02:00 to 07:00 it
+ * loses five of them, and if the digest is configured it is emailed instead and
+ * never pushed at all. The whole product exists to prevent exactly this, so the
+ * one notice kind that is about a deadline overrides the silence.
+ */
+console.log("\na deadline overrides quiet hours");
+const atThree = new Date("2026-09-01T00:00:00.000Z"); // 03:00 in Riyadh
+const deadline: Notice[] = [
+  { key: "closing:x", kind: "closing_soon", title: "t", body: "b", weight: 300 },
+  { key: "new:y", kind: "new_relevant", title: "t", body: "b", weight: 80 },
+];
+const night = split(deadline, [], atThree, true);
+check(
+  "a closing_soon notice is pushed at three in the morning",
+  night.push.some((n) => n.kind === "closing_soon"),
+  `push=[${night.push.map((n) => n.kind).join(",")}] digest=[${night.digestOnly.map((n) => n.kind).join(",")}]`,
+);
+check(
+  "and everything that can wait still waits",
+  !night.push.some((n) => n.kind === "new_relevant") &&
+    night.digestOnly.some((n) => n.kind === "new_relevant"),
+);
+check(
+  "a deadline already sent is still not sent twice, override or not",
+  split(deadline, [{ key: "closing:x", sentISO: atThree.toISOString(), via: "push" }], atThree, true)
+    .push.length === 0,
+);
+
 /*
  * Written as UTC instants, deliberately. Riyadh is UTC+3 and never moves, so
  * each of these is one unambiguous moment, and the test now says the same thing

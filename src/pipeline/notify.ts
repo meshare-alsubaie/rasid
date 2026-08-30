@@ -195,6 +195,19 @@ export interface Split {
  * Everything already sent is dropped, then the cap is applied by weight.
  * What does not fit is not discarded: it goes to the daily email instead.
  */
+/**
+ * The kinds that are allowed to wake him.
+ *
+ * Quiet hours exist so the app does not ring at three in the morning for news
+ * that will read the same at seven. A window closing inside forty-eight hours
+ * is not that news. Holding it costs five hours of a deadline that has fewer
+ * than forty-eight left, and once the email digest is configured it is emailed
+ * instead of pushed and then marked as sent — so it is never pushed at all.
+ * That is the exact failure this whole application was built to prevent, so
+ * this one kind ignores the silence.
+ */
+const URGENT: ReadonlySet<NoticeKind> = new Set<NoticeKind>(["closing_soon"]);
+
 export function split(
   notices: Notice[],
   log: NoticeLogEntry[],
@@ -203,7 +216,10 @@ export function split(
 ): Split {
   const alreadySent = new Set(log.map((e) => e.key));
   const fresh = notices.filter((n) => !alreadySent.has(n.key));
-  if (quiet) return { push: [], digestOnly: fresh };
+  if (quiet) {
+    const urgent = fresh.filter((n) => URGENT.has(n.kind));
+    return { push: urgent, digestOnly: fresh.filter((n) => !URGENT.has(n.kind)) };
+  }
 
   const sentToday = log.filter(
     (e) => dayOf(e.sentISO) === dayOf(now.toISOString()) && (e.via ?? "push") === "push",
