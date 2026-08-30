@@ -28,7 +28,7 @@ the data carries a full version history: you can answer "when did this
 organisation first announce?" years later. The frontend is a static PWA that
 reads those JSON files.
 
-**Stack:** Node 20 + TypeScript, `undici` for polite fetching, `@mozilla/readability`
+**Stack:** Node 22 + TypeScript, `undici` for polite fetching, `@mozilla/readability`
 for extraction, the Claude API for classification, Ajv for schema enforcement,
 vanilla TypeScript + Vite for the PWA. No React, no component library.
 
@@ -114,7 +114,9 @@ Model: `claude-sonnet-5` at **$2 / MTok input and $10 / MTok output**, checked
 against platform.claude.com/docs/en/about-claude/pricing on 2026-08-29 rather
 than from memory. That page also notes the launch pricing is now the standard
 price and the increase to $3/$15 once scheduled for 2026-09-01 will not happen.
-A full pass over all 17 readable sources cost $0.18.
+A full pass over the 17 sources readable at the time cost $0.18. Only the blocks
+of a page that changed are sent (spec 5.3), so a quiet six hours costs nothing
+and a page that moves costs a paragraph rather than six thousand characters.
 
 **A failure never scores zero.** Zero means "not relevant to him". When the API
 call fails, the reply will not parse, or it does not match the schema, the
@@ -169,11 +171,16 @@ the app rather than an absence of openings.
    secret named `RASID_PUSH_SUBSCRIPTION`. That subscription is the only place
    this design stores a device, which is how it keeps the spec's promise of no
    database. For the daily digest add `RESEND_API_KEY` and `NOTIFY_EMAIL`.
-   Quiet hours default to 23:00–07:00 via `RASID_QUIET_START` / `RASID_QUIET_END`,
-   and no more than six pushes go out in a day; the rest fall to the digest.
+   Quiet hours default to 23:00–07:00 **Riyadh time** via `RASID_QUIET_START` /
+   `RASID_QUIET_END` — measured in Riyadh whatever timezone the runner keeps —
+   and no more than six pushes go out in a day. Nothing held back is discarded:
+   what does not go out is queued in `data/pending-notices.json` and sent by the
+   next run that is allowed to send.
 5. **Schedule** — `.github/workflows/collect.yml` runs every six hours, collects,
    classifies, notifies, commits the dataset, and deploys. Installing Chromium
-   for the two rendered sources is allowed to fail without failing the run.
+   for the rendered sources is allowed to fail without failing the run. See
+   "Where the collection actually runs" below: the reading that matters happens
+   on the owner's machine, and this workflow answers its push.
 
 ```bash
 npm run check           # types, schemas, honesty rules
@@ -196,21 +203,51 @@ channel. Warnings are deliberate. They are the app's to-do list.
 
 ## Build status
 
-- [x] **Phase 1 - data spine.** Types, schemas, seed dataset (56 organisations,
+All six phases have shipped. The site is live at
+<https://meshare-alsubaie.github.io/rasid/>.
+
+- [x] **Phase 1 - data spine.** Types, schemas, dataset (116 organisations,
       3 aggregators), validation in CI.
-- [ ] Phase 2 - fetch pipeline with robots.txt and rate limiting
-- [ ] Phase 3 - Claude classifier with retry and a manual-review queue
-- [ ] Phase 4 - interface, starting with the Season Bar
-- [ ] Phase 5 - web push and email digest
-- [ ] Phase 6 - ship: Actions cron, Pages deploy, PWA install
+- [x] **Phase 2 - fetch pipeline.** robots.txt per RFC 9309, per-host pacing,
+      hash-based change detection, an opt-in headless-browser path.
+- [x] **Phase 3 - classifier.** Claude with schema validation, retry, and a
+      manual-review queue that never scores what it could not read.
+- [x] **Phase 4 - interface.** Season Bar, three groups, organisations list,
+      sheets, five measured themes.
+- [x] **Phase 5 - notifications.** Web push with VAPID, quiet hours in Riyadh
+      time, a daily cap, and a queue so a held notice is never lost.
+- [x] **Phase 6 - ship.** Six-hourly cron, Pages deploy, PWA install.
 
-## Two deliberate deviations from the specification
+## Where the collection actually runs
 
-Both come from spec section 4, "do not invent values for unverified fields":
+Not only on GitHub, and this is worth knowing before reading the workflow.
 
-1. `Organisation.manualCheckUrl` is `string | null` rather than a required
-   string. Most seed entries have no confirmed URL yet.
-2. `Organisation.applyVia` is nullable for the same reason.
+GitHub's runners are in the United States and a large share of `.gov.sa` hosts
+refuse them: nine of the eleven failures in the first cloud run were Saudi
+government sites that answer the owner's own machine without complaint. So the
+reading happens on that machine, on a six-hourly scheduled task
+(`scripts/scheduled-run.ps1`), which commits the dataset and pushes. GitHub
+answers that push by deciding what is newly true, sending the notifications, and
+republishing the site — the half it does well. The cron in
+`.github/workflows/collect.yml` still runs, and covers everything reachable from
+the United States.
+
+## Deliberate deviations from the specification
+
+All of them come from spec section 4, "do not invent values for unverified
+fields", and each is marked `DEVIATION FROM SPEC` in `src/types.ts`:
+
+1. `Organisation.manualCheckUrl` and `applyVia` are nullable. Most entries still
+   have no link anyone has opened and read.
+2. `Sector` gained `finance`; `SourceType` gained `site_root`, so a homepage is
+   never labelled a careers page.
+3. `OpportunityStatus` gained `unknown`, for a programme with no published dates.
+4. `SourceHealth.state` is `degraded` after a single failure, not after two.
+5. `MAX_BROWSER_SOURCES` was raised from 8 to 30 once collection moved off a
+   metered runner.
+6. Predicted "متوقع" lanes in the Season Bar are not drawn. Prediction needs
+   previous cycles, and this dataset has none of its own yet; a hatched bar
+   would be an invention wearing a legend entry.
 
 The validator counts every `null` in these fields and reports it, so the gap is
 tracked rather than papered over with a plausible-looking link.

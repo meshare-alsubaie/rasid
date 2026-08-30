@@ -18,18 +18,6 @@ const idFor = (orgId: string, titleAr: string, firstSeenISO: string): string =>
   createHash("sha256").update(`${orgId}|${titleAr}|${firstSeenISO}`).digest("hex").slice(0, 16);
 
 /**
- * A published date is a day in Riyadh, not an instant in UTC.
- *
- * Dates arrive as `YYYY-MM-DD`, which `Date.parse` reads as midnight UTC — so
- * "closes 15 October" became an instant that had already passed by three in the
- * morning Riyadh time on the fifteenth. The window was then reported closed for
- * the whole of its final day: the card left "مفتوح الآن", the closing alert was
- * suppressed, and the bar stopped short, on the one day a late applicant still
- * had a chance. A deadline day is open until it ends, and it ends at midnight
- * where the user is. A full timestamp, if one is ever published, is respected
- * as given.
- */
-/**
  * Only dates justify a window state. With neither an opening nor a closing
  * date, the honest answer is "unknown": a page can name a programme without
  * ever saying when it takes applications, and calling that "open" is the one
