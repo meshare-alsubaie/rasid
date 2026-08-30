@@ -156,11 +156,13 @@ export function renderSeasonBar(lanes: LaneInput[], now = new Date()): string {
           : "لم يُعلن تاريخ فتح أو إغلاق";
     }
 
-    ${/* `data-open-org`, not `data-org`: the click handler in main.ts matches
-          the former, and this file emitted the latter — so the signature
-          element of the whole product, the thing the spec says a tap must open
-          the organisation on, was inert to touch. The keyboard path worked,
-          which is why nobody noticed on a laptop. */ ""}
+    /*
+     * `data-open-org`, not `data-org`: the click handler in main.ts matches the
+     * former, and this file emitted the latter — so the signature element of the
+     * whole product, the thing the spec says a tap must open the organisation
+     * on, was inert to touch. The keyboard path worked, which is why nobody
+     * noticed on a laptop.
+     */
     return `<g class="lane${broken ? " lane-broken" : ""}" role="button" tabindex="0"
         data-open-org="${esc(lane.org.id)}" data-org="${esc(lane.org.id)}"
         aria-label="${esc(`${lane.org.nameAr}: ${described}`)}">
