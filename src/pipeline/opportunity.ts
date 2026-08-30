@@ -23,7 +23,7 @@ const idFor = (orgId: string, titleAr: string, firstSeenISO: string): string =>
  * ever saying when it takes applications, and calling that "open" is the one
  * guess that would cost the user a semester.
  */
-function statusOf(c: Classification, nowISO: string): OpportunityStatus {
+export function statusOf(c: Classification, nowISO: string): OpportunityStatus {
   const now = Date.parse(nowISO);
   const opens = c.opensISO === null ? null : startOfDay(c.opensISO);
   const closes = c.closesISO === null ? null : endOfDeadline(c.closesISO);

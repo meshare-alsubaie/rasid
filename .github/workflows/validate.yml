@@ -30,6 +30,10 @@ jobs:
       # and a notification.
       - run: npm run test:classifier
       - run: npm run test:notify
+      # The two silent failures an adversarial audit proved: a window that never
+      # opens because its status was cached, and a record deleted for the crime
+      # of its page going quiet.
+      - run: npm run test:lifecycle
 
       # The repository is public. The README called this a gate before it was
       # one: it was a habit someone had to remember, run by hand, with nothing

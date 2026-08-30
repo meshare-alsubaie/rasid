@@ -18,6 +18,7 @@
     "icons": "tsx scripts/make-icons.ts",
     "notify": "tsx scripts/notify.ts",
     "test:notify": "tsx scripts/test-notify.ts",
+    "test:lifecycle": "tsx scripts/test-lifecycle.ts",
     "audit:contrast": "tsx scripts/audit-contrast.ts",
     "audit:privacy": "tsx scripts/audit-privacy.ts",
     "audit:lighthouse": "tsx scripts/audit-lighthouse.ts",

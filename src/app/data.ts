@@ -6,7 +6,7 @@
  * invents a value: where the pipeline stored null, this layer keeps null, and
  * the rendering decides how to say "not announced".
  */
-import { endOfDeadline } from "../types";
+import { endOfDeadline, statusFor } from "../types";
 import type {
   AggregatorSource,
   Opportunity,
@@ -43,6 +43,26 @@ export async function loadDataset(): Promise<Dataset> {
     load<SourceHealth>("health"),
   ]);
 
+  /*
+   * The stored status is treated as a cache and recomputed on every load.
+   *
+   * The collector does this too, but the collector runs every six hours and the
+   * calendar does not wait for it — a window can open at midnight and be read
+   * at seven in the morning. Anything that depends on the clock has to be
+   * derived when it is read, or the app spends the gap asserting yesterday's
+   * answer. The dates are what was published; the status is only a view of them.
+   */
+  const now = Date.now();
+  const live = opportunities.map((o) => {
+    const status = statusFor(o, now);
+    if (status === o.status) return o;
+    const flags = new Set(o.flags);
+    if (status === "closing_soon") flags.add("closing_in_48h");
+    else flags.delete("closing_in_48h");
+    return { ...o, status, flags: [...flags] };
+  });
+
+  const orgById = new Map(orgs.map((o) => [o.id, o]));
   const byOrg = new Map<string, SourceHealth[]>();
   for (const h of health) {
     const list = byOrg.get(h.orgId);
@@ -58,17 +78,37 @@ export async function loadDataset(): Promise<Dataset> {
   return {
     orgs,
     aggregators,
-    opportunities,
+    opportunities: live,
     health,
-    orgById: new Map(orgs.map((o) => [o.id, o])),
-    // "unwatched" is its own answer, distinct from healthy. An organisation
-    // with no verified source is not a source in good standing, and the
-    // interface must never let those two read alike.
+    orgById,
+    /*
+     * The worst state across everything the organisation is *configured* to be
+     * watched on — not across whatever happened to get fetched.
+     *
+     * "unwatched" is its own answer, distinct from healthy, and it now covers
+     * the case that actually bit: an organisation with seven verified sources
+     * of which one was ever fetched used to report the health of that one. The
+     * Season Bar drew it as "؟", whose legend reads "المصدر يُقرأ" — the source
+     * is being read — for six pages nobody had opened. An audit found 33
+     * organisations in that state and 334 sources of 413 never attempted. A
+     * source nobody has fetched cannot make an organisation healthy, so a
+     * partially-read organisation is degraded and a wholly-unread one is
+     * unwatched.
+     */
     healthOf: (orgId) => {
-      const list = byOrg.get(orgId);
-      if (!list || list.length === 0) return "unwatched";
-      return list.reduce((worst, h) => (WORST[h.state] > WORST[worst] ? h.state : worst),
-        "healthy" as SourceHealth["state"]);
+      const configured = (orgById.get(orgId)?.sources ?? []).filter(
+        (s) => s.verifiedAtISO !== null,
+      );
+      const list = byOrg.get(orgId) ?? [];
+      const everRead = new Set(list.filter((h) => h.lastSuccessISO !== null).map((h) => h.sourceUrl));
+      if (configured.length === 0 || everRead.size === 0) return "unwatched";
+
+      const worst = list.reduce(
+        (w, h) => (WORST[h.state] > WORST[w] ? h.state : w),
+        "healthy" as SourceHealth["state"],
+      );
+      const unread = configured.filter((s) => !everRead.has(s.url)).length;
+      return unread > 0 && worst === "healthy" ? "degraded" : worst;
     },
     lastCheckISO,
   };

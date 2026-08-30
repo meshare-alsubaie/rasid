@@ -86,7 +86,8 @@
             "has_stipend",
             "wrong_product",
             "first_time_seen",
-            "needs_manual_review"
+            "needs_manual_review",
+            "vanished_from_source"
           ]
         },
         "uniqueItems": true

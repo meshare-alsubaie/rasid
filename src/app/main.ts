@@ -203,7 +203,19 @@ function answerBlock(): string {
   const open = data.opportunities
     .filter((o) => o.status === "open" || o.status === "closing_soon")
     .sort((a, b) => (daysUntil(a.closesISO) ?? Infinity) - (daysUntil(b.closesISO) ?? Infinity));
-  const watched = data.health.filter((h) => h.lastSuccessISO !== null).length;
+  /*
+   * Counted against what is configured, not against what happened to be
+   * fetched.
+   *
+   * The old count was `data.health.length` — one row per source the collector
+   * has actually attempted — so a source nobody had ever touched simply did not
+   * exist in the arithmetic. With 413 sources configured and 79 attempted, the
+   * screen showed "✓ 79 مصدراً مراقَباً" and a reader would take 79 for the
+   * whole. The denominator is now what he is relying on, and the gap is stated
+   * rather than hidden by leaving it out of the sum.
+   */
+  const configured = coverage();
+  const watched = configured.read;
   const unread = data.health.filter((h) => h.state !== "healthy").length;
   const tracked = data.opportunities.length;
 
@@ -220,14 +232,32 @@ function answerBlock(): string {
         : `منها: ${esc(soonest.titleAr)} — ولم تُعلن أي منها تاريخ إغلاق.`
       : `لم تنشر أي جهة محقّقة تاريخ فتح بعد. ${tracked} برنامجاً قائماً تحت المراقبة، وسيظهر هنا أول ما يُعلَن.`;
 
+  /*
+   * The alarm for the alarm.
+   *
+   * Everything else on this screen reports what the last round found. Nothing
+   * reported that there had been no round. An audit caught both collectors
+   * failing at once — the scheduled task had failed twice without writing a
+   * line, and the cloud run timed out having collected nothing and reported
+   * success — while the app went on showing a calm "checked 11 hours ago". At
+   * a six-hour cadence, twelve hours of silence is not lateness, it is a
+   * failure, and it is the one failure that hides every other.
+   */
+  const sinceCheck =
+    data.lastCheckISO === null ? Infinity : (Date.now() - Date.parse(data.lastCheckISO)) / 3_600_000;
+  const stalled =
+    sinceCheck > 12
+      ? `<p class="stalled">⚠ لم تعمل جولة قراءة منذ ${
+          sinceCheck === Infinity ? "بدء التطبيق" : `${Math.floor(sinceCheck)} ساعة`
+        }، والمفترض كل ٦. ما تراه هنا قديم، وقد تكون فُتحت نوافذ لا يعرف بها. افحص الجهات المهمة بنفسك حتى تعود الجولة.</p>`
+      : "";
+
   return `<section class="answer" aria-label="الحالة اليوم">
+    ${stalled}
     ${headline}
     <p class="sub">${sub}</p>
     <div class="tally">
-      ${/* Sources that have actually been read at least once. The count used to
-            be every health record, which includes ones that have never once
-            succeeded — claiming to watch a page nobody has ever read. */ ""}
-      <span><b>${watched}</b> مصدراً قُرئ فعلاً</span>
+      <span><b>${watched}</b> من ${configured.total} مصدراً قُرئ فعلاً</span>
       <span><b>${tracked}</b> برنامجاً معروفاً</span>
       ${unread > 0 ? `<span class="warn"><b>${unread}</b> مصدراً لا يُقرأ</span>` : ""}
     </div>
@@ -312,7 +342,7 @@ function seasonScreen(): string {
     </div>
     <p class="reason season-note">
       المسارات أدناه كل الجهات المراقَبة. أما المجموعات تحتها فتعرض <strong>الإعلانات</strong> لا الجهات:
-      ${data.opportunities.length} إعلاناً قُرئ وصُنِّف حتى الآن، و${silent} جهة تُقرأ كل ٦ ساعات ولم تنشر شيئاً بعد.
+      ${data.opportunities.length} إعلاناً قُرئ وصُنِّف حتى الآن، و${silent} جهة لم تنشر شيئاً بعد.
       لا تُعطى الجهة درجة صلة، لأن الدرجة تُقاس على إعلان بعينه — وجهة صامتة لا إعلان لها تُقاس.
     </p>
     ${renderSeasonBar(lanes)}
@@ -596,14 +626,48 @@ function confirmedPages(): number {
   return data.orgs.filter((o) => o.sources.some((s) => s.coopConfirmed === true)).length;
 }
 
+/**
+ * How much of what is configured has actually been read.
+ *
+ * Kept as one function because four separate screens were each computing their
+ * own version of "watched" from `health.json` — the table of sources the
+ * collector has attempted — and so every one of them silently excluded the
+ * sources it had never reached. An audit found 334 of 413 in that state while
+ * the app called itself healthy. A source that has never been fetched is not a
+ * source in good standing; it is a promise nobody has kept yet.
+ */
+function coverage(): { total: number; read: number; orgsFullyRead: number; orgsUnread: number } {
+  const readUrls = new Set(
+    data.health.filter((h) => h.lastSuccessISO !== null).map((h) => h.sourceUrl),
+  );
+  let total = 0;
+  let read = 0;
+  let orgsFullyRead = 0;
+  let orgsUnread = 0;
+  for (const o of data.orgs) {
+    const configured = o.sources.filter((s) => s.verifiedAtISO !== null);
+    if (configured.length === 0) continue;
+    const hit = configured.filter((s) => readUrls.has(s.url)).length;
+    total += configured.length;
+    read += hit;
+    if (hit === configured.length) orgsFullyRead++;
+    if (hit === 0) orgsUnread++;
+  }
+  return { total, read, orgsFullyRead, orgsUnread };
+}
+
 function settingsScreen(): string {
   return `<div class="cards">
     <div class="card">
       <h3>ما الذي يضمنه هذا التطبيق، وما الذي لا يضمنه</h3>
       <p class="reason">
-        يراقب ${data.health.length} مصدراً فُتح كل منها وقُرئ بنصّه، من أصل ${data.orgs.length} جهة في القاعدة.
-        ${confirmedPages()} منها صفحة قالت عن نفسها إنها للتدريب التعاوني؛ والبقية صفحات حقيقية للجهة
-        تُراقَب لأن الإعلان قد يظهر عليها، لا لأنها أثبتت أنها صفحة تدريب. الفرق مذكور داخل كل جهة.
+        ${(() => {
+          const c = coverage();
+          return `مُهيَّأ لقراءة ${c.total} مصدراً على ${data.orgs.length} جهة، وقُرئ منها ${c.read} فعلاً.
+        ${c.orgsUnread > 0 ? `<strong>${c.orgsUnread} جهة لم يُقرأ لها مصدر واحد بعد</strong>، فلن يراها التطبيق إن أعلنت.` : ""}
+        ${confirmedPages()} جهة لها صفحة قالت عن نفسها إنها للتدريب التعاوني؛ والبقية صفحات حقيقية للجهة
+        تُراقَب لأن الإعلان قد يظهر عليها، لا لأنها أثبتت أنها صفحة تدريب. الفرق مذكور داخل كل جهة.`;
+        })()}
       </p>
       <p class="reason">
         لا يَعِد بأنه سيرى كل إعلان. الجهات تنشر في أماكن مختلفة وبلا تقويم مسبق،

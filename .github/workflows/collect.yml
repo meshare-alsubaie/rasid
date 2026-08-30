@@ -41,6 +41,8 @@ jobs:
           # push. With the default depth of one there is no "before" to compare
           # against and every announcement looks like old news.
           fetch-depth: 2
+          # The default token cannot rebase onto a branch it has not fetched.
+          persist-credentials: true
 
       - uses: actions/setup-node@v4
         with:
@@ -120,11 +122,30 @@ jobs:
           git config user.email "actions@github.com"
           if git diff --quiet -- data; then
             echo "nothing changed"
-          else
-            git add data
-            git commit -m "data: collection run $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            exit 0
           fi
+          git add data
+          git commit -m "data: collection run $(date -u +%Y-%m-%dT%H:%MZ)"
+          # Two collectors write to this branch — this one and the scheduled
+          # task on the owner's machine — and neither knows about the other. A
+          # bare push therefore loses whole rounds to "fetch first", and one of
+          # them had a cybersecurity announcement in it scored 95, sent as a
+          # notification and then thrown away with the ephemeral runner. Rebase
+          # onto whatever landed while this run was collecting, and try again.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected, rebasing onto origin/master (attempt $attempt)"
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; break; }
+          done
+          # Nothing collected is lost from the user's point of view — the
+          # notifications for this round have already gone out — but the data is
+          # gone with the runner, so this has to be loud rather than green.
+          echo "::error::could not push the collected dataset after three attempts"
+          exit 1
 
       - env:
           VITE_VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}

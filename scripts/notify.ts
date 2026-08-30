@@ -159,7 +159,21 @@ async function sendPush(items: Notice[]): Promise<string[]> {
   for (const n of items) {
     try {
       if (!DRY) {
-        await webpush.sendNotification(subscription, JSON.stringify({ title: n.title, body: n.body }));
+        /*
+         * A tag per notice, not one for all of them.
+         *
+         * The service worker falls back to the constant tag "rasid", and a tag
+         * is what the operating system uses to decide that a new notification
+         * *replaces* an older one. Two alerts sent in the same second therefore
+         * left one banner. On 30 August two went out together, and the one that
+         * survived was the bank at relevance 65 — the cybersecurity programme
+         * at 95 was the one it overwrote. The daily cap of six means nothing if
+         * only the last of them is visible.
+         */
+        await webpush.sendNotification(
+          subscription,
+          JSON.stringify({ title: n.title, body: n.body, tag: n.key }),
+        );
       }
       sent.push(n.key);
     } catch (err) {

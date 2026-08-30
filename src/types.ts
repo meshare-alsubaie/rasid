@@ -341,7 +341,19 @@ export type OpportunityFlag =
   | "has_stipend"
   | "wrong_product" // it is تطوير الخريجين - user is not eligible yet
   | "first_time_seen" // this org has never posted a co-op before
-  | "needs_manual_review"; // classifier failed twice; never drop it silently
+  | "needs_manual_review" // classifier failed twice; never drop it silently
+  /**
+   * The page this came from no longer shows it.
+   *
+   * Not the same as closed, and the difference matters: a closed window was
+   * announced as closing, while this one simply stopped being visible. The
+   * record used to be deleted outright in that situation, silently, which
+   * cost a real open window with a relevance of 95 in an audit. It is kept
+   * and marked instead, because "it disappeared" is information he needs —
+   * the page may have been redesigned, or the deadline may have passed
+   * without the page ever saying so.
+   */
+  | "vanished_from_source";
 
 export interface Opportunity {
   /** hash of orgId + title + firstSeenISO */
@@ -519,4 +531,36 @@ export function startOfDay(iso: string): number {
   return /^\d{4}-\d{2}-\d{2}$/.test(iso)
     ? Date.parse(`${iso}T00:00:00.000Z`) - RIYADH_OFFSET_MS
     : Date.parse(iso);
+}
+
+/**
+ * The window state a record is in *now*, from the dates it published.
+ *
+ * This is deliberately a function of `(dates, now)` and nothing else, and it
+ * lives here so both the collector and the browser can call it. The status used
+ * to be computed once, at classification time, and stored — which meant a
+ * window that opened the following week never became "open", because the page
+ * had not changed and so was never re-read. An audit found a window that had
+ * been open for ten days and closed the next day still filed under
+ * "أُعلن ولم يفتح", with no alert ever sent. A value that depends on the clock
+ * cannot be cached against a change in the page.
+ *
+ * A graduate-development programme is never open here whatever its dates: it is
+ * not the product this application tracks, and spec 8.5 forbids the state.
+ */
+export function statusFor(
+  o: Pick<Opportunity, "opensISO" | "closesISO" | "product" | "flags">,
+  now: number = Date.now(),
+): OpportunityStatus {
+  if (o.product === "graduate_dev") return "unknown";
+  if (o.flags.includes("needs_manual_review")) return "unknown";
+
+  const opens = o.opensISO === null ? null : startOfDay(o.opensISO);
+  const closes = o.closesISO === null ? null : endOfDeadline(o.closesISO);
+
+  if (closes !== null && closes < now) return "closed";
+  if (opens !== null && opens > now) return "announced_not_open";
+  if (closes !== null && closes - now <= 48 * 60 * 60 * 1000) return "closing_soon";
+  if (opens !== null || closes !== null) return "open";
+  return "unknown";
 }

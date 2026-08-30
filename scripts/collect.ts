@@ -19,6 +19,7 @@
  *   npm run collect -- --verbose     one line per source
  */
 import { readFileSync, writeFileSync } from "node:fs";
+import pLimit from "p-limit";
 import { HAS_CONTACT, USER_AGENT } from "../src/pipeline/agent";
 import { browserUnavailable, closeBrowser, renderPage } from "../src/pipeline/browser";
 import { CLASSIFIER_MODEL, classify, costOf, type Usage } from "../src/pipeline/classify";
@@ -26,7 +27,7 @@ import { asManualReview, fromClassification } from "../src/pipeline/opportunity"
 import { extract, sha256 } from "../src/pipeline/extract";
 import { fetchPage, paced } from "../src/pipeline/fetch";
 import { checkFinalUrl, checkRobots } from "../src/pipeline/robots";
-import { MAX_BROWSER_SOURCES, SILENT_THIN_RUNS, THIN_CHARS } from "../src/types";
+import { MAX_BROWSER_SOURCES, SILENT_THIN_RUNS, THIN_CHARS, statusFor } from "../src/types";
 import type {
   AggregatorSource,
   HealthState,
@@ -333,11 +334,24 @@ if (!HAS_CONTACT) {
   console.log("note: RASID_CONTACT is unset, so requests carry no contact address.\n");
 }
 
-// robots.txt first, one fetch per origin, in sequence. Warming the cache this
-// way keeps a run from opening with a burst of parallel robots requests.
-for (const origin of new Set(targets.map((t) => new URL(t.url).origin))) {
-  await checkRobots(origin);
-}
+/*
+ * robots.txt first, one fetch per origin — but not one at a time.
+ *
+ * This was a plain sequential loop, written when there were eighteen sources on
+ * a handful of hosts. At 141 origins it became the reason the whole run died: a
+ * host that does not answer costs three attempts at twenty seconds, plus
+ * backoff, plus a headless-browser attempt, and a dozen such hosts exhaust a
+ * twenty-five minute budget before a single page has been fetched. A scheduled
+ * run timed out having collected nothing, and reported success.
+ *
+ * They are still one request per origin, still cached, and still paced per host
+ * by `fetchPage` — only the waiting is shared now. Six at a time is well under
+ * what any single host sees, because these are all different hosts.
+ */
+const origins = [...new Set(targets.map((t) => new URL(t.url).origin))];
+const robotsAtOnce = pLimit(6);
+console.log(`reading robots.txt for ${origins.length} host(s)…`);
+await Promise.all(origins.map((origin) => robotsAtOnce(() => checkRobots(origin))));
 
 // Every source is awaited, and a rejection here would be a bug in this file
 // rather than a bad page: collect() converts page failures into health records.
@@ -431,6 +445,8 @@ const opportunityById = new Map(priorOpportunities.map((o) => [o.id, o]));
 const orgsWithHistory = new Set(priorOpportunities.map((o) => o.orgId));
 const spend: Usage = { inputTokens: 0, outputTokens: 0 };
 const reviewQueue: string[] = [];
+/** Records whose page stopped showing them this run. Never silent. */
+const vanished: string[] = [];
 let classified = 0;
 let notAnnouncements = 0;
 
@@ -566,18 +582,76 @@ if (!NO_CLASSIFY && !DRY_RUN) {
      * said before, so the old entry goes. `prior` has already carried
      * firstSeenISO across, so the record keeps its history.
      */
-    for (const [id, o] of opportunityById) {
-      if (o.sourceUrl === snap.sourceUrl) opportunityById.delete(id);
-    }
+    /*
+     * A negative verdict never deletes. It used to, and that was the worst bug
+     * in this file.
+     *
+     * The delete loop ran *before* the isTrainingAnnouncement check, so any run
+     * where a watched page stopped mentioning training threw the record away in
+     * silence — and a page stops mentioning training for reasons that have
+     * nothing to do with the announcement ending: a redesign, a cookie wall, a
+     * maintenance banner, a soft 404 that answers 200, or the extractor
+     * latching onto navigation. An audit proved it by destroying a seeded open
+     * window, score 95, three seats, closing in eleven days, in a single round,
+     * with no notification of any kind. He would simply have found it gone.
+     *
+     * So the record is kept, marked as no longer visible on its page, and the
+     * disappearance is something the notifier can tell him about. Deletion now
+     * requires a positive replacement, which is the only thing that proves the
+     * page still holds an announcement.
+     */
     if (!result.value.isTrainingAnnouncement) {
       notAnnouncements++;
+      for (const [, o] of opportunityById) {
+        if (o.sourceUrl === snap.sourceUrl && !o.flags.includes("vanished_from_source")) {
+          o.flags = [...o.flags, "vanished_from_source"];
+          o.lastConfirmedISO = o.lastConfirmedISO; // unchanged: it was not confirmed today
+          vanished.push(`  ${snap.orgId.padEnd(14)} ${o.titleAr}`);
+        }
+      }
       continue;
+    }
+
+    /*
+     * One source, one current record.
+     *
+     * The id is a hash of the title, so a page whose wording shifts between
+     * runs would mint a second id and leave the first behind: two entries for
+     * one page, with two different scores, and no way for a reader to tell
+     * which is live. The verdict just produced supersedes whatever this source
+     * said before, so the old entry goes. `prior` has already carried
+     * firstSeenISO across, so the record keeps its history.
+     */
+    for (const [id, o] of opportunityById) {
+      if (o.sourceUrl === snap.sourceUrl) opportunityById.delete(id);
     }
     const record = fromClassification({ ...common, c: result.value });
     opportunityById.set(record.id, record);
     classified++;
   }
 }
+
+/*
+ * Every record's status is recomputed before anything is written.
+ *
+ * Not only the ones classified this run — every one. A record whose page has
+ * not moved is never reclassified, and its window opens and closes on the
+ * calendar regardless. Storing a status computed weeks ago and then never
+ * revisiting it is what made a window that had been open for ten days still
+ * read "أُعلن ولم يفتح", with no alert ever sent. The dates are the fact; the
+ * status is a view of them at a moment, and the moment is now.
+ */
+let restated = 0;
+for (const [id, o] of opportunityById) {
+  const fresh = statusFor(o, Date.parse(now));
+  if (fresh === o.status) continue;
+  const flags = new Set(o.flags);
+  if (fresh === "closing_soon") flags.add("closing_in_48h");
+  else flags.delete("closing_in_48h");
+  opportunityById.set(id, { ...o, status: fresh, flags: [...flags] });
+  restated++;
+}
+if (restated > 0) console.log(`\n${restated} record(s) moved to a new window state by the calendar`);
 
 if (VERBOSE) console.log(lines.sort().join("\n") + "\n");
 
@@ -648,6 +722,11 @@ console.log(`  owed a verdict         ${String(owed.length).padStart(3)}`);
 console.log(`  announcements          ${String(classified).padStart(3)}`);
 console.log(`  not an announcement    ${String(notAnnouncements).padStart(3)}`);
 console.log(`  needs manual review    ${String(reviewQueue.length).padStart(3)}`);
+console.log(`  vanished from source   ${String(vanished.length).padStart(3)}`);
+if (vanished.length > 0) {
+  console.log("\nno longer visible on the page that announced them:");
+  console.log(vanished.join("\n"));
+}
 console.log(
   `  tokens                 ${spend.inputTokens} in / ${spend.outputTokens} out = $${costOf(spend).toFixed(4)}`,
 );

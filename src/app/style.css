@@ -705,6 +705,21 @@ a {
   font-size: var(--t-15);
 }
 
+/*
+ * The collector has stopped. Loud on purpose, and above the headline, because
+ * every other number on this panel is describing a moment that has passed.
+ */
+.answer .stalled {
+  margin: 0 0 var(--s3);
+  padding: var(--s3);
+  border-radius: var(--radius-sm);
+  background: rgba(169, 58, 28, 0.16);
+  border: 1px solid var(--urgent-lit);
+  color: var(--panel-text);
+  font-size: var(--t-15);
+  line-height: 1.6;
+}
+
 /* Numbered instructions, spaced so a thumb can follow them on a phone. */
 .steps {
   margin: var(--s3) 0;
