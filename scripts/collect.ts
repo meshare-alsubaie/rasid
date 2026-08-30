@@ -133,8 +133,33 @@ if (overflow.length > 0) {
 }
 
 const now = new Date().toISOString();
-const healthByUrl = new Map(priorHealth.map((h) => [h.sourceUrl, h]));
-const snapshotByUrl = new Map(priorSnapshots.map((s) => [s.sourceUrl, s]));
+
+/*
+ * Records for sources that no longer exist are dropped.
+ *
+ * A source can leave the dataset — a duplicate merged away, a link that turned
+ * out to be the wrong page. Its snapshot and its health record used to stay
+ * behind for ever, and a health record is what the interface counts as "a
+ * source being watched": the app would keep reporting a page nobody fetches any
+ * more. The validator caught one and called it what it is, unwatchable.
+ *
+ * Only run when the whole set is being collected: with --org or --limit the
+ * targets are a slice, and pruning against a slice would delete the rest.
+ */
+const wholeRun = ONLY === null && !Number.isFinite(LIMIT);
+const live = new Set(targets.map((t) => t.url));
+const keep = <T extends { sourceUrl: string }>(rows: T[]): T[] =>
+  wholeRun ? rows.filter((r) => live.has(r.sourceUrl)) : rows;
+
+const droppedRecords = wholeRun
+  ? priorSnapshots.length - keep(priorSnapshots).length + (priorHealth.length - keep(priorHealth).length)
+  : 0;
+if (droppedRecords > 0) {
+  console.log(`forgetting ${droppedRecords} record(s) for sources no longer in the dataset`);
+}
+
+const healthByUrl = new Map(keep(priorHealth).map((h) => [h.sourceUrl, h]));
+const snapshotByUrl = new Map(keep(priorSnapshots).map((s) => [s.sourceUrl, s]));
 
 /** Any failure is degraded. See the note on SourceHealth.state for why. */
 const stateFor = (failures: number): HealthState =>
@@ -409,9 +434,36 @@ const reviewQueue: string[] = [];
 let classified = 0;
 let notAnnouncements = 0;
 
-const owed = [...snapshotByUrl.values()].filter(
-  (s) => (RECLASSIFY || s.pendingClassification) && textByUrl.has(s.sourceUrl),
-);
+/**
+ * What each source is worth reading first.
+ *
+ * The budget below is finite, and without an order it is spent in whatever
+ * sequence the sources happen to sit in. That would be actively harmful now
+ * that every organisation is watched on its news page as well: a media centre
+ * publishes something most days, so its hash moves every run, while the co-op
+ * page it sits beside moves twice a year — and the pages that change constantly
+ * would eat the budget in front of the one page this application exists to
+ * read.
+ *
+ * So a page that has said it is about cooperative training is judged first,
+ * then careers pages, then everything else.
+ */
+const sourceRank = new Map<string, number>();
+for (const o of orgs) {
+  for (const s of o.sources) {
+    sourceRank.set(
+      s.url,
+      s.coopConfirmed === true ? 0
+      : s.type === "careers_page" || s.type === "portal" ? 1
+      : s.type === "announcement_page" ? 2
+      : 3,
+    );
+  }
+}
+
+const owed = [...snapshotByUrl.values()]
+  .filter((s) => (RECLASSIFY || s.pendingClassification) && textByUrl.has(s.sourceUrl))
+  .sort((a, b) => (sourceRank.get(a.sourceUrl) ?? 3) - (sourceRank.get(b.sourceUrl) ?? 3));
 
 /*
  * A dry run does not spend money either.

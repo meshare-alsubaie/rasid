@@ -65,6 +65,27 @@ const REJECT =
   /\.(pdf|docx?|xlsx?|pptx?|zip|jpe?g|png|gif|svg|mp4)($|\?)|^mailto:|^tel:|^javascript:|#$/i;
 
 /**
+ * A single news story is not a channel.
+ *
+ * The first run of this took every link under `/news/`, and a news index and a
+ * two-year-old press release about a ribbon-cutting look identical to a regex.
+ * The index is worth reading every six hours because tomorrow it says something
+ * new; the article will say the same thing for ever, and watching it is a fetch
+ * and a classification spent on a page that cannot change.
+ *
+ * An article gives itself away by its last path segment: a long slug, a date,
+ * or a bare id. An index does not.
+ */
+function isOneStory(u: URL): boolean {
+  const last = decodeURI(u.pathname).split("/").filter(Boolean).pop() ?? "";
+  if (last.length > 40) return true;
+  if (/^\d{4,}$/.test(last)) return true;
+  if (/\d{4}[-/]\d{2}/.test(decodeURI(u.pathname))) return true;
+  // Four or more words joined by dashes reads as a headline, not a section.
+  return last.split("-").filter((w) => w.length > 1).length >= 4;
+}
+
+/**
  * Social platforms are excluded, and not because they are useless.
  *
  * X and LinkedIn are where several of these bodies really do announce first.
@@ -120,12 +141,16 @@ function harvest(html: string, pageUrl: string, sameHost: string): Found[] {
     const hit = SIGNALS.find(([re]) => re.test(label));
     if (!hit) continue;
 
-    const found: Found = {
-      url: url.href,
-      text: (a.textContent ?? "").replace(/\s+/g, " ").trim().slice(0, 60),
-      score: hit[1],
-      type: hit[2],
-    };
+    /*
+     * The weak signals have to earn their place. A link that only matched on
+     * "news" needs to be a section rather than one story, and needs a label: an
+     * anchor wrapping an image gives no text, and there is nothing to judge.
+     * A link that names cooperative training outright is kept regardless.
+     */
+    const text = (a.textContent ?? "").replace(/\s+/g, " ").trim();
+    if (hit[1] < 60 && (isOneStory(url) || text.length < 3)) continue;
+
+    const found: Found = { url: url.href, text: text.slice(0, 60), score: hit[1], type: hit[2] };
     const prior = best.get(found.url);
     if (!prior || prior.score < found.score) best.set(found.url, found);
   }

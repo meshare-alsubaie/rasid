@@ -344,8 +344,8 @@
   {
     "sourceUrl": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities",
     "orgId": "aramco",
-    "lastAttemptISO": "2026-08-30T00:02:43.835Z",
-    "lastSuccessISO": "2026-08-30T00:02:43.835Z",
+    "lastAttemptISO": "2026-08-30T07:04:52.398Z",
+    "lastSuccessISO": "2026-08-30T07:04:52.398Z",
     "consecutiveFailures": 0,
     "lastError": null,
     "state": "healthy"
@@ -610,15 +610,6 @@
     "consecutiveFailures": 0,
     "lastError": null,
     "state": "healthy"
-  },
-  {
-    "sourceUrl": "https://www.sar.com.sa/Home-aspx-lang-ar-sa.aspx",
-    "orgId": "sar",
-    "lastAttemptISO": "2026-08-30T00:02:43.835Z",
-    "lastSuccessISO": "2026-08-29T22:03:35.383Z",
-    "consecutiveFailures": 3,
-    "lastError": "HTTP 401",
-    "state": "degraded"
   },
   {
     "sourceUrl": "https://www.saso.gov.sa/ar/pages/default.aspx",

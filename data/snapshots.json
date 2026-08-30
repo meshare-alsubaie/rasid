@@ -409,13 +409,24 @@
   {
     "sourceUrl": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities",
     "orgId": "aramco",
-    "contentHash": "9b48f346bcf3b7b423ee77be25a2bbaaf66ae28347cc464135bc8dd35f48ffdc",
+    "contentHash": "2513ac411e9056b52aacbdd41f85a5750625ac6e0bbd31c378e8fb36f086be93",
+    "blockHashes": [
+      "139527ae1544ae73",
+      "beb81a0eae5bcdf1",
+      "141e483854a86088",
+      "4647908c981ad524",
+      "d53b1637321b7280",
+      "020de9abefb1386f",
+      "13f04db2bd4c474f",
+      "f91c8099e2d18ba5",
+      "db8539fcdb8a2402"
+    ],
     "extractedChars": 715,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T02:22:13.030Z",
-    "lastChangedISO": "2026-08-29T02:22:13.030Z",
+    "lastChangedISO": "2026-08-30T07:04:29.640Z",
     "thinRuns": 0,
-    "pendingClassification": false
+    "pendingClassification": true
   },
   {
     "sourceUrl": "https://www.awqaf.gov.sa/ar",
@@ -719,17 +730,6 @@
     "orgId": "saip",
     "contentHash": "781149dcb762beb19e565812bdfcc8c72e5e47584511f08682c91c5015892ec9",
     "extractedChars": 2419,
-    "extractionMethod": "readability",
-    "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-08-29T19:43:17.547Z",
-    "thinRuns": 0,
-    "pendingClassification": false
-  },
-  {
-    "sourceUrl": "https://www.sar.com.sa/Home-aspx-lang-ar-sa.aspx",
-    "orgId": "sar",
-    "contentHash": "f2a104f7fff039b503dd916fc569c794524c987eab8f63da46c020dd75d7663e",
-    "extractedChars": 1113,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
     "lastChangedISO": "2026-08-29T19:43:17.547Z",

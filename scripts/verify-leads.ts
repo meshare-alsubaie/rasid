@@ -332,6 +332,39 @@ for (const org of targets) {
 
 await closeBrowser();
 
+/*
+ * One record per address, enforced here rather than cleaned up later.
+ *
+ * A source's url is rewritten when a redirect lands somewhere else, or when a
+ * dead deep path falls back to the site root — and two different recorded
+ * links can rewrite to the same place. That leaves an organisation holding the
+ * same page twice, which means fetching and classifying it twice every six
+ * hours for ever. It happened twice before this guard existed, and both times
+ * the validator caught it, which is the validator working and this file not.
+ *
+ * The verified copy wins; between two verified copies, the one that carries
+ * co-op wording wins, because that is the one with evidence behind it.
+ */
+const strength = (s: Organisation["sources"][number]): number =>
+  (s.verifiedAtISO !== null ? 2 : 0) + (s.coopConfirmed === true ? 1 : 0);
+const addressOf = (url: string): string => url.replace(/#.*$/, "").replace(/\/+$/, "").toLowerCase();
+
+let deduped = 0;
+for (const org of orgs) {
+  const best = new Map<string, Organisation["sources"][number]>();
+  for (const s of org.sources) {
+    const at = addressOf(s.url);
+    const prior = best.get(at);
+    if (!prior) best.set(at, s);
+    else {
+      deduped++;
+      if (strength(s) > strength(prior)) best.set(at, s);
+    }
+  }
+  org.sources = [...best.values()];
+}
+if (deduped > 0) console.log(`\nmerged ${deduped} source(s) that resolved to an address already listed`);
+
 if (!DRY) {
   writeFileSync("data/organisations.json", JSON.stringify(orgs, null, 2) + "\n", "utf8");
   attempts.push(
