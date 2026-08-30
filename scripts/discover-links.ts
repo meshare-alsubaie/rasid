@@ -15,9 +15,10 @@
  * verification date, exactly like any other lead, and `verify-leads` still has
  * to open it before it counts.
  *
- *   npm run discover                 every watched organisation
- *   npm run discover -- --limit 20   a batch
- *   npm run discover -- --dry-run    report, write nothing
+ *   npm run discover                  every watched organisation
+ *   npm run discover -- --needs-coop  only those with no confirmed coop page
+ *   npm run discover -- --limit 20    a batch
+ *   npm run discover -- --dry-run     report, write nothing
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { parseHTML } from "linkedom";
@@ -132,9 +133,21 @@ function harvest(html: string, pageUrl: string, sameHost: string): Found[] {
   return [...best.values()].sort((a, b) => b.score - a.score);
 }
 
+/*
+ * The organisations still watched on a page that never said what it is for.
+ *
+ * A second pass over everything would double a source list that is already
+ * large. The organisations worth another look are the ones with no confirmed
+ * training page yet: for them the newly-verified pages from the first pass are
+ * fresh ground, and a careers page found last round often links to the coop
+ * page this round.
+ */
+const NEEDS_COOP = args.includes("--needs-coop");
+
 const targets = orgs
   .filter((o) => (ONLY === undefined ? true : o.id === ONLY))
   .filter((o) => o.sources.some((s) => s.verifiedAtISO !== null))
+  .filter((o) => !NEEDS_COOP || !o.sources.some((s) => s.coopConfirmed === true))
   .slice(0, LIMIT);
 
 console.log(`reading ${targets.length} organisation(s) for links they publish themselves\n`);
