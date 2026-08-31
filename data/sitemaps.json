@@ -599,6 +599,24 @@
     ]
   },
   {
+    "orgId": "ecza",
+    "origin": "http://www.ecza.gov.sa",
+    "lastReadISO": "2026-08-31T19:01:14.530Z",
+    "urlCount": 141,
+    "seenTraining": [
+      "1b05d8aa3aa523e6"
+    ]
+  },
+  {
+    "orgId": "ecza",
+    "origin": "https://www.ecza.gov.sa",
+    "lastReadISO": "2026-08-31T19:01:14.530Z",
+    "urlCount": 141,
+    "seenTraining": [
+      "1b05d8aa3aa523e6"
+    ]
+  },
+  {
     "orgId": "ejada",
     "origin": "https://careers.ejada.com",
     "lastReadISO": "2026-08-31T19:01:14.530Z",
@@ -622,6 +640,22 @@
       "bb8d004edfc331f5",
       "23ea0fcf2cde3d95"
     ]
+  },
+  {
+    "orgId": "etec",
+    "origin": "https://www.etec.gov.sa",
+    "lastReadISO": "2026-08-31T19:01:14.530Z",
+    "urlCount": 0,
+    "seenTraining": [],
+    "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
+  },
+  {
+    "orgId": "etec",
+    "origin": "https://neti.etec.gov.sa",
+    "lastReadISO": "2026-08-31T19:01:14.530Z",
+    "urlCount": 0,
+    "seenTraining": [],
+    "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
   },
   {
     "orgId": "ey_sa",
