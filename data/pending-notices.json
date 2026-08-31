@@ -30,5 +30,101 @@
     "body": "التدريب التعاوني · الرياض",
     "weight": 65,
     "queuedISO": "2026-08-31T00:26:23.186Z"
+  },
+  {
+    "key": "broken:http://www.moenergy.gov.sa/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — وزارة الطاقة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://adf.gov.sa/ar/Pages/default.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — صندوق التنمية الزراعية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://career.dga.gov.sa/ar/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة الحكومة الرقمية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://www.aecl.com/ar/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الشركات المتقدمة للإلكترونيات",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://www.bog.gov.sa/en/EServices/Pages/khabeer.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — ديوان المظالم",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://www.etec.gov.sa/ar/Pages/default.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة تقويم التعليم والتدريب",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://www.mim.gov.sa/ar/empower-training/cooperative-training",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — وزارة الصناعة والثروة المعدنية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://www.monshaat.gov.sa/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهيئة العامة للمنشآت الصغيرة والمتوسطة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://www.nazaha.gov.sa/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — نزاهة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://www.ncc.gov.sa/ar/Pages/default.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — المركز الوطني للتنافسية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://www.rcjy.gov.sa/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهيئة الملكية للجبيل وينبع",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
+  },
+  {
+    "key": "broken:https://www.srca.org.sa/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهلال الأحمر السعودي",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-08-31T12:23:07.949Z"
   }
 ]

@@ -558,11 +558,11 @@
     "titleAr": "التدريب التعاوني",
     "detectedISO": "2026-08-31T00:02:58.507Z",
     "firstSeenISO": "2026-08-31T00:02:58.507Z",
-    "lastConfirmedISO": "2026-08-31T00:02:58.507Z",
-    "status": "unknown",
+    "lastConfirmedISO": "2026-08-31T12:02:15.336Z",
+    "status": "closed",
     "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
+    "closesISO": "2026-05-06",
+    "closesHijri": "١٩ ذو القعدة ١٤٤٧ هـ",
     "product": "coop",
     "majors": [],
     "seats": null,
@@ -571,8 +571,8 @@
     "cities": [
       "الرياض"
     ],
-    "relevanceScore": 65,
-    "relevanceReason": "برنامج تدريب تعاوني عام تابع لوزارة الاتصالات وتقنية المعلومات دون تحديد تخصص واضح، لكنه ذو صلة بمجال التقنية بشكل عام.",
+    "relevanceScore": 40,
+    "relevanceReason": "البرنامج تدريب تعاوني عام لطلاب الجامعات دون تحديد تخصص تقني أو أمني واضح، لكنه يتبع وزارة الاتصالات وتقنية المعلومات مما يجعله ذا صلة عامة بالتخصص.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -581,7 +581,7 @@
     ],
     "sourceUrl": "https://careers.mcit.gov.sa/",
     "applyUrl": null,
-    "rawExcerpt": "كن جزءًا من فريقنا نتطلع في وزارة الاتصالات وتقنية المعلومات لاستقطاب الكفاءات الوطنية المتميزة، ممن يمتلكون الشغف في القطاع الرقمي، ليساهموا في تمكين المملكة في العصر الذكي. نؤمن بتمكين مواهبنا في بيئة عمل جاذبة، والتي تسهم في تحقيق قيمة مستدامة وأثر وطني ملموس. تقديم السيرة الذاتية شاركنا طموحك، وقدّم سيرتك الذاتية لتكون ضمن الكفاءات الوطنية التي نعتز بها البحث عن وظيفة تعرّف على الفرص الوظيفية "
+    "rawExcerpt": "موقع منصة التوظيف – وزارة الاتصالات وتقنية المعلومات للتوظيف\n\nموقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق إطلاق تجريبي روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان.\n\nعرض التفاصيل جدارات المنصة الوطنية ال"
   },
   {
     "id": "64c0d6652e8a368e",
@@ -773,7 +773,7 @@
     "titleAr": "برنامج تكاملي طموح",
     "detectedISO": "2026-08-29T19:43:17.547Z",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastConfirmedISO": "2026-08-29T19:43:17.547Z",
+    "lastConfirmedISO": "2026-08-31T12:02:15.336Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -785,7 +785,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 0,
-    "relevanceReason": "البرنامج موجه لحديثي التخرج وليس للتدريب التعاوني، والطالب لم يتخرج بعد فهو غير مؤهل.",
+    "relevanceReason": "البرنامج موجه لحديثي التخرج فقط وهو نوع تطوير خريجين وليس تدريب تعاوني، والطالب لم يتخرج بعد كما أن الفرصة مغلقة حاليًا",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -803,7 +803,7 @@
     "titleAr": "لم يُصنَّف بعد",
     "detectedISO": "2026-08-31T06:02:34.646Z",
     "firstSeenISO": "2026-08-31T06:02:34.646Z",
-    "lastConfirmedISO": "2026-08-31T06:02:34.646Z",
+    "lastConfirmedISO": "2026-08-31T12:02:15.336Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -815,7 +815,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: schema — reply did not match the schema: / must have required property 'isTrainingAnnouncement'; / must have required property 'product'; / must have required property 'titleAr'; / must have required property 'opensISO'; / must have required property 'closesISO'; / must have required property 'majors'; / must have required property 'seats'; / must have required property 'stipendSAR'; / must have required property 'durationWeeks'; / must have required property 'cities'; / must have required property 'statesZeroCoursesRule'; / must have required property 'zeroCoursesQuote'; / must have required property 'relevanceScore'; / must have required property 'relevanceReason'; / must have required property 'applyUrl'; / must NOT have additional properties; / must NOT have additional properties; / must NOT have additional properties; / must NOT have additional properties",
+    "relevanceReason": "تعذّر التصنيف: schema — reply did not match the schema: / must have required property 'isTrainingAnnouncement'; / must have required property 'product'; / must have required property 'titleAr'; / must have required property 'opensISO'; / must have required property 'closesISO'; / must have required property 'majors'; / must have required property 'seats'; / must have required property 'stipendSAR'; / must have required property 'durationWeeks'; / must have required property 'cities'; / must have required property 'statesZeroCoursesRule'; / must have required property 'zeroCoursesQuote'; / must have required property 'relevanceScore'; / must have required property 'relevanceReason'; / must have required property 'applyUrl'; / must NOT have additional properties; / must NOT have additional properties; / must NOT have additional properties",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
