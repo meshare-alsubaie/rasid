@@ -58,6 +58,40 @@
     "rawExcerpt": "التدريب التعاونيرسالة عطاء إلى المجتمع ... تهتمّ الهيئة بإقامة برامج التدريب التعاوني لطلاب الجامعات كجزء من المسؤولية المجتمعية التي تحرص عليها، وهي تنسّق باستمرار مع عدد من الجامعات؛ لتغذية مناهجها بالخبرة العملية، وضمان حصول أكبر قدر ممكن من الطلاب المتميّزين في التدريب. وتسعى هذه الجهود إلى مساعــدة الطلاب على العبـور السليم من الجامعة إلى سوق العمل، وتُعينهم على الربط بين المعلومات النظرية، و"
   },
   {
+    "id": "20701e0efe7ba187",
+    "orgId": "saib",
+    "titleAr": "برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني",
+    "detectedISO": "2026-08-31T06:02:34.646Z",
+    "firstSeenISO": "2026-08-31T06:02:34.646Z",
+    "lastConfirmedISO": "2026-08-31T06:02:34.646Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "graduate_dev",
+    "majors": [
+      "تقنية المعلومات",
+      "الأمن السيبراني"
+    ],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": 52,
+    "cities": [
+      "الرياض"
+    ],
+    "relevanceScore": 0,
+    "relevanceReason": "البرنامج مخصص للخريجين الحاصلين على شهادة البكالوريوس فعلياً بدوام كامل، والطالب لم يتخرج بعد وغير مؤهل لهذا النوع من البرامج.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "wrong_product",
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://careers.saib.com.sa/ar/page/it-program/",
+    "applyUrl": null,
+    "rawExcerpt": "برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لخريجي تقنية المعلومات والأمن السيبراني - استثمارنا المستمر في قادة المستقبل. نقدم في هذا البرنامج شهادات تدريب معترف بها عالمياً لنخبة من أمهر الخريجين الذين انضموا لبرنامجنا. هذه فرصة ليكونوا فرداً من أفراد عائلة البنك السعودي للاستثمار. مزايا البرنامج يحصل المتدرب في نهاية فترة التدريب على ش"
+  },
+  {
     "id": "2ea4adec3dde4a5c",
     "orgId": "cma",
     "titleAr": "برنامج التدريب التعاوني للفصل الدراسي الأول 2026م",
@@ -226,6 +260,34 @@
     "rawExcerpt": "In light of the collaboration between Alrajhi Bank and educational institutions. Cooperative training, in the opinion of Alrajhi Bank Academy, is crucial in outlining a precise course for successful jobs. Through this project, students will have the chance to develop their talents and abilities while applying their academic learning and theoretical knowledge in a vibrant, diverse business environm"
   },
   {
+    "id": "41dea4d6f6a0140c",
+    "orgId": "jadwa",
+    "titleAr": "Summer Internship Program",
+    "detectedISO": "2026-08-31T06:02:34.646Z",
+    "firstSeenISO": "2026-08-31T06:02:34.646Z",
+    "lastConfirmedISO": "2026-08-31T06:02:34.646Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "professional_experience",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 20,
+    "relevanceReason": "Ø§Ù„Ø¥Ø¹Ù„Ø§Ù† Ø¹Ø¨Ø§Ø±Ø© Ø¹Ù† Ù†Ù…ÙˆØ°Ø¬ ØªÙ‚Ø¯ÙŠÙ… Ø¹Ø§Ù… Ù„Ø¨Ø±Ù†Ø§Ù…Ø¬ ØªØ¯Ø±ÙŠØ¨ ØµÙŠÙÙŠ Ø¯ÙˆÙ† ØªØ­Ø¯ÙŠØ¯ Ù…Ø¬Ø§Ù„ Ø§Ù„Ø£Ù…Ù† Ø§Ù„Ø³ÙŠØ¨Ø±Ø§Ù†ÙŠ Ø£Ùˆ Ø£ÙŠ ØªØ®ØµØµ Ù…Ø­Ø¯Ø¯ØŒ Ù…Ù…Ø§ ÙŠØ¬Ø¹Ù„ Ø§Ù„ØµÙ„Ø© Ù…Ø­Ø¯ÙˆØ¯Ø© ÙˆØ¹Ø§Ù…Ø©.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://www.jadwa.com/en/form/summer-internship-program",
+    "applyUrl": null,
+    "rawExcerpt": "Summer Internship Program Full name Gender Male Female Nationality Academic institution Major GPA Mobile number Email address Program start date Program duration Area of interest Upload CV One file only.15 MB limit.Allowed types: pdf, doc, docx. What code is in the image? Enter the characters shown in the image. Get new captcha!"
+  },
+  {
     "id": "479e7e71208bc0d1",
     "orgId": "gastat",
     "titleAr": "برنامج التدريب التعاوني - الهيئة العامة للإحصاء (GASTAT)",
@@ -363,6 +425,66 @@
     "rawExcerpt": "بناءً على التعاون المشترك بين مصرف الراجحي والجامعات التعليمية, ترى أكاديمية مصرف الراجحي أن التدريب التعاوني يعد عنصراً أساسياً في وضع مسار واضح نحو وظائف ناجحة. من خلال برنامج التدريب التعاوني سيحصل الطلاب على فرصة لتنمية مواهبهم وقدراتهم وتطبيق معرفتهم الأكاديمية في بيئة عمل حيوية ومتنوعة. وبناءً على ذلك يعتبر هذا البرنامج جزءاً مهماً في استراتيجية التوظيف لدى المصرف. يركز برنامج التدريب التعاو"
   },
   {
+    "id": "5387cf4e5911030a",
+    "orgId": "kpmg_sa",
+    "titleAr": "برنامج تدريب التدقيق في KPMG لخريجي المحاسبة",
+    "detectedISO": "2026-08-31T06:02:34.646Z",
+    "firstSeenISO": "2026-08-31T06:02:34.646Z",
+    "lastConfirmedISO": "2026-08-31T06:02:34.646Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "professional_experience",
+    "majors": [
+      "Accounting"
+    ],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": 26,
+    "cities": [],
+    "relevanceScore": 5,
+    "relevanceReason": "هذا التدريب مخصص لخريجي المحاسبة في مجال التدقيق، ولا علاقة له بتخصص الطالب في الأمن السيبراني أو علوم الحاسب.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition",
+      "first_time_seen"
+    ],
+    "sourceUrl": "https://slccareers.kpmg.com/job/Medina-KPMG-Audit-Internship-Program-Accounting-Graduates/1368374723/",
+    "applyUrl": null,
+    "rawExcerpt": "Function: People, Performance and Culture Level of Experience: Internship Overview – KPMG Middle East KPMG has grown to become one of the largest professional service providers in the Middle East, having three lines of services: audit, tax, and advisory. Currently, KPMG Middle East workforce is over 5,000. With ambitious growth objectives, we are continuously looking for talents for various functi"
+  },
+  {
+    "id": "546238a3ae7911c0",
+    "orgId": "saso",
+    "titleAr": "التدريب التعاوني | الهيئة السعودية للمواصفات والمقاييس والجودة",
+    "detectedISO": "2026-08-31T00:02:58.507Z",
+    "firstSeenISO": "2026-08-31T00:02:58.507Z",
+    "lastConfirmedISO": "2026-08-31T06:02:34.646Z",
+    "status": "closed",
+    "opensISO": "2026-06-07",
+    "closesISO": "2026-06-25",
+    "closesHijri": "١٠ محرم ١٤٤٨ هـ",
+    "product": "coop",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 30,
+    "relevanceReason": "الإعلان عام عن التدريب التعاوني في هيئة المواصفات والمقاييس دون تحديد تخصص أو مسار متعلق بالأمن السيبراني أو تقنية المعلومات بشكل مباشر.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition",
+      "first_time_seen"
+    ],
+    "sourceUrl": "https://www.saso.gov.sa/ar/QualitySign/info/Pages/default.aspx",
+    "applyUrl": null,
+    "rawExcerpt": "التدريب التعاوني | الهيئة السعودية للمواصفات والمقاييس والجودة\n\nموقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان.\n\nمسجل لدى هيئة الحكومة الرقمية برقم : 20250414141"
+  },
+  {
     "id": "5835cf2477a4d966",
     "orgId": "alrajhi",
     "titleAr": "برنامج التدريب التعاوني - مصرف الراجحي",
@@ -462,6 +584,39 @@
     "rawExcerpt": "كن جزءًا من فريقنا نتطلع في وزارة الاتصالات وتقنية المعلومات لاستقطاب الكفاءات الوطنية المتميزة، ممن يمتلكون الشغف في القطاع الرقمي، ليساهموا في تمكين المملكة في العصر الذكي. نؤمن بتمكين مواهبنا في بيئة عمل جاذبة، والتي تسهم في تحقيق قيمة مستدامة وأثر وطني ملموس. تقديم السيرة الذاتية شاركنا طموحك، وقدّم سيرتك الذاتية لتكون ضمن الكفاءات الوطنية التي نعتز بها البحث عن وظيفة تعرّف على الفرص الوظيفية "
   },
   {
+    "id": "64c0d6652e8a368e",
+    "orgId": "saib",
+    "titleAr": "برنامج تطوير الخريجين لمصرفية الشركات - البنك السعودي للاستثمار",
+    "detectedISO": "2026-08-31T06:02:34.646Z",
+    "firstSeenISO": "2026-08-31T06:02:34.646Z",
+    "lastConfirmedISO": "2026-08-31T06:02:34.646Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "graduate_dev",
+    "majors": [
+      "أي مجال متعلق بإدارة الأعمال"
+    ],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": 52,
+    "cities": [
+      "الرياض"
+    ],
+    "relevanceScore": 0,
+    "relevanceReason": "البرنامج مخصص لخريجي إدارة الأعمال في القطاع المصرفي وغير متعلق بالأمن السيبراني، كما أنه برنامج تطوير خريجين يتطلب شهادة التخرج وهو غير متاح للطالب الحالي.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "wrong_product",
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://careers.saib.com.sa/ar/page/bag-program/",
+    "applyUrl": null,
+    "rawExcerpt": "برنامج تطوير الخريجين لمصرفية الشركات يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لمصرفية الشركات - استثمارنا المستمر في قادة المستقبل نقدم في هذا البرنامج تدريب بالتعاون مع شركاء عالميين و شهادات معترف بها عالميا لنخبة من أمهر الخريجين الذين انضموا لبرنامجنا . هذه فرصة ليكونوا فرداً من أفراد عائلة البنك السعودي للاستثمار. مزايا البرنامج يحصل المتدرب في نهاية فترة التدريب على شهادة معتمده. يج"
+  },
+  {
     "id": "80735898d0205329",
     "orgId": "sdaia",
     "titleAr": "برنامج التدريب التعاوني - سدايا",
@@ -518,6 +673,41 @@
     "sourceUrl": "https://www.jadwa.com/ar/internship",
     "applyUrl": null,
     "rawExcerpt": "الوظائف الوظائف التدريب من المهم أن تستهل مسيرتك المهنية بالشكل الصحيح. لذا توفر أكاديمية جدوى ثلاثة مسارات مختلفة تتيح للشباب والشابات فرص التدريب العملي والتطور المهني في مجالات المالية والاستثمار. برنامج التدريب الصيفي بإمكان الطلاب الجامعيين والخريجين الجدد التقدم للالتحاق ببرنامج تدريب صيفي مدته ثلاثة أشهر. تقدّم الآن برنامج التدريب التعاوني بإمكان الطلاب الجامعيين التقدم للالتحاق ببرنامج تدر"
+  },
+  {
+    "id": "864ed6b8c37da5b4",
+    "orgId": "saib",
+    "titleAr": "Cooperative Program - The Saudi Investment Bank",
+    "detectedISO": "2026-08-31T06:02:34.646Z",
+    "firstSeenISO": "2026-08-31T06:02:34.646Z",
+    "lastConfirmedISO": "2026-08-31T06:02:34.646Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "coop",
+    "majors": [
+      "Finance",
+      "Accounting",
+      "Marketing",
+      "Engineering",
+      "Management Information Systems",
+      "Other related business management areas"
+    ],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 30,
+    "relevanceReason": "التخصص الأقرب هو نظم المعلومات الإدارية وليس الأمن السيبراني أو الشبكات مباشرة، لذا العلاقة محدودة بمجال الطالب.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://careers.saib.com.sa/en/page/coop-program/",
+    "applyUrl": null,
+    "rawExcerpt": "Cooperative Program The Saudi Investment Bank is one of the rapidly growing organizations in the banking industry that adopt the concept of corporate social responsibility. This could be seen clearly through the number of initiatives, activities and programs that SAIB provides to the society. Program mission: The program mission is to focus on the development of practical skills for co-op students"
   },
   {
     "id": "9162d5490db8e5fc",
@@ -608,6 +798,34 @@
     "rawExcerpt": "انضم الآن ​هنا تفتح الآفاق لتكونوا جزءًا من مسيرة التمكينالفرص التدريبية انضم إلى برنامج \"تكاملي طموح\"، المصمم لتطوير وتدريب الكفاءات الواعدة من حديثي التخرج وتأهيلهم لسوق العمل.مغلقالفرص الوظيفية​انطلق في رحلتك المهنية معنا لاستكشاف إمكانياتك وتطوير مهاراتك، وكن جزءًا من رؤية تكامل القابضة.استكشف الوظائف"
   },
   {
+    "id": "b9f8618cdd8a6b25",
+    "orgId": "mckinsey_sa",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-08-31T06:02:34.646Z",
+    "firstSeenISO": "2026-08-31T06:02:34.646Z",
+    "lastConfirmedISO": "2026-08-31T06:02:34.646Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: schema — reply did not match the schema: / must have required property 'isTrainingAnnouncement'; / must have required property 'product'; / must have required property 'titleAr'; / must have required property 'opensISO'; / must have required property 'closesISO'; / must have required property 'majors'; / must have required property 'seats'; / must have required property 'stipendSAR'; / must have required property 'durationWeeks'; / must have required property 'cities'; / must have required property 'statesZeroCoursesRule'; / must have required property 'zeroCoursesQuote'; / must have required property 'relevanceScore'; / must have required property 'relevanceReason'; / must have required property 'applyUrl'; / must NOT have additional properties; / must NOT have additional properties; / must NOT have additional properties; / must NOT have additional properties",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://www.mckinsey.com/careers/mckinsey-digital-assessment",
+    "applyUrl": null,
+    "rawExcerpt": "One of the exciting steps in our consultant recruitment process is Solve, a gamified assessment created to showcase your problem-solving abilities. There’s no need to prepare—approach it with curiosity and creativity. Your performance on Solve will be considered in conjunction with the rest of your application and any other assessments you are asked to take.At McKinsey, we are committed to providi"
+  },
+  {
     "id": "bbcdea5360825a45",
     "orgId": "alrajhi",
     "titleAr": "التدريب التعاوني",
@@ -667,6 +885,34 @@
     "sourceUrl": "https://careers.stc.com.sa/content/COOP/?locale=en_US",
     "applyUrl": null,
     "rawExcerpt": "Cooperative Training Program As part of stc’s strategy to attract and develop young talents and top notch students, stc provides Cooperative Training opportunities to Saudi students who are attending in-Kingdom Universities. The objective of the program is to assist trainees in gaining practical work experience, meeting the graduation requirements of their respective universities. Program Objectiv"
+  },
+  {
+    "id": "bee710e76e6857d7",
+    "orgId": "jadwa",
+    "titleAr": "برنامج التدريب التعاوني - أكاديمية جدوى",
+    "detectedISO": "2026-08-31T06:02:34.646Z",
+    "firstSeenISO": "2026-08-31T06:02:34.646Z",
+    "lastConfirmedISO": "2026-08-31T06:02:34.646Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "coop",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 5,
+    "relevanceReason": "البرنامج يركز على مجال الاستثمار والتمويل ولا علاقة له بتخصص الأمن السيبراني أو الحوسبة.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://www.jadwa.com/en/internship",
+    "applyUrl": null,
+    "rawExcerpt": "Careers Careers Internships Starting your career on the right footing is important. Jadwa Academy offers young men and women three different pathways for hands-on training and professional development in investment and finance. Summer internship program University students and recent graduates can apply for a three-month summer internship. Apply Now Cooperative program University students can appl"
   },
   {
     "id": "c10959f75814e906",
@@ -847,33 +1093,32 @@
     "rawExcerpt": "Skip to contentPractical training and internships for University students.Saudi Aramco offers internship opportunities to a limited number of high-caliber Saudi students who are attending in-Kingdom or out-of-Kingdom universities, as well as those attending industrial/technical colleges or the Institute of Public Administration. The objective of this program is to assist participants in gaining pr"
   },
   {
-    "id": "f643051153e36ed4",
-    "orgId": "saso",
-    "titleAr": "التدريب التعاوني - الهيئة السعودية للمواصفات والمقاييس والجودة",
-    "detectedISO": "2026-08-31T00:02:58.507Z",
-    "firstSeenISO": "2026-08-31T00:02:58.507Z",
-    "lastConfirmedISO": "2026-08-31T00:02:58.507Z",
-    "status": "closed",
-    "opensISO": "2026-06-07",
-    "closesISO": "2026-06-25",
-    "closesHijri": "١٠ محرم ١٤٤٨ هـ",
+    "id": "ef57725e3e46a26e",
+    "orgId": "albilad",
+    "titleAr": "برنامج التدريب التعاوني - بنك البلاد",
+    "detectedISO": "2026-08-31T06:02:34.646Z",
+    "firstSeenISO": "2026-08-31T06:02:34.646Z",
+    "lastConfirmedISO": "2026-08-31T06:02:34.646Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
     "product": "coop",
     "majors": [],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 30,
-    "relevanceReason": "الإعلان عام ولا يحدد تخصصًا تقنيًا أو أمنيًا محددًا، لذا العلاقة بمجال الأمن السيبراني غير مؤكدة.",
+    "relevanceScore": 20,
+    "relevanceReason": "الإعلان عام لجميع طلاب البكالوريوس دون تحديد تخصص الأمن السيبراني أو تقنية المعلومات تحديداً.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "no_course_condition",
-      "first_time_seen"
+      "no_course_condition"
     ],
-    "sourceUrl": "https://www.saso.gov.sa/ar/QualitySign/info/Pages/default.aspx",
+    "sourceUrl": "https://bankalbilad.com/ar/about/Pages/Training.aspx",
     "applyUrl": null,
-    "rawExcerpt": "​​​​​​​​تحرص الهيئة السعودية للمواصفات والمقاييس والجودة من خلال برامج \"التدريب التعاوني\" على تمكين أبناءنا طلاب وطالبات المؤسسات التعليمية من موائمة تخصصاتهم العلمية بالتطبيق العملي بهدف تأهيلهم إلى سوق العمل، وإثرائهم بالخبرات والمهارات اللازمة، حيث يتاح لفصلين تدريبين خلال العام الواحد، ويتم التسجيل في البرنامج يتم عبر البوابة الإلكترونية فقط.إعلان:​فتح التسجيل للفصل التدريبي الأول لهذا العام خ"
+    "rawExcerpt": "​برنامج التدريب التعاونيإن من أهداف بنك البلاد رفع مستوى المعرفة والمهارة لدى كفاءات الوطن من الطلبة الخريجين وتمكينهم من تطبيق الدراسات الأكاديمية في بيئة العمل الفعلية، الأمر الذي يدعم جهود السعودة والتوطين الوظيفي لدى البنك، لذا يقوم بنك البلاد بالتعاون الاستراتيجي مع الجامعات والمعاهد داخل المملكة وخارجها من خلال التدريب التعاوني والذي يعد أحد أهم مصادر توظيف الكفاءات الشابة والواعدة.​​شروط ال"
   },
   {
     "id": "f7c62875ac95a35e",
