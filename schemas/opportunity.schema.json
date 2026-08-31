@@ -87,7 +87,8 @@
             "wrong_product",
             "first_time_seen",
             "needs_manual_review",
-            "vanished_from_source"
+            "vanished_from_source",
+            "more_on_page"
           ]
         },
         "uniqueItems": true

@@ -71,11 +71,37 @@ for (const c of todo) {
   );
 }
 
-writeFileSync(
-  FIXTURE,
-  JSON.stringify({ promptHash, builtISO: new Date().toISOString(), model: CLASSIFIER_MODEL, answers }, null, 2) + "\n",
-  "utf8",
-);
+/*
+ * A rebuild that answered nothing must not claim to be fresh.
+ *
+ * This wrote the new prompt hash unconditionally, so when the API refused every
+ * call — the account had run out of credit — the fixture kept the *old* answers
+ * under the *new* hash, and the drift warning went quiet. The benchmark would
+ * then have gone on passing in CI while testing a prompt that no longer exists.
+ * A tool that reports on staleness must not be able to lie about its own.
+ */
+const answered = todo.filter((c) => answers[c.id] !== undefined).length;
+const wholeSetRebuilt = only === undefined && answered === todo.length;
+
+if (answered === 0) {
+  console.log("\nnothing was classified, so the fixture is left exactly as it was.");
+} else {
+  writeFileSync(
+    FIXTURE,
+    JSON.stringify(
+      {
+        // Only a complete, successful rebuild may claim to match this prompt.
+        promptHash: wholeSetRebuilt ? promptHash : (prior?.promptHash ?? promptHash),
+        builtISO: wholeSetRebuilt ? new Date().toISOString() : (prior?.builtISO ?? new Date().toISOString()),
+        model: CLASSIFIER_MODEL,
+        answers,
+      },
+      null,
+      2,
+    ) + "\n",
+    "utf8",
+  );
+}
 
 console.log(
   `\nstored ${Object.keys(answers).length} answer(s) in ${FIXTURE}` +

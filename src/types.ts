@@ -353,7 +353,17 @@ export type OpportunityFlag =
    * the page may have been redesigned, or the deadline may have passed
    * without the page ever saying so.
    */
-  | "vanished_from_source";
+  | "vanished_from_source"
+  /**
+   * The page carries other announcements this record does not describe.
+   *
+   * The collector keeps exactly one record per source, so a careers page
+   * listing four programmes produces one and hides three. Fixing that properly
+   * means letting one page yield several records, which changes how a record
+   * is identified. Until then the limit is stated on the card, so he opens the
+   * page instead of trusting a list that is quietly partial.
+   */
+  | "more_on_page";
 
 export interface Opportunity {
   /** hash of orgId + title + firstSeenISO */

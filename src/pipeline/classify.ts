@@ -54,6 +54,21 @@ export interface Classification {
    */
   opensRaw: string | null;
   closesRaw: string | null;
+  /**
+   * Whether the page carries other distinct announcements besides this one.
+   *
+   * The pipeline keeps exactly one record per source — the delete-then-insert
+   * in `collect.ts` guarantees it — so a careers page listing four open
+   * programmes yields one, and the other three are invisible. That is a real
+   * limit and it is common: portals list a co-op programme, a summer
+   * programme, and a graduate scheme on the same page.
+   *
+   * Capturing all of them would mean an array in this schema and a different
+   * identity scheme for records. Short of that, the honest thing is to know
+   * that more exists and say so, so the user opens the page himself instead of
+   * trusting a list that is quietly partial.
+   */
+  moreOnPage: boolean;
   majors: string[];
   seats: number | null;
   stipendSAR: number | null;
@@ -141,6 +156,7 @@ Return ONLY valid JSON, no markdown fences, matching this schema:
   "closesISO": string | null,
   "opensRaw": string | null,
   "closesRaw": string | null,
+  "moreOnPage": boolean,
   "majors": string[],
   "seats": number | null,
   "stipendSAR": number | null,
@@ -171,6 +187,11 @@ RULES
   verbatim — "12 ربيع الأول 1448", "١٤٤٨/٣/١٢", "15 سبتمبر 2026". Null if the
   page states no such date. Copy the characters; do not interpret them.
 
+- moreOnPage: true when the page carries other distinct training announcements
+  besides the one you described — a second programme, a different season, a
+  separate track. Only one is recorded per page, so this is how the reader
+  learns to open the page and look for the rest.
+
 Dates are converted afterwards, in code, against the Umm al-Qura calendar. Your
 job with a date is to find it and repeat it, not to work out what it means: a
 deadline read a day wrong costs the reader a semester, and this is the one field
@@ -195,6 +216,7 @@ const schema = {
     "closesISO",
     "opensRaw",
     "closesRaw",
+    "moreOnPage",
     "majors",
     "seats",
     "stipendSAR",
@@ -217,6 +239,7 @@ const schema = {
     closesISO: { type: ["string", "null"] },
     opensRaw: { type: ["string", "null"] },
     closesRaw: { type: ["string", "null"] },
+    moreOnPage: { type: "boolean" },
     majors: { type: "array", items: { type: "string" } },
     seats: { type: ["integer", "null"], minimum: 0 },
     stipendSAR: { type: ["number", "null"], minimum: 0 },

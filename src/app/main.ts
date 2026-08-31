@@ -214,6 +214,11 @@ function opportunityCard(o: Opportunity): string {
         : ""
     }
     ${
+      o.flags.includes("more_on_page")
+        ? `<p class="reason warn">هذه الصفحة تحمل إعلانات أخرى غير هذا، ولا يُسجَّل منها إلا واحد. افتحها بنفسك لترى البقية.</p>`
+        : ""
+    }
+    ${
       o.statesZeroCoursesRule && o.zeroCoursesQuote
         ? `<blockquote class="quote">${esc(o.zeroCoursesQuote)}<cite>شرط منشور على صفحة الجهة، منقول بنصّه</cite></blockquote>`
         : ""

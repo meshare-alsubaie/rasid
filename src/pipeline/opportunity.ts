@@ -57,6 +57,9 @@ function flagsFor(c: Classification, status: OpportunityStatus, firstTime: boole
   // rule being published is not evidence that the organisation is flexible.
   if (!c.statesZeroCoursesRule) flags.push("no_course_condition");
   if (firstTime) flags.push("first_time_seen");
+  // One record per page is a hard limit of this pipeline, so a page holding
+  // more than one announcement has to say so rather than quietly show one.
+  if (c.moreOnPage) flags.push("more_on_page");
   return flags;
 }
 
