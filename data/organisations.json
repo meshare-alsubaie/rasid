@@ -2883,6 +2883,55 @@
         "checkFrequencyHours": 12,
         "renderMode": "static",
         "coopConfirmed": false
+      },
+      {
+        "url": "https://www.customs.gov.sa/",
+        "provenance": "reported",
+        "verifiedAtISO": null,
+        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
+        "type": "site_root",
+        "checkFrequencyHours": 24,
+        "renderMode": "static"
+      },
+      {
+        "url": "https://zatca.gov.sa/ar",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T00:01:14.604Z",
+        "verifiedNote": "عنوان الصفحة: \"هيئة الزكاة والضريبة والجمارك\". صفحة حقيقية على نطاق الجهة، قُرئ منها 695 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"يمكنك الآن إجراء جميع خدماتك المتعلقة بالزكاة عبر الإنترنت بما في ذلك الحساب. زاتكا في أرقام أرقـــامنـــا تــ…\"",
+        "type": "site_root",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
+      },
+      {
+        "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Pages/default.aspx",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T05:41:04.579Z",
+        "verifiedNote": "عنوان الصفحة: \"إعلانات هيئة الزكاة والضريبة والجمارك\". صفحة حقيقية على نطاق الجهة، قُرئ منها 830 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية روابط المواقع الإلكترونية الرسمية السعودية تنتهي بـ gov.s…\"",
+        "type": "announcement_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
+      },
+      {
+        "url": "https://zatca.gov.sa/ar/MediaCenter/Pages/default.aspx",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T06:37:18.016Z",
+        "verifiedNote": "عنوان الصفحة: \"مركز التواصل الإعلامي\". صفحة حقيقية على نطاق الجهة، قُرئ منها 545 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الأخبارالمنافسات والفرص الاستثماريةأحدث الإصداراتمجلة الهيئة الفعاليات وورش العملمكتبة الوسائططلب ورشة عملهوية…\"",
+        "type": "announcement_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
+      },
+      {
+        "url": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/default.aspx",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-30T06:37:18.016Z",
+        "verifiedNote": "عنوان الصفحة: \"الأخبار - هيئة الزكاة والضريبة والجمارك\". صفحة حقيقية على نطاق الجهة، قُرئ منها 16882 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"جمرك الحديثة يُحبط محاولة تهريب أكثر من 1.9 مليون حبة من مادة \"الإمفيتامين\" مُخبأة في إرسالية \"عدس\" <p></p><p …\"",
+        "type": "announcement_page",
+        "checkFrequencyHours": 12,
+        "renderMode": "static",
+        "coopConfirmed": false
       }
     ],
     "applyVia": {
@@ -4049,89 +4098,6 @@
       }
     ],
     "applyVia": null,
-    "manualCheckUrl": null,
-    "historicalWindows": [],
-    "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
-    "importSource": "coop_pdf_2021"
-  },
-  {
-    "id": "customs",
-    "nameAr": "الجمارك السعودية",
-    "nameEn": "Saudi Customs",
-    "sector": "gov",
-    "city": [],
-    "tier": "C",
-    "requiresZeroCourses": {
-      "value": null,
-      "provenance": "unknown"
-    },
-    "acceptsUserMajor": null,
-    "offersCoopProduct": null,
-    "stipend": {
-      "amountSAR": null,
-      "provenance": "unknown"
-    },
-    "flexibility": "unknown",
-    "intakeSize": "unknown",
-    "trainingQuality": null,
-    "sources": [
-      {
-        "url": "https://www.customs.gov.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
-        "type": "site_root",
-        "checkFrequencyHours": 24,
-        "renderMode": "static"
-      },
-      {
-        "url": "https://zatca.gov.sa/ar",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T00:01:14.604Z",
-        "verifiedNote": "عنوان الصفحة: \"هيئة الزكاة والضريبة والجمارك\". صفحة حقيقية على نطاق الجهة، قُرئ منها 695 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"يمكنك الآن إجراء جميع خدماتك المتعلقة بالزكاة عبر الإنترنت بما في ذلك الحساب. زاتكا في أرقام أرقـــامنـــا تــ…\"",
-        "type": "site_root",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://zatca.gov.sa/ar/MediaCenter/Elan/Pages/default.aspx",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T05:41:04.579Z",
-        "verifiedNote": "عنوان الصفحة: \"إعلانات هيئة الزكاة والضريبة والجمارك\". صفحة حقيقية على نطاق الجهة، قُرئ منها 830 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية روابط المواقع الإلكترونية الرسمية السعودية تنتهي بـ gov.s…\"",
-        "type": "announcement_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://zatca.gov.sa/ar/MediaCenter/Pages/default.aspx",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T06:37:18.016Z",
-        "verifiedNote": "عنوان الصفحة: \"مركز التواصل الإعلامي\". صفحة حقيقية على نطاق الجهة، قُرئ منها 545 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الأخبارالمنافسات والفرص الاستثماريةأحدث الإصداراتمجلة الهيئة الفعاليات وورش العملمكتبة الوسائططلب ورشة عملهوية…\"",
-        "type": "announcement_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://zatca.gov.sa/ar/MediaCenter/News/Pages/default.aspx",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T06:37:18.016Z",
-        "verifiedNote": "عنوان الصفحة: \"الأخبار - هيئة الزكاة والضريبة والجمارك\". صفحة حقيقية على نطاق الجهة، قُرئ منها 16882 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"جمرك الحديثة يُحبط محاولة تهريب أكثر من 1.9 مليون حبة من مادة \"الإمفيتامين\" مُخبأة في إرسالية \"عدس\" <p></p><p …\"",
-        "type": "announcement_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      }
-    ],
-    "applyVia": {
-      "method": "email",
-      "target": "care@customs.gov.sa",
-      "provenance": "email_channel",
-      "verifiedAtISO": null,
-      "note": "عنوان بريد من ملف COOP، عام وغير مخصّص للتدريب، ولم يُؤكَّد."
-    },
     "manualCheckUrl": null,
     "historicalWindows": [],
     "notes": "مستورد من ملف COOP، تاريخه ~2020-2021، غير محقق",
