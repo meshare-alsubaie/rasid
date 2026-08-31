@@ -12,6 +12,9 @@ dist/
 # A personal email, and this repository is public.
 .contact.local
 *.log
+# A data file mid-write. Present only while a round is writing, and never
+# committed: a half-written dataset is the one thing worse than a late one.
+data/*.json.tmp
 .DS_Store
 Thumbs.db
 scheduled-run.log

@@ -25,7 +25,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 95,
-      "relevanceReason": "المسمى الوظيفي محلل أمن سيبراني في مركز عمليات أمنية يطابق تخصص الطالب ومشروعه في Zero-Trust SOC بدقة عالية.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "cyber_2": {
@@ -47,7 +47,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 95,
-      "relevanceReason": "الدور يتعلق مباشرة بحماية البنية التحتية الرقمية ومراقبة الحوادث الأمنية، وهو متطابق مع تخصص الطالب في الأمن السيبراني ومشروعه في مركز العمليات الأمنية (SOC).",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "cyber_3": {
@@ -68,7 +68,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 95,
-      "relevanceReason": "التدريب يتعلق مباشرة بالأمن السيبراني وتحليل السجلات والاستجابة للحوادث واختبار الاختراق، وهو مطابق تمامًا لتخصص الطالب واهتماماته.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "cyber_4": {
@@ -90,7 +90,7 @@
       "statesZeroCoursesRule": true,
       "zeroCoursesQuote": "يشترط تفريغ الطالب كامل الوقت",
       "relevanceScore": 95,
-      "relevanceReason": "البرنامج يتضمن العمل في مركز عمليات الأمن السيبراني SOC ومتابعة التنبيهات والتحقيق في الحوادث، وهو تطابق مباشر مع تخصص الطالب ومشروع تخرجه.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "cyber_5": {
@@ -115,7 +115,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 95,
-      "relevanceReason": "الفرصة تتعلق مباشرة بحوكمة الأمن السيبراني وإدارة المخاطر وهو مجال قريب جدًا من تخصص الطالب في الأمن السيبراني.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "it_1": {
@@ -138,7 +138,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 70,
-      "relevanceReason": "التدريب في مجال إدارة الأنظمة والشبكات وقواعد البيانات وهو مرتبط بتخصصه لكنه لا يذكر الأمن السيبراني أو مركز العمليات الأمنية تحديداً.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "it_2": {
@@ -160,7 +160,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 65,
-      "relevanceReason": "التدريب في تطوير البرمجيات واختبارها يتعلق بمجال تقني عام قريب من تخصصه لكنه ليس أمنياً بشكل مباشر.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "it_3": {
@@ -183,7 +183,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 65,
-      "relevanceReason": "الفرصة تتعلق بتحليل البيانات وإعداد التقارير وهي مرتبطة جزئياً بتخصصه في الحوسبة لكنها ليست في الأمن السيبراني مباشرة.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "it_4": {
@@ -207,7 +207,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 65,
-      "relevanceReason": "التدريب يتعلق بإدارة الشبكات والدعم الفني، وهو مجال تقني ذو صلة جزئية بتخصص الطالب في الأمن السيبراني.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "it_5": {
@@ -229,7 +229,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 35,
-      "relevanceReason": "الدور يتعلق بالدعم التقني العام وصيانة الأجهزة وليس بالأمن السيبراني أو الشبكات مباشرة، وهو أقل توافقاً مع تخصص الطالب في الأمن السيبراني.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "unrelated_1": {
@@ -250,7 +250,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 0,
-      "relevanceReason": "التخصص المطلوب هو الصيدلة الإكلينيكية ولا علاقة له بعلوم الحاسب أو الأمن السيبراني.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "unrelated_2": {
@@ -271,7 +271,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 0,
-      "relevanceReason": "البرنامج مخصص لطلاب التمريض ولا علاقة له بتخصص الأمن السيبراني أو علوم الحاسب.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "unrelated_3": {
@@ -294,7 +294,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 0,
-      "relevanceReason": "التخصص المطلوب هو التغذية الإكلينيكية ولا علاقة له بالحوسبة أو الأمن السيبراني.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "unrelated_4": {
@@ -316,7 +316,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 5,
-      "relevanceReason": "التخصص المطلوب في الموارد البشرية وإدارة الأعمال لا يمت بصلة لتخصص الطالب في علوم الحاسب والأمن السيبراني.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "unrelated_5": {
@@ -339,7 +339,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 0,
-      "relevanceReason": "التخصص هندسة مدنية ولا علاقة له بالحوسبة أو الأمن السيبراني الذي يدرسه الطالب.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "graddev_1": {
@@ -358,7 +358,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 0,
-      "relevanceReason": "البرنامج مخصص لحملة الشهادة الفعليين وغير مؤهل له الطالب لأنه لم يتخرج بعد.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "graddev_2": {
@@ -379,7 +379,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 0,
-      "relevanceReason": "البرنامج مخصص لحديثي التخرج خلال العامين الماضيين، والطالب لم يتخرج بعد فهو غير مؤهل للتقديم.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "graddev_3": {
@@ -398,7 +398,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 0,
-      "relevanceReason": "البرنامج يستهدف الخريجين فقط وهذا الطالب لم يتخرج بعد فهو غير مؤهل للتقديم.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "graddev_4": {
@@ -419,7 +419,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 0,
-      "relevanceReason": "البرنامج من نوع تطوير الخريجين ويشترط الحصول على شهادة البكالوريوس قبل البدء، وهو غير مؤهل له لأنه لم يتخرج بعد.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "graddev_5": {
@@ -440,7 +440,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 0,
-      "relevanceReason": "البرنامج مخصص لحملة البكالوريوس من الخريجين فعليًا، والطالب لم يتخرج بعد فهو غير مؤهل للتقديم.",
+      "relevanceReason": "",
       "applyUrl": null
     },
     "general_1": {
@@ -462,7 +462,7 @@
       "statesZeroCoursesRule": false,
       "zeroCoursesQuote": null,
       "relevanceScore": 45,
-      "relevanceReason": "الدور يتعلق بالدعم التقني العام وصيانة الأجهزة وليس بالأمن السيبراني أو الشبكات مباشرة، وهو مرتبط بتخصصه بشكل عام لكنه أقل تخصصاً.",
+      "relevanceReason": "",
       "applyUrl": null
     }
   }

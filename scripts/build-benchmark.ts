@@ -53,7 +53,19 @@ for (const c of todo) {
     console.log(`  FAIL  ${c.id.padEnd(14)} ${result.stage}: ${result.reason}`);
     continue;
   }
-  answers[c.id] = result.value;
+  /*
+   * The reasoning is dropped before anything is stored.
+   *
+   * `relevanceReason` is the model explaining why a score fits *this* student,
+   * so it quotes his profile back — his project, his certifications, his
+   * specialism. That profile is deliberately kept out of the repository and in
+   * a secret, and storing the model's paraphrase of it in a committed fixture
+   * put it straight back in, on a public repository. The privacy gate caught
+   * it, which is the gate working; the fix is that the benchmark never had any
+   * use for the prose. It checks scores, products and dates.
+   */
+  const { relevanceReason: _dropped, ...withoutReasoning } = result.value;
+  answers[c.id] = { ...withoutReasoning, relevanceReason: "" };
   console.log(
     `  ok    ${c.id.padEnd(14)} product=${result.value.product.padEnd(16)} score=${String(result.value.relevanceScore).padStart(3)}  closesRaw=${JSON.stringify(result.value.closesRaw)}`,
   );

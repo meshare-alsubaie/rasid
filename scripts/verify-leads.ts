@@ -386,7 +386,37 @@ if (!DRY) {
       note: o.note,
     })),
   );
-  writeFileSync("data/verification.json", JSON.stringify(attempts, null, 2) + "\n", "utf8");
+  /*
+   * The record of what was tried, bounded.
+   *
+   * This is append-only and had reached 583 KB, which is the largest file in
+   * the repository after the dataset itself and grows with every pass — and it
+   * is committed each time. The history has real value: the negative results
+   * are the evidence for why a link is not being watched, and they are the best
+   * thing in this dataset. But only the recent ones are evidence about the
+   * present, and an attempt from three months ago on a url that no longer
+   * exists is archaeology.
+   *
+   * The most recent attempts per organisation are kept, which preserves the
+   * reason for every current decision while giving the file a ceiling.
+   */
+  const PER_ORG = 12;
+  const seenPerOrg = new Map<string, number>();
+  const bounded = [...attempts]
+    .reverse()
+    .filter((a) => {
+      const n = (seenPerOrg.get(a.targetId) ?? 0) + 1;
+      seenPerOrg.set(a.targetId, n);
+      return n <= PER_ORG;
+    })
+    .reverse();
+
+  if (bounded.length !== attempts.length) {
+    console.log(
+      `verification log trimmed to the last ${PER_ORG} attempts per organisation: ${attempts.length} -> ${bounded.length}`,
+    );
+  }
+  writeFileSync("data/verification.json", JSON.stringify(bounded, null, 2) + "\n", "utf8");
 }
 
 const tally = outcomes.reduce<Record<string, number>>(

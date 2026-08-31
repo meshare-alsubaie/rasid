@@ -22,6 +22,7 @@
  *   npm run sitemaps -- --limit 20    a batch
  *   npm run sitemaps -- --dry-run     report, write nothing
  */
+import { createHash } from "node:crypto";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { parseHTML } from "linkedom";
 import { closeBrowser } from "../src/pipeline/browser";
@@ -51,12 +52,28 @@ interface SitemapState {
   /** null once we have established the site publishes none. */
   lastReadISO: string | null;
   urlCount: number;
-  /** Every url seen so far, so "new" means new to us, not new to the site. */
-  seen: string[];
+  /**
+   * Hashes of the urls whose path is about training — and only those.
+   *
+   * The first version stored every url it had ever seen, in full, and the file
+   * reached 8.4 MB across 83,000 urls before anyone looked. That is committed
+   * to git on every round, which is not a file, it is a slow leak.
+   *
+   * Remembering all of them was never necessary. A new url is only ever acted
+   * on if its path matches the training filter, so a url that does not match
+   * needs no memory: it will not match tomorrow either, because the test is on
+   * the address and the address does not change. Hashes rather than urls
+   * because membership is the only question ever asked of this set.
+   */
+  seenTraining: string[];
   /** A feed the site declares. Cheaper and steadier than scraping. */
   feedUrl?: string;
   note?: string;
 }
+
+/** Sixty-four bits: across a hundred thousand urls, a collision is not a risk. */
+const fingerprint = (url: string): string =>
+  createHash("sha256").update(url).digest("hex").slice(0, 16);
 
 const read = <T>(p: string, fallback: T[]): T[] =>
   existsSync(p) ? (JSON.parse(readFileSync(p, "utf8").replace(/^﻿/, "")) as T[]) : fallback;
@@ -147,7 +164,7 @@ for (const org of targets) {
         origin,
         lastReadISO: now,
         urlCount: 0,
-        seen: prior?.seen ?? [],
+        seenTraining: prior?.seenTraining ?? [],
         feedUrl: prior?.feedUrl,
         note: "لا يعلن هذا الموقع خريطة روابط تُقرأ",
       });
@@ -164,8 +181,11 @@ for (const org of targets) {
     }
 
     withSitemap++;
-    const known = new Set(prior?.seen ?? []);
     const all = entries.map((e) => e.url);
+    // Only the training-relevant urls are remembered; see `seenTraining`.
+    const training = all.filter(looksLikeTraining);
+    const fingerprints = training.map(fingerprint);
+    const known = new Set(prior?.seenTraining ?? []);
 
     /*
      * The first read of a site is not a discovery. Everything on it is "new" to
@@ -174,27 +194,34 @@ for (const org of targets) {
      */
     if (!prior) {
       firstRun++;
-      byOrg.set(key, { orgId: org.id, origin, lastReadISO: now, urlCount: all.length, seen: all });
-      console.log(`  ${org.id}: ${all.length} رابطاً، أوّل قراءة — تُتخذ أساساً للمقارنة`);
+      byOrg.set(key, {
+        orgId: org.id,
+        origin,
+        lastReadISO: now,
+        urlCount: all.length,
+        seenTraining: fingerprints,
+      });
+      console.log(
+        `  ${org.id}: ${all.length} رابطاً منها ${training.length} يخصّ التدريب، أوّل قراءة — تُتخذ أساساً للمقارنة`,
+      );
       continue;
     }
 
-    const appeared = all.filter((u) => !known.has(u));
-    const interesting = appeared.filter(looksLikeTraining).slice(0, MAX_NEW_PER_ORG);
+    const interesting = training
+      .filter((u) => !known.has(fingerprint(u)))
+      .slice(0, MAX_NEW_PER_ORG);
 
     byOrg.set(key, {
       orgId: org.id,
       origin,
       lastReadISO: now,
       urlCount: all.length,
-      seen: all,
+      seenTraining: fingerprints,
       feedUrl: prior.feedUrl,
     });
 
-    if (appeared.length > 0) {
-      console.log(
-        `  ${org.id}: ${all.length} رابطاً، ${appeared.length} جديد، ${interesting.length} منها يخصّ التدريب`,
-      );
+    if (interesting.length > 0) {
+      console.log(`  ${org.id}: ${all.length} رابطاً، ${interesting.length} جديد يخصّ التدريب`);
     }
 
     const existing = new Set(org.sources.map((s) => s.url.replace(/\/+$/, "").toLowerCase()));

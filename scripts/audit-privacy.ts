@@ -69,9 +69,19 @@ const RULES: Rule[] = [
  */
 const SELF = "scripts/audit-privacy.ts";
 
-const files = execFileSync("git", ["ls-files"], { encoding: "utf8" })
-  .split("\n")
-  .filter((f) => f && f !== SELF);
+/*
+ * Everything tracked, and everything about to be. `git ls-files` alone misses
+ * a file staged for its first commit, which is precisely when a leak is easiest
+ * to stop and hardest to notice — a generated fixture that had never existed
+ * before carried the owner's project name into a public repository that way,
+ * and was only caught on the run after it was committed.
+ */
+const listed = (args: string[]): string[] =>
+  execFileSync("git", args, { encoding: "utf8" }).split("\n").filter(Boolean);
+
+const files = [...new Set([...listed(["ls-files"]), ...listed(["ls-files", "--others", "--exclude-standard"])])]
+  .filter((f) => f !== SELF)
+  .sort();
 
 let hits = 0;
 for (const file of files) {

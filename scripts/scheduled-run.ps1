@@ -63,12 +63,19 @@ try {
     #
     # This used to exit outright, and the consequence was worse than it looks:
     # every six-hourly run was skipped for as long as anyone had an uncommitted
-    # edit — a whole day of blindness during an afternoon's work, announced
+    # edit: a whole day of blindness during an afternoon's work, announced
     # nowhere but a log file. Only data/ is ever committed from here, so an edit
     # elsewhere endangers nothing; it just means the rebase has to wait.
+    #
+    # This file is kept to plain ASCII on purpose. Windows PowerShell 5.1 reads
+    # a .ps1 without a byte-order mark in the system codepage, so a single
+    # typographic dash in a comment turns into bytes that break the parser --
+    # which is exactly what happened: the script stopped parsing, the scheduled
+    # task exited 1 twice, and nothing was written to its own log because the
+    # failure came before the first line that writes to it.
     $dirty = git status --porcelain -- ':!data'
     if ($dirty) {
-        Say "uncommitted changes outside data/ — collecting anyway, skipping the rebase:"
+        Say "uncommitted changes outside data/, collecting anyway, skipping the rebase:"
         $dirty | Select-Object -First 5 | ForEach-Object { Say "    $_" }
     } else {
         # Take whatever the cloud committed since last time, so the push is a
@@ -91,14 +98,14 @@ try {
     # logs for no gain.
     $hour = (Get-Date).Hour
     if ($hour -lt 6) {
-        npm run sitemaps --silent 2>&1 | Tee-Object -Variable maps | Out-Null
-        $mapLine = ($maps | Select-String -Pattern "new candidate link|publish a readable sitemap") -join " | "
+        $maps = npm run sitemaps --silent 2>&1
+        $mapLine = ($maps | Select-String -Pattern "candidate link" | ForEach-Object { $_.Line.Trim() }) -join " | "
         Say "sitemaps: $mapLine"
 
         # Only worth opening leads if the sitemap pass proposed any.
-        if ($mapLine -notmatch "^0 new|\b0 new candidate") {
-            npm run verify-leads --silent 2>&1 | Tee-Object -Variable leads | Out-Null
-            $leadLine = ($leads | Select-String -Pattern '^\{"' ) -join " "
+        if ($mapLine -notmatch "^0 new candidate") {
+            $leads = npm run verify-leads --silent 2>&1
+            $leadLine = ($leads | Select-String -Pattern "watchable|verified" | ForEach-Object { $_.Line.Trim() }) -join " "
             Say "verify: $leadLine"
         }
     }

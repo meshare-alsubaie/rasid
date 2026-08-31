@@ -18,7 +18,7 @@
  *   npm run collect -- --dry-run     fetch and report, write nothing
  *   npm run collect -- --verbose     one line per source
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, renameSync, writeFileSync } from "node:fs";
 import pLimit from "p-limit";
 import { HAS_CONTACT, USER_AGENT } from "../src/pipeline/agent";
 import { browserUnavailable, closeBrowser, renderPage } from "../src/pipeline/browser";
@@ -667,16 +667,32 @@ const snapshots = [...snapshotByUrl.values()].sort((a, b) =>
   a.sourceUrl.localeCompare(b.sourceUrl),
 );
 
+/**
+ * Written to a neighbouring file and renamed over the target.
+ *
+ * A rename within a directory is atomic on every filesystem this runs on, so a
+ * reader either sees the whole previous file or the whole new one. A plain
+ * write is neither: a crash, a full disk, or a machine going to sleep partway
+ * through leaves truncated JSON, and `data/organisations.json` truncated is the
+ * one file that stops every script and the app at once. The app fails loudly on
+ * it, which is right, but it should not be possible to get there by accident.
+ */
+function writeAtomic(path: string, contents: string): void {
+  const temp = `${path}.tmp`;
+  writeFileSync(temp, contents, "utf8");
+  renameSync(temp, path);
+}
+
 if (!DRY_RUN) {
-  writeFileSync("data/health.json", JSON.stringify(health, null, 2) + "\n", "utf8");
-  writeFileSync("data/snapshots.json", JSON.stringify(snapshots, null, 2) + "\n", "utf8");
+  writeAtomic("data/health.json", JSON.stringify(health, null, 2) + "\n");
+  writeAtomic("data/snapshots.json", JSON.stringify(snapshots, null, 2) + "\n");
   // Only rewritten when a promotion actually happened, so an ordinary run
   // never touches the dataset the whole project is built on.
   if (promotions.length > 0) {
-    writeFileSync("data/organisations.json", JSON.stringify(orgs, null, 2) + "\n", "utf8");
+    writeAtomic("data/organisations.json", JSON.stringify(orgs, null, 2) + "\n");
   }
   const opportunities = [...opportunityById.values()].sort((a, b) => a.id.localeCompare(b.id));
-  writeFileSync("data/opportunities.json", JSON.stringify(opportunities, null, 2) + "\n", "utf8");
+  writeAtomic("data/opportunities.json", JSON.stringify(opportunities, null, 2) + "\n");
 }
 
 const byState = (s: HealthState): number => health.filter((h) => h.state === s).length;
