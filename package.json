@@ -22,6 +22,7 @@
     "test:lifecycle": "tsx scripts/test-lifecycle.ts",
     "test:sitemap": "tsx scripts/test-sitemap.ts",
     "test:hijri": "tsx scripts/test-hijri.ts",
+    "test:extract": "tsx scripts/test-extract.ts",
     "audit:contrast": "tsx scripts/audit-contrast.ts",
     "audit:privacy": "tsx scripts/audit-privacy.ts",
     "audit:lighthouse": "tsx scripts/audit-lighthouse.ts",

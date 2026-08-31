@@ -158,6 +158,37 @@ check(
   split(many, legacy, now, false).push.length === 0,
 );
 
+/*
+ * A classifier that stops must be as loud as a crawler that stops. It was not:
+ * `decide` skips a record it could not score, so an expired key meant no
+ * notification would ever be sent again, from a system whose sources all looked
+ * perfectly healthy.
+ */
+console.log("\nthe classifier going down is itself news");
+const unjudged = (n: number): Opportunity[] =>
+  Array.from({ length: n }, (_, i) =>
+    opp({ id: `u${i}`, relevanceScore: null, flags: ["needs_manual_review"] }),
+  );
+
+const outage = run([], unjudged(5));
+check(
+  "five unjudged pages raise the alarm",
+  outage.some((n) => n.kind === "classifier_down"),
+  outage.map((n) => n.kind).join(",") || "none",
+);
+check(
+  "one unjudged page does not",
+  !run([], unjudged(1)).some((n) => n.kind === "classifier_down"),
+);
+check(
+  "and it is said once a day, not once a round",
+  new Set(run([], unjudged(5)).concat(run([], unjudged(9))).filter((n) => n.kind === "classifier_down").map((n) => n.key)).size === 1,
+);
+check(
+  "an unjudged record still never becomes an opportunity notice",
+  !outage.some((n) => n.kind === "new_relevant" || n.kind === "opened"),
+);
+
 console.log("\ntwo in one round, and neither is swallowed");
 const pair: Notice[] = [
   { key: "new:nca", kind: "new_relevant", title: "أ", body: "b", weight: 95 },

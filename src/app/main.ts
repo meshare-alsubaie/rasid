@@ -282,8 +282,26 @@ function answerBlock(): string {
       ? `<p class="stalled">⚠ لم يصل أي إشعار منذ ${Math.floor(daysSincePush)} يوماً، والجولات تعمل. قد تكون الإشعارات معطّلة على هذا الجهاز — افتح الإعدادات واضغط «جرّب إشعاراً الآن».</p>`
       : "";
 
+  /*
+   * The judge is down, and that is not the same as nothing happening.
+   *
+   * Pages are still being read and every source is green, but nothing can be
+   * scored — and `decide` never notifies about a record it could not score, so
+   * the app would go completely quiet while looking perfectly healthy. Three is
+   * the same threshold the notifier uses: one page that failed twice is bad
+   * luck, several in a round is an outage.
+   */
+  const unjudged = data.opportunities.filter((o) =>
+    o.flags.includes("needs_manual_review"),
+  ).length;
+  const classifierDown =
+    unjudged >= 3
+      ? `<p class="stalled">⚠ قُرئت الصفحات ولم يُحكَم على ${unjudged} منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف، والمصادر تبدو سليمة لأن القراءة نفسها تعمل. افحص الجهات المهمة بنفسك.</p>`
+      : "";
+
   return `<section class="answer" aria-label="الحالة اليوم">
     ${stalled}
+    ${classifierDown}
     ${pushSilent}
     ${headline}
     <p class="sub">${sub}</p>

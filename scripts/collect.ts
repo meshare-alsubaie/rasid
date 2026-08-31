@@ -24,7 +24,7 @@ import { HAS_CONTACT, USER_AGENT } from "../src/pipeline/agent";
 import { browserUnavailable, closeBrowser, renderPage } from "../src/pipeline/browser";
 import { CLASSIFIER_MODEL, classify, costOf, type Usage } from "../src/pipeline/classify";
 import { asManualReview, fromClassification } from "../src/pipeline/opportunity";
-import { extract, sha256 } from "../src/pipeline/extract";
+import { extract, isSoft404, sha256 } from "../src/pipeline/extract";
 import { fetchPage, paced } from "../src/pipeline/fetch";
 import { checkFinalUrl, checkRobots } from "../src/pipeline/robots";
 import { MAX_BROWSER_SOURCES, SILENT_THIN_RUNS, THIN_CHARS, statusFor } from "../src/types";
@@ -238,6 +238,13 @@ async function collect(t: Target): Promise<void> {
 
   const extracted = extract(res.html, t.url);
   const { hash, chars, method } = extracted;
+
+  // A page that answers 200 while saying it is missing is a failure, whatever
+  // the transport thought. Recorded as one, so it cannot sit green for ever.
+  if (isSoft404(extracted.title)) {
+    recordFailure(t, `الصفحة تردّ 200 لكن عنوانها "${extracted.title}" — صفحة غير موجودة`, "failed");
+    return;
+  }
   if (chars < MIN_USABLE_CHARS) {
     /*
      * Keep the record, clear the hash.

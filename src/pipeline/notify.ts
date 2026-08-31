@@ -17,7 +17,18 @@ export type NoticeKind =
   | "opened"
   | "closing_soon"
   | "few_seats"
-  | "source_broken";
+  | "source_broken"
+  /**
+   * The classifier could not judge what was read.
+   *
+   * A crawler that stops is loud; a classifier that stops was silent, and it is
+   * the more dangerous of the two. `decide` skips any record with a null score,
+   * so a revoked key or an outage means every changed page becomes unjudgeable
+   * and *nothing is ever pushed again* — while every source stays green,
+   * because fetching them worked perfectly. The only trace was a small counter
+   * on a screen nobody had a reason to open. This is that failure, said aloud.
+   */
+  | "classifier_down";
 
 export interface Notice {
   /** Stable across runs, so the log can prove a thing was said only once. */
@@ -80,6 +91,9 @@ export interface DecideInput {
   nameOf: (orgId: string) => string;
   threshold: number;
 }
+
+/** More than this many unjudged pages in one round is an outage, not bad luck. */
+export const UNJUDGED_ALARM = 3;
 
 export function decide(input: DecideInput): Notice[] {
   const { before, after, healthBefore, healthAfter, nameOf, threshold } = input;
@@ -152,6 +166,27 @@ export function decide(input: DecideInput): Notice[] {
         weight: 150,
       });
     }
+  }
+
+  /*
+   * The alarm for the judge, not the eyes.
+   *
+   * Counted over the whole run rather than per source, because that is the
+   * shape the failure has: a key expires and every page in the round becomes
+   * unjudgeable at once. Keyed by the day so a persistent outage says so once
+   * each morning instead of four times a day, and so it says it again tomorrow
+   * if nobody has fixed it.
+   */
+  const unjudged = after.filter((o) => o.flags.includes("needs_manual_review"));
+  if (unjudged.length >= UNJUDGED_ALARM) {
+    const day = new Date().toISOString().slice(0, 10);
+    out.push({
+      key: `classifier:${day}`,
+      kind: "classifier_down",
+      title: "🟠 التصنيف متوقّف",
+      body: `قُرئت الصفحات لكن تعذّر الحكم على ${unjudged.length} منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف — افحص الجهات المهمة بنفسك.`,
+      weight: 250,
+    });
   }
 
   return out;

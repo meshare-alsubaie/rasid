@@ -40,6 +40,8 @@ jobs:
       # Dates are the one field where a careful guess is worse than none, so
       # they are a table lookup with a test table, not a prompt.
       - run: npm run test:hijri
+      # Every case here is a page that actually broke extraction once.
+      - run: npm run test:extract
 
       # The repository is public. The README called this a gate before it was
       # one: it was a habit someone had to remember, run by hand, with nothing

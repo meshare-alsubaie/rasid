@@ -85,9 +85,50 @@ export function blocksOf(text: string): string[] {
 /** Below this, Readability has almost certainly locked onto a nav block. */
 const MIN_ARTICLE_CHARS = 200;
 
+/**
+ * A page that answers 200 and says it is missing.
+ *
+ * `moj.gov.sa/…/JobsAndTraining.aspx` returns HTTP 200 with the title
+ * "الصفحة غير موجودة 404". Nothing in the transport is wrong, so the source is
+ * recorded healthy, the text hashes and classifies as not-an-announcement, and
+ * the page stays green for ever while showing nothing. The status code is the
+ * server's claim; the title is the page's own.
+ */
+const SOFT_404 =
+  /^\s*(?:404|error)\b|\b404\b.*\b(?:not found|error)\b|not found|page (?:not|cannot be) found|الصفحة غير موجودة|الصفحة غير متوفرة|عذرا.{0,20}لم يتم العثور/i;
+
+export function isSoft404(title: string | null): boolean {
+  return title !== null && SOFT_404.test(title);
+}
+
+const EMPTY: Extracted = {
+  title: null,
+  text: "",
+  hash: sha256(""),
+  method: "body_fallback",
+  chars: 0,
+  blocks: [],
+};
+
 export function extract(html: string, url: string): Extracted {
+  /*
+   * An empty or headless body is a page, not an exception.
+   *
+   * linkedom's `document.title` reaches through `documentElement`, which is
+   * null when there is no markup at all — so an empty response threw a
+   * TypeError out of `extract` and took the whole round with it, from a fetch
+   * that had succeeded. A server answering 200 with nothing is unusual and not
+   * rare, and it deserves an empty extract and a recorded failure, not a crash.
+   */
+  if (typeof html !== "string" || html.trim() === "") return EMPTY;
+
   const { document } = parseHTML(html);
-  const title = squash(document.title ?? "") || null;
+  let title: string | null;
+  try {
+    title = squash(document.title ?? "") || null;
+  } catch {
+    title = null;
+  }
 
   /*
    * Hashed and blocked from the stripped body, always, whichever extractor
@@ -117,6 +158,21 @@ export function extract(html: string, url: string): Extracted {
     }
   } catch {
     // A parser quirk is not a fetch failure. Fall through to the body text.
+  }
+
+  /*
+   * Readability can win with a fragment and throw the page away.
+   *
+   * It is accepted whenever it clears 200 characters, and on a listing page it
+   * happily returns the facet labels: the ministry's catalogue of 242 courses
+   * yielded 431 characters of icon names and not one result, while the stripped
+   * body held 23,905. Losing 98% of a page is not a cleaner extraction, it is a
+   * different page — so when the two disagree by that much, the fuller one is
+   * the one that was actually published.
+   */
+  if (text && stable.length > text.length * 5 && stable.length > MIN_ARTICLE_CHARS) {
+    text = stable;
+    method = "body_fallback";
   }
 
   if (!text) text = stable;

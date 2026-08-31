@@ -47,6 +47,30 @@ async function takeHostSlot(host: string, gapMs: number): Promise<() => void> {
 /** 5xx and 429 are worth retrying. A 404 is an answer, not a hiccup. */
 const isRetryableStatus = (status: number): boolean => status === 429 || status >= 500;
 
+/** No announcement page is this large. Anything above it is not a page. */
+export const MAX_BYTES = 5 * 1_048_576;
+
+/**
+ * The body, or null if it grows past the ceiling.
+ *
+ * Streamed rather than buffered, because a `content-length` header is a claim
+ * and not every server makes it. Stopping mid-download is the point: by the
+ * time `res.text()` has resolved, the memory is already spent.
+ */
+async function readCapped(res: { body: unknown; text: () => Promise<string> }): Promise<string | null> {
+  const stream = res.body as AsyncIterable<Uint8Array> | null;
+  if (!stream || typeof stream[Symbol.asyncIterator] !== "function") return res.text();
+
+  const chunks: Uint8Array[] = [];
+  let total = 0;
+  for await (const chunk of stream) {
+    total += chunk.byteLength;
+    if (total > MAX_BYTES) return null;
+    chunks.push(chunk);
+  }
+  return new TextDecoder("utf-8").decode(Buffer.concat(chunks));
+}
+
 async function attempt(url: string): Promise<FetchResult> {
   try {
     const res = await fetch(url, {
@@ -61,8 +85,8 @@ async function attempt(url: string): Promise<FetchResult> {
     });
 
     const contentType = res.headers.get("content-type") ?? "";
-    const body = await res.text();
 
+    // Judged before the body is read, so a wrong answer costs nothing.
     if (res.status >= 400) {
       return { ok: false, status: res.status, error: `HTTP ${res.status}` };
     }
@@ -71,6 +95,34 @@ async function attempt(url: string): Promise<FetchResult> {
         ok: false,
         status: res.status,
         error: `unexpected content-type "${contentType.split(";")[0] ?? contentType}"`,
+      };
+    }
+
+    /*
+     * A page has to fit in memory before it is worth having.
+     *
+     * This was an unguarded `res.text()`, and a forty-megabyte page produced a
+     * twenty-million-character extract that then went through the HTML parser
+     * three times and was written into the committed snapshot. It survived on a
+     * laptop; on a two-core runner already holding a headless browser it is an
+     * out-of-memory kill, which takes the whole round with it. No announcement
+     * page is five megabytes, so anything above that is not a page we want.
+     */
+    const declared = Number(res.headers.get("content-length") ?? 0);
+    if (declared > MAX_BYTES) {
+      return {
+        ok: false,
+        status: res.status,
+        error: `page declares ${Math.round(declared / 1_048_576)} MB, over the ${MAX_BYTES / 1_048_576} MB ceiling`,
+      };
+    }
+
+    const body = await readCapped(res);
+    if (body === null) {
+      return {
+        ok: false,
+        status: res.status,
+        error: `page exceeded the ${MAX_BYTES / 1_048_576} MB ceiling while downloading`,
       };
     }
     return {
