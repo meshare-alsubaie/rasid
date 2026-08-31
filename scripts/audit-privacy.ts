@@ -67,7 +67,14 @@ const RULES: Rule[] = [
  * scans for. Skipping it is the only honest option: weakening the patterns so
  * they do not match here would weaken them everywhere else too.
  */
-const SELF = "scripts/audit-privacy.ts";
+/*
+ * And the test that proves this scanner works, for the same reason: it plants a
+ * personal detail on purpose and asserts that the scan catches it, so it cannot
+ * help but contain one. Skipping exactly these two files is the honest option —
+ * weakening the patterns until they stopped matching here would weaken them
+ * everywhere the patterns actually matter.
+ */
+const SELF = ["scripts/audit-privacy.ts", "scripts/test-gates.ts"];
 
 /*
  * Everything tracked, and everything about to be. `git ls-files` alone misses
@@ -80,7 +87,7 @@ const listed = (args: string[]): string[] =>
   execFileSync("git", args, { encoding: "utf8" }).split("\n").filter(Boolean);
 
 const files = [...new Set([...listed(["ls-files"]), ...listed(["ls-files", "--others", "--exclude-standard"])])]
-  .filter((f) => f !== SELF)
+  .filter((f) => !SELF.includes(f))
   .sort();
 
 let hits = 0;

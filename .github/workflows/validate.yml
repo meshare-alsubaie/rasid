@@ -53,6 +53,9 @@ jobs:
       # The collector's own entry point. Two dashes in a comment once stopped it
       # parsing, and the round failed before it could write to its log.
       - run: npm run test:scripts
+      # The checkers, checked. Twice a gate has passed while looking at nothing;
+      # this plants a fault each one must catch and fails if it does not.
+      - run: npm run test:gates
 
       # The repository is public. The README called this a gate before it was
       # one: it was a habit someone had to remember, run by hand, with nothing

@@ -436,20 +436,6 @@
   {
     "targetId": "takamol",
     "checkedAtISO": "2026-08-29T19:23:03.911Z",
-    "urlTried": "https://join.takamol.com.sa",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it"
-  },
-  {
-    "targetId": "takamol",
-    "checkedAtISO": "2026-08-29T19:23:03.911Z",
-    "urlTried": "https://join.takamol.com.sa/?page_id=4",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it"
-  },
-  {
-    "targetId": "takamol",
-    "checkedAtISO": "2026-08-29T19:23:03.911Z",
     "urlTried": "https://takamolholding.com/ar/join-us",
     "outcome": "rejected",
     "note": "عنوان الصفحة: \"التوظيف في تكامل القابضة | انضم إلى فريقنا المبتكر\". قُرئ 306 حرفاً ولا ترد فيها أي عبارة عن التدريب التعاوني. أول ما فيها: \"انضم الآن ​هنا تفتح الآفاق لتكونوا جزءًا من مسيرة التمكينالفرص التدريبية انضم إلى برنامج \"تكاملي طموح\"، المصمم…\""
@@ -824,20 +810,6 @@
     "urlTried": "https://slccareers.kpmg.com/job/Riyadh-KPMG-Audit-COOP-Program-(Riyadh,-Jeddah,-and-Khobar)/857222523/",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"KPMG Audit COOP Program (Riyadh, Jeddah, and Khobar) Job Details | KPMG Professional Services\". صفحة حقيقية على نطاق الجهة، قُرئ منها 439 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© 2025 KPMG Professional Services, a professional closed joint stock company registered in the Kingdom of Saud…\""
-  },
-  {
-    "targetId": "maaden",
-    "checkedAtISO": "2026-08-29T19:33:16.875Z",
-    "urlTried": "https://www.maaden.com.sa/ar/careers/working",
-    "outcome": "unreachable",
-    "note": "robots.txt: disallowed by robots.txt"
-  },
-  {
-    "targetId": "maaden",
-    "checkedAtISO": "2026-08-29T19:33:16.875Z",
-    "urlTried": "https://careers.maaden.com/gb/en",
-    "outcome": "verified",
-    "note": "عنوان الصفحة: \"Maaden: Exciting Career Opportunities in Mining Industry\". صفحة حقيقية على نطاق الجهة، قُرئ منها 586 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Search results United States WORK AT WHAT COMES NEXT WHY JOIN MAADEN? MAADEN IS SHAPING A NEW ERA FOR MINING I…\""
   },
   {
     "targetId": "ncai",
@@ -1232,13 +1204,6 @@
     "note": "HTTP 404"
   },
   {
-    "targetId": "dga",
-    "checkedAtISO": "2026-08-29T19:38:51.252Z",
-    "urlTried": "https://dgacareer.talentera.com/ar/page/coop-program/",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it"
-  },
-  {
     "targetId": "ncdc",
     "checkedAtISO": "2026-08-29T19:38:51.252Z",
     "urlTried": "https://www.ncdc.gov.sa/",
@@ -1372,32 +1337,11 @@
     "note": "HTTP 404"
   },
   {
-    "targetId": "sanabil",
-    "checkedAtISO": "2026-08-29T19:38:51.252Z",
-    "urlTried": "http://www.sanabil.sa/ar/pages/default.aspx",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it"
-  },
-  {
-    "targetId": "saudi_exports",
-    "checkedAtISO": "2026-08-29T19:38:51.252Z",
-    "urlTried": "https://www.saudiexports.sa/ar/pages/default.aspx",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it"
-  },
-  {
     "targetId": "seec",
     "checkedAtISO": "2026-08-29T19:38:51.252Z",
     "urlTried": "https://www.seec.gov.sa/",
     "outcome": "rejected",
     "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
-  },
-  {
-    "targetId": "ssc",
-    "checkedAtISO": "2026-08-29T19:38:51.252Z",
-    "urlTried": "https://saudispace.gov.sa/",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it"
   },
   {
     "targetId": "sta",
@@ -1426,20 +1370,6 @@
     "urlTried": "https://www.pif.gov.sa/ar/Pages/default.aspx",
     "outcome": "unreachable",
     "note": "HTTP 403 · ومتصفّح حقيقي لم ينجح أيضاً (HTTP 404)"
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-29T21:39:41.484Z",
-    "urlTried": "https://alinma.com/Career/coopAr.html",
-    "outcome": "unreachable",
-    "note": "HTTP 404 · ومتصفّح حقيقي لم ينجح أيضاً (HTTP 404)"
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-29T21:39:41.484Z",
-    "urlTried": "https://www.alinma.com/Career/coopAr.html",
-    "outcome": "unreachable",
-    "note": "HTTP 404 · ومتصفّح حقيقي لم ينجح أيضاً (HTTP 404)"
   },
   {
     "targetId": "deloitte_sa",
@@ -1631,13 +1561,6 @@
     "note": "عنوان الصفحة: \"الرئيسية - تحلية المياه\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1462 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"زيارتكم لموقعنا الإلكتروني في تحلية المياه بالنسبة لنا، هي محل تقدير واعتزاز ومؤشر على إدراككم لمدى أهمية وحسا…\""
   },
   {
-    "targetId": "tawuniya",
-    "checkedAtISO": "2026-08-29T21:39:41.484Z",
-    "urlTried": "https://www.tawuniya.com.sa/about-us/contact-us",
-    "outcome": "unreachable",
-    "note": "HTTP 403 · ومتصفّح حقيقي لم ينجح أيضاً (HTTP 404)"
-  },
-  {
     "targetId": "tvtc",
     "checkedAtISO": "2026-08-29T21:39:41.484Z",
     "urlTried": "https://www.tvtc.gov.sa/",
@@ -1650,13 +1573,6 @@
     "urlTried": "https://www.pif.gov.sa/",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"Home\". صفحة حقيقية على نطاق الجهة، قُرئ منها 9522 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevan…\""
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-29T21:48:08.310Z",
-    "urlTried": "https://alinma.com/",
-    "outcome": "verified",
-    "note": "عنوان الصفحة: \"نبتكر لنتقدم | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1211 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"بطاقة سفر أكثر الائتمانية لرفاهية أكثر اكتشف بطاقة سفر أكثر الائتمانية من الإنماء التي تجمع بين المكافآت والمز…\""
   },
   {
     "targetId": "deloitte_sa",
@@ -1785,13 +1701,6 @@
     "note": "عنوان الصفحة: \"الرئيسية - الهيئة الملكية للجبيل وينبع\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3670 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"صناعة وحياة اكتشف خياراتك الاستثمارية بمدن الهيئة الملكية للجبيل وينبع اكتشف المزيد صناعــــــــــــــــــــــ…\""
   },
   {
-    "targetId": "redf",
-    "checkedAtISO": "2026-08-29T21:48:08.310Z",
-    "urlTried": "https://www.housing.gov.sa/ar/related-links/140",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
-  },
-  {
     "targetId": "sanabil",
     "checkedAtISO": "2026-08-29T21:48:08.310Z",
     "urlTried": "http://www.sanabil.sa/ar/pages/default.aspx",
@@ -1867,13 +1776,6 @@
     "urlTried": "https://careers.ejada.com/ar/",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"موقع إجادة للتوظيف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1380 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Why EjadaWorking at Ejada has been an incredibly rewarding experience. The supportive work environment, opport…\""
-  },
-  {
-    "targetId": "fakeeh",
-    "checkedAtISO": "2026-08-29T21:54:36.226Z",
-    "urlTried": "https://careers.fakeeh.care/",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
   },
   {
     "targetId": "masterworks",
@@ -2177,13 +2079,6 @@
     "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
   },
   {
-    "targetId": "taqnia",
-    "checkedAtISO": "2026-08-29T23:45:37.136Z",
-    "urlTried": "https://taqnia.com/en/",
-    "outcome": "rejected",
-    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (28 حرفاً)، فلا يمكن مراقبتها."
-  },
-  {
     "targetId": "ndf",
     "checkedAtISO": "2026-08-29T23:45:37.136Z",
     "urlTried": "https://www.ndf.gov.sa/",
@@ -2219,13 +2114,6 @@
     "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
   },
   {
-    "targetId": "kasb",
-    "checkedAtISO": "2026-08-29T23:45:37.136Z",
-    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
-    "outcome": "unreachable",
-    "note": "HTTP 404 · ولا بمتصفّح حقيقي ولا من جذر الموقع"
-  },
-  {
     "targetId": "lcgpa",
     "checkedAtISO": "2026-08-29T23:45:37.136Z",
     "urlTried": "https://lcgpa.gov.sa/ar/Pages/default.aspx",
@@ -2236,13 +2124,6 @@
     "targetId": "mawhiba",
     "checkedAtISO": "2026-08-29T23:45:37.136Z",
     "urlTried": "https://www.mawhiba.org/Ar/About/who/Pages/Brief.aspx",
-    "outcome": "unreachable",
-    "note": "robots.txt: disallowed by robots.txt"
-  },
-  {
-    "targetId": "media",
-    "checkedAtISO": "2026-08-29T23:45:37.136Z",
-    "urlTried": "https://media.gov.sa/",
     "outcome": "unreachable",
     "note": "robots.txt: disallowed by robots.txt"
   },
@@ -2373,27 +2254,6 @@
     "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
   },
   {
-    "targetId": "falcom",
-    "checkedAtISO": "2026-08-29T23:52:07.584Z",
-    "urlTried": "http://www.falcom.com.sa/",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
-  },
-  {
-    "targetId": "gcam",
-    "checkedAtISO": "2026-08-29T23:52:07.584Z",
-    "urlTried": "https://www.gcam.gov.sa",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
-  },
-  {
-    "targetId": "housing",
-    "checkedAtISO": "2026-08-29T23:52:07.584Z",
-    "urlTried": "https://www.housing.gov.sa/",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
-  },
-  {
     "targetId": "jadwa",
     "checkedAtISO": "2026-08-29T23:52:07.584Z",
     "urlTried": "http://www.jadwa.com/en",
@@ -2441,13 +2301,6 @@
     "urlTried": "https://modon.gov.sa/",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"الهيئة السعودية للمدن الصناعية ومناطق التقنية\". صفحة حقيقية على نطاق الجهة، قُرئ منها 5996 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"استثمر في مدن ابدأ رحلتك الاستثمارية في \"مدن\"، بالاطلاع على كافة التفاصيل والتكلفة التقريبية والمتطلبات، التي …\""
-  },
-  {
-    "targetId": "pension",
-    "checkedAtISO": "2026-08-29T23:52:07.584Z",
-    "urlTried": "https://www.pension.gov.sa/",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
   },
   {
     "targetId": "redf",
@@ -2567,13 +2420,6 @@
     "urlTried": "https://momah.gov.sa/ar",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 153933 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تعزيز التكامل في تقديم الخدمات البلدية والمنتجات السكنية للمدن السعوديةبلاغ رقميضمن التكامل بين وزارة البلديات…\""
-  },
-  {
-    "targetId": "hrc",
-    "checkedAtISO": "2026-08-30T00:01:14.604Z",
-    "urlTried": "https://www.hrc.gov.sa/ar-sa/Pages/home.aspx",
-    "outcome": "rejected",
-    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (89 حرفاً)، فلا يمكن مراقبتها."
   },
   {
     "targetId": "jadwa",
@@ -2891,32 +2737,11 @@
     "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
   },
   {
-    "targetId": "devoteam_sa",
-    "checkedAtISO": "2026-08-30T05:01:24.034Z",
-    "urlTried": "https://me.devoteam.com/jobs/",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
-  },
-  {
-    "targetId": "devoteam_sa",
-    "checkedAtISO": "2026-08-30T05:01:24.034Z",
-    "urlTried": "https://www.devoteam.com/me/join-us/",
-    "outcome": "unreachable",
-    "note": "HTTP 403 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
-  },
-  {
     "targetId": "falcom",
     "checkedAtISO": "2026-08-30T05:01:24.034Z",
     "urlTried": "http://www.falcom.com.sa/",
     "outcome": "unreachable",
     "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
-  },
-  {
-    "targetId": "gaca",
-    "checkedAtISO": "2026-08-30T05:01:24.034Z",
-    "urlTried": "https://gaca.gov.sa/web/ar-sa/page/home",
-    "outcome": "verified",
-    "note": "عنوان الصفحة: \"الهيئة العامة للطيران المدني | 404\". صفحة حقيقية على نطاق الجهة، قُرئ منها 386 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق الأحد، ٣٠ أغسطس ٢٠٢٦ ٨:٠٦ ص روابط المواقع الإلكترونية الرسم…\""
   },
   {
     "targetId": "kasb",
@@ -2994,13 +2819,6 @@
     "urlTried": "https://bankalbilad.com/ar/about/Pages/Training.aspx",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"برنامج التدريب التعاوني\". وردت فيها عبارة «التدريب التعاوني» بنصّها: \"​برنامج التدريب التعاونيإن من أهداف بنك البلاد رفع مستوى المعرفة والمهارة لدى كفاءات الوطن من الطلبة الخريجين وتمكينهم من تطبيق الدراسات الأكاديمية في بيئ…\". فحص آلي بنفس معيار الجولة اليدوية."
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-30T05:17:36.664Z",
-    "urlTried": "https://www.alinma.com/",
-    "outcome": "verified",
-    "note": "عنوان الصفحة: \"نبتكر لنتقدم | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1211 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"بطاقة سفر أكثر الائتمانية لرفاهية أكثر اكتشف بطاقة سفر أكثر الائتمانية من الإنماء التي تجمع بين المكافآت والمز…\""
   },
   {
     "targetId": "alrajhi",
@@ -3222,13 +3040,6 @@
   {
     "targetId": "gaca",
     "checkedAtISO": "2026-08-30T05:17:36.664Z",
-    "urlTried": "https://careers.gaca.gov.sa/ar/jobs/sectors/",
-    "outcome": "rejected",
-    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
-  },
-  {
-    "targetId": "gaca",
-    "checkedAtISO": "2026-08-30T05:17:36.664Z",
     "urlTried": "https://www.gaca.gov.sa/",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"الهيئة العامة للطيران المدني | الموقع الرسمي\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1866 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تصريح سنوي للمشغل الاجنبي إصدار تصريح سنوي للمشغل الأجنبي تخوله بتشغيل الأنشطة طبقاً لأحكام اللوائح وذلك بعد ا…\""
@@ -3297,13 +3108,6 @@
     "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
   },
   {
-    "targetId": "sfda",
-    "checkedAtISO": "2026-08-30T05:17:36.664Z",
-    "urlTried": "https://career.sfda.gov.sa/",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
-  },
-  {
     "targetId": "ssc",
     "checkedAtISO": "2026-08-30T05:17:36.664Z",
     "urlTried": "https://saudispace.gov.sa/",
@@ -3351,13 +3155,6 @@
     "urlTried": "https://nca.gov.sa/ar/news/",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"الأخبار | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 840 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"المملكة تشارك في الاجتماع الخامس للجنة الوزارية للأمن السيبراني بدول مجلس التعاون لدول الخليج العربية27/08/202…\""
-  },
-  {
-    "targetId": "ncac",
-    "checkedAtISO": "2026-08-30T05:41:04.579Z",
-    "urlTried": "https://ncac.edu.sa",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
   },
   {
     "targetId": "ncac",
@@ -3456,27 +3253,6 @@
     "urlTried": "https://careers.stc.com.sa/content/COOP/?locale=en_US",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"COOP\". وردت فيها عبارة «cooperative training» بنصّها: \"Cooperative Training Program As part of stc’s strategy to attract and develop young talents and top notch students, stc provides Cooperative Training…\". فحص آلي بنفس معيار الجولة اليدوية."
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-30T05:41:04.579Z",
-    "urlTried": "https://career.alinma.com/",
-    "outcome": "rejected",
-    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-30T05:41:04.579Z",
-    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2026/8/amwal-tech",
-    "outcome": "verified",
-    "note": "عنوان الصفحة: \"الإنماء وأموال تيك يوقّعان اتفاقية لتقديم خدمة تقسيط مشتريات بطاقات الائتمان | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 737 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ضمن جهود الإنماء المستمرة لتعزيز الخدمات الرقمية وتحسين تجربة المستخدم، تم توقيع اتفاقية شراكة استراتيجية بين …\""
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-30T05:41:04.579Z",
-    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2026/8/IFN-Awards",
-    "outcome": "verified",
-    "note": "عنوان الصفحة: \"مصرف الإنماء الأفضل ابتكاراً في المملكة من IFN Awards | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1052 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"ضمن اسهاماته في تطوير حلول مالية مبتكرة، وتعزيز منظومته الرقمية، وتقديم تجربة مصرفية متكاملة ترتكز على الابتكا…\""
   },
   {
     "targetId": "alrajhi",
@@ -4909,20 +4685,6 @@
   {
     "targetId": "sfda",
     "checkedAtISO": "2026-08-30T05:41:04.579Z",
-    "urlTried": "https://careers.sfda.gov.sa/ar/saudi-arabia/jobs/",
-    "outcome": "unreachable",
-    "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
-  },
-  {
-    "targetId": "sfda",
-    "checkedAtISO": "2026-08-30T05:41:04.579Z",
-    "urlTried": "https://career.sfda.gov.sa/",
-    "outcome": "unreachable",
-    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
-  },
-  {
-    "targetId": "sfda",
-    "checkedAtISO": "2026-08-30T05:41:04.579Z",
     "urlTried": "https://www.sfda.gov.sa/ar/international-cooperation",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"التعاون الدولي | الهيئة العامة للغذاء والدواء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2418 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"إسم الجهة الدولة سنة التوقيع مسمى الاتفاقية ومجال اختصاصها المعهد المغربي للتقييس IMANOR المغرب 2022 مذكرة تفا…\""
@@ -5087,34 +4849,6 @@
     "urlTried": "https://nca.gov.sa/ar/news/2482/",
     "outcome": "verified",
     "note": "عنوان الصفحة: \"المملكة تشارك في الاجتماع الخامس للجنة الوزارية للأ... | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1388 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"شاركت المملكة العربية السعودية ممثلةً بالهيئة الوطنية للأمن السيبراني، وبرئاسة معالي محافظ الهيئة المهندس ماجد…\""
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-30T06:37:18.016Z",
-    "urlTried": "https://career.alinma.com/",
-    "outcome": "rejected",
-    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-30T06:37:18.016Z",
-    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2026/8/Cash-Dividend-Distribution-Q2",
-    "outcome": "verified",
-    "note": "عنوان الصفحة: \"مجلس إدارة مصرف الإنماء يقر توزيع أرباح نقدية على مساهمي المصرف عن الربع الثاني من العام 2026م | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 589 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"قرر مجلس إدارة مصرف الإنماء بتاريخ 6 صفر 1448 هـ الموافق 20 يوليو 2026م توزيع أرباح نقدية على مساهمي المصرف عن…\""
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-30T06:37:18.016Z",
-    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2026/8/Net-Profits-of-Q2",
-    "outcome": "verified",
-    "note": "عنوان الصفحة: \"الإنماء يحقق 3,274 مليون ريال سعودي صافي أرباح بنهاية الربع الثاني من 2026 بنسبة نمو 6% | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 2326 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الإنماء عن الإنماء أخبار المصرف الإنماء يحقق 3,274 مليون ريال سعودي صافي أرباح بنهاية الربع الثاني من 2026 بنس…\""
-  },
-  {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-30T06:37:18.016Z",
-    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News",
-    "outcome": "verified",
-    "note": "عنوان الصفحة: \"أخبار المصرف | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3656 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"100 عن الإنماء الرؤية و الرسالة عن الإنماء الالتزام ومكافحة الجرائم المالية الأخبار خدمة ذوي الإعاقة وكبار الس…\""
   },
   {
     "targetId": "anb",
@@ -6447,13 +6181,6 @@
     "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
   },
   {
-    "targetId": "alinma",
-    "checkedAtISO": "2026-08-30T10:25:11.702Z",
-    "urlTried": "https://career.alinma.com/",
-    "outcome": "verified",
-    "note": "عنوان الصفحة: \"alinma\". صفحة حقيقية على نطاق الجهة، قُرئ منها 750 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Alinma proudly stands as a leading provider of dynamic, innovative, and Sharia-compliant financial services in…\""
-  },
-  {
     "targetId": "bsf",
     "checkedAtISO": "2026-08-30T10:25:11.702Z",
     "urlTried": "https://www.bsfcareers.sa/ar/",
@@ -6571,5 +6298,355 @@
     "urlTried": "https://ncac.edu.sa",
     "outcome": "unreachable",
     "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "ncac",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://ncac.edu.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/en/About-the-Bank/The-Bank/News/2011/05/alinma-bank-to-participate-in-the-career-day-at-taiba-university",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Alinma Bank to Participate in the Career Day at Taiba University | alinma\". صفحة حقيقية على نطاق الجهة، قُرئ منها 285 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© All right reserved to alinma 2026 Tel. +966112185555 | alinma Bank | A Saudi Joint Stock Company | Regulated…\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2011/05/alinma-bank-to-participate-in-the-career-day-at-taiba-university",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"alinma-bank-to-participate-in-the-career-day-at-taiba-university | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 305 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© جميع الحقوق محفوظة لـ الإنماء 2026 مصرف الإنماء | شركة مساهمة سعودية | خاضعة لرقابة وإشراف البنك المركزي الس…\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/en/About-the-Bank/The-Bank/News/2011/10/alinma-bank-hosts-training-course-on-corporate-business-services-and-e-banking-2011",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Alinma Bank Hosts Training Course on Corporate Business Services and E-Banking 2011 | alinma\". صفحة حقيقية على نطاق الجهة، قُرئ منها 285 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© All right reserved to alinma 2026 Tel. +966112185555 | alinma Bank | A Saudi Joint Stock Company | Regulated…\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2011/10/alinma-bank-hosts-training-course-on-corporate-business-services-and-e-banking-2011",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"alinma-bank-hosts-training-course-on-corporate-business-services-and-e-banking-2011 | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 305 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© جميع الحقوق محفوظة لـ الإنماء 2026 مصرف الإنماء | شركة مساهمة سعودية | خاضعة لرقابة وإشراف البنك المركزي الس…\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/en/About-the-Bank/The-Bank/News/2011/12/alinmabankhoststrainingcourseoncorporatebusinessservicesandebanking",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Alinma Bank Hosts Training Course on Corporate Business Services and E-Banking. | alinma\". صفحة حقيقية على نطاق الجهة، قُرئ منها 285 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© All right reserved to alinma 2026 Tel. +966112185555 | alinma Bank | A Saudi Joint Stock Company | Regulated…\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2011/12/alinmabankhoststrainingcourseoncorporatebusinessservicesandebanking",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"alinmabankhoststrainingcourseoncorporatebusinessservicesandebanking | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 305 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© جميع الحقوق محفوظة لـ الإنماء 2026 مصرف الإنماء | شركة مساهمة سعودية | خاضعة لرقابة وإشراف البنك المركزي الس…\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/en/About-the-Bank/The-Bank/News/2011/12/alinma-bank-hosts-training-course-on-corporate-business-services-and-e-banking",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Alinma Bank Hosts Training Course on Corporate Business Services and E-Banking | alinma\". صفحة حقيقية على نطاق الجهة، قُرئ منها 285 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© All right reserved to alinma 2026 Tel. +966112185555 | alinma Bank | A Saudi Joint Stock Company | Regulated…\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2011/12/alinma-bank-hosts-training-course-on-corporate-business-services-and-e-banking",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"alinma-bank-hosts-training-course-on-corporate-business-services-and-e-banking | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 305 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"© جميع الحقوق محفوظة لـ الإنماء 2026 مصرف الإنماء | شركة مساهمة سعودية | خاضعة لرقابة وإشراف البنك المركزي الس…\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/en/About-the-Bank/The-Bank/News/2013/05/alinmajobandcareerdayattractsgraduatesoftheinstituteofpublicadministration",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Alinma Job and Career Day Attracts Graduates of the Institute of Public Administration. | alinma\". صفحة حقيقية على نطاق الجهة، قُرئ منها 961 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"As part of its ongoing effort to engage talented youth throughout the Kingdom who exhibit competencies and qua…\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2013/05/alinmajobandcareerdayattractsgraduatesoftheinstituteofpublicadministration",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"alinmajobandcareerdayattractsgraduatesoftheinstituteofpublicadministration | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 916 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"من منطلق حرص مصرف الإنماء على استقطاب الكفاءات الشابة والمشاركة في تعزيز الفرص لتدريب وتوظيف الشباب شارك مصرف …\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/en/About-the-Bank/The-Bank/News/2014/04/alinma-bank-participates-in-career-day-at-al-imam-university",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"Alinma Bank Participates in Career Day at Al-Imam University | alinma\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1459 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Alinma Bank has participated in the Imam Muhammad Ibn Saud Islamic University Career Day for the year 1435 H. …\""
+  },
+  {
+    "targetId": "alinma",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://alinma.com/About-the-Bank/The-Bank/News/2014/04/alinma-bank-participates-in-career-day-at-al-imam-university",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"alinma-bank-participates-in-career-day-at-al-imam-university | الإنماء\". صفحة حقيقية على نطاق الجهة، قُرئ منها 1240 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"قام مصرف الإنماء بالمشاركة في فعاليات يوم المهنة للعام 1435هـ الذي دشنه معالي مدير جامعة الإمام محمد بن سعود ا…\""
+  },
+  {
+    "targetId": "bsf",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.bsfcareers.sa/ar/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (127 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "dga",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://dgacareer.talentera.com/ar/page/coop-program/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "maaden",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://maaden.com.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "maaden",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.maaden.com.sa/ar/careers/working",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "mobily",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://careers.mobily.com.sa",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "mobily",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://careers.mobily.com.sa/en/saudi-arabia/jobs/coop-program-1100006246/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (75 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "takamol",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://join.takamol.com.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "takamol",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://join.takamol.com.sa/?page_id=4",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taqnia",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://taqnia.com/en/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (149 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "zatca",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.customs.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://careers.sfda.gov.sa/ar/saudi-arabia/jobs/",
+    "outcome": "unreachable",
+    "note": "headless chromium unavailable (browserType.launch: Executable doesn't exist at C:\\Users\\GIGABITE\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝); run \"npx playwright install chromium\" · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://career.sfda.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sfda",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://careers.sfda.gov.sa/ar/",
+    "outcome": "unreachable",
+    "note": "headless chromium unavailable (browserType.launch: Executable doesn't exist at C:\\Users\\GIGABITE\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝); run \"npx playwright install chromium\" · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://me.devoteam.com/jobs/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "devoteam_sa",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.devoteam.com/me/join-us/",
+    "outcome": "unreachable",
+    "note": "headless chromium unavailable (browserType.launch: Executable doesn't exist at C:\\Users\\GIGABITE\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝); run \"npx playwright install chromium\" · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "fakeeh",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://careers.fakeeh.care/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "masterworks",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://career.master-works.sa/ar",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "mckinsey_sa",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "http://www.mckinsey.com/careers/search-jobs",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (The operation was aborted due to timeout); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "mckinsey_sa",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.mckinsey.com/careers/old-search-jobs",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (The operation was aborted due to timeout); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "taif_uni_it",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://edugate.tu.edu.sa/ords/f?p=320",
+    "outcome": "unreachable",
+    "note": "headless chromium unavailable (browserType.launch: Executable doesn't exist at C:\\Users\\GIGABITE\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝); run \"npx playwright install chromium\" · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "wadi_makkah",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://wadimakkah.sa/en/careers/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (65 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "falcom",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "http://www.falcom.com.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://careers.gaca.gov.sa/ar/jobs/sectors/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "gaca",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://careers.gaca.gov.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "gcam",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.gcam.gov.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "housing",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.housing.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "hrc",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.hrc.gov.sa/ar-sa/Pages/home.aspx",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (89 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "kasb",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
+    "outcome": "unreachable",
+    "note": "headless chromium unavailable (browserType.launch: Executable doesn't exist at C:\\Users\\GIGABITE\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝); run \"npx playwright install chromium\" · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "media",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://media.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: disallowed by robots.txt"
+  },
+  {
+    "targetId": "pension",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.pension.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "redf",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.housing.gov.sa/ar/related-links/140",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "saip",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://careers.saip.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sanabil",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "http://www.sanabil.sa/ar/pages/default.aspx",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "saudi_exports",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.saudiexports.sa/ar/pages/default.aspx",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "sfd",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://careers.sfd.gov.sa/",
+    "outcome": "rejected",
+    "note": "الصفحة فُتحت لكنها لم تُخرج نصاً يُقرأ (0 حرفاً)، فلا يمكن مراقبتها."
+  },
+  {
+    "targetId": "ssc",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://saudispace.gov.sa/",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
+  },
+  {
+    "targetId": "tawuniya",
+    "checkedAtISO": "2026-08-31T21:32:12.898Z",
+    "urlTried": "https://www.tawuniya.com.sa/about-us/contact-us",
+    "outcome": "unreachable",
+    "note": "headless chromium unavailable (browserType.launch: Executable doesn't exist at C:\\Users\\GIGABITE\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝); run \"npx playwright install chromium\" · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
   }
 ]

@@ -29,6 +29,7 @@
     "test:faults": "tsx scripts/test-faults.ts",
     "test:scripts": "tsx scripts/test-scripts.ts",
     "test:longrun": "tsx scripts/test-longrun.ts",
+    "test:gates": "tsx scripts/test-gates.ts",
     "build:benchmark": "tsx scripts/build-benchmark.ts",
     "audit:contrast": "tsx scripts/audit-contrast.ts",
     "audit:privacy": "tsx scripts/audit-privacy.ts",
