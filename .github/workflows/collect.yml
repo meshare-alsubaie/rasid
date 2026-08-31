@@ -65,6 +65,28 @@ jobs:
         continue-on-error: true
         run: npx playwright install --with-deps chromium
 
+      # Pages nobody added by hand, before reading the ones we have.
+      #
+      # The collector can only ever fetch urls already in the dataset, and these
+      # bodies announce at fresh addresses rather than by editing a standing
+      # page — so without this, an announcement can be published, run its whole
+      # window and close, entirely unseen. One request per organisation returns
+      # every url the site declares; only the new ones whose path is about
+      # training are proposed, and each still has to be opened and judged.
+      #
+      # Once a day, at the 00:00 UTC round: a sitemap that moved this morning
+      # will still have moved tomorrow, and four passes a day over a hundred
+      # sites is noise on their logs for nothing.
+      - name: Look for newly published pages
+        if: github.event_name == 'schedule' && startsWith(github.event.schedule, '0 0')
+        continue-on-error: true
+        timeout-minutes: 12
+        env:
+          RASID_CONTACT: ${{ secrets.RASID_CONTACT }}
+        run: |
+          npm run sitemaps
+          npm run verify-leads
+
       - name: Collect
         # Skipped on an ordinary code push: a deploy should not spend API
         # credits or hammer the sources just because a stylesheet changed.

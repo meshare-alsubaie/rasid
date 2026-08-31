@@ -34,6 +34,12 @@ jobs:
       # opens because its status was cached, and a record deleted for the crime
       # of its page going quiet.
       - run: npm run test:lifecycle
+      # The one judgement the sitemap reader makes alone: is this url worth
+      # opening. It has been wrong before, on "cooperation" versus "co-op".
+      - run: npm run test:sitemap
+      # Dates are the one field where a careful guess is worse than none, so
+      # they are a table lookup with a test table, not a prompt.
+      - run: npm run test:hijri
 
       # The repository is public. The README called this a gate before it was
       # one: it was a habit someone had to remember, run by hand, with nothing

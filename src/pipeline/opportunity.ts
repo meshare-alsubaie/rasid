@@ -9,6 +9,7 @@
  */
 import { createHash } from "node:crypto";
 import type { Classification } from "./classify";
+import { parseArabicDate } from "../hijri";
 import { endOfDeadline, hijriOf, startOfDay } from "../types";
 import type { Opportunity, OpportunityFlag, OpportunityStatus } from "../types";
 
@@ -98,6 +99,29 @@ function absoluteApplyUrl(candidate: string | null, sourceUrl: string): string |
   }
 }
 
+/**
+ * What a date on the page actually means.
+ *
+ * The raw string wins when it can be read, because it is what the page said and
+ * the reading is a table lookup with one right answer. The model's own ISO
+ * value is the fallback, for the ordinary case where the page published a
+ * Gregorian date and there is nothing to convert. When the page wrote a Hijri
+ * date with no year, both are refused: the day and month are known and the year
+ * is not, and inventing it is how a deadline gets missed by a year.
+ */
+function resolveDate(iso: string | null, raw: string | null): string | null {
+  if (raw) {
+    const read = parseArabicDate(raw);
+    if (read.iso !== null) return read.iso;
+    // A year the page never wrote is not supplied by us, and the model's
+    // guess at it is not better for having come from a model.
+    if (read.ambiguousYear) return null;
+  }
+  if (iso === null) return null;
+  const fallback = parseArabicDate(iso);
+  return fallback.iso;
+}
+
 export function fromClassification(args: Common & { c: Classification }): Opportunity {
   const { orgId, sourceUrl, text, nowISO, prior, firstTime, c } = args;
   const firstSeenISO = prior?.firstSeenISO ?? nowISO;
@@ -114,9 +138,9 @@ export function fromClassification(args: Common & { c: Classification }): Opport
     firstSeenISO,
     lastConfirmedISO: nowISO,
     status,
-    opensISO: c.opensISO,
-    closesISO: c.closesISO,
-    closesHijri: hijriOf(c.closesISO),
+    opensISO: resolveDate(c.opensISO, c.opensRaw),
+    closesISO: resolveDate(c.closesISO, c.closesRaw),
+    closesHijri: hijriOf(resolveDate(c.closesISO, c.closesRaw)),
     product: c.product,
     majors: c.majors,
     seats: c.seats,

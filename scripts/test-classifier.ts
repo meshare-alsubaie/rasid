@@ -21,7 +21,7 @@ import {
   CLASSIFIER_MODEL,
 } from "../src/pipeline/classify";
 import { asManualReview, fromClassification } from "../src/pipeline/opportunity";
-import type { SourceSnapshot } from "../src/types";
+import type { Opportunity, SourceSnapshot } from "../src/types";
 
 const NOW = new Date().toISOString();
 const HASH = "a".repeat(64);
@@ -127,6 +127,8 @@ const good: Asker = async () => ({
     titleAr: "برنامج التدريب التعاوني",
     opensISO: null,
     closesISO: null,
+    opensRaw: null,
+    closesRaw: null,
     majors: ["الأمن السيبراني"],
     seats: 3,
     stipendSAR: 3000,
@@ -161,11 +163,18 @@ if (ok.ok) {
 /* ---- the deadline day, which used to be reported as already over ---- */
 console.log("\ndeadline days");
 
-const withDatesInput = (opens: string | null, closes: string | null, product = "coop") => ({
+const withDatesInput = (
+  opens: string | null,
+  closes: string | null,
+  product = "coop",
+  raw: { opensRaw?: string | null; closesRaw?: string | null } = {},
+) => ({
   isTrainingAnnouncement: true,
   titleAr: "برنامج التدريب التعاوني",
   opensISO: opens,
   closesISO: closes,
+  opensRaw: raw.opensRaw ?? null,
+  closesRaw: raw.closesRaw ?? null,
   product: product as "coop" | "graduate_dev",
   majors: [],
   seats: null,
@@ -241,6 +250,45 @@ check(
   "a sentence is never stored as an apply link",
   nonsense.applyUrl === null,
   String(nonsense.applyUrl),
+);
+
+/*
+ * The model reports the date; the code decides what it means.
+ *
+ * The model's own ISO answer is deliberately wrong in two of these, so a pass
+ * can only mean the conversion came from the Umm al-Qura table and not from it.
+ */
+console.log("\ndates are read from the page, not decided by the model");
+const closingFrom = (rawClose: string, modelIso: string | null): Opportunity =>
+  fromClassification({
+    orgId: "sdaia",
+    sourceUrl: "https://example.gov.sa/coop",
+    text: TEXT,
+    nowISO: NOW,
+    prior: undefined,
+    firstTime: true,
+    c: withDatesInput(null, modelIso, "coop", { closesRaw: rawClose }),
+  });
+
+check(
+  "a Hijri date is converted by the table",
+  closingFrom("12 ربيع الأول 1448", null).closesISO === "2026-08-25",
+  String(closingFrom("12 ربيع الأول 1448", null).closesISO),
+);
+check(
+  "and the table overrules the model when they disagree",
+  closingFrom("12 ربيع الأول 1448", "2026-01-01").closesISO === "2026-08-25",
+  String(closingFrom("12 ربيع الأول 1448", "2026-01-01").closesISO),
+);
+check(
+  "a Hijri date with no year yields nothing, even when the model supplied one",
+  closingFrom("12 ربيع الأول", "2026-08-25").closesISO === null,
+  String(closingFrom("12 ربيع الأول", "2026-08-25").closesISO),
+);
+check(
+  "the Hijri line shown to the reader follows the corrected date",
+  (closingFrom("12 ربيع الأول 1448", "2026-01-01").closesHijri ?? "").includes("ربيع الأول"),
+  String(closingFrom("12 ربيع الأول 1448", "2026-01-01").closesHijri),
 );
 
 /* ---- live checks: two synthetic announcements, real model, real spend ---- */

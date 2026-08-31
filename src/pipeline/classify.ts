@@ -42,6 +42,18 @@ export interface Classification {
   titleAr: string | null;
   opensISO: string | null;
   closesISO: string | null;
+  /**
+   * The dates exactly as the page wrote them, before anyone interpreted them.
+   *
+   * The model used to be asked to convert Hijri to Gregorian itself. It is
+   * good at it and that is not the point: the conversion has one right answer,
+   * a table defines it, and a field where being a day out costs a semester
+   * should not depend on a model being careful this time. So the model copies
+   * the characters and `parseArabicDate` decides what they mean — and because
+   * the raw string is kept, a reader can check the reading.
+   */
+  opensRaw: string | null;
+  closesRaw: string | null;
   majors: string[];
   seats: number | null;
   stipendSAR: number | null;
@@ -127,6 +139,8 @@ Return ONLY valid JSON, no markdown fences, matching this schema:
   "titleAr": string,
   "opensISO": string | null,
   "closesISO": string | null,
+  "opensRaw": string | null,
+  "closesRaw": string | null,
   "majors": string[],
   "seats": number | null,
   "stipendSAR": number | null,
@@ -151,7 +165,16 @@ RULES
   security analysis. 60–85 for networks, systems, IT, software, data.
   20–50 for general technical. 0–15 for unrelated fields.
 - relevanceReason: one short Arabic sentence explaining the score.
-- Convert Hijri dates to Gregorian ISO. If the year is ambiguous, return null.`;
+- opensISO / closesISO: a Gregorian ISO date (YYYY-MM-DD) ONLY if the page
+  itself gives one. Otherwise null. Do not convert a Hijri date yourself.
+- opensRaw / closesRaw: the date exactly as the page writes it, copied
+  verbatim — "12 ربيع الأول 1448", "١٤٤٨/٣/١٢", "15 سبتمبر 2026". Null if the
+  page states no such date. Copy the characters; do not interpret them.
+
+Dates are converted afterwards, in code, against the Umm al-Qura calendar. Your
+job with a date is to find it and repeat it, not to work out what it means: a
+deadline read a day wrong costs the reader a semester, and this is the one field
+where a careful guess is worse than none.`;
 
 /** Kept for tests and for anyone reading the contract without a profile set. */
 export const SYSTEM_PROMPT_SHAPE = buildSystemPrompt("<RASID_STUDENT_PROFILE>");
@@ -170,6 +193,8 @@ const schema = {
     "titleAr",
     "opensISO",
     "closesISO",
+    "opensRaw",
+    "closesRaw",
     "majors",
     "seats",
     "stipendSAR",
@@ -190,6 +215,8 @@ const schema = {
     titleAr: { type: ["string", "null"] },
     opensISO: { type: ["string", "null"] },
     closesISO: { type: ["string", "null"] },
+    opensRaw: { type: ["string", "null"] },
+    closesRaw: { type: ["string", "null"] },
     majors: { type: "array", items: { type: "string" } },
     seats: { type: ["integer", "null"], minimum: 0 },
     stipendSAR: { type: ["number", "null"], minimum: 0 },

@@ -77,8 +77,34 @@ try {
         if ($LASTEXITCODE -ne 0) { Say "pull failed, collecting without it" }
     }
 
+    # Look for pages nobody added by hand, before reading the ones we have.
+    #
+    # This is the round's only defence against an announcement published at a
+    # brand-new address, which is how most of these bodies actually announce.
+    # It costs one request per organisation and it replaces requests rather than
+    # adding them, so it goes first: anything it finds is a candidate that
+    # verify-leads can open in the same run, and a genuine announcement is then
+    # read on the day it appears rather than whenever someone next looks.
+    #
+    # Once a day is enough. A sitemap that moved four hours ago will still have
+    # moved tomorrow, and four passes a day over 116 sites is noise on their
+    # logs for no gain.
+    $hour = (Get-Date).Hour
+    if ($hour -lt 6) {
+        npm run sitemaps --silent 2>&1 | Tee-Object -Variable maps | Out-Null
+        $mapLine = ($maps | Select-String -Pattern "new candidate link|publish a readable sitemap") -join " | "
+        Say "sitemaps: $mapLine"
+
+        # Only worth opening leads if the sitemap pass proposed any.
+        if ($mapLine -notmatch "^0 new|\b0 new candidate") {
+            npm run verify-leads --silent 2>&1 | Tee-Object -Variable leads | Out-Null
+            $leadLine = ($leads | Select-String -Pattern '^\{"' ) -join " "
+            Say "verify: $leadLine"
+        }
+    }
+
     npm run collect --silent 2>&1 | Tee-Object -Variable out | Out-Null
-    $summary = ($out | Select-String -Pattern "changed |announcements |needs manual review|broken " ) -join " | "
+    $summary = ($out | Select-String -Pattern "changed |announcements |needs manual review|broken |vanished " ) -join " | "
     Say "collect: $summary"
 
     if ((git status --porcelain -- data) -ne $null) {
