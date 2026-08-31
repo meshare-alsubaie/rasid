@@ -83,6 +83,25 @@ async function load(origin: string): Promise<Entry> {
    * and to a real browser rather than a plain client wearing a browser's name.
    */
   const rendered = await paced(url, PER_HOST_GAP_MS, () => renderPage(url));
+
+  /*
+   * A 404 from the browser means the same as a 404 from anyone: there is no
+   * robots.txt, and RFC 9309 says an absent file restricts nothing.
+   *
+   * This was lost, and it cost real sources. The plain fetch handles 4xx
+   * correctly above, but when the plain fetch cannot connect at all — an
+   * incomplete certificate chain, which Chromium repairs from the system trust
+   * store and Node does not — the browser was the only client that could reach
+   * the host, and `renderPage` reports any status at or above 400 as a failure.
+   * So a site with no robots.txt and a slightly misconfigured certificate was
+   * treated as having refused us, permanently. Taif Municipality is exactly
+   * that: no robots.txt, a missing intermediate, and 7,151 characters of page
+   * behind it.
+   */
+  if (!rendered.ok && rendered.status !== null && rendered.status >= 400 && rendered.status < 500) {
+    return { kind: "allow_all" };
+  }
+
   if (rendered.ok) {
     const text = rendered.html.replace(/<[^>]+>/g, "").trim();
     /*

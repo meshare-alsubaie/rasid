@@ -212,7 +212,7 @@
         "url": "https://ncac.edu.sa",
         "provenance": "reported",
         "verifiedAtISO": null,
-        "verifiedNote": "مرشّح من قائمة المستخدم، لم يُفتح بصرياً بعد.",
+        "verifiedNote": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either",
         "type": "site_root",
         "checkFrequencyHours": 6,
         "renderMode": "static"
@@ -228,50 +228,10 @@
         "coopConfirmed": false
       },
       {
-        "url": "https://nca.gov.sa/ar/cyber-training-and-qualifications/",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T05:41:04.579Z",
-        "verifiedNote": "عنوان الصفحة: \"تأهيل وتدريب الكوادر السيبرانية | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 3394 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"النسخة الثالثة من البرنامج التدريبي للطلاب والطالبات في المرحلة الجامعية المتخصصين في الأمن السيبرانيبرنامج يت…\"",
-        "type": "careers_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://nca.gov.sa/ar/careers/",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T05:41:04.579Z",
-        "verifiedNote": "عنوان الصفحة: \"التوظيف | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 606 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"موقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققEnglishروابط المواقع الالكترونية الرسمية السعودية تنتهي بـ .g…\"",
-        "type": "careers_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
         "url": "https://nca.gov.sa/ar/news/",
         "provenance": "official",
         "verifiedAtISO": "2026-08-30T05:41:04.579Z",
         "verifiedNote": "عنوان الصفحة: \"الأخبار | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 840 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"المملكة تشارك في الاجتماع الخامس للجنة الوزارية للأمن السيبراني بدول مجلس التعاون لدول الخليج العربية27/08/202…\"",
-        "type": "announcement_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://nca.gov.sa/en/careers/",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T06:37:18.016Z",
-        "verifiedNote": "عنوان الصفحة: \"Careers | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 685 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"A government website registered with the Digital Government AuthorityHow to verifyعربيOfficial Saudi Governmen…\"",
-        "type": "careers_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://nca.gov.sa/en/news/",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T06:37:18.016Z",
-        "verifiedNote": "عنوان الصفحة: \"News Page | NCA\". صفحة حقيقية على نطاق الجهة، قُرئ منها 822 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"In partnership with the Ministry of Education, NCA Launches a Campaign to Raise Cybersecurity Awareness as the…\"",
         "type": "announcement_page",
         "checkFrequencyHours": 12,
         "renderMode": "static",
@@ -3600,82 +3560,13 @@
     "trainingQuality": null,
     "sources": [
       {
-        "url": "https://www.taifcity.gov.sa/",
-        "provenance": "reported",
-        "verifiedAtISO": null,
-        "verifiedNote": "الموقع الرسمي، من بحث",
+        "url": "https://www.taifcity.gov.sa/#/ar",
+        "provenance": "official",
+        "verifiedAtISO": "2026-08-31T18:45:04.012Z",
+        "verifiedNote": "عنوان الصفحة: \"الموقع الرسمي لأمانة الطائف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 5814 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"prevnext منصات تهمك سكني منصة سكني الخدمات_الإلكترونيةوزارة_الشؤون_البلديةخدمات_بلديةالأنظمة واللوائح الأنظمة …\"",
         "type": "site_root",
         "checkFrequencyHours": 12,
-        "renderMode": "static"
-      },
-      {
-        "url": "https://momah.gov.sa/ar/branches/amant-mhafzt-altayf",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T04:34:30.450Z",
-        "verifiedNote": "عنوان الصفحة: \"أمانة محافظة الطائف | وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 151421 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية أمانة محافظة الطائف أمانة محافظة الطائفالعنوانالطائف حي النسيمخريطةPOINT (40.451166 21.274607)ايميلad…\"",
-        "type": "announcement_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://momah.gov.sa/ar/form/partnerships-and-cooperation",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T05:41:04.579Z",
-        "verifiedNote": "عنوان الصفحة: \"نموذج التواصل الإلكتروني - الشراكات و التعاون الدولي | وزارة البلديات\". صفحة حقيقية على نطاق الجهة، قُرئ منها 151367 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية تواصل معنا نموذج التواصل الإلكتروني - الشراكات و التعاون الدولي نموذج التواصل الإلكتروني - الشراكات و…\"",
-        "type": "careers_page",
-        "checkFrequencyHours": 6,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://momah.gov.sa/ar/node/14717",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T05:41:04.579Z",
-        "verifiedNote": "عنوان الصفحة: \"الوظائف | وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 152144 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"تسعى وزارة البلديات والإسكان إلى استقطاب أفضل الموارد البشرية من كلا الجنسين لتحقيق رؤية الوزارة وتمكين الفرد …\"",
-        "type": "careers_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://momah.gov.sa/ar/menu/media-center",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T05:41:04.579Z",
-        "verifiedNote": "عنوان الصفحة: \"المركز الإعلامي | وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 151282 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"الرئيسية المركز الإعلامي المركز الإعلامي التعليقات والاقتراحات لأي استفسار أو ملاحظات حول الخدمات الحكومية، ير…\"",
-        "type": "announcement_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://momah.gov.sa/ar/news",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T06:37:18.016Z",
-        "verifiedNote": "عنوان الصفحة: \"الأخبار | وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 151354 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"يمكنك الاطلاع على اخبار الوزارة و استعراض تفاصيل كل خبر.يمكنك الاطلاع على اخبار الوزارة و استعراض تفاصيل كل خب…\"",
-        "type": "announcement_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://momah.gov.sa/ar/announcements",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T06:37:18.016Z",
-        "verifiedNote": "عنوان الصفحة: \"الإعلانات | وزارة البلديات والإسكان\". صفحة حقيقية على نطاق الجهة، قُرئ منها 152454 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"فرص استثمارية لصيف الباحة 2021مأربعاء, 16/06/2021 - 10:03انتخابات مجلس إدارة الهيئة السعودية للمقاولينأربعاء, …\"",
-        "type": "announcement_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
-        "coopConfirmed": false
-      },
-      {
-        "url": "https://momah.gov.sa/en/menu/media-center",
-        "provenance": "official",
-        "verifiedAtISO": "2026-08-30T06:37:18.016Z",
-        "verifiedNote": "عنوان الصفحة: \"Media Center | Ministry of Municipalities and Housing\". صفحة حقيقية على نطاق الجهة، قُرئ منها 45764 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"Home Media Center Media Center Comments and suggestions For any inquiries or comments about government service…\"",
-        "type": "announcement_page",
-        "checkFrequencyHours": 12,
-        "renderMode": "static",
+        "renderMode": "browser",
         "coopConfirmed": false
       }
     ],

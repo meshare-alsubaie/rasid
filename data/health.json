@@ -1062,15 +1062,6 @@
     "state": "healthy"
   },
   {
-    "sourceUrl": "https://momah.gov.sa/ar/branches/amant-mhafzt-altayf",
-    "orgId": "taif_amanah",
-    "lastAttemptISO": "2026-08-31T00:02:49.563Z",
-    "lastSuccessISO": "2026-08-31T00:02:49.563Z",
-    "consecutiveFailures": 0,
-    "lastError": null,
-    "state": "healthy"
-  },
-  {
     "sourceUrl": "https://momah.gov.sa/ar/form/partnerships-and-cooperation",
     "orgId": "housing",
     "lastAttemptISO": "2026-08-31T00:02:49.563Z",
@@ -1100,15 +1091,6 @@
   {
     "sourceUrl": "https://momah.gov.sa/ar/node/14717",
     "orgId": "housing",
-    "lastAttemptISO": "2026-08-31T00:02:49.563Z",
-    "lastSuccessISO": "2026-08-31T00:02:49.563Z",
-    "consecutiveFailures": 0,
-    "lastError": null,
-    "state": "healthy"
-  },
-  {
-    "sourceUrl": "https://momah.gov.sa/en/menu/media-center",
-    "orgId": "taif_amanah",
     "lastAttemptISO": "2026-08-31T00:02:49.563Z",
     "lastSuccessISO": "2026-08-31T00:02:49.563Z",
     "consecutiveFailures": 0,

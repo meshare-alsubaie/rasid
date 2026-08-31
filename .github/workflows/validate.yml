@@ -42,6 +42,10 @@ jobs:
       - run: npm run test:hijri
       # Every case here is a page that actually broke extraction once.
       - run: npm run test:extract
+      # Twenty real announcements against the specification's score bands. It
+      # replays answers recorded once, so it costs nothing here; re-record with
+      # "npm run build:benchmark" whenever the system prompt changes.
+      - run: npm run test:benchmark
 
       # The repository is public. The README called this a gate before it was
       # one: it was a habit someone had to remember, run by hand, with nothing

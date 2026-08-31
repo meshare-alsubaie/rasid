@@ -1,0 +1,469 @@
+{
+  "promptHash": "c5771ac466527912",
+  "builtISO": "2026-08-31T18:53:46.161Z",
+  "model": "claude-sonnet-5",
+  "answers": {
+    "cyber_1": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "برنامج التدريب التعاوني — الهيئة الوطنية للأمن السيبراني",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": "12 ربيع الأول 1448",
+      "majors": [
+        "الأمن السيبراني",
+        "أمن المعلومات",
+        "علوم الحاسب"
+      ],
+      "seats": 4,
+      "stipendSAR": 3000,
+      "durationWeeks": 24,
+      "cities": [
+        "الرياض"
+      ],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 95,
+      "relevanceReason": "المسمى الوظيفي محلل أمن سيبراني في مركز عمليات أمنية يطابق تخصص الطالب ومشروعه في Zero-Trust SOC بدقة عالية.",
+      "applyUrl": null
+    },
+    "cyber_2": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "برنامج التدريب التعاوني بسدايا",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": "١٤٤٨/٣/١٢",
+      "majors": [
+        "الأمن السيبراني",
+        "علوم البيانات"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": null,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 95,
+      "relevanceReason": "الدور يتعلق مباشرة بحماية البنية التحتية الرقمية ومراقبة الحوادث الأمنية، وهو متطابق مع تخصص الطالب في الأمن السيبراني ومشروعه في مركز العمليات الأمنية (SOC).",
+      "applyUrl": null
+    },
+    "cyber_3": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "التدريب التعاوني — الاتصالات السعودية",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": "12 ربيع الآخر 1448",
+      "majors": [
+        "أمن المعلومات"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": 24,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 95,
+      "relevanceReason": "التدريب يتعلق مباشرة بالأمن السيبراني وتحليل السجلات والاستجابة للحوادث واختبار الاختراق، وهو مطابق تمامًا لتخصص الطالب واهتماماته.",
+      "applyUrl": null
+    },
+    "cyber_4": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "إعلان تدريب تعاوني في هيئة الحكومة الرقمية",
+      "opensISO": null,
+      "closesISO": "2026-09-15",
+      "opensRaw": null,
+      "closesRaw": "2026-09-15",
+      "majors": [
+        "الأمن السيبراني",
+        "نظم المعلومات"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": null,
+      "cities": [],
+      "statesZeroCoursesRule": true,
+      "zeroCoursesQuote": "يشترط تفريغ الطالب كامل الوقت",
+      "relevanceScore": 95,
+      "relevanceReason": "البرنامج يتضمن العمل في مركز عمليات الأمن السيبراني SOC ومتابعة التنبيهات والتحقيق في الحوادث، وهو تطابق مباشر مع تخصص الطالب ومشروع تخرجه.",
+      "applyUrl": null
+    },
+    "cyber_5": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "برنامج المتدربين — الأمن السيبراني في مصرف الراجحي",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": "٥ جمادى الأولى ١٤٤٨",
+      "majors": [
+        "حوكمة الأمن السيبراني",
+        "إدارة المخاطر السيبرانية",
+        "الامتثال"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": null,
+      "cities": [
+        "الرياض"
+      ],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 95,
+      "relevanceReason": "الفرصة تتعلق مباشرة بحوكمة الأمن السيبراني وإدارة المخاطر وهو مجال قريب جدًا من تخصص الطالب في الأمن السيبراني.",
+      "applyUrl": null
+    },
+    "it_1": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "التدريب التعاوني — إدارة تقنية المعلومات",
+      "opensISO": null,
+      "closesISO": "2026-10-01",
+      "opensRaw": null,
+      "closesRaw": "2026-10-01",
+      "majors": [
+        "علوم الحاسب",
+        "نظم المعلومات",
+        "هندسة البرمجيات"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": 12,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 70,
+      "relevanceReason": "التدريب في مجال إدارة الأنظمة والشبكات وقواعد البيانات وهو مرتبط بتخصصه لكنه لا يذكر الأمن السيبراني أو مركز العمليات الأمنية تحديداً.",
+      "applyUrl": null
+    },
+    "it_2": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "برنامج التدريب التعاوني في تطوير البرمجيات",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "علوم الحاسب",
+        "هندسة البرمجيات"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": null,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 65,
+      "relevanceReason": "التدريب في تطوير البرمجيات واختبارها يتعلق بمجال تقني عام قريب من تخصصه لكنه ليس أمنياً بشكل مباشر.",
+      "applyUrl": null
+    },
+    "it_3": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "تدريب تعاوني — تحليل البيانات",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "نظم المعلومات",
+        "علوم البيانات",
+        "إحصاء"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": null,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 65,
+      "relevanceReason": "الفرصة تتعلق بتحليل البيانات وإعداد التقارير وهي مرتبطة جزئياً بتخصصه في الحوسبة لكنها ليست في الأمن السيبراني مباشرة.",
+      "applyUrl": null
+    },
+    "it_4": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "التدريب التعاوني في إدارة الشبكات والاتصالات",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "هندسة الشبكات",
+        "تقنية المعلومات"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": 16,
+      "cities": [
+        "الرياض"
+      ],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 65,
+      "relevanceReason": "التدريب يتعلق بإدارة الشبكات والدعم الفني، وهو مجال تقني ذو صلة جزئية بتخصص الطالب في الأمن السيبراني.",
+      "applyUrl": null
+    },
+    "it_5": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "برنامج التدريب التعاوني — الدعم التقني",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "تقنية المعلومات",
+        "علوم الحاسب"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": 12,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 35,
+      "relevanceReason": "الدور يتعلق بالدعم التقني العام وصيانة الأجهزة وليس بالأمن السيبراني أو الشبكات مباشرة، وهو أقل توافقاً مع تخصص الطالب في الأمن السيبراني.",
+      "applyUrl": null
+    },
+    "unrelated_1": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "التدريب التعاوني — كلية الصيدلة",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "الصيدلة الإكلينيكية"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": null,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 0,
+      "relevanceReason": "التخصص المطلوب هو الصيدلة الإكلينيكية ولا علاقة له بعلوم الحاسب أو الأمن السيبراني.",
+      "applyUrl": null
+    },
+    "unrelated_2": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "برنامج التدريب التعاوني في التمريض",
+      "opensISO": null,
+      "closesISO": "2026-09-20",
+      "opensRaw": null,
+      "closesRaw": "2026-09-20",
+      "majors": [
+        "التمريض"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": 16,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 0,
+      "relevanceReason": "البرنامج مخصص لطلاب التمريض ولا علاقة له بتخصص الأمن السيبراني أو علوم الحاسب.",
+      "applyUrl": null
+    },
+    "unrelated_3": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "التدريب التعاوني — التغذية الإكلينيكية",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "علوم التغذية"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": null,
+      "cities": [
+        "جدة"
+      ],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 0,
+      "relevanceReason": "التخصص المطلوب هو التغذية الإكلينيكية ولا علاقة له بالحوسبة أو الأمن السيبراني.",
+      "applyUrl": null
+    },
+    "unrelated_4": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "إعلان التدريب التعاوني في الموارد البشرية",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "إدارة الموارد البشرية",
+        "إدارة الأعمال"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": 12,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 5,
+      "relevanceReason": "التخصص المطلوب في الموارد البشرية وإدارة الأعمال لا يمت بصلة لتخصص الطالب في علوم الحاسب والأمن السيبراني.",
+      "applyUrl": null
+    },
+    "unrelated_5": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "التدريب التعاوني — الهندسة المدنية",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "الهندسة المدنية"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": null,
+      "cities": [
+        "ينبع"
+      ],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 0,
+      "relevanceReason": "التخصص هندسة مدنية ولا علاقة له بالحوسبة أو الأمن السيبراني الذي يدرسه الطالب.",
+      "applyUrl": null
+    },
+    "graddev_1": {
+      "isTrainingAnnouncement": true,
+      "product": "graduate_dev",
+      "titleAr": "برنامج تطوير الخريجين المنتهي بالتوظيف",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": "12 ربيع الأول 1448",
+      "majors": [],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": 52,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 0,
+      "relevanceReason": "البرنامج مخصص لحملة الشهادة الفعليين وغير مؤهل له الطالب لأنه لم يتخرج بعد.",
+      "applyUrl": null
+    },
+    "graddev_2": {
+      "isTrainingAnnouncement": true,
+      "product": "graduate_dev",
+      "titleAr": "برنامج الخريجين في الأمن السيبراني",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "الأمن السيبراني"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": null,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 0,
+      "relevanceReason": "البرنامج مخصص لحديثي التخرج خلال العامين الماضيين، والطالب لم يتخرج بعد فهو غير مؤهل للتقديم.",
+      "applyUrl": null
+    },
+    "graddev_3": {
+      "isTrainingAnnouncement": true,
+      "product": "graduate_dev",
+      "titleAr": "برنامج تمهير للتدريب على رأس العمل",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": 24,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 0,
+      "relevanceReason": "البرنامج يستهدف الخريجين فقط وهذا الطالب لم يتخرج بعد فهو غير مؤهل للتقديم.",
+      "applyUrl": null
+    },
+    "graddev_4": {
+      "isTrainingAnnouncement": true,
+      "product": "graduate_dev",
+      "titleAr": "برنامج تطوير الخريجين — تقنية المعلومات",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": "5 جمادى الآخرة 1448",
+      "majors": [
+        "تخصصات الحاسب"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": 72,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 0,
+      "relevanceReason": "البرنامج من نوع تطوير الخريجين ويشترط الحصول على شهادة البكالوريوس قبل البدء، وهو غير مؤهل له لأنه لم يتخرج بعد.",
+      "applyUrl": null
+    },
+    "graddev_5": {
+      "isTrainingAnnouncement": true,
+      "product": "graduate_dev",
+      "titleAr": "برنامج القادة الشباب للخريجين",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "جميع التخصصات"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": null,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 0,
+      "relevanceReason": "البرنامج مخصص لحملة البكالوريوس من الخريجين فعليًا، والطالب لم يتخرج بعد فهو غير مؤهل للتقديم.",
+      "applyUrl": null
+    },
+    "general_1": {
+      "isTrainingAnnouncement": true,
+      "product": "coop",
+      "titleAr": "برنامج التدريب التعاوني — الدعم التقني",
+      "opensISO": null,
+      "closesISO": null,
+      "opensRaw": null,
+      "closesRaw": null,
+      "majors": [
+        "تقنية المعلومات",
+        "علوم الحاسب"
+      ],
+      "seats": null,
+      "stipendSAR": null,
+      "durationWeeks": 12,
+      "cities": [],
+      "statesZeroCoursesRule": false,
+      "zeroCoursesQuote": null,
+      "relevanceScore": 45,
+      "relevanceReason": "الدور يتعلق بالدعم التقني العام وصيانة الأجهزة وليس بالأمن السيبراني أو الشبكات مباشرة، وهو مرتبط بتخصصه بشكل عام لكنه أقل تخصصاً.",
+      "applyUrl": null
+    }
+  }
+}

@@ -7733,5 +7733,26 @@
     "urlTried": "http://www.kasbcapital.sa/index.php/ar/",
     "outcome": "unreachable",
     "note": "HTTP 404 · جُرِّب العنوان، ونظيره بـwww أو بدونها، وجذر الموقع، وبمتصفّح حقيقي"
+  },
+  {
+    "targetId": "taif_amanah",
+    "checkedAtISO": "2026-08-31T18:45:04.012Z",
+    "urlTried": "https://www.taifcity.gov.sa/#/ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الموقع الرسمي لأمانة الطائف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 5814 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"prevnext منصات تهمك سكني منصة سكني الخدمات_الإلكترونيةوزارة_الشؤون_البلديةخدمات_بلديةالأنظمة واللوائح الأنظمة …\""
+  },
+  {
+    "targetId": "taif_amanah",
+    "checkedAtISO": "2026-08-31T18:45:04.012Z",
+    "urlTried": "https://www.taifcity.gov.sa/#/ar",
+    "outcome": "verified",
+    "note": "عنوان الصفحة: \"الموقع الرسمي لأمانة الطائف\". صفحة حقيقية على نطاق الجهة، قُرئ منها 5814 حرفاً، ولا يرد فيها ذكر التدريب التعاوني وقت الفحص. تُراقَب لأن الإعلان قد يظهر عليها لاحقاً، وليست صفحة تدريب مؤكّدة. أول ما فيها: \"prevnext منصات تهمك سكني منصة سكني الخدمات_الإلكترونيةوزارة_الشؤون_البلديةخدمات_بلديةالأنظمة واللوائح الأنظمة …\""
+  },
+  {
+    "targetId": "ncac",
+    "checkedAtISO": "2026-08-31T18:45:56.184Z",
+    "urlTried": "https://ncac.edu.sa",
+    "outcome": "unreachable",
+    "note": "robots.txt: could not reach robots.txt after 3 attempt(s) (fetch failed); this is our connection, not the site, and we do not crawl without reading it; a browser could not reach it either"
   }
 ]
