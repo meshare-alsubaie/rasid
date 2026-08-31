@@ -564,3 +564,43 @@ export function statusFor(
   if (opens !== null || closes !== null) return "open";
   return "unknown";
 }
+
+/**
+ * A value that cannot be displayed without saying where it came from.
+ *
+ * Spec 8.2 requires that no field reaches a screen without its provenance
+ * travelling with it, and until now that was enforced by a script and by
+ * discipline. Discipline is not a guarantee: `acceptsUserMajor` and
+ * `offersCoopProduct` are `boolean | null` with no provenance anywhere in the
+ * type, and the interface rendered them as confident green and red chips. An
+ * audit found them and it was right to.
+ *
+ * Wrapping the value makes the compiler the enforcement. A display function
+ * that takes `Attested<T>` cannot be handed a bare `T`, so a field with no
+ * recorded provenance has to be marked `"unknown"` explicitly, in code, where a
+ * reader can see the gap — rather than passing silently as fact.
+ */
+export interface Attested<T> {
+  value: T;
+  provenance: Provenance;
+  /** The published wording, where there is one. */
+  quote?: string;
+  sourceUrl?: string;
+}
+
+/**
+ * State the provenance of a value that has none recorded.
+ *
+ * Deliberately verbose to write. Every call is a place where the dataset does
+ * not know something the interface is about to show, and it should be as
+ * visible in the source as it is on the screen.
+ */
+export const unattested = <T>(value: T): Attested<T> => ({ value, provenance: "unknown" });
+
+/** A value whose provenance the dataset does record. */
+export const attested = <T>(value: T, from: ZeroCoursesRule | Stipend): Attested<T> => ({
+  value,
+  provenance: from.provenance,
+  quote: "quote" in from ? from.quote : undefined,
+  sourceUrl: "sourceUrl" in from ? from.sourceUrl : undefined,
+});

@@ -11,5 +11,18 @@
     "moduleResolution": "bundler",
     "noEmit": true
   },
+  /*
+   * `exclude` is inherited from the base config, and the base excludes
+   * `src/app` so that the Node project does not try to check browser code
+   * without DOM types. Inheriting it here cancelled the `include` below, and
+   * the result was that the entire browser half of the application — every
+   * screen, the Season Bar, the data layer — was never type-checked at all.
+   *
+   * Vite only transpiles, so nothing else was checking it either. A stray
+   * template expression in a comment reached a pushed commit and was caught by
+   * the bundler, three runs later. Clearing the inherited exclusion is what
+   * makes `npm run typecheck` mean what it has been claiming to mean.
+   */
+  "exclude": [],
   "include": ["src/app", "src/types.ts"]
 }

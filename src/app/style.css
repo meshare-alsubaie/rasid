@@ -860,6 +860,19 @@ a {
   border-color: rgba(169, 58, 28, 0.35);
   background: rgba(169, 58, 28, 0.09);
 }
+/*
+ * Three states that must be told apart with the colour removed.
+ *
+ * Each carries a mark in the markup (✓ ✗ ؟) so the distinction survives a
+ * greyscale screen and colour blindness, and the unknown chip keeps its dashed
+ * outline and empty fill. The rule the whole product turns on is that grey must
+ * never read as green, and a reader who cannot see the difference between the
+ * two colours must still see the difference between the two shapes.
+ */
+.chip b {
+  font-weight: 700;
+  margin-inline-end: 0.15rem;
+}
 .chip.unknown {
   color: var(--dormant-text);
   border-color: var(--hairline);

@@ -11,8 +11,8 @@
 import "./style.css";
 import { loadDataset, formatDate, timeAgo, daysUntil, type Dataset } from "./data";
 import { renderSeasonBar, type LaneInput } from "./season-bar";
-import { hijriOf } from "../types";
-import type { Opportunity, Organisation, Provenance } from "../types";
+import { hijriOf, unattested } from "../types";
+import type { Attested, Opportunity, Organisation, Provenance } from "../types";
 
 type Tab = "season" | "orgs" | "mine" | "settings";
 type Mark = "interested" | "applied" | "ignored";
@@ -122,20 +122,54 @@ function provenanceTag(p: Provenance): string {
 const fact = (label: string, value: string | null): string =>
   `<div><dt>${label}</dt><dd class="${value === null ? "none" : ""}">${value ?? "لم يُعلن"}</dd></div>`;
 
-function chip(state: boolean | null, yes: string, no: string, unknown: string): string {
-  if (state === true) return `<li class="chip yes">${yes}</li>`;
-  if (state === false) return `<li class="chip no">${no}</li>`;
-  return `<li class="chip unknown">${unknown}</li>`;
+/**
+ * A decision chip, which cannot be built from a bare value.
+ *
+ * The parameter is `Attested<boolean | null>` and not `boolean | null`, and
+ * that is the whole point: a caller with a value whose provenance the dataset
+ * does not record has to say so, in code, by wrapping it in `unattested`. The
+ * compiler refuses anything else. Spec 8.2 asked for this guarantee and it was
+ * previously kept by discipline, which an audit showed was not kept at all —
+ * two of these three chips were rendered green and red from fields carrying no
+ * provenance of any kind.
+ *
+ * The mark before the label carries the same information as the colour, for a
+ * reader who cannot use colour: ✓ yes, ✗ no, ؟ unknown.
+ */
+function chip(
+  state: Attested<boolean | null>,
+  yes: string,
+  no: string,
+  unknown: string,
+): string {
+  const known = state.provenance !== "unknown";
+  const title = known ? "" : ` title="لا يُعرف مصدر هذه المعلومة"`;
+  if (state.value === true) return `<li class="chip yes"${title}><b aria-hidden="true">✓</b> ${yes}</li>`;
+  if (state.value === false) return `<li class="chip no"${title}><b aria-hidden="true">✗</b> ${no}</li>`;
+  return `<li class="chip unknown"${title}><b aria-hidden="true">؟</b> ${unknown}</li>`;
 }
 
 function orgChips(org: Organisation): string {
   // requiresZeroCourses true is bad news for him, so the polarity is inverted
   // here on purpose: "no condition" is the green state.
-  const zero = org.requiresZeroCourses.value;
+  const zero = org.requiresZeroCourses;
+  const noCondition: Attested<boolean | null> = {
+    value: zero.value === null ? null : !zero.value,
+    provenance: zero.provenance,
+    quote: zero.quote,
+    sourceUrl: zero.sourceUrl,
+  };
+
+  /*
+   * These two carry no provenance in the dataset at all — `boolean | null` and
+   * nothing else — so they are marked unknown-provenance here rather than
+   * quietly rendered as fact. That is the gap made visible; closing it means
+   * adding provenance to the schema, which is a data change, not a display one.
+   */
   return `<ul class="chips">
-    ${chip(zero === null ? null : !zero, "لم تشترط تصفير المواد", "تشترط تصفير المواد", "شرط المواد غير معروف")}
-    ${chip(org.acceptsUserMajor, "تخصصي مقبول", "تخصصي غير مقبول", "قبول التخصص غير معروف")}
-    ${chip(org.offersCoopProduct, "تدريب تعاوني", "ليس تدريباً تعاونياً", "نوع البرنامج غير معروف")}
+    ${chip(noCondition, "لم تشترط تصفير المواد", "تشترط تصفير المواد", "شرط المواد غير معروف")}
+    ${chip(unattested(org.acceptsUserMajor), "تخصصي مقبول", "تخصصي غير مقبول", "قبول التخصص غير معروف")}
+    ${chip(unattested(org.offersCoopProduct), "تدريب تعاوني", "ليس تدريباً تعاونياً", "نوع البرنامج غير معروف")}
   </ul>`;
 }
 
@@ -305,8 +339,15 @@ function answerBlock(): string {
     ${pushSilent}
     ${headline}
     <p class="sub">${sub}</p>
+    ${/* Spec E4: three numbers he must never have to tap for. How much was
+          actually read, how many organisations he is blind to, and when the
+          last round finished. Bad news among them is shown as bad news rather
+          than omitted — a count that only appears when it is comfortable is a
+          count that cannot be trusted when it is not. */ ""}
     <div class="tally">
       <span><b>${watched}</b> من ${configured.total} مصدراً قُرئ فعلاً</span>
+      <span class="${configured.orgsUnread > 0 ? "warn" : ""}"><b>${configured.orgsUnread}</b> جهة بلا مصدر مقروء</span>
+      <span>آخر جولة ناجحة ${timeAgo(data.lastCheckISO)}</span>
       <span><b>${tracked}</b> برنامجاً معروفاً</span>
       ${unread > 0 ? `<span class="warn"><b>${unread}</b> مصدراً لا يُقرأ</span>` : ""}
     </div>
@@ -383,7 +424,16 @@ function seasonScreen(): string {
    * this app exists to sit through. So the count is now stated rather than left
    * to be inferred from a shorter list than expected.
    */
-  const silent = lanes.filter((l) => l.opportunity === undefined).length;
+  /*
+   * "Published nothing" and "we have not read it" are different sentences, and
+   * only one of them is reassuring. A lane with no announcement was counted as
+   * silent whether its pages had been read or not — so an organisation nobody
+   * had fetched was reported as having published nothing.
+   */
+  const silent = lanes.filter(
+    (l) => l.opportunity === undefined && l.health !== "unwatched" && l.health !== "broken",
+  ).length;
+  const unread = lanes.filter((l) => l.health === "unwatched" || l.health === "broken").length;
 
   return `<div class="season-head">
       <h2>الموسم</h2>
@@ -391,7 +441,9 @@ function seasonScreen(): string {
     </div>
     <p class="reason season-note">
       المسارات أدناه كل الجهات المراقَبة. أما المجموعات تحتها فتعرض <strong>الإعلانات</strong> لا الجهات:
-      ${data.opportunities.length} إعلاناً قُرئ وصُنِّف حتى الآن، و${silent} جهة لم تنشر شيئاً بعد.
+      ${data.opportunities.length} إعلاناً قُرئ وصُنِّف حتى الآن، و${silent} جهة قُرئت ولم تنشر شيئاً${
+        unread > 0 ? `، و<strong>${unread} جهة لم تُقرأ</strong> فلا يُعرف عنها شيء` : ""
+      }.
       لا تُعطى الجهة درجة صلة، لأن الدرجة تُقاس على إعلان بعينه — وجهة صامتة لا إعلان لها تُقاس.
     </p>
     ${renderSeasonBar(lanes)}
@@ -812,9 +864,22 @@ function honestyLine(): string {
     return t === "S" || t === "A";
   });
 
+  /*
+   * The tick was the last false green light on the screen.
+   *
+   * It counted `health.length` — one row per source the collector has ever
+   * attempted — and put a checkmark in front of it. A source configured but
+   * never fetched simply was not in the arithmetic, so the number was both
+   * smaller than the truth and presented as the whole of it. It now reads as a
+   * fraction, and the tick only appears when the fraction is complete.
+   */
+  const c = coverage();
+  const complete = c.read === c.total;
+
   return `<button class="honesty" id="honesty" aria-expanded="false" aria-controls="health-panel">
-      <span>✓ ${data.health.length} مصدراً مراقَباً</span>
+      <span>${complete ? "✓" : "◔"} ${c.read} من ${c.total} مصدراً قُرئ</span>
       <span>آخر فحص ${timeAgo(data.lastCheckISO)}</span>
+      ${c.orgsUnread > 0 ? `<span class="warn">${c.orgsUnread} جهة بلا مصدر مقروء</span>` : ""}
       ${broken.length > 0 ? `<span class="warn">${broken.length} يحتاج فحصاً يدوياً</span>` : ""}
       ${review > 0 ? `<span class="warn">${review} بلا تصنيف</span>` : ""}
       <span class="caret" aria-hidden="true">▾</span>
@@ -978,7 +1043,27 @@ function openSheet(orgId: string): void {
         : org.importSource === "coop_pdf_2021" ? "ملف COOP ٢٠٢١، غير محقّق"
         : "إدخال يدوي",
       )}
-      ${fact("آخر فحص ناجح", health.length === 0 ? null : timeAgo(health[0]!.lastSuccessISO))}
+      ${/* Per organisation, not per whichever health row came first. A body
+            with seven pages of which one was ever fetched used to print that
+            one's timestamp above all seven, as though it covered them. */ ""}
+      ${(() => {
+        const readUrls = new Set(
+          data.health.filter((h) => h.lastSuccessISO !== null).map((h) => h.sourceUrl),
+        );
+        const hit = watched.filter((s) => readUrls.has(s.url)).length;
+        const newest = health
+          .map((h) => h.lastSuccessISO)
+          .filter((t): t is string => t !== null)
+          .sort()
+          .at(-1);
+        if (watched.length === 0) return fact("آخر فحص ناجح", null);
+        return fact(
+          "آخر فحص ناجح",
+          newest === undefined
+            ? null
+            : `${timeAgo(newest)} · ${hit} من ${watched.length} من قنواتها قُرئت`,
+        );
+      })()}
     </dl>
     ${
       watched.length === 0
@@ -1027,12 +1112,23 @@ function openSheet(orgId: string): void {
  * Latin1 with no hint of where it came from. Anything outside the base64url
  * alphabet is stripped rather than trusted.
  */
-const b64ToBytes = (b64: string): Uint8Array => {
+/*
+ * Returns an ArrayBuffer rather than a Uint8Array, and the difference is not
+ * pedantry. `PushManager.subscribe` takes a `BufferSource` whose backing store
+ * must be an ArrayBuffer, and a `Uint8Array` in modern lib types may be backed
+ * by a SharedArrayBuffer — so the value was not assignable, and nothing said
+ * so because this whole file was never being type-checked. It happens to work
+ * at runtime; it is fixed here because the next such mismatch might not.
+ */
+const b64ToBytes = (b64: string): ArrayBuffer => {
   const clean = b64.trim().replace(/[^A-Za-z0-9_-]/g, "");
   const padded = (clean + "=".repeat((4 - (clean.length % 4)) % 4))
     .replace(/-/g, "+")
     .replace(/_/g, "/");
-  return Uint8Array.from(atob(padded), (c) => c.charCodeAt(0));
+  const bytes = Uint8Array.from(atob(padded), (c) => c.charCodeAt(0));
+  const buffer = new ArrayBuffer(bytes.length);
+  new Uint8Array(buffer).set(bytes);
+  return buffer;
 };
 
 /**
