@@ -24,9 +24,11 @@ import { HAS_CONTACT, USER_AGENT } from "../src/pipeline/agent";
 import { browserUnavailable, closeBrowser, renderPage } from "../src/pipeline/browser";
 import {
   CLASSIFIER_MODEL,
+  addUsage,
   classify,
   costOf,
   triage,
+  uncachedCostOf,
   type Classification,
   type Usage,
 } from "../src/pipeline/classify";
@@ -666,8 +668,7 @@ if (!NO_CLASSIFY && !DRY_RUN) {
      */
     if (!RECLASSIFY && !alwaysJudge.has(snap.sourceUrl)) {
       const first = await triage(text);
-      spend.inputTokens += first.usage.inputTokens;
-      spend.outputTokens += first.usage.outputTokens;
+      addUsage(spend, first.usage);
       if (!first.looksLikeAnnouncement) {
         triagedOut++;
         notAnnouncements++;
@@ -699,8 +700,7 @@ if (!NO_CLASSIFY && !DRY_RUN) {
     };
 
     const result = await classify(text);
-    spend.inputTokens += result.usage.inputTokens;
-    spend.outputTokens += result.usage.outputTokens;
+    addUsage(spend, result.usage);
 
     if (!result.ok) {
       const note = `${result.stage} — ${result.reason}`;
@@ -926,6 +926,21 @@ if (vanished.length > 0) {
 console.log(
   `  tokens                 ${spend.inputTokens} in / ${spend.outputTokens} out = $${costOf(spend).toFixed(4)}`,
 );
+/*
+ * Stated as a saving against what the same round would have cost sending the
+ * instructions in full every time, rather than as a smaller number with no
+ * explanation. A cost line that quietly drops the cached tokens would show the
+ * round getting dramatically cheaper while the bill did not move at all.
+ */
+const cached = (spend.cacheWriteTokens ?? 0) + (spend.cacheReadTokens ?? 0);
+if (cached > 0) {
+  const full = uncachedCostOf(spend);
+  const saved = full - costOf(spend);
+  console.log(
+    `  instructions cached    ${spend.cacheWriteTokens} stored / ${spend.cacheReadTokens} reread` +
+      ` — saved $${saved.toFixed(4)} of $${full.toFixed(4)} (${Math.round((100 * saved) / full)}%)`,
+  );
+}
 if (budgetStopped > 0) {
   console.log(
     `  budget                 stopped at $${RUN_BUDGET_USD}; ${budgetStopped} page(s) still owed a verdict and will be judged next run`,

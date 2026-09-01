@@ -89,13 +89,55 @@ export interface Classification {
  */
 export const PRICE_PER_MTOK = { input: 2, output: 10 } as const;
 
+/**
+ * What caching costs, as multiples of the ordinary input price.
+ *
+ * Storing the instructions costs a quarter more than sending them; reading them
+ * back costs a tenth. Both are counted, because a saving that is only visible
+ * by not being measured is not a saving — it is a number that stopped being
+ * true. The API reports cached tokens in their own fields and leaves them out
+ * of `input_tokens`, so a reader that ignored them would show the round getting
+ * dramatically cheaper while the bill did not move.
+ */
+export const CACHE_MULTIPLIER = { write: 1.25, read: 0.1 } as const;
+
 export interface Usage {
   inputTokens: number;
   outputTokens: number;
+  /** Instructions stored for the rest of the round. Charged at 1.25x input. */
+  cacheWriteTokens?: number;
+  /** Instructions read back instead of resent. Charged at 0.1x input. */
+  cacheReadTokens?: number;
 }
 
 export const costOf = (u: Usage): number =>
-  (u.inputTokens * PRICE_PER_MTOK.input + u.outputTokens * PRICE_PER_MTOK.output) / 1_000_000;
+  (u.inputTokens * PRICE_PER_MTOK.input +
+    (u.cacheWriteTokens ?? 0) * PRICE_PER_MTOK.input * CACHE_MULTIPLIER.write +
+    (u.cacheReadTokens ?? 0) * PRICE_PER_MTOK.input * CACHE_MULTIPLIER.read +
+    u.outputTokens * PRICE_PER_MTOK.output) /
+  1_000_000;
+
+/**
+ * Add one call's usage into a running total.
+ *
+ * Every place that summed tokens did it with two `+=` lines, and adding the two
+ * cache fields meant finding all six of them and remembering all four fields at
+ * each. Missing one would not break anything visibly — it would just make the
+ * round look cheaper than it was, which is the kind of wrong number this
+ * project exists to refuse. One function, so there is one place to be right.
+ */
+export function addUsage(total: Usage, one: Usage): void {
+  total.inputTokens += one.inputTokens;
+  total.outputTokens += one.outputTokens;
+  total.cacheWriteTokens = (total.cacheWriteTokens ?? 0) + (one.cacheWriteTokens ?? 0);
+  total.cacheReadTokens = (total.cacheReadTokens ?? 0) + (one.cacheReadTokens ?? 0);
+}
+
+/** What the same tokens would have cost with no cache, for reporting the saving. */
+export const uncachedCostOf = (u: Usage): number =>
+  ((u.inputTokens + (u.cacheWriteTokens ?? 0) + (u.cacheReadTokens ?? 0)) * PRICE_PER_MTOK.input +
+    u.outputTokens * PRICE_PER_MTOK.output) /
+  1_000_000;
 
 export type ClassifyResult =
   | { ok: true; value: Classification; attempts: number; usage: Usage }
@@ -268,10 +310,32 @@ export const liveAsk: Asker = async (excerpt, insist) => {
   const profile = studentProfile();
   if (profile === null) throw new Error("RASID_STUDENT_PROFILE is not set");
 
+  /*
+   * The instructions are cached, because they are the bill.
+   *
+   * A round classifies twenty-odd pages, and each call carried the same nine
+   * hundred tokens of schema, rules and profile: measured, that repetition was
+   * about sixty per cent of everything the round spent on input, and none of it
+   * was ever about the page being read.
+   *
+   * Marking the system block cached means the first call of a round pays a
+   * small premium to store it and every call after reads it at a tenth of the
+   * price. The calls in a round happen back to back once fetching is done, well
+   * inside the cache's lifetime; if it has expired, the request is served
+   * normally and costs what it used to. Nothing about the answer changes —
+   * the model sees the identical prompt either way — so this cannot affect what
+   * gets classified, only what it costs.
+   */
   const response = await getClient().messages.create({
     model: CLASSIFIER_MODEL,
     max_tokens: 2048,
-    system: buildSystemPrompt(profile),
+    system: [
+      {
+        type: "text",
+        text: buildSystemPrompt(profile),
+        cache_control: { type: "ephemeral" },
+      },
+    ],
     messages: [
       {
         role: "user",
@@ -288,6 +352,8 @@ export const liveAsk: Asker = async (excerpt, insist) => {
     usage: {
       inputTokens: response.usage.input_tokens,
       outputTokens: response.usage.output_tokens,
+      cacheWriteTokens: response.usage.cache_creation_input_tokens ?? 0,
+      cacheReadTokens: response.usage.cache_read_input_tokens ?? 0,
     },
   };
 };
@@ -429,8 +495,7 @@ export async function classify(text: string, ask: Asker = liveAsk): Promise<Clas
     try {
       const reply = await ask(excerpt, attempt === 2);
       raw = reply.text;
-      usage.inputTokens += reply.usage.inputTokens;
-      usage.outputTokens += reply.usage.outputTokens;
+      addUsage(usage, reply.usage);
     } catch (err) {
       // The SDK already retried 429s and 5xx. Reaching here means the call
       // genuinely failed, and a failed call is not an absence of news.

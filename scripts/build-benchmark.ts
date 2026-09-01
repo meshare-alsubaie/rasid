@@ -18,7 +18,14 @@
  */
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
-import { CLASSIFIER_MODEL, classify, costOf, SYSTEM_PROMPT_SHAPE, type Usage } from "../src/pipeline/classify";
+import {
+  CLASSIFIER_MODEL,
+  addUsage,
+  classify,
+  costOf,
+  SYSTEM_PROMPT_SHAPE,
+  type Usage,
+} from "../src/pipeline/classify";
 import { CASES, type BenchmarkCase } from "./benchmark-cases";
 
 const args = process.argv.slice(2);
@@ -46,8 +53,7 @@ console.log(`classifying ${todo.length} case(s) with ${CLASSIFIER_MODEL}\n`);
 
 for (const c of todo) {
   const result = await classify(c.text);
-  spend.inputTokens += result.usage.inputTokens;
-  spend.outputTokens += result.usage.outputTokens;
+  addUsage(spend, result.usage);
 
   if (!result.ok) {
     console.log(`  FAIL  ${c.id.padEnd(14)} ${result.stage}: ${result.reason}`);
