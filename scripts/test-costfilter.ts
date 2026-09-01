@@ -114,5 +114,41 @@ check(
   /skippedByFilter\+\+;[\s\S]{0,300}pendingClassification = false/.test(source),
 );
 
+/*
+ * The excerpt handed to the cheap question, checked without spending anything.
+ * It is a head slice plus the neighbourhood of the training word, and the one
+ * thing it must never do is drop an announcement that sits at the bottom of a
+ * long news page — which is exactly where a media centre puts it.
+ */
+console.log("\nthe cheap question is asked about the right part of the page");
+{
+  const { triageExcerpt } = (await import("../src/pipeline/classify")) as {
+    triageExcerpt: (t: string) => string;
+  };
+
+  const buried = `${"افتتح معالي الوزير المعرض السنوي بحضور عدد من المسؤولين. ".repeat(120)}تعلن الجهة عن فتح باب التقديم في برنامج التدريب التعاوني لطلاب الجامعات.`;
+  const excerpt = triageExcerpt(buried);
+  check(
+    "an announcement 7,000 characters down is still in the excerpt",
+    /التدريب التعاوني/.test(excerpt),
+    `${excerpt.length} chars sent instead of ${buried.length}`,
+  );
+  check(
+    "and the excerpt is a fraction of the page",
+    excerpt.length < buried.length / 3,
+    `${excerpt.length} of ${buried.length}`,
+  );
+
+  const short = "برنامج التدريب التعاوني — تفاصيل قصيرة.";
+  check("a short page is sent whole", triageExcerpt(short) === short);
+
+  const noKeyword = "خبر عن اجتماع.".repeat(400);
+  check(
+    "a page with no training word anywhere is only its head",
+    triageExcerpt(noKeyword).length <= 1_300,
+    `${triageExcerpt(noKeyword).length} chars`,
+  );
+}
+
 console.log(`\n${failures === 0 ? "all checks passed" : `${failures} CHECK(S) FAILED`}`);
 process.exit(failures === 0 ? 0 : 1);

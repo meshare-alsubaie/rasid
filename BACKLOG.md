@@ -73,6 +73,22 @@ page instead.*
 published bundle that the browser never fetches. *If never fixed: a slower first
 load on mobile data.*
 
+## Cost
+
+**Input tokens are now the bill.** Output was seven-tenths of it and is now a
+fifth: the cheap first pass answers in one word, and only pages that pass it are
+asked the expensive question. What remains is the page text itself, sent twice
+for a page that survives triage — once cheaply, once in full. Anthropic's prompt
+caching would cut the system prompt's share of that; it was not done because the
+system prompt is the smaller half and the change touches the one call that
+decides everything. *If never fixed: the bill is a few cents a day rather than a
+fraction of one.*
+
+**Verdict memory only helps a page that returns to text it held before.** A page
+that changes to something genuinely new every round is paid for every round —
+correctly, because it is new. There is no saving left there without guessing.
+*If never fixed: nothing; this is the cost of actually watching.*
+
 ## Operations
 
 **Collection depends on one laptop.** GitHub's runners are refused by many

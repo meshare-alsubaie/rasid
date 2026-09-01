@@ -408,7 +408,7 @@
     "titleAr": "برنامج سدايا للتدريب التعاوني",
     "detectedISO": "2026-08-31T00:02:49.563Z",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastConfirmedISO": "2026-09-01T01:46:07.967Z",
+    "lastConfirmedISO": "2026-09-01T02:04:59.635Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -421,14 +421,16 @@
     "cities": [
       "الرياض"
     ],
-    "relevanceScore": 65,
-    "relevanceReason": "البرنامج يركز على الذكاء الاصطناعي والبيانات وهو مجال تقني عام ذو صلة جزئية بتخصص الطالب في الأمن السيبراني.",
-    "statesZeroCoursesRule": true,
-    "zeroCoursesQuote": "أن يكون المتقدم متفرغًا طوال فترة التدريب.",
-    "flags": [],
+    "relevanceScore": 70,
+    "relevanceReason": "البرنامج يتعلق بالذكاء الاصطناعي والبيانات وهو تقني عام يتقاطع جزئياً مع تخصص الطالب في الأمن السيبراني.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition"
+    ],
     "sourceUrl": "https://athkax.sdaia.gov.sa/coop",
     "applyUrl": null,
-    "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبرنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي "
+    "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي بحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي برنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي بحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي برنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nونمكّنهم من صناعة أثرٍ يمتد إلى "
   },
   {
     "id": "2b04f83642ee9540",
@@ -756,7 +758,7 @@
     "titleAr": "برنامج التدريب التعاوني - وزارة العدل",
     "detectedISO": "2026-08-29T16:36:58.372Z",
     "firstSeenISO": "2026-08-29T16:36:58.372Z",
-    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-09-01T02:04:59.635Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -768,7 +770,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 20,
-    "relevanceReason": "النص عام حول برنامج تدريب تعاوني في وزارة العدل دون تحديد تخصصات تقنية أو أمن سيبراني.",
+    "relevanceReason": "الإعلان عام عن برنامج التدريب التعاوني بوزارة العدل دون تحديد تخصصات تقنية أو أمن سيبراني بشكل مباشر.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -946,21 +948,25 @@
     "titleAr": "مبادرة التدريب التعاوني - وزارة الصناعة والثروة المعدنية",
     "detectedISO": "2026-08-29T16:36:58.372Z",
     "firstSeenISO": "2026-08-29T16:36:58.372Z",
-    "lastConfirmedISO": "2026-09-01T01:46:07.967Z",
+    "lastConfirmedISO": "2026-09-01T02:04:59.635Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
     "closesHijri": null,
     "product": "coop",
     "majors": [
-      "التخصصات العلمية والتطبيقية"
+      "التخصصات العلمية والتطبيقية",
+      "الهندسية",
+      "التقنية",
+      "الفنية",
+      "التعدين"
     ],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 20,
-    "relevanceReason": "المبادرة موجهة أساسًا لتخصصات الصناعة والتعدين والهندسة التقنية وليست مخصصة للأمن السيبراني أو تقنية المعلومات.",
+    "relevanceScore": 15,
+    "relevanceReason": "المبادرة موجهة لقطاعي الصناعة والتعدين وليست متخصصة في الأمن السيبراني أو تقنية المعلومات رغم شمولها لتخصصات علمية وتطبيقية عامة.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1356,7 +1362,7 @@
     "titleAr": "تدريب تعاوني",
     "detectedISO": "2026-08-31T23:54:26.779Z",
     "firstSeenISO": "2026-08-31T23:54:26.779Z",
-    "lastConfirmedISO": "2026-09-01T01:46:07.967Z",
+    "lastConfirmedISO": "2026-09-01T02:04:59.635Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -1367,8 +1373,8 @@
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 50,
-    "relevanceReason": "الإعلان عام عن برنامج تدريب تعاوني دون تحديد التخصص أو طبيعة العمل الأمني.",
+    "relevanceScore": 30,
+    "relevanceReason": "الإعلان عام عن برنامج تدريب تعاوني دون تحديد مجال أو تخصص مرتبط بالأمن السيبراني.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2178,7 +2184,7 @@
     "titleAr": "برنامج تطوير الخريجين",
     "detectedISO": "2026-08-31T23:54:26.779Z",
     "firstSeenISO": "2026-08-31T23:54:26.779Z",
-    "lastConfirmedISO": "2026-09-01T01:46:07.967Z",
+    "lastConfirmedISO": "2026-09-01T02:04:59.635Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -2190,7 +2196,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 0,
-    "relevanceReason": "البرنامج مخصص لبرنامج تطوير الخريجين وهو غير مؤهل له لأنه لم يتخرج بعد.",
+    "relevanceReason": "هذا برنامج تطوير الخريجين التابع لصندوق تنمية الموارد البشرية ويشترط استلام وثيقة التخرج، والطالب لم يتخرج بعد فهو غير مؤهل للتقديم.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
