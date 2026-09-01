@@ -21,7 +21,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.hrc.gov.sa/website/news?lang=ar",
     "applyUrl": null,
@@ -77,7 +78,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://hrsd.gov.sa/",
     "applyUrl": null,
@@ -105,7 +107,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.mof.gov.sa/Pages/default.aspx",
     "applyUrl": null,
@@ -133,7 +136,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.sabic.com/ar/careers/asia",
     "applyUrl": null,
@@ -161,7 +165,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.cst.gov.sa/",
     "applyUrl": null,
@@ -189,7 +194,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.ecza.gov.sa/ar",
     "applyUrl": null,
@@ -246,7 +252,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://mawhiba.org/",
     "applyUrl": null,
@@ -274,7 +281,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.alfransi.com.sa/",
     "applyUrl": null,
@@ -330,46 +338,12 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://careers.modon.gov.sa/",
     "applyUrl": null,
     "rawExcerpt": "بيئة العمل في\"مدن\" تجربة العمل في\"مدن\" هي مزيج متكامل من الاحترافية والتعاون والابتكار، حيث نحرص على توفير بيئة عمل محفزة تتيح فرصًا ملائمة للتعلم المستمر، وبرامج تطوير قيادية، ومسارات مهنية تعزز من قدرات الموظف وتأهيله لتحمل المسؤوليات المستقبلية. كما يحظى منسوبو\"مدن\" بدعم شامل يشمل التدريب المتخصص، والإرشاد المهني، إلى جانب مبادرات تعنى برفاهية الموظف وجودة الحياة داخل بيئة العمل، بما يعزز من إن"
-  },
-  {
-    "id": "213f5dae6d2c1685",
-    "orgId": "saib",
-    "titleAr": "برنامج التدريب التعاوني - البنك السعودي للاستثمار",
-    "detectedISO": "2026-09-01T00:04:35.529Z",
-    "firstSeenISO": "2026-09-01T00:04:35.529Z",
-    "lastConfirmedISO": "2026-09-01T00:04:35.529Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "coop",
-    "majors": [
-      "Finance",
-      "Accounting",
-      "Marketing",
-      "Engineering",
-      "Management Information Systems",
-      "other related business management areas"
-    ],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": 25,
-    "relevanceReason": "البرنامج موجه بشكل رئيسي للتخصصات المالية والإدارية مع ذكر عابر لنظم المعلومات الإدارية، ولا يتعلق مباشرة بالأمن السيبراني أو الشبكات.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "no_course_condition"
-    ],
-    "sourceUrl": "https://careers.saib.com.sa/en/page/coop-program/",
-    "applyUrl": null,
-    "rawExcerpt": "Cooperative Program The Saudi Investment Bank is one of the rapidly growing organizations in the banking industry that adopt the concept of corporate social responsibility. This could be seen clearly through the number of initiatives, activities and programs that SAIB provides to the society. Program mission: The program mission is to focus on the development of practical skills for co-op students"
   },
   {
     "id": "217ea4c276739188",
@@ -433,7 +407,7 @@
     "titleAr": "برنامج سدايا للتدريب التعاوني",
     "detectedISO": "2026-08-31T00:02:49.563Z",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastConfirmedISO": "2026-08-31T00:02:49.563Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -443,17 +417,19 @@
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": 8,
-    "cities": [],
+    "cities": [
+      "الرياض"
+    ],
     "relevanceScore": 70,
-    "relevanceReason": "البرنامج يتعلق بمجالات البيانات والذكاء الاصطناعي والتقنيات الممكنة لها وهي مرتبطة بتخصص الطالب في الحوسبة والأمن السيبراني بشكل عام دون تحديد دقيق للمجال الأمني.",
+    "relevanceReason": "البرنامج موجه للطلاب في مجال البيانات والذكاء الاصطناعي وهو مرتبط بشكل عام بالتقنية دون ذكر صريح للأمن السيبراني أو مركز العمليات الأمنية.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "no_course_condition"
     ],
-    "sourceUrl": "https://careers.sdaia.gov.sa/training",
+    "sourceUrl": "https://athkax.sdaia.gov.sa/coop",
     "applyUrl": null,
-    "rawExcerpt": "برنامج سدايا للتدريب التعاوني تسعى الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا) عن طريق برنامج التدريب التعاوني إلى المساهمة في تحقيق رؤية المملكة 2030 ورؤية الاستراتيجية الوطنية للبيانات والذكاء الاصطناعي في تنمية الموارد البشرية والقدرات الوطنية وتطويرها في مجالات البيانات والذكاء الاصطناعي والتقنيات الممكنة لها. أهداف البرنامج دعم الطلاب عن طريق المواءمة بين الدراسة الأكاديمية والتطبيق ال"
+    "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي بحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي برنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي بحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي برنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nونمكّنهم من صناعة أثرٍ يمتد إلى "
   },
   {
     "id": "2b04f83642ee9540",
@@ -484,35 +460,6 @@
     "rawExcerpt": "الهيئة السعودية للمواصفات والمقاييس والجودة | SASO\n\nموقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان.\n\nمسجل لدى هيئة الحكومة الرقمية برقم : 20250414141 بحث الهيئة "
   },
   {
-    "id": "2bc502b5d5146a7c",
-    "orgId": "jadwa",
-    "titleAr": "Cooperative program",
-    "detectedISO": "2026-09-01T00:04:35.529Z",
-    "firstSeenISO": "2026-09-01T00:04:35.529Z",
-    "lastConfirmedISO": "2026-09-01T00:04:35.529Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "coop",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": 10,
-    "relevanceReason": "الإعلان يخص التدريب في مجال الاستثمار والتمويل ولا علاقة له بالأمن السيبراني أو تخصص الطالب.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "no_course_condition",
-      "more_on_page"
-    ],
-    "sourceUrl": "https://www.jadwa.com/en/internship",
-    "applyUrl": null,
-    "rawExcerpt": "Careers Careers Internships Starting your career on the right footing is important. Jadwa Academy offers young men and women three different pathways for hands-on training and professional development in investment and finance. Summer internship program University students and recent graduates can apply for a three-month summer internship. Apply Now Cooperative program University students can appl"
-  },
-  {
     "id": "2c4887f0b71a2312",
     "orgId": "nazaha",
     "titleAr": "لم يُصنَّف بعد",
@@ -539,6 +486,40 @@
     "sourceUrl": "https://www.nazaha.gov.sa/",
     "applyUrl": null,
     "rawExcerpt": "شكراً لكم رأيكم محل اهتمامنا لقد حققت المملكة نجاحات متتالية في مكافحة الفساد، وهو نهج أضـــــحى استراتيجية أساسية لدينا، بتكريس مبدأ الشفافية والمساءلة، وتتبع ومراقبة الأداء الحكومي وفاعليته خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز آل سعود لن ينجو أي شخص دخل في قضية فساد أيًّا من كان.. لن ينجو.. سواءً كان وزيرًا، أو أميرًا، أو أيًّا من كان.. أي أحد تتوفر عليه الأدلة الكافية سوف يُحاسب سمو و"
+  },
+  {
+    "id": "2f0ba3d473a25c51",
+    "orgId": "saib",
+    "titleAr": "برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "graduate_dev",
+    "majors": [
+      "تقنية المعلومات",
+      "الأمن السيبراني"
+    ],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [
+      "الرياض"
+    ],
+    "relevanceScore": 0,
+    "relevanceReason": "هذا برنامج تطوير خريجين يتطلب شهادة البكالوريوس فعلياً بيد المتقدم وهو غير متاح للطالب لعدم تخرجه بعد.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "wrong_product",
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://careers.saib.com.sa/ar/page/it-program/",
+    "applyUrl": null,
+    "rawExcerpt": "برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لخريجي تقنية المعلومات والأمن السيبراني - استثمارنا المستمر في قادة المستقبل. نقدم في هذا البرنامج شهادات تدريب معترف بها عالمياً لنخبة من أمهر الخريجين الذين انضموا لبرنامجنا. هذه فرصة ليكونوا فرداً من أفراد عائلة البنك السعودي للاستثمار. مزايا البرنامج يحصل المتدرب في نهاية فترة التدريب على ش"
   },
   {
     "id": "315f9e482cc646ac",
@@ -618,7 +599,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.bog.gov.sa/en/EServices/judiciaryHiring/Pages/Hiring.aspx",
     "applyUrl": null,
@@ -646,7 +628,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://talent.mc.gov.sa/",
     "applyUrl": null,
@@ -733,7 +716,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://careers.anb.sa/ar/",
     "applyUrl": null,
@@ -773,7 +757,7 @@
     "titleAr": "برنامج التدريب التعاوني - وزارة العدل",
     "detectedISO": "2026-08-29T16:36:58.372Z",
     "firstSeenISO": "2026-08-29T16:36:58.372Z",
-    "lastConfirmedISO": "2026-08-29T16:36:58.372Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -784,8 +768,8 @@
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 15,
-    "relevanceReason": "الإعلان عام من وزارة العدل ولا يذكر تخصصات تقنية أو أمن سيبراني، مما يجعله ضعيف الصلة بتخصص الطالب.",
+    "relevanceScore": 20,
+    "relevanceReason": "النص عام حول برنامج تدريب تعاوني في وزارة العدل دون تحديد تخصصات تقنية أو أمن سيبراني.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -963,21 +947,23 @@
     "titleAr": "مبادرة التدريب التعاوني - وزارة الصناعة والثروة المعدنية",
     "detectedISO": "2026-08-29T16:36:58.372Z",
     "firstSeenISO": "2026-08-29T16:36:58.372Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
     "closesHijri": null,
     "product": "coop",
     "majors": [
-      "التخصصات العلمية والتطبيقية"
+      "التخصصات العلمية والتطبيقية",
+      "الهندسية والتقنية والفنية",
+      "التعدين"
     ],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 20,
-    "relevanceReason": "المبادرة موجهة لقطاعي الصناعة والتعدين وليست للأمن السيبراني أو تقنية المعلومات تحديدًا.",
+    "relevanceReason": "المبادرة موجهة لقطاعي الصناعة والتعدين والتخصصات الهندسية والتقنية العامة، ولا تذكر مجالات الأمن السيبراني أو تقنية المعلومات تحديدًا.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1038,7 +1024,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://adf.gov.sa/ar/Pages/default.aspx",
     "applyUrl": null,
@@ -1066,7 +1053,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.alrajhibank.com.sa/",
     "applyUrl": null,
@@ -1102,37 +1090,6 @@
     "rawExcerpt": "As part of GASTAT's social and professional responsibility, GASTAT introduces the cooperative training program which aims to increase the level of knowledge and skill among the young talented students and enable them to apply the academic studies in the actual work environment. To enrich their professional lives, and provide them with experiences that qualify them to the labor market in the future"
   },
   {
-    "id": "48040f13c3da694b",
-    "orgId": "kpmg_sa",
-    "titleAr": "KPMG Audit Internship Program | Accounting Graduates",
-    "detectedISO": "2026-09-01T00:04:35.529Z",
-    "firstSeenISO": "2026-09-01T00:04:35.529Z",
-    "lastConfirmedISO": "2026-09-01T00:04:35.529Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "graduate_dev",
-    "majors": [
-      "Accounting"
-    ],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": 0,
-    "relevanceReason": "البرنامج مخصص لخريجي المحاسبة ويشترط الحصول على الشهادة الجامعية، وهو غير متعلق بتخصص الأمن السيبراني ولا يعتبر تدريباً تعاونياً.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "wrong_product",
-      "no_course_condition"
-    ],
-    "sourceUrl": "https://slccareers.kpmg.com/job/Medina-KPMG-Audit-Internship-Program-Accounting-Graduates/1368374723/",
-    "applyUrl": null,
-    "rawExcerpt": "Function: People, Performance and Culture Level of Experience: Internship Overview – KPMG Middle East KPMG has grown to become one of the largest professional service providers in the Middle East, having three lines of services: audit, tax, and advisory. Currently, KPMG Middle East workforce is over 5,000. With ambitious growth objectives, we are continuously looking for talents for various functi"
-  },
-  {
     "id": "484b344eede9888e",
     "orgId": "sama",
     "titleAr": "لم يُصنَّف بعد",
@@ -1154,44 +1111,12 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://careers.sama.gov.sa/",
     "applyUrl": null,
     "rawExcerpt": "The Saudi Central Bank Careers Page Saudi Central Bank welcomes you in our Recruitment Page, and we appreciate your interest in joining the Saudi Central Bank (SAMA), which is committed to attracting qualified candidates to contribute to achieving the strategic objectives of SAMA. To apply to the Saudi Central Bank, you can log in to your personal account and complete your application, so it can b"
-  },
-  {
-    "id": "48b6f23e8d9fe16c",
-    "orgId": "saib",
-    "titleAr": "برنامج تطوير الخريجين لمصرفية الشركات 2021",
-    "detectedISO": "2026-09-01T00:04:35.529Z",
-    "firstSeenISO": "2026-09-01T00:04:35.529Z",
-    "lastConfirmedISO": "2026-09-01T00:04:35.529Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "graduate_dev",
-    "majors": [
-      "إدارة الأعمال"
-    ],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": 52,
-    "cities": [
-      "الرياض"
-    ],
-    "relevanceScore": 0,
-    "relevanceReason": "البرنامج مخصص لخريجي إدارة الأعمال في المجال المصرفي وهو من نوع تطوير الخريجين الذي يتطلب شهادة التخرج، وهو غير مؤهل له الطالب حالياً ولا علاقة له بالأمن السيبراني.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "wrong_product",
-      "no_course_condition"
-    ],
-    "sourceUrl": "https://careers.saib.com.sa/ar/page/bag-program/",
-    "applyUrl": null,
-    "rawExcerpt": "برنامج تطوير الخريجين لمصرفية الشركات يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لمصرفية الشركات - استثمارنا المستمر في قادة المستقبل نقدم في هذا البرنامج تدريب بالتعاون مع شركاء عالميين و شهادات معترف بها عالميا لنخبة من أمهر الخريجين الذين انضموا لبرنامجنا . هذه فرصة ليكونوا فرداً من أفراد عائلة البنك السعودي للاستثمار. مزايا البرنامج يحصل المتدرب في نهاية فترة التدريب على شهادة معتمده. يج"
   },
   {
     "id": "4a5d861c416a8bf7",
@@ -1244,44 +1169,45 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.mofa.gov.sa/",
     "applyUrl": null,
     "rawExcerpt": "الموقع الرسمي لوزارة الخارجية | المملكة العربية السعودية\n\nموقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التعليمية في المملكة العربية السعودية تنتهي بـ sch.sa أو edu.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان.\n\n68 % من المستخدمين قالوا نعم من 278 تعليقًا من فضلك أخبرنا "
   },
   {
-    "id": "4d07ec2e4912e8ab",
-    "orgId": "saib",
-    "titleAr": "برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني",
-    "detectedISO": "2026-09-01T00:04:35.529Z",
-    "firstSeenISO": "2026-09-01T00:04:35.529Z",
-    "lastConfirmedISO": "2026-09-01T00:04:35.529Z",
+    "id": "4c839f5735a7d6f9",
+    "orgId": "hrsd",
+    "titleAr": "برنامج جدير لتأهيل المتميزين",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
     "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
+    "opensISO": "2023-08-06",
+    "closesISO": "2023-08-21",
+    "closesHijri": "٥ صفر ١٤٤٥ هـ",
     "product": "graduate_dev",
     "majors": [
-      "تقنية المعلومات"
+      "أمن سيبراني",
+      "محلل أمن نظم",
+      "مصمم نظم",
+      "محلل بيانات"
     ],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
-    "cities": [
-      "الرياض"
-    ],
+    "cities": [],
     "relevanceScore": 0,
-    "relevanceReason": "هذا برنامج تطوير خريجين يتطلب شهادة البكالوريوس فعلياً وليس تدريباً تعاونياً، وهو غير مناسب للطالب لأنه لم يتخرج بعد.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
+    "relevanceReason": "البرنامج مخصص لحديثي التخرج فعلاً (خلال 4 سنوات من التخرج) ويشترط التفرغ التام، وهو ليس تدريباً تعاونياً بل برنامج توظيف بعد التخرج، وبالتالي لا ينطبق على الطالب الذي لم يتخرج بعد.",
+    "statesZeroCoursesRule": true,
+    "zeroCoursesQuote": "التفرغ التام",
     "flags": [
-      "wrong_product",
-      "no_course_condition"
+      "wrong_product"
     ],
-    "sourceUrl": "https://careers.saib.com.sa/ar/page/it-program/",
+    "sourceUrl": "https://www.hrsd.gov.sa/ministry/about-ministry/jobs",
     "applyUrl": null,
-    "rawExcerpt": "برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لخريجي تقنية المعلومات والأمن السيبراني - استثمارنا المستمر في قادة المستقبل. نقدم في هذا البرنامج شهادات تدريب معترف بها عالمياً لنخبة من أمهر الخريجين الذين انضموا لبرنامجنا. هذه فرصة ليكونوا فرداً من أفراد عائلة البنك السعودي للاستثمار. مزايا البرنامج يحصل المتدرب في نهاية فترة التدريب على ش"
+    "rawExcerpt": "موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيف تتحققخصص تجربتك؟ HTTPS (opens in a new window)Toggle main menu اللغةToggle secondary menuالرئيسيةالوزارةعن الوزارةالوظائفالوظائفتسعى وزارة الموارد البشرية والتنمية الاجتماعية الى استقطاب أفضل الموارد البشرية من كلا الجنسين لتحقيق رؤية الوزارة وتمكين الفرد والمجتمع والمؤسسات، والارتقاء بسوق العمل من خلال تطوير السياسات والتشريعات، وتمكين منسوب"
   },
   {
     "id": "4da461a68635d058",
@@ -1334,7 +1260,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.ey.com/en_sa",
     "applyUrl": null,
@@ -1362,7 +1289,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://nca.gov.sa/en/news/",
     "applyUrl": null,
@@ -1390,7 +1318,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "http://www.wasatah.com.sa/index.php/ar/",
     "applyUrl": null,
@@ -1425,6 +1354,35 @@
     "rawExcerpt": "​برنامج التدريب التعاونيإن من أهداف بنك البلاد رفع مستوى المعرفة والمهارة لدى كفاءات الوطن من الطلبة الخريجين وتمكينهم من تطبيق الدراسات الأكاديمية في بيئة العمل الفعلية، الأمر الذي يدعم جهود السعودة والتوطين الوظيفي لدى البنك، لذا يقوم بنك البلاد بالتعاون الاستراتيجي مع الجامعات والمعاهد داخل المملكة وخارجها من خلال التدريب التعاوني والذي يعد أحد أهم مصادر توظيف الكفاءات الشابة والواعدة.​​شروط ال"
   },
   {
+    "id": "5404983c6438657a",
+    "orgId": "rcrc",
+    "titleAr": "تدريب تعاوني",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "coop",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 20,
+    "relevanceReason": "الإعلان عام عن برنامج تدريب تعاوني دون تحديد تخصص أو تفاصيل تتعلق بالأمن السيبراني.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition",
+      "more_on_page"
+    ],
+    "sourceUrl": "https://www.rcrc.gov.sa/careers/?lang=ar",
+    "applyUrl": null,
+    "rawExcerpt": "بوابة التوظيف - الهيئة الملكية لمدينة الرياض\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققروابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.saجميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPSتحقق من أن الموقع يستخدم بروتوكول HTTPSمسجل لدى هيئة الحكومة الرقمية برقم:20250827430English بحث اقترا"
+  },
+  {
     "id": "55a0f85675e9952e",
     "orgId": "mot",
     "titleAr": "لم يُصنَّف بعد",
@@ -1446,7 +1404,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://mot.gov.sa/ar/news",
     "applyUrl": null,
@@ -1474,7 +1433,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://nca.gov.sa/ar/news/",
     "applyUrl": null,
@@ -1588,7 +1548,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://nour.net.sa/ar/",
     "applyUrl": null,
@@ -1644,7 +1605,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://ncdc.gov.sa/",
     "applyUrl": null,
@@ -1716,7 +1678,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://tetco.sa/",
     "applyUrl": null,
@@ -1744,7 +1707,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.alahli.com/en/pages/personal-banking",
     "applyUrl": null,
@@ -1857,11 +1821,41 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.moe.gov.sa/ar/Pages/default.aspx",
     "applyUrl": null,
     "rawExcerpt": "عزيزي المستخدم الرجاء تفعيل خاصية javascript على المتصفح لكي تتمكن من عرض الموقع بالشكل الصحيح الرئيسية الوزارة عن الوزارة نشأة الوزارة الرؤية والرسالة والأهداف الهيكل التنظيمي الميزانية التنمية المستدامة الأنظمة واللوائح قطاعات الوزارة معالي الوزير القيادات الوكالات والإدارات المراكز استراتيجيات الوزارة استراتيجية التوظيف الحكومة الخضراء الحكومة المتكاملة استراتيجية الوزارة الوزارة والمرأة بوابة "
+  },
+  {
+    "id": "7e1d8f8384ee2927",
+    "orgId": "jadwa",
+    "titleAr": "Cooperative program",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "coop",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 10,
+    "relevanceReason": "البرنامج في مجال الاستثمار والتمويل ولا علاقة له بتخصص الأمن السيبراني أو الحوسبة.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition",
+      "more_on_page"
+    ],
+    "sourceUrl": "https://www.jadwa.com/en/internship",
+    "applyUrl": null,
+    "rawExcerpt": "Careers Careers Internships Starting your career on the right footing is important. Jadwa Academy offers young men and women three different pathways for hands-on training and professional development in investment and finance. Summer internship program University students and recent graduates can apply for a three-month summer internship. Apply Now Cooperative program University students can appl"
   },
   {
     "id": "7f29684db5d8fa32",
@@ -1885,7 +1879,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://career.dga.gov.sa/ar/",
     "applyUrl": null,
@@ -1913,7 +1908,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.mewa.gov.sa/ar/Pages/default.aspx",
     "applyUrl": null,
@@ -1970,7 +1966,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://gmedia.gov.sa/",
     "applyUrl": null,
@@ -2026,7 +2023,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://careers.stc.com.sa/",
     "applyUrl": null,
@@ -2082,7 +2080,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://misa.gov.sa/ar/",
     "applyUrl": null,
@@ -2110,7 +2109,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://ndf.gov.sa/",
     "applyUrl": null,
@@ -2138,7 +2138,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.kapsarc.org/",
     "applyUrl": null,
@@ -2171,6 +2172,37 @@
     "sourceUrl": "https://www.stats.gov.sa/ar",
     "applyUrl": null,
     "rawExcerpt": "موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق البث المباشر روابط المواقع الالكترونية الرسمية الحكومية تنتهي بـgov.sa. جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ gov.sa المواقع الإلكترونية الحكومية الموثقة تستخدم بروتوكولHTTPS تحقق من أن الموقع يستخدم بروتوكول HTTPS مسجل لدى هيئة الحكومة الرقمية برقم : 20260625369 بحث الكلمات الاعلى بحثا الناتج المح"
+  },
+  {
+    "id": "952f5dedf8a3cc96",
+    "orgId": "hrc",
+    "titleAr": "برنامج تطوير الخريجين",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "graduate_dev",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [
+      "الرياض"
+    ],
+    "relevanceScore": 0,
+    "relevanceReason": "هذا برنامج تطوير الخريجين وهو غير متاح للطالب لأنه لم يتخرج بعد.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "wrong_product",
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://www.hrc.gov.sa/website/careers/graduate-development-program",
+    "applyUrl": null,
+    "rawExcerpt": "هيئة حقوق الإنسان - التوظيف\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟\n\nروابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الإلكترونية الحكومية الموثوقة تستخدم بروتوكول HTTPS تحقق من أن الموقع يستخدم بروتوكول HTTPS مسجل لدى هيئة الحكومة الرقمية برقم: 20260402522 غائم 01-سبتمبر-"
   },
   {
     "id": "96ae5863aa0ee7eb",
@@ -2227,7 +2259,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.bankaljazira.com/ar-sa/",
     "applyUrl": null,
@@ -2255,11 +2288,43 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://master-works.sa/en/Insights",
     "applyUrl": null,
     "rawExcerpt": "Master Works Strategic Systems Integration Partner for Qiddiya Investment Company in Collaboration with Google Cloud Master Works Wins 2026 Google Cloud Partner of the Year Award 2026 for Saudi Arabia Master Works Signs a Memorandum of Understanding with the Ministry of Human Resources and Social Development During the International Capacity Building Conference Master Works Launches Mudawin Throug"
+  },
+  {
+    "id": "98d7e060923d2c62",
+    "orgId": "kpmg_sa",
+    "titleAr": "برنامج تدريب التدقيق لخريجي المحاسبة - KPMG",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "graduate_dev",
+    "majors": [
+      "المحاسبة"
+    ],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 0,
+    "relevanceReason": "البرنامج مخصص لخريجي المحاسبة ويتطلب شهادة جامعية مكتملة، وهو غير مرتبط بتخصص الطالب في الأمن السيبراني ولا يمكنه التقديم له كطالب غير متخرج.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "wrong_product",
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://slccareers.kpmg.com/job/Medina-KPMG-Audit-Internship-Program-Accounting-Graduates/1368374723/",
+    "applyUrl": null,
+    "rawExcerpt": "Function: People, Performance and Culture Level of Experience: Internship Overview – KPMG Middle East KPMG has grown to become one of the largest professional service providers in the Middle East, having three lines of services: audit, tax, and advisory. Currently, KPMG Middle East workforce is over 5,000. With ambitious growth objectives, we are continuously looking for talents for various functi"
   },
   {
     "id": "9c2f3dddf6f6a032",
@@ -2283,11 +2348,38 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.mim.gov.sa/ar",
     "applyUrl": null,
     "rawExcerpt": "موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق199001بحثEnglishSkip to main contentLoading hero banner content...وزارة الصناعة والثروة المعدنيةصدر الأمر الملكي الكريم رقم (أ/472) بتاريخ 29/12/1440هـ، الموافق 30 أغسطس 2019 بإنشاء وزارة الصناعة والثروة المعدنية، ونقل الاختصاصات والمهمات والمسؤوليات المتعلقة بقطاعي الصناعة والثروة المعدنية إليها، على أن تبدأ الوزارة مهامها اعتباراً من 2020/1/1 م.ا"
+  },
+  {
+    "id": "9d4005faef54ecf2",
+    "orgId": "hrc",
+    "titleAr": "طلب التدريب التعاوني - هيئة حقوق الإنسان",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "coop",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 10,
+    "relevanceReason": "الإعلان صادر عن هيئة حقوق الإنسان ولا يذكر أي تخصص تقني أو أمني، وشرط التفرغ الكامل يتعارض مع جدول الطالب الدراسي.",
+    "statesZeroCoursesRule": true,
+    "zeroCoursesQuote": "التفرغ الكامل للتدريب التعاوني",
+    "flags": [],
+    "sourceUrl": "https://e-services.hrc.gov.sa/ar/service/details/12",
+    "applyUrl": null,
+    "rawExcerpt": "إشعار SMS بالحالة خدمة إلكترونية تستهدف الهيئة منها إتاحة الفرصة للطلاب والطالبات الذين يتطلب تخرجهم قضاء فترة تدريب عملي لصقل مهاراتهم وتطبيق ما اكتسبوه من علوم على أرض الواقع، والتعرُّف على تجربة الحياة العملية في مجال تخصصاتهم، بغرض تهيئتهم لسوق العمل والفرص المتاحة، وذلك دون الحاجة إلى مراجعة الهيئة. وهي خدمة يستفيد منها الطلاب. ملاحظة: نود إعلامكم بأنه سيتم تحديث حالة الطلب بشكل استباقي عبر ا"
   },
   {
     "id": "9ef47e11fbb0a172",
@@ -2339,7 +2431,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://mcit.gov.sa/ar",
     "applyUrl": null,
@@ -2367,7 +2460,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "http://adeemcapital.com/",
     "applyUrl": null,
@@ -2395,7 +2489,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.aecl.com/ar/",
     "applyUrl": null,
@@ -2459,65 +2554,6 @@
     "rawExcerpt": "\"إن مسيرة التحوّل الاقتصادي التي تتبنّاها حكومة المملكة مستمرة، وإن ما تحقق من نتائج إيجابية حتى الآن وفق توجيهات خادم الحرمين الشريفين –حفظه الله- يؤكد نجاح الإصلاحات الاقتصادية والمالية الهادفة إلى تعزيز النمو الاقتصادي الشامل، وتقوية المركز المالي للمملكة، بما يضمن الاستدامة المالية نحو مجتمع حيوي، واقتصاد مزدهر، ووطن طموح.\" صاحب السمو الملكي الأمير محمد بن سلمان بن عبدالعزيز آل سعود ولي العهد "
   },
   {
-    "id": "a802c32ffb3a238b",
-    "orgId": "hrsd",
-    "titleAr": "برنامج جدير لتأهيل المتميزين",
-    "detectedISO": "2026-09-01T00:04:35.529Z",
-    "firstSeenISO": "2026-09-01T00:04:35.529Z",
-    "lastConfirmedISO": "2026-09-01T00:04:35.529Z",
-    "status": "unknown",
-    "opensISO": "2023-08-06",
-    "closesISO": "2023-08-21",
-    "closesHijri": "٥ صفر ١٤٤٥ هـ",
-    "product": "graduate_dev",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": 0,
-    "relevanceReason": "البرنامج مخصص لحديثي التخرج فقط ويشترط التفرغ التام، وهو غير متاح للطالب الحالي لأنه لم يتخرج بعد.",
-    "statesZeroCoursesRule": true,
-    "zeroCoursesQuote": "التفرغ التام",
-    "flags": [
-      "wrong_product",
-      "more_on_page"
-    ],
-    "sourceUrl": "https://www.hrsd.gov.sa/ministry/about-ministry/jobs",
-    "applyUrl": null,
-    "rawExcerpt": "موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيف تتحققخصص تجربتك؟ HTTPS (opens in a new window)Toggle main menu اللغةToggle secondary menuالرئيسيةالوزارةعن الوزارةالوظائفالوظائفتسعى وزارة الموارد البشرية والتنمية الاجتماعية الى استقطاب أفضل الموارد البشرية من كلا الجنسين لتحقيق رؤية الوزارة وتمكين الفرد والمجتمع والمؤسسات، والارتقاء بسوق العمل من خلال تطوير السياسات والتشريعات، وتمكين منسوب"
-  },
-  {
-    "id": "ad98bd208854df2d",
-    "orgId": "snb",
-    "titleAr": "برنامج رُوَّاد الأهلي",
-    "detectedISO": "2026-09-01T00:04:35.529Z",
-    "firstSeenISO": "2026-09-01T00:04:35.529Z",
-    "lastConfirmedISO": "2026-09-01T00:04:35.529Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "graduate_dev",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": 0,
-    "relevanceReason": "البرنامج موجه للخريجين المتميزين فقط، والطالب لم يتخرج بعد فهو غير مؤهل له.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "wrong_product",
-      "no_course_condition",
-      "more_on_page"
-    ],
-    "sourceUrl": "https://www.alahli.com/ar/pages/about-us/careers",
-    "applyUrl": null,
-    "rawExcerpt": "أسعار المنتجات التمويلية والإدخارية|أجهزة الصراف الآلي والفروعوظائفتسجيل الدخولالأهلي اون لاينالأهلي تداولالأهلي إي كوربتطبيق SNB SMEالأهلي كابيتالSNB UAE أون لاينانضم إلى بنك الغدفتح حساب الأفرادمؤسسة/شركة خدمات الأفرادمصرفية الأعمالمصرفية الشركاتالمصرفية الخاصةالمالية الإسلاميةنبذة عن البنكالحسابات والإيداعاتبرنامج إيليتمصرفية الوسامالحساب الجاريحساب الادخارحساب الذهبرقم الحساب المصرفي الدولي (I"
-  },
-  {
     "id": "b4c2d81fa289b973",
     "orgId": "saso",
     "titleAr": "التدريب التعاوني - الهيئة السعودية للمواصفات والمقاييس والجودة",
@@ -2552,7 +2588,7 @@
     "titleAr": "برنامج تكاملي طموح",
     "detectedISO": "2026-08-29T19:43:17.547Z",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastConfirmedISO": "2026-08-29T19:43:17.547Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -2564,14 +2600,13 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 0,
-    "relevanceReason": "البرنامج موجه لحديثي التخرج وليس للتدريب التعاوني، والطالب لم يتخرج بعد فهو غير مؤهل. (لم يُتحقّق في آخر جولة: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebND4knQqzxMD5KqarRQ\"})",
+    "relevanceReason": "البرنامج موجه لحديثي التخرج وليس للتدريب التعاوني، كما أنه مغلق حاليًا وغير مناسب لطالب لم يتخرج بعد.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "wrong_product",
       "no_course_condition",
-      "first_time_seen",
-      "needs_manual_review"
+      "first_time_seen"
     ],
     "sourceUrl": "https://takamolholding.com/ar/join-us",
     "applyUrl": null,
@@ -2759,36 +2794,6 @@
     "rawExcerpt": "Skip to contentPractical training and internships for University students.Saudi Aramco offers internship opportunities to a limited number of high-caliber Saudi students who are attending in-Kingdom or out-of-Kingdom universities, as well as those attending industrial/technical colleges or the Institute of Public Administration. The objective of this program is to assist participants in gaining pr"
   },
   {
-    "id": "c9e19be2244a8e18",
-    "orgId": "sdaia",
-    "titleAr": "برنامج التدريب التعاوني بسدايا",
-    "detectedISO": "2026-08-31T00:02:49.563Z",
-    "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastConfirmedISO": "2026-08-31T00:02:49.563Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "coop",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": 8,
-    "cities": [
-      "الرياض"
-    ],
-    "relevanceScore": 75,
-    "relevanceReason": "البرنامج يتعلق بتقنيات الذكاء الاصطناعي والبيانات وهو مجال تقني ذو صلة بمجال الطالب لكنه لا يذكر الأمن السيبراني تحديدًا.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "no_course_condition"
-    ],
-    "sourceUrl": "https://athkax.sdaia.gov.sa/coop",
-    "applyUrl": null,
-    "rawExcerpt": "نبذة عن البرنامجيهدف البرنامج إلى دعم الطلاب الذين لديهم متطلب تدريب تعاوني للتخرج، من خلال المواءمة بين الدراسة الأكاديمية والتطبيق العملي في بيئة عمل فعلية، ورفع مستوى المعرفة والمهارات التخصصية والشخصية لديهم، وفق أفضل الممارسات المهنية، وإكسابهم ثقافة التعامل مع تقنيات الذكاء الاصطناعي، والبيانات كثروة وطنية.المستهدفونالطلاب الجامعيونللطلاب الذين لديهم متطلب تدريب تعاوني قبل التخرج.مدة التدريب"
-  },
-  {
     "id": "ca7f1998a9823352",
     "orgId": "sidf",
     "titleAr": "لم يُصنَّف بعد",
@@ -2838,7 +2843,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.alinma.com/",
     "applyUrl": null,
@@ -2866,7 +2872,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://ssa.gov.sa/",
     "applyUrl": null,
@@ -2894,7 +2901,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.jadwa.com/en",
     "applyUrl": null,
@@ -2922,7 +2930,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.fakeeh.care/",
     "applyUrl": null,
@@ -2950,7 +2959,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://wadimakkah.sa/en/home",
     "applyUrl": null,
@@ -2978,11 +2988,45 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://mep.gov.sa/ar",
     "applyUrl": null,
     "rawExcerpt": "تخطي إلى المحتوى الرئيسي الرسالة نسعى بجسارة لتحقيق الإمكانات الواعدة للمملكة الرؤية أن نكون قوة فاعلة لمستقبل وطني مزدهر ومؤثر في تطور الاقتصاد العالمي تفاصيل أكثر المواقع المرتبطة بالوزارةقريبًا... بيانات السعودية منصة موحدة لعرض وتحليل أحدث البيانات الاقتصادية والاجتماعية الخاصة بالمملكة ومناطقها بطرق تصويرية وتفاعلية تسهل فهم المشهد الاقتصادي السعوديتفاصيل أكثر التقارير الاقتصاديةتقارير دورية "
+  },
+  {
+    "id": "db7a78c9c18967ed",
+    "orgId": "saib",
+    "titleAr": "برنامج تطوير الخريجين لمصرفية الشركات",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "graduate_dev",
+    "majors": [
+      "إدارة الأعمال"
+    ],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [
+      "الرياض"
+    ],
+    "relevanceScore": 0,
+    "relevanceReason": "البرنامج مخصص لخريجي إدارة الأعمال ولا يقبل غير المتخرجين، وهو برنامج تطوير خريجين وليس تدريبًا تعاونيًا، فلا يناسب الطالب لعدم تخرجه بعد ولاختلاف التخصص عن الأمن السيبراني.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "wrong_product",
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://careers.saib.com.sa/ar/page/bag-program/",
+    "applyUrl": null,
+    "rawExcerpt": "برنامج تطوير الخريجين لمصرفية الشركات يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لمصرفية الشركات - استثمارنا المستمر في قادة المستقبل نقدم في هذا البرنامج تدريب بالتعاون مع شركاء عالميين و شهادات معترف بها عالميا لنخبة من أمهر الخريجين الذين انضموا لبرنامجنا . هذه فرصة ليكونوا فرداً من أفراد عائلة البنك السعودي للاستثمار. مزايا البرنامج يحصل المتدرب في نهاية فترة التدريب على شهادة معتمده. يج"
   },
   {
     "id": "dcc93313d612de4b",
@@ -3120,6 +3164,41 @@
     "rawExcerpt": "التدريب على رأس العمل تقدم الهيئة السعودية للتخصصات الصحية فرصة للطلاب والطالبات لاكتساب خبرة عملية في بيئة مُمكِّنة وذلك من خلال العمل مع كوادر متخصصة والمشاركة في المشاريع، حيث يسهم ذلك في تنمية المهارات وتأهيل الكوادر الوطنية لسوق العمل. مدة البرنامج 7 أشــهـــر تصل مدة التدريب على رأس العمل في الهيئة لمدة 7 أشهر كاملة، وفق خطة تدريبية محددة تضمن تحقيق أعلى استفادة ممكنة خلال فترة التدريب أهداف"
   },
   {
+    "id": "df8cdba6454d5007",
+    "orgId": "saib",
+    "titleAr": "برنامج التدريب التعاوني - البنك السعودي للاستثمار",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "coop",
+    "majors": [
+      "Finance",
+      "Accounting",
+      "Marketing",
+      "Engineering",
+      "Management Information Systems",
+      "Other related business management areas"
+    ],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 30,
+    "relevanceReason": "البرنامج موجه أساسًا لتخصصات الأعمال والمالية، مع ذكر أنظمة المعلومات الإدارية كتخصص مقبول فقط دون تركيز على الأمن السيبراني أو الشبكات.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://careers.saib.com.sa/en/page/coop-program/",
+    "applyUrl": null,
+    "rawExcerpt": "Cooperative Program The Saudi Investment Bank is one of the rapidly growing organizations in the banking industry that adopt the concept of corporate social responsibility. This could be seen clearly through the number of initiatives, activities and programs that SAIB provides to the society. Program mission: The program mission is to focus on the development of practical skills for co-op students"
+  },
+  {
     "id": "e44274b1de03ee45",
     "orgId": "awqaf",
     "titleAr": "لم يُصنَّف بعد",
@@ -3141,7 +3220,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.awqaf.gov.sa/ar",
     "applyUrl": null,
@@ -3169,7 +3249,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://cma.gov.sa/Pages/default.aspx",
     "applyUrl": null,
@@ -3241,6 +3322,34 @@
     "rawExcerpt": "الرئيسية / فرص / نتائج البحث عن الفرصة تم العثور على {{ totalItems }} فرصفرصة, {{ numberOfVacanciesText }} {{ totalVacancies }} Filters تصنيف حسب الفرص المحفوظة اعلانات داخلية الفرص الموصى بها تم العثور على {{ totalItems }} فرصة محفوظة تم العثور على {{ totalItems }} الفرص المحفوظة تم العثور على {{ totalItems }} اعلانات داخلية تم العثور على {{ totalItems }} الفرص الموصى بها"
   },
   {
+    "id": "e94273724ada6fb8",
+    "orgId": "jadwa",
+    "titleAr": "Summer Internship Program",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 25,
+    "relevanceReason": "النص عبارة عن نموذج تقديم عام لتدريب صيفي دون ذكر تفاصيل عن التخصص أو طبيعة العمل أو أي علاقة بالأمن السيبراني أو الشبكات.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://www.jadwa.com/en/form/summer-internship-program",
+    "applyUrl": null,
+    "rawExcerpt": "Summer Internship Program Full name Gender Male Female Nationality Academic institution Major GPA Mobile number Email address Program start date Program duration Area of interest Upload CV One file only.15 MB limit.Allowed types: pdf, doc, docx. What code is in the image? Enter the characters shown in the image. Get new captcha!"
+  },
+  {
     "id": "e98077fff56daa69",
     "orgId": "moenergy",
     "titleAr": "لم يُصنَّف بعد",
@@ -3262,7 +3371,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "http://www.moenergy.gov.sa/",
     "applyUrl": null,
@@ -3290,7 +3400,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://careers.ejada.com/ar/",
     "applyUrl": null,
@@ -3318,39 +3429,12 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://careers.riyadbank.com/ar/",
     "applyUrl": null,
     "rawExcerpt": "Start Your Career Journey with Us At Riyad Bank, we strive to foster an environment where every employee can thrive and excel. With a commitment to leadership development, career growth, and performance management, we empower our team to achieve their best and value their contributions. Together, we aspire to be the leading bank in the Kingdom, contributing to a bright future marked by innovation "
-  },
-  {
-    "id": "f125a2e18b8b6eea",
-    "orgId": "jadwa",
-    "titleAr": "Summer Internship Program",
-    "detectedISO": "2026-09-01T00:04:35.529Z",
-    "firstSeenISO": "2026-09-01T00:04:35.529Z",
-    "lastConfirmedISO": "2026-09-01T00:04:35.529Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "professional_experience",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": 20,
-    "relevanceReason": "الإعلان عبارة عن نموذج تقديم عام لبرنامج تدريب صيفي دون تحديد مجال أو تخصص واضح يتعلق بالأمن السيبراني أو الشبكات.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "no_course_condition"
-    ],
-    "sourceUrl": "https://www.jadwa.com/en/form/summer-internship-program",
-    "applyUrl": null,
-    "rawExcerpt": "Summer Internship Program Full name Gender Male Female Nationality Academic institution Major GPA Mobile number Email address Program start date Program duration Area of interest Upload CV One file only.15 MB limit.Allowed types: pdf, doc, docx. What code is in the image? Enter the characters shown in the image. Get new captcha!"
   },
   {
     "id": "f1c65c9b5d909bfa",
@@ -3374,7 +3458,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://momah.gov.sa/ar",
     "applyUrl": null,
@@ -3386,24 +3471,24 @@
     "titleAr": "برنامج موبايلي التعاوني",
     "detectedISO": "2026-08-29T20:08:44.470Z",
     "firstSeenISO": "2026-08-29T20:08:44.470Z",
-    "lastConfirmedISO": "2026-09-01T00:04:35.529Z",
+    "lastConfirmedISO": "2026-08-29T20:17:09.115Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
     "closesHijri": null,
     "product": "coop",
     "majors": [
-      "تكنولوجيا",
+      "تخصصات التكنولوجيا",
       "تخصصات أخرى"
     ],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 65,
-    "relevanceReason": "برنامج تدريب تعاوني عام لطلاب التكنولوجيا دون تحديد مسار أمن سيبراني، لكنه يتطلب دوامًا كاملًا يتعارض مع محاضراته المسائية ومشروع التخرج المسجل.",
+    "relevanceScore": 50,
+    "relevanceReason": "البرنامج موجه لطلاب التكنولوجيا بشكل عام دون تحديد مجال الأمن السيبراني، ويشترط التفرغ الكامل الذي يتعارض مع جدول محاضراته المسائية.",
     "statesZeroCoursesRule": true,
-    "zeroCoursesQuote": "الالتزام بدوام كامل: هل أنت مستعد؟ ارتبط بالبرنامج بدوام كامل",
+    "zeroCoursesQuote": "الالتزام بدوام كامل: هل أنت مستعد؟ ارتبط بالبرنامج بدوام كامل.",
     "flags": [],
     "sourceUrl": "https://careers.mobily.com.sa/ar/sites/opportunities/pages/Coop",
     "applyUrl": null,
@@ -3431,7 +3516,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://sdaia.gov.sa/ncai/",
     "applyUrl": null,
@@ -3459,7 +3545,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.etec.gov.sa/ar/Pages/default.aspx",
     "applyUrl": null,

@@ -292,6 +292,80 @@ export const liveAsk: Asker = async (excerpt, insist) => {
   };
 };
 
+/**
+ * One word, before the seventeen fields.
+ *
+ * Measured: a full classification returns about seven hundred output tokens,
+ * and output is seven-tenths of the bill. Nineteen pages in twenty are not
+ * announcements, and paying seven hundred tokens to be told so — four times a
+ * day, on a hundred and forty news pages — is where the money went.
+ *
+ * This asks the same model the same question in a form that can be answered in
+ * one word, at roughly a thirtieth of the cost, and only the pages that say yes
+ * are asked the expensive question.
+ *
+ * The instruction is deliberately biased. "If in doubt, say yes" is not
+ * hedging: a false yes costs one cent, and a false no is an announcement nobody
+ * ever looks at, which is the failure this whole application exists to prevent.
+ * Pages already known to be about training skip this stage entirely.
+ */
+export const TRIAGE_PROMPT = `أنت تفحص نصّ صفحة من موقع جهة سعودية.
+
+السؤال الوحيد: هل تحتوي هذه الصفحة على إعلان عن فرصة تدريب أو تدريب تعاوني أو
+برنامج للطلاب أو الخريجين؟
+
+أجب بكلمة واحدة فقط: نعم أو لا.
+
+إن ترددت، أو كان النصّ ناقصاً، أو احتمل الأمرين — قل نعم. كلفة "نعم" الخاطئة
+لا شيء، وكلفة "لا" الخاطئة أن يفوت الطالب فرصته.`;
+
+export interface TriageResult {
+  looksLikeAnnouncement: boolean;
+  usage: Usage;
+}
+
+/**
+ * The cheap first pass. Any answer that is not a clear "no" counts as yes,
+ * including an error: this stage may only ever save money, never lose a page.
+ */
+export async function triage(text: string): Promise<TriageResult> {
+  const usage: Usage = { inputTokens: 0, outputTokens: 0 };
+  if (!process.env.ANTHROPIC_API_KEY?.trim()) return { looksLikeAnnouncement: true, usage };
+
+  try {
+    const response = await getClient().messages.create({
+      model: CLASSIFIER_MODEL,
+      max_tokens: 8,
+      system: TRIAGE_PROMPT,
+      messages: [{ role: "user", content: text.slice(0, MAX_EXCERPT_CHARS) }],
+    });
+    usage.inputTokens = response.usage.input_tokens;
+    usage.outputTokens = response.usage.output_tokens;
+
+    const answer = response.content
+      .filter((b): b is Anthropic.TextBlock => b.type === "text")
+      .map((b) => b.text)
+      .join("")
+      .trim();
+
+    /*
+     * Only an unambiguous no is a no. Anything else goes on to be judged.
+     *
+     * No `\b` after the Arabic: a word boundary in JavaScript is defined
+     * against [A-Za-z0-9_], so the position after لا is only a boundary when a
+     * Latin letter follows it. "لا" on its own, or "لا." — the two things the
+     * model actually replies — did not match, and every Arabic no was read as a
+     * yes. The filter saved nothing and nobody would have noticed except by the
+     * bill.
+     */
+    return { looksLikeAnnouncement: !/^\s*(لا|no\b)/i.test(answer), usage };
+  } catch {
+    // A failed triage must not be able to hide a page. It costs a cent to be
+    // wrong in this direction and a semester to be wrong in the other.
+    return { looksLikeAnnouncement: true, usage };
+  }
+}
+
 export async function classify(text: string, ask: Asker = liveAsk): Promise<ClassifyResult> {
   const usage: Usage = { inputTokens: 0, outputTokens: 0 };
 

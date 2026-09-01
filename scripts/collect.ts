@@ -18,11 +18,18 @@
  *   npm run collect -- --dry-run     fetch and report, write nothing
  *   npm run collect -- --verbose     one line per source
  */
-import { readFileSync, renameSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import pLimit from "p-limit";
 import { HAS_CONTACT, USER_AGENT } from "../src/pipeline/agent";
 import { browserUnavailable, closeBrowser, renderPage } from "../src/pipeline/browser";
-import { CLASSIFIER_MODEL, classify, costOf, type Usage } from "../src/pipeline/classify";
+import {
+  CLASSIFIER_MODEL,
+  classify,
+  costOf,
+  triage,
+  type Classification,
+  type Usage,
+} from "../src/pipeline/classify";
 import { asManualReview, fromClassification } from "../src/pipeline/opportunity";
 import { extract, isSoft404, sha256 } from "../src/pipeline/extract";
 import { fetchPage, paced } from "../src/pipeline/fetch";
@@ -456,6 +463,63 @@ const reviewQueue: string[] = [];
 const vanished: string[] = [];
 let classified = 0;
 let notAnnouncements = 0;
+/** Pages whose changed text did not mention training at all. Never silent. */
+let skippedByFilter = 0;
+/** Pages answered from a verdict already paid for. */
+let fromMemory = 0;
+/** Pages the one-word question ruled out before the expensive one. */
+let triagedOut = 0;
+
+/**
+ * Verdicts already paid for, keyed by the text that produced them.
+ *
+ * `null` means "asked, and it is not an announcement" — worth remembering
+ * precisely because that is the answer nineteen pages in twenty give, and the
+ * one there is no point buying twice.
+ */
+const VERDICTS_FILE = "data/verdicts.json";
+type RememberedVerdict = Record<string, Classification | null>;
+const verdicts = new Map<string, Classification | null>(
+  Object.entries(
+    existsSync(VERDICTS_FILE)
+      ? (JSON.parse(readFileSync(VERDICTS_FILE, "utf8")) as RememberedVerdict)
+      : {},
+  ),
+);
+
+/**
+ * Does this text say anything about training, in either language?
+ *
+ * Deliberately generous, and deliberately not clever. It is only ever used to
+ * decide whether a page is worth *paying* to have judged, and the cost of a
+ * false positive is one cent while the cost of a false negative is a semester.
+ * So every spelling that appears on a Saudi page is here, including the ones a
+ * tighter pattern would miss — تدريب without تعاوني, المتدربين, تمهير, and the
+ * bare English words.
+ *
+ * Note it does not exclude "cooperation": that trap matters when *classifying*
+ * a url, and here an extra classification costs a cent and loses nothing.
+ */
+const MENTIONS_TRAINING =
+  /تدريب|تدريبي|متدرب|المتدربين|تعاون|تمهير|طلاب|طالبات|خريج|فرص|توظيف|وظائف|تأهيل|co-?op|intern|trainee|training|career|graduate|student/i;
+
+/**
+ * Whether a page must be judged whatever its text says.
+ *
+ * A page that has told us it is about cooperative training, or that sits at a
+ * careers address, is always sent. Those are few, they are the whole point, and
+ * no saving is worth the chance of skipping one. The filter below exists for
+ * the hundred and forty news pages and media centres that move every day and
+ * say nothing — which is where the money actually goes.
+ */
+const alwaysJudge = new Set<string>();
+for (const o of orgs) {
+  for (const s of o.sources) {
+    if (s.coopConfirmed === true || s.type === "careers_page" || s.type === "portal") {
+      alwaysJudge.add(s.url);
+    }
+  }
+}
 
 /**
  * What each source is worth reading first.
@@ -524,6 +588,95 @@ if (!NO_CLASSIFY && !DRY_RUN) {
       continue;
     }
     const text = textByUrl.get(snap.sourceUrl) ?? "";
+
+    /*
+     * Do not pay to be told "no".
+     *
+     * A hundred and forty of these sources are news pages and media centres.
+     * They move every day — a new story, a rotated banner, a date — so every
+     * round asked the model about each of them and every round it answered that
+     * this is not a training announcement. At a cent a page that was two to
+     * four dollars a day to hear "no" repeatedly, which is most of the bill and
+     * all of the waste.
+     *
+     * A page whose changed text does not contain a single training word in
+     * either language cannot be a training announcement, and that is a free
+     * check. Three things keep it safe: confirmed co-op pages and careers pages
+     * are never filtered, the vocabulary is deliberately loose enough that a
+     * false positive is likelier than a false negative, and every skip is
+     * counted and printed rather than passing in silence.
+     *
+     * `--reclassify` bypasses it, for a run that is meant to re-judge
+     * everything regardless.
+     */
+    if (!RECLASSIFY && !alwaysJudge.has(snap.sourceUrl) && !MENTIONS_TRAINING.test(text)) {
+      skippedByFilter++;
+      // Nothing is owed a verdict that cannot contain one. Clearing the flag
+      // stops the page being carried forward as an unpaid debt for ever.
+      snap.pendingClassification = false;
+      continue;
+    }
+
+    /*
+     * Never pay twice for the same words.
+     *
+     * A page whose text returns to something already judged — a banner that
+     * rotates between two states, a listing that reorders and reverts — moves
+     * its hash every round and was billed every round for an answer already
+     * known. The text is the whole input to the verdict, so identical text has
+     * an identical answer, and looking it up is free.
+     */
+    const fingerprint = sha256(text).slice(0, 32);
+    const remembered = verdicts.get(fingerprint);
+    if (!RECLASSIFY && remembered !== undefined) {
+      fromMemory++;
+      snap.pendingClassification = false;
+      if (remembered === null) {
+        notAnnouncements++;
+        continue;
+      }
+      const prior = priorOpportunities.find(
+        (o) => o.orgId === snap.orgId && o.sourceUrl === snap.sourceUrl,
+      );
+      for (const [id, o] of opportunityById) {
+        if (o.sourceUrl === snap.sourceUrl) opportunityById.delete(id);
+      }
+      const record = fromClassification({
+        orgId: snap.orgId,
+        sourceUrl: snap.sourceUrl,
+        text,
+        nowISO: now,
+        prior,
+        firstTime: prior
+          ? prior.flags.includes("first_time_seen")
+          : !orgsWithHistory.has(snap.orgId),
+        c: remembered,
+      });
+      opportunityById.set(record.id, record);
+      classified++;
+      continue;
+    }
+
+    /*
+     * One word before seventeen fields.
+     *
+     * Pages already known to be about training skip this and go straight to the
+     * full question. Everything else is asked, in a form answerable in one
+     * word, whether it is worth the expensive question at all.
+     */
+    if (!RECLASSIFY && !alwaysJudge.has(snap.sourceUrl)) {
+      const first = await triage(text);
+      spend.inputTokens += first.usage.inputTokens;
+      spend.outputTokens += first.usage.outputTokens;
+      if (!first.looksLikeAnnouncement) {
+        triagedOut++;
+        notAnnouncements++;
+        snap.pendingClassification = false;
+        verdicts.set(fingerprint, null);
+        continue;
+      }
+    }
+
     const prior = priorOpportunities.find(
       (o) => o.orgId === snap.orgId && o.sourceUrl === snap.sourceUrl,
     );
@@ -607,6 +760,13 @@ if (!NO_CLASSIFY && !DRY_RUN) {
      * requires a positive replacement, which is the only thing that proves the
      * page still holds an announcement.
      */
+    // Remembered against the text that produced it, so identical text is never
+    // paid for again — including the "no", which is most of what is bought.
+    verdicts.set(
+      sha256(text).slice(0, 32),
+      result.value.isTrainingAnnouncement ? result.value : null,
+    );
+
     if (!result.value.isTrainingAnnouncement) {
       notAnnouncements++;
       for (const [, o] of opportunityById) {
@@ -693,6 +853,15 @@ if (!DRY_RUN) {
   }
   const opportunities = [...opportunityById.values()].sort((a, b) => a.id.localeCompare(b.id));
   writeAtomic("data/opportunities.json", JSON.stringify(opportunities, null, 2) + "\n");
+
+  /*
+   * The verdict memory, bounded. Newest kept; the oldest fall off, because a
+   * page whose text has not been seen in months will be re-read as new anyway
+   * and there is no point carrying it for ever.
+   */
+  const MAX_REMEMBERED = 3_000;
+  const kept = [...verdicts.entries()].slice(-MAX_REMEMBERED);
+  writeAtomic(VERDICTS_FILE, JSON.stringify(Object.fromEntries(kept), null, 2) + "\n");
 }
 
 const byState = (s: HealthState): number => health.filter((h) => h.state === s).length;
@@ -745,6 +914,10 @@ console.log(`  owed a verdict         ${String(owed.length).padStart(3)}`);
 console.log(`  announcements          ${String(classified).padStart(3)}`);
 console.log(`  not an announcement    ${String(notAnnouncements).padStart(3)}`);
 console.log(`  needs manual review    ${String(reviewQueue.length).padStart(3)}`);
+console.log(`\nwhat was not paid for`);
+console.log(`  no training word       ${String(skippedByFilter).padStart(3)}  (never sent, free)`);
+console.log(`  ruled out in one word  ${String(triagedOut).padStart(3)}  (asked cheaply, not judged in full)`);
+console.log(`  answered from memory   ${String(fromMemory).padStart(3)}  (identical text already judged)`);
 console.log(`  vanished from source   ${String(vanished.length).padStart(3)}`);
 if (vanished.length > 0) {
   console.log("\nno longer visible on the page that announced them:");

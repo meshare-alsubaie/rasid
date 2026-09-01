@@ -56,6 +56,11 @@ jobs:
       # The checkers, checked. Twice a gate has passed while looking at nothing;
       # this plants a fault each one must catch and fails if it does not.
       - run: npm run test:gates
+      # The filter that decides which pages are worth paying to judge. A false
+      # negative here is an announcement nobody ever looks at.
+      - run: npm run test:costfilter
+      # test:triage is deliberately not here: it makes real API calls, and CI
+      # must not spend. Run it by hand after changing the triage prompt.
 
       # The repository is public. The README called this a gate before it was
       # one: it was a habit someone had to remember, run by hand, with nothing
