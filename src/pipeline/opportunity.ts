@@ -161,6 +161,49 @@ export function fromClassification(args: Common & { c: Classification }): Opport
   };
 }
 
+/**
+ * Turn a diagnostic into something a person reads on a phone.
+ *
+ * The reason string is written for whoever is debugging the pipeline, and it
+ * was being printed verbatim into the card. When the API credit ran out, ninety
+ * of a hundred and thirty-six records carried this, in English, on an Arabic
+ * screen:
+ *
+ *   تعذّر التصنيف: api — BadRequestError 400: 400 {"type":"error","error":
+ *   {"type":"invalid_request_error","message":"Your credit balance is too low…
+ *
+ * The owner opened the app and saw raw JSON where the announcements should be,
+ * and reasonably concluded the whole thing had broken. It had not: it had
+ * refused to invent verdicts it could not produce, which is exactly right, and
+ * then described that refusal in the worst possible words.
+ *
+ * So the cause is named in one plain sentence, and it says what happens next —
+ * because "this failed" without "and it will be retried" reads like loss.
+ * The full diagnostic still goes to the run log, where it belongs.
+ */
+export function humanReason(reason: string): string {
+  const r = reason.toLowerCase();
+  if (r.includes("credit balance") || r.includes("insufficient")) {
+    return "نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.";
+  }
+  if (r.includes("no_credentials") || r.includes("api_key")) {
+    return "مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.";
+  }
+  if (r.includes("no_profile")) {
+    return "ملفّ الطالب غير مضبوط، فلا يمكن قياس الملاءمة. الصفحة محفوظة.";
+  }
+  if (r.includes("rate") && r.includes("limit")) {
+    return "تجاوزنا حدّ الطلبات مؤقّتاً. الصفحة محفوظة وستُقرأ في الجولة القادمة.";
+  }
+  if (r.startsWith("parse") || r.startsWith("schema")) {
+    return "جاء الردّ بصيغة غير متوقّعة، فلم يُقبل. الصفحة محفوظة وستُعاد قراءتها.";
+  }
+  if (r.startsWith("api")) {
+    return "تعذّر الوصول إلى خدمة التصنيف. الصفحة محفوظة وستُقرأ في الجولة القادمة.";
+  }
+  return "لم تُقرأ هذه الصفحة بعد. هي محفوظة في الطابور، ولم يُحكم عليها بشيء.";
+}
+
 export function asManualReview(args: Common & { reason: string }): Opportunity {
   const { orgId, sourceUrl, text, nowISO, prior, reason } = args;
   const titleAr = "لم يُصنَّف بعد";
@@ -187,7 +230,7 @@ export function asManualReview(args: Common & { reason: string }): Opportunity {
     // The whole point. Zero would mean "not relevant to him"; null means
     // "nobody has judged this yet", and the flag keeps it in the queue.
     relevanceScore: null,
-    relevanceReason: `تعذّر التصنيف: ${reason}`,
+    relevanceReason: `تعذّر التصنيف: ${humanReason(reason)}`,
     // Nobody read the page, so nothing is claimed about its conditions.
     statesZeroCoursesRule: false,
     zeroCoursesQuote: null,

@@ -32,7 +32,7 @@ import {
   type Classification,
   type Usage,
 } from "../src/pipeline/classify";
-import { asManualReview, fromClassification } from "../src/pipeline/opportunity";
+import { asManualReview, fromClassification, humanReason } from "../src/pipeline/opportunity";
 import { extract, isSoft404, sha256 } from "../src/pipeline/extract";
 import { fetchPage, paced } from "../src/pipeline/fetch";
 import { checkFinalUrl, checkRobots } from "../src/pipeline/robots";
@@ -471,6 +471,8 @@ let skippedByFilter = 0;
 let fromMemory = 0;
 /** Pages the one-word question ruled out before the expensive one. */
 let triagedOut = 0;
+/** Records that said "could not classify" about a page since read and resolved. */
+let placeholdersCleared = 0;
 
 /**
  * Verdicts already paid for, keyed by the text that produced them.
@@ -584,6 +586,37 @@ const RUN_BUDGET_USD = Number(process.env.RASID_RUN_BUDGET_USD ?? 0.5);
 let budgetStopped = 0;
 
 if (!NO_CLASSIFY && !DRY_RUN) {
+  /*
+   * A placeholder for a page we have since read is rubbish, and it was rubbish
+   * shown to the user.
+   *
+   * When classification fails, the record kept is a placeholder: no score, a
+   * `needs_manual_review` flag, and a sentence saying why. The three cheap paths
+   * below all end in "this page carries no announcement" — the free filter, the
+   * remembered no, the one-word no — and each cleared the debt on the snapshot
+   * while leaving that placeholder standing. So it stood for ever, because a
+   * page that stops changing is never classified again.
+   *
+   * The owner opened the app and found seventy-four cards carrying a paragraph
+   * of English JSON about a credit balance from the previous evening, long after
+   * the credit was restored and those same pages had been read and found to hold
+   * nothing. It also kept the classifier-down alarm ringing over failures that
+   * had already resolved themselves.
+   *
+   * Only unjudged placeholders go. A record with a score is real knowledge and
+   * is never deleted here: a page that stops mentioning training gets
+   * `vanished_from_source` from the full classifier, which is the one path with
+   * evidence strong enough to say so.
+   */
+  const clearStalePlaceholder = (sourceUrl: string): void => {
+    for (const [id, o] of opportunityById) {
+      if (o.sourceUrl === sourceUrl && o.relevanceScore === null) {
+        opportunityById.delete(id);
+        placeholdersCleared++;
+      }
+    }
+  };
+
   for (const snap of owed) {
     if (costOf(spend) >= RUN_BUDGET_USD) {
       budgetStopped++;
@@ -616,6 +649,7 @@ if (!NO_CLASSIFY && !DRY_RUN) {
       // Nothing is owed a verdict that cannot contain one. Clearing the flag
       // stops the page being carried forward as an unpaid debt for ever.
       snap.pendingClassification = false;
+      clearStalePlaceholder(snap.sourceUrl);
       continue;
     }
 
@@ -635,6 +669,7 @@ if (!NO_CLASSIFY && !DRY_RUN) {
       snap.pendingClassification = false;
       if (remembered === null) {
         notAnnouncements++;
+        clearStalePlaceholder(snap.sourceUrl);
         continue;
       }
       const prior = priorOpportunities.find(
@@ -674,6 +709,7 @@ if (!NO_CLASSIFY && !DRY_RUN) {
         notAnnouncements++;
         snap.pendingClassification = false;
         verdicts.set(fingerprint, null);
+        clearStalePlaceholder(snap.sourceUrl);
         continue;
       }
     }
@@ -718,7 +754,20 @@ if (!NO_CLASSIFY && !DRY_RUN) {
       );
       if (existing) {
         existing.flags = [...existing.flags, "needs_manual_review"];
-        existing.relevanceReason = `${existing.relevanceReason} (لم يُتحقّق في آخر جولة: ${note})`;
+        /*
+         * The humanised sentence, not the diagnostic. This line is read on a
+         * phone; `note` is written for whoever is reading the run log, and
+         * pasting it here is how ninety cards ended up carrying a paragraph of
+         * English JSON about a credit balance.
+         *
+         * Guarded against repetition too: the note used to be appended on every
+         * failed round, so a source that stayed unreachable for a day grew four
+         * copies of the same parenthesis.
+         */
+        const retryNote = `(لم يُتحقّق في آخر جولة: ${humanReason(`${result.stage} ${result.reason}`)})`;
+        existing.relevanceReason = existing.relevanceReason.includes("لم يُتحقّق في آخر جولة")
+          ? existing.relevanceReason
+          : `${existing.relevanceReason} ${retryNote}`;
       } else {
         for (const [id, o] of opportunityById) {
           if (o.sourceUrl === snap.sourceUrl) opportunityById.delete(id);
@@ -926,6 +975,11 @@ if (vanished.length > 0) {
 console.log(
   `  tokens                 ${spend.inputTokens} in / ${spend.outputTokens} out = $${costOf(spend).toFixed(4)}`,
 );
+if (placeholdersCleared > 0) {
+  console.log(
+    `  cleared                ${placeholdersCleared} stale "could not classify" record(s) for pages since read`,
+  );
+}
 /*
  * Stated as a saving against what the same round would have cost sending the
  * instructions in full every time, rather than as a smaller number with no
