@@ -56,6 +56,39 @@ export interface NoticeLogEntry {
 /** Spec 5.4: never more than six pushes in a day. The rest goes to the digest. */
 export const DAILY_PUSH_CAP = 6;
 
+/**
+ * What outranks what when only six can go out.
+ *
+ * These were ad-hoc numbers, and the ordering they produced was backwards in a
+ * way that cost exactly what this project exists to protect. A broken source
+ * weighed 150 and an opportunity weighed its relevance score, at most 100 — so
+ * twelve "this page stopped loading" alarms and one "the classifier is down"
+ * filled every slot, and two co-op announcements scoring 95, both an exact match
+ * for his major, were ranked below them and pushed into the digest. The digest
+ * is email, and email is not configured, so they would have reached him nowhere
+ * at all.
+ *
+ * The ordering that follows is by what missing the notice actually costs him:
+ *
+ *   a window about to shut      cannot be recovered once it passes
+ *   a window that just opened   he can act on today
+ *   seats running out           the same window, with less time
+ *   a new match                 the thing he asked to be told about
+ *   the classifier is blind     he must check by hand until it is fixed
+ *   one source stopped loading  one page of a hundred and fifteen, in the app
+ *
+ * Housekeeping sits at the bottom on purpose. An alarm about the tool is worth
+ * saying; it is never worth saying *instead of* an opening.
+ */
+export const BAND = {
+  closingSoon: 500,
+  opened: 400,
+  fewSeats: 300,
+  newRelevant: 200,
+  classifierDown: 250,
+  sourceBroken: 150,
+} as const;
+
 const dayOf = (iso: string): string => iso.slice(0, 10);
 
 /**
@@ -143,7 +176,7 @@ export function decide(input: DecideInput): Notice[] {
         kind: "new_relevant",
         title: `🟢 إعلان جديد — ${org}`,
         body: details(o),
-        weight: score,
+        weight: BAND.newRelevant + score,
       });
     }
 
@@ -153,7 +186,7 @@ export function decide(input: DecideInput): Notice[] {
         kind: "opened",
         title: `🟢 فتح التقديم — ${org}`,
         body: details(o),
-        weight: score + 100,
+        weight: BAND.opened + score,
       });
     }
 
@@ -163,7 +196,7 @@ export function decide(input: DecideInput): Notice[] {
         kind: "closing_soon",
         title: `⏳ يغلق قريباً — ${org}`,
         body: `${o.titleAr} · تبقّى ${Math.ceil(hoursUntil(o.closesISO))} ساعة${o.cities.length > 0 ? ` · ${o.cities.join("، ")}` : ""}${o.seats !== null ? ` · ${o.seats} مقعداً` : ""}`,
-        weight: score + 200,
+        weight: BAND.closingSoon + score,
       });
     }
 
@@ -173,7 +206,7 @@ export function decide(input: DecideInput): Notice[] {
         kind: "few_seats",
         title: `⚠ مقاعد قليلة — ${org}`,
         body: `${o.titleAr} · ${o.seats} مقاعد`,
-        weight: score + 50,
+        weight: BAND.fewSeats + score,
       });
     }
   }
@@ -188,7 +221,7 @@ export function decide(input: DecideInput): Notice[] {
         kind: "source_broken",
         title: `🔴 مصدر توقّف — ${nameOf(h.orgId)}`,
         body: "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
-        weight: 150,
+        weight: BAND.sourceBroken,
       });
     }
   }
@@ -210,7 +243,7 @@ export function decide(input: DecideInput): Notice[] {
       kind: "classifier_down",
       title: "🟠 التصنيف متوقّف",
       body: `قُرئت الصفحات لكن تعذّر الحكم على ${unjudged.length} منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف — افحص الجهات المهمة بنفسك.`,
-      weight: 250,
+      weight: BAND.classifierDown,
     });
   }
 

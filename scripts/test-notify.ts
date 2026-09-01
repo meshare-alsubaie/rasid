@@ -7,7 +7,7 @@
  *
  *   npm run test:notify
  */
-import { decide, inQuietHours, split, DAILY_PUSH_CAP, type Notice } from "../src/pipeline/notify";
+import { decide, inQuietHours, split, BAND, DAILY_PUSH_CAP, type Notice } from "../src/pipeline/notify";
 import type { Opportunity, SourceHealth } from "../src/types";
 
 let failures = 0;
@@ -44,8 +44,11 @@ const opp = (over: Partial<Opportunity>): Opportunity => ({
   ...over,
 });
 
-const health = (state: SourceHealth["state"]): SourceHealth => ({
-  sourceUrl: "https://example.gov.sa/a",
+const health = (
+  state: SourceHealth["state"],
+  sourceUrl = "https://example.gov.sa/a",
+): SourceHealth => ({
+  sourceUrl,
   orgId: "sdaia",
   lastAttemptISO: new Date().toISOString(),
   lastSuccessISO: null,
@@ -77,7 +80,7 @@ check(
 check(
   "a record judged only on a later round is still announced",
   run([opp({ relevanceScore: null })], [opp({ relevanceScore: 95 })]).some(
-    (n) => n.kind === "new_relevant" && n.weight === 95,
+    (n) => n.kind === "new_relevant" && n.weight === BAND.newRelevant + 95,
   ),
   "seen first, judged second, is the normal path — not an edge case",
 );
@@ -299,6 +302,78 @@ check(
  * on the owner's machine and on a runner in another timezone — which is the
  * whole point of the fix it guards.
  */
+/*
+ * The exact mix that exposed the inversion, replayed.
+ *
+ * Twelve sources had stopped loading and the classifier had failed on a batch,
+ * which is an ordinary bad morning. Every one of those alarms outweighed an
+ * opportunity, so the six push slots went to housekeeping and two co-op
+ * announcements scoring 95 — both an exact match for his major — were ranked
+ * into the digest. The digest is email, and email is not configured.
+ *
+ * An alarm about the tool is worth saying. It is never worth saying instead of
+ * an opening.
+ */
+console.log("\na bad morning for the tool never buries an opening");
+{
+  const broken = Array.from({ length: 12 }, (_, i) =>
+    health("broken", `https://example.gov.sa/dead-${i}`),
+  );
+  const wasBroken = broken.map((h) => ({ ...h, state: "degraded" as const }));
+  const twoMatches = [
+    opp({ id: "gold-a", relevanceScore: 95, sourceUrl: "https://example.gov.sa/a" }),
+    opp({ id: "gold-b", relevanceScore: 95, sourceUrl: "https://example.gov.sa/b" }),
+  ];
+  const unjudged = Array.from({ length: 9 }, (_, i) =>
+    opp({ id: `u${i}`, relevanceScore: null, flags: ["needs_manual_review"] }),
+  );
+
+  const notices = run([], [...twoMatches, ...unjudged], wasBroken, broken);
+  const { push, digestOnly } = split(notices, [], new Date("2026-09-01T09:00:00.000Z"), false);
+  const pushed = new Set(push.map((n) => n.key));
+
+  check(
+    "both 95s are pushed, not digested",
+    pushed.has("new:gold-a") && pushed.has("new:gold-b"),
+    `pushed: ${[...pushed].join(", ")}`,
+  );
+  check(
+    "and they go first",
+    push[0]!.key.startsWith("new:gold") && push[1]!.key.startsWith("new:gold"),
+  );
+  check(
+    "the classifier alarm still gets a slot",
+    push.some((n) => n.kind === "classifier_down"),
+  );
+  check(
+    "broken sources fill what is left, and the rest wait in the digest",
+    push.filter((n) => n.kind === "source_broken").length === DAILY_PUSH_CAP - 3 &&
+      digestOnly.filter((n) => n.kind === "source_broken").length === 12 - (DAILY_PUSH_CAP - 3),
+  );
+}
+
+console.log("\nthe order of the bands, stated once so it cannot drift");
+{
+  const at = (kind: string, list: Notice[]): number => list.find((n) => n.kind === kind)?.weight ?? -1;
+  const deadline = run([opp({ closesISO: new Date(Date.now() + 36 * 3600_000).toISOString() })], [opp({ closesISO: new Date(Date.now() + 36 * 3600_000).toISOString() })]);
+  const opened = run([opp({ status: "announced_not_open" })], [opp({ status: "open" })]);
+  const fresh = run([], [opp({})]);
+  const down = run([], Array.from({ length: 9 }, (_, i) => opp({ id: `d${i}`, relevanceScore: null, flags: ["needs_manual_review"] })));
+  const dead = run([], [], [health("degraded")], [health("broken")]);
+  check(
+    "closing > opened > new > classifier_down > source_broken",
+    at("closing_soon", deadline) > at("opened", opened) &&
+      at("opened", opened) > at("new_relevant", fresh) &&
+      at("new_relevant", fresh) > at("classifier_down", down) &&
+      at("classifier_down", down) > at("source_broken", dead),
+    `${at("closing_soon", deadline)} > ${at("opened", opened)} > ${at("new_relevant", fresh)} > ${at("classifier_down", down)} > ${at("source_broken", dead)}`,
+  );
+  check(
+    "the lowest-scoring opening still outranks the tool complaining about itself",
+    at("new_relevant", run([], [opp({ relevanceScore: 60 })])) > at("source_broken", dead),
+  );
+}
+
 console.log("\nquiet-hour boundaries (Riyadh)");
 const riyadh = (hhmmZ: string): Date => new Date(`2026-09-01T${hhmmZ}:00.000Z`);
 check("23:00 Riyadh is quiet when quiet starts at 23", inQuietHours(riyadh("20:00"), 23, 7));

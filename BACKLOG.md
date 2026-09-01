@@ -73,6 +73,17 @@ page instead.*
 published bundle that the browser never fetches. *If never fixed: a slower first
 load on mobile data.*
 
+## Notifications
+
+**A disappearance is recorded but never announced.** When a watched page stops
+carrying its announcement the record is kept and flagged
+`vanished_from_source` — the fix for the worst bug this file has held — and a
+comment in `collect.ts` says the notifier can tell him about it. It cannot:
+`decide()` has no branch for that flag, so the change is visible in the app and
+silent on the phone. Left because it cannot cost an opportunity: he was told
+when it opened, and the app shows the flag. *If never fixed: he learns a window
+closed by opening the app rather than by being told.*
+
 ## Cost
 
 **Input tokens are now the bill.** Output was seven-tenths of it and is now a
