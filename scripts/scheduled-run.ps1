@@ -81,7 +81,27 @@ try {
         # Take whatever the cloud committed since last time, so the push is a
         # fast-forward and never a conflict.
         git pull --rebase --quiet origin master
-        if ($LASTEXITCODE -ne 0) { Say "pull failed, collecting without it" }
+        if ($LASTEXITCODE -ne 0) {
+            # A rebase that stops on a conflict leaves the working tree holding
+            # files with conflict markers in them -- including the pipeline's own
+            # source. Collecting "without it" then means running a collector
+            # whose classifier is a syntax error: the round dies on the first
+            # import, and the only trace is a stack in a log nobody reads.
+            #
+            # This is the failure shape this project exists to refuse: something
+            # that looks like it carried on. So the rebase is put back, and the
+            # tree is verified clean before a single page is fetched.
+            Say "pull failed; restoring the tree before collecting"
+            git rebase --abort 2>$null
+            git merge --abort 2>$null
+            $conflicted = git ls-files --unmerged
+            if ($conflicted) {
+                Say "ABORTED: the tree is still conflicted, so nothing was collected."
+                $conflicted | Select-Object -First 5 | ForEach-Object { Say "    $_" }
+                exit 1
+            }
+            Say "tree is clean; collecting from the local commit"
+        }
     }
 
     # Look for pages nobody added by hand, before reading the ones we have.

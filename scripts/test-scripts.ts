@@ -75,5 +75,35 @@ if (!isWindows) {
   }
 }
 
+/*
+ * A rebase that stops on a conflict leaves the working tree holding files with
+ * `<<<<<<<` in them, and the collector's own source is one of those files. The
+ * scheduled run used to note the failure and collect anyway, which meant
+ * importing a classifier that is no longer valid TypeScript: the round dies on
+ * the first import and the app goes on saying it checked recently.
+ *
+ * This happened on this machine, so it is guarded rather than remembered.
+ */
+console.log("\na failed rebase can never be collected through");
+{
+  const run = readFileSync(join(dir, "scheduled-run.ps1"), "utf8");
+  const afterPull = run.slice(run.indexOf("git pull --rebase"));
+  const beforeCollect = afterPull.slice(0, afterPull.indexOf("npm run collect"));
+
+  check(
+    "the rebase is put back before anything else happens",
+    /git rebase --abort/.test(beforeCollect),
+  );
+  check(
+    "and the tree is checked, not assumed",
+    /git ls-files --unmerged/.test(beforeCollect),
+  );
+  check(
+    "a tree that is still conflicted stops the run instead of collecting",
+    /unmerged[\s\S]{0,400}exit 1/.test(beforeCollect),
+    "exiting non-zero is what makes the heartbeat go stale and the app turn red",
+  );
+}
+
 console.log(`\n${failures === 0 ? "all checks passed" : `${failures} CHECK(S) FAILED`}`);
 process.exit(failures === 0 ? 0 : 1);
