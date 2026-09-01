@@ -1360,35 +1360,6 @@
     "rawExcerpt": "يأتي برنامج التدريب التعاوني ضمن المسؤولية الاجتماعية والمهنية في الهيئة العامة للإحصاء؛ وذلك بهدف رفع مستويات المعرفة والمهارة لدى كفاءات الوطن من الطلبة الخريجين وتمكينهم من تطبيق الدراسات الأكاديمية في بيئة العمل الفعلية، إثراءً لحياتهم العملية واكتسابهم خبرة تؤهلهم للتميز في سوق العمل مستقبلاً. أن لا يقل المعدل عن 3.75 من 5 أو 2.75 من 4 في درجة البكالوريوس. أن لا يكون المتقدم قد تخرج وحقق متطل"
   },
   {
-    "id": "69d512b023ab3887",
-    "orgId": "nournet",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJvdJ6urJMoJ13jgCm\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://nour.net.sa/ar/",
-    "applyUrl": null,
-    "rawExcerpt": "مُمكّن التحول الرقمي الرائد في المملكة العربية السعوديةالخدمات المدارةدعنا نتولى مهام صيانة النظام الروتينية والترقيات عنك.مراكز البياناتتمتع بخدمات أول مركز بيانات من المستوى الثالث ذو الناقل المحايد في المملكة العربية السعودية.الخدمات السحابيةمن الخدمات السحابية لنورنت، ميكروسوفت، خدمات أمازون ويب، إلى اوراكل، نقدم أفضل خدمات البرامج السحابية تحت سقف واحد.خدمات الربطشبكة توصيل المعلومات الأسرع و"
-  },
-  {
     "id": "6d4f1ed7cf68e295",
     "orgId": "ncdc",
     "titleAr": "لم يُصنَّف بعد",
@@ -2888,35 +2859,6 @@
     "sourceUrl": "https://www.awqaf.gov.sa/ar",
     "applyUrl": null,
     "rawExcerpt": "ㅤㅤ مصارف الأوقاف تحت إشراف الهيئة 1.5 مليار ريال لبرنامج ضيوف الرحمن +126 مليون ريال للإسكان +87 مليون ريال للتعليم +15 مليون ريال للصحة +133 مليون ريال للبيئة والمياه +368 مليون ريال للمساجد +72 مليون ريال للفئات الأشد حاجة +2 مليار ريال إجمالي مصارف الأوقاف التي تشرف عليها الهيئة تسجيل وقف تُمكّنك هذه الخدمة الالكترونية من تسجيل الوقف لدى الهيئة العامة للأوقاف وإصدار شهادة الوقف المعتمدة، مع إمك"
-  },
-  {
-    "id": "e4a091c844aad20c",
-    "orgId": "cma",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJFqRJ3TVFU7W8zcD3\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://cma.gov.sa/Pages/default.aspx",
-    "applyUrl": null,
-    "rawExcerpt": "هيئة السوق المالية | Capital Market Authority\n\nتشغيل وضع قابل للوصول بشكل أفضل إيقاف تشغيل الوضع القابل للوصول بشكل أفضل تخطي أوامر الشريط التخطي إلى المحتوى الأساسي إيقاف تشغيل الحركات تشغيل الحركات موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية"
   },
   {
     "id": "e73ccbd2241240cb",
