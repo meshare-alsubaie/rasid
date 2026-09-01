@@ -15,7 +15,14 @@
 import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync } from "node:fs";
 import webpush from "web-push";
-import { decide, inQuietHours, split, type Notice, type NoticeLogEntry } from "../src/pipeline/notify";
+import {
+  decide,
+  inQuietHours,
+  split,
+  LOG_RETENTION_DAYS,
+  type Notice,
+  type NoticeLogEntry,
+} from "../src/pipeline/notify";
 import type { Opportunity, Organisation, SourceHealth } from "../src/types";
 
 const DRY = process.argv.includes("--dry-run");
@@ -242,8 +249,9 @@ if (!DRY && !TEST) {
       via: pushedSet.has(key) ? ("push" as const) : ("digest" as const),
     })),
   ]
-    // Keep a month. Long enough that nothing repeats, short enough to stay small.
-    .filter((e) => Date.now() - Date.parse(e.sentISO) < 31 * 86_400_000);
+    // Kept strictly longer than ANNOUNCE_WINDOW_DAYS, so a notice can never be
+    // proposed again after the entry proving it was sent has been pruned.
+    .filter((e) => Date.now() - Date.parse(e.sentISO) < LOG_RETENTION_DAYS * 86_400_000);
   writeFileSync("data/notifications.json", JSON.stringify(merged, null, 2) + "\n", "utf8");
 
   // Whatever did not go out waits for the next run rather than evaporating.

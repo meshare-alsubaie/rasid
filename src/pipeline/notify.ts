@@ -80,6 +80,25 @@ export const DAILY_PUSH_CAP = 6;
  * Housekeeping sits at the bottom on purpose. An alarm about the tool is worth
  * saying; it is never worth saying *instead of* an opening.
  */
+/**
+ * How long the sent log remembers, and how long a record may keep asking.
+ *
+ * These two exist as a pair because they constrain each other. `decide` now
+ * proposes a new-opportunity notice every round and lets the sent log refuse
+ * the repeat — which is what recovers a record that reaches a verdict late.
+ * But the log is pruned, and a proposal that outlives its own log entry comes
+ * back as a fresh notice: the same opening announced again a month later, with
+ * nothing wrong-looking anywhere to explain it.
+ *
+ * So the window in which a record may still be announced is kept strictly
+ * shorter than the log's memory. Fourteen days is far longer than the delay
+ * this is meant to survive — a round that failed, a budget that ran out, a page
+ * that was not readable yet — and a record still unjudged after two weeks means
+ * the classifier has been down that long, which raises its own alarm every day.
+ */
+export const ANNOUNCE_WINDOW_DAYS = 14;
+export const LOG_RETENTION_DAYS = 31;
+
 export const BAND = {
   closingSoon: 500,
   opened: 400,
@@ -170,7 +189,8 @@ export function decide(input: DecideInput): Notice[] {
      * free and costs one set lookup, while missing it once costs a semester.
      * This also heals every record that was skipped while the old rule stood.
      */
-    if (score >= Math.max(60, threshold)) {
+    const daysKnown = (Date.now() - Date.parse(o.firstSeenISO)) / 86_400_000;
+    if (score >= Math.max(60, threshold) && daysKnown <= ANNOUNCE_WINDOW_DAYS) {
       out.push({
         key: `new:${o.id}`,
         kind: "new_relevant",

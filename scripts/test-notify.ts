@@ -7,7 +7,16 @@
  *
  *   npm run test:notify
  */
-import { decide, inQuietHours, split, BAND, DAILY_PUSH_CAP, type Notice } from "../src/pipeline/notify";
+import {
+  decide,
+  inQuietHours,
+  split,
+  ANNOUNCE_WINDOW_DAYS,
+  BAND,
+  DAILY_PUSH_CAP,
+  LOG_RETENTION_DAYS,
+  type Notice,
+} from "../src/pipeline/notify";
 import type { Opportunity, SourceHealth } from "../src/types";
 
 let failures = 0;
@@ -20,9 +29,16 @@ const opp = (over: Partial<Opportunity>): Opportunity => ({
   id: "x",
   orgId: "sdaia",
   titleAr: "برنامج التدريب التعاوني",
-  detectedISO: "2026-08-01T00:00:00.000Z",
-  firstSeenISO: "2026-08-01T00:00:00.000Z",
-  lastConfirmedISO: "2026-08-01T00:00:00.000Z",
+  /*
+   * Relative to now, not a date typed into the file. These were fixed at
+   * 2026-08-01, and once announcing was bounded to a window measured from the
+   * first sighting, every case built on this fixture began failing for a reason
+   * that had nothing to do with what it was testing: the fixture had aged past
+   * the window. A record in an ordinary run is days old, so the fixture is too.
+   */
+  detectedISO: new Date(Date.now() - 86_400_000).toISOString(),
+  firstSeenISO: new Date(Date.now() - 86_400_000).toISOString(),
+  lastConfirmedISO: new Date(Date.now() - 86_400_000).toISOString(),
   status: "unknown",
   opensISO: null,
   closesISO: null,
@@ -134,6 +150,45 @@ check(
   ).push.some((n) => n.key === "new:x"),
   "this is what recovers a record the old newness rule silently skipped",
 );
+/*
+ * The pair that keeps "propose every round" from turning into "announce again
+ * next month". The sent log is pruned; a record that could still be proposed
+ * after its log entry expired would come back as fresh news about an opening
+ * that was announced weeks ago, with nothing anywhere to explain it.
+ */
+const daysAgo = (n: number): string => new Date(Date.now() - n * 86_400_000).toISOString();
+check(
+  "the announcing window is strictly shorter than the log's memory",
+  ANNOUNCE_WINDOW_DAYS < LOG_RETENTION_DAYS,
+  `${ANNOUNCE_WINDOW_DAYS} < ${LOG_RETENTION_DAYS} days`,
+);
+check(
+  "a record still waiting on a verdict a week later is announced",
+  run(
+    [opp({ firstSeenISO: daysAgo(7), relevanceScore: null })],
+    [opp({ firstSeenISO: daysAgo(7), relevanceScore: 95 })],
+  ).some((n) => n.kind === "new_relevant"),
+);
+check(
+  "one first seen beyond the window is not announced again",
+  !run([], [opp({ firstSeenISO: daysAgo(ANNOUNCE_WINDOW_DAYS + 1) })]).some(
+    (n) => n.kind === "new_relevant",
+  ),
+  "by then the sent log still proves it went out, so silence is correct",
+);
+check(
+  "a deadline on an old record is still announced, because that is not news about its arrival",
+  run(
+    [],
+    [
+      opp({
+        firstSeenISO: daysAgo(60),
+        closesISO: new Date(Date.now() + 30 * 3600_000).toISOString(),
+      }),
+    ],
+  ).some((n) => n.kind === "closing_soon"),
+);
+
 check(
   "a status turning open does",
   run([opp({ status: "announced_not_open" })], [opp({ status: "open" })]).some((n) => n.kind === "opened"),
