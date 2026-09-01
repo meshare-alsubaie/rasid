@@ -367,7 +367,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www2.deloitte.com/",
     "applyUrl": null,
@@ -407,7 +408,7 @@
     "titleAr": "برنامج سدايا للتدريب التعاوني",
     "detectedISO": "2026-08-31T00:02:49.563Z",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-09-01T01:46:07.967Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -420,16 +421,14 @@
     "cities": [
       "الرياض"
     ],
-    "relevanceScore": 70,
-    "relevanceReason": "البرنامج موجه للطلاب في مجال البيانات والذكاء الاصطناعي وهو مرتبط بشكل عام بالتقنية دون ذكر صريح للأمن السيبراني أو مركز العمليات الأمنية.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "no_course_condition"
-    ],
+    "relevanceScore": 65,
+    "relevanceReason": "البرنامج يركز على الذكاء الاصطناعي والبيانات وهو مجال تقني عام ذو صلة جزئية بتخصص الطالب في الأمن السيبراني.",
+    "statesZeroCoursesRule": true,
+    "zeroCoursesQuote": "أن يكون المتقدم متفرغًا طوال فترة التدريب.",
+    "flags": [],
     "sourceUrl": "https://athkax.sdaia.gov.sa/coop",
     "applyUrl": null,
-    "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي بحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي برنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي بحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي برنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nونمكّنهم من صناعة أثرٍ يمتد إلى "
+    "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبرنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي "
   },
   {
     "id": "2b04f83642ee9540",
@@ -947,23 +946,21 @@
     "titleAr": "مبادرة التدريب التعاوني - وزارة الصناعة والثروة المعدنية",
     "detectedISO": "2026-08-29T16:36:58.372Z",
     "firstSeenISO": "2026-08-29T16:36:58.372Z",
-    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-09-01T01:46:07.967Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
     "closesHijri": null,
     "product": "coop",
     "majors": [
-      "التخصصات العلمية والتطبيقية",
-      "الهندسية والتقنية والفنية",
-      "التعدين"
+      "التخصصات العلمية والتطبيقية"
     ],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 20,
-    "relevanceReason": "المبادرة موجهة لقطاعي الصناعة والتعدين والتخصصات الهندسية والتقنية العامة، ولا تذكر مجالات الأمن السيبراني أو تقنية المعلومات تحديدًا.",
+    "relevanceReason": "المبادرة موجهة أساسًا لتخصصات الصناعة والتعدين والهندسة التقنية وليست مخصصة للأمن السيبراني أو تقنية المعلومات.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1359,7 +1356,7 @@
     "titleAr": "تدريب تعاوني",
     "detectedISO": "2026-08-31T23:54:26.779Z",
     "firstSeenISO": "2026-08-31T23:54:26.779Z",
-    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-09-01T01:46:07.967Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -1370,8 +1367,8 @@
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 20,
-    "relevanceReason": "الإعلان عام عن برنامج تدريب تعاوني دون تحديد تخصص أو تفاصيل تتعلق بالأمن السيبراني.",
+    "relevanceScore": 50,
+    "relevanceReason": "الإعلان عام عن برنامج تدريب تعاوني دون تحديد التخصص أو طبيعة العمل الأمني.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1793,7 +1790,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.monshaat.gov.sa/",
     "applyUrl": null,
@@ -2167,7 +2165,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.stats.gov.sa/ar",
     "applyUrl": null,
@@ -2179,7 +2178,7 @@
     "titleAr": "برنامج تطوير الخريجين",
     "detectedISO": "2026-08-31T23:54:26.779Z",
     "firstSeenISO": "2026-08-31T23:54:26.779Z",
-    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-09-01T01:46:07.967Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -2189,11 +2188,9 @@
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
-    "cities": [
-      "الرياض"
-    ],
+    "cities": [],
     "relevanceScore": 0,
-    "relevanceReason": "هذا برنامج تطوير الخريجين وهو غير متاح للطالب لأنه لم يتخرج بعد.",
+    "relevanceReason": "البرنامج مخصص لبرنامج تطوير الخريجين وهو غير مؤهل له لأنه لم يتخرج بعد.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2815,7 +2812,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.sidf.gov.sa/ar/Pages/Home.aspx",
     "applyUrl": null,

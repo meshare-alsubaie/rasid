@@ -84,6 +84,20 @@ await ask(
   true,
 );
 
+/*
+ * The excerpt is a head slice plus the neighbourhood of the training word, so
+ * an announcement at the bottom of a long news page must still survive. That is
+ * the one thing a naive head slice would lose, and it is the shape a media
+ * centre actually has: forty stories, and the co-op notice among them.
+ */
+await ask(
+  "an announcement buried under 8,000 characters of unrelated news",
+  `${"افتتح معالي الوزير المعرض السنوي بحضور عدد من المسؤولين وممثلي القطاع الخاص. ".repeat(100)}
+تعلن الجهة عن فتح باب التقديم في برنامج التدريب التعاوني لطلاب الجامعات،
+التخصصات المطلوبة: علوم الحاسب والأمن السيبراني.`,
+  true,
+);
+
 console.log("\npages about something else — either answer is acceptable,");
 console.log("but if none is skipped the filter is costing money and saving none\n");
 

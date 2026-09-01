@@ -328,6 +328,28 @@ export interface TriageResult {
  * The cheap first pass. Any answer that is not a clear "no" counts as yes,
  * including an error: this stage may only ever save money, never lose a page.
  */
+/**
+ * Enough of a page to answer one word, and no more.
+ *
+ * The first version sent the whole six-thousand-character excerpt to a question
+ * whose answer is "yes" or "no", and input then accounted for three-quarters of
+ * what the cheap stage cost. A yes/no does not need the whole page: it needs
+ * the top, where announcements announce themselves, and the neighbourhood of
+ * whatever training word got the page this far — because the free filter
+ * already established there is one, and a page whose only mention is buried at
+ * the bottom is exactly the page a naive head-slice would lose.
+ */
+const TRIAGE_HEAD = 1_200;
+const TRIAGE_AROUND = 600;
+
+export function triageExcerpt(text: string): string {
+  const head = text.slice(0, TRIAGE_HEAD);
+  const at = text.search(/تدريب|تعاون|متدرب|تمهير|co-?op|intern|trainee|training/i);
+  if (at < 0 || at < TRIAGE_HEAD) return head;
+  const from = Math.max(0, at - TRIAGE_AROUND / 2);
+  return `${head}\n…\n${text.slice(from, from + TRIAGE_AROUND)}`;
+}
+
 export async function triage(text: string): Promise<TriageResult> {
   const usage: Usage = { inputTokens: 0, outputTokens: 0 };
   if (!process.env.ANTHROPIC_API_KEY?.trim()) return { looksLikeAnnouncement: true, usage };
@@ -337,7 +359,7 @@ export async function triage(text: string): Promise<TriageResult> {
       model: CLASSIFIER_MODEL,
       max_tokens: 8,
       system: TRIAGE_PROMPT,
-      messages: [{ role: "user", content: text.slice(0, MAX_EXCERPT_CHARS) }],
+      messages: [{ role: "user", content: triageExcerpt(text) }],
     });
     usage.inputTokens = response.usage.input_tokens;
     usage.outputTokens = response.usage.output_tokens;
