@@ -58,6 +58,16 @@ what it actually means.*
 `data/`. The push now rebases and retries three times, and fails loudly rather
 than green. *If never fixed: a rare lost round, announced.*
 
+**The runner's failures look like broken sources.** A collection from a United
+States address cannot reach many `.gov.sa` hosts, so the four scheduled runs a
+day degrade health for pages that are perfectly readable from Riyadh, and each
+degradation can raise a "this source stopped" alarm for a source that did not.
+Records are never deleted by it, and since the priority bands were fixed these
+alarms can no longer outrank an opening. Fixing it properly means letting only
+the Riyadh machine write health, which is a change to who owns the dataset.
+*If never fixed: occasional false red marks in the app that clear themselves on
+the next run from Riyadh.*
+
 ## Interface
 
 **Predicted windows are not drawn.** The Season Bar has the legend slot and the
