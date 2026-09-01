@@ -2,7 +2,7 @@
   {
     "orgId": "adeem",
     "origin": "http://adeemcapital.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 377,
     "seenTraining": [
       "6d539d93bb8184f0",
@@ -17,14 +17,14 @@
   {
     "orgId": "adf",
     "origin": "https://adf.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 1000,
     "seenTraining": []
   },
   {
     "orgId": "aec",
     "origin": "https://www.aecl.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 694,
     "seenTraining": [
       "f2eb645d297acc37",
@@ -54,7 +54,7 @@
   {
     "orgId": "albilad",
     "origin": "https://www.bankalbilad.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -62,7 +62,7 @@
   {
     "orgId": "albilad",
     "origin": "https://bankalbilad.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -70,8 +70,90 @@
   {
     "orgId": "alinma",
     "origin": "https://alinma.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 4957,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 5000,
+    "seenTraining": [
+      "88250bc197514490",
+      "d526e5867be5ba4f",
+      "2612c0cfada8291e",
+      "57f9b419f767e292",
+      "38c72f8f42681f0c",
+      "de5f6d8164355545",
+      "b528b2101306b132",
+      "b5be9ff0bd53f19a",
+      "4787ce4d1d77883b",
+      "4e53958dd3df3f5f",
+      "a5c060097f13f635",
+      "36863cffecbc5d0a",
+      "28596b869d8e767d",
+      "b84215d1614aed44",
+      "fdaa1646325bf55d",
+      "7ba91f5140cdae3d",
+      "4be39e398c9f0e44",
+      "3faad5c24adc6f77",
+      "6bc90e414a929fdb",
+      "07c98c52c3275a43",
+      "bcaf9dc1658277b5",
+      "f84a74a1d6ecb1c5",
+      "3d28c267b492f132",
+      "f44328189d9ce63e",
+      "7c1f2fb6f29fdf5f",
+      "c42c9a0a1c65f364",
+      "4039ce5b78f91e79",
+      "1f9e5e1ec786331e",
+      "c855a837becb3f6f",
+      "1849b5f718faf424",
+      "3a961cc68c7b15d6",
+      "b5352ba3f55e6cdc",
+      "e6e2c9734df24366",
+      "b898003595cc2d3e",
+      "3e535b3c631f5f58",
+      "e617591e61f5c243",
+      "9f242ce9b5b1b8f9",
+      "a870d62d690c9de2",
+      "88250bc197514490",
+      "d526e5867be5ba4f",
+      "2612c0cfada8291e",
+      "57f9b419f767e292",
+      "38c72f8f42681f0c",
+      "de5f6d8164355545",
+      "b528b2101306b132",
+      "b5be9ff0bd53f19a",
+      "4787ce4d1d77883b",
+      "4e53958dd3df3f5f",
+      "a5c060097f13f635",
+      "36863cffecbc5d0a",
+      "28596b869d8e767d",
+      "b84215d1614aed44",
+      "fdaa1646325bf55d",
+      "7ba91f5140cdae3d",
+      "4be39e398c9f0e44",
+      "3faad5c24adc6f77",
+      "6bc90e414a929fdb",
+      "07c98c52c3275a43",
+      "bcaf9dc1658277b5",
+      "f84a74a1d6ecb1c5",
+      "3d28c267b492f132",
+      "f44328189d9ce63e",
+      "7c1f2fb6f29fdf5f",
+      "c42c9a0a1c65f364",
+      "4039ce5b78f91e79",
+      "1f9e5e1ec786331e",
+      "c855a837becb3f6f",
+      "1849b5f718faf424",
+      "3a961cc68c7b15d6",
+      "b5352ba3f55e6cdc",
+      "e6e2c9734df24366",
+      "b898003595cc2d3e",
+      "3e535b3c631f5f58",
+      "e617591e61f5c243"
+    ]
+  },
+  {
+    "orgId": "alinma",
+    "origin": "https://www.alinma.com",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 4958,
     "seenTraining": [
       "88250bc197514490",
       "d526e5867be5ba4f",
@@ -153,91 +235,9 @@
     ]
   },
   {
-    "orgId": "alinma",
-    "origin": "https://www.alinma.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 5000,
-    "seenTraining": [
-      "88250bc197514490",
-      "d526e5867be5ba4f",
-      "2612c0cfada8291e",
-      "57f9b419f767e292",
-      "38c72f8f42681f0c",
-      "de5f6d8164355545",
-      "b528b2101306b132",
-      "b5be9ff0bd53f19a",
-      "4787ce4d1d77883b",
-      "4e53958dd3df3f5f",
-      "a5c060097f13f635",
-      "36863cffecbc5d0a",
-      "28596b869d8e767d",
-      "b84215d1614aed44",
-      "fdaa1646325bf55d",
-      "7ba91f5140cdae3d",
-      "4be39e398c9f0e44",
-      "3faad5c24adc6f77",
-      "6bc90e414a929fdb",
-      "07c98c52c3275a43",
-      "bcaf9dc1658277b5",
-      "f84a74a1d6ecb1c5",
-      "3d28c267b492f132",
-      "f44328189d9ce63e",
-      "7c1f2fb6f29fdf5f",
-      "c42c9a0a1c65f364",
-      "4039ce5b78f91e79",
-      "1f9e5e1ec786331e",
-      "c855a837becb3f6f",
-      "1849b5f718faf424",
-      "3a961cc68c7b15d6",
-      "b5352ba3f55e6cdc",
-      "e6e2c9734df24366",
-      "b898003595cc2d3e",
-      "3e535b3c631f5f58",
-      "e617591e61f5c243",
-      "9f242ce9b5b1b8f9",
-      "a870d62d690c9de2",
-      "88250bc197514490",
-      "d526e5867be5ba4f",
-      "2612c0cfada8291e",
-      "57f9b419f767e292",
-      "38c72f8f42681f0c",
-      "de5f6d8164355545",
-      "b528b2101306b132",
-      "b5be9ff0bd53f19a",
-      "4787ce4d1d77883b",
-      "4e53958dd3df3f5f",
-      "a5c060097f13f635",
-      "36863cffecbc5d0a",
-      "28596b869d8e767d",
-      "b84215d1614aed44",
-      "fdaa1646325bf55d",
-      "7ba91f5140cdae3d",
-      "4be39e398c9f0e44",
-      "3faad5c24adc6f77",
-      "6bc90e414a929fdb",
-      "07c98c52c3275a43",
-      "bcaf9dc1658277b5",
-      "f84a74a1d6ecb1c5",
-      "3d28c267b492f132",
-      "f44328189d9ce63e",
-      "7c1f2fb6f29fdf5f",
-      "c42c9a0a1c65f364",
-      "4039ce5b78f91e79",
-      "1f9e5e1ec786331e",
-      "c855a837becb3f6f",
-      "1849b5f718faf424",
-      "3a961cc68c7b15d6",
-      "b5352ba3f55e6cdc",
-      "e6e2c9734df24366",
-      "b898003595cc2d3e",
-      "3e535b3c631f5f58",
-      "e617591e61f5c243"
-    ]
-  },
-  {
     "orgId": "alrajhi",
     "origin": "https://careers.alrajhibank.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "317a312bc6529d8b",
@@ -249,8 +249,8 @@
   {
     "orgId": "alrajhi",
     "origin": "https://www.alrajhibank.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 4414,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 4415,
     "seenTraining": [
       "6cf43e25b3e0b8a7",
       "eb338ecb4347864a",
@@ -273,7 +273,7 @@
   {
     "orgId": "anb",
     "origin": "https://anb.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -281,7 +281,7 @@
   {
     "orgId": "anb",
     "origin": "https://careers.anb.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "19d1623b929277b5",
@@ -293,7 +293,7 @@
   {
     "orgId": "aramco",
     "origin": "https://www.aramco.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 2649,
     "seenTraining": [
       "57b20aaf68613551",
@@ -374,21 +374,21 @@
   {
     "orgId": "awqaf",
     "origin": "https://www.awqaf.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 13,
     "seenTraining": []
   },
   {
     "orgId": "awqaf",
     "origin": "https://awqaf.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 13,
     "seenTraining": []
   },
   {
     "orgId": "bahri",
     "origin": "https://careers.bahri.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -396,7 +396,7 @@
   {
     "orgId": "bankaljazira",
     "origin": "https://www.bankaljazira.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -404,7 +404,7 @@
   {
     "orgId": "bog",
     "origin": "https://www.bog.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 1000,
     "seenTraining": [
       "dd9c52fd445b111f",
@@ -430,7 +430,7 @@
   {
     "orgId": "bog",
     "origin": "https://khabeer.bog.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -438,7 +438,7 @@
   {
     "orgId": "bsf",
     "origin": "https://www.alfransi.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -446,7 +446,7 @@
   {
     "orgId": "citc",
     "origin": "https://www.citc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -454,7 +454,7 @@
   {
     "orgId": "citc",
     "origin": "https://www.cst.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 5000,
     "seenTraining": [
       "b482ea2acfeb6863",
@@ -491,7 +491,7 @@
   {
     "orgId": "cma",
     "origin": "https://careers.cma.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "1abceb85f8d9e491",
@@ -503,7 +503,7 @@
   {
     "orgId": "cma",
     "origin": "https://cma.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 110,
     "seenTraining": [
       "d18f8c6773dcb471"
@@ -512,25 +512,25 @@
   {
     "orgId": "deloitte_sa",
     "origin": "https://www2.deloitte.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 5000,
     "seenTraining": [
       "706aadaa41044ec0",
       "9192425db5fcc6e7",
-      "4f34652115a9c3b4",
-      "24cc6c99ccc22d6b",
-      "0b11d90adb80a79e",
       "70a782360538b9de",
-      "c5d43142010565bb",
-      "7191987f3b31cb4c",
+      "0b11d90adb80a79e",
+      "24cc6c99ccc22d6b",
+      "4f34652115a9c3b4",
+      "aa480e719db36b94",
       "c43828853b9bf5fc",
+      "c5d43142010565bb",
       "cc06592bb73d6521",
       "ad3c907028e0adfd",
-      "aa480e719db36b94",
+      "7191987f3b31cb4c",
       "c070fc2f4b643431",
-      "af3c56ced5d9fe26",
       "4d737706f050a6ea",
       "153092a3a0ecbf4a",
+      "af3c56ced5d9fe26",
       "5c7c0a248535a75d",
       "5258c049865d377d",
       "b8ac6e26db7582c4",
@@ -577,7 +577,7 @@
   {
     "orgId": "derayah",
     "origin": "https://www.derayah.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -585,7 +585,7 @@
   {
     "orgId": "dga",
     "origin": "https://career.dga.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "dba4b6a47e5f3a43",
@@ -597,7 +597,7 @@
   {
     "orgId": "ecza",
     "origin": "http://www.ecza.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 141,
     "seenTraining": [
       "1b05d8aa3aa523e6"
@@ -606,7 +606,7 @@
   {
     "orgId": "ecza",
     "origin": "https://www.ecza.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 141,
     "seenTraining": [
       "1b05d8aa3aa523e6"
@@ -615,7 +615,7 @@
   {
     "orgId": "ejada",
     "origin": "https://careers.ejada.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "4f6e538b690d55f5",
@@ -627,20 +627,19 @@
   {
     "orgId": "elm",
     "origin": "https://career.elm.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 5,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 4,
     "seenTraining": [
-      "957efe9655b84ece",
       "6af24e2cfc573397",
-      "6e18d848a73feedf",
+      "23ea0fcf2cde3d95",
       "bb8d004edfc331f5",
-      "23ea0fcf2cde3d95"
+      "41a6070baa718fc8"
     ]
   },
   {
     "orgId": "etec",
     "origin": "https://www.etec.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -648,7 +647,7 @@
   {
     "orgId": "etec",
     "origin": "https://neti.etec.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -656,7 +655,7 @@
   {
     "orgId": "ey_sa",
     "origin": "https://www.ey.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 5000,
     "seenTraining": [
       "05c1f98762284dea",
@@ -715,14 +714,14 @@
   {
     "orgId": "fakeeh",
     "origin": "https://www.fakeeh.care",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 208,
     "seenTraining": []
   },
   {
     "orgId": "falcom",
     "origin": "https://yaqeen.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -730,7 +729,7 @@
   {
     "orgId": "gac",
     "origin": "https://gac.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -738,7 +737,7 @@
   {
     "orgId": "gaca",
     "origin": "https://gaca.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -746,7 +745,7 @@
   {
     "orgId": "gaca",
     "origin": "https://www.gaca.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -754,8 +753,8 @@
   {
     "orgId": "gastat",
     "origin": "https://www.stats.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 2590,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 0,
     "seenTraining": [
       "4b1a891fc16a304d",
       "8415e06dce7a92f9",
@@ -793,12 +792,13 @@
       "37add71a7a2a4c42",
       "2b91a4d305eb002b",
       "9aabd602b289f076"
-    ]
+    ],
+    "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
   },
   {
     "orgId": "gastat",
     "origin": "https://careers.stats.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "2c0fcf3aa8f4aa45",
@@ -810,14 +810,14 @@
   {
     "orgId": "gcam",
     "origin": "https://gmedia.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 168,
     "seenTraining": []
   },
   {
     "orgId": "gea",
     "origin": "https://www.gea.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -825,7 +825,7 @@
   {
     "orgId": "housing",
     "origin": "https://momah.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 2269,
     "seenTraining": [
       "292535e31f89e674"
@@ -834,7 +834,7 @@
   {
     "orgId": "hrc",
     "origin": "https://e-services.hrc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -842,7 +842,7 @@
   {
     "orgId": "hrc",
     "origin": "https://www.hrc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -850,7 +850,7 @@
   {
     "orgId": "hrsd",
     "origin": "https://hrsd.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 5000,
     "seenTraining": [
       "2d14412ffd36f399",
@@ -903,7 +903,7 @@
   {
     "orgId": "hrsd",
     "origin": "https://www.hrsd.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 5000,
     "seenTraining": [
       "2d14412ffd36f399",
@@ -956,7 +956,7 @@
   {
     "orgId": "jadwa",
     "origin": "https://www.jadwa.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -964,8 +964,8 @@
   {
     "orgId": "kapsarc",
     "origin": "https://www.kapsarc.org",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 3443,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 3444,
     "seenTraining": [
       "981d4be8755b0332",
       "35c6d1b5053d259d",
@@ -976,6 +976,7 @@
       "71351e9d9dec9aa2",
       "efd46b02e7016a78",
       "fa011acb88e8ab7f",
+      "757057ed3cd5c908",
       "c2c678a47143d9d2",
       "3fc3dbe6fb9cfa78",
       "dd665a1b46ada265",
@@ -983,7 +984,6 @@
       "e1bbab5a091d2b76",
       "4cb040d067917bde",
       "cdd59e6bcef0ff7e",
-      "427b4a4b4337f975",
       "f7d56fa1c66588a9",
       "5881928e73ae7ba0",
       "9d38df3b4571dde2",
@@ -997,7 +997,7 @@
   {
     "orgId": "kpmg_sa",
     "origin": "https://slccareers.kpmg.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 10,
     "seenTraining": [
       "4dad68913fd20e32",
@@ -1008,14 +1008,14 @@
       "bc4db13b8c4445d4",
       "8580d7deb10f59ee",
       "7271b5d64c1734e1",
-      "bb92158942831d8f",
-      "d50dae0ee9ee37b4"
+      "d50dae0ee9ee37b4",
+      "bb92158942831d8f"
     ]
   },
   {
     "orgId": "lcgpa",
     "origin": "https://lcgpa.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1023,8 +1023,8 @@
   {
     "orgId": "maaden",
     "origin": "https://careers.maaden.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 43,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 44,
     "seenTraining": [
       "b842e21902ee8b0e",
       "a2cdc2c48ce6eb2a",
@@ -1040,9 +1040,9 @@
       "258c568a3aef7594",
       "088f0cf19b094388",
       "8f90c20d3bdf8e6c",
+      "1cecf45b85f71ed3",
       "7583c07b04769697",
       "739a301d158cfc59",
-      "291cead0efa42634",
       "64cfd78a2590cdc8",
       "9b918f0e9511510d",
       "611eccc0c7cfc69e",
@@ -1052,6 +1052,7 @@
       "5fc2f012400de8e7",
       "5c27eb328f1f91ae",
       "970bb5aac6cc8a19",
+      "b73fd66009cf0c8e",
       "b77dd14aa2b65f43",
       "83c8cd1451f55812",
       "263a5cf3e75e40d7",
@@ -1068,7 +1069,7 @@
   {
     "orgId": "masterworks",
     "origin": "https://master-works.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1076,8 +1077,8 @@
   {
     "orgId": "mawhiba",
     "origin": "https://mawhiba.org",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 1507,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 1510,
     "seenTraining": [
       "5ba902c4d88a5dd4",
       "784745693b60d9ba",
@@ -1200,7 +1201,7 @@
   {
     "orgId": "mc",
     "origin": "https://mc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1208,7 +1209,7 @@
   {
     "orgId": "mc",
     "origin": "https://talent.mc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "b0cdea635253bfaf",
@@ -1220,7 +1221,7 @@
   {
     "orgId": "mcit",
     "origin": "https://futureskills.mcit.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1228,14 +1229,14 @@
   {
     "orgId": "mcit",
     "origin": "https://mcit.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 66,
     "seenTraining": []
   },
   {
     "orgId": "mckinsey_sa",
     "origin": "https://www.mckinsey.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1243,7 +1244,7 @@
   {
     "orgId": "mecca_health",
     "origin": "https://makkah-careers.health.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1251,7 +1252,7 @@
   {
     "orgId": "mep",
     "origin": "https://mep.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1259,7 +1260,7 @@
   {
     "orgId": "mewa",
     "origin": "https://www.mewa.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 874,
     "seenTraining": [
       "031c728211d5636d",
@@ -1279,7 +1280,7 @@
   {
     "orgId": "mim",
     "origin": "https://www.mim.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 412,
     "seenTraining": [
       "9df283f23442d7bc",
@@ -1297,14 +1298,14 @@
   {
     "orgId": "misa",
     "origin": "https://misa.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 42,
     "seenTraining": []
   },
   {
     "orgId": "misa",
     "origin": "https://jobs.misa.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1312,15 +1313,15 @@
   {
     "orgId": "mobily",
     "origin": "https://careers.mobily.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 1,
     "seenTraining": []
   },
   {
     "orgId": "moc",
     "origin": "https://www.moc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 1480,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 1482,
     "seenTraining": [
       "2df02bd50e959ca4",
       "b24577b9a67449cd",
@@ -1337,7 +1338,7 @@
   {
     "orgId": "modon",
     "origin": "https://modon.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1345,7 +1346,7 @@
   {
     "orgId": "modon",
     "origin": "https://careers.modon.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "41dc153b76dbc33f",
@@ -1357,14 +1358,14 @@
   {
     "orgId": "moe",
     "origin": "https://www.moe.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 14,
     "seenTraining": []
   },
   {
     "orgId": "moenergy",
     "origin": "http://www.moenergy.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 1284,
     "seenTraining": [
       "2eb7f4e2db62e35f",
@@ -1397,7 +1398,7 @@
   {
     "orgId": "moenergy",
     "origin": "https://www.moenergy.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 1284,
     "seenTraining": [
       "2eb7f4e2db62e35f",
@@ -1430,7 +1431,7 @@
   {
     "orgId": "mof",
     "origin": "https://www.mof.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1438,7 +1439,7 @@
   {
     "orgId": "mofa",
     "origin": "https://www.mofa.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1446,7 +1447,7 @@
   {
     "orgId": "mofa",
     "origin": "https://jobs.mofa.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1454,7 +1455,7 @@
   {
     "orgId": "moh",
     "origin": "https://www.moh.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 5000,
     "seenTraining": [
       "efedb08516195955",
@@ -1545,7 +1546,7 @@
   {
     "orgId": "moj",
     "origin": "https://training.moj.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1553,14 +1554,14 @@
   {
     "orgId": "monshaat",
     "origin": "https://www.monshaat.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 1796,
     "seenTraining": []
   },
   {
     "orgId": "mot",
     "origin": "https://www.mot.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1568,14 +1569,14 @@
   {
     "orgId": "mot",
     "origin": "https://mot.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 226,
     "seenTraining": []
   },
   {
     "orgId": "nazaha",
     "origin": "https://www.nazaha.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1583,41 +1584,31 @@
   {
     "orgId": "nca",
     "origin": "https://nca.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 1842,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 1622,
     "seenTraining": [
       "8593605f876a6b2c",
       "549b9e612f463a4e",
-      "505c629c89c64187",
-      "5886d502dc53ef60",
       "fb3568b584c54cd1",
-      "369e0ee19395e1d5",
-      "c778e9e640a2d994",
-      "c08c9523cea01a21",
       "83c1d3fffc1145ad"
     ]
   },
   {
     "orgId": "ncac",
     "origin": "https://nca.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 1842,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 1622,
     "seenTraining": [
       "8593605f876a6b2c",
       "549b9e612f463a4e",
-      "505c629c89c64187",
-      "5886d502dc53ef60",
       "fb3568b584c54cd1",
-      "369e0ee19395e1d5",
-      "c778e9e640a2d994",
-      "c08c9523cea01a21",
       "83c1d3fffc1145ad"
     ]
   },
   {
     "orgId": "ncai",
     "origin": "https://sdaia.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 226,
     "seenTraining": [
       "00ccaf476cfa2652",
@@ -1627,7 +1618,7 @@
   {
     "orgId": "ncar",
     "origin": "https://ncar.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1635,7 +1626,7 @@
   {
     "orgId": "ncc",
     "origin": "https://www.ncc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 90,
     "seenTraining": [
       "1e266f1b0994e993",
@@ -1645,7 +1636,7 @@
   {
     "orgId": "ncdc",
     "origin": "https://ncdc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1653,7 +1644,7 @@
   {
     "orgId": "ndf",
     "origin": "https://ndf.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 92,
     "seenTraining": [
       "70be2b2f9bc6f87e"
@@ -1662,21 +1653,21 @@
   {
     "orgId": "nournet",
     "origin": "https://nour.net.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 241,
     "seenTraining": []
   },
   {
     "orgId": "pension",
     "origin": "https://www.gosi.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 47,
     "seenTraining": []
   },
   {
     "orgId": "pif",
     "origin": "https://www.pif.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1684,7 +1675,7 @@
   {
     "orgId": "pwc_sa",
     "origin": "https://www.pwc.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1692,14 +1683,14 @@
   {
     "orgId": "rcjy",
     "origin": "https://www.rcjy.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 118,
     "seenTraining": []
   },
   {
     "orgId": "rcjy",
     "origin": "https://careers.rcjy.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "f6c3a5d81181327c",
@@ -1711,7 +1702,7 @@
   {
     "orgId": "rcrc",
     "origin": "https://www.rcrc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 1629,
     "seenTraining": [
       "4b7798b7290d6417",
@@ -1727,7 +1718,7 @@
   {
     "orgId": "rcu",
     "origin": "https://www.rcu.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 647,
     "seenTraining": [
       "4f5053b0d234fa11",
@@ -1739,14 +1730,14 @@
   {
     "orgId": "redf",
     "origin": "https://redf.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 152,
     "seenTraining": []
   },
   {
     "orgId": "rega",
     "origin": "https://www.rega.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1754,14 +1745,14 @@
   {
     "orgId": "rega",
     "origin": "https://rega.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 928,
     "seenTraining": []
   },
   {
     "orgId": "riyadbank",
     "origin": "https://www.riyadbank.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1769,7 +1760,7 @@
   {
     "orgId": "riyadbank",
     "origin": "https://careers.riyadbank.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "06f292968bea043e",
@@ -1781,7 +1772,7 @@
   {
     "orgId": "sabic",
     "origin": "https://www.sabic.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1789,7 +1780,7 @@
   {
     "orgId": "saib",
     "origin": "https://www.saib.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1797,7 +1788,7 @@
   {
     "orgId": "saib",
     "origin": "https://careers.saib.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "b35283a2dcdb9a1f",
@@ -1809,7 +1800,7 @@
   {
     "orgId": "saip",
     "origin": "https://www.saip.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 500,
     "seenTraining": [
       "694c2fb165eb9028",
@@ -1819,7 +1810,7 @@
   {
     "orgId": "sama",
     "origin": "https://careers.sama.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1827,7 +1818,7 @@
   {
     "orgId": "sanabil",
     "origin": "https://www.sanabil.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1835,7 +1826,7 @@
   {
     "orgId": "sar",
     "origin": "https://www.sar.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1843,7 +1834,7 @@
   {
     "orgId": "saso",
     "origin": "https://www.saso.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 3442,
     "seenTraining": [
       "1c1396fef03f0afd",
@@ -1867,7 +1858,7 @@
   {
     "orgId": "saudi_exports",
     "origin": "https://www.saudiexports.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1875,7 +1866,7 @@
   {
     "orgId": "scfhs",
     "origin": "https://careers.scfhs.org.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 16,
     "seenTraining": [
       "42352ea8c6771720",
@@ -1887,7 +1878,7 @@
   {
     "orgId": "sdaia",
     "origin": "https://sdaia.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 226,
     "seenTraining": [
       "00ccaf476cfa2652",
@@ -1897,7 +1888,7 @@
   {
     "orgId": "sdaia",
     "origin": "https://careers.sdaia.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1905,32 +1896,91 @@
   {
     "orgId": "seec",
     "origin": "https://www.seec.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 72,
     "seenTraining": [
-      "7144037aa2c8f0f2",
-      "3721c726e304bd43"
+      "d19646243b4dd77e",
+      "21c67eb96bb902e0"
     ]
   },
   {
     "orgId": "sfd",
     "origin": "https://www.sfd.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 136,
     "seenTraining": []
   },
   {
     "orgId": "sfda",
     "origin": "https://www.sfda.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 0,
-    "seenTraining": [],
-    "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 5000,
+    "seenTraining": [
+      "8a01efc44001cbe4",
+      "af7692a17d1e9e2a",
+      "ae3beb0923cbfd68",
+      "aecf1ba059dc942c",
+      "a7c81d124c4c2188",
+      "75fd96b73be2759b",
+      "326378b08070eb3e",
+      "656dd84f472341c4",
+      "d0566d5596f8ef0f",
+      "104a6767b1fad387",
+      "717017c44082054d",
+      "d2be5deab477b21b",
+      "1b991aad618a49ef",
+      "ac94484e59c190ac",
+      "c012dd883c1c9d82",
+      "72786e49eafc60d0",
+      "ce2867bf4081d696",
+      "de9bd4d33a049d93",
+      "73c87cc81055b48d",
+      "0a4e1a6ba065b266",
+      "086b61a4ebd81420",
+      "bbfbf50c129603b8",
+      "eb72e93c32a9c55b",
+      "844fb23e6bd7341d",
+      "d7a2294fe987eade",
+      "3f0ccbcc5e38f08b",
+      "fa36e15c082dd94b",
+      "7f96c5a955eb59b3",
+      "b6bdd887a6a8c236",
+      "3d159bd634d22950",
+      "7567309840e37423",
+      "6d71608adf417e8d",
+      "3553c0519b0d1aec",
+      "d988889447b39880",
+      "3b68499e4f225810",
+      "3a9cd7f4b375e67c",
+      "7018b5f06ab2f84f",
+      "926d7a87159fd1ed",
+      "f419e484a3ddc440",
+      "a6e78940305eacbd",
+      "5d7305fac8560a06",
+      "124b28f6cedbd892",
+      "28d434b1f90ec334",
+      "eb3c3ec1331cb41a",
+      "c2f0e0f81269bc88",
+      "a97a46a4cbced91f",
+      "7111665450707c5e",
+      "215b04f50f0d5e8a",
+      "4e87dc632e8b839f",
+      "81f7e108cbcd33d2",
+      "48b63b97b06c5c79",
+      "224cfc7faef58159",
+      "6d3c566d14050fee",
+      "471ff25319a610e4",
+      "ba9c095e25a28e40",
+      "1f045f980b36c3d5",
+      "3a07ee3dd32afee8",
+      "e457ead47542c542",
+      "0956a3555e6e4bed"
+    ]
   },
   {
     "orgId": "sidf",
     "origin": "https://www.sidf.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 415,
     "seenTraining": [
       "d73ca2cd8334cc01",
@@ -1984,7 +2034,7 @@
   {
     "orgId": "simah",
     "origin": "https://www.simah.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -1992,7 +2042,7 @@
   {
     "orgId": "site",
     "origin": "https://site.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 11,
     "seenTraining": [
       "28a84755596c8c34"
@@ -2001,8 +2051,8 @@
   {
     "orgId": "snb",
     "origin": "https://www.alahli.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 1971,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 1977,
     "seenTraining": [
       "b53646c42bc6f239",
       "b53646c42bc6f239",
@@ -2054,7 +2104,7 @@
   {
     "orgId": "srca",
     "origin": "https://www.srca.org.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 513,
     "seenTraining": [
       "ba4a50ceb50d855d",
@@ -2104,7 +2154,7 @@
   {
     "orgId": "ssc",
     "origin": "https://ssa.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 56,
     "seenTraining": [
       "bea844c126ea3877",
@@ -2114,8 +2164,8 @@
   {
     "orgId": "sta",
     "origin": "https://sta.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
-    "urlCount": 72,
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
+    "urlCount": 73,
     "seenTraining": [
       "2bfc733293177faa",
       "e9cfb6017670469d"
@@ -2124,7 +2174,7 @@
   {
     "orgId": "stc",
     "origin": "https://careers.stc.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 2,
     "seenTraining": [
       "4c9809bce5c82c91",
@@ -2134,7 +2184,7 @@
   {
     "orgId": "swcc",
     "origin": "https://www.swcc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -2142,7 +2192,7 @@
   {
     "orgId": "tadawul",
     "origin": "https://www.saudiexchange.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -2150,7 +2200,7 @@
   {
     "orgId": "taif_amanah",
     "origin": "https://www.taifcity.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -2158,7 +2208,7 @@
   {
     "orgId": "taif_uni_it",
     "origin": "https://www.tu.edu.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -2166,7 +2216,7 @@
   {
     "orgId": "takamol",
     "origin": "https://takamolholding.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -2174,7 +2224,7 @@
   {
     "orgId": "tawuniya",
     "origin": "https://www.tawuniya.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -2182,7 +2232,7 @@
   {
     "orgId": "tetco",
     "origin": "https://tetco.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 114,
     "seenTraining": [
       "2e35b941c6e22e02",
@@ -2194,7 +2244,7 @@
   {
     "orgId": "thiqah",
     "origin": "https://thiqah.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -2202,7 +2252,7 @@
   {
     "orgId": "thiqah",
     "origin": "https://www.thiqah.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -2210,7 +2260,7 @@
   {
     "orgId": "tvtc",
     "origin": "https://tvtc.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -2218,7 +2268,7 @@
   {
     "orgId": "unilever_sa",
     "origin": "https://www.unilever.com",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 0,
     "seenTraining": [],
     "note": "لا يعلن هذا الموقع خريطة روابط تُقرأ"
@@ -2226,7 +2276,7 @@
   {
     "orgId": "wadi_makkah",
     "origin": "https://wadimakkah.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 269,
     "seenTraining": [
       "e8bb59811ed1987a",
@@ -2249,7 +2299,7 @@
   {
     "orgId": "wasatah",
     "origin": "http://www.wasatah.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 520,
     "seenTraining": [
       "071e6f38dcf5bee9",
@@ -2261,7 +2311,7 @@
   {
     "orgId": "wasatah",
     "origin": "https://wasatah.com.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 520,
     "seenTraining": [
       "071e6f38dcf5bee9",
@@ -2273,7 +2323,7 @@
   {
     "orgId": "zatca",
     "origin": "https://careers.zatca.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 2,
     "seenTraining": [
       "9864b638de271352",
@@ -2283,7 +2333,7 @@
   {
     "orgId": "zatca",
     "origin": "https://zatca.gov.sa",
-    "lastReadISO": "2026-08-31T21:00:18.128Z",
+    "lastReadISO": "2026-09-01T21:00:22.853Z",
     "urlCount": 5000,
     "seenTraining": [
       "07d07614a6adb410",

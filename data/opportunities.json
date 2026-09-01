@@ -1,34 +1,5 @@
 [
   {
-    "id": "01be7fdf0da1eb4e",
-    "orgId": "hrc",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNDjAb6cSpYkkxWmJHe\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://www.hrc.gov.sa/website/news?lang=ar",
-    "applyUrl": null,
-    "rawExcerpt": "هيئة حقوق الإنسان - جميع الأخبار\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟\n\nروابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الإلكترونية الحكومية الموثوقة تستخدم بروتوكول HTTPS تحقق من أن الموقع يستخدم بروتوكول HTTPS مسجل لدى هيئة الحكومة الرقمية برقم: 20260402522 غائم 31-أغ"
-  },
-  {
     "id": "05c1fdcd70df03d0",
     "orgId": "rega",
     "titleAr": "لم يُصنَّف بعد",
@@ -46,7 +17,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLdXwumvp9tJkm6XRo\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -55,35 +26,6 @@
     "sourceUrl": "https://www.rega.gov.sa/",
     "applyUrl": null,
     "rawExcerpt": "البرامج والخدمات العقارية تمـلُّك غير السعوديين للعقار يمثل نظام تملك غير السعوديين للعقار الإطار التنظيمي المحدّث لتمكين غير السعوديين من تملك العقارات في... عقاري التطبيق الرسمي للخدمات الإلكترونية للهيئة، يقدم تجربة رقمية متكاملة تتيح للأفراد والمنشآت العقارية... الوساطة العقارية تُنظم التعاملات العقارية وتحفظ حقوق الأطراف، بما يعزّز الثقة ويحفّز التطوير والابتكار في السوق... المساهمات العقارية"
-  },
-  {
-    "id": "079df6fca080ffc1",
-    "orgId": "mof",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNL86eLwzPqCv87QTFe\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://www.mof.gov.sa/Pages/default.aspx",
-    "applyUrl": null,
-    "rawExcerpt": "وزارة رائدة تُسهم في دعم التنمية الاقتصادية للمملكة العربية السعودية، عبر منظومة مالية مبتكرة ومستدامة تعرف على استراتيجية وزارة المالية الشفافية الشفافيةشفافيتنا في التعامل والتواصل والتبادل المعرفي قيمة أصيلة لمصداقيتنا. الالتزام الالتزامنلتزم بمسؤوليتنا في تمكين نهضة الوطن وتحقيق رؤيته، ببصيرة وتخطيط. الشراكة الشراكةنعي أهمية دورنا في خدمة شركائنا لتلبية حاجاتهم وتحقيق أهدافهم. الإنجاز الإنجازا"
   },
   {
     "id": "07e0fcb183f0ab2f",
@@ -103,7 +45,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNAS5r9KKPiAVkEgkYy\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -132,7 +74,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKdjaSXMjjJmuvpEzH\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -161,7 +103,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKguKv4JdEv1pW9TF9\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -219,7 +161,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKK3gFGwewLAac2KuD\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -248,7 +190,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNMEaMUwyPU7dTXcauR\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -276,7 +218,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNHtDurFhZ5UTG9ffmN\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -286,6 +228,35 @@
     "sourceUrl": "https://careers.modon.gov.sa/",
     "applyUrl": null,
     "rawExcerpt": "بيئة العمل في\"مدن\" تجربة العمل في\"مدن\" هي مزيج متكامل من الاحترافية والتعاون والابتكار، حيث نحرص على توفير بيئة عمل محفزة تتيح فرصًا ملائمة للتعلم المستمر، وبرامج تطوير قيادية، ومسارات مهنية تعزز من قدرات الموظف وتأهيله لتحمل المسؤوليات المستقبلية. كما يحظى منسوبو\"مدن\" بدعم شامل يشمل التدريب المتخصص، والإرشاد المهني، إلى جانب مبادرات تعنى برفاهية الموظف وجودة الحياة داخل بيئة العمل، بما يعزز من إن"
+  },
+  {
+    "id": "217ea4c276739188",
+    "orgId": "deloitte_sa",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-08-31T19:04:22.590Z",
+    "firstSeenISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review",
+      "vanished_from_source"
+    ],
+    "sourceUrl": "https://www2.deloitte.com/",
+    "applyUrl": null,
+    "rawExcerpt": "Resilience Redefined Navigating complexity. Building continuity. Enabling recovery. Discover how Deloitte Middle East’s thought leadership collection, Resilience Redefined, can empower your organization to adapt, thrive, and build a more resilient future. Connecting the dots. It’s what we do. Since the beginning, Deloitte has been about creating connections. With our clients, our talent, and our c"
   },
   {
     "id": "225f57685588deb4",
@@ -305,7 +276,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLuQvq9KsSegoWD3G9\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -321,7 +292,7 @@
     "titleAr": "برنامج سدايا للتدريب التعاوني",
     "detectedISO": "2026-08-31T00:02:49.563Z",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastConfirmedISO": "2026-09-01T02:04:59.635Z",
+    "lastConfirmedISO": "2026-09-01T06:06:15.420Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -334,24 +305,22 @@
     "cities": [
       "الرياض"
     ],
-    "relevanceScore": 70,
-    "relevanceReason": "البرنامج يتعلق بالذكاء الاصطناعي والبيانات وهو تقني عام يتقاطع جزئياً مع تخصص الطالب في الأمن السيبراني.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "no_course_condition"
-    ],
+    "relevanceScore": 65,
+    "relevanceReason": "التدريب في هيئة تُعنى بالبيانات والذكاء الاصطناعي وهو ذو صلة بتخصص الحاسب/الأمن السيبراني، لكن الإعلان لا يحدد مسارًا أمنيًا صريحًا، كما أن شرط التفرغ الكامل يمنع الطالب من التقديم بسبب تسجيله مقررات مسائية ومشروع التخرج.",
+    "statesZeroCoursesRule": true,
+    "zeroCoursesQuote": "نعم، يشترط التفرغ الكامل للتدريب التعاوني في الهيئة، وألا يكون الطالب مسجلًا في أي مقررات دراسية خلال فترة التدريب",
+    "flags": [],
     "sourceUrl": "https://athkax.sdaia.gov.sa/coop",
     "applyUrl": null,
-    "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي بحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي برنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي بحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي برنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nونمكّنهم من صناعة أثرٍ يمتد إلى "
+    "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبرنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nونمكّنهم من صناعة أثرٍ يمتد إلى المستقبل.شروط القبولسعودي الجنسيةأن يكون المتقدم سعودي الجنسية.طالب منتظمأن يكون المتقدم من طلاب الجامعات أو الكليات.قبل"
   },
   {
-    "id": "2c4887f0b71a2312",
-    "orgId": "nazaha",
+    "id": "2d8c8bc0480ea7ad",
+    "orgId": "mckinsey_sa",
     "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "detectedISO": "2026-09-01T03:23:53.266Z",
+    "firstSeenISO": "2026-09-01T03:23:53.266Z",
+    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -363,15 +332,15 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLMa1TjWiybCD9R1ff\"}",
+    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "needs_manual_review"
     ],
-    "sourceUrl": "https://www.nazaha.gov.sa/",
+    "sourceUrl": "https://www.mckinsey.com/middle-east/ar/riyadh",
     "applyUrl": null,
-    "rawExcerpt": "شكراً لكم رأيكم محل اهتمامنا لقد حققت المملكة نجاحات متتالية في مكافحة الفساد، وهو نهج أضـــــحى استراتيجية أساسية لدينا، بتكريس مبدأ الشفافية والمساءلة، وتتبع ومراقبة الأداء الحكومي وفاعليته خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز آل سعود لن ينجو أي شخص دخل في قضية فساد أيًّا من كان.. لن ينجو.. سواءً كان وزيرًا، أو أميرًا، أو أيًّا من كان.. أي أحد تتوفر عليه الأدلة الكافية سوف يُحاسب سمو و"
+    "rawExcerpt": "ماكنزي في الشرق الأوسطالرياضيعمل مكتب ماكنزي في المملكة العربية السعودية على مساعدة القادة السعوديين من أجل تحقيق كامل إمكانات المملكة المتمثلة في إرساء طبقة وسطى نابضة بالحياة تتمتع بمستوى معيشي مناسب وتتميز بمنظومة قائمة على قطاع خاص على مستوى عالٍ من التنافسية وقطاع عام معاصر.حققت المملكة العربية السعودية خلال السنوات الماضية نموًا هائلاً، ولكنها مع ذلك لا زالت تتمتع بحجم كبير من الإمكانات التي"
   },
   {
     "id": "2f0ba3d473a25c51",
@@ -425,7 +394,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLaKyFuWUv4ExdiJG9\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -453,7 +422,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebN8J2c67KvXyg26G1MM\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -482,7 +451,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNK2w4hHrrfhaVCCqnT\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -492,6 +461,35 @@
     "sourceUrl": "https://talent.mc.gov.sa/",
     "applyUrl": null,
     "rawExcerpt": "وظائف وزارة التجارة برنامج أفق تقديم السيرة الذاتيةهل انت مهتم ببناء مسيرة مهنية معنا؟ قدم سيرتك الذاتية الآن البحث عن وظائفابحث عن الفرصة المثالية وتقدم اليها بكبسة زر حسابيتحكم بعملية بحثك عن عمل من خلال تحديث سيرك الذاتية باستمرار ومتابعة طلباتك. المنصة الوطنية الموحدة للتوظيف (جدارات) رسالة إدارة الموارد البشرية إدارة الموارد البشرية بوزارة التجارة ملتزمة بجعل الوزارة المكان الأفضل للعمل من خل"
+  },
+  {
+    "id": "35c740956180c33a",
+    "orgId": "housing",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-01T03:23:53.266Z",
+    "firstSeenISO": "2026-09-01T03:23:53.266Z",
+    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review",
+      "vanished_from_source"
+    ],
+    "sourceUrl": "https://momah.gov.sa/ar/form/partnerships-and-cooperation",
+    "applyUrl": null,
+    "rawExcerpt": "نموذج التواصل الإلكتروني - الشراكات و التعاون الدولي | وزارة البلديات\n\nتجاوز إلى المحتوى الرئيسي موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيف تتحققالإعدادات طباعة حفظ الصفحةأدوات سهولة الوصولروابط المواقع الالكترونية الرسمية السعودية تنتهي بgov.saجميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـgov.saالمواقع الالكترونية الحكومية تستخدم بروتوكولHTTPS"
   },
   {
     "id": "3729a147a0ee11b5",
@@ -570,7 +568,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNHfoneuvKZZuPucxBc\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -599,7 +597,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLgdyimtKKcWC33gmV\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -615,7 +613,7 @@
     "titleAr": "برنامج التدريب التعاوني - وزارة العدل",
     "detectedISO": "2026-08-29T16:36:58.372Z",
     "firstSeenISO": "2026-08-29T16:36:58.372Z",
-    "lastConfirmedISO": "2026-09-01T02:04:59.635Z",
+    "lastConfirmedISO": "2026-09-01T06:06:15.420Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -805,7 +803,7 @@
     "titleAr": "مبادرة التدريب التعاوني - وزارة الصناعة والثروة المعدنية",
     "detectedISO": "2026-08-29T16:36:58.372Z",
     "firstSeenISO": "2026-08-29T16:36:58.372Z",
-    "lastConfirmedISO": "2026-09-01T02:04:59.635Z",
+    "lastConfirmedISO": "2026-09-01T21:35:09.513Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -813,17 +811,15 @@
     "product": "coop",
     "majors": [
       "التخصصات العلمية والتطبيقية",
-      "الهندسية",
-      "التقنية",
-      "الفنية",
+      "الصناعية الهندسية والتقنية والفنية",
       "التعدين"
     ],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 15,
-    "relevanceReason": "المبادرة موجهة لقطاعي الصناعة والتعدين وليست متخصصة في الأمن السيبراني أو تقنية المعلومات رغم شمولها لتخصصات علمية وتطبيقية عامة.",
+    "relevanceScore": 20,
+    "relevanceReason": "المبادرة موجهة لتخصصات الصناعة والهندسة والتعدين وليست موجهة تحديدًا للأمن السيبراني أو تقنية المعلومات.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -851,7 +847,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebN8BoobbzB1QLbe9qtY\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -861,35 +857,6 @@
     "sourceUrl": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities/college-degree-program",
     "applyUrl": null,
     "rawExcerpt": "Skip to contentCollege scholarships for Saudi high school graduates.The College Degree Program (CDPNE) is a highly-selective scholarship program for Saudi male and female high school graduates. It is one of the Aramco's primary sources for entry-level Saudi professionals. Each year, Aramco selects outstanding Saudi high school graduates from the General path, Computer Science & Engineering path, o"
-  },
-  {
-    "id": "44ac60ffb04d082e",
-    "orgId": "adf",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNHPz2ocUYZe8GwtrCN\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://adf.gov.sa/ar/Pages/default.aspx",
-    "applyUrl": null,
-    "rawExcerpt": "صندوق التنمية الزراعية\n\nالصفحة الرئيسية لصندوق التنمية الزراعية موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان.\n\n​ استفد من الخدمة خدمة إعفاء المقترضين المتوفين "
   },
   {
     "id": "472cac81f2802010",
@@ -909,7 +876,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKRFFExtrCfsf2AHS8\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -967,7 +934,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJ6a4ZAnx1cySzaAo1\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1088,7 +1055,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNDWRd2F1HW5UUFYgPU\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1117,7 +1084,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNCCt9yQ8o4YcDPFicb\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1146,7 +1113,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNHLq2qG5Fr5fiNpPUZ\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1191,7 +1158,7 @@
     "titleAr": "تدريب تعاوني",
     "detectedISO": "2026-08-31T23:54:26.779Z",
     "firstSeenISO": "2026-08-31T23:54:26.779Z",
-    "lastConfirmedISO": "2026-09-01T02:04:59.635Z",
+    "lastConfirmedISO": "2026-09-01T06:06:15.420Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -1202,14 +1169,12 @@
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 30,
-    "relevanceReason": "الإعلان عام عن برنامج تدريب تعاوني دون تحديد مجال أو تخصص مرتبط بالأمن السيبراني.",
+    "relevanceScore": 25,
+    "relevanceReason": "الإعلان عام عن برنامج تدريب تعاوني دون تحديد تخصص أو مجال تقني واضح مثل الأمن السيبراني.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "no_course_condition",
-      "more_on_page",
-      "vanished_from_source"
+      "no_course_condition"
     ],
     "sourceUrl": "https://www.rcrc.gov.sa/careers/?lang=ar",
     "applyUrl": null,
@@ -1233,7 +1198,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNC3VbdFMEYViUreSox\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1262,7 +1227,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNC9p7PgD6MaRrdDV9g\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1291,7 +1256,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLo4SAbSqVXXbZJiN1\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1360,6 +1325,34 @@
     "rawExcerpt": "يأتي برنامج التدريب التعاوني ضمن المسؤولية الاجتماعية والمهنية في الهيئة العامة للإحصاء؛ وذلك بهدف رفع مستويات المعرفة والمهارة لدى كفاءات الوطن من الطلبة الخريجين وتمكينهم من تطبيق الدراسات الأكاديمية في بيئة العمل الفعلية، إثراءً لحياتهم العملية واكتسابهم خبرة تؤهلهم للتميز في سوق العمل مستقبلاً. أن لا يقل المعدل عن 3.75 من 5 أو 2.75 من 4 في درجة البكالوريوس. أن لا يكون المتقدم قد تخرج وحقق متطل"
   },
   {
+    "id": "6bb6ad95749c7d21",
+    "orgId": "pwc_sa",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-01T03:23:53.266Z",
+    "firstSeenISO": "2026-09-01T03:23:53.266Z",
+    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://www.pwc.com/m1/en/careers/oman-nationals-careers.html",
+    "applyUrl": null,
+    "rawExcerpt": "Opportunities for Omani Nationals Your career is just that; yours. You choose it. You live it. You make it happen. To get the best from it, you need the best opportunities. That’s why opportunities are at the heart of a career with us. Opportunities to grow as an individual, to make an impact in a place where people, quality and value mean everything and to build lasting relationships that will st"
+  },
+  {
     "id": "6d4f1ed7cf68e295",
     "orgId": "ncdc",
     "titleAr": "لم يُصنَّف بعد",
@@ -1377,7 +1370,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJkKgK1EAATURS1py9\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1450,7 +1443,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNK6C2E5zG8135DpKh3\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1479,7 +1472,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNDLvsYAunEEaf4fWh6\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1489,6 +1482,37 @@
     "sourceUrl": "https://www.alahli.com/en/pages/personal-banking",
     "applyUrl": null,
     "rawExcerpt": "Personal Finance CalculatorPersonal DetailsEmploymentSalaried EmployeeRetiredMortgage typeNo MortgageMonthly Payment0Total Loan Amount0Total Eligible Amount0The calculated APR is an initial estimate and it is subject to change depending on the final agreed repayment schedule.APR0%Terms and conditions apply. Interest rates vary by tenor & subject to bank policyHome Finance CalculatorProperty Val"
+  },
+  {
+    "id": "740ca0165976df95",
+    "orgId": "hrc",
+    "titleAr": "برنامج تطوير الخريجين - هيئة حقوق الإنسان",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-09-01T21:35:09.513Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "graduate_dev",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [
+      "الرياض"
+    ],
+    "relevanceScore": 0,
+    "relevanceReason": "البرنامج مخصص للخريجين ضمن برنامج تطوير الخريجين، والطالب لم يتخرج بعد فهو غير مؤهل للتقديم.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "wrong_product",
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://www.hrc.gov.sa/website/careers/graduate-development-program",
+    "applyUrl": null,
+    "rawExcerpt": "هيئة حقوق الإنسان - التوظيف\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟\n\nروابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الإلكترونية الحكومية الموثوقة تستخدم بروتوكول HTTPS تحقق من أن الموقع يستخدم بروتوكول HTTPS مسجل لدى هيئة الحكومة الرقمية برقم: 20260402522 غائم 02-سبتمبر-"
   },
   {
     "id": "74601e40b0f10fdd",
@@ -1508,7 +1532,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLFNwejX5KyWU4VWnE\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1548,35 +1572,6 @@
     "rawExcerpt": "Skip to contentApprenticeship opportunities for Saudi high school graduates.The Apprenticeship Program (APNE) is designed to provide training to Saudi high school graduates to prepare them for entry-level jobs with Saudi Aramco. The program provides participants with academic and job skills training to ensure that they have the skills necessary to be successful in their future jobs. The job skills"
   },
   {
-    "id": "77bb223394222aad",
-    "orgId": "monshaat",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLJTyzSXXa4G5DDJQG\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://www.monshaat.gov.sa/",
-    "applyUrl": null,
-    "rawExcerpt": "الهيئة العامة للمنشآت الصغيرة والمتوسطة | منشآت\n\nMonshaat تجاوز إلى المحتوى الرئيسي Back to top الصفحة الرئيسية الصفحة الرئيسية Eng En إغلاق Nawafeth detailed page المستخدم عرض كافة الخدمات User Profileعن منشآتمن نحنالهيكل التنظيميالإستراتيجية والسياسات والأنظمةالمنافسات والمشترياتالميزانية والصرفالأخبار والفعالياتتصنيف المنشآتاتفاقية مستوى الخدمةالبيانات المفتوحةالمشاركة الإلكترونيةإستراتيجية أمن"
-  },
-  {
     "id": "7d5ce47aefeb9f16",
     "orgId": "moe",
     "titleAr": "لم يُصنَّف بعد",
@@ -1594,7 +1589,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNL4fGdyFJbrMMRTjko\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1652,7 +1647,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNHZXGVWkTef6PN5pHm\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1662,6 +1657,35 @@
     "sourceUrl": "https://career.dga.gov.sa/ar/",
     "applyUrl": null,
     "rawExcerpt": "نعمل في هيئة الحكومة الرقمية على تشكيل المشهد الرقمي بالمملكة عبر دعم الجهات الحكومية في تقديم وتطوير خدمات رقمية فريدة، ذات جودة وكفاءة عالية؛ لبناء بيئة رقمية عامرة تُحقِّق رفاهية المستفيدين. كُن جزءاً من صناعة التحول الحكومي الرقمي في المملكة، ضمن بيئة مُلهِمة ومُبتكِرة تضمُّ كفاءات وطاقات شابّة تدعم الطموح، وتبني المستقبل. -نحو أفق رقمي واعد- فرص مهنية مميزة نُقدِّم في هيئة الحكومة الرقمية فرص"
+  },
+  {
+    "id": "7f8bfe370a9ee0fa",
+    "orgId": "mewa",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-08-31T19:04:22.590Z",
+    "firstSeenISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review",
+      "vanished_from_source"
+    ],
+    "sourceUrl": "https://www.mewa.gov.sa/ar/Pages/default.aspx",
+    "applyUrl": null,
+    "rawExcerpt": "وزارة البيئة والمياه والزراعة موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟ روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان. المواقع الالكترونية الآمنة في المملكة العربية السعودية تستخدم بروتوكول HTTPS للتشفير. EN عام ا"
   },
   {
     "id": "80735898d0205329",
@@ -1693,63 +1717,6 @@
     "rawExcerpt": "برنامج​ التدريب التعاوني ​يهدف برنامج سدايا للتدريب التعاوني إلى تقديم تدريب عملي وعلى رأس العمل لطلاب وطالبات الجامعات في المملكة. يتبع البرنامج أفضل الممارسات في مجال التدريب التعاوني، مما يساهم في رفع مستوى معرفتهم وتطوير مهاراتهم التخصصية والشخص​ية. وتأهيل المشاركين​ لدخول سوق الع​مل بكفاءة وثقة، مما يساعدهم في بناء مستقبل وظيفي ناجح ومتميز.​ التسجيل في التدريب التعاوني ​ #6459a7 Small Yes The"
   },
   {
-    "id": "80ff102b5469f713",
-    "orgId": "gcam",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJJwwqATAJ5q6jUVsD\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://gmedia.gov.sa/",
-    "applyUrl": null,
-    "rawExcerpt": "الهيئة العامة لتنظيم الإعلام\n\nالهيئة تشدّد على أهمية الالتزام بالتصنيف العمري للألعاب الإلكترونيةتفاصيل الخبر الهيئة تقيم ورشة عمل \"ابتعاث الإعلام ـ مسار واعد\"تفاصيل الخبر \"تنظيم الإعلام\" تستعرض جهود تمكين صناعة الأفلام بالمملكةتفاصيل الخبر الهيئة تنظم ورشة عمل لمناقشة مستقبل صناعة المحتوىتفاصيل الخبر 1+ مجموع الخدماتالخدمات الأكثر استخداماً بلاغ إعلامي ترخيص تقديم المحتوى الإعلاني عبر منصات التوا"
-  },
-  {
-    "id": "8696f508943443b9",
-    "orgId": "zatca",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNMLz4s7vYNSRrjdZ3t\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review"
-    ],
-    "sourceUrl": "https://zatca.gov.sa/ar",
-    "applyUrl": null,
-    "rawExcerpt": "يمكنك الآن إجراء جميع خدماتك المتعلقة بالزكاة عبر الإنترنت بما في ذلك الحساب. زاتكا في أرقام أرقـــامنـــا تــعــكــس الـتـــزامنـــا بــتــحقـيق رؤيتــنــا الاســتراتيــجية في أن نكون نموذجًا عالميًا في حماية الوطن وإدارة الزكاة والضرائب والجمارك وتيسير التجارة بفعالية مع التركيز على العميل جاري التحميل... جاري تحميل الفعاليات... يرجى الانتظار روابط مهمة ركيــزة أساسية في تطويــر خدماتنــا وتحــق"
-  },
-  {
     "id": "88076ffe7a121bd6",
     "orgId": "stc",
     "titleAr": "لم يُصنَّف بعد",
@@ -1767,7 +1734,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJCieU9RUwNPs83TuK\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1777,35 +1744,6 @@
     "sourceUrl": "https://careers.stc.com.sa/",
     "applyUrl": null,
     "rawExcerpt": "We use cookies to offer you the best possible website experience. Your cookie preferences will be stored in your browser’s local storage. This includes cookies necessary for the website's operation. Additionally, you can freely decide and change any time whether you accept cookies or choose to opt out of cookies to improve website's performance, as well as cookies used to display content tailored "
-  },
-  {
-    "id": "8c614f411bcd92ae",
-    "orgId": "ndf",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJoMF7jpV6L9Sc644N\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://ndf.gov.sa/",
-    "applyUrl": null,
-    "rawExcerpt": "صندوق التنمية الوطني\n\nموقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيفية التحققروابط المواقع السعودية الرسمية تنتهي بـ gov.saجميع روابط المواقع الرسمية للجهات الحكومية في المملكة العربية السعودية تنتهي بـ gov.sa.المواقع الحكومية تستخدم بروتوكول HTTPSالمواقع الآمنة في المملكة العربية السعودية تستخدم بروتوكول HTTPS للتشفير.مسجل لدى هيئة الحكومة الرقمية برقم: 20260729856الاثنين، ٣١ أغسطس ٢٠٢٦ب"
   },
   {
     "id": "91b3d8d94fe3121e",
@@ -1825,7 +1763,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKuMBTWrSiJNpPQnAf\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1854,7 +1792,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNMBWYvD8dv2kLQ5q16\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1864,35 +1802,6 @@
     "sourceUrl": "https://www.stats.gov.sa/ar",
     "applyUrl": null,
     "rawExcerpt": "موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق البث المباشر روابط المواقع الالكترونية الرسمية الحكومية تنتهي بـgov.sa. جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ gov.sa المواقع الإلكترونية الحكومية الموثقة تستخدم بروتوكولHTTPS تحقق من أن الموقع يستخدم بروتوكول HTTPS مسجل لدى هيئة الحكومة الرقمية برقم : 20260625369 بحث الكلمات الاعلى بحثا الناتج المح"
-  },
-  {
-    "id": "952f5dedf8a3cc96",
-    "orgId": "hrc",
-    "titleAr": "برنامج تطوير الخريجين",
-    "detectedISO": "2026-08-31T23:54:26.779Z",
-    "firstSeenISO": "2026-08-31T23:54:26.779Z",
-    "lastConfirmedISO": "2026-09-01T02:04:59.635Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "graduate_dev",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": 0,
-    "relevanceReason": "هذا برنامج تطوير الخريجين التابع لصندوق تنمية الموارد البشرية ويشترط استلام وثيقة التخرج، والطالب لم يتخرج بعد فهو غير مؤهل للتقديم.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "wrong_product",
-      "no_course_condition"
-    ],
-    "sourceUrl": "https://www.hrc.gov.sa/website/careers/graduate-development-program",
-    "applyUrl": null,
-    "rawExcerpt": "هيئة حقوق الإنسان - التوظيف\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟\n\nروابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الإلكترونية الحكومية الموثوقة تستخدم بروتوكول HTTPS تحقق من أن الموقع يستخدم بروتوكول HTTPS مسجل لدى هيئة الحكومة الرقمية برقم: 20260402522 غائم 01-سبتمبر-"
   },
   {
     "id": "96ae5863aa0ee7eb",
@@ -1945,7 +1854,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKXTJQ5FVQzdDfgi9L\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -1974,7 +1883,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNBfwZYeLxtuE4HYwA9\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2034,7 +1943,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNL1bEDeDVMiCWLarrj\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2089,7 +1998,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLTxyxMz42YXvsKPvx\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2117,7 +2026,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNHAqWsCoWAtFLxJys1\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2146,7 +2055,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKFysw4NYWwZ2mXuS6\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2204,7 +2113,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLQqDWfUwz1A2Bd7ti\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2213,6 +2122,34 @@
     "sourceUrl": "https://www.ncc.gov.sa/ar/Pages/default.aspx",
     "applyUrl": null,
     "rawExcerpt": "\"إن مسيرة التحوّل الاقتصادي التي تتبنّاها حكومة المملكة مستمرة، وإن ما تحقق من نتائج إيجابية حتى الآن وفق توجيهات خادم الحرمين الشريفين –حفظه الله- يؤكد نجاح الإصلاحات الاقتصادية والمالية الهادفة إلى تعزيز النمو الاقتصادي الشامل، وتقوية المركز المالي للمملكة، بما يضمن الاستدامة المالية نحو مجتمع حيوي، واقتصاد مزدهر، ووطن طموح.\" صاحب السمو الملكي الأمير محمد بن سلمان بن عبدالعزيز آل سعود ولي العهد "
+  },
+  {
+    "id": "afeecdcfe55685a0",
+    "orgId": "unilever_sa",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-01T03:23:53.266Z",
+    "firstSeenISO": "2026-09-01T03:23:53.266Z",
+    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://www.unilever.com/",
+    "applyUrl": null,
+    "rawExcerpt": "No more trade-offs. No more compromises. Just beauty and wellbeing as one.Powering up Personal Care, developing superior products with breakthrough science and technology.Delivering joyful cleaning experiences for people everywhere.For the love of food – great taste is at the heart of everything we do.(1 of 10)Elfried Samba goes inside our FIFA World Cup 2026™ activationJavaScript must be enabled "
   },
   {
     "id": "b4c2d81fa289b973",
@@ -2274,6 +2211,34 @@
     "rawExcerpt": "انضم الآن ​هنا تفتح الآفاق لتكونوا جزءًا من مسيرة التمكينالفرص التدريبية انضم إلى برنامج \"تكاملي طموح\"، المصمم لتطوير وتدريب الكفاءات الواعدة من حديثي التخرج وتأهيلهم لسوق العمل.مغلقالفرص الوظيفية​انطلق في رحلتك المهنية معنا لاستكشاف إمكانياتك وتطوير مهاراتك، وكن جزءًا من رؤية تكامل القابضة.استكشف الوظائف"
   },
   {
+    "id": "bc8add6fe92a5e48",
+    "orgId": "tvtc",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-01T03:23:53.266Z",
+    "firstSeenISO": "2026-09-01T03:23:53.266Z",
+    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://tvtc.gov.sa/",
+    "applyUrl": null,
+    "rawExcerpt": "متقدم EN ع ع الخدمات الإلكترونية جميع الخدمات بوابات المؤسسة جميع البوابات الإعلانات جميع الإعلانات الأحداث والفعاليات جميع الفعاليات التاليالسابقسبتمبر 2026الأحدالاثنينالثلاثاءالأربعاءالخميسالجمعةالسبت 123456789101112131415161718192021222324252627282930 إحصائيات المؤسسة جميع الإحصائيات تحديثات مؤسسة التدريب التقني والمهني في أرقام الأخبار جميع الأخبار إدارات التدريب التقني والمهني في المناطق رواب"
+  },
+  {
     "id": "bdc38ed7138d0a2d",
     "orgId": "cma",
     "titleAr": "برنامج التدريب التعاوني للفصل الدراسي الأول 2026م",
@@ -2314,6 +2279,37 @@
     "rawExcerpt": "إنتهت صلاحية هذا الإعلان الوظيفي لقد إنتهت صلاحية هذا الإعلان الوظيفي و هو غير مفتوح حاليا لأي طلبات عمل. Capital Market Authority - هيئة السوق المالية السعودية تم النشر 2026/07/08 05:28:07 الرقم المرجعي: JB1100087033 الوصف الوظيفي نبذة عن الإدارة تتيح الهيئة لطلاب الجامعات والمعاهد ممن تتطلب تخصصاتهم الممارسة التطبيقية فرصة التدرّب بإدارات الهيئة المختلفة (بحسب التخصص). وتقدم لهم الهيئة المزايا ا"
   },
   {
+    "id": "be3238bfe2a6d30b",
+    "orgId": "sfda",
+    "titleAr": "ورشة عمل تدريبية حول التخليص الجمركي الإلكتروني للأغذية المستوردة",
+    "detectedISO": "2026-09-01T21:35:09.513Z",
+    "firstSeenISO": "2026-09-01T21:35:09.513Z",
+    "lastConfirmedISO": "2026-09-01T21:35:09.513Z",
+    "status": "closed",
+    "opensISO": "2013-04-22",
+    "closesISO": "2013-04-24",
+    "closesHijri": "١٤ جمادى الآخرة ١٤٣٤ هـ",
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [
+      "الدمام"
+    ],
+    "relevanceScore": 0,
+    "relevanceReason": "الورشة متعلقة بالتخليص الجمركي للأغذية المستوردة ولا علاقة لها بمجال الأمن السيبراني أو تخصص الطالب.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "no_course_condition",
+      "first_time_seen"
+    ],
+    "sourceUrl": "https://www.sfda.gov.sa/en/news/sfda-organizes-training-workshop-electronic-clearance-imported-food",
+    "applyUrl": null,
+    "rawExcerpt": "SFDA Organizes a Training Workshop on Electronic Clearance of Imported Food. 2013-04-03 <p class=\"ms-rteElement-P\">SFDA, represented by Food Sector, intends to organize a training workshop for operation of the Electronic Clearance of Imported Food (Pilot phase) at the Imported Food Inspection Centers at King Abdul Aziz Sea Port in Dammam and Al Batha point of entry. The purpose of the workshop is "
+  },
+  {
     "id": "bf795d8a843c0a72",
     "orgId": "srca",
     "titleAr": "لم يُصنَّف بعد",
@@ -2331,7 +2327,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNM8KZXWMWphvmvqjET\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2359,7 +2355,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLjxA8SCKJ8KbvUCqJ\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2472,7 +2468,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNM57pzXLbvcP3fSyRD\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2482,6 +2478,35 @@
     "sourceUrl": "https://www.sidf.gov.sa/ar/Pages/Home.aspx",
     "applyUrl": null,
     "rawExcerpt": "A government website registered with the Digital Government Authority.How you know?SIDF Investment CompanySIDF AcademySIDF Academy Training Programs 2026 Programs designed to support individual learning and professional growth, focusing on developing your capabilities and sharpening your skills to boost your success and advance your career. Register NowRegister Now about this exciting topicFinanci"
+  },
+  {
+    "id": "cd294b10e439368f",
+    "orgId": "maaden",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-01T03:23:53.266Z",
+    "firstSeenISO": "2026-09-01T03:23:53.266Z",
+    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review",
+      "vanished_from_source"
+    ],
+    "sourceUrl": "https://careers.maaden.com/gb/en/search-results",
+    "applyUrl": null,
+    "rawExcerpt": "We use cookies to offer you a better browsing experience, analyze site traffic, and personalize content.\n\nWe use cookies to offer you a better browsing experience, analyze site traffic, and personalize content.\n\nRead about how we use cookies and how you can control them by visiting our Cookie Settings page.Cookie SettingsAllowSkip to main content Saved jobs (0) - Your Next Big Move Build your care"
   },
   {
     "id": "d7183338cac5b725",
@@ -2501,7 +2526,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJyi5xrmygo2FSa1pt\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2530,7 +2555,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKrDQubrEwo7isQ83Q\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2559,7 +2584,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKo88aahLxRv1nnvnn\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2588,7 +2613,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKCQKkj316pCKLSLu2\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2617,7 +2642,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJaijGkeiX2qVgTXEZ\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2849,7 +2874,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKUNGMM1373Lu72mCy\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2914,7 +2939,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebN6pLCR4N1tBUYh5rdF\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2971,7 +2996,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNHHRPfG1sVBSaiMQYv\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -3000,7 +3025,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNHqCqUnqiRXMxVTxPN\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -3010,6 +3035,34 @@
     "sourceUrl": "https://careers.ejada.com/ar/",
     "applyUrl": null,
     "rawExcerpt": "Why EjadaWorking at Ejada has been an incredibly rewarding experience. The supportive work environment, opportunities for growth, and commitment to developing employees make me proud to be a part of this team. I am truly grateful for the continuous support and the culture of loyalty that Ejada fosters.Abdulrahman Al Bishi Saudi Arabia Why EjadaIn a supportive environment at Ejada, personal growth,"
+  },
+  {
+    "id": "ed087203c34bb7c2",
+    "orgId": "tadawul",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-01T03:23:53.266Z",
+    "firstSeenISO": "2026-09-01T03:23:53.266Z",
+    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/about-saudi-exchange/aboutus/careers?locale=ar",
+    "applyUrl": null,
+    "rawExcerpt": "Z7_5A602H80O0HTC060SG6UT81GM2 ملخص السوق 01 سبتمبر 2026 السوق مغلق حدد المؤشرات حدد 4 مؤشرات كحد أقصى الخدمات التجارية والمهنية 3,831.12 0.20% النقل 4,149.59 0.98% السلع طويلة الاجل 3,548.06 2.14% الخدمات الإستهلاكية 3,474.93 0.61% الإعلام والترفيه 8,724.44 0.88% تجزئة وتوزيع السلع الكمالية 7,612.94 0.19% تجزئة وتوزيع السلع الاستهلاكية 5,283.62 0.86% إنتاج الأغذية 4,701.91 0.56% الرعاية الصحية 9,0"
   },
   {
     "id": "f0652fa7d89117bb",
@@ -3029,7 +3082,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJ3Q4gRJFxyCPXG6gV\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -3046,22 +3099,22 @@
     "titleAr": "برنامج موبايلي التعاوني",
     "detectedISO": "2026-08-29T20:08:44.470Z",
     "firstSeenISO": "2026-08-29T20:08:44.470Z",
-    "lastConfirmedISO": "2026-09-01T06:03:15.831Z",
+    "lastConfirmedISO": "2026-08-29T20:17:09.115Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
     "closesHijri": null,
     "product": "coop",
     "majors": [
-      "تقنية المعلومات",
+      "تخصصات التكنولوجيا",
       "تخصصات أخرى"
     ],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 65,
-    "relevanceReason": "البرنامج موجه لطلاب التكنولوجيا بشكل عام دون تحديد الأمن السيبراني، لكنه ذو صلة بمجال تخصصه.",
+    "relevanceScore": 50,
+    "relevanceReason": "البرنامج موجه لطلاب التكنولوجيا بشكل عام دون تحديد مجال الأمن السيبراني، ويشترط التفرغ الكامل الذي يتعارض مع جدول محاضراته المسائية.",
     "statesZeroCoursesRule": true,
     "zeroCoursesQuote": "الالتزام بدوام كامل: هل أنت مستعد؟ ارتبط بالبرنامج بدوام كامل.",
     "flags": [],
@@ -3087,7 +3140,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebND1Jv6WAWYzL8oehhE\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -3116,7 +3169,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNKjveGpm9uYqJmV78i\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -3183,7 +3236,7 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebN7n1aAweNYiEXqJK8q\"}",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [

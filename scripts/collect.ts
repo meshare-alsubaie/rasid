@@ -457,7 +457,33 @@ await closeBrowser();
  * previous run failed to judge. Everything else costs nothing, which is the
  * whole reason the hashes exist.
  */
-const opportunityById = new Map(priorOpportunities.map((o) => [o.id, o]));
+/*
+ * Records written before the reason was humanised are repaired on the way in.
+ *
+ * Seventy-nine of a hundred and twenty-five cards were carrying a paragraph of
+ * English JSON about a credit balance, written on one evening when the API
+ * credit ran out. Humanising the message only helps records written afterwards,
+ * and these pages had stopped changing, so they would never be classified again
+ * and the text would have stood for ever.
+ *
+ * The rewrite is safe because it touches only unjudged placeholders: they hold
+ * no verdict, no dates, nothing anyone extracted. The sentence they carry is the
+ * whole of their content, and it was the wrong sentence.
+ */
+let reasonsRepaired = 0;
+const opportunityById = new Map(
+  priorOpportunities.map((o) => {
+    if (o.relevanceScore === null && /BadRequestError|invalid_request|"type":|ANTHROPIC_API_KEY/i.test(o.relevanceReason)) {
+      reasonsRepaired++;
+      const cause = o.relevanceReason.replace(/^تعذّر التصنيف:\s*/, "");
+      return [o.id, { ...o, relevanceReason: `تعذّر التصنيف: ${humanReason(cause)}` }] as const;
+    }
+    return [o.id, o] as const;
+  }),
+);
+if (reasonsRepaired > 0) {
+  console.log(`rewriting ${reasonsRepaired} record(s) that were showing a raw API error`);
+}
 const orgsWithHistory = new Set(priorOpportunities.map((o) => o.orgId));
 const spend: Usage = { inputTokens: 0, outputTokens: 0 };
 const reviewQueue: string[] = [];
