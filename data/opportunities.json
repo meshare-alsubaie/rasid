@@ -57,35 +57,6 @@
     "rawExcerpt": "البرامج والخدمات العقارية تمـلُّك غير السعوديين للعقار يمثل نظام تملك غير السعوديين للعقار الإطار التنظيمي المحدّث لتمكين غير السعوديين من تملك العقارات في... عقاري التطبيق الرسمي للخدمات الإلكترونية للهيئة، يقدم تجربة رقمية متكاملة تتيح للأفراد والمنشآت العقارية... الوساطة العقارية تُنظم التعاملات العقارية وتحفظ حقوق الأطراف، بما يعزّز الثقة ويحفّز التطوير والابتكار في السوق... المساهمات العقارية"
   },
   {
-    "id": "0772bb623515f7bc",
-    "orgId": "hrsd",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJNCQhCRyz4mks2kG9\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://hrsd.gov.sa/",
-    "applyUrl": null,
-    "rawExcerpt": "الموقع الرسمي لوزارة الموارد البشرية والتنمية الاجتماعية\n\nموقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيف تتحققخصص تجربتك؟\n\nعِزّنا الأصالة في المجتمع السعودي تعكس ارتباط الناس بجذورهم وتاريخهم، واعتزازهم بموروثهم.\n\nفهي تظهر في التمسك بالعادات والتقاليد، واستمرار القيم التي تتوارثها الأجيال.احصائيات حول الوزارة آخر الأرقام والإحصاءات المتعلقة بالخدمات الرقمية التي تقدمها وزارة الموارد البشر"
-  },
-  {
     "id": "079df6fca080ffc1",
     "orgId": "mof",
     "titleAr": "لم يُصنَّف بعد",
@@ -375,34 +346,6 @@
     "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي بحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي برنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي بحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي برنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nونمكّنهم من صناعة أثرٍ يمتد إلى "
   },
   {
-    "id": "2b04f83642ee9540",
-    "orgId": "saso",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLr51b3QNSHHZcftwv\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review"
-    ],
-    "sourceUrl": "https://www.saso.gov.sa/ar/pages/default.aspx",
-    "applyUrl": null,
-    "rawExcerpt": "الهيئة السعودية للمواصفات والمقاييس والجودة | SASO\n\nموقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان.\n\nمسجل لدى هيئة الحكومة الرقمية برقم : 20250414141 بحث الهيئة "
-  },
-  {
     "id": "2c4887f0b71a2312",
     "orgId": "nazaha",
     "titleAr": "لم يُصنَّف بعد",
@@ -491,34 +434,6 @@
     "sourceUrl": "https://www.rcu.gov.sa/",
     "applyUrl": null,
     "rawExcerpt": "عن الهيئة الملكية لمحافظة العلا نبذة عن الهيئة الملكية لمحافظة العلا جوهر عملنا يكمن في التوازن الدقيق بين الحفاظ والتنمية من خلال حماية تراث العلا ومعالمها الطبيعية، نهدف إلى تحقيق النمو الاقتصادي والتنمية المستدامة، وقد تمت صياغة استراتيجياتنا لتحقيق هذا الهدف لتشمل حماية التراث وتعزيز سلامة بيئة وتاريخ العلا، مع التأكيد على مواءمة المبادرات مع مبادئ الاستدامة، ومن شأن هذا النهج المدروس وضع محاف"
-  },
-  {
-    "id": "3222482d84c0425c",
-    "orgId": "sfd",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLxVUVLjznXFUS6w2k\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review"
-    ],
-    "sourceUrl": "https://www.sfd.gov.sa/",
-    "applyUrl": null,
-    "rawExcerpt": "روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التعليمية في المملكة العربية السعودية تنتهي بـ sch.sa أو edu.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان. المواقع الالكترونية الآمنة في المملكة العربية السعودية تستخدم بروتوكول HTTPS للتشفير. الرئيسية عن الصندوق التقارير والبيانات المركز الإعلامي الخدمات الالكترونية تواصل معنا عن الصندو"
   },
   {
     "id": "34acae86170c6b1e",
@@ -1093,35 +1008,6 @@
     "rawExcerpt": "روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان. المواقع الالكترونية الآمنة في المملكة العربية السعودية تستخدم بروتوكول HTTPS للتشفير. يسر صندوق التنمية الزراعية استقبال طلبات التدريب من الطلبةوالخريجين، إيمانًا بأهمية تطوير "
   },
   {
-    "id": "4b1020464e352cc8",
-    "orgId": "mofa",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNLC5GC6qDR5uCvUDxw\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://www.mofa.gov.sa/",
-    "applyUrl": null,
-    "rawExcerpt": "الموقع الرسمي لوزارة الخارجية | المملكة العربية السعودية\n\nموقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التعليمية في المملكة العربية السعودية تنتهي بـ sch.sa أو edu.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان.\n\n68 % من المستخدمين قالوا نعم من 278 تعليقًا من فضلك أخبرنا "
-  },
-  {
     "id": "4c839f5735a7d6f9",
     "orgId": "hrsd",
     "titleAr": "برنامج جدير لتأهيل المتميزين",
@@ -1148,7 +1034,8 @@
     "statesZeroCoursesRule": true,
     "zeroCoursesQuote": "التفرغ التام",
     "flags": [
-      "wrong_product"
+      "wrong_product",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.hrsd.gov.sa/ministry/about-ministry/jobs",
     "applyUrl": null,
@@ -1500,34 +1387,6 @@
     "sourceUrl": "https://nour.net.sa/ar/",
     "applyUrl": null,
     "rawExcerpt": "مُمكّن التحول الرقمي الرائد في المملكة العربية السعوديةالخدمات المدارةدعنا نتولى مهام صيانة النظام الروتينية والترقيات عنك.مراكز البياناتتمتع بخدمات أول مركز بيانات من المستوى الثالث ذو الناقل المحايد في المملكة العربية السعودية.الخدمات السحابيةمن الخدمات السحابية لنورنت، ميكروسوفت، خدمات أمازون ويب، إلى اوراكل، نقدم أفضل خدمات البرامج السحابية تحت سقف واحد.خدمات الربطشبكة توصيل المعلومات الأسرع و"
-  },
-  {
-    "id": "6cc864e68287593e",
-    "orgId": "sfda",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNM1rdM2hGw8ceRMCtp\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review"
-    ],
-    "sourceUrl": "https://www.sfda.gov.sa/ar",
-    "applyUrl": null,
-    "rawExcerpt": "الهيئة العامة للغذاء والدواء\n\nتجاوز إلى المحتوى الرئيسي موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق الأربعاء 13 ربيع الأول 1448هـ نسخة تجريبية روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الرسمية الآمنة تستخدم HTTPS تحقق من أن الموقع يستخدم بروتوكول HTTPS مسجل لد"
   },
   {
     "id": "6d4f1ed7cf68e295",
@@ -2268,35 +2127,6 @@
     "sourceUrl": "https://www.rcjy.gov.sa/",
     "applyUrl": null,
     "rawExcerpt": "حصل خطأ عند معالجة القالب. 1<#assign LABELS=request.getAttribute(\"GLOBAL_LABELS\") /> 2<#assign englishLocale=localeUtil.fromLanguageId(\"en_US\") /> 3<#assign localizedFriendlyURL=themeDisplay.getLayout().getFriendlyURL(englishLocale) /> 4<#if themeDisplay.getLayout().getFriendlyURL() !=\"/home\"> 5 6<section class=\"feedback\"> 7 <!-- Feedback Section --> 8 <div class=\"form\"> 9 10 <div class=\"d-flex al"
-  },
-  {
-    "id": "9fbe915f2035fec0",
-    "orgId": "mcit",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJXcCm2L5ReKLCSp37\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://mcit.gov.sa/ar",
-    "applyUrl": null,
-    "rawExcerpt": "وزارة الاتصالات وتقنية المعلومات\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق روابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الإلكترونية الحكومية الموثوقة تستخدم بروتوكول HTTPS تحقق من أن الموقع يستخدم بروتوكول HTTPS مسجل لدى هيئة الحكومة الرقمية برقم : 20260429098 تجاوز إلى ا"
   },
   {
     "id": "a2521d1fa550c4a1",
@@ -3267,35 +3097,6 @@
     "sourceUrl": "https://careers.riyadbank.com/ar/",
     "applyUrl": null,
     "rawExcerpt": "Start Your Career Journey with Us At Riyad Bank, we strive to foster an environment where every employee can thrive and excel. With a commitment to leadership development, career growth, and performance management, we empower our team to achieve their best and value their contributions. Together, we aspire to be the leading bank in the Kingdom, contributing to a bright future marked by innovation "
-  },
-  {
-    "id": "f1c65c9b5d909bfa",
-    "orgId": "housing",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: api — BadRequestError 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CebNJh4j4WdoV9TtT74sn\"}",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://momah.gov.sa/ar",
-    "applyUrl": null,
-    "rawExcerpt": "وزارة البلديات والإسكان\n\nتجاوز إلى المحتوى الرئيسي موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيف تتحققالإعدادات طباعة حفظ الصفحةأدوات سهولة الوصولروابط المواقع الالكترونية الرسمية السعودية تنتهي بgov.saجميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـgov.saالمواقع الالكترونية الحكومية تستخدم بروتوكولHTTPS للتشفير و الأمان.تحقق من الموقع يستخدم بروتكو"
   },
   {
     "id": "f7c62875ac95a35e",
