@@ -440,13 +440,26 @@ function seasonScreen(): string {
   ).length;
   const unread = lanes.filter((l) => l.health === "unwatched" || l.health === "broken").length;
 
+  /*
+   * "Read and classified" was said of every record, and most of them were not.
+   * A record exists as soon as a page has been read; the verdict can arrive a
+   * round later, or never — the classifier fails, the run hits its budget, the
+   * page is unreadable. Those carry a null score, and counting them among the
+   * classified turned a partial reading into a confident one. It is the exact
+   * shape this project refuses: a number that looks like a result.
+   */
+  const judged = data.opportunities.filter((o) => o.relevanceScore !== null).length;
+  const awaiting = data.opportunities.length - judged;
+
   return `<div class="season-head">
       <h2>الموسم</h2>
       <p class="season-note">سبتمبر إلى فبراير · ${lanes.length} جهة مراقَبة</p>
     </div>
     <p class="reason season-note">
       المسارات أدناه كل الجهات المراقَبة. أما المجموعات تحتها فتعرض <strong>الإعلانات</strong> لا الجهات:
-      ${data.opportunities.length} إعلاناً قُرئ وصُنِّف حتى الآن، و${silent} جهة قُرئت ولم تنشر شيئاً${
+      ${judged} إعلاناً قُرئ وصُنِّف حتى الآن${
+        awaiting > 0 ? `، و<strong>${awaiting} قُرئ ولم يُحكم عليه بعد</strong>` : ""
+      }، و${silent} جهة قُرئت ولم تنشر شيئاً${
         unread > 0 ? `، و<strong>${unread} جهة لم تُقرأ</strong> فلا يُعرف عنها شيء` : ""
       }.
       لا تُعطى الجهة درجة صلة، لأن الدرجة تُقاس على إعلان بعينه — وجهة صامتة لا إعلان لها تُقاس.
