@@ -63,6 +63,34 @@ check(
   "a low-relevance one does not",
   run([], [opp({ relevanceScore: 20 })]).length === 0,
 );
+
+/*
+ * A page is very often seen before it can be judged: the classifier fails, the
+ * round runs out of budget, or the text is not readable on the first pass. That
+ * sighting stores a record with a null score, which is rightly not announced.
+ *
+ * The rule used to be "announce a row that was not here last time", so once the
+ * next round produced a verdict the row was no longer new and nothing was ever
+ * sent. Two announcements scoring 95, both an exact match for his major, were
+ * found sitting in the data in exactly that state: never queued, never sent.
+ */
+check(
+  "a record judged only on a later round is still announced",
+  run([opp({ relevanceScore: null })], [opp({ relevanceScore: 95 })]).some(
+    (n) => n.kind === "new_relevant" && n.weight === 95,
+  ),
+  "seen first, judged second, is the normal path — not an edge case",
+);
+check(
+  "and it is announced under the same key, so it can only go out once",
+  run([opp({ relevanceScore: null })], [opp({ relevanceScore: 95 })]).find(
+    (n) => n.kind === "new_relevant",
+  )?.key === "new:x",
+);
+check(
+  "and one that becomes judgeable but scores low is still not announced",
+  run([opp({ relevanceScore: null })], [opp({ relevanceScore: 20 })]).length === 0,
+);
 check(
   "a graduate-development one never does",
   run([], [opp({ product: "graduate_dev", flags: ["wrong_product"] })]).length === 0,
@@ -72,9 +100,36 @@ check(
   run([], [opp({ relevanceScore: null, flags: ["needs_manual_review"] })]).length === 0,
   "null is not a score, and it is not news either",
 );
+/*
+ * Repetition is prevented by the sent log, not by `decide` guessing whether a
+ * row looks new. `decide` proposes the same notice every round on purpose, so
+ * that a record which arrives at a verdict late — the normal case, not an edge
+ * case — is still announced. `split` is what refuses a key that has gone out.
+ * That is the guarantee worth testing, so it is tested through both.
+ */
 check(
-  "an unchanged announcement does not repeat",
-  run([opp({})], [opp({})]).length === 0,
+  "an unchanged announcement is proposed again",
+  run([opp({})], [opp({})]).some((n) => n.key === "new:x"),
+  "proposing is free; the sent log is what decides",
+);
+check(
+  "but it is not delivered twice",
+  split(
+    run([opp({})], [opp({})]),
+    [{ key: "new:x", sentISO: "2026-08-31T06:00:00.000Z", via: "push" }],
+    new Date("2026-09-01T09:00:00.000Z"),
+    false,
+  ).push.length === 0,
+);
+check(
+  "and one that was never sent still goes out, however old the record is",
+  split(
+    run([opp({})], [opp({})]),
+    [],
+    new Date("2026-09-01T09:00:00.000Z"),
+    false,
+  ).push.some((n) => n.key === "new:x"),
+  "this is what recovers a record the old newness rule silently skipped",
 );
 check(
   "a status turning open does",

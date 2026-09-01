@@ -112,7 +112,32 @@ export function decide(input: DecideInput): Notice[] {
     if (score === null) continue;
     if (o.flags.includes("wrong_product")) continue;
 
-    if (was === undefined && score >= Math.max(60, threshold)) {
+    /*
+     * Announce anything worth announcing, every round, and let the sent log
+     * decide what has already gone out.
+     *
+     * This used to ask whether the row was absent last round — and that was the
+     * exact failure this project exists to prevent. A page is very often seen
+     * before it can be judged: the classifier fails, the round hits its budget,
+     * or the text is not readable on the first pass. That sighting stores a
+     * record with `relevanceScore: null`, which is rightly skipped above. The
+     * next round produces a verdict, but by then the row is no longer new, so
+     * no notice was ever emitted. The record sat in the file at 95 with nothing
+     * in the queue and nothing in the log.
+     *
+     * It was not hypothetical. Two co-op announcements scoring 95, both an
+     * exact match for his major, were found in precisely that state — never
+     * queued, never sent, while a 65 waited in the queue ahead of them.
+     *
+     * Nothing about "was it new" is trustworthy enough to gate a notification
+     * on, because there are as many ways to arrive late as there are ways for a
+     * round to go wrong. `split` already refuses any key in the sent log, and
+     * that log is the only real answer to "has he been told". So the condition
+     * is simply whether it deserves telling; emitting it again next round is
+     * free and costs one set lookup, while missing it once costs a semester.
+     * This also heals every record that was skipped while the old rule stood.
+     */
+    if (score >= Math.max(60, threshold)) {
       out.push({
         key: `new:${o.id}`,
         kind: "new_relevant",
