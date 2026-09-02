@@ -315,34 +315,6 @@
     "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبرنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nونمكّنهم من صناعة أثرٍ يمتد إلى المستقبل.شروط القبولسعودي الجنسيةأن يكون المتقدم سعودي الجنسية.طالب منتظمأن يكون المتقدم من طلاب الجامعات أو الكليات.قبل"
   },
   {
-    "id": "2d8c8bc0480ea7ad",
-    "orgId": "mckinsey_sa",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-09-01T03:23:53.266Z",
-    "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review"
-    ],
-    "sourceUrl": "https://www.mckinsey.com/middle-east/ar/riyadh",
-    "applyUrl": null,
-    "rawExcerpt": "ماكنزي في الشرق الأوسطالرياضيعمل مكتب ماكنزي في المملكة العربية السعودية على مساعدة القادة السعوديين من أجل تحقيق كامل إمكانات المملكة المتمثلة في إرساء طبقة وسطى نابضة بالحياة تتمتع بمستوى معيشي مناسب وتتميز بمنظومة قائمة على قطاع خاص على مستوى عالٍ من التنافسية وقطاع عام معاصر.حققت المملكة العربية السعودية خلال السنوات الماضية نموًا هائلاً، ولكنها مع ذلك لا زالت تتمتع بحجم كبير من الإمكانات التي"
-  },
-  {
     "id": "2f0ba3d473a25c51",
     "orgId": "saib",
     "titleAr": "برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني",
@@ -1174,7 +1146,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "no_course_condition"
+      "no_course_condition",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.rcrc.gov.sa/careers/?lang=ar",
     "applyUrl": null,
@@ -1346,7 +1319,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.pwc.com/m1/en/careers/oman-nationals-careers.html",
     "applyUrl": null,
@@ -1657,35 +1631,6 @@
     "sourceUrl": "https://career.dga.gov.sa/ar/",
     "applyUrl": null,
     "rawExcerpt": "نعمل في هيئة الحكومة الرقمية على تشكيل المشهد الرقمي بالمملكة عبر دعم الجهات الحكومية في تقديم وتطوير خدمات رقمية فريدة، ذات جودة وكفاءة عالية؛ لبناء بيئة رقمية عامرة تُحقِّق رفاهية المستفيدين. كُن جزءاً من صناعة التحول الحكومي الرقمي في المملكة، ضمن بيئة مُلهِمة ومُبتكِرة تضمُّ كفاءات وطاقات شابّة تدعم الطموح، وتبني المستقبل. -نحو أفق رقمي واعد- فرص مهنية مميزة نُقدِّم في هيئة الحكومة الرقمية فرص"
-  },
-  {
-    "id": "7f8bfe370a9ee0fa",
-    "orgId": "mewa",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://www.mewa.gov.sa/ar/Pages/default.aspx",
-    "applyUrl": null,
-    "rawExcerpt": "وزارة البيئة والمياه والزراعة موقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟ روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان. المواقع الالكترونية الآمنة في المملكة العربية السعودية تستخدم بروتوكول HTTPS للتشفير. EN عام ا"
   },
   {
     "id": "80735898d0205329",
@@ -2122,34 +2067,6 @@
     "sourceUrl": "https://www.ncc.gov.sa/ar/Pages/default.aspx",
     "applyUrl": null,
     "rawExcerpt": "\"إن مسيرة التحوّل الاقتصادي التي تتبنّاها حكومة المملكة مستمرة، وإن ما تحقق من نتائج إيجابية حتى الآن وفق توجيهات خادم الحرمين الشريفين –حفظه الله- يؤكد نجاح الإصلاحات الاقتصادية والمالية الهادفة إلى تعزيز النمو الاقتصادي الشامل، وتقوية المركز المالي للمملكة، بما يضمن الاستدامة المالية نحو مجتمع حيوي، واقتصاد مزدهر، ووطن طموح.\" صاحب السمو الملكي الأمير محمد بن سلمان بن عبدالعزيز آل سعود ولي العهد "
-  },
-  {
-    "id": "afeecdcfe55685a0",
-    "orgId": "unilever_sa",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-09-01T03:23:53.266Z",
-    "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review"
-    ],
-    "sourceUrl": "https://www.unilever.com/",
-    "applyUrl": null,
-    "rawExcerpt": "No more trade-offs. No more compromises. Just beauty and wellbeing as one.Powering up Personal Care, developing superior products with breakthrough science and technology.Delivering joyful cleaning experiences for people everywhere.For the love of food – great taste is at the heart of everything we do.(1 of 10)Elfried Samba goes inside our FIFA World Cup 2026™ activationJavaScript must be enabled "
   },
   {
     "id": "b4c2d81fa289b973",
@@ -3058,7 +2975,8 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review"
+      "needs_manual_review",
+      "vanished_from_source"
     ],
     "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/about-saudi-exchange/aboutus/careers?locale=ar",
     "applyUrl": null,
@@ -3099,25 +3017,27 @@
     "titleAr": "برنامج موبايلي التعاوني",
     "detectedISO": "2026-08-29T20:08:44.470Z",
     "firstSeenISO": "2026-08-29T20:08:44.470Z",
-    "lastConfirmedISO": "2026-08-29T20:17:09.115Z",
+    "lastConfirmedISO": "2026-09-02T00:03:59.128Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
     "closesHijri": null,
     "product": "coop",
     "majors": [
-      "تخصصات التكنولوجيا",
+      "تقنية/تكنولوجيا",
       "تخصصات أخرى"
     ],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 50,
-    "relevanceReason": "البرنامج موجه لطلاب التكنولوجيا بشكل عام دون تحديد مجال الأمن السيبراني، ويشترط التفرغ الكامل الذي يتعارض مع جدول محاضراته المسائية.",
+    "relevanceScore": 65,
+    "relevanceReason": "البرنامج موجه لطلاب التكنولوجيا بشكل عام دون ذكر تخصص الأمن السيبراني تحديدًا، لكنه يتوافق جزئيًا مع تخصص الطالب.",
     "statesZeroCoursesRule": true,
     "zeroCoursesQuote": "الالتزام بدوام كامل: هل أنت مستعد؟ ارتبط بالبرنامج بدوام كامل.",
-    "flags": [],
+    "flags": [
+      "more_on_page"
+    ],
     "sourceUrl": "https://careers.mobily.com.sa/ar/sites/opportunities/pages/Coop",
     "applyUrl": null,
     "rawExcerpt": "التخطي إلى المحتوى الرئيسي. برنامج موبايلي التعاوني، الربط بين المعرفة النظرية والتطبيق العملي في موبايلي، ندرك أن الطلاب يتطلعون بشوق لتطبيق ما درسوه في الجامعة في واقع الحياة الوظيفية؛ لذا، صممنا برنامج التدريب التعاوني بدقة لسد الفجوة بين المعرفة النظرية المكتسبة في السنوات الماضية وبين الخبرة العملية، إضافة إلى تزويد المشاركين بالمهارات والكفاءات الأساسية اللازمة لتحقيق التميز الوظيفي لماذا تخ"
