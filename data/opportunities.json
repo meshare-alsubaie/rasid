@@ -1,5 +1,34 @@
 [
   {
+    "id": "07068af2d95cd44f",
+    "orgId": "saib",
+    "titleAr": "برنامج تطوير الخريجين لمصرفية الشركات - البنك السعودي للاستثمار",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-09-02T12:03:16.526Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "graduate_dev",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 0,
+    "relevanceReason": "البرنامج مخصص للخريجين فقط وهو من نوع تطوير الخريجين الذي لا يستوفي شروطه الطالب لأنه لم يتخرج بعد.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "wrong_product",
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://careers.saib.com.sa/ar/page/bag-program/",
+    "applyUrl": null,
+    "rawExcerpt": "البنك السعودي للاستثمار\n\nEnglish دخول برنامج تطوير الخريجين لمصرفية الشركات يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لمصرفية الشركات - استثمارنا المستمر في قادة المستقبل نقدم في هذا البرنامج تدريب بالتعاون مع شركاء عالميين و شهادات معترف بها عالميا لنخبة من أمهر الخريجين الذين انضموا لبرنامجنا .\n\nيستخدم هذا الموقع ملفات تعريف الارتباط (كوكيز) لضمان تزويدك بأفضل تجربة أثناء تصفحه."
+  },
+  {
     "id": "07e0fcb183f0ab2f",
     "orgId": "sabic",
     "titleAr": "لم يُصنَّف بعد",
@@ -285,40 +314,6 @@
     "sourceUrl": "https://athkax.sdaia.gov.sa/coop",
     "applyUrl": null,
     "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبرنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nونمكّنهم من صناعة أثرٍ يمتد إلى المستقبل.شروط القبولسعودي الجنسيةأن يكون المتقدم سعودي الجنسية.طالب منتظمأن يكون المتقدم من طلاب الجامعات أو الكليات.قبل"
-  },
-  {
-    "id": "2f0ba3d473a25c51",
-    "orgId": "saib",
-    "titleAr": "برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني",
-    "detectedISO": "2026-08-31T23:54:26.779Z",
-    "firstSeenISO": "2026-08-31T23:54:26.779Z",
-    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "graduate_dev",
-    "majors": [
-      "تقنية المعلومات",
-      "الأمن السيبراني"
-    ],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [
-      "الرياض"
-    ],
-    "relevanceScore": 0,
-    "relevanceReason": "هذا برنامج تطوير خريجين يتطلب شهادة البكالوريوس فعلياً بيد المتقدم وهو غير متاح للطالب لعدم تخرجه بعد.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "wrong_product",
-      "no_course_condition"
-    ],
-    "sourceUrl": "https://careers.saib.com.sa/ar/page/it-program/",
-    "applyUrl": null,
-    "rawExcerpt": "برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لخريجي تقنية المعلومات والأمن السيبراني - استثمارنا المستمر في قادة المستقبل. نقدم في هذا البرنامج شهادات تدريب معترف بها عالمياً لنخبة من أمهر الخريجين الذين انضموا لبرنامجنا. هذه فرصة ليكونوا فرداً من أفراد عائلة البنك السعودي للاستثمار. مزايا البرنامج يحصل المتدرب في نهاية فترة التدريب على ش"
   },
   {
     "id": "315f9e482cc646ac",
@@ -1040,35 +1035,6 @@
     "rawExcerpt": "In partnership with the Ministry of Education, NCA Launches a Campaign to Raise Cybersecurity Awareness as the New Academic Year Begins24/08/2026Read MoreAs Part of the Cybersecurity Postgraduate Scholarship Program Tracks, NCA Launches the “Postgraduate Cryptography Experts” Program11/08/2026Read MoreGCC Cybersecurity Executive Committee Holds Its Fifth Meeting29/07/2026Read MoreNCA Launches Publ"
   },
   {
-    "id": "53624108ba86ee3e",
-    "orgId": "wasatah",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "http://www.wasatah.com.sa/index.php/ar/",
-    "applyUrl": null,
-    "rawExcerpt": "شركة استثمارية متوافقة مع أحكام الشريعة الإسلامية وساطة كابيتال شركة مرخصة ومنظمة من قبل هيئة السوق المالية في المملكة العربيةحلول وساطة كابيتال إدارة الأصولتقدم وساطة كابيتال حلولاً استثمارية متكاملة تهدف إلى تنمية ثروات عملائنا من خلال إدارة محافظ استثمارية وصناديق عقارية متنوعة وفق أعلى المعايير العالمية مالية الشركات والملكية الخاصةنعمل مع الشركات لتسريع نموها وتحقيق تطلعاتها الاستراتيجية من خ"
-  },
-  {
     "id": "53d8f06e87d85c50",
     "orgId": "albilad",
     "titleAr": "برنامج التدريب التعاوني - بنك البلاد",
@@ -1459,34 +1425,6 @@
     "sourceUrl": "https://www.hrc.gov.sa/website/careers/graduate-development-program",
     "applyUrl": null,
     "rawExcerpt": "هيئة حقوق الإنسان - التوظيف\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟\n\nروابط المواقع الإلكترونية الرسمية الحكومية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الإلكترونية الحكومية الموثوقة تستخدم بروتوكول HTTPS تحقق من أن الموقع يستخدم بروتوكول HTTPS مسجل لدى هيئة الحكومة الرقمية برقم: 20260402522 غائم 02-سبتمبر-"
-  },
-  {
-    "id": "74601e40b0f10fdd",
-    "orgId": "moh",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review"
-    ],
-    "sourceUrl": "https://www.moh.gov.sa/Pages/Default.aspx",
-    "applyUrl": null,
-    "rawExcerpt": "موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ .gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـ .gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكولHTTPS للتشفير و الأمان. المواقع الإلكترونية الآمنة في المملكة العربية السعودية تستخدم بروتوكول HTTPS للتشفير. مسجل لدى هيئة الحكومة الرقمية برقم: 2"
   },
   {
     "id": "7615f4880d740aaf",
@@ -2041,6 +1979,38 @@
     "rawExcerpt": "\"إن مسيرة التحوّل الاقتصادي التي تتبنّاها حكومة المملكة مستمرة، وإن ما تحقق من نتائج إيجابية حتى الآن وفق توجيهات خادم الحرمين الشريفين –حفظه الله- يؤكد نجاح الإصلاحات الاقتصادية والمالية الهادفة إلى تعزيز النمو الاقتصادي الشامل، وتقوية المركز المالي للمملكة، بما يضمن الاستدامة المالية نحو مجتمع حيوي، واقتصاد مزدهر، ووطن طموح.\" صاحب السمو الملكي الأمير محمد بن سلمان بن عبدالعزيز آل سعود ولي العهد "
   },
   {
+    "id": "a6eb7f192aec0e76",
+    "orgId": "saib",
+    "titleAr": "برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني - البنك السعودي للاستثمار",
+    "detectedISO": "2026-08-31T23:54:26.779Z",
+    "firstSeenISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-09-02T12:03:16.526Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "graduate_dev",
+    "majors": [
+      "تقنية المعلومات",
+      "الأمن السيبراني"
+    ],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": 0,
+    "relevanceReason": "البرنامج مخصص لخريجين حاصلين على الشهادة النهائية، والطالب لم يتخرج بعد فهو غير مؤهل لهذا البرنامج.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "wrong_product",
+      "no_course_condition"
+    ],
+    "sourceUrl": "https://careers.saib.com.sa/ar/page/it-program/",
+    "applyUrl": null,
+    "rawExcerpt": "البنك السعودي للاستثمار\n\nEnglish دخول برنامج تطوير الخريجين لتقنية المعلومات والأمن السيبراني يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لخريجي تقنية المعلومات والأمن السيبراني - استثمارنا المستمر في قادة المستقبل.\n\nيستخدم هذا الموقع ملفات تعريف الارتباط (كوكيز) لضمان تزويدك بأفضل تجربة أثناء تصفحه."
+  },
+  {
     "id": "b4c2d81fa289b973",
     "orgId": "saso",
     "titleAr": "التدريب التعاوني - الهيئة السعودية للمواصفات والمقاييس والجودة",
@@ -2098,34 +2068,6 @@
     "sourceUrl": "https://takamolholding.com/ar/join-us",
     "applyUrl": null,
     "rawExcerpt": "انضم الآن ​هنا تفتح الآفاق لتكونوا جزءًا من مسيرة التمكينالفرص التدريبية انضم إلى برنامج \"تكاملي طموح\"، المصمم لتطوير وتدريب الكفاءات الواعدة من حديثي التخرج وتأهيلهم لسوق العمل.مغلقالفرص الوظيفية​انطلق في رحلتك المهنية معنا لاستكشاف إمكانياتك وتطوير مهاراتك، وكن جزءًا من رؤية تكامل القابضة.استكشف الوظائف"
-  },
-  {
-    "id": "bc8add6fe92a5e48",
-    "orgId": "tvtc",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-09-01T03:23:53.266Z",
-    "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review"
-    ],
-    "sourceUrl": "https://tvtc.gov.sa/",
-    "applyUrl": null,
-    "rawExcerpt": "متقدم EN ع ع الخدمات الإلكترونية جميع الخدمات بوابات المؤسسة جميع البوابات الإعلانات جميع الإعلانات الأحداث والفعاليات جميع الفعاليات التاليالسابقسبتمبر 2026الأحدالاثنينالثلاثاءالأربعاءالخميسالجمعةالسبت 123456789101112131415161718192021222324252627282930 إحصائيات المؤسسة جميع الإحصائيات تحديثات مؤسسة التدريب التقني والمهني في أرقام الأخبار جميع الأخبار إدارات التدريب التقني والمهني في المناطق رواب"
   },
   {
     "id": "bdc38ed7138d0a2d",
@@ -2225,34 +2167,6 @@
     "sourceUrl": "https://www.srca.org.sa/",
     "applyUrl": null,
     "rawExcerpt": "Skip to content موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التعليمية في المملكة العربية السعودية تنتهي بـ sch.sa أو edu.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان. المواقع الالكترونية الآمنة في المملكة العربية السعودية تستخدم بروتوكول HTTPS للتشفير. مسجل لدى هيئة ال"
-  },
-  {
-    "id": "c26b3e37f5609688",
-    "orgId": "saip",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review"
-    ],
-    "sourceUrl": "https://www.saip.gov.sa",
-    "applyUrl": null,
-    "rawExcerpt": "موقع رسمي تابع للمملكة العربية السعوديةعنوان الموقع الحكومي السعودي الرسمي ينتهي بـ .gov.saالموقع تابع لجهة حكومية رسمية في المملكة العربية السعودية وينتهي دائماً بـ .gov.sa.المواقع الرسمية الآمنة تستخدم HTTPSالمواقع الحكومية المؤمنة في المملكة العربية السعودية تستخدم تشفير HTTPS.عن الهيئة السعودية للملكية الفكريةتهدف الهيئة السعودية للملكية الفكرية إلى تنظيم مجالات الملكية الفكرية في المملكة ودعم"
   },
   {
     "id": "c2fd58318cd9a75a",
@@ -2543,37 +2457,32 @@
     "rawExcerpt": "تخطي إلى المحتوى الرئيسي الرسالة نسعى بجسارة لتحقيق الإمكانات الواعدة للمملكة الرؤية أن نكون قوة فاعلة لمستقبل وطني مزدهر ومؤثر في تطور الاقتصاد العالمي تفاصيل أكثر المواقع المرتبطة بالوزارةقريبًا... بيانات السعودية منصة موحدة لعرض وتحليل أحدث البيانات الاقتصادية والاجتماعية الخاصة بالمملكة ومناطقها بطرق تصويرية وتفاعلية تسهل فهم المشهد الاقتصادي السعوديتفاصيل أكثر التقارير الاقتصاديةتقارير دورية "
   },
   {
-    "id": "db7a78c9c18967ed",
-    "orgId": "saib",
-    "titleAr": "برنامج تطوير الخريجين لمصرفية الشركات",
-    "detectedISO": "2026-08-31T23:54:26.779Z",
-    "firstSeenISO": "2026-08-31T23:54:26.779Z",
-    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "id": "db81cf5dd6679dfe",
+    "orgId": "wasatah",
+    "titleAr": "التدريب التعاوني",
+    "detectedISO": "2026-09-02T12:03:16.526Z",
+    "firstSeenISO": "2026-09-02T12:03:16.526Z",
+    "lastConfirmedISO": "2026-09-02T12:03:16.526Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
     "closesHijri": null,
-    "product": "graduate_dev",
-    "majors": [
-      "إدارة الأعمال"
-    ],
+    "product": "coop",
+    "majors": [],
     "seats": null,
     "stipendSAR": null,
     "durationWeeks": null,
-    "cities": [
-      "الرياض"
-    ],
-    "relevanceScore": 0,
-    "relevanceReason": "البرنامج مخصص لخريجي إدارة الأعمال ولا يقبل غير المتخرجين، وهو برنامج تطوير خريجين وليس تدريبًا تعاونيًا، فلا يناسب الطالب لعدم تخرجه بعد ولاختلاف التخصص عن الأمن السيبراني.",
+    "cities": [],
+    "relevanceScore": 10,
+    "relevanceReason": "الإعلان عام عن تدريب تعاوني في شركة استثمارية مالية دون ذكر أي مجال تقني أو أمني يتعلق بتخصص الطالب.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "wrong_product",
       "no_course_condition"
     ],
-    "sourceUrl": "https://careers.saib.com.sa/ar/page/bag-program/",
+    "sourceUrl": "https://wasatah.com.sa/media-center/",
     "applyUrl": null,
-    "rawExcerpt": "برنامج تطوير الخريجين لمصرفية الشركات يسرنا أن نعلن عن برنامج تطوير الخريجين لعام 2021 لمصرفية الشركات - استثمارنا المستمر في قادة المستقبل نقدم في هذا البرنامج تدريب بالتعاون مع شركاء عالميين و شهادات معترف بها عالميا لنخبة من أمهر الخريجين الذين انضموا لبرنامجنا . هذه فرصة ليكونوا فرداً من أفراد عائلة البنك السعودي للاستثمار. مزايا البرنامج يحصل المتدرب في نهاية فترة التدريب على شهادة معتمده. يج"
+    "rawExcerpt": "Skip to content × × Media Center Stay updated with the latest news, announcements, and corporate developments from Wasatah Capital, including company updates, investment activities, and key milestones related to our services and market presence. Annual Reports View Latest News Latest News Recent News and Updates at Wasata Capital Alwaha Reit News Al Aziziah Reit News Wasatah News External links An"
   },
   {
     "id": "dcc93313d612de4b",
@@ -2611,7 +2520,7 @@
     "titleAr": "التدريب التعاوني",
     "detectedISO": "2026-08-31T00:02:49.563Z",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-09-02T12:03:16.526Z",
     "status": "closed",
     "opensISO": null,
     "closesISO": "2026-05-06",
@@ -2624,13 +2533,14 @@
     "cities": [
       "الرياض"
     ],
-    "relevanceScore": 50,
-    "relevanceReason": "البرنامج تدريب تعاوني عام لطلاب الجامعات في جهة تقنية حكومية دون تحديد مجال الأمن السيبراني بشكل مباشر.",
+    "relevanceScore": 70,
+    "relevanceReason": "برنامج تدريب تعاوني عام تابع لوزارة الاتصالات وتقنية المعلومات دون تحديد مجال أمن سيبراني بشكل صريح.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "no_course_condition",
-      "first_time_seen"
+      "first_time_seen",
+      "more_on_page"
     ],
     "sourceUrl": "https://careers.mcit.gov.sa/",
     "applyUrl": null,
@@ -2716,7 +2626,7 @@
     "titleAr": "برنامج التدريب التعاوني - البنك السعودي للاستثمار",
     "detectedISO": "2026-08-31T23:54:26.779Z",
     "firstSeenISO": "2026-08-31T23:54:26.779Z",
-    "lastConfirmedISO": "2026-08-31T23:54:26.779Z",
+    "lastConfirmedISO": "2026-09-02T12:03:16.526Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -2734,8 +2644,8 @@
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 30,
-    "relevanceReason": "البرنامج موجه أساسًا لتخصصات الأعمال والمالية، مع ذكر أنظمة المعلومات الإدارية كتخصص مقبول فقط دون تركيز على الأمن السيبراني أو الشبكات.",
+    "relevanceScore": 25,
+    "relevanceReason": "البرنامج يركز على التمويل والمحاسبة والتسويق ونظم المعلومات الإدارية، وهو بعيد نسبياً عن تخصص الأمن السيبراني للطالب.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2743,7 +2653,7 @@
     ],
     "sourceUrl": "https://careers.saib.com.sa/en/page/coop-program/",
     "applyUrl": null,
-    "rawExcerpt": "Cooperative Program The Saudi Investment Bank is one of the rapidly growing organizations in the banking industry that adopt the concept of corporate social responsibility. This could be seen clearly through the number of initiatives, activities and programs that SAIB provides to the society. Program mission: The program mission is to focus on the development of practical skills for co-op students"
+    "rawExcerpt": "The Saudi Investment Bank\n\nعربي Sign-in/Register Cooperative Program The Saudi Investment Bank is one of the rapidly growing organizations in the banking industry that adopt the concept of corporate social responsibility.\n\nThe trainees are requested to do the following: Carry own the tasks assigned to them by the department they work for as per the Learning and Development Department instructions "
   },
   {
     "id": "e44274b1de03ee45",
@@ -2780,7 +2690,7 @@
     "titleAr": "برنامج التدريب التعاوني - البنك السعودي للاستثمار",
     "detectedISO": "2026-08-29T19:43:17.547Z",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastConfirmedISO": "2026-08-31T00:02:49.563Z",
+    "lastConfirmedISO": "2026-09-02T12:03:16.526Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -2798,8 +2708,8 @@
     "stipendSAR": null,
     "durationWeeks": null,
     "cities": [],
-    "relevanceScore": 30,
-    "relevanceReason": "التخصصات المفضلة تركز على المالية والمحاسبة والتسويق والهندسة العامة، مع ذكر نظم المعلومات الإدارية كتخصص قريب نسبياً من الحاسب، لكن لا يوجد ذكر مباشر للأمن السيبراني أو الشبكات أو تحليل الأمن المعلوماتي.",
+    "relevanceScore": 25,
+    "relevanceReason": "البرنامج موجه بشكل أساسي للتخصصات المالية والإدارية وليس للأمن السيبراني، مع ذكر نظم المعلومات الإدارية كتخصص مقبول فقط.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
@@ -2808,7 +2718,7 @@
     ],
     "sourceUrl": "https://careers.saib.com.sa/ar/page/coop-program/",
     "applyUrl": null,
-    "rawExcerpt": "برنامج التدريب التعاوني البنك السعودي للاستثمار من أسرع المنظمات تطوراً في القطاع البنكي التي تتبنى مفهوم المسؤولية الاجتماعية للشركات في صميم عملها، وذلك يتجلى في المبادرات والأنشطة والبرامج العديدة التي ينظمها البنك والتي تصب في صالح المجتمع. أحد هذه البرامج هو برنامج التدريب التعاوني الذي يقدمه البنك لطلاب الجامعات حيث يتلقون في البنك تدريباً على رأس العمل تلبية لأحد متطلبات التخرج. رسالة البرن"
+    "rawExcerpt": "البنك السعودي للاستثمار\n\nEnglish دخول برنامج التدريب التعاوني البنك السعودي للاستثمار من أسرع المنظمات تطوراً في القطاع البنكي التي تتبنى مفهوم المسؤولية الاجتماعية للشركات في صميم عملها، وذلك يتجلى في المبادرات والأنشطة والبرامج العديدة التي ينظمها البنك والتي تصب في صالح المجتمع.\n\nإجراءات قبول الطلاب: التواصل مع المنظمات التعليمية لتزويد البنك السعودي للاستثمار بقائمة أسماء المرشحين المحتملين ال"
   },
   {
     "id": "e8697715f5914545",
