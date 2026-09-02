@@ -17,12 +17,13 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 0,
-    "relevanceReason": "البرنامج مخصص للخريجين فقط وهو من نوع تطوير الخريجين الذي لا يستوفي شروطه الطالب لأنه لم يتخرج بعد.",
+    "relevanceReason": "البرنامج مخصص للخريجين فقط وهو من نوع تطوير الخريجين الذي لا يستوفي شروطه الطالب لأنه لم يتخرج بعد. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "wrong_product",
-      "no_course_condition"
+      "no_course_condition",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.saib.com.sa/ar/page/bag-program/",
     "applyUrl": null,
@@ -150,7 +151,7 @@
     "titleAr": "لم يُصنَّف بعد",
     "detectedISO": "2026-08-31T19:04:22.590Z",
     "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -166,12 +167,11 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
+      "needs_manual_review"
     ],
     "sourceUrl": "https://www.alfransi.com.sa/",
     "applyUrl": null,
-    "rawExcerpt": "Top الصفحة الرئيسية نبذة عن البنك علاقات المستثمرين أسعار المنتجات التمويلية والادخارية المساعدة و الدعم فروع وأجهزة الصراف الآلي وظائف English Alfransi Bank قطاع الأفراد الحسابات الشخصية الحساب الجاري حسابات الادخار وديعة لأجل مدى Pay البرامج المصرفية كلاسيك أدفانس بريفليج إيليت إيليت بلس برامج مصرفية مميزة للمقيمين البطاقات قارن بين البطاقات نموذج طلب بطاقة ائتمانية عروض برنامج قسّطها عروض و خصو"
+    "rawExcerpt": "الصفحة الرئيسية - البنك السعودي الفرنسي\n\nTop الصفحة الرئيسية نبذة عن البنك علاقات المستثمرين أسعار المنتجات التمويلية والادخارية المساعدة و الدعم فروع وأجهزة الصراف الآلي وظائف English Alfransi Bank قطاع الأفراد الحسابات الشخصية الحساب الجاري حسابات الادخار وديعة لأجل مدى Pay البرامج المصرفية كلاسيك أدفانس بريفليج إيليت إيليت بلس برامج مصرفية مميزة للمقيمين البطاقات قارن بين البطاقات نموذج طلب بطا"
   },
   {
     "id": "1a17c0e0fe767768",
@@ -200,6 +200,34 @@
     "sourceUrl": "https://www.tu.edu.sa/",
     "applyUrl": null,
     "rawExcerpt": "جامعة الطائف\n\nتسجيل الدخول دخـول 1439/01/29 - 20/10/2017 En البريد الجامعي البريد السحابي للمنسوبين والطلاب بريد المنسوبين إعادة تعيين كلمة المرور للبريد الإلكتروني تسجيل الدخول جامعة الطائف تحقق تصنيفاً متقدماً في تصنيف التايمز للجامعات الآسيوية لعام 2026 امتداد لمنجز يتجدّد ..\n\nومسار يتصاعد بثبات أقرأ المزيد جامعة الطائف تحقق تقدمًا لافتًا في محور الانفتاح الدولي (International Outlook) ضمن تصني"
+  },
+  {
+    "id": "1c1b7dd97b9ccddc",
+    "orgId": "mawhiba",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://mawhiba.org/",
+    "applyUrl": null,
+    "rawExcerpt": "موهبة - اكتشاف وتنمية الموهوبين والإبداع في السعودية\n\nمــوهـبـة ” موهبة… حيث تنتمي “ الأكثر بحثًا برامج موهبة مسابقات موهبة دليل الخدمات بوابة موهبة مساعدك الذكي… هنا لخدمتك احصل الآن على كل ما تريد معرفته عن موهبة واكتشف برامج ومسابقات موهبة ابدأ الآن عن موهبة عن موهبة الرؤية و الرسالة الاستراتيجية استدامة موهبة موهبة 2030 البرامج والمسابقات برامج موهبة برامج خلال العام البرنامج الوطني للكشف عن ا"
   },
   {
     "id": "2137c6e6c9483fa5",
@@ -288,6 +316,34 @@
     "rawExcerpt": "استورد من السعودية استورد من السعودية البحث اقتراحات English تسجيل الدخول خدمات الهيئة تصفح خدمات الهيئة في الصادرات السعودية الكل رزنامة الصادرات السعودية تعرف على أهم مشاركات هيئة الصادرات السعودية الكل آخر الأخبار تصفح أخر الأخبار الخاصة بالصادرات السعودية الكل إحصائيات ومؤشرات الهيئة تعرف على إحصاءات ومؤشرات الصادرات السعودية الكل"
   },
   {
+    "id": "22a0276969ca3b26",
+    "orgId": "mewa",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://www.mewa.gov.sa/ar/MediaCenter/News/Pages/Home.aspx",
+    "applyUrl": null,
+    "rawExcerpt": "الأخبار والأحداث | MEWA\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق؟\n\nمسجل لدى هيئة الحكومة الرقمية برقم: 20250406046 الأوامر الصوتية ألوان خاصة تكبير النص تصغير النص الرقم الموحد 939 الأخبار والأحداث استمع +A A -A ترتيب اختر الترتيب ترتيب الاقدم إلى الاحدث ترتيب الاحدث إلى الاقدم أبجدياً (أ - ي) أبجدياً (ي - أ) 20 ربيع الأول 1448 توقيع مذكرة تفاهم لتطوير البنية الرقمية لوزارة \"البيئة\" وتع"
+  },
+  {
     "id": "2a927391e2050f99",
     "orgId": "sdaia",
     "titleAr": "برنامج سدايا للتدريب التعاوني",
@@ -314,6 +370,34 @@
     "sourceUrl": "https://athkax.sdaia.gov.sa/coop",
     "applyUrl": null,
     "rawExcerpt": "Athkax\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقميةكيف تتحققأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبحثENتسجيل الدخولأكاديمية سداياالتعلم الذاتي الشاراتبرنامج التدريب التعاونيبرنامج سدايا للتدريب التعاونينستثمر في القدرات الواعدة..\n\nونمكّنهم من صناعة أثرٍ يمتد إلى المستقبل.شروط القبولسعودي الجنسيةأن يكون المتقدم سعودي الجنسية.طالب منتظمأن يكون المتقدم من طلاب الجامعات أو الكليات.قبل"
+  },
+  {
+    "id": "2ec3e75addbc8202",
+    "orgId": "ejada",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://careers.ejada.com/",
+    "applyUrl": null,
+    "rawExcerpt": "Careers at EJADA Systems\n\nLog In Sign Up عربي experience next experience next experience next experience next experience next experience next experience next experience next experience next Search Ejada Careers - No preference - Search Jobs Why EjadaWorking at Ejada has been an incredibly rewarding experience.\n\nWith supportive colleagues and exciting challenges, I’m proud to be part of a team that"
   },
   {
     "id": "315f9e482cc646ac",
@@ -378,7 +462,7 @@
     "titleAr": "لم يُصنَّف بعد",
     "detectedISO": "2026-08-31T19:04:22.590Z",
     "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -394,12 +478,11 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
+      "needs_manual_review"
     ],
     "sourceUrl": "https://talent.mc.gov.sa/",
     "applyUrl": null,
-    "rawExcerpt": "وظائف وزارة التجارة برنامج أفق تقديم السيرة الذاتيةهل انت مهتم ببناء مسيرة مهنية معنا؟ قدم سيرتك الذاتية الآن البحث عن وظائفابحث عن الفرصة المثالية وتقدم اليها بكبسة زر حسابيتحكم بعملية بحثك عن عمل من خلال تحديث سيرك الذاتية باستمرار ومتابعة طلباتك. المنصة الوطنية الموحدة للتوظيف (جدارات) رسالة إدارة الموارد البشرية إدارة الموارد البشرية بوزارة التجارة ملتزمة بجعل الوزارة المكان الأفضل للعمل من خل"
+    "rawExcerpt": "موقع وزارة التجارة للتوظيف\n\nEnglish دخول تسجيل وظائف وزارة التجارة - اختر الدور الوظيفي - إدارية الإدارة البحث والتطوير التدريس والشؤون الأكاديمية التسويق والعلاقات العامة التصميم والإبداع والفنون الخدمات المساندة السكرتارية السلامة والصحة المهنية الشؤون القانونية الطب والرعاية الصحية والتمريض المبيعات المحاسبة/الشؤون المالية المشتريات الموارد البشرية والتوظيف النقل والخدمات اللوجستية الهندسة تكنو"
   },
   {
     "id": "35c740956180c33a",
@@ -407,7 +490,7 @@
     "titleAr": "لم يُصنَّف بعد",
     "detectedISO": "2026-09-01T03:23:53.266Z",
     "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -419,12 +502,11 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
+      "needs_manual_review"
     ],
     "sourceUrl": "https://momah.gov.sa/ar/form/partnerships-and-cooperation",
     "applyUrl": null,
@@ -448,11 +530,12 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 10,
-    "relevanceReason": "التدريب يركز على آليات العمل في الصيرفة الإسلامية وليس له علاقة بالأمن السيبراني أو تخصص الطالب التقني.",
+    "relevanceReason": "التدريب يركز على آليات العمل في الصيرفة الإسلامية وليس له علاقة بالأمن السيبراني أو تخصص الطالب التقني. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "no_course_condition"
+      "no_course_condition",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.alrajhibank.com.sa/en/page/coop-program/",
     "applyUrl": null,
@@ -495,7 +578,7 @@
     "titleAr": "لم يُصنَّف بعد",
     "detectedISO": "2026-08-31T19:04:22.590Z",
     "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -511,12 +594,11 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.anb.sa/ar/",
     "applyUrl": null,
-    "rawExcerpt": "البنك العربي الوطني تأسس البنك العربي الوطني كشركة مساهمة سعودية مدرجة عام 1979م، وهو يتبوأ اليوم مكانة مرموقة كأحد أكبر البنوك في الشرق الأوسط. يلبي البنك العربي الوطني كبنك تجاري شامل مختلف احتياجات عملائه من أفراد وشركات، ويحرص على خدمة قاعدة عملائه الكبيرة والمتنوعة التي تضم أكثر من مليوني عميل، عن طريق شبكة فروع تغطي أرجاء المملكة كافة. كن جزءًا من فريقنا أنت على بعد 3 خطوات فقط لتصبح جزءًا م"
+    "rawExcerpt": "موقع البنك العربي الوطني للتوظيف\n\nEnglish دخول تسجيل بحث البنك العربي الوطني تأسس البنك العربي الوطني كشركة مساهمة سعودية مدرجة عام 1979م، وهو يتبوأ اليوم مكانة مرموقة كأحد أكبر البنوك في الشرق الأوسط.\n\nقدم سيرتك الذاتية الآن البحث عن وظيفة ابحث عن الفرصة المثالية وتقدم إليها بكبسة زر حسابي تحكم بعملية بحثك عن عمل من خلال تحديث سيرتك الذاتية باستمرار ومتابعة طلباتك يستخدم هذا الموقع ملفات تعريف ال"
   },
   {
     "id": "3a5387f9329cf811",
@@ -660,12 +742,13 @@
       "الرياض"
     ],
     "relevanceScore": 95,
-    "relevanceReason": "الإعلان يذكر تخصص الأمن السيبراني صراحة ضمن التخصصات المقبولة للتدريب التعاوني ويشترط عدم التخرج وهو ما ينطبق على الطالب.",
+    "relevanceReason": "الإعلان يذكر تخصص الأمن السيبراني صراحة ضمن التخصصات المقبولة للتدريب التعاوني ويشترط عدم التخرج وهو ما ينطبق على الطالب. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "exact_major_match",
-      "no_course_condition"
+      "no_course_condition",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.alrajhibank.com.sa/ar/saudi-arabia/jobs/coop-training-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-1100037814/",
     "applyUrl": null,
@@ -728,13 +811,43 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 70,
-    "relevanceReason": "يشمل البرنامج تخصصات تقنية المعلومات بشكل عام دون ذكر صريح للأمن السيبراني.",
+    "relevanceReason": "يشمل البرنامج تخصصات تقنية المعلومات بشكل عام دون ذكر صريح للأمن السيبراني. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": true,
     "zeroCoursesQuote": "انتظام كلي",
-    "flags": [],
+    "flags": [
+      "needs_manual_review"
+    ],
     "sourceUrl": "https://careers.cma.gov.sa/en/page/coop-program/",
     "applyUrl": null,
     "rawExcerpt": "برنامج التدريب التعاوني تعريف بالبرنامج تتيح الهيئة الفرصة لطلاب والطالبات الذين يتطلب تخرجهم قضاء فترة من التدريب العملي وذلك للتعرف على الحياة العملية واكتساب وصقل المهارات العملية لتهيئة المتدربين لخوض تجارب في سوق العمل. التخصصات جميع تخصصات إدارة الأعمال جميع تخصصات الإعلام جميع تخصصات تقنية المعلومات الاقتصاد الإحصاء القانون المخاطر الترجمة الهندسة الصناعية أهداف البرنامج المشاركة في تدريب ا"
+  },
+  {
+    "id": "4249c9827fc3f754",
+    "orgId": "gastat",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://careers.stats.gov.sa/",
+    "applyUrl": null,
+    "rawExcerpt": "موقع الهيئة العامة للإحصاء للتوظيف\n\nموقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بــ gov.sa جميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربيةالسعودية تنتهي بـ .gov.sa المواقع الالكترونية الحكومية تستخدم بروتوكول HTTPS للتشفير و الأمان.\n\nمستقبلك يبدأ من هنا ابدأ بخطوتك الأولى نحو مستقبل واعد البحث عن وظيفة تصفّح "
   },
   {
     "id": "43d8a5ae37bf1afe",
@@ -796,6 +909,34 @@
     "sourceUrl": "https://www.aramco.com/en/careers/for-saudi-applicants/student-opportunities/college-degree-program",
     "applyUrl": null,
     "rawExcerpt": "Skip to contentCollege scholarships for Saudi high school graduates.The College Degree Program (CDPNE) is a highly-selective scholarship program for Saudi male and female high school graduates. It is one of the Aramco's primary sources for entry-level Saudi professionals. Each year, Aramco selects outstanding Saudi high school graduates from the General path, Computer Science & Engineering path, o"
+  },
+  {
+    "id": "44e4688ac978d854",
+    "orgId": "nournet",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://nour.net.sa/ar/news/limitless-2026-event/",
+    "applyUrl": null,
+    "rawExcerpt": "اختتمت شركة نورنت (NourNet) بنجاح النسخة الثانية من حدثها التقني الرائد LIMITLESS 2026، والذي جمع نخبة من كبار المسؤولين الحكوميين وقادة المؤسسات والشركاء التقنيين العالميين لمناقشة مستقبل التحول الرقمي في المملكة العربية السعودية.وجاءت نسخة هذا العام في ظل تحولات جيوسياسية واقتصادية متسارعة على المستويين الإقليمي والعالمي، ما يسلّط الضوء على الأهمية المتزايدة لبناء بنية تحتية رقمية مرنة، وتعزيز ا"
   },
   {
     "id": "472cac81f2802010",
@@ -965,45 +1106,17 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 10,
-    "relevanceReason": "البرنامج يركز على المصرفية الإسلامية ولا علاقة له بالأمن السيبراني أو التخصصات التقنية.",
+    "relevanceReason": "البرنامج يركز على المصرفية الإسلامية ولا علاقة له بالأمن السيبراني أو التخصصات التقنية. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "no_course_condition",
-      "first_time_seen"
+      "first_time_seen",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.alrajhibank.com.sa/ar/page/coop-program/",
     "applyUrl": null,
     "rawExcerpt": "بناءً على التعاون المشترك بين مصرف الراجحي والجامعات التعليمية, ترى أكاديمية مصرف الراجحي أن التدريب التعاوني يعد عنصراً أساسياً في وضع مسار واضح نحو وظائف ناجحة. من خلال برنامج التدريب التعاوني سيحصل الطلاب على فرصة لتنمية مواهبهم وقدراتهم وتطبيق معرفتهم الأكاديمية في بيئة عمل حيوية ومتنوعة. وبناءً على ذلك يعتبر هذا البرنامج جزءاً مهماً في استراتيجية التوظيف لدى المصرف. يركز برنامج التدريب التعاو"
-  },
-  {
-    "id": "4f940eec63b4d80c",
-    "orgId": "ey_sa",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://www.ey.com/en_sa",
-    "applyUrl": null,
-    "rawExcerpt": "Insights AI Insights Finance People and workforce Sustainability Technology EY Transformation Risk Geostrategy Services Strategy by EY-Parthenon Strategy Consulting Corporate Strategy Geopolitical Strategy Commercial Strategy Working Capital Turnaround and Restructuring Consulting Sustainability Strategy AI Strategy Services Sector Strategy Transactions and Corporate Finance by EY-Parthenon M&A Ad"
   },
   {
     "id": "53550ceb8a20f95e",
@@ -1080,12 +1193,13 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 25,
-    "relevanceReason": "الإعلان عام عن برنامج تدريب تعاوني دون تحديد تخصص أو مجال تقني واضح مثل الأمن السيبراني.",
+    "relevanceReason": "الإعلان عام عن برنامج تدريب تعاوني دون تحديد تخصص أو مجال تقني واضح مثل الأمن السيبراني. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "no_course_condition",
-      "vanished_from_source"
+      "vanished_from_source",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://www.rcrc.gov.sa/careers/?lang=ar",
     "applyUrl": null,
@@ -1572,6 +1686,34 @@
     "rawExcerpt": "برنامج​ التدريب التعاوني ​يهدف برنامج سدايا للتدريب التعاوني إلى تقديم تدريب عملي وعلى رأس العمل لطلاب وطالبات الجامعات في المملكة. يتبع البرنامج أفضل الممارسات في مجال التدريب التعاوني، مما يساهم في رفع مستوى معرفتهم وتطوير مهاراتهم التخصصية والشخص​ية. وتأهيل المشاركين​ لدخول سوق الع​مل بكفاءة وثقة، مما يساعدهم في بناء مستقبل وظيفي ناجح ومتميز.​ التسجيل في التدريب التعاوني ​ #6459a7 Small Yes The"
   },
   {
+    "id": "8757d8f5e37160f6",
+    "orgId": "maaden",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://careers.maaden.com/gb/en/cookiesettings",
+    "applyUrl": null,
+    "rawExcerpt": "Skip to main content - 6a38a9dce34948b9a7afc15cb220b4dd Maaden Career BotConversational BotEnabled Chatbot SoundsThe information you provide to the chatbot will be collected to improve your experience.\n\nSkip to main content - 6a38a9dce34948b9a7afc15cb220b4dd Maaden Career BotConversational BotEnabled Chatbot SoundsThe information you provide to the chatbot will be collected to improve your experie"
+  },
+  {
     "id": "88076ffe7a121bd6",
     "orgId": "stc",
     "titleAr": "لم يُصنَّف بعد",
@@ -1599,6 +1741,62 @@
     "sourceUrl": "https://careers.stc.com.sa/",
     "applyUrl": null,
     "rawExcerpt": "We use cookies to offer you the best possible website experience. Your cookie preferences will be stored in your browser’s local storage. This includes cookies necessary for the website's operation. Additionally, you can freely decide and change any time whether you accept cookies or choose to opt out of cookies to improve website's performance, as well as cookies used to display content tailored "
+  },
+  {
+    "id": "8c42fef4fdb945ff",
+    "orgId": "cma",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://careers.cma.gov.sa/",
+    "applyUrl": null,
+    "rawExcerpt": "موقع هيئة السوق المالية للتوظيف\n\nموقع حكومي مسجل لدى هيئة الحكومة الرقمية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ .sa جميع روابط المواقع الرسمية التعليمية في المملكة العربية السعودية تنتهي بـ .sa.\n\nقدم سيرتك الذاتية الآن تقديم البحث عن وظيفة ابحث عن الفرصة المثالية وتقدم اليها أبحث حسابي تحكم بعملية بحثك عن عمل من خلال تحديث سيرتك الذاتية باستمرار ومتابعة طلباتك تصفح حسابى يس"
+  },
+  {
+    "id": "8ea90c3d54050761",
+    "orgId": "saip",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://www.saip.gov.sa",
+    "applyUrl": null,
+    "rawExcerpt": "تجاوز إلى المحتوى الرئيسيموقع رسمي تابع للمملكة العربية السعوديةكيف تعرف؟عنوان الموقع الحكومي السعودي الرسمي ينتهي بـ .gov.saالموقع تابع لجهة حكومية رسمية في المملكة العربية السعودية وينتهي دائماً بـ .gov.sa.المواقع الرسمية الآمنة تستخدم HTTPSالمواقع الحكومية المؤمنة في المملكة العربية السعودية تستخدم تشفير HTTPS.مسجل لدى هيئة الحكومة الرقمية: 20251009639الهيئة السعودية للملكية الفكريةجميع الحقوق "
   },
   {
     "id": "91b3d8d94fe3121e",
@@ -1719,6 +1917,34 @@
     "sourceUrl": "https://www.bankaljazira.com/ar-sa/",
     "applyUrl": null,
     "rawExcerpt": "X لنبدأ! افتح حسابًا عبر الإنترنت بكل سهولة افتح حسابًا! الحسابات استكشف حسابات بنك الجزيرة الشخصية التي تشمل الحسابات الجارية، والادخار، والعملات المتعددة. استمتع بطلب بطاقة مدى فورياً، وخدمات رقمية على مدار الساعة عبر تطبيق الجزيرة، وحلول مصرفية متوافقة مع الشريعة ومعتمدة من (ساما). برامج المصرفية المميزة اكتشف برامج بنك الجزيرة المصرفية المميزة، بما في ذلك عضويات \"ويلث\" و\"بريميوم\". استفد من إدا"
+  },
+  {
+    "id": "973a6777ecafc6b3",
+    "orgId": "rcjy",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://careers.rcjy.gov.sa/",
+    "applyUrl": null,
+    "rawExcerpt": "موقع الهيئة الملكية للجبيل وينبع للتوظيف\n\nبحث English دخول تسجيل بحث الرؤية و الرسالة الرؤية الخيار الأول للمستثمرين في قطاع الصناعة، والمساهم الرئيس في تقدم الصناعة واستدامتها بالمملكة العربية السعودية الرسالة تطوير وتمكين وإدارة مدن صناعية مستدامة، تشجع الابتكار وتوفر بنى تحتية متقدمة وخدمات مميزة، وصولا لاقتصاد مزدهر ومجتمع حيوي يواكب طموحات الوطن والشركاء .\n\nتاريخ آخر تعديل: 10/09/2025 - 4:13 "
   },
   {
     "id": "98b63f93274bcd9f",
@@ -1999,12 +2225,13 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 0,
-    "relevanceReason": "البرنامج مخصص لخريجين حاصلين على الشهادة النهائية، والطالب لم يتخرج بعد فهو غير مؤهل لهذا البرنامج.",
+    "relevanceReason": "البرنامج مخصص لخريجين حاصلين على الشهادة النهائية، والطالب لم يتخرج بعد فهو غير مؤهل لهذا البرنامج. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "wrong_product",
-      "no_course_condition"
+      "no_course_condition",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.saib.com.sa/ar/page/it-program/",
     "applyUrl": null,
@@ -2099,11 +2326,12 @@
       "المملكة العربية السعودية"
     ],
     "relevanceScore": 70,
-    "relevanceReason": "الإعلان يشمل تخصصات تقنية المعلومات بشكل عام دون ذكر صريح للأمن السيبراني أو الشبكات.",
+    "relevanceReason": "الإعلان يشمل تخصصات تقنية المعلومات بشكل عام دون ذكر صريح للأمن السيبراني أو الشبكات. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "no_course_condition"
+      "no_course_condition",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.cma.gov.sa/ar/saudi-arabia/jobs/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86%D9%8A-%D9%84%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%8A-2025%D9%85-1100087033/",
     "applyUrl": null,
@@ -2226,6 +2454,34 @@
     "rawExcerpt": "التوظيف انضم لعائلة تيتكو نعمل على تقديم بيئة عمل جاذبة ومتطورة تنمي المهارات والقدرات وتساهم باكتساب الخبرات لتعزيز المخرجات التعليمية وتحقيق رؤية المملكة 2030.كما نسعى في تيتكو لتسخير التقنية والارتقاء بالتعليم عبر تهيئة بيئة عمل ملهمة ومحفزة لاستقطاب المواهب وتمكين الكوادر ليساهموا في بناء وطن مزدهر وجيلٍ واعد. أضغط هنا التدريب التعاوني هو برنامج تدريبي يوفر تجربة قيمة وفريدة للطلاب المتوقع تخر"
   },
   {
+    "id": "c67dc7b955f5e4cd",
+    "orgId": "anb",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://careers.anb.sa/",
+    "applyUrl": null,
+    "rawExcerpt": "Careers at Arab National Bank\n\nعربي Login Sign Up Search Jobs Build Your Future With Arab National Bank As a comprehensive commercial bank.\n\nSubmit a CV now Search Jobs Find the perfect opening and apply with a click My Dashboard Manage your Career hunt by tracking your applications This website uses cookies to ensure you get the best experience on our website."
+  },
+  {
     "id": "c91e8eb8f14803dd",
     "orgId": "aramco",
     "titleAr": "التدريب العملي والتدريب التعاوني لطلاب الجامعات - شركة أرامكو السعودية",
@@ -2259,7 +2515,7 @@
     "titleAr": "لم يُصنَّف بعد",
     "detectedISO": "2026-08-31T19:04:22.590Z",
     "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -2275,12 +2531,11 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
+      "needs_manual_review"
     ],
     "sourceUrl": "https://www.sidf.gov.sa/ar/Pages/Home.aspx",
     "applyUrl": null,
-    "rawExcerpt": "A government website registered with the Digital Government Authority.How you know?SIDF Investment CompanySIDF AcademySIDF Academy Training Programs 2026 Programs designed to support individual learning and professional growth, focusing on developing your capabilities and sharpening your skills to boost your success and advance your career. Register NowRegister Now about this exciting topicFinanci"
+    "rawExcerpt": "SIDF\n\nA government website registered with the Digital Government Authority.How you know?SIDF Investment CompanySIDF AcademySIDF Academy Training Programs 2026 Programs designed to support individual learning and professional growth, focusing on developing your capabilities and sharpening your skills to boost your success and advance your career.\n\nThey aim to support the growth of your project, en"
   },
   {
     "id": "cd294b10e439368f",
@@ -2288,7 +2543,7 @@
     "titleAr": "لم يُصنَّف بعد",
     "detectedISO": "2026-09-01T03:23:53.266Z",
     "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -2300,16 +2555,71 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.maaden.com/gb/en/search-results",
     "applyUrl": null,
-    "rawExcerpt": "We use cookies to offer you a better browsing experience, analyze site traffic, and personalize content.\n\nWe use cookies to offer you a better browsing experience, analyze site traffic, and personalize content.\n\nRead about how we use cookies and how you can control them by visiting our Cookie Settings page.Cookie SettingsAllowSkip to main content Saved jobs (0) - Your Next Big Move Build your care"
+    "rawExcerpt": "We use cookies to offer you a better browsing experience, analyze site traffic, and personalize content.\n\nSearch job titleLocationNo Locations foundSearch Sorry...\n\nCreate Job Alert Loading...Create Job AlertNOTE: Use refine search filters above to get better job alertsEmail AddressYou'll get emails:DailyWeeklyMonthlyCreate Job AlertManage AlertsYour email is on its way...We have emailed you link "
+  },
+  {
+    "id": "d2e0e5e24d3524cc",
+    "orgId": "riyadbank",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://careers.riyadbank.com/",
+    "applyUrl": null,
+    "rawExcerpt": "Careers at Riyad Bank\n\nRegister Login العربية Start Your Career Journey with Us At Riyad Bank, we strive to foster an environment where every employee can thrive and excel.\n\nAttractive Salary Package Annual Houing Allowance Transportation Allowance Nursery for the Ladies Children Special Bonus and Incentives Development Programs Medical Insurance Central Region Riyadh Eastern Ring 011-279-9000 Wes"
+  },
+  {
+    "id": "d374b2ab5cb77ee3",
+    "orgId": "awqaf",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://awqaf.gov.sa/ar/ar/hiring/",
+    "applyUrl": null,
+    "rawExcerpt": "AWQAF\n\nموقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق ؟\n\nنعم لا 0% من المستخدمين قالوا نعم من 0 تعليقاً"
   },
   {
     "id": "d7183338cac5b725",
@@ -2491,7 +2801,7 @@
     "detectedISO": "2026-08-31T00:02:49.563Z",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
     "lastConfirmedISO": "2026-08-31T00:02:49.563Z",
-    "status": "closed",
+    "status": "unknown",
     "opensISO": null,
     "closesISO": "2023-09-14",
     "closesHijri": "٢٩ صفر ١٤٤٥ هـ",
@@ -2504,11 +2814,12 @@
       "Riyadh"
     ],
     "relevanceScore": 10,
-    "relevanceReason": "الإعلان يخص التدريب التعاوني في قطاع مصرفي عام بشركة الراجحي وليس له علاقة مباشرة بالأمن السيبراني أو تخصص الطالب.",
+    "relevanceReason": "الإعلان يخص التدريب التعاوني في قطاع مصرفي عام بشركة الراجحي وليس له علاقة مباشرة بالأمن السيبراني أو تخصص الطالب. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "no_course_condition"
+      "no_course_condition",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.alrajhibank.com.sa/",
     "applyUrl": null,
@@ -2521,7 +2832,7 @@
     "detectedISO": "2026-08-31T00:02:49.563Z",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
     "lastConfirmedISO": "2026-09-02T12:03:16.526Z",
-    "status": "closed",
+    "status": "unknown",
     "opensISO": null,
     "closesISO": "2026-05-06",
     "closesHijri": "١٩ ذو القعدة ١٤٤٧ هـ",
@@ -2534,13 +2845,14 @@
       "الرياض"
     ],
     "relevanceScore": 70,
-    "relevanceReason": "برنامج تدريب تعاوني عام تابع لوزارة الاتصالات وتقنية المعلومات دون تحديد مجال أمن سيبراني بشكل صريح.",
+    "relevanceReason": "برنامج تدريب تعاوني عام تابع لوزارة الاتصالات وتقنية المعلومات دون تحديد مجال أمن سيبراني بشكل صريح. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "no_course_condition",
       "first_time_seen",
-      "more_on_page"
+      "more_on_page",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.mcit.gov.sa/",
     "applyUrl": null,
@@ -2645,11 +2957,12 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 25,
-    "relevanceReason": "البرنامج يركز على التمويل والمحاسبة والتسويق ونظم المعلومات الإدارية، وهو بعيد نسبياً عن تخصص الأمن السيبراني للطالب.",
+    "relevanceReason": "البرنامج يركز على التمويل والمحاسبة والتسويق ونظم المعلومات الإدارية، وهو بعيد نسبياً عن تخصص الأمن السيبراني للطالب. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "no_course_condition"
+      "no_course_condition",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.saib.com.sa/en/page/coop-program/",
     "applyUrl": null,
@@ -2709,12 +3022,13 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 25,
-    "relevanceReason": "البرنامج موجه بشكل أساسي للتخصصات المالية والإدارية وليس للأمن السيبراني، مع ذكر نظم المعلومات الإدارية كتخصص مقبول فقط.",
+    "relevanceReason": "البرنامج موجه بشكل أساسي للتخصصات المالية والإدارية وليس للأمن السيبراني، مع ذكر نظم المعلومات الإدارية كتخصص مقبول فقط. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
       "no_course_condition",
-      "first_time_seen"
+      "first_time_seen",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.saib.com.sa/ar/page/coop-program/",
     "applyUrl": null,
@@ -2812,7 +3126,7 @@
     "titleAr": "لم يُصنَّف بعد",
     "detectedISO": "2026-08-31T19:04:22.590Z",
     "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -2828,12 +3142,11 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.ejada.com/ar/",
     "applyUrl": null,
-    "rawExcerpt": "Why EjadaWorking at Ejada has been an incredibly rewarding experience. The supportive work environment, opportunities for growth, and commitment to developing employees make me proud to be a part of this team. I am truly grateful for the continuous support and the culture of loyalty that Ejada fosters.Abdulrahman Al Bishi Saudi Arabia Why EjadaIn a supportive environment at Ejada, personal growth,"
+    "rawExcerpt": "موقع إجادة للتوظيف\n\nدخول تسجيل English نخطو معاً للمستقبل نخطو معاً للمستقبل نخطو معاً للمستقبل نخطو معاً للمستقبل نخطو معاً للمستقبل نخطو معاً للمستقبل نخطو معاً للمستقبل نخطو معاً للمستقبل نخطو معاً للمستقبل البحث عن وظائف إجادة - لا تفضيل - البحث عن الوظائف Why EjadaWorking at Ejada has been an incredibly rewarding experience.\n\nWith supportive colleagues and exciting challenges, I’m proud to be"
   },
   {
     "id": "ed087203c34bb7c2",
@@ -2841,36 +3154,7 @@
     "titleAr": "لم يُصنَّف بعد",
     "detectedISO": "2026-09-01T03:23:53.266Z",
     "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastConfirmedISO": "2026-09-01T03:23:53.266Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: مفتاح التصنيف غير مضبوط على جهاز الجمع. الصفحة محفوظة وستُقرأ لاحقاً.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
-    ],
-    "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/about-saudi-exchange/aboutus/careers?locale=ar",
-    "applyUrl": null,
-    "rawExcerpt": "Z7_5A602H80O0HTC060SG6UT81GM2 ملخص السوق 01 سبتمبر 2026 السوق مغلق حدد المؤشرات حدد 4 مؤشرات كحد أقصى الخدمات التجارية والمهنية 3,831.12 0.20% النقل 4,149.59 0.98% السلع طويلة الاجل 3,548.06 2.14% الخدمات الإستهلاكية 3,474.93 0.61% الإعلام والترفيه 8,724.44 0.88% تجزئة وتوزيع السلع الكمالية 7,612.94 0.19% تجزئة وتوزيع السلع الاستهلاكية 5,283.62 0.86% إنتاج الأغذية 4,701.91 0.56% الرعاية الصحية 9,0"
-  },
-  {
-    "id": "f0652fa7d89117bb",
-    "orgId": "riyadbank",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
     "status": "unknown",
     "opensISO": null,
     "closesISO": null,
@@ -2886,12 +3170,67 @@
     "statesZeroCoursesRule": false,
     "zeroCoursesQuote": null,
     "flags": [
-      "needs_manual_review",
-      "vanished_from_source"
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/about-saudi-exchange/aboutus/careers?locale=ar",
+    "applyUrl": null,
+    "rawExcerpt": "Home - Saudi Exchange\n\nتسجيل الدخول للوصول إلى قائمة المتابعة يرجى التحقق من رمز التحقق تسجيل الدخول لا تملك حساب؟\n\nتسجيل الدخول الرئيسية السوق مغلق المشتقات السوق مغلق نمو حد أعلى السوق مغلق الصكوك و السندات السوق مغلق تنويه: الأسعار متأخرة تاسي 11,012.18 -88.56 ( -0.80 %) افتتاح - 11,090.41 إغلاق سابق - 11,100.74 63 إرتفاعاً 197 إنخفاضاً جميع أسهم السوق الرئيسية إم تي 30 1,478.72 -14.47 ( -0.97 "
+  },
+  {
+    "id": "f0652fa7d89117bb",
+    "orgId": "riyadbank",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-08-31T19:04:22.590Z",
+    "firstSeenISO": "2026-08-31T19:04:22.590Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.riyadbank.com/ar/",
     "applyUrl": null,
-    "rawExcerpt": "Start Your Career Journey with Us At Riyad Bank, we strive to foster an environment where every employee can thrive and excel. With a commitment to leadership development, career growth, and performance management, we empower our team to achieve their best and value their contributions. Together, we aspire to be the leading bank in the Kingdom, contributing to a bright future marked by innovation "
+    "rawExcerpt": "موقع بنك الرياض للتوظيف\n\nتسجيل دخول English Start Your Career Journey with Us At Riyad Bank, we strive to foster an environment where every employee can thrive and excel.\n\nAttractive Salary Package Annual Houing Allowance Transportation Allowance Nursery for the Ladies Children Special Bonus and Incentives Development Programs Medical Insurance Central Region Riyadh Eastern Ring 011-279-9000 Weste"
+  },
+  {
+    "id": "f22d46ed16e329ba",
+    "orgId": "housing",
+    "titleAr": "لم يُصنَّف بعد",
+    "detectedISO": "2026-09-02T18:03:07.436Z",
+    "firstSeenISO": "2026-09-02T18:03:07.436Z",
+    "lastConfirmedISO": "2026-09-02T18:03:07.436Z",
+    "status": "unknown",
+    "opensISO": null,
+    "closesISO": null,
+    "closesHijri": null,
+    "product": "unknown",
+    "majors": [],
+    "seats": null,
+    "stipendSAR": null,
+    "durationWeeks": null,
+    "cities": [],
+    "relevanceScore": null,
+    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
+    "statesZeroCoursesRule": false,
+    "zeroCoursesQuote": null,
+    "flags": [
+      "needs_manual_review"
+    ],
+    "sourceUrl": "https://momah.gov.sa/ar",
+    "applyUrl": null,
+    "rawExcerpt": "وزارة البلديات والإسكان\n\nتجاوز إلى المحتوى الرئيسي موقع حكومي رسمي تابع لحكومة المملكة العربية السعوديةكيف تتحققالإعدادات طباعة حفظ الصفحةأدوات سهولة الوصولروابط المواقع الالكترونية الرسمية السعودية تنتهي بgov.saجميع روابط المواقع الرسمية التابعة للجهات الحكومية في المملكة العربية السعودية تنتهي بـgov.saالمواقع الالكترونية الحكومية تستخدم بروتوكولHTTPS للتشفير و الأمان.تحقق من الموقع يستخدم بروتكو"
   },
   {
     "id": "f7c62875ac95a35e",
@@ -3010,11 +3349,12 @@
     "durationWeeks": null,
     "cities": [],
     "relevanceScore": 70,
-    "relevanceReason": "التخصص يشمل تقنية المعلومات وهو قريب من مجال الطالب لكن لا يذكر الأمن السيبراني تحديداً.",
+    "relevanceReason": "التخصص يشمل تقنية المعلومات وهو قريب من مجال الطالب لكن لا يذكر الأمن السيبراني تحديداً. (لم يُتحقّق في آخر جولة: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.)",
     "statesZeroCoursesRule": true,
     "zeroCoursesQuote": "انتظام كلي",
     "flags": [
-      "first_time_seen"
+      "first_time_seen",
+      "needs_manual_review"
     ],
     "sourceUrl": "https://careers.cma.gov.sa/ar/page/coop-program/",
     "applyUrl": null,
