@@ -1,33 +1,5 @@
 [
   {
-    "id": "05c1fdcd70df03d0",
-    "orgId": "rega",
-    "titleAr": "لم يُصنَّف بعد",
-    "detectedISO": "2026-08-31T19:04:22.590Z",
-    "firstSeenISO": "2026-08-31T19:04:22.590Z",
-    "lastConfirmedISO": "2026-08-31T19:04:22.590Z",
-    "status": "unknown",
-    "opensISO": null,
-    "closesISO": null,
-    "closesHijri": null,
-    "product": "unknown",
-    "majors": [],
-    "seats": null,
-    "stipendSAR": null,
-    "durationWeeks": null,
-    "cities": [],
-    "relevanceScore": null,
-    "relevanceReason": "تعذّر التصنيف: نفد رصيد التصنيف. الصفحة محفوظة وستُقرأ في أول جولة بعد الشحن.",
-    "statesZeroCoursesRule": false,
-    "zeroCoursesQuote": null,
-    "flags": [
-      "needs_manual_review"
-    ],
-    "sourceUrl": "https://www.rega.gov.sa/",
-    "applyUrl": null,
-    "rawExcerpt": "البرامج والخدمات العقارية تمـلُّك غير السعوديين للعقار يمثل نظام تملك غير السعوديين للعقار الإطار التنظيمي المحدّث لتمكين غير السعوديين من تملك العقارات في... عقاري التطبيق الرسمي للخدمات الإلكترونية للهيئة، يقدم تجربة رقمية متكاملة تتيح للأفراد والمنشآت العقارية... الوساطة العقارية تُنظم التعاملات العقارية وتحفظ حقوق الأطراف، بما يعزّز الثقة ويحفّز التطوير والابتكار في السوق... المساهمات العقارية"
-  },
-  {
     "id": "07e0fcb183f0ab2f",
     "orgId": "sabic",
     "titleAr": "لم يُصنَّف بعد",
