@@ -462,5 +462,445 @@
     "body": "قُرئت الصفحات لكن تعذّر الحكم على 80 منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف — افحص الجهات المهمة بنفسك.",
     "weight": 250,
     "queuedISO": "2026-09-03T00:23:29.337Z"
+  },
+  {
+    "key": "broken:https://adf.gov.sa/ar/media-center/events/Pages/default.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — صندوق التنمية الزراعية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://adf.gov.sa/ar/media-center/news/Pages/default.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — صندوق التنمية الزراعية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://adf.gov.sa/ar/media-center/success-stories/Pages/default.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — صندوق التنمية الزراعية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://adf.gov.sa/ar/Pages/employment.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — صندوق التنمية الزراعية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://adf.gov.sa/ar/Pages/training-request.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — صندوق التنمية الزراعية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://adf.gov.sa/ar/Pages/training.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — صندوق التنمية الزراعية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://career.dga.gov.sa/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة الحكومة الرقمية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://career.dga.gov.sa/ar/page/coop-program/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة الحكومة الرقمية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://e-services.hrc.gov.sa/ar/service/details/12",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة حقوق الإنسان السعودية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://gmedia.gov.sa/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهيئة العامة للإعلام المرئي والمسموع",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://gmedia.gov.sa/ar/hiring",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهيئة العامة للإعلام المرئي والمسموع",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://gmedia.gov.sa/ar/news/news-0019",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهيئة العامة للإعلام المرئي والمسموع",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://gmedia.gov.sa/ar/news/news-0020",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهيئة العامة للإعلام المرئي والمسموع",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://gmedia.gov.sa/ar/news/news-0022",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهيئة العامة للإعلام المرئي والمسموع",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://gmedia.gov.sa/en/hiring",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهيئة العامة للإعلام المرئي والمسموع",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://khabeer.bog.gov.sa/cotraining/index",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — ديوان المظالم",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://ncdc.gov.sa/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — المركز الوطني للتصديق الرقمي",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.aecl.com/ar/news/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الشركات المتقدمة للإلكترونيات",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.aecl.com/en/news/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الشركات المتقدمة للإلكترونيات",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.bog.gov.sa/en/EServices/judiciaryHiring/Pages/default.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — ديوان المظالم",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.bog.gov.sa/en/EServices/judiciaryHiring/Pages/Hiring.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — ديوان المظالم",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.etec.gov.sa/ar/centers/nctea",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة تقويم التعليم والتدريب",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.etec.gov.sa/ar/identity-guide",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة تقويم التعليم والتدريب",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.etec.gov.sa/ar/institutions",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة تقويم التعليم والتدريب",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.etec.gov.sa/ar/jobs",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة تقويم التعليم والتدريب",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.etec.gov.sa/ar/programs/nsqts",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة تقويم التعليم والتدريب",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.hrc.gov.sa/website/all_branches_news?lang=ar",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة حقوق الإنسان السعودية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.hrc.gov.sa/website/careers",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة حقوق الإنسان السعودية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.hrc.gov.sa/website/careers?lang=ar",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة حقوق الإنسان السعودية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.hrc.gov.sa/website/careers/graduate-development-program",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة حقوق الإنسان السعودية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.hrc.gov.sa/website/cooperations?lang=ar",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة حقوق الإنسان السعودية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.hrc.gov.sa/website/news?lang=ar",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة حقوق الإنسان السعودية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.mim.gov.sa/ar",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — وزارة الصناعة والثروة المعدنية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.mim.gov.sa/ar/media-center/news",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — وزارة الصناعة والثروة المعدنية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.moenergy.gov.sa/ar/media-center",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — وزارة الطاقة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.moenergy.gov.sa/ar/media-center/news",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — وزارة الطاقة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.moenergy.gov.sa/ar/media-center/news/first-energy-hackathon",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — وزارة الطاقة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.moenergy.gov.sa/ar/media-center/news/saudi-arabia-and-united-states-sign-agreement-on-cooperation-in-peaceful-uses-of-nuclear-energy",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — وزارة الطاقة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.nazaha.gov.sa/Jobs",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — نزاهة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.nazaha.gov.sa/News",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — نزاهة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.nazaha.gov.sa/News/Details?q=+ZUW2RPX/9RAyHyLvILpaw==",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — نزاهة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.nazaha.gov.sa/News/Details?q=HNQU9DHVnwVHan0Mf562ug==",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — نزاهة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.nazaha.gov.sa/News/Details?q=LDqaftYCK2agKydxrbY5fg==",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — نزاهة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.nazaha.gov.sa/News/Details?q=o2ojUlDL5mGosOuEoGXXeg==",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — نزاهة",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.ncc.gov.sa/ar/MediaCenter/Events/Pages/default.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — المركز الوطني للتنافسية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.ncc.gov.sa/ar/MediaCenter/News/Pages/default.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — المركز الوطني للتنافسية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.ncc.gov.sa/ar/MediaCenter/News/Pages/News_065.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — المركز الوطني للتنافسية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.ncc.gov.sa/ar/MediaCenter/Pages/default.aspx",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — المركز الوطني للتنافسية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.rcjy.gov.sa/media-center",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهيئة الملكية للجبيل وينبع",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.rcjy.gov.sa/news",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهيئة الملكية للجبيل وينبع",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.sar.com.sa/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الخطوط الحديدية السعودية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.saudiexports.gov.sa/ar",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — هيئة تنمية الصادرات السعودية",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.srca.org.sa/%d8%a7%d9%84%d8%aa%d9%88%d8%b8%d9%8a%d9%81/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهلال الأحمر السعودي",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.srca.org.sa/news/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهلال الأحمر السعودي",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
+  },
+  {
+    "key": "broken:https://www.srca.org.sa/newsletters/",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — الهلال الأحمر السعودي",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-03T06:22:56.670Z"
   }
 ]
