@@ -926,5 +926,37 @@
     "body": "قُرئت الصفحات لكن تعذّر الحكم على 108 منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف — افحص الجهات المهمة بنفسك.",
     "weight": 250,
     "queuedISO": "2026-09-06T00:29:07.942Z"
+  },
+  {
+    "key": "broken:https://www.sabic.com/ar/careers",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — سابك",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-06T18:27:49.273Z"
+  },
+  {
+    "key": "broken:https://www.sabic.com/ar/careers/americas",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — سابك",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-06T18:27:49.273Z"
+  },
+  {
+    "key": "broken:https://www.sabic.com/ar/careers/asia",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — سابك",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-06T18:27:49.273Z"
+  },
+  {
+    "key": "broken:https://www.sabic.com/ar/careers/middle-east-africa/students-and-fresh-graduates",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — سابك",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-06T18:27:49.273Z"
   }
 ]
