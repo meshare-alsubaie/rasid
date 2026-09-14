@@ -58,7 +58,7 @@
   {
     "sourceUrl": "http://www.wasatah.com.sa/index.php/ar/",
     "orgId": "wasatah",
-    "contentHash": "0ed203adc05bdf25469c250e66ef442d4212f89ce90cb88141cf221ec1b31bac",
+    "contentHash": null,
     "blockHashes": [
       "b7458873e39b49e8",
       "37a794dacc68cfde",
@@ -686,7 +686,7 @@
   {
     "sourceUrl": "https://awqaf.gov.sa/ar/hiring",
     "orgId": "awqaf",
-    "contentHash": "f62a00cb2e30fbe5029550499aa52be4a6affde0ffdeca83c44f08733c0dcfd9",
+    "contentHash": "61b5d1f1979e79ac0735ee93dcfa37a193992cd58f8c759805b36428992ff72a",
     "blockHashes": [
       "7364f70c455dc78c",
       "c804732dd480d71a",
@@ -702,12 +702,12 @@
       "7e030a9d218ecfa7",
       "036cf3f6cfbe5bf8",
       "46e4a5de0dd4a095",
-      "e7bfc5fb34856d4f"
+      "2fcd5d327b0a4db6"
     ],
     "extractedChars": 1948,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
@@ -1241,9 +1241,10 @@
   {
     "sourceUrl": "https://careers.maaden.com/gb/en/cookiesettings",
     "orgId": "maaden",
-    "contentHash": "7711b3a01347cda9ef965268f2d6cc4a8aba41e063b7593e24259152e27fce84",
+    "contentHash": "cd133a7f64c6e7c532926ab6a1196a0f76b9b4faeea7fc887397bf7250645da7",
     "blockHashes": [
-      "f44ff61fec36a6d7",
+      "5569201553604d03",
+      "4c196b7e3be1973c",
       "dd53e083dd4c4329",
       "5e2fc5a4da5c7871",
       "197c66a2b21d9654",
@@ -1308,33 +1309,31 @@
       "ee82ab94d7112a03",
       "60b7b15f81dc7749",
       "abf11bb520a3d451",
-      "594192887bd63578",
-      "f62ba1c1488f9302"
+      "7da92addabf580de"
     ],
     "extractedChars": 8013,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
   {
     "sourceUrl": "https://careers.maaden.com/gb/en/search-results",
     "orgId": "maaden",
-    "contentHash": "312e1bf5fd579b55a44970b534aa6de629f69155fd558981432cee3268df89f0",
+    "contentHash": "2cb1c226f7fb7bda1f150ecded93069e2956cc9ee098d08344e90146908455e4",
     "blockHashes": [
       "5569201553604d03",
-      "6e3cceb54e777f64",
-      "298a05ebe5a16280",
+      "b856ff306f7f788a",
+      "6bf0ca67e0f069b4",
       "d6c0adacb353836a",
-      "c99d0f787455e0d6",
-      "b99a1f16bfdbec0c",
-      "f62ba1c1488f9302"
+      "78e40712e1dfed61",
+      "a2761a03402b3b10"
     ],
-    "extractedChars": 1324,
-    "extractionMethod": "body_fallback",
+    "extractedChars": 240,
+    "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
@@ -2037,13 +2036,14 @@
   {
     "sourceUrl": "https://cma.gov.sa/Pages/default.aspx",
     "orgId": "cma",
-    "contentHash": "de50d03c4d58cfef3664a8c391b64f6cf10d8c7787740673a9a672a00fcbcfb8",
+    "contentHash": "130d1846f5e883be69adae7471fdaf93bed1d748f0a03406acb66836e400b4eb",
     "blockHashes": [
       "74fbc9af4b28d2d6",
       "74e4c1d2a646a96e",
       "480b43638df466ee",
       "a033604fe1e6160c",
-      "77c4f6b981621fc1",
+      "60d95e61271d558d",
+      "022fcd5d6f4a51f4",
       "363513a7d0871234",
       "5a3113358579ec7d",
       "6105d8d3cd5a2e53",
@@ -2055,8 +2055,7 @@
       "0bc174bc1329525c",
       "c10c9684f0f8ac0c",
       "2ef2d843d3c93d1e",
-      "5e7e864d0c2c6623",
-      "5f939530ee42956d",
+      "483ef2fb47f87628",
       "a7dd529366338547",
       "cd3c75b5a07e0dc8",
       "cf3583b4fe09c953",
@@ -2078,12 +2077,12 @@
       "3b5a8943dae3d475",
       "57967945306787f5"
     ],
-    "extractedChars": 8364,
+    "extractedChars": 9247,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T06:03:33.482Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
-    "pendingClassification": false
+    "pendingClassification": true
   },
   {
     "sourceUrl": "https://e-services.hrc.gov.sa/ar/service/details/12",
@@ -2139,7 +2138,7 @@
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T02:22:33.828Z",
     "lastChangedISO": "2026-08-29T02:36:21.032Z",
-    "thinRuns": 77,
+    "thinRuns": 78,
     "pendingClassification": false
   },
   {
@@ -2646,14 +2645,14 @@
   {
     "sourceUrl": "https://makkah-careers.health.sa/",
     "orgId": "mecca_health",
-    "contentHash": "5fe6a78bfc56d55c944901df45007fdd53b03f3f49322249b6eef2fb5e4f0e16",
+    "contentHash": "99c987bdde03dcae21259aa8bb0ebff9d7d2f7680ec1fdd719427023870c1433",
     "blockHashes": [
-      "5fe6a78bfc56d55c"
+      "99c987bdde03dcae"
     ],
-    "extractedChars": 420,
+    "extractedChars": 352,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -2807,7 +2806,7 @@
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
     "lastChangedISO": "2026-09-14T12:03:30.283Z",
     "thinRuns": 0,
-    "pendingClassification": true
+    "pendingClassification": false
   },
   {
     "sourceUrl": "https://mc.gov.sa/ar/pages/default.aspx",
@@ -3046,82 +3045,82 @@
   {
     "sourceUrl": "https://momah.gov.sa/ar",
     "orgId": "housing",
-    "contentHash": "f0b67ac1707f93fe25ec52498847d9cf4bb684589c198c7506e5e8ca3a36405a",
+    "contentHash": "052a184d79ba5663461930ba3daa32ec416d40e85e6b4d783173703f4600c012",
     "blockHashes": [
       "390ea394b03ad064",
       "0cae66fd6419120a",
       "5627c3eedb1b268d",
       "eda51fdba56a43dc",
-      "fe94148b738c7596",
-      "e766d1c83aeecf6f",
-      "ac1405062719fb86",
-      "df99bfe7d8b84747",
-      "2bf93a70171c83d0",
-      "3d357fa79f8b7acb",
+      "b529f09393d5a0ee",
+      "cd77afa3fc3552ad",
+      "ff6f87e39638cb9b",
+      "08c71fe1d8084ac8",
+      "5d15152619ff887e",
+      "9aafc7d13eac932f",
+      "e4fee76f816c8736",
+      "8f754d31cf2e4c57",
+      "0c54911bc9357fc0",
+      "09b1bd561f62b68f",
+      "3768c795f7090851",
+      "bf646c98cc721f60",
+      "1682a9f0c13d1aea",
       "560edfe1df9d8921",
       "23b97a8a93aba477",
       "9cd3abf7fd1573ff",
-      "e11e07446549924e",
-      "5112a5a3fa9370a7",
-      "5d15152619ff887e",
-      "23746dc19a6e830b",
-      "ba75cb92565ef579",
-      "88bcb28702288375",
-      "ff6f87e39638cb9b",
-      "ecf7e32df7d0c9e1",
-      "09b1bd561f62b68f",
-      "ad21e946cdbb242f",
-      "b27019e2c618e21a"
+      "c284aa47f3a4bdad",
+      "6d47b6de7c7c74b7",
+      "ac1405062719fb86",
+      "e32a003cd21a1439"
     ],
     "extractedChars": 153827,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://momah.gov.sa/ar/announcements",
     "orgId": "housing",
-    "contentHash": "43d797e15501e258c884c09890914307d1035d1a75913c02b4dff673cc3786a4",
+    "contentHash": "71d1745978c2f871daca3f52adcad3349243bd1ccf564d26bc4d3ecaaa6fd979",
     "blockHashes": [
       "b5d072cff912d21d",
       "83198c6586cd15b8",
       "066ae42109053cb0",
       "aa8e55eac5aea8cd",
       "09552ec2996654f9",
-      "8a6e9d742b26b5e7",
-      "ff6f87e39638cb9b",
-      "ccc0e0b0a9d9f33d",
-      "29d9aae0bbc07959",
-      "a6eb8218dead2f56",
-      "3b0ee1e004ece593",
+      "585664ef92717c21",
       "09b1bd561f62b68f",
-      "2392242ac8e76864",
-      "725712cb44276841",
-      "fb096c3f00fae2d6",
+      "18d38e5cbc050177",
+      "1df2454cfbe7ae21",
+      "5d30b84f01a3a227",
+      "87f521be0ef12f40",
+      "b587c057626eaefc",
+      "ff6f87e39638cb9b",
+      "957730749a47f43d",
+      "9bcd24e3a98c04ae",
+      "ac1405062719fb86",
+      "ffe4b899218cc614",
+      "71cea18badd8dc43",
       "560edfe1df9d8921",
       "23b97a8a93aba477",
       "9cd3abf7fd1573ff",
-      "13d4971dc6581a56",
-      "739e6ed059aea1b1",
+      "e7001e524fc1794e",
+      "42449db342104923",
       "5d15152619ff887e",
-      "32acf0103a49dd8b",
-      "db2dce5879471564",
-      "ac1405062719fb86",
-      "9af51ec337577c45"
+      "b005284d58177948"
     ],
-    "extractedChars": 152454,
+    "extractedChars": 152494,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://momah.gov.sa/ar/form/partnerships-and-cooperation",
     "orgId": "housing",
-    "contentHash": "b191625e2378107fafbfcabd0aebc3a0d4fdf3036cf5aa77177433a1b48e8cfc",
+    "contentHash": "694a5d23009fbd92e3100eee5cc3583e1bca41d0a2fd70b97b80db7410e409e6",
     "blockHashes": [
       "bc22896c0dc046da",
       "d2009185b8a1a230",
@@ -3130,75 +3129,75 @@
       "066ae42109053cb0",
       "aa8e55eac5aea8cd",
       "09552ec2996654f9",
-      "e1d64486db6cddb0",
+      "3f3d1bfd52554edc",
       "5d15152619ff887e",
-      "9c275e0052c8d889",
-      "81d9cede3ab06054",
-      "09b1bd561f62b68f",
-      "ca4970195c8f64ce",
-      "ac1405062719fb86",
-      "a35363893175b3f6",
+      "375066b8b34e469a",
+      "b29e8bbb74c2f82c",
+      "7ffc72da916ef9c3",
+      "1ec3a3a2649d1ab5",
+      "d46d02cdbf8fa806",
+      "03f74e52a78d1c06",
+      "4d429f69e62a9e20",
       "ff6f87e39638cb9b",
-      "7d991c3636321b3a",
-      "30d50c0d5ee240d7",
+      "0800c47b5b7e1f8d",
+      "ac1405062719fb86",
+      "b6fc9ea582f927c4",
+      "9d573fb731f13322",
       "560edfe1df9d8921",
       "23b97a8a93aba477",
       "9cd3abf7fd1573ff",
-      "b4a1596a6263d1bb",
-      "1bbbeecdf4665de9",
-      "cffbb693e132a966",
-      "d6664af33d70ee7a",
-      "02d675ca3edad4b8",
-      "fc55e4933878c77c"
+      "f060a6bdee0d89ed",
+      "09b1bd561f62b68f",
+      "c887d2412db5a305"
     ],
-    "extractedChars": 151367,
+    "extractedChars": 151407,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
   {
     "sourceUrl": "https://momah.gov.sa/ar/menu/media-center",
     "orgId": "housing",
-    "contentHash": "c576fc2c39f3b928ca75b8613a6fcb64cb1cdfbb2d5b328e9ca1d002e9181701",
+    "contentHash": "c23a1d8e0eae1baaade02829d70a7ff3ae920c3b74f6ffa7abe2da36024dfdd2",
     "blockHashes": [
       "4c63522200199108",
       "7bc8965d992df69b",
       "aa8e55eac5aea8cd",
       "09552ec2996654f9",
-      "c20b92920dbf8c59",
-      "14f71b3c8fc7eccb",
-      "b978890ba4db0bda",
+      "7c4bed159869ff40",
+      "50abc34a109d5fbd",
+      "ac1405062719fb86",
+      "f3f28aa62ce664d5",
+      "327fe8bb6d6221f1",
+      "dbf56cc0d6d7a1b8",
+      "09b1bd561f62b68f",
+      "347ed7966a70d0de",
+      "58cbf962518a38f6",
       "5d15152619ff887e",
-      "a53d81925a08c799",
+      "505db9145840c83f",
+      "d85544278c5ba18d",
+      "3d3ddd6654e6517c",
+      "ff6f87e39638cb9b",
+      "ff15830528fed028",
       "560edfe1df9d8921",
       "23b97a8a93aba477",
       "9cd3abf7fd1573ff",
-      "a68d67ac3c16bd5a",
-      "ac1405062719fb86",
-      "47f71762168449f3",
-      "99a980d39d2caafb",
-      "2a034fa7c18e2736",
-      "d150162942d875d8",
-      "ff6f87e39638cb9b",
-      "21ecba7c1299196b",
-      "8c8d16df15447513",
-      "7635089687d70f20",
-      "09b1bd561f62b68f",
-      "f93e8b90d81b8684"
+      "b94c3666f8caf3ed",
+      "03a805240a333503"
     ],
-    "extractedChars": 151282,
+    "extractedChars": 151322,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://momah.gov.sa/ar/news",
     "orgId": "housing",
-    "contentHash": "eb9a882d1cadabcec594c08335e206251d4c74189ea4b44e3d98fac49ba7944b",
+    "contentHash": "e1599082aa1584f6aadf39b87477bc1b102ea76595570c557ae5c18fa3d5295f",
     "blockHashes": [
       "c39d79399ac7deac",
       "6dd936dd3894b0a4",
@@ -3208,69 +3207,69 @@
       "066ae42109053cb0",
       "aa8e55eac5aea8cd",
       "09552ec2996654f9",
-      "3df336323fa6b513",
-      "bb13eb5c1f500e7a",
+      "c6e2b58e74ac5d0d",
+      "ff6f87e39638cb9b",
+      "df04b560a21c2ce0",
+      "59693700061043f4",
       "560edfe1df9d8921",
       "23b97a8a93aba477",
       "9cd3abf7fd1573ff",
-      "510fbb5190014eea",
-      "9bd701232906f083",
-      "469a9bdecff2a8ab",
-      "29f87221300b05c0",
-      "5d15152619ff887e",
-      "131d146731d7b190",
+      "b977926f6849e917",
+      "0bba9d782e3b2301",
+      "6aeef29312e44831",
+      "acbb75950baa5665",
+      "293bd7008a7bed05",
       "09b1bd561f62b68f",
-      "5f4db8294f68627c",
-      "545dc05002dd9da8",
-      "ff6f87e39638cb9b",
-      "dc77a9a1f0f5e620",
-      "0a31f2c486867c9e",
-      "3983cf873d3c6f4a",
+      "d9c1137cbacd61e6",
+      "42b5030052ec2a8f",
+      "5d15152619ff887e",
+      "b7014bd905eb9c83",
+      "e49d690416a94e23",
       "ac1405062719fb86",
-      "b291600dde8cbaf4"
+      "061a385f781dd705"
     ],
-    "extractedChars": 151354,
+    "extractedChars": 151394,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://momah.gov.sa/ar/node/14717",
     "orgId": "housing",
-    "contentHash": "1398ae3a5ff083b7b04791d7a66d6903cebc8035ae965d3d967f155700d2be20",
+    "contentHash": "7773b760ad78becc92f2e32b998f5bbcee963691d663eb15e5713d40a76443d9",
     "blockHashes": [
       "cb4161ba67cbcfe8",
       "075ae909c8ed1c08",
       "a9b825825b3c6e51",
       "aa8e55eac5aea8cd",
       "09552ec2996654f9",
-      "15198d7c19e95d6f",
-      "c3b2743b52acca37",
-      "58cbf962518a38f6",
-      "5d15152619ff887e",
-      "63fdde9714ff4397",
-      "167a81b167793ef7",
-      "ac1405062719fb86",
-      "1cb9f2c4a1fe69c3",
-      "b587c057626eaefc",
-      "ff6f87e39638cb9b",
-      "ef9088bfe69bca26",
-      "cfe58700bbedb133",
-      "546544e2702a41ae",
+      "da86b0ef3fa3bc23",
+      "60ac5a230b334ec8",
+      "7f205fb341a5d0d8",
+      "eff8b426a5ebdb69",
+      "a337a7d6b88e9270",
       "560edfe1df9d8921",
       "23b97a8a93aba477",
       "9cd3abf7fd1573ff",
-      "752a8c7b7c60dc4b",
-      "a01da8ff523e82b6",
+      "a45f970e710e2cf1",
       "09b1bd561f62b68f",
-      "7d0927bac5b67621"
+      "54c8f276b2edc2ae",
+      "ff6f87e39638cb9b",
+      "e2f4791da434d40b",
+      "5d15152619ff887e",
+      "3e5fac143a60396a",
+      "2258e3d69a9da17a",
+      "ac1405062719fb86",
+      "62a63f3764534edc",
+      "059644ce52741b43",
+      "f829ecdfd2036d67"
     ],
-    "extractedChars": 152144,
+    "extractedChars": 152184,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
@@ -3427,15 +3426,15 @@
   {
     "sourceUrl": "https://nca.gov.sa/en/news/",
     "orgId": "nca",
-    "contentHash": "c8aae294b8160d5c50a7d99f8524edda677c0b75f84b3d69a1abce86d4108bf2",
+    "contentHash": "9da88b0b2c6bc4eebde4c5a602fd7b80432edd2825f222b4f0aec040e05f0082",
     "blockHashes": [
-      "ada70e1494ec7db5",
-      "24211ab3dd75a0ec"
+      "c6158f0e2968c3b1",
+      "ea809b3d664e8bfd"
     ],
-    "extractedChars": 822,
+    "extractedChars": 749,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-13T12:03:02.751Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
@@ -3603,7 +3602,7 @@
   {
     "sourceUrl": "https://nour.net.sa/ar/",
     "orgId": "nournet",
-    "contentHash": "ccece23935df3cac7a223211e2f7b45f98fc9caee364648dc4c1521b481f5368",
+    "contentHash": "7ff3edfcee431138a48b915ecbf2bc2c15a949fd8988e78e7808078de5273e8a",
     "blockHashes": [
       "d273f51ab1fc8358",
       "c7d4cc00704cdb7c",
@@ -3627,16 +3626,14 @@
       "76746f52976848b1",
       "73ea57f5d3f49927",
       "f113972f5bda8fba",
-      "62bf404445b0fa36",
-      "d0e89f8b02ff9960",
-      "139546e1bb791f29"
+      "62bf404445b0fa36"
     ],
     "extractedChars": 3805,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T22:03:35.383Z",
-    "lastChangedISO": "2026-09-10T06:03:51.766Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
-    "pendingClassification": false
+    "pendingClassification": true
   },
   {
     "sourceUrl": "https://nour.net.sa/ar/news/",
@@ -3657,23 +3654,21 @@
   {
     "sourceUrl": "https://nour.net.sa/ar/news/limitless-2026-event/",
     "orgId": "nournet",
-    "contentHash": "ed0c08359c6b082696be6cc51dda5e2180e53e071f55c5bd0a277ab75cfd9712",
+    "contentHash": "da5b86540a898147beafd86d74f9440b3d3f21e7f689b0664f3dff826faed52c",
     "blockHashes": [
       "c98d23b8511f3049",
       "1c2d61fcce5b811e",
       "a7e35620c6dc756e",
       "8f60949bf1abf18c",
       "8a6708e28e87ebb1",
-      "ff4492456d47433c",
-      "d0e89f8b02ff9960",
-      "139546e1bb791f29"
+      "ff4492456d47433c"
     ],
     "extractedChars": 3296,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-09T12:03:04.625Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
-    "pendingClassification": false
+    "pendingClassification": true
   },
   {
     "sourceUrl": "https://nour.net.sa/news/",
@@ -4289,7 +4284,7 @@
   {
     "sourceUrl": "https://wasatah.com.sa/ar/%d9%81%d8%b1%d8%b5-%d8%a7%d9%84%d8%b9%d9%85%d9%84/",
     "orgId": "wasatah",
-    "contentHash": "dc6cfc56199eed604a0806192da5e0e615b87e751a951f78f66cd82b3906eeeb",
+    "contentHash": null,
     "blockHashes": [
       "01f8abe9e3ae8a22",
       "b28df6d35c827e33",
@@ -4306,7 +4301,7 @@
   {
     "sourceUrl": "https://wasatah.com.sa/careers/",
     "orgId": "wasatah",
-    "contentHash": "b25ed3a68eaa146fd754f493f9d13d74ff92234d9df9eef34f01de5aa0c87f3e",
+    "contentHash": null,
     "blockHashes": [
       "a070843674a75443",
       "5012201269ff2096",
@@ -4323,7 +4318,7 @@
   {
     "sourceUrl": "https://wasatah.com.sa/media-center/",
     "orgId": "wasatah",
-    "contentHash": "5e738cb88710b46e9456e5096612ddd33bf57970f6ee49b97b2bf9c688f8d921",
+    "contentHash": null,
     "blockHashes": [
       "185414b79f176504",
       "2b6746d84716fcac",
@@ -6625,7 +6620,7 @@
   {
     "sourceUrl": "https://www.hrsd.gov.sa/care-about-you/skillsandtrain",
     "orgId": "hrsd",
-    "contentHash": "a028f219f3537384eb7b69e3c96754059c6627d9c7d850fce7ebcdbdbc9181da",
+    "contentHash": "ffa7595d6b88f8605799bd9276b3c4b581551bf95679853db9d0c9bf634538fd",
     "blockHashes": [
       "92ab7c84ae7e0913",
       "7a1fe76ef3341069",
@@ -6656,31 +6651,31 @@
       "f8762a09eac18139",
       "7156c65a19eff8cd",
       "f240ebfacade946d",
-      "d71c69cd62477fbf"
+      "7ae46a8e39c565c1"
     ],
     "extractedChars": 10754,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-01T15:00:28.844Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
-    "pendingClassification": false
+    "pendingClassification": true
   },
   {
     "sourceUrl": "https://www.hrsd.gov.sa/contact-us/inquiries-about-employment-offices",
     "orgId": "hrsd",
-    "contentHash": "88332f49da329b733757aacc5ed1223a39b43ae3a2889fa46fc68afc6657b539",
+    "contentHash": "dd1f2816a6c012f3219e0eb23f69a0a7b0fe424fe5e38bd6ca1ef2d28eb02ce3",
     "blockHashes": [
       "92ab7c84ae7e0913",
       "0c78e22b2fe724ca",
       "6f2560b47c07aaba",
       "5f36e870a7ea7b71",
       "f240ebfacade946d",
-      "6dfbae46af081a48"
+      "4c9950e26fc2a0c9"
     ],
     "extractedChars": 989,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-13T18:02:58.413Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
@@ -6721,22 +6716,22 @@
   {
     "sourceUrl": "https://www.hrsd.gov.sa/media-center/news",
     "orgId": "hrsd",
-    "contentHash": "84e3fab8639166ff1bcc1719338da2cc8455ee5a6516b0710084cf594fec158f",
+    "contentHash": "9b641e95bf2f80ddf3bcfc70a73da3d1b07ff7ed63ecae07331ef6b2164ac303",
     "blockHashes": [
       "92ab7c84ae7e0913",
-      "9cef0c5f6d871888",
+      "aa43ea286c78b149",
       "7be0a9d63886b6ce",
       "23696f88b3cbb21e",
-      "2ca4be5d2dcd8589",
+      "d8f4899d9420411a",
       "f240ebfacade946d",
       "f8ceee340f2df624"
     ],
-    "extractedChars": 4185,
+    "extractedChars": 4274,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-13T18:02:58.413Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
-    "pendingClassification": false
+    "pendingClassification": true
   },
   {
     "sourceUrl": "https://www.hrsd.gov.sa/ministry/about-ministry/jobs",
@@ -9097,64 +9092,64 @@
   {
     "sourceUrl": "https://www.rcrc.gov.sa/",
     "orgId": "rcrc",
-    "contentHash": "c452784590c39c7f89031a5864da10386a160aac5c41ca7a5449cd2bb864fcff",
+    "contentHash": "611f8947449a95b680a6c820f5f49a32cc1568ee45e90bce796f4655bf5a1504",
     "blockHashes": [
       "4c17e53161876f72",
       "20de1cc8281f3770",
-      "64c8fa62b06bec3b"
+      "fe1c3195a1cc5b9e"
     ],
     "extractedChars": 122,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.rcrc.gov.sa/careers/?lang=ar",
     "orgId": "rcrc",
-    "contentHash": "26d9ef5a18949d3d415e9013403ec429b87c3e79bf44f71efb84010c70176533",
+    "contentHash": "e8d939b63e7b443ce8eaa75b883458206a6c9ed8572d7056a901e93ac3ce8c76",
     "blockHashes": [
       "4c17e53161876f72",
       "20de1cc8281f3770",
-      "6bdd804ea131341e"
+      "a4abd921949706c0"
     ],
     "extractedChars": 122,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
   {
     "sourceUrl": "https://www.rcrc.gov.sa/media-center/",
     "orgId": "rcrc",
-    "contentHash": "7c83c6ede80b7349f8e339fe653a945b770d2ab4c7843d42550124d37eed2b9a",
+    "contentHash": "33972a14e6c52cde3a390ad2ce4f4aa59963a652ea7ba4a5b947160313f3b6ac",
     "blockHashes": [
       "4c17e53161876f72",
       "20de1cc8281f3770",
-      "785781c1259b79ca"
+      "fde04cb1ca08934f"
     ],
     "extractedChars": 122,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.rcrc.gov.sa/news-ar/",
     "orgId": "rcrc",
-    "contentHash": "1ccc1d6b5c440f5225cda60bc70f1bef16a808d8dc24907ee225c1ce7eed2f1d",
+    "contentHash": "71a6a10544ac324e3cbf7cb806951a75ee4d1ead35343c9f99b4168d84eeb7fd",
     "blockHashes": [
       "4c17e53161876f72",
       "20de1cc8281f3770",
-      "729e315c72a64075"
+      "0e86995e443059d5"
     ],
     "extractedChars": 122,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -9430,7 +9425,7 @@
   {
     "sourceUrl": "https://www.riyadbank.com/ar/personal-banking",
     "orgId": "riyadbank",
-    "contentHash": "e73c5106cd39b3ac2bec7b3162828788bab91ed14885c92b048e586905de3b1f",
+    "contentHash": "29a8cadc39eef5713d228d9622218ca296b9c3e1c5782cb712abccb86364e3dc",
     "blockHashes": [
       "c5fa97b84e96f11e",
       "a01ad1ea1a27690a",
@@ -9454,15 +9449,15 @@
       "9f29620fa9319a80",
       "dd09a93c19a5b408",
       "fc0a22cc81c08834",
-      "97b7afff054f9f37",
-      "2274a27142a58d23",
+      "5ca46b716e2fe884",
+      "1d775fb08011859c",
       "303fe28588764a9b",
       "7a8a143470365dc2",
-      "68804184ee7f89f3",
+      "960919b7fb63409c",
       "c845d371bfc055e6",
       "e91a2dc79c3ef7ff",
-      "e10872055bbde21f",
-      "68f92b28ff614b42",
+      "75701b4b0c077673",
+      "0b4f6c1a982c9472",
       "cb4329c80213103c",
       "853e155161611ffc",
       "0f21ae2f5a35f90c",
@@ -9474,10 +9469,10 @@
       "27ab07a2e57dda34",
       "f2f0e16c376080f6"
     ],
-    "extractedChars": 10225,
+    "extractedChars": 10366,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-09-14T06:03:33.482Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -9638,16 +9633,16 @@
   {
     "sourceUrl": "https://www.saip.gov.sa/ar/contact-us/careers",
     "orgId": "saip",
-    "contentHash": "a9981cac37f6241a4d99875b300450e1a585da866f5ac8a514ad468a66ed49a4",
+    "contentHash": "3fc3f16334432114a45bbc067eba40b81e8c9867ebfc639cb662291a3e33e27c",
     "blockHashes": [
       "934b25c02cb14ed6",
       "280389be08b6af6e",
-      "eeed159df827b234"
+      "66e7a645ee0e4bb4"
     ],
     "extractedChars": 1104,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
@@ -9686,33 +9681,33 @@
   {
     "sourceUrl": "https://www.saip.gov.sa/ar/media-center/movables-platform",
     "orgId": "saip",
-    "contentHash": "b5d4b8a075b3f0614e54a17ded6bd73ea280072d5b550699cda023e9343450d4",
+    "contentHash": "680e646b2d05a17c00c8ab3cbaaf67fea9fa909e7e217c70a79e25e44227987c",
     "blockHashes": [
-      "b5d4b8a075b3f061"
+      "680e646b2d05a17c"
     ],
     "extractedChars": 242,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T00:03:49.185Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.sanabil.com/",
     "orgId": "sanabil",
-    "contentHash": "bfe8bf376470eabe8bb8489e1309d18f88cd1a33c21f6840205d200e30604c67",
+    "contentHash": "634be8858e25410ea6c801178e182d92b1b67f3b0bf25bf376fbca658ab8c503",
     "blockHashes": [
-      "8c99579bae44231f",
+      "67360eab70fb90d6",
       "7c41f59750ecf85e",
       "c85c8cd795b8ffd3",
       "8e734943b7081e4f",
       "a4b70189ffd2a7d4",
       "1807b705ce9a72a7"
     ],
-    "extractedChars": 666,
+    "extractedChars": 1391,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T06:03:33.482Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -9823,15 +9818,13 @@
   {
     "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/about-saudi-exchange/aboutus/careers?locale=ar",
     "orgId": "tadawul",
-    "contentHash": "b21f390d48a8609f4b14966888b6aeaf1756e02b38c8b1bc62964586c4eb859e",
+    "contentHash": "511b3f95e2d8d3d575ea19c458b4fb39586dc964b29b8ce05b6e43c74975aa26",
     "blockHashes": [
       "bf2971d00e5f1b11",
       "6251008cc9439d6d",
       "02ddd9948c6dd7f8",
-      "f79110df8ebcc046",
-      "98988d11808f8201",
-      "74e61794242b8129",
-      "2e18ebb5b2548034",
+      "67d68980f16cf063",
+      "d1098c439a9102c7",
       "0e2e581582a527db",
       "8ffb73a1b3c816a1",
       "6788f30f26642742",
@@ -9857,99 +9850,99 @@
       "a7a406218c8b4862",
       "c6dff820a827c5a4"
     ],
-    "extractedChars": 13504,
+    "extractedChars": 13207,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-29T19:43:17.547Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
   {
     "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-financial-calendars?locale=ar",
     "orgId": "tadawul",
-    "contentHash": "9376981b18f586be00f2cb94e6d92b0bd6d9a43c470827b8712cb3111fd36f03",
+    "contentHash": "83013e119850d1b8bf55d34d43e52940cb02818dc76050382671bf7369ce9351",
     "blockHashes": [
       "d6341172b6297f98",
       "6251008cc9439d6d",
       "02ddd9948c6dd7f8",
-      "4ca4f5b793c5bf06",
+      "5af3ed5bb802cb79",
       "3a7f478ad2bda6a1"
     ],
-    "extractedChars": 886,
+    "extractedChars": 856,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-financial-calendars/dividends?locale=ar",
     "orgId": "tadawul",
-    "contentHash": "d9ec8402560e0a63d5904f89ec9ef81a3f980799786197f739c497820c241b4b",
+    "contentHash": "f6cd6215f5edc6789f78635c52ea6fbfdeddbd51d606dda79d331cba6f4f88e2",
     "blockHashes": [
       "d6341172b6297f98",
       "6251008cc9439d6d",
       "02ddd9948c6dd7f8",
-      "704fccf2a67f9006",
+      "f8e2d52f9a60b653",
       "3a7f478ad2bda6a1"
     ],
-    "extractedChars": 886,
+    "extractedChars": 856,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-financial-calendars/general-assembly-meetings?locale=ar",
     "orgId": "tadawul",
-    "contentHash": "7480c279ed5f4882b68ad8fbd43b67769e63c729b29c1bb4ea55f29261337eb6",
+    "contentHash": "e22e885ed96e598326b79f1874e716f05e0b4233d1659f124c7f91e94ce8527c",
     "blockHashes": [
       "d6341172b6297f98",
       "6251008cc9439d6d",
       "02ddd9948c6dd7f8",
-      "e3bc77388da1c971",
+      "05a707edeaa375ae",
       "8d5603f1f4e4e0b2"
     ],
-    "extractedChars": 875,
+    "extractedChars": 845,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-news?locale=ar",
     "orgId": "tadawul",
-    "contentHash": "9093007d13ac8b365a43beae4f2c8a85da7d1437694b86ef5bbaa038dedd5374",
+    "contentHash": "aec828b35376cdde2d4e820ade63cccf902bfb664d92a020a27c8585f3037b3c",
     "blockHashes": [
       "d6341172b6297f98",
       "6251008cc9439d6d",
       "02ddd9948c6dd7f8",
-      "e8e7430411366e11"
+      "f6ad743d6b7f0d6d"
     ],
-    "extractedChars": 1854,
+    "extractedChars": 1824,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-news/issuer-announcements?locale=ar",
     "orgId": "tadawul",
-    "contentHash": "26f5df77e29798701f7fdc5064df8b6ed3f14c82cda03ca4771b100cbaf6c946",
+    "contentHash": "5be98264af7e51b54136ac725f2798ba1149b6ca25e3bc039a20244800af70bc",
     "blockHashes": [
       "d6341172b6297f98",
       "6251008cc9439d6d",
       "02ddd9948c6dd7f8",
-      "48d63daa08f58915",
+      "272e6946f1428c73",
       "36c0c255b055f899"
     ],
-    "extractedChars": 2175,
+    "extractedChars": 2156,
     "extractionMethod": "body_fallback",
     "firstSeenISO": "2026-09-01T03:23:53.266Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -10064,7 +10057,7 @@
   {
     "sourceUrl": "https://www.sfda.gov.sa/ar",
     "orgId": "sfda",
-    "contentHash": "5a3a52dfc65a0565fc4680b98434bf95465b34d26ce43aad2839c4aedfa17e16",
+    "contentHash": "0ef9fc1bf12b5c64fd2ccf394c88789e0662dffc6438af69b89158662f9e6770",
     "blockHashes": [
       "453064c4c6654ab4",
       "6ecc1b58c61ff1cd",
@@ -10094,7 +10087,7 @@
       "3b931cad7ef53a13",
       "658b43d0993d5397",
       "60b6afb763e71c83",
-      "e512ca795c2c7a48",
+      "b60eeaa1bae23373",
       "b69ab73ade473181",
       "fe04993c9918963a",
       "79ab21cd8cc2bc78"
@@ -10102,50 +10095,50 @@
     "extractedChars": 6292,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-13T00:04:21.361Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
   {
     "sourceUrl": "https://www.sfda.gov.sa/ar/career-vision-and-mission",
     "orgId": "sfda",
-    "contentHash": "9b60821048e8d522bd747585d1a0bc70811c60160e7390f6ed30fd7ceb988a61",
+    "contentHash": "335a10ed012f2f20c0cb020e9a7274b14c4b3a93c48fb350e0cd069bfbdd4d1b",
     "blockHashes": [
       "9f0d7edcae8bb52a",
       "60b6afb763e71c83",
       "074367ffe7536568",
       "b69ab73ade473181",
       "fe04993c9918963a",
-      "3b9cedf4561bf51e"
+      "6451118a7c697894"
     ],
     "extractedChars": 806,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
   {
     "sourceUrl": "https://www.sfda.gov.sa/ar/news",
     "orgId": "sfda",
-    "contentHash": "3fbe62560414c1480acfc7eb808d88e529db57158bcf724317c50e72fc7424e8",
+    "contentHash": "2f22d7a3ce76188bdb3cbe7ca239bd7758c8d659c8d32a2f7e765ffb62cf8cc6",
     "blockHashes": [
-      "99b5acf0d53968b8",
+      "53eb1dfdc7d7ab18",
+      "41462cc4f062e974",
       "5a5d9058e45e5ecd",
       "e86fa7ae3604f512",
       "dcb0bfa500a2db83",
       "d3d710c7de3528d8",
-      "5285052957cb0adc",
       "abbaebe56469a2c6",
-      "e512ca795c2c7a48",
+      "b60eeaa1bae23373",
       "b69ab73ade473181",
       "fe04993c9918963a",
       "506fe5d55093ecae"
     ],
-    "extractedChars": 1579,
+    "extractedChars": 1625,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-10T12:03:38.855Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": false
   },
@@ -10484,7 +10477,7 @@
   {
     "sourceUrl": "https://www.sfda.gov.sa/en/career-vision-and-mission",
     "orgId": "sfda",
-    "contentHash": "dccc71204be19673c1e1bfb4cd67bba780b35eb7a93003367551238c888c96dc",
+    "contentHash": "36d607ccb7bad0e69fd9995adb9c5285abfbd59b7ee58c7573721640970d2b44",
     "blockHashes": [
       "4e3b1c94f76f8148",
       "eba48d47d7bc0f9e",
@@ -10498,12 +10491,12 @@
       "a0466ff116c86d28",
       "4b81d1c31f1f9c59",
       "02085740ec4421fd",
-      "d1d0af8084883b0f"
+      "8e89830724bc2318"
     ],
     "extractedChars": 997,
     "extractionMethod": "readability",
     "firstSeenISO": "2026-08-31T00:02:49.563Z",
-    "lastChangedISO": "2026-09-14T12:03:30.283Z",
+    "lastChangedISO": "2026-09-14T18:03:04.105Z",
     "thinRuns": 0,
     "pendingClassification": true
   },
