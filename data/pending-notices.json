@@ -1,13 +1,5 @@
 [
   {
-    "key": "classifier:2026-09-11",
-    "kind": "classifier_down",
-    "title": "🟠 التصنيف متوقّف",
-    "body": "قُرئت الصفحات لكن تعذّر الحكم على 117 منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف — افحص الجهات المهمة بنفسك.",
-    "weight": 250,
-    "queuedISO": "2026-09-11T00:28:41.927Z"
-  },
-  {
     "key": "classifier:2026-09-12",
     "kind": "classifier_down",
     "title": "🟠 التصنيف متوقّف",
@@ -94,5 +86,45 @@
     "body": "قُرئت الصفحات لكن تعذّر الحكم على 137 منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف — افحص الجهات المهمة بنفسك.",
     "weight": 250,
     "queuedISO": "2026-09-18T00:23:57.653Z"
+  },
+  {
+    "key": "broken:https://www.alahli.com/ar/pages/about-us/careers",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — البنك الأهلي السعودي",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-18T06:26:24.766Z"
+  },
+  {
+    "key": "broken:https://www.alahli.com/ar/pages/about-us/careers/culture",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — البنك الأهلي السعودي",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-18T06:26:24.766Z"
+  },
+  {
+    "key": "broken:https://www.alahli.com/ar/pages/about-us/careers/snb-cooperative-training-program",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — البنك الأهلي السعودي",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-18T06:26:24.766Z"
+  },
+  {
+    "key": "broken:https://www.alahli.com/en/pages/about-us/careers/snb-cooperative-training-program",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — البنك الأهلي السعودي",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-18T06:26:24.766Z"
+  },
+  {
+    "key": "broken:https://www.alahli.com/en/pages/personal-banking",
+    "kind": "source_broken",
+    "title": "🔴 مصدر توقّف — البنك الأهلي السعودي",
+    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
+    "weight": 150,
+    "queuedISO": "2026-09-18T06:26:24.766Z"
   }
 ]
