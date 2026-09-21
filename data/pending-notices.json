@@ -1,13 +1,5 @@
 [
   {
-    "key": "classifier:2026-09-14",
-    "kind": "classifier_down",
-    "title": "🟠 التصنيف متوقّف",
-    "body": "قُرئت الصفحات لكن تعذّر الحكم على 122 منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف — افحص الجهات المهمة بنفسك.",
-    "weight": 250,
-    "queuedISO": "2026-09-14T00:29:00.762Z"
-  },
-  {
     "key": "broken:https://www.moe.gov.sa/ar/Pages/default.aspx",
     "kind": "source_broken",
     "title": "🔴 مصدر توقّف — وزارة التعليم",
