@@ -1,61 +1,5 @@
 [
   {
-    "key": "broken:https://www.saudiexchange.sa/wps/portal/saudiexchange/about-saudi-exchange/aboutus/careers?locale=ar",
-    "kind": "source_broken",
-    "title": "🔴 مصدر توقّف — تداول السعودية",
-    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
-    "weight": 150,
-    "queuedISO": "2026-09-19T00:26:02.308Z"
-  },
-  {
-    "key": "broken:https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-financial-calendars?locale=ar",
-    "kind": "source_broken",
-    "title": "🔴 مصدر توقّف — تداول السعودية",
-    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
-    "weight": 150,
-    "queuedISO": "2026-09-19T00:26:02.308Z"
-  },
-  {
-    "key": "broken:https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-financial-calendars/dividends?locale=ar",
-    "kind": "source_broken",
-    "title": "🔴 مصدر توقّف — تداول السعودية",
-    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
-    "weight": 150,
-    "queuedISO": "2026-09-19T00:26:02.308Z"
-  },
-  {
-    "key": "broken:https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-financial-calendars/general-assembly-meetings?locale=ar",
-    "kind": "source_broken",
-    "title": "🔴 مصدر توقّف — تداول السعودية",
-    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
-    "weight": 150,
-    "queuedISO": "2026-09-19T00:26:02.308Z"
-  },
-  {
-    "key": "broken:https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-news?locale=ar",
-    "kind": "source_broken",
-    "title": "🔴 مصدر توقّف — تداول السعودية",
-    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
-    "weight": 150,
-    "queuedISO": "2026-09-19T00:26:02.308Z"
-  },
-  {
-    "key": "broken:https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-news/issuer-announcements?locale=ar",
-    "kind": "source_broken",
-    "title": "🔴 مصدر توقّف — تداول السعودية",
-    "body": "لم يعد يُقرأ آلياً. افحص الصفحة بنفسك.",
-    "weight": 150,
-    "queuedISO": "2026-09-19T00:26:02.308Z"
-  },
-  {
-    "key": "classifier:2026-09-19",
-    "kind": "classifier_down",
-    "title": "🟠 التصنيف متوقّف",
-    "body": "قُرئت الصفحات لكن تعذّر الحكم على 147 منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف — افحص الجهات المهمة بنفسك.",
-    "weight": 250,
-    "queuedISO": "2026-09-19T00:26:02.308Z"
-  },
-  {
     "key": "broken:https://www.srca.org.sa/",
     "kind": "source_broken",
     "title": "🔴 مصدر توقّف — الهلال الأحمر السعودي",
@@ -214,5 +158,13 @@
     "body": "قُرئت الصفحات لكن تعذّر الحكم على 184 منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف — افحص الجهات المهمة بنفسك.",
     "weight": 250,
     "queuedISO": "2026-09-25T00:26:02.160Z"
+  },
+  {
+    "key": "classifier:2026-09-26",
+    "kind": "classifier_down",
+    "title": "🟠 التصنيف متوقّف",
+    "body": "قُرئت الصفحات لكن تعذّر الحكم على 191 منها. لن تصل تنبيهات عن فرص جديدة حتى يعود التصنيف — افحص الجهات المهمة بنفسك.",
+    "weight": 250,
+    "queuedISO": "2026-09-26T00:27:11.822Z"
   }
 ]
