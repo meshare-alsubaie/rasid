@@ -1,35 +1,5 @@
 [
   {
-    "key": "broken:https://gac.gov.sa/",
-    "sentISO": "2026-08-31T06:25:10.031Z",
-    "via": "push"
-  },
-  {
-    "key": "broken:https://www.gea.gov.sa/ar",
-    "sentISO": "2026-08-31T06:25:10.031Z",
-    "via": "push"
-  },
-  {
-    "key": "broken:https://www.swcc.gov.sa/Arabic/Pages/Home.aspx",
-    "sentISO": "2026-08-31T06:25:10.031Z",
-    "via": "push"
-  },
-  {
-    "key": "new:4d9fd3268577873c",
-    "sentISO": "2026-08-31T06:25:10.031Z",
-    "via": "push"
-  },
-  {
-    "key": "new:5835cf2477a4d966",
-    "sentISO": "2026-08-31T06:25:10.031Z",
-    "via": "push"
-  },
-  {
-    "key": "new:fc66f5ca327f032c",
-    "sentISO": "2026-08-31T06:25:10.031Z",
-    "via": "push"
-  },
-  {
     "key": "new:3e540a10fc0665ac",
     "sentISO": "2026-09-01T06:21:24.308Z",
     "via": "push"
